@@ -1,0 +1,37 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+%
+\item Let $\mathbb{F}$ be a set which contains exactly two elements,0 and 1.Define an addition and multiplication by tables.
+\begin{table}[h!]
+  \begin{center}
+    \label{eq:solutions/1/1/5/tab:table1}
+    \begin{tabular}{l|c|r}
+      + & 0 & 1 \\
+      \hline
+      0 & 0 & 1\\
+      1 & 1 & 0
+    \end{tabular}
+  \end{center}
+\end{table}
+\begin{table}[h!]
+  \begin{center}
+    \label{eq:solutions/1/1/5/tab:table2}
+    \begin{tabular}{l|c|r}
+      $\cdot$ & 0 & 1 \\
+      \hline
+      0 & 0 & 0\\
+      1 & 0 & 1
+    \end{tabular}
+  \end{center}
+\end{table}
+  Verify that the set $\mathbb{F}$, together with these two operations, is a field.
+%
+\\
+\solution
+\input{./solutions/1/1/5/solution.tex}
+\end{enumerate}
+
+
