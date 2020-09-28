@@ -1,0 +1,106 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item Let $\vec{A}$ be a $\brak{m \times n}$ matrix 
+and $\vec{B}$ be a $\brak{n \times m}$ matrix over real numbers with $m < n$.  Then
+\begin{enumerate}
+\item $\vec{A}\vec{B}$ is always nonsingular.
+\item $\vec{A}\vec{B}$ is always singular.
+\item $\vec{B}\vec{A}$ is always nonsingular.
+\item $\vec{B}\vec{A}$ is always singular.
+\end{enumerate}
+%
+\item If $\vec{A}$ is a $\brak{2\times 2}$ matrix over $\mathbb{R}$ with $det\brak{\vec{A}+\vec{I}} 
+= 1 + det\brak{\vec{A}}$.  Then we can conclude that
+\begin{enumerate}
+\item $det\brak{\vec{A}} = 0$.
+\item $\vec{A} = 0$.
+\item $tr\brak{\vec{A}} = 0$.
+\item $\vec{A}$ is nonsingular.
+\end{enumerate}
+%
+\item The system of equations
+\begin{align}
+x+2x^2+3xy = 6 \\
+x+x^2+3xy + y = 5 \\
+x-x^2+y = 7
+\end{align}
+\begin{enumerate}
+\item has solutions in rational numbers.
+\item has solutions in real numbers.
+\item has solutions in complex numbers.
+\item has no solutions.
+\end{enumerate}
+%
+\item The trace of the matrix
+\begin{align}
+\myvec
+{
+2 & 1 & 0
+\\
+0 & 2 & 0
+\\
+0 & 0 & 3
+}^{20}
+\end{align}
+is
+\begin{enumerate}
+\item $7^{20}$.
+\item $2^{20}+3^{20}$.
+\item $2^{21}+3^{20}$.
+\item $2^{20}+3^{20}+1$.
+\end{enumerate}
+%
+\item Given that there are real constants $a,b,c,d$ such that the identity
+\begin{multline}
+\lambda x^2 + 2xy + y^2 = \brak{ax+by}^2 + \brak{cx+dy}^2, 
+\\
+ \forall x,y \in \mathbb{R}
+\end{multline}
+This implies that
+\begin{enumerate}
+\item $\lambda = -5$
+\item $\lambda \ge 1$
+\item $0 < \lambda < 1$
+\item There is no such $\lambda \in \mathbb{R}$
+\end{enumerate}
+%
+\item Let $\mathbb{R}, n \ge 2$, be equipped with the standard inner product.  Let
+$\vec{v}_1,\vec{v}_2,\dots,\vec{v}_n$ be $n$ column vectors forming an orthonormal
+basis of $\mathbb{R}^n$.  Let $A$ be the $n \times n$ matrix formed by the column vectors
+$\vec{v}_1,\vec{v}_2,\dots,\vec{v}_n$.  Then 
+\begin{enumerate}
+\begin{multicols}{2}
+\item $\vec{A}=\vec{A}^{-1}$
+\item $\vec{A}=\vec{A}^{\top}$
+\item $\vec{A}^{-1}=\vec{A}^{\top}$
+\item $det\brak{\vec{A}}=1$
+\end{multicols}
+\end{enumerate}
+
+\item Consider a Markov Chain with state space $\cbrak{0,1,2}$ and transition matrix
+\begin{align}
+P = 
+\begin{blockarray}{c@{\hspace{1pt}}rrr@{\hspace{3pt}}}
+         & 0   & 1   & 2 \\
+        \begin{block}{r@{\hspace{3pt}}@{\hspace{1pt}}
+    (@{\hspace{1pt}}rrr@{\hspace{1pt}}@{\hspace{1pt}})}
+        0 & \frac{1}{2} & \frac{1}{2} & 0  \\
+        1 & 0 &\frac{1}{2}  & \frac{3}{4}  \\
+%
+        2 &  \frac{1}{3} & \frac{1}{3} & \frac{1}{3}  \\
+        \end{block}
+    \end{blockarray}
+\end{align}
+For any two states $i$ and $j$, let $p_{ij}^{(n)}$ denote the $n$-step transition probability of going from $i$ to $j$.  Identify correct statements.
+\begin{enumerate}
+\item $\lim_{n \to \infty} p_{11}^{(n)} = \frac{2}{9}$
+\item $\lim_{n \to \infty} p_{21}^{(n)} = 0$
+\item $\lim_{n \to \infty} p_{32}^{(n)} = \frac{1}{3}$
+\item $\lim_{n \to \infty} p_{13}^{(n)} = \frac{1}{3}$
+\end{enumerate}
+
+\end{enumerate}

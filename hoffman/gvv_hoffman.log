@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  27 SEP 2020 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  28 SEP 2020 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2009,7 +2009,7 @@ Underfull \hbox (badness 1708) in paragraph at lines 31--32
 prop-
  []
 
-
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
@@ -2020,44 +2020,37 @@ ap/pdftex.map}
 
 
  </data/data/com.termux/files/home/texmf/tex/latex/logo/iith_logo.pdf> </data/d
-ata/com.termux/files/home/texmf/tex/latex/logo/tlc.pdf>]))
-[2
+ata/com.termux/files/home/texmf/tex/latex/logo/tlc.pdf>])
+(./chapters/1/1.2.tex (./solutions/1/2/7/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
- (./gvv_hoffman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
-Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
-(rerunfilecheck)             Checksum: 655AF969F0E51DA45817FC9A2922D6D7;62.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
- ) 
+
+
+! LaTeX Error: \begin{multlined} on input line 39 ended by \end{multilined}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39   \end{align}
+                  
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.39   \end{align}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ 
 Here is how much of TeX's memory you used:
- 42257 strings out of 480608
- 989810 string characters out of 5892806
- 1361157 words of memory out of 5000000
- 57282 multiletter control sequences out of 15000+600000
+ 42263 strings out of 480608
+ 990112 string characters out of 5892806
+ 1378157 words of memory out of 5000000
+ 57284 multiletter control sequences out of 15000+600000
  616544 words of font info for 212 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,10n,91p,503b,1052s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/
-public/txfonts/rtxb.pfb></data/data/com.termux/files/usr/share/texlive/texmf-di
-st/fonts/type1/public/txfonts/rtxmi.pfb></data/data/com.termux/files/usr/share/
-texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></data/data/com.termux/f
-iles/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></data/d
-ata/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tx
-sy.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/txfonts/txsyb.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmb8a.pfb></data/data/com.termux/files/usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.ter
-mux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (2 pages, 564853 bytes).
-PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 60i,14n,91p,503b,858s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
