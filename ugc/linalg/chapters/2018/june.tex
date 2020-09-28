@@ -80,27 +80,74 @@ $\vec{v}_1,\vec{v}_2,\dots,\vec{v}_n$.  Then
 \item $det\brak{\vec{A}}=1$
 \end{multicols}
 \end{enumerate}
-
-\item Consider a Markov Chain with state space $\cbrak{0,1,2}$ and transition matrix
+%
+\item Consider a Markov Chain with state space $\cbrak{1,2, 3, 4}$ and transition matrix
 \begin{align}
 P = 
-\begin{blockarray}{c@{\hspace{1pt}}rrr@{\hspace{3pt}}}
-         & 0   & 1   & 2 \\
+\begin{blockarray}{c@{\hspace{1pt}}rrrr@{\hspace{3pt}}}
+            & 1   & 2 & 3 & 4\\
         \begin{block}{r@{\hspace{3pt}}@{\hspace{1pt}}
-    (@{\hspace{1pt}}rrr@{\hspace{1pt}}@{\hspace{1pt}})}
-        0 & \frac{1}{2} & \frac{1}{2} & 0  \\
-        1 & 0 &\frac{1}{2}  & \frac{3}{4}  \\
+    (@{\hspace{1pt}}rrrr@{\hspace{1pt}}@{\hspace{1pt}})}
+        1 & \frac{1}{2} & 0 & \frac{1}{2} & 0  \\
+        2 & \frac{1}{4}  & \frac{1}{4} & \frac{1}{4} & \frac{1}{4}  \\
+        3 & \frac{1}{3}  & 0 & \frac{1}{3} & \frac{1}{3}  \\
 %
-        2 &  \frac{1}{3} & \frac{1}{3} & \frac{1}{3}  \\
+        4 & \frac{1}{2} & 0 & \frac{1}{2} & 0  \\
         \end{block}
     \end{blockarray}
 \end{align}
-For any two states $i$ and $j$, let $p_{ij}^{(n)}$ denote the $n$-step transition probability of going from $i$ to $j$.  Identify correct statements.
+Then,
 \begin{enumerate}
-\item $\lim_{n \to \infty} p_{11}^{(n)} = \frac{2}{9}$
-\item $\lim_{n \to \infty} p_{21}^{(n)} = 0$
-\item $\lim_{n \to \infty} p_{32}^{(n)} = \frac{1}{3}$
-\item $\lim_{n \to \infty} p_{13}^{(n)} = \frac{1}{3}$
+\item $\lim_{n \to \infty} p_{22}^{(n)} = 0, \sum_{n=0}^{\infty}p_{22}^{(n)} = \infty$
+\item $\lim_{n \to \infty} p_{22}^{(n)} = 0, \sum_{n=0}^{\infty}p_{22}^{(n)} < \infty$
+\item $\lim_{n \to \infty} p_{22}^{(n)} = 1, \sum_{n=0}^{\infty}p_{22}^{(n)} = \infty$
+\item $\lim_{n \to \infty} p_{22}^{(n)} = 1, \sum_{n=0}^{\infty}p_{22}^{(n)} < \infty$
 \end{enumerate}
-
+\item Let $V$ denote the vector space of all sequences $\vec{a} = \brak{a_1,a_2,\dots }$ of real numbers such that 
+\begin{align}
+\sum_{n}2^n\abs{a}_n
+\end{align}
+converges.  Define
+\begin{align}
+\norm{\cdot}: V \to \mathbb{R}
+\end{align}
+by
+\begin{align}
+\norm{\vec{a}} = \sum_{n}2^n\abs{a}_n.
+\end{align}
+%
+Which of the following are true?
+\begin{enumerate}
+\item $V$ contains onlythe sequence $\brak{0,0,\dots}$
+\item $V$ is finite dimensional
+\item $V$ has a countable linear basis
+\item $V$ is a complete normed space
+\end{enumerate}
+%
+\item Let $V$ be a vector space over $\mathbb{C}$ with dimension $n$.  Let $T:V\to V$ be a linear transformation with
+only1 as eigenvalue.  Then which of the following must be true?
+\begin{enumerate}
+\item $T-I = 0$ 
+\item $\brak{T-I}^{n-1} = 0$ 
+\item $\brak{T-I}^{n} = 0$ 
+\item $\brak{T-I}^{2n} = 0$ 
+\end{enumerate}
+%
+\item If $\vec{A}$ is a $5\times 5$ matrix and the dimension of the solution space of $\vec{A}\vec{x} = 0$ is at least two, then
+\begin{enumerate}
+\item rank$\brak{\vec{A}^2} \le 3$ 
+\item rank$\brak{\vec{A}^2} \ge 3$ 
+\item rank$\brak{\vec{A}^2} = 3$ 
+\item det$\brak{\vec{A}^2} = 0$ 
+\end{enumerate}
+%
+\item Let $\vec{A} \in M_3\brak{\mathbb{R}}$ be such that $\vec{A}^3 = \vec{I}_{3\times 3}$.  Then
+\begin{enumerate}
+\item minimal polynomial of $\vec{A}$ can only be of degree 2
+\item minimal polynomial of $\vec{A}$ can only be of degree 3
+\item either $\vec{A} = \vec{I}$ or $\vec{A} = -\vec{I}$
+\item there can be uncountably many $\vec{A}$ satisfying the above.
+\end{enumerate}
+%
+\item Let 
 \end{enumerate}

@@ -1,0 +1,73 @@
+ Let $\vec{A}$ be a 3 $\times$ 3 matrix with having row vectors $\vec{a}_1$,$\vec{a}_2$ and $\vec{a}_3$.
+ \begin{align}
+ \vec{A}=\myvec{\vec{a}_{1}\\\vec{a}_{2}\\\vec{a}_{3}}
+   \end{align}
+  Let's exchange row $\vec{a}_1$ and $\vec{a}_2$. Let's call this elementary operation $\bf{E}_1$.
+  \begin{align}
+  \vec{E}_1=\myvec{0&1&0\\1&0&0\\0&0&1}\\
+  \end{align}
+  Now performing operation $ \vec{E}_1$
+  \begin{align}
+  \myvec{0&1&0\\1&0&0\\0&0&1}\myvec{\vec{a}_{1}\\\vec{a}_{2}\\\vec{a}_{3}}=
+\myvec{\vec{a}_2\\\vec{a}_1\\\vec{a}_3}\label{eq:solutions/1/2/7/a}
+  \end{align}
+  Now, to prove that same matrix can be obtained by elementary operations let's call them $\bf{E}_2$ and $\bf{E}_3$.Now performing operation $ \vec{E}_2$ by adding row 2 to row 1.
+  \begin{align}
+  \myvec{1&1&0\\0&1&0\\0&0&1}\myvec{\vec{a}_{1}\\\vec{a}_{2}\\\vec{a}_{3}}
+  =\myvec{\vec{a}_1+\vec{a}_2\\\vec{a}_2\\\vec{a}_3}
+  \end{align}
+  Using elementary operation $\bf{E}_2$ we will subtract row 1 from row 2.
+  \begin{align}
+  \myvec{1&0&0\\-1&1&0\\0&0&1}\myvec{\vec{a}_1+\vec{a}_2\\\vec{a}_2\\\vec{a}_3}=
+  \myvec{\vec{a}_1+\vec{a}_2\\-\vec{a}_1\\\vec{a}_3}
+  \end{align}
+  Using elementary operation $\bf{E}_2$ we will add row 2 to row 1.
+   \begin{align}
+    \myvec{1&1&0\\0&1&0\\0&0&1} \myvec{\vec{a}_1+\vec{a}_2\\-\vec{a}_1\\\vec{a}_3}=
+  \myvec{\vec{a}_2\\-\vec{a}_1\\\vec{a}_3}
+  \end{align}
+  Using elementary operation $\bf{E}_3$ we will multiply row 2 by -1.
+   \begin{align}
+   \myvec{1&0&0\\0&-1&0\\0&0&1}\myvec{\vec{a}_2\\-\vec{a}_1\\\vec{a}_3}=
+  \myvec{\vec{a}_2\\\vec{a}_1\\\vec{a}_3}
+  \end{align}
+  Hence, we can say that,
+
+  \begin{multline}
+     \myvec{1&0&0\\0&-1&0\\0&0&1} \myvec{1&1&0\\0&1&0\\0&0&1}\myvec{1&0&0\\-1&1&0\\0&0&1}\myvec{1&1&0\\0&1&0\\0&0&1}\myvec{\vec{a}_{1}\\\vec{a}_{2}\\\vec{a}_{3}}=\\ \myvec{0&1&0\\1&0&0\\0&0&1}\myvec{\vec{a}_{1}\\\vec{a}_{2}\\\vec{a}_{3}}
+     \end{multline}
+
+  Let us assume a matrix $\vec{A}$  
+ \begin{align}
+ \vec{A}=\myvec{1&2&3\\0&1&0\\1&1&0}
+  \end{align}
+ Let's exchange row $\vec{a}_1$ and $\vec{a}_2$ by applying operation $\bf{E}_1$.
+ \begin{align}
+ \myvec{0&1&0\\1&0&0\\0&0&1}\myvec{1&2&3\\0&1&0\\1&1&0}=
+\myvec{0&1&0\\1&2&3\\1&1&0}\label{eq:solutions/1/2/7/B}
+ \end{align}
+ Now, to prove that same matrix can be obtained by other two elementary operations.We will first perform elementary operation $\bf{E}_2$ by adding row 2 to row 1.
+ \begin{align}
+  \myvec{1&1&0\\0&1&0\\0&0&1}\myvec{1&2&3\\0&1&0\\1&1&0}=\myvec{1&3&3\\0&1&0\\1&1&0}
+\end{align}
+ Using elementary operation $\bf{E}_2$ we will subtract row 1 from row 2.
+  \begin{align}
+   \myvec{1&0&0\\-1&1&0\\0&0&1}\myvec{1&3&3\\0&1&0\\1&1&0}=
+\myvec{1&3&3\\-1&-2&-3\\1&1&0}
+ \end{align}
+ Using elementary operation $\bf{E}_2$ we will add row 2 to row 1.
+  \begin{align}
+  \myvec{1&1&0\\0&1&0\\0&0&1} \myvec{1&3&3\\-1&-2&-3\\1&1&0}=
+\myvec{0&1&0\\-1&-2&-3\\1&1&0}
+ \end{align}
+ Using elementary operation $\bf{E}_3$ we will multiply row 2 by -1.
+ \begin{align}
+   \myvec{1&0&0\\0&-1&0\\0&0&1} \myvec{0&1&0\\-1&-2&-3\\1&1&0}=
+\myvec{0&1&0\\1&2&3\\1&1&0}
+ \end{align}
+ Hence,we can say that,
+\begin{multline}
+  \myvec{1&0&0\\0&-1&0\\0&0&1} \myvec{1&1&0\\0&1&0\\0&0&1}\myvec{1&0&0\\-1&1&0\\0&0&1}
+\\
+\times \myvec{1&1&0\\0&1&0\\0&0&1}\myvec{1&2&3\\0&1&0\\1&1&0}= \myvec{0&1&0\\1&0&0\\0&0&1}\myvec{1&2&3\\0&1&0\\1&1&0}
+ \end{multline}

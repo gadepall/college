@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  28 SEP 2020 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  28 SEP 2020 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2093,8 +2093,8 @@ Package rerunfilecheck Info: File `gvv_ugc_linalg.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
  ) 
 Here is how much of TeX's memory you used:
- 42796 strings out of 480608
- 995579 string characters out of 5892806
+ 42820 strings out of 480608
+ 995789 string characters out of 5892806
  1385142 words of memory out of 5000000
  57574 multiletter control sequences out of 15000+600000
  627482 words of font info for 241 fonts, out of 8000000 for 9000
@@ -2115,10 +2115,10 @@ exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></data/data/com.termux/files
 .termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></d
 ata/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on gvv_ugc_linalg.pdf (6 pages, 609462 bytes).
+Output written on gvv_ugc_linalg.pdf (6 pages, 611879 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
- 383 compressed objects within 4 object streams
- 251 named destinations out of 1000 (max. 500000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 275 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

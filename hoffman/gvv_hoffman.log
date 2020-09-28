@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  28 SEP 2020 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  28 SEP 2020 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1944,7 +1944,7 @@ File: ot1txtt.fd 2000/12/15 v3.1
 pdfTeX warning: pdflatex (file /data/data/com.termux/files/home/texmf/tex/latex
 /logo/iith_logo.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<iith_logo.pdf, id=35, 359.3425pt x 486.81876pt>
+<iith_logo.pdf, id=39, 359.3425pt x 486.81876pt>
 File: iith_logo.pdf Graphic file (type pdf)
 <use iith_logo.pdf>
 Package pdftex.def Info: iith_logo.pdf  used on input line 245.
@@ -1956,7 +1956,7 @@ LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 (Font)              scaled to size 15.95987pt on input line 245.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 245.
-<tlc.pdf, id=36, 597.51233pt x 845.0471pt>
+<tlc.pdf, id=40, 597.51233pt x 845.0471pt>
 File: tlc.pdf Graphic file (type pdf)
 <use tlc.pdf>
 Package pdftex.def Info: tlc.pdf  used on input line 245.
@@ -2004,12 +2004,6 @@ Overfull \hbox (14.40588pt too wide) in paragraph at lines 245--245
 \openout5 = `gvv_hoffman.toc'.
 
  (./chapters/1/1.1.tex (./solutions/1/1/5/solution.tex
-Underfull \hbox (badness 1708) in paragraph at lines 31--32
-[]\OT1/txr/m/n/12 For any a,b and c in $\U/txsyb/m/n/12 F$ \OT1/txr/m/n/12 the 
-prop-
- []
-
-)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
@@ -2020,37 +2014,60 @@ ap/pdftex.map}
 
 
  </data/data/com.termux/files/home/texmf/tex/latex/logo/iith_logo.pdf> </data/d
-ata/com.termux/files/home/texmf/tex/latex/logo/tlc.pdf>])
-(./chapters/1/1.2.tex (./solutions/1/2/7/solution.tex
+ata/com.termux/files/home/texmf/tex/latex/logo/tlc.pdf>]
+Underfull \hbox (badness 1708) in paragraph at lines 31--32
+[]\OT1/txr/m/n/12 For any a,b and c in $\U/txsyb/m/n/12 F$ \OT1/txr/m/n/12 the 
+prop-
+ []
+
+)) (./chapters/1/1.2.tex (./solutions/1/2/7/solution.tex
+Overfull \hbox (28.72917pt too wide) detected at line 38
+ []$[]   [] [] [] [] [] \OT1/txr/m/n/12 =$ 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [2]))
+[3
 
-
-! LaTeX Error: \begin{multlined} on input line 39 ended by \end{multilined}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39   \end{align}
-                  
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.39   \end{align}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
- 
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
+ (./gvv_hoffman.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
+(rerunfilecheck)             Checksum: C149E39742F4A79CA0E6E0046A3C76E6;135.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
+ ) 
 Here is how much of TeX's memory you used:
- 42263 strings out of 480608
- 990112 string characters out of 5892806
- 1378157 words of memory out of 5000000
- 57284 multiletter control sequences out of 15000+600000
- 616544 words of font info for 212 fonts, out of 8000000 for 9000
+ 42289 strings out of 480608
+ 990267 string characters out of 5892806
+ 1391299 words of memory out of 5000000
+ 57287 multiletter control sequences out of 15000+600000
+ 617894 words of font info for 214 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,14n,91p,503b,858s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 60i,14n,91p,503b,1050s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/
+public/txfonts/rtxb.pfb></data/data/com.termux/files/usr/share/texlive/texmf-di
+st/fonts/type1/public/txfonts/rtxmi.pfb></data/data/com.termux/files/usr/share/
+texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></data/data/com.termux/f
+iles/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></data/d
+ata/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tx
+ex.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/txfonts/txsy.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
+/fonts/type1/public/txfonts/txsyb.pfb></data/data/com.termux/files/usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></data/data/com.termux/files/
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.
+termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></da
+ta/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on gvv_hoffman.pdf (3 pages, 574650 bytes).
+PDF statistics:
+ 153 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+
