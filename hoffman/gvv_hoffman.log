@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  28 SEP 2020 17:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  1 OCT 2020 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1703,7 +1703,11 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_hoffman.aux)
+) (./gvv_hoffman.aux
+
+LaTeX Warning: Label `eq:solutions/1/1/7/0' multiply defined.
+
+)
 \openout1 = `gvv_hoffman.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 89.
@@ -2020,7 +2024,15 @@ Underfull \hbox (badness 1708) in paragraph at lines 31--32
 prop-
  []
 
-)) (./chapters/1/1.2.tex (./solutions/1/2/7/solution.tex
+) (./solutions/1/1/7/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(./solutions/1/1/8/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]))
+(./chapters/1/1.2.tex (./solutions/1/2/7/solution.tex
 Overfull \hbox (28.72917pt too wide) detected at line 38
  []$[]   [] [] [] [] [] \OT1/txr/m/n/12 =$ 
  []
@@ -2028,8 +2040,8 @@ Overfull \hbox (28.72917pt too wide) detected at line 38
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]))
-[3
+ [3]))
+[4
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
@@ -2039,14 +2051,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
 Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 (rerunfilecheck)             Checksum: C149E39742F4A79CA0E6E0046A3C76E6;135.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
  ) 
 Here is how much of TeX's memory you used:
- 42289 strings out of 480608
- 990267 string characters out of 5892806
- 1391299 words of memory out of 5000000
- 57287 multiletter control sequences out of 15000+600000
- 617894 words of font info for 214 fonts, out of 8000000 for 9000
+ 42337 strings out of 480608
+ 991097 string characters out of 5892806
+ 1389063 words of memory out of 5000000
+ 57301 multiletter control sequences out of 15000+600000
+ 619270 words of font info for 216 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,14n,91p,503b,1050s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
@@ -2059,15 +2075,16 @@ ata/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tx
 ex.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/txsy.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/txsyb.pfb></data/data/com.termux/files/usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></data/data/com.termux/files/
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.
-termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></da
-ta/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on gvv_hoffman.pdf (3 pages, 574650 bytes).
+xlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></data/data/com.termux/fi
+les/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></data/data/c
+om.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
+</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on gvv_hoffman.pdf (4 pages, 586457 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 60 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

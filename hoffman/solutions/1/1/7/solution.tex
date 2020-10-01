@@ -1,0 +1,66 @@
+
+{Complex Numbers:}
+A complex number is a number that can be expressed in the form $a + bi$, where a and b are real numbers, and i represents the imaginary unit, satisfying the equation $i^2 =-1$.The set of complex numbers is denoted by $\mathbb{C}$
+\begin{align}
+    \mathbb{C}=\{(a,b):a,b \in \mathbb{R}\}
+\end{align}
+{Rational Numbers:}
+A number in the form $\frac{p}{q}$, where both p and q(non-zero) are integers, is called a rational number.The set of rational numbers is dentoed by $\mathbb{Q}$
+Let $\mathbb{Q}$ be the set of rational numbers.
+\begin{align}
+    \mathbb{Q}=\left\{\frac{p}{q}:p \in \mathbb{Z},q \in \mathbb{Z}_{\not=0} \right\}\label{eq:solutions/1/1/7/q}
+\end{align}
+Let $\mathbb{C}$ be the field of complex numbers and given $\mathbb{F}$ be the subfield of field of complex numbers $\mathbb{C}$ 
+Since $\mathbb{F}$ is the subfield , we could say that 
+\begin{align}
+    0 &\in \mathbb{F} \label{eq:solutions/1/1/7/0}\\
+    1 &\in \mathbb{F}
+\end{align}
+{Closed under addition:}
+Here $\mathbb{F}$ is closed under addition since it is subfield
+\begin{align}
+    1+1=2&\in \mathbb{F}\\
+    1+1+1=3&\in \mathbb{F}\\
+    \vdots\notag\\
+    1+1+\dots+1\text{(p times)}= p &\in \mathbb{F}\label{eq:solutions/1/1/7/p}\\
+    1+1+\dots+1\text{(q times)}= q &\in \mathbb{F}\label{eq:solutions/1/1/7/q1}
+\end{align}
+By using the above property we could say that zero and other positive integers belongs to $\mathbb{F}$.Since $p$ and $q$ are integers we say,
+\begin{align}
+    p \in \mathbb{Z}\\
+    q \in \mathbb{Z}\label{eq:solutions/1/1/7/0}
+\end{align}
+{Additive Inverse:}
+Let $x$ be the positive integer belong $\mathbb{F}$ and by additive inverse we could say, 
+\begin{align}
+    \forall x &\in \mathbb{F}\label{eq:solutions/1/1/7/1}\\
+    (-x) &\in \mathbb{F} \label{eq:solutions/1/1/7/2}
+\end{align}
+Therefore field $\mathbb{F}$ contains every integers. Let n be a integer then,
+\begin{align}
+    n \in \mathbb{Z} &\implies n \in \mathbb{F}\\
+    \mathbb{Z} &\subseteq \mathbb{F}
+\end{align}
+Where $\mathbb{Z}$ is subset of $\mathbb{F}$
+{Multiplicative Inverse:}
+Every element except zero in the subfield $\mathbb{F}$ has an multiplicative inverse. From equation \eqref{eq:solutions/1/1/7/q1}, since q $\in \mathbb{F}$ we could say ,
+\begin{align}
+    \frac{1}{q} \in \mathbb{F} \quad{\text{and  }} q \not= 0\label{eq:solutions/1/1/7/3}
+\end{align}
+{Closed under multiplication:}
+Also, $\mathbb{F}$ is closed under multiplication and thus,
+from equation \eqref{eq:solutions/1/1/7/p} and \eqref{eq:solutions/1/1/7/3} we get , 
+\begin{align}
+    p\cdot\frac{1}{q} \in \mathbb{F}\\
+\implies \frac{p}{q} \in \mathbb{F}\label{eq:solutions/1/1/7/proof}
+\end{align}
+where , $p \in \mathbb{Z}$ and $q \in \mathbb{Z}_{\not=0}$ (from equation \eqref{eq:solutions/1/1/7/0} and \eqref{eq:solutions/1/1/7/3})
+{Conclusion}
+From \eqref{eq:solutions/1/1/7/q} and \eqref{eq:solutions/1/1/7/proof} we could say , 
+\begin{align}
+    \mathbb{Q} \subseteq \mathbb{F}\label{eq:solutions/1/1/7/F}
+\end{align}
+From equation \eqref{eq:solutions/1/1/7/F} we could say that each subfield of the field of complex number contains every rational number
+\begin{center}
+    Hence Proved
+\end{center}
