@@ -1,0 +1,84 @@
+A matrix is in row echelon  form if it follows the following conditions
+
+1. All nonzero rows are above any rows of all zeros.
+
+2. Each leading entry (i.e. left most nonzero entry) of a row is in a column to the right of the leading entry of the row above it.
+
+3. All entries in a column below a leading entry are zero
+{Row Reduced Echelon Form}
+A matrix is in row reduced echelon form if it follows the following conditions
+
+1. The matrix should be row echelon form 
+
+2. The leading entry in each nonzero row is 1.
+
+3. Each leading 1 is the only nonzero entry in its column.
+{Proof}
+
+Given ,
+\begin{align}
+    \vec{A}=\myvec{a & b \\c & d}\label{eq:solutions/1/2/6/given}
+\end{align}
+
+\textbf{Condition 1 :} Matrix $\vec{A}$ should be in row-reduced echelon form 
+
+\textbf{Condition 2 :}  $a+b+c+d=0$ where a,b,c and d are the elements of the matrix $\vec{A}$
+
+Reducing the matrix $\vec{A}$ from equation \eqref{eq:solutions/1/2/6/given}
+\begin{align}
+\myvec{a&b\\c&d}&\xleftrightarrow{R_1=\frac{1}{a}R_1}\myvec{1&\frac{b}{a}\\c&d}\\
+&\xleftrightarrow{R_2 = R_2-cR_1}\myvec{1&\frac{b}{a}\\0&\frac{ad-bc}{a}}\label{eq:solutions/1/2/6/x}\\
+&\xleftrightarrow{R_2 = \frac{a}{ad-bc}R_2}\myvec{1&\frac{b}{a}\\0&1}\\
+&\xleftrightarrow{R_1 = R_1-\frac{b}{a}R_2}\myvec{1&0\\0&1}\label{eq:solutions/1/2/6/change}
+\end{align}
+
+\textbf{Case 1}: Matrix $\vec{A}$ of Rank 2
+
+From the equation \eqref{eq:solutions/1/2/6/x},for the matrix to be in row reduced echelon form,
+\begin{align}
+    b&=0\notag\\
+    a&\not=0\notag\\
+    d&=1\notag\\
+    \vec{A}&=\myvec{1 & 0 \\ 0 & 1}\label{eq:solutions/1/2/6/r2}
+\end{align}
+For the condition 2 to get satisfied,
+\begin{align}
+    a+0+c+1&=0\\
+    \implies a&=-(c+1)\\
+    \implies c&\not=-1
+\end{align}
+
+Both the condition gets satisfied and so exactly one matrix $\vec{A}$ can be formed of Rank 2 with given conditions 
+
+\textbf{Case 2}: Matrix $\vec{A}$ of Rank 1
+
+From the equation \eqref{eq:solutions/1/2/6/x},for the matrix to be in row reduced echelon form,
+\begin{align}
+    a&\not=0\notag\\
+    d&=0\notag\\
+    c&=0\notag
+\end{align}
+For the condition 2 to get satisfied, 
+\begin{align}
+    a+b+0+0&=0\\
+    \implies b&=-a
+\end{align}
+\begin{align}
+    \vec{A}=\myvec{1 & -1\\ 0 & 0}\label{eq:solutions/1/2/6/r1}
+\end{align}
+
+Both the condition gets satisfied and so exactly one matrix $\vec{A}$ can be formed of Rank 1 with given conditions 
+
+\textbf{Case 3}: Matrix $\vec{A}$ of Rank 0
+
+From equation \eqref{eq:solutions/1/2/6/given},for the matrix to be in row reduced echelon form,
+\begin{align}
+    a&=0\notag\\
+    b&=0\notag\\
+    c&=0\notag\\
+    d&=0\notag\\
+    \vec{A}&=\myvec{0 & 0\\ 0 & 0}\label{eq:solutions/1/2/6/r0}
+\end{align}
+Both the condition gets satisfied and so exactly one matrix $\vec{A}$ can be formed of Rank 0 with given conditions 
+
+Therefore matrix $\vec{A}$ shown in equation \eqref{eq:solutions/1/2/6/r2},\eqref{eq:solutions/1/2/6/r1} and \eqref{eq:solutions/1/2/6/r0} are the exactly three such matrices that can be formed with given conditions.
