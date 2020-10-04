@@ -1,0 +1,50 @@
+\textbf{Step 1}: Performing scaling operation to matrix $\vec{A}$ as $R_1\leftarrow \frac{1}{i}R_1$ by scaling matrix $D_1$ given as,
+\begin{align}
+\vec{D_1} = \myvec{\frac{1}{i}&0&0\\0&1&0\\0&0&1}\\
+\vec{D_1A} = \myvec{\frac{1}{i}&0&0\\0&1&0\\0&0&1}\myvec{i&-(1+i)&0\\1&-2&1\\1&2i&-1}\\
+\implies\vec{D_1A} = \myvec{1&-1+i&0\\1&-2&1\\1&2i&-1}\label{eq:solutions/1/2/4/1}
+\end{align}
+\textbf{Step 2}: Performing $R_2 \leftarrow R_2-R_1$ and $R_3 \leftarrow R_3-R_1$ given by elementary matrix $\vec{E_{31}E_{21}}$ on equation \eqref{eq:solutions/1/2/4/1},
+\begin{align}
+\vec{E_{31}E_{21}} = \myvec{1&0&0\\-1&1&0\\-1&0&1}\\
+\vec{E_{31}E_{21}D_1A} = \myvec{1&0&0\\-1&1&0\\-1&0&1}\myvec{1&-1+i&0\\1&-2&1\\1&2i&-1}\\
+\implies\vec{A_1} = \vec{E_{31}E_{21}D_1A} = \myvec{1&-1+i&0\\0&-1-i&1\\0&1+i&-1}\label{eq:solutions/1/2/4/2}
+\end{align}
+\textbf{Step 3}: Performing $R_2\leftarrow \frac{-1}{1+i}R_2$ given by $\vec{D_2}$ on equation \eqref{eq:solutions/1/2/4/2},
+\begin{align}
+\vec{D_2} = \myvec{1&0&0\\0&\frac{1}{2}(-1+i)&0\\0&0&1}\\
+\vec{D_2A_1} = \myvec{1&0&0\\0&\frac{1}{2}(-1+i)&0\\0&0&1}\myvec{1&-1+i&0\\0&-1-i&1\\0&1+i&-1}\\
+\implies \vec{A_2}=\vec{D_2A_1} = \myvec{1&-1+i&0\\0&1&\frac{1}{2}(-1+i)\\0&1+i&-1}\label{eq:solutions/1/2/4/3}
+\end{align}
+\textbf{Step 4}: Performing $R_3\leftarrow R_3-(1+i)R_2$ given by $\vec{E_{32}}$ on equation \eqref{eq:solutions/1/2/4/3},
+\begin{align}
+\vec{E_{32}} = \myvec{1&0&0\\0&1&0\\0&-(1+i)&1}
+\end{align}
+\begin{align}
+\vec{E_{32}A_2} = \myvec{1&0&0\\0&1&0\\0&-1-i&1}\myvec{1&-1+i&0\\0&1&\frac{-1+i}{2}\\0&1+i&-1}
+\end{align}
+\begin{align}
+\implies \vec{A_3}=\vec{E_{32}A_2} = \myvec{1&-1+i&0\\0&1&\frac{-1+i}{2}\\0&0&1}\label{eq:solutions/1/2/4/4}
+\end{align}
+\textbf{Step 5}: Performing $R_1\leftarrow R_1-(-1+i)R_2$ given by $\vec{E_{12}}$ on equation \eqref{eq:solutions/1/2/4/4},
+\begin{align}
+\vec{E_{12}} = \myvec{1&1-i&0\\0&1&0\\0&0&1}
+\end{align}
+\begin{align}
+\vec{E_{12}A_3} = \myvec{1&1-i&0\\0&1&0\\0&0&1}\myvec{1&-1+i&0\\0&1&\frac{-1+i}{2}\\0&0&1}
+\end{align}
+\begin{align}
+\implies \vec{A_4} = \vec{E_{12}A_3} = \myvec{1&0&i\\0&1&\frac{-1+i}{2}\\0&0&1}\label{eq:solutions/1/2/4/5}
+\end{align}
+\textbf{Step 6}: Performing $R_1\leftarrow R_1-iR_3$ and $R_2\leftarrow R_2-\frac{-1+i}{2}R_3$ given by $\vec{E_{13}E_{23}}$ on equation \eqref{eq:solutions/1/2/4/5},
+\begin{align}
+\vec{E_{13}E_{23}} = \myvec{1&0&-i\\0&1&-\brak{\frac{-1+i}{2}}\\0&0&1}
+\end{align}
+\begin{align}
+\vec{E_{13}E_{23}A_4} = \myvec{1&0&-i\\0&1&-\brak{\frac{-1+i}{2}}\\0&0&1}\myvec{1&0&i\\0&1&\frac{-1+i}{2}\\0&0&1}\\
+\implies \vec{A_5} = \vec{E_{13}E_{23}A_4} = \myvec{1&0&0\\0&1&0\\0&0&1} 
+\end{align}
+$\therefore$ Row-reduced matrix of $\vec{A}$ given by equation \eqref{eq:solutions/1/2/4/A} is,
+\begin{align}
+\vec{A} = \myvec{i&-1-i&0\\1&-2&1\\1&2i&-1}\xleftrightarrow[]{RREF}\myvec{1&0&0\\0&1&0\\0&0&1} = \vec{I}
+\end{align}
