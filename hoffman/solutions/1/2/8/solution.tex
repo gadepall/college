@@ -1,0 +1,105 @@
+{Solution 1}
+If every entry of $\vec{A}$ is 0 then the equation $\vec{AX}$ = 0 becomes,
+\begin{align}
+\myvec{0&0\\0&0}\myvec{x_1\\x_2} &=0\\
+\implies0.x_1+0.x_2 &= 0 \qquad{\text{$\forall x_1,x_2 \in F$}}
+\end{align}
+Hence proved, every pair $x_1$ and $x_2$ is a solution for the equation $\vec{AX}$ = 0.
+{Solution 2}
+\textbf{Case 1: }Let $a=0$. Since $ad-bc\not=0$. As $bc\not=0$ therefore $b\not=0$ and $c\not=0$. Hence, we can perform row reduction on the augmented matrix of equation $\vec{AX}$=0 as follows,
+\begin{align}
+\myvec{0&1\\1&0}\myvec{0&b&0\\c&d&0} &= \myvec{\frac{1}{c}&0\\0&1}\myvec{c&d&0\\0&b&0}\\
+&=\myvec{1&0\\0&\frac{1}{b}}\myvec{1&\frac{d}{c}&0\\0&b&0}\\
+&=\myvec{1&-\frac{d}{c}\\0&1}\myvec{1&\frac{d}{c}&0\\0&1&0}\\
+&=\myvec{1&0&0\\0&1&0}\label{eq:solutions/1/2/8/eqI1}
+\end{align}
+\begin{comment}
+
+\textbf{Case 2: }Let $a\not=0$. Hence, we can perform row reduction on the augmented matrix of equation $\vec{AX}$=0 as follows,
+\begin{align}
+\myvec{a&b&0\\c&d&0}&\xleftrightarrow{R_1 = \frac{1}{a}R_1}\myvec{1&\frac{b}{a}&0\\c&d&0}\\
+&\xleftrightarrow{R_2 = R_2-cR_1}\myvec{1&\frac{b}{a}&0\\0&\frac{ad-bc}{a}&0}\\
+&\xleftrightarrow{R_2=\frac{a}{ad-bc}R_2}\myvec{1&\frac{b}{a}&0\\0&1&0}\\
+&\xleftrightarrow{R_1 = R_1-\frac{b}{a}R_2}\myvec{1&0&0\\0&1&0}\label{eq:solutions/1/2/8/eqI2}
+\end{align}
+\textbf{Case 3: }Let $a,b,c,d \not= 0$. Hence, we can perform row reduction on the augmented matrix of equation $\vec{AX}$=0 as follows,
+\begin{align}
+\myvec{a&b&0\\c&d&0}&\xleftrightarrow{R_1 = \frac{1}{a}R_1}\myvec{1&\frac{b}{a}&0\\c&d&0}\\
+&\xleftrightarrow{R_2 = R_2-cR_1}\myvec{1&\frac{b}{a}&0\\0&\frac{ad-bc}{a}&0}\\
+&\xleftrightarrow{R_2=\frac{a}{ad-bc}R_2}\myvec{1&\frac{b}{a}&0\\0&1&0}\\
+&\xleftrightarrow{R_1 = R_1-\frac{b}{a}R_2}\myvec{1&0&0\\0&1&0}\label{eq:solutions/1/2/8/eqI3}
+\end{align}
+
+\end{comment}
+\textbf{Case 2: }Let $a,b,c,d\not=0$. Considering the following case,
+\begin{align}
+\vec{A}\vec{X} = \vec{u}\\
+\implies\myvec{a&b\\c&d}\myvec{x_1\\x_2} &=\myvec{u_1\\u_2}\label{eq:solutions/1/2/8/eqComp}\\
+\intertext{Row Reducing the augmented matrix of \eqref{eq:solutions/1/2/8/eqComp} we get,}
+\myvec{\frac{1}{a}&0\\0&1}\myvec{a&b&u_1\\c&d&u_2}&=\myvec{1&0\\-c&1}\myvec{1&\frac{b}{a}&\frac{u_1}{a}\\c&d&u_2}\\
+&=\myvec{1&0\\0&\frac{a}{ad-bc}}\myvec{1&\frac{b}{a}&\frac{u_1}{a}\\0&\frac{ad-bc}{a}&\frac{au_2-cu_1}{a}}\\
+&=\myvec{1&-\frac{b}{a}\\0&1}\myvec{1&\frac{b}{a}&\frac{u_1}{a}\\0&1&\frac{au_2-cu_1}{ad-bc}}\\
+&=\myvec{1&0&\frac{du_1-bu_2}{ad-bc}\\0&1&\frac{au_2-cu_1}{ad-bc}}\label{eq:solutions/1/2/8/eqsolve}\\
+\intertext{From \eqref{eq:solutions/1/2/8/eqsolve} we get,}
+x_1 &= \frac{du_1-bu_2}{ad-bc}\label{eq:solutions/1/2/8/eqU1}\\
+x_2 &= \frac{au_2-cu_1}{ad-bc}\label{eq:solutions/1/2/8/eqU2}\\
+\intertext{Since $u_1 = 0$ and $u_2 = 0$ then from \eqref{eq:solutions/1/2/8/eqU1} and \eqref{eq:solutions/1/2/8/eqU2},}
+x_1 & = 0\\
+x_2 & = 0\\
+\intertext{Hence we get,}
+\vec{x} = \myvec{x_1\\x_2} &= \myvec{0\\0}\label{eq:solutions/1/2/8/eqI4}
+\end{align}
+In \eqref{eq:solutions/1/2/8/eqI1} and \eqref{eq:solutions/1/2/8/eqI4}, we can see that $\vec{A}\vec{X}=0$ has only one trivial solution i.e $x_1=x_2=0$ in all cases. Hence proved, the equation $\vec{AX}$=0 has only one trivial solution $x_1=x_2=0$
+{Solution 3}
+\textbf{Case 1: }Let, $a\not=0$ for $\vec{A}$. Given $ad-bc=0$, we can perform row reduction on augmented matrix of equation $\vec{AX}=0$ as follows,
+\begin{align}
+\myvec{\frac{1}{a}&0\\0&1}\myvec{a&b&0\\c&d&0}&=\myvec{1&0\\-c&1}\myvec{1&\frac{b}{a}&0\\c&d&0}\\
+&=\myvec{1&\frac{b}{a}&0\\0&0&0}\quad{\text{[$\because ad-bc=0$]}}\label{eq:solutions/1/2/8/eqL3}
+\end{align}
+Hence from \eqref{eq:solutions/1/2/8/eqL3}, $\vec{AX}$ = 0 if and only if 
+\begin{align}
+x_1 &= -\frac{b}{a}x_2 \qquad{\text{[$a\not=0$]}}
+\intertext{Letting $x_1^0=-\frac{b}{a}$ and $x_2^0 = 1$ we get for $y=1$,}
+x_1 &= yx_1^0\\
+x_2 &= yx_2^0
+\end{align}
+which is a solution of the equation $\vec{AX}=0$. \\
+\textbf{Case 2: }Let, $b\not=0$ for $\vec{A}$. Given $ad-bc=0$, at first we multiply by elementary matrix to change the columns and the we can perform row reduction on augmented matrix of equation $\vec{AX}=0$ as follows,
+\begin{align}
+\myvec{a&b&0\\c&d&0}\myvec{0&1&0\\1&0&0\\0&0&1}&=\myvec{b&a&0\\d&c&0}\label{eq:solutions/1/2/8/eqNow}
+\end{align}
+Hence using the result obtained from \eqref{eq:solutions/1/2/8/eqL3} we can conclude for \eqref{eq:solutions/1/2/8/eqNow}, $\vec{AX}$ = 0 if and only if 
+\begin{align}
+x_2 &= -\frac{a}{b}x_1 \qquad{\text{[$b\not=0$]}}
+\intertext{Letting $x_2^0=-\frac{a}{b}$ and $x_1^0 = 1$ we get for $y=1$,}
+x_1 &= yx_1^0\\
+x_2 &= yx_2^0
+\end{align}
+which is a solution of the equation $\vec{AX}=0$. \\
+\textbf{Case 3: }Let, $c\not=0$ for $\vec{A}$. Given $ad-bc=0$, we can perform row reduction on augmented matrix of equation $\vec{AX}=0$ as follows,
+\begin{align}
+\myvec{0&1\\1&0}\myvec{a&b&0\\c&d&0}&=\myvec{\frac{1}{c}&0\\0&1}\myvec{c&d&0\\a&b&0}\\
+&=\myvec{1&0\\-a&1}\myvec{1&\frac{d}{c}&0\\a&b&0}\\
+&=\myvec{1&\frac{d}{c}&0\\0&0&0}\quad{\text{[$\because ad-bc=0$]}}\label{eq:solutions/1/2/8/eqL4}
+\end{align}
+Hence from \eqref{eq:solutions/1/2/8/eqL4}, $\vec{AX}$ = 0 if and only if 
+\begin{align}
+x_1 &= -\frac{d}{c}x_2 \qquad{\text{[$a\not=0$]}}
+\intertext{Letting $x_1^0=-\frac{d}{c}$ and $x_2^0 = 1$ we get for $y=1$,}
+x_1 &= yx_1^0\\
+x_2 &= yx_2^0
+\end{align}
+which is a solution of the equation $\vec{AX}=0$. \\
+\textbf{Case 4: }Let, $d\not=0$ for $\vec{A}$. Given $ad-bc=0$, at first we multiply by elementary matrix to change the columns and then we can perform row reduction on augmented matrix of equation $\vec{AX}=0$ as follows,
+\begin{align}
+\myvec{a&b&0\\c&d&0}\myvec{0&1&0\\1&0&0\\0&0&1}&=\myvec{0&1\\1&0}\myvec{b&a&0\\d&c&0}\\
+&=\myvec{d&c&0\\b&a&0}\label{eq:solutions/1/2/8/eqNow2}
+\end{align}
+Hence using the result from \eqref{eq:solutions/1/2/8/eqL4} we can conclude for \eqref{eq:solutions/1/2/8/eqNow2}, $\vec{AX}$ = 0 if and only if 
+\begin{align}
+x_2 &= -\frac{c}{d}x_1 \qquad{\text{[$a\not=0$]}}
+\intertext{Letting $x_2^0=-\frac{c}{d}$ and $x_1^0 = 1$ we get for $y=1$,}
+x_1 &= yx_1^0\\
+x_2 &= yx_2^0
+\end{align}
+which is a solution of the equation $\vec{AX}=0$. 
