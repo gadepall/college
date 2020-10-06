@@ -1,0 +1,65 @@
+Given , 
+\begin{align}
+    \vec{A}\vec{X}&=\vec{Y}\label{eq:solutions/1/3/5/assume}\\
+    \myvec{3 & -6 & 2 & -1\\-2 & 4 & 1 & 3\\0 & 0 & 1& 1\\1 & -2 & 1 & 0}\vec{X}&=\myvec{y_1 \\y_2\\y_3\\y_4}\label{eq:solutions/1/3/5/given}
+\end{align}
+Now we try to find the matrix $\vec{B}$ such that $\vec{B}\vec{A}$ gives the row echelon form of matrix $\vec{A}$
+Here,$\vec{B}$ is given by , 
+\begin{align}
+    \vec{B}&=\myvec{1&0&0&0\\\frac{2}{3}&1&0&0\\-\frac{2}{7}&-\frac{3}{7}&1&0\\0&\frac{1}{2}&-\frac{3}{2}&1}
+\end{align}
+\begin{align}
+    \vec{B}\vec{A}&=\myvec{3 & -6 & 2 & -1\\0 & 0 & \frac{7}{3} & \frac{7}{3}\\0 & 0 & 0& 0\\0 & 0 & 0 & 0}\label{eq:solutions/1/3/5/ref3}
+\end{align}
+Therefore, rank of matrix $\vec{A}$ is 2
+Now $\vec{B}$ is expressed in terms of two block matrices
+\begin{align}
+    \vec{B}&=\myvec{\vec{B_1}\\\vec{B_2}}
+\end{align}
+\begin{align}
+    \vec{B_1}&=\myvec{1&0&0&0\\\frac{2}{3}&1&0&0}\\
+    \vec{B_2}&=\myvec{-\frac{2}{7}&-\frac{3}{7}&1&0\\0&\frac{1}{2}&-\frac{3}{2}&1}
+\end{align}
+Multiplying matrix $\vec{B}$ to both sides on the equation \eqref{eq:solutions/1/3/5/assume}, we get , 
+\begin{align}
+    \myvec{\vec{B_1}\\\vec{B_2}}\vec{A}\vec{X}&=\myvec{\vec{B_1}\\\vec{B_2}}\vec{Y}\label{eq:solutions/1/3/5/aug}
+\end{align}
+We know that , matrix $\vec{A}$ is of rank 2 
+The augumented matrix of \eqref{eq:solutions/1/3/5/aug} is given by 
+\begin{align}
+    \myvec{\vec{B_1}\vec{A} & \vrule & \vec{B_1}\vec{Y}\\
+    \vec{B_2}\vec{A} & \vrule & \vec{B_2}\vec{Y}}
+\end{align}
+\begin{align}
+    \vec{B_1}\vec{A}&=\myvec{3 & -6 & 2 & -1\\0 & 0 & \frac{7}{3} & \frac{7}{3}}\\
+    \vec{B_2}\vec{A}&=\myvec{0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0}
+\end{align}
+Since $\vec{B_2}\vec{A}$ is zero matrix and for the given system $\vec{A}\vec{X}=\vec{Y}$ to have a solution,
+\begin{align}
+\vec{B_2}\vec{Y}&=0\label{eq:solutions/1/3/5/b1}\\
+\myvec{-\frac{2}{7} & -\frac{3}{7} & 1 & 0 \\ 0 & \frac{1}{2} & -\frac{3}{2} & 1}\myvec{y_1\\y_2\\y_3\\y_4}&=0\label{eq:solutions/1/3/5/b2y}
+\end{align}
+The augumented matrix of \eqref{eq:solutions/1/3/5/b2y} is given by,
+\begin{align}
+    \myvec{-\frac{2}{7} & -\frac{3}{7} & 1 & 0 &\vrule & 0 \\ 0 & \frac{1}{2} & -\frac{3}{2} & 1 & \vrule & 0}
+\end{align}
+By row reduction technique,
+\begin{align}
+        &\xleftrightarrow{R_1=-\frac{7}{2}R_1}\myvec{1 & \frac{3}{2} &-\frac{7}{2}  & 0 &\vrule & 0 \\ 0 & \frac{1}{2} & -\frac{3}{2} & 1 & \vrule & 0}\\
+        &\xleftrightarrow{R_2=2R_2}\myvec{1 & \frac{3}{2} &-\frac{7}{2}  & 0 &\vrule & 0 \\ 0 & 1 & -3 & 2 & \vrule & 0}\\
+        &\xleftrightarrow{R_1=R_1-\frac{3}{2}R_2}\myvec{1 & 0 &1  & -3 &\vrule & 0 \\ 0 & 1 & -3 & 2 & \vrule & 0}
+\end{align}
+Equation \eqref{eq:solutions/1/3/5/b2y} can be modified as , 
+\begin{align}
+    \myvec{1 & 0 & 1 & -3 \\ 0 & 1 & -3 & 2}\myvec{y_1\\y_2\\y_3\\y_4}&=0
+\end{align}
+Here $y_3$ and $y_4$ are free variables
+
+If $y_3=a$ and $y_4=b$,then the solution to the system of equation $\vec{A}\vec{X}=\vec{Y}$ is given by,
+\begin{align}
+    \myvec{y_1\\y_2\\y_3\\y_4}&=a\myvec{-1\\3\\1\\0}+b\myvec{3\\-2\\0\\1}
+\end{align}
+One of the solution when $a=1$ and $b=2$  is given by , 
+\begin{align}
+    \myvec{y_1\\y_2\\y_3\\y_4}&=\myvec{-1\\3\\1\\0}+2\myvec{3\\-2\\0\\1}
+\end{align}

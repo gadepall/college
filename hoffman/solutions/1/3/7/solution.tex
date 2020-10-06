@@ -1,0 +1,22 @@
+Let $\vec{BX}=0$ be a system of linear equation with $n$ unknowns and $n$ equations as $\vec{B}$ is $n \times n$ matrix. Hence,
+\begin{align}
+\vec{BX}&=0 \label{eq:solutions/1/3/7/eqMain}\\
+\implies\vec{A(BX)} &= 0\\
+\implies\vec{(AB)X} &= 0\\
+\implies\vec{IX} &= 0 \quad{\text{[$\because \vec{AB} = \vec{I}$]}}\\
+\implies\vec{X} &= 0\label{eq:solutions/1/3/7/independent}
+\end{align}
+From \eqref{eq:solutions/1/3/7/independent} since $\vec{X}=0$ is the only solution of \eqref{eq:solutions/1/3/7/eqMain}, hence $rank(\vec{B}) = n$. Which implies all columns of $\vec{B}$ are linearly independent. Hence $\vec{B}$ is invertible. Therefore, every left inverse of $\vec{B}$ is also a right inverse of $\vec{B}$. Hence there exists a $n \times n$ matrix $\vec{C}$ such that,
+\begin{align}
+    \vec{BC} = \vec{CB} = \vec{I}\label{eq:solutions/1/3/7/eqi}
+\end{align}
+Again given that $\vec{AB}=\vec{I}$. Hence,
+\begin{align}
+\vec{AB} &= \vec{I}\\
+\implies\vec{ABC} &= \vec{C}\\
+\implies\vec{A(BC)} &= \vec{C}\\
+\implies\vec{A} &= \vec{C}\label{eq:solutions/1/3/7/eqVal} \qquad{\text{$[\because\vec{BC}=\vec{I}]$}}
+\intertext{Hence using \eqref{eq:solutions/1/3/7/eqVal} and \eqref{eq:solutions/1/3/7/eqi} we can write,}
+\vec{BA} &= \vec{I}
+\end{align}
+Hence Proved.

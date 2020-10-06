@@ -1,0 +1,78 @@
+The given system of linear equations can be written as,   
+\begin{align}
+    \vec{A}\vec{x} &= 0 \\
+    \implies\myvec{1&-1\\2&1}\vec{x} &= 0 \label{eq:solutions/1/1/2/ax=0}\\
+    \vec{B}\vec{x} &= 0 \\
+    \implies\myvec{3&1\\1&1}\vec{x} &= 0 \label{eq:solutions/1/1/2/bx=0}
+\end{align}
+Now we can obtain $\vec{B}$ from matrix $\vec{A}$ by performing elementary row operations given as, 
+\begin{align}
+    &\vec{B} = \vec{C}\vec{A} \label{eq:solutions/1/1/2/b=ca}\\
+    &\myvec{3&1\\1&1} = \vec{C}\myvec{1&-1\\2&1} \label{eq:solutions/1/1/2/eq:ca}
+\end{align}
+where $\vec{C}$ is product of elementary matrices given as, 
+\begin{multline}
+    \vec{C} = \brak{\vec{E_7}\vec{E_6}\vec{E_5}\vec{E_4}\vec{E_3}\vec{E_2}\vec{E_1}}\\
+    =\myvec{1&0\\\frac{1}{3}&1}\myvec{1&0\\0&\frac{2}{3}}\myvec{1&1\\0&1}\myvec{3&0\\0&1} \myvec{1&1\\0&1}\myvec{1&0\\0&\frac{1}{3}}\myvec{1&0\\-2&1}\\
+    =\myvec{\frac{1}{3}&\frac{4}{3} \\ \frac{-1}{3}&\frac{2}{3}}
+\end{multline}
+Now, performing elementary operations on the right side of $\vec{A}$ we obtain matrix $\vec{B}$ given as, 
+\begin{align}
+    &\vec{B} = \vec{A}\vec{P} \label{eq:solutions/1/1/2/b=ap}\\
+    &\myvec{3&1\\1&1} = \myvec{1&-1\\2&1}\vec{P}
+\end{align}
+where, $\vec{P}$ is product of elementary matrices given by, 
+\begin{multline}
+    \vec{P} = \brak{\vec{E_1}\vec{E_2}\vec{E_3}\vec{E_4}\vec{E_5}}\\
+    =\myvec{1&0\\-2&1}\myvec{\frac{1}{3}&0\\0&1}\myvec{1&2\\0&1}\myvec{2&0\\0&1}\myvec{1&0\\1&1} \\
+    = \myvec{\frac{4}{3}&\frac{2}{3}\\ \frac{-5}{3}&\frac{-1}{3}}
+\end{multline}
+Similarly, $\vec{A}$ can be obtained from matrix $\vec{B}$ from \eqref{eq:solutions/1/1/2/b=ca} as, 
+\begin{align}
+    &\vec{A} = \vec{C}^{-1}\vec{B}\label{eq:solutions/1/1/2/a=c-1b}\\
+    &\myvec{1&-1\\2&1} = \vec{C}^{-1}\myvec{3&1\\1&1} \label{eq:solutions/1/1/2/eq:c-1b}
+\end{align}
+Matrix $\vec{C}$ is product of elementary matrices and hence invertible and is given as,
+\begin{multline}
+    \vec{C}^{-1} = \brak{\vec{E_1}^{-1}\vec{E_2}^{-1}\vec{E_3}^{-1}\vec{E_4}^{-1}
+    \vec{E_5}^{-1}\vec{E_6}^{-1}\vec{E_7}^{-1}} \\
+    =\myvec{1&0\\2&1}\myvec{1&0\\0&3}\myvec{1&-1\\0&1}\myvec{\frac{1}{3}&0\\0&1}\\
+    \myvec{1&-1\\0&1}\myvec{1&0\\0&\frac{3}{2}}\myvec{1&0\\ \frac{-1}{3}&1}\\
+    =\myvec{1&-2\\ \frac{1}{2}&\frac{1}{2}}
+\end{multline}
+Matrix $\vec{A}$ can also be obtained from \eqref{eq:solutions/1/1/2/b=ap} given as, 
+\begin{align}
+    &\vec{A} = \vec{B}\vec{P}^{-1} \\
+    &\myvec{1&-1\\2&1} = \myvec{3&1\\1&1}\vec{P}^{-1}
+\end{align}
+where, 
+\begin{multline}
+    \vec{P}^{-1} = \brak{\vec{E_5}^{-1}\vec{E_4}^{-1}\vec{E_3}^{-1}\vec{E_2}^{-1}\vec{E_1}^{-1}} \\
+    = \myvec{1&0\\-1&1}\myvec{\frac{1}{2}&0\\0&1}\myvec{1&-2\\0&1}\myvec{3&0\\0&1}\myvec{1&0\\2&1} \\
+    =\myvec{\frac{-1}{2}&-1\\ \frac{5}{2}&2}
+\end{multline}
+
+Thus \eqref{eq:solutions/1/1/2/bx=0} can be obtained from \eqref{eq:solutions/1/1/2/ax=0} by multiplying it with matrix $\vec{C}$, and by inverse row operations \eqref{eq:solutions/1/1/2/ax=0} can be obtained back from \eqref{eq:solutions/1/1/2/bx=0} since $\vec{C}$ is product of elementary matrices and hence invertible. 
+
+Thus the two given homogeneous systems are row equivalent.
+
+Now writing equations in matrix-vector form as, 
+\begin{align}
+    3x_1 + x_2 &= \myvec{3&1}\vec{x} \\
+    \implies \myvec{3&1}\vec{x} &= \frac{1}{3}\myvec{1&-1}\vec{x} + \frac{4}{3}\myvec{2&1}\vec{x} \label{eq:solutions/1/1/2/b1}\\
+    x_1 + x_2 &= \myvec{1&1}\vec{x} \\
+    \implies \myvec{1&1}\vec{x} &= \frac{-1}{3}\myvec{1&-1}\vec{x} + 
+    \frac{2}{3}\myvec{2&1}\vec{x} \label{eq:solutions/1/1/2/b2}
+\end{align}
+\eqref{eq:solutions/1/1/2/b1}, \eqref{eq:solutions/1/1/2/b2} is same as multiplying $\vec{C}$ with $\vec{A}$ as it takes the linear combination of each rows of matrix $\vec{A}$ i.e, \eqref{eq:solutions/1/1/2/eq:ca}
+
+\begin{align}
+    x_1 - x_2 &= \myvec{1&-1}\vec{x} \\
+    \implies\myvec{1&-1}\vec{x} &= (1)\myvec{3&1}\vec{x} + (-2)\myvec{1&1}\vec{x} \label{eq:solutions/1/1/2/a1}\\
+    2x_1 + x_2 &= \myvec{2&1}\vec{x} \\
+    \implies \myvec{2&1}\vec{x} &= \frac{1}{2}\myvec{3&1}\vec{x} + \frac{1}{2}\myvec{1&1}\vec{x} \label{eq:solutions/1/1/2/a2}
+\end{align}
+\eqref{eq:solutions/1/1/2/a1}, \eqref{eq:solutions/1/1/2/a2} is same as multiplying $\vec{C}^{-1}$ with $\vec{B}$ as it takes the linear combination of each rows of matrix $\vec{B}$ i.e, \eqref{eq:solutions/1/1/2/eq:c-1b}
+
+Thus each equation in each system can be expressed as a linear combination of the equations in the other system when they are equivalent. 
+
