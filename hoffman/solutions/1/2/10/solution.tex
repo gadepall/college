@@ -1,0 +1,114 @@
+
+ Since $\vec{R}$ and $\vec{R}^{'}$ are 2 $\times$ 3 row-reduced echelon matrices they can be of following three types:-
+\begin{enumerate}
+\item Suppose matrix $\vec{R}$ has one non-zero row then $\vec{R}\vec{X}$=0 will have two 
+free variables.Since $\vec{R}^{'}\vec{X}$=0 will have the exact same solution as 
+$\vec{R}\vec{X}=0, \vec{R}^{'} \vec{X}$=0 
+will also have two free variables. Thus 
+$\vec{R}^{'}$ have one non zero row.
+Now let's consider a matrix $\vec{A}$ with the first 
+row as the non-zero row $\vec{R}$ and second row as the second row of 
+$\vec{R}^{'}$.
+\begin{align}
+\vec{R}=\myvec{1&a&b\\0&0&0}\\
+\vec{R}^{'}=\myvec{1&c&d\\0&0&0}\\
+  \end{align}
+  Let $\vec{X}$ satisfy
+  \begin{align}
+  \vec{R}\vec{X}=0\label{eq:solutions/1/2/10/b}\\
+  \myvec{1 & \vec{a}^T}\myvec{x \\ \vec{y}} = 0\\
+  x+\vec{a}^T\vec{y}=0\label{eq:solutions/1/2/10/abcdef}
+  \end{align}
+  where 
+  \begin{align}
+  \vec{a}=\myvec{a \\ b}
+  \end{align}
+  \begin{align}
+  \vec{R}^{'}\vec{X}=0\label{eq:solutions/1/2/10/c}\\
+   \myvec{1 & \vec{b}^T}\myvec{x \\ \vec{y}} = 0\\
+   x+\vec{b}^T\vec{y}=0\label{eq:solutions/1/2/10/abcde}
+  \end{align}
+  where 
+  \begin{align}
+  \vec{b}=\myvec{c \\ d}
+  \end{align}
+  Subtracting \eqref{eq:solutions/1/2/10/abcde} from \eqref{eq:solutions/1/2/10/abcdef},
+  \begin{align}
+  x+\vec{a}^T\vec{y}-x-\vec{b}^T\vec{y}=0\\
+  (\vec{a}^T-\vec{b}^T)\vec{y}=0\label{eq:solutions/1/2/10/part1}
+  \end{align}
+  Since $\vec{y}$ is a $2 \times 1 $ vector,
+  \begin{align}
+ \implies y_1 \vec{a}-y_2\vec{b} = 0
+ \end{align}
+ Which can be written as,
+ \begin{align}
+ \vec{a}=k\vec{b}\label{eq:solutions/1/2/10/ak}
+\end{align}
+where,k=$\frac{\vec{y}_2}{\vec{y}_1}$ assuming $\vec{y}_1 \not$=0.Now,Substituting \eqref{eq:solutions/1/2/10/ak} in \eqref{eq:solutions/1/2/10/abcdef}
+\begin{align}
+x+k\vec{b}^T\vec{y}=0\label{eq:solutions/1/2/10/kb}
+\end{align}
+Comparing \eqref{eq:solutions/1/2/10/kb} with \eqref{eq:solutions/1/2/10/abcde}
+\begin{align}
+x+\vec{b}^T\vec{y}=0\\
+x+k\vec{b}^T\vec{y}=0
+\end{align}
+Hence k=1 which means $y_1$=$y_2$ and from this we can say that $\vec{a}$=$\vec{b}$.If in the above case we take $y_1$=0 then
+\begin{align}
+y_1\vec{a}-y_2\vec{b}=0\\
+y_2\vec{b}=0\label{eq:solutions/1/2/10/eqnb}
+\end{align}
+Hence for the \eqref{eq:solutions/1/2/10/eqnb} to be always true $\vec{b}$ should be zero.Now from \eqref{eq:solutions/1/2/10/ak} we will see that  $\vec{a}$ will also be 0.
+ Hence, $\vec{R}$=$\vec{R}^{\prime}$
+ \item Let $\vec{R}$ and $\vec{R}^{'}$ have all rows as non zero.
+\begin{align}\vec{R}=\myvec{1&0&b\\0&1&c} \\\vec{R}^{'}=\myvec{1&0&e\\0&1&f}\end{align}
+ Let $\vec{X}$ satisfy
+  \begin{align}
+  \vec{R}\vec{X}=0\label{eq:solutions/1/2/10/e}\\
+  \vec{X}^{T}\vec{R}^{T}=0\label{eq:solutions/1/2/10/fi}
+  \end{align}
+  Here,
+  \begin{align}
+  \vec{R}=\myvec{\vec{I}&\vec{a}}\label{eq:solutions/1/2/10/f}\\
+  \vec{a}=\myvec{b \\c}\\
+  \vec{R}^{T}=\myvec{\vec{I}\\\vec{a}^T}
+  \end{align}
+  Let,
+  \begin{align}
+  \vec{X}^T=\myvec{\vec{y}^T&z}\label{eq:solutions/1/2/10/g}
+  \end{align}
+  where z is a scalar constant. Now,substituting \eqref{eq:solutions/1/2/10/g} and \eqref{eq:solutions/1/2/10/f} in \eqref{eq:solutions/1/2/10/fi}
+  \begin{align}
+  \myvec{\vec{y}^T&z}\myvec{\vec{I}\\\vec{a}^T}=0\\
+  \vec{y}^T+z\vec{a}^T=0\label{eq:solutions/1/2/10/49}
+  \end{align}
+  Now for,
+  \begin{align}
+  \vec{R}^{'}\vec{X}=0\label{eq:solutions/1/2/10/ee}\\
+  \vec{X}^{T}{\vec{R}^{'}}^{T}=0\label{eq:solutions/1/2/10/fii}
+  \end{align}
+  Here,
+  \begin{align}
+  \vec{R}^{'}=\myvec{\vec{I}&\vec{b}}\label{eq:solutions/1/2/10/ff}\\
+  \vec{b}=\myvec{e\\f}
+  \end{align}
+  Let,
+  \begin{align}
+  \vec{X}^T=\myvec{\vec{y}^T&z}\label{eq:solutions/1/2/10/gg}
+  \end{align}
+  where z is a scalar constant.Now,substituting \eqref{eq:solutions/1/2/10/gg} and \eqref{eq:solutions/1/2/10/ff} in \eqref{eq:solutions/1/2/10/fii}
+  \begin{align}
+    \myvec{\vec{y}^T&z}\myvec{\vec{I}\\\vec{b}^T}=0\\
+  \vec{y}^T+z\vec{b}^T=0\label{eq:solutions/1/2/10/50}
+  \end{align}
+  Subtracting \eqref{eq:solutions/1/2/10/50} from \eqref{eq:solutions/1/2/10/49} 
+  \begin{align}
+    \vec{y}^T+z\vec{a}^T-\vec{y}^T-z\vec{b}^T=0\\
+    (\vec{a}^T-\vec{b}^T)z=0\label{eq:solutions/1/2/10/part2}\\
+    \vec{a}^T=\vec{b}^T
+  \end{align}
+  \item Suppose matrix $\vec{R}$ have all the rows as zero then $\vec{R}\vec{X}$=0 will be satisfied for all values of $\vec{X}$. We know that $\vec{R}^{'}\vec{X}$=0 will have the exact same solution as 
+ $\vec{R}\vec{X}$=0 then we can say that for all values of $\vec{X}$=0 equation $\vec{R}^{'}\vec{X}$=0 will be satisfied.Hence, $\vec{R}^{'}$=$\vec{R}$=0.
+
+\end{enumerate}

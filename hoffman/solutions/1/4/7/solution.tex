@@ -1,0 +1,21 @@
+\begin{enumerate}
+\item Given $\vec{A}$ is an invertible matrix and $\vec{A}\vec{B}=0$ then,
+\begin{align}
+    \vec{A}\vec{B}&=0\\
+\implies \vec{A}^{-1}(\vec{A}\vec{B})&=0\\
+\implies (\vec{A}^{-1}\vec{A})\vec{B}&=0\\
+\implies \vec{I}\vec{B}&=0\quad{\text{[$\because \vec{A}^{-1}\vec{A} = \vec{I}$]}}\\
+\implies \vec{B}&=0 \label{eq:solutions/1/4/7/eq:eq1}
+\end{align}
+   \item If $\vec{A}$ is not invertible, then there exists an $n \times n$ matrix $\vec{B}$ such that $\vec{A}\vec{B}=0$ but $\vec{B} \not= 0$.
+
+Since $\vec{A}$ is not invertible, $\vec{AX}=0$ must have a non-trivial solution. Let the non-trivial solution be,
+\begin{align}
+    \vec{y} = \myvec{y_1\\y_2\\ \vdots \\y_n}
+\end{align}
+Let $\vec{B}$ which is an $n \times n$ matrix have all its columns as $\vec{y}$.
+\begin{align}
+    \vec{B} = \myvec{\vec{y}&\vec{y} &\cdots &\vec{y}} \label{eq:solutions/1/4/7/eq:eq2}
+\end{align}
+From equation \eqref{eq:solutions/1/4/7/eq:eq2}, we can say that $\vec{B} \not= 0$ but $\vec{AB}=0$
+\end{enumerate}

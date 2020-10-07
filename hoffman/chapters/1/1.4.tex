@@ -1,0 +1,19 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+%
+\item Let $\vec{A}$ be an $n \times n$ (square) matrix, Prove the following two statements:
+ \begin{enumerate}
+   \item If $\vec{A}$ is invertible and $\vec{A}\vec{B}=0$ for some $n \times n$ matrix $\vec{B}$, then $\vec{B}=0$.
+   \item If $\vec{A}$ is not invertible, then there exists an $n \times n$ matrix $\vec{B}$ such that $\vec{A}\vec{B}=0$ but $\vec{B} \not= 0$.
+%   \item If $\vec{A}$ is invertible and $\vec{A}\vec{B}=0$ for some $n \times n$ matrix $\vec{B}$, then $\vec{B}=0$.
+ \end{enumerate}
+
+%
+\solution
+\input{./solutions/1/4/7/solution.tex}
+\end{enumerate}
+
+
