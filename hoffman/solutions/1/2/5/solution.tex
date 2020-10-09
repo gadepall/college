@@ -1,0 +1,15 @@
+ Call the first matrix $\vec{A}$ and the second matrix $\vec{B}$.
+ 
+  \begin{align}
+     \vec{A}^{T}=\myvec{2&a&b\\0&-1&c\\0&0&3}
+ \end{align}
+ $\vec{A}^{T}$ is a upper triangular matrix with non-zero diagonal. Hence it has full rank = 3.
+  \begin{align}
+     \vec{B}^{T}=\myvec{1&-2&1\\1&0&3\\2&-1&5}
+     \xleftrightarrow[R_3\rightarrow R_3-2R_1]{R_2\rightarrow R_2-R_1}\myvec{1&-2&1\\0&2&2\\0&3&3}\\
+     \xleftrightarrow[R_2\leftarrow R_2/2]{R_3\leftarrow R_3/3}
+     \myvec{1&-2&1\\0&1&1\\0&1&1}\\
+     \xleftrightarrow{R_3\leftarrow R_3-R_2} \myvec{1&-2&1\\0&1&1\\0&0&0}
+ \end{align}
+   $\vec{B}^{T}$ is a upper triangular matrix with zero diagonal. Hence it doesn't have  full rank.
+   Therefore both matrices  have different rank , so it cannot be row equivalent.  
