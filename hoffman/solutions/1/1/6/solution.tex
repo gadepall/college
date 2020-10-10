@@ -1,0 +1,67 @@
+Let the two systems of homogenous equations be 
+\begin{align}
+   \vec{A}\vec{x}=\vec{0}\\
+ \vec{B}\vec{y}=\vec{0}
+\end{align}
+We can write
+\begin{align}
+  \vec{C}\vec{A}\vec{x}=\vec{0}\label{eq:solutions/1/1/6/1}\\
+ \vec{D}\vec{B}\vec{y}=\vec{0}\label{eq:solutions/1/1/6/2}
+\end{align}
+where $\vec{C}$ and $\vec{D}$ are product of elementary matrices that reduce $\vec{A}$ and $\vec{B}$ into their reduced row echelon forms $\vec{R_1}$ and $\vec{R_2}$\\
+\eqref{eq:solutions/1/1/6/1} and \eqref{eq:solutions/1/1/6/2} imply
+\begin{align}
+    \vec{R_1}\vec{x}=0\\
+     \vec{R_2}\vec{y}=0
+\end{align}
+Given that they have same solution, we can write
+\begin{align}
+     \vec{R_1}\vec{x}=0\label{eq:solutions/1/1/6/3}\\
+     \vec{R_2}\vec{x}=0\label{eq:solutions/1/1/6/4}\\
+     \implies (\vec{R_1}-\vec{R_2})\vec{x}=0\label{eq:solutions/1/1/6/5}
+\end{align}
+Note that for a solution to exist, $\vec{R_1}$ and $\vec{R_2}$ can be either of matrices
+\begin{align}
+    \myvec{1&0\\0&0} \text{or } \myvec{1&0\\0&1}
+\end{align}
+{Case 1}
+Let us assume that the solution is unique.
+The unique solution is
+\begin{align}
+    \vec{x}=\vec{0}
+\end{align}
+Since they have the same solution, both $\vec{R_1},\vec{R_2}$ must have their rank as 2.\\
+So,
+\begin{align}
+    \vec{R_1}=\vec{R_2}=\myvec{1&0\\0&1}
+\end{align}
+
+{Case 2}
+Let us assume that \eqref{eq:solutions/1/1/6/1},\eqref{eq:solutions/1/1/6/2} have infinitely many solutions\\
+So,
+\begin{align}
+\text{rank}(\vec{A})= \text{rank}(\vec{B}) = 1
+\end{align}
+equation \eqref{eq:solutions/1/1/6/5} for solutions other than zero solution implies
+\begin{align}
+    \vec{R_1}=\vec{R_2}=\myvec{1&0\\0&0}
+\end{align}
+So, in both the cases, we have 
+\begin{align}
+     \vec{R_1}=\vec{R_2}\\
+     \implies \vec{C}\vec{A}=\vec{D}\vec{B}
+\end{align}
+Since $\vec{C},\vec{D}$ are product of elementary matrices, they are invertible.
+\begin{align}
+    \implies \vec{A}= \vec{C^{-1}}\vec{D}\vec{B}\label{eq:solutions/1/1/6/6}\\
+    \vec{B}=\vec{D^{-1}}\vec{C}\vec{A}\label{eq:solutions/1/1/6/7}\\
+    \text{Let } \vec{C^{-1}}\vec{D}=\vec{E}
+\end{align}
+where $\vec{E}$ is also a product of elementary matrices\\
+\eqref{eq:solutions/1/1/6/6} and \eqref{eq:solutions/1/1/6/7} hence become
+\begin{align}
+\vec{A}=\vec{E}\vec{B}\\
+\vec{B}=\vec{E^{-1}}\vec{A}
+\end{align}
+Hence the two systems of equations are equivalent.
+
