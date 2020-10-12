@@ -1,0 +1,35 @@
+Let $\vec{R_1}$ and  $\vec{R_2}$ be the reduced row echelon forms of the  augumented matrices of the following systems of homogeneous equations respectively.
+\begin{align}
+\vec{A}\vec{X}=\vec{0}\label{eq:solutions/1/1/4/f1}\\
+\vec{B}\vec{X}=\vec{0}\label{eq:solutions/1/1/4/f2}
+\end{align}
+Where $\vec{A}$ and $\vec{B}$ as follows
+\begin{align}
+\vec{A}=\myvec{2&-1+i&0&1\\0&3&-2i&5}\label{eq:solutions/1/1/4/sys1}\\
+\vec{B}=\myvec{1+\frac{i}{2}&8&-i&-1\\\frac{2}{3}&\frac{-1}{2}&1&7}\label{eq:solutions/1/1/4/sys2}
+\end{align}
+On performing elementary row operations on $\eqref{eq:solutions/1/1/4/sys1}$,
+\begin{align}
+\vec{R_1}=\vec{C}\vec{A}
+\end{align}
+where $\vec{C}$ is the product of all elementary matrices. Reducing the first system of linear equations, we get,
+\begin{align}
+\vec{C}=\myvec{1&\frac{1-i}{2}\\0&1}\myvec{1&0\\0&\frac{1}{3}}\myvec{\frac{1}{2}&0\\0&1}\\
+\vec{R_1}=\myvec{1&0&\frac{-1-i}{3}&\frac{4}{3}-\frac{5i}{6}\\0&1&\frac{-2i}{3}&\frac{5}{3}}\label{eq:solutions/1/1/4/R1}
+\end{align}
+On performing elementary row operations on $\eqref{eq:solutions/1/1/4/sys2}$,
+\begin{align}
+\vec{R_2}=\vec{D}\vec{A}
+\end{align}
+where $\vec{D}$ is the product of all elementary matrices. Reducing the second system of linear equations, we get,
+\begin{align}
+\vec{D}=\myvec{\frac{4}{5}(1-\frac{i}{2})&0\\0&1}\myvec{1&0\\\frac{-2}{3}&1}\myvec{1&0\\0&\frac{-6(143+43i)}{4909}}\myvec{1&\frac{16(-2+i)}{5}\\0&1}
+\end{align}
+\begin{align}
+\vec{R_2}=\myvec{1&0&\frac{6702}{4909}-\frac{708i}{4909}&\frac{46620}{4909}-\frac{1998i}{4909}\\\\0&1&\frac{-2(441+472i)}{4909}&\frac{-2(3283+1332i)}{4909}}\label{eq:solutions/1/1/4/R2}
+\end{align}
+From the equations \eqref{eq:solutions/1/1/4/R1} and \eqref{eq:solutions/1/1/4/R2}, we can say that 
+\begin{align}
+\vec{R_1}\neq\vec{R_2}
+\end{align}
+Hence the given systems of linear equations are not equivalent.

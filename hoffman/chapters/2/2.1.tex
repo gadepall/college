@@ -1,0 +1,18 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+%
+\item Let $\vec{V}$ be the  set of pairs $(x,y)$ of real numbers and let $\vec{F}$ be the field of real numbers. Define
+\begin{align}
+    (x,y)+(x_1,y_1) &= (x+x_1,0) \label{eq:solutions/2/1/7/eq:eq1}\\
+    c(x,y) &= (cx,0)
+\end{align}
+Is $\vec{V}$, with these operations, a vector space?
+\\
+\solution
+\input{./solutions/2/1/7/solution.tex}
+\end{enumerate}
+
+

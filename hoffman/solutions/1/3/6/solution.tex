@@ -1,0 +1,23 @@
+\begin{align}
+\vec{C}=\vec{A}\vec{B}\\
+\vec{C}=\myvec{\vec{\gamma_1}&\vec{\gamma_2}&\hdots&\vec{\gamma_k}}\\
+\vec{A}=\myvec{\vec{\alpha_1}&\vec{\alpha_2}&\hdots&\vec{\alpha_n}}\\
+\vec{B}=\myvec{\vec{\beta_1}&\vec{\beta_2}&\hdots&\vec{\beta_k}}\\
+=\myvec{B_{11}&B_{12}&\hdots&B_{1k}\\B_{21}&B_{22}&\hdots&B_{2k}\\\vdots&\vdots&\hdots&\vdots\\B_{n1}&B_{n2}&\hdots&B_{nk}}
+\end{align}
+By matrix multiplication, we can write
+\begin{align}
+  \myvec{\vec{\gamma_1}&\vec{\gamma_2}&\hdots&\vec{\gamma_k}}=\myvec{\vec{A}\vec{\beta_1}&\vec{A}\vec{\beta_2}&\hdots&\vec{A}\vec{\beta_k}}
+\end{align}
+Consider $\vec{\gamma_1}$
+\begin{align}
+    \vec{\gamma_1}=\vec{A}\vec{\beta_1}\\
+    =\myvec{\vec{\alpha_1}&\vec{\alpha_2}&\hdots&\vec{\alpha_n}}\myvec{B_{11}\\B_{21}\\\vdots\\B_{n1}}\\=B_{11}\vec{\alpha_1}+B_{21}\vec{\alpha_2}+\hdots+B_{n1}\vec{\alpha_n}
+\end{align}
+Similarly, considering $j^{th}$ column of $\vec{C}$
+\begin{align}
+  \vec{\gamma_j}= \myvec{\vec{\alpha_1}&\vec{\alpha_2}&\hdots&\vec{\alpha_n}}\myvec{B_{1j}\\B_{2j}\\\vdots\\B_{nj}}\\=B_{1j}\vec{\alpha_1}+B_{2j}\vec{\alpha_2}+\hdots+B_{nj}\vec{\alpha_n} \\
+  \implies  \vec{\gamma_j}= \sum_{r=1}^{n}B_{rj}\vec{\alpha_r} 
+\end{align}
+which proves that columns of $\vec{C}$ are linear combinations of columns of $\vec{A}$
+
