@@ -1,0 +1,174 @@
+%
+%	
+\begin{align}
+\vec{A}=
+\myvec{6 & -4 & 0\\
+4& -2 & 0\\
+-1 &0 &3}
+\end{align}
+To calculate solution of  $\vec{AX}=2\vec{X}$and all solutions of $\vec{AX}=3\vec{X}$we calculate eigen values of $\vec{A}$:
+\begin{align}\label{eq:solutions/1/2/3/eq1}
+(\vec{A}-\lambda\vec{I})\vec{X}=0
+\end{align}
+Substituting values in \eqref{eq:solutions/1/2/3/eq1},
+\begin{align}
+\myvec{6-\lambda& -4 & 0\\
+4 & -2-\lambda & 0\\
+-1 &0 &3-\lambda}
+\vec{X}=0
+\end{align}
+Simplifying:
+\begin{align}\label{eq:solutions/1/2/3/eqdet}
+\myvec{6-\lambda& -4 & 0\\
+4 & -2-\lambda & 0\\
+-1 &0 &3-\lambda}
+\xleftrightarrow[]{R_1 \leftarrow R_1-R_2}\nonumber
+\end{align}
+\begin{align}
+    \myvec{2-\lambda& -2+\lambda & 0\\
+4 & -2-\lambda & 0\\
+-1 &0 &3-\lambda}
+\end{align}
+Taking $(3-\lambda)$  and $(2-\lambda)$common from $C_3$ and $R_1$
+\begin{align}
+(3-\lambda)(2-\lambda)
+    \myvec{1&-1&0\\
+            4&-2-\lambda &0\\
+            -1&0&1}
+\end{align}
+\begin{align}\label{eq:solutions/1/2/3/eqlambda}
+\myvec{1&-1&0\\
+            4&-2-\lambda &0\\
+            -1&0&1}
+            \xleftrightarrow[]{R_2 \leftarrow R_2-4R_1}
+    \myvec{1&-1&0\\
+            0&-\lambda +2&0\\
+            -1&0&1}
+\end{align}
+Taking $(2-\lambda)$ common from $R_2$:
+\begin{align}
+(2-\lambda)^2(3-\lambda)
+\myvec{
+1 &-1 &0\\
+0&1&0\\
+-1&0&1
+}
+\end{align}
+Eigen values are:
+\begin{align}
+ \lambda_1=2\\
+ \lambda_2=3
+ \end{align}
+solution to $\vec{AX} =2\vec{X}$ is eigen vector corresponding to $\lambda=2$
+\begin{align}
+    (\vec{A}-2\vec{I})\vec X=0
+\end{align}
+Substituting values:
+\begin{align}
+\myvec{4& -4&0&0\\
+4 & -4 & 0&0\\
+-1 & 0 &1&0
+}
+\xleftrightarrow[]{R_1 \leftarrow \frac{R_1}{4}} 
+&
+\myvec{1&-1&0&0\\
+4&-4&0&0\\
+-1&0&1&0}
+\xleftrightarrow[]{R_2 \leftarrow R_2-4R_1 } \nonumber 
+\end{align}
+\begin{align}
+    \myvec{1&-1&0&0\\
+            0&0&0&0\\
+            -1&0&1&0}
+    \xleftrightarrow[]{R_3 \leftarrow R_3-R_1 }
+    \myvec{1&-1&0&0\\
+            0&0&0&0\\
+            0&-1&1&0}
+    \xleftrightarrow[]{R_3 \xleftrightarrow[]{} R_2 } \nonumber
+\end{align}
+\begin{align}
+    \myvec{1&-1&0&0\\
+    0&-1&1&0\\
+    0&0&0&0}
+    \xleftrightarrow[]{R_2 \leftarrow -R_2} 
+    \myvec{1&-1&0&0\\
+    0&1&-1&0\\
+    0&0&0&0}   
+    \xleftrightarrow[]{R_1 \leftarrow R_1+R_2} \nonumber
+\end{align}
+\begin{align} \label{eq:solutions/1/2/3/eq:eq_5}
+    \myvec{1&0&-1&0\\
+    0&1&-1&0\\
+    0&0&0&0} 
+\end{align}
+So, $x_3$ is a free variable: Let $x_3$ = $c$. 
+\begin{align}
+ {x_2}-{x_3}=0 \implies{x_2}={x_3}=c \\
+ {x_1}-{x_3}=0 \implies{x_1}={x_3}=c 
+ \end{align}
+ So,the solution to $\vec{AX} =2\vec{X}$is
+ \begin{align}\label{eq:solutions/1/2/3/eq:555}
+ \vec{X} = 
+ c
+ \myvec{
+ 1\\1\\1
+ }
+\end{align}
+ solution of $\vec{A}\vec{X}=3\vec{X}$ is eigen vector corresponding to $\lambda=3$ 
+ \begin{align}\label{eq:solutions/1/2/3/eq11}
+(\vec{A}-3\vec{I})\vec X=0
+\end{align}
+substituting we have:
+\begin{align}
+\myvec{3& -4&0&0\\
+1 & -2 & 0&0\\
+-1 & 0 &0&0
+}
+\xleftrightarrow[]{R_1 \leftarrow \frac{R_1}{3} }\nonumber
+&
+\myvec{1&-\frac{4}{3}&0&0\\
+4&-5&0&0\\
+-1&0&0&0}\xleftrightarrow[]{R_2 \leftarrow R_2-4R_1} 
+\end{align}
+\begin{align}
+    \myvec{1&-\frac{4}{3}&0&0\\
+            0&\frac{1}{3}&0&0\\
+            -1&0&0&0}
+    \xleftrightarrow[]{R_3 \leftarrow R_3+R_1 }\nonumber
+    \myvec{1&-\frac{4}{3}&0&0\\
+            0&\frac{1}{3}&0&0\\
+            0&-\frac{4}{3}&0&0}
+            \xleftrightarrow[]{R_2 \leftarrow\frac{R_2}{3} }\nonumber
+\end{align}
+\begin{align}
+    \myvec{1&\frac{-4}{3}&0&0\\
+    0&1&0&0\\
+    0&-\frac{4}{3}&0&0}
+    \xleftrightarrow[]{R_3 \leftarrow R_3-\frac{4}{3}R_2} \nonumber
+    \myvec{1&\frac{4}{3}&0&0\\
+           0&1&0&0\\
+         0&0&0&0}    \nonumber
+          \xleftrightarrow[]{R_3 \leftarrow R_1+\frac{4}{3}R_2}
+\end{align}
+\begin{align} \label{eq:solutions/1/2/3/eq:eq_15}
+    \myvec{1&0&0&0\\
+    0&1&0&0\\
+    0&0&0&0} 
+\end{align}
+So $x_3$ is a free variable:
+\begin{align}
+  x_1=0\\
+  x_2=0\\
+  x_3=c
+\end{align}
+ So,the solution to $\vec {AX}$ =3$\vec{X}$ is,
+ \begin{align}\label{eq:solutions/1/2/3/eq:222}
+ \vec{X} =
+ c
+ \myvec{
+ 0\\0\\1
+ }
+ \end{align}
+
+   
+

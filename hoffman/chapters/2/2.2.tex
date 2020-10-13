@@ -1,0 +1,23 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+%
+\item Let $\vec{W_1}$ and $\vec{W_2}$ be subspaces of a vector space $\vec{V}$ such that 
+\begin{align}
+   \vec{W_1}+\vec{W_2}=\vec{V} \\
+   \text{and  }  \vec{W_1}\cap \vec{W_2}=\vec{0}\label{eq:solutions/2/2/9/1}
+\end{align}
+Prove that for each vector $\vec{\alpha}$ in $\vec{V}$ there are unique vectors $\vec{\alpha_1}$ in $\vec{W_1}$ and $\vec{\alpha_2}$ in $\vec{W_2}$ such that
+\begin{align}
+    \vec{\alpha}=\vec{\alpha_1}+\vec{\alpha_2}\label{eq:solutions/2/2/9/2}
+\end{align}
+%
+\\
+\solution
+\input{./solutions/2/2/9/solution.tex}
+%
+\end{enumerate}
+
+
