@@ -4,32 +4,74 @@
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
 %
-\item Discover whether
+\item Let
 \begin{align}
-	\vec{A}=\myvec{ 1 & 2 & 3 & 4 \\
-			0 & 2 & 3 & 4 \\
-			0 & 0 & 3 & 4 \\
-			0 & 0 & 0 & 4}
+   A=\myvec{1&-1&1\\2&0&1\\3&0&1}, B=\myvec{2&-2\\1&3\\4&4}
 \end{align}
-is invertible, and find $\vec{A^{-1}}$ if it exists.
-\\
+Verify directly that $ A(AB)=A^2B $
 %
 \solution
-\input{./solutions/1/4/5/solution.tex}
+\input{./solutions/1/4/2/solution.tex}
 %
-\item Suppose $\vec{A}$ is a 2$\times$1  matrix and $\vec{B}$ is 1$\times$2 matrix.Prove that $\vec{C}$=$\vec{A}$$\vec{B}$ is non invertible.
 
+%
+\item Find two different 2$\times$2 matrices $\vec{A}$ such that 
+
+$\vec{A}^{2}=0$ but $\vec{A}\ne0$
+%
+\\
+\solution
+\input{./solutions/1/4/3/solution.tex}
+
+%
+\item Let $\vec{A}$ be an $m \times n$ matrix and $\vec{B}$ be an $n \times k$ matrix.Show that the columns of $\vec{C}=\vec{A}\vec{B}$ are linear combinations of columns of $\vec{A}$.If $\vec{\alpha_1},\vec{\alpha_2},\hdots,\vec{\alpha_n}$ are the columns of $\vec{A}$ and $\vec{\gamma_1},\vec{\gamma_2},\hdots,\vec{\gamma_k}$ are the columns of $\vec{C}$ then,
+\begin{align}
+    \vec{\gamma_j}= \sum_{r=1}^{n}B_{rj}\vec{\alpha_r} 
+\end{align}
+%
 \solution
 \input{./solutions/1/4/6/solution.tex}
-\item Let $\vec{A}$ be an $n \times n$ (square) matrix, Prove the following two statements:
- \begin{enumerate}
-   \item If $\vec{A}$ is invertible and $\vec{A}\vec{B}=0$ for some $n \times n$ matrix $\vec{B}$, then $\vec{B}=0$.
-   \item If $\vec{A}$ is not invertible, then there exists an $n \times n$ matrix $\vec{B}$ such that $\vec{A}\vec{B}=0$ but $\vec{B} \not= 0$.
-%   \item If $\vec{A}$ is invertible and $\vec{A}\vec{B}=0$ for some $n \times n$ matrix $\vec{B}$, then $\vec{B}=0$.
- \end{enumerate}
+%
+\item Let $\vec{A}$ and $\vec{B}$ be $n \times n$ matrices such that $\vec{AB}=\vec{I}$. Prove that $\vec{BA}=\vec{I}$.
 %
 \solution
 \input{./solutions/1/4/7/solution.tex}
+%
+\item Let,
+\begin{align}
+\vec{C}=\myvec{C_{11}&C_{12}\\C_{21}&C_{22}}
+\end{align}
+be a 2$\times$2 matrix. We inquire when it is possible to find 2$\times$2 matrices $\vec{A}$ and $\vec{B}$ such that $\vec{C}$=$\vec{AB-BA}$. Prove that such matrices can be found if and only if $C_{11}+C_{22}$=0.
+%
+\solution
+\input{./solutions/1/4/8/solution.tex}
+
+%\item Discover whether
+%\begin{align}
+%	\vec{A}=\myvec{ 1 & 2 & 3 & 4 \\
+%			0 & 2 & 3 & 4 \\
+%			0 & 0 & 3 & 4 \\
+%			0 & 0 & 0 & 4}
+%\end{align}
+%is invertible, and find $\vec{A^{-1}}$ if it exists.
+%\\
+%%
+%\solution
+%\input{./solutions/1/4/5/solution.tex}
+%
+%\item Suppose $\vec{A}$ is a 2$\times$1  matrix and $\vec{B}$ is 1$\times$2 matrix.Prove that $\vec{C}$=$\vec{A}$$\vec{B}$ is non invertible.
+%
+%\solution
+%\input{./solutions/1/4/6/solution.tex}
+%\item Let $\vec{A}$ be an $n \times n$ (square) matrix, Prove the following two statements:
+% \begin{enumerate}
+%   \item If $\vec{A}$ is invertible and $\vec{A}\vec{B}=0$ for some $n \times n$ matrix $\vec{B}$, then $\vec{B}=0$.
+%   \item If $\vec{A}$ is not invertible, then there exists an $n \times n$ matrix $\vec{B}$ such that $\vec{A}\vec{B}=0$ but $\vec{B} \not= 0$.
+%   \item If $\vec{A}$ is invertible and $\vec{A}\vec{B}=0$ for some $n \times n$ matrix $\vec{B}$, then $\vec{B}=0$.
+% \end{enumerate}
+%
+%\solution
+%\input{./solutions/1/4/7/solution.tex}
 \end{enumerate}
 
 

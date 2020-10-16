@@ -4,22 +4,16 @@
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
 %
-\item Let
+\item Find all solutions to the following system of equations by row-reducing the co-efficient matrix:
 \begin{align}
-   A=\myvec{1&-1&1\\2&0&1\\3&0&1}, B=\myvec{2&-2\\1&3\\4&4}
+\frac{1}{3}x_1 +2x_2 - 6x_3 =0\\
+-4x_1\quad \quad+ 5x_3=0\\
+-3x_1+6x_2-13x_3=0\\
+-\frac{7}{3}x_1 +2x_2 - \frac{8}{3}x_3 =0
 \end{align}
-Verify directly that $ A(AB)=A^2B $
-
-\solution
-\input{./solutions/1/3/2/solution.tex}
-%
-\item Find two different 2$\times$2 matrices $\vec{A}$ such that 
-
-$\vec{A}^{2}=0$ but $\vec{A}\ne0$
-%
 \\
 \solution
-\input{./solutions/1/3/3/solution.tex}
+\input{./solutions/1/3/1/solution.tex}
 %
 \item Let
 \begin{align}
@@ -30,26 +24,12 @@ For which $(y_1,y_2,y_3,y_4)$ does the system of equations $\vec{A}\vec{X}=\vec{
 \solution
 \input{./solutions/1/3/5/solution.tex}
 %
-\item Let $\vec{A}$ be an $m \times n$ matrix and $\vec{B}$ be an $n \times k$ matrix.Show that the columns of $\vec{C}=\vec{A}\vec{B}$ are linear combinations of columns of $\vec{A}$.If $\vec{\alpha_1},\vec{\alpha_2},\hdots,\vec{\alpha_n}$ are the columns of $\vec{A}$ and $\vec{\gamma_1},\vec{\gamma_2},\hdots,\vec{\gamma_k}$ are the columns of $\vec{C}$ then,
-\begin{align}
-    \vec{\gamma_j}= \sum_{r=1}^{n}B_{rj}\vec{\alpha_r} 
-\end{align}
 %
+\item Suppose $\vec{R}$ and $\vec{R}^{'}$ are 2 $\times$ 3 row-reduced echelon matrices and that the system $\vec{R}$$\vec{X}$=0 and $\vec{R}^{'}\vec{X}$=0 have exactly the same solutions. Prove 
+that $\vec{R}=\vec{R}^{'}$.
+
 \solution
-\input{./solutions/1/3/6/solution.tex}
-\item Let $\vec{A}$ and $\vec{B}$ be $n \times n$ matrices such that $\vec{AB}=\vec{I}$. Prove that $\vec{BA}=\vec{I}$.
-%
-\solution
-\input{./solutions/1/3/7/solution.tex}
-%
-\item Let,
-\begin{align}
-\vec{C}=\myvec{C_{11}&C_{12}\\C_{21}&C_{22}}
-\end{align}
-be a 2$\times$2 matrix. We inquire when it is possible to find 2$\times$2 matrices $\vec{A}$ and $\vec{B}$ such that $\vec{C}$=$\vec{AB-BA}$. Prove that such matrices can be found if and only if $C_{11}+C_{22}$=0.
-%
-\solution
-\input{./solutions/1/3/8/solution.tex}
+\input{./solutions/1/3/10/solution.tex}
 \end{enumerate}
 
 

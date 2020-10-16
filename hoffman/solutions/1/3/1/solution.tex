@@ -1,0 +1,35 @@
+The coefficient matrix is:
+\begin{align}
+A=\myvec{\frac{1}{3} & 2 & -6\\-4 & 0 & 5\\-3 & 6 & -13\\-\frac{7}{3} & 2 & -\frac{8}{3}}
+\end{align}
+The number of rows of this coefficient matrix is $m$ = 4 and the number of columns is $n$= 3, So in this case, $n<m$.
+Now the row operations are:
+\begin{align}
+\myvec{\frac{1}{3} & 2 & -6\\-4 & 0 & 5\\-3 & 6 & -13\\-\frac{7}{3} & 2 & -\frac{8}{3}}\xleftrightarrow[R_1\leftarrow R_1\times3]{R_4\leftarrow R_4\times3}
+\myvec{1 & 6 & -18\\-4 & 0 & 5\\-3 & 6 & -13\\-7 & 6 & -8}\\
+\xleftrightarrow[]{R_3\leftarrow R_2+R_3}
+\myvec{1 & 6 & -18\\-4 & 0 & 5\\-7 & 6 & -8\\-7 & 6 & -8}\xleftrightarrow[]{R_4\leftarrow R_4-R_3}\\
+\myvec{1 & 6 & -18\\-4 & 0 & 5\\-7 & 6 & -8\\0 & 0 & 0}\xleftrightarrow[R_3\leftarrow R_3+7R_1]{R_2\leftarrow R_2+4R_1}
+\myvec{1 & 6 & -18\\0 & 24 & -67\\0 & 48 & -138\\0 & 0 & 0}\\
+\xleftrightarrow[]{R_3\leftarrow R_3/2}\myvec{1 & 6 & -18\\0 & 24 & -67\\0 & 24 & -69\\0 & 0 & 0}\xleftrightarrow[]{R_3\leftarrow R_3-R_2}\\
+\myvec{1 & 6 & -18\\0 & 24 & -67\\0 & 0 & -2\\0 & 0 & 0}\xleftrightarrow[]{R_3\leftarrow \frac{R_3}{(-2)}}
+\myvec{1 & 6 & -18\\0 & 24 & -67\\0 & 0 & 1\\0 & 0 & 0}\\
+\xleftrightarrow[]{R_2\leftarrow \frac{R_2}{4}}
+\myvec{1 & 6 & -18\\0 & 6 & -\frac{67}{4}\\0 & 0 & 1\\0 & 0 & 0}\xleftrightarrow[]{R_1\leftarrow R_1-R_2}\\
+\myvec{1 & 0 & -\frac{5}{4}\\0 & 6 & -\frac{67}{4}\\0 & 0 & 1\\0 & 0 & 0}\xleftrightarrow[]{R_2\leftarrow \frac{R_2}{6}}
+\myvec{1 & 0 & -\frac{5}{4}\\0 & 1 & -\frac{67}{24}\\0 & 0 & 1\\0 & 0 & 0}\\
+\xleftrightarrow[R_1\leftarrow R_1+\frac{5R_3}{4}]{R_2\leftarrow R_2+\frac{67R_3}{24}}
+\myvec{1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0}
+\end{align}
+Now,
+\begin{align}
+A\vec{x} = \myvec{1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\\0 & 0 & 0}\myvec{x_1\\x_2\\x_3} = 0
+\end{align}
+
+%Now the rank of the matrix $A$ is $\rho$ = 3 =$n$, so the coefficient matrix has the full column rank. $\rho$ = 3 =$n$,this implies that the solution may or may not exist. But as $\rho = n < m$, so if solution exists then it will be either 1 or 0.
+
+So,
+\begin{align}
+\vec{I_3} \vec{x} = 0\\
+\implies \vec{x} = 0
+\end{align}
