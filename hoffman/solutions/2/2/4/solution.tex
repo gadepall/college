@@ -1,0 +1,33 @@
+   The given equations are,
+   \begin{align}
+   2x_1-x_2+\frac{4}{3}x_3-x_4=0\\
+   x_1+\frac{2}{3}x_3-x_5=0\\
+   9x_1-3x_2+6x_3-3x_4-3x_5=0
+   \end{align}
+   which can be written as,
+   \begin{align}
+  \myvec{2&-1&\frac{4}{3}&-1&0\\1&0&\frac{2}{3}&0&-1\\9&-3&6&-3&-3}\vec{x}=0
+   \end{align}
+   Now, the augmented matrix,
+   \begin{align}
+     \myvec{2&-1&\frac{4}{3}&-1&0&\vrule&0\\1&0&\frac{2}{3}&0&-1&\vrule& 0\\9&-3&6&-3&-3&\vrule& 0}\\
+        \xleftrightarrow{R_3=R_3-3R_1-3R_2}\myvec{2&-1&\frac{4}{3}&-1&0&\vrule&0\\1&0&\frac{2}{3}&0&-1&\vrule& 0\\0&0&0&0&0&\vrule& 0}\\
+     \xleftrightarrow{R_2=R_2-\frac{1}{2}R_1}\myvec{2&-1&\frac{4}{3}&-1&0&\vrule&0\\0&\frac{1}{2}&0&\frac{1}{2}&-1&\vrule& 0\\0&0&0&0&0&\vrule& 0}\\
+      \xleftrightarrow{R_2=2R_2}\myvec{2&-1&\frac{4}{3}&-1&0&\vrule&0\\0&1&0&1&-2&\vrule& 0\\0&0&0&0&0&\vrule& 0}\\
+      \xleftrightarrow{R_1=R_1+R_2}\myvec{2&0&\frac{4}{3}&0&-2&\vrule&0\\0&1&0&1&-2&\vrule& 0\\0&0&0&0&0&\vrule& 0}
+\end{align}
+So,
+\begin{align}
+2x_1+\frac{4}{3}x_3-2x_5=0\\
+x_2+x_4-2x_5=0
+\end{align}
+Solving the equations we get,
+\begin{align}
+x_1=-\frac{2}{3}x_3+x_5\\
+x_2=-x_4+2x_5
+\end{align}
+which can be written as,
+   \begin{align}
+   \vec{x} = \myvec{x_1\\x_2\\x_3 \\ x_4 \\ x_5} \\= \myvec{-\frac{2}{3}x_3+x_5\\-x_4+2x_5\\x_3 \\ x_4 \\ x_5}\\=x_3\myvec{-\frac{2}{3}\\0\\1\\0\\0} +x_4\myvec{0\\-1\\0\\1\\0}+x_5\myvec{1\\2\\0\\0\\1}
+\end{align}
+where $x_3$,$x_4$ and $x_5$ $\in$ $\mathbb{R}$.Hence, the vectors $\myvec{-\frac{2}{3}\\0\\1\\0\\0},\myvec{0\\-1\\0\\1\\0}$ and $\myvec{1\\2\\0\\0\\1}$ will span $\vec{W}$
