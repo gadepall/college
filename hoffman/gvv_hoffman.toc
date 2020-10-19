@@ -6,4 +6,4 @@
 \contentsline {subsection}{\numberline {1.5}Invertible Matrices}{19}{subsection.1.5}%
 \contentsline {section}{\numberline {2}Vector Spaces}{21}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Vector Spaces}{21}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Subspaces}{22}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Subspaces}{23}{subsection.2.2}%

@@ -1,10 +1,122 @@
-V=\{(x,y) $\vert x,y \in R$\} , consider $u = (x_1,y_1) \in V , a,b,c \in R$. Axioms with respect to addition and scalar multiplication.
-\begin{enumerate}
- \item
- \begin{align}
- (a+b)u=(a+b)(x_1,y_1)\\
- =((a+b)x_1,y_1)\neq au+bu\label{eq:solutions/2/1/1/contradict}
- \end{align}
-\end{enumerate}
-Since V with the given operations the equation \eqref{eq:solutions/2/1/1/contradict}  contradicts the axioms of scalar multiplication . Hence it is not vector space over real number with these operations.
+Let $\vec{F}^n$ be a set of all ordered n-tuples over $\vec{F}$ i.e
+\begin{align}
+	\vec{F}^n= \cbrak{\myvec{a_1 \\ a_2 \\ \vdots \\ a_n} : 
+	a_1, a_2, \ldots, a_n \in \vec{F} }
+\end{align}
+For $\vec{F}^n$ to be a vector space over $\vec{F}$ it must satisfy the 
+closure property of vector addition and scalar multiplication. \\
+\\
+{\bf Vector Addition in $\vec{F}^n$ :} \\
+Let $\vec{\alpha} = \myvec{a_i}$ and
+$\vec{\beta} = \myvec{b_i} \ \forall \  i=1,2,\cdots,n \in \vec{F}^n$ 
+then 
+\begin{align}
+	\vec{\alpha} + \vec{\beta} 
+	&=\myvec{a_i}+\myvec{b_i} \\
+	&=\myvec{a_i+b_i} 
+\end{align}
+Since 
+\begin{align}
+	a_i+b_i \in \vec{F} \ \forall \  i=1,2,\cdots,n \\
+	\implies \vec{\alpha}+\vec{\beta} \in \vec{F}^n
+\end{align}
 
+{\bf Scalar multiplication in $\vec{F}^n$ over $\vec{F}$ :} \\
+Let $\vec{\alpha} = \myvec{a_i} \ \forall \ i=1,2,\cdots,n \  
+	\in \vec{F}^n$ and  $ a \in \vec{F}$ then
+\begin{align}
+	a\vec{\alpha}=\myvec{aa_i}
+\end{align}
+Since
+\begin{align}
+	aa_i \in \vec{F} \ \forall \ i=1,2\cdots,n \\
+	\implies a\vec{\alpha} \in \vec{F}^n
+\end{align}
+\\
+{\bf Associativity of addition in $\vec{F}^n$ :} \\
+Let $\vec{\alpha}=\myvec{a_i}, \ 
+\vec{\beta}=\myvec{b_i}, 
+\ \vec{\gamma}=\myvec{g_i} 
+\ \forall \ i=1,2,\cdots,n
+\in \vec{F}^n$ then
+\begin{align}
+	\vec{\alpha}+(\vec{\beta}+\vec{\gamma}) &= 
+	\myvec{a_i} + 
+      \myvec{b_i+g_i} \\
+	&= \myvec{a_i+b_i+g_i} \\
+	&= \myvec{a_i+b_i} + \myvec{g_i} \\
+	&=(\alpha+\beta)+\gamma
+\end{align}
+
+{\bf Existence of additive identity in $\vec{F}^n$ :} \\ 
+We have $\vec{0}=\myvec{0\\ 0\\ \vdots\\ 0} \in \vec{F}^n$
+and $\alpha=\myvec{a_i} \ \forall \ i=1,2,\cdots,n  \in \vec{F}^n$ then
+\begin{align}
+	\myvec{a_i}+\myvec{0}
+	&=\myvec{a_i+0} \\
+	&=\myvec{a_i} 
+\end{align}
+Therefore $\vec{0}$ is the additive identity in 
+$\vec{F}^n$.\\ \\
+{\bf Existence of additive inverse of each element of $\vec{F}^n$ :} \\
+If $\alpha=\myvec{a_i} \ \forall \ i =1,2,\cdots,n \in \vec{F}^n$ then 
+$\myvec{-a_i} \in \vec{F}^n$. 
+Also we have
+\begin{align}
+	\myvec{-a_i}
+	+\myvec{a_i}
+	&=\vec{0}
+\end{align}
+Therefore $\vec{-\alpha}=\myvec{-a_i}$ is the 
+additive inverse of $\vec{\alpha}$.
+Thus $\vec{F}^n$ is an abelian group with respect to addition. \\
+
+Futher we observe that
+\begin{enumerate}
+\item If $a$ $\in \vec{F}$ and 
+	$\vec{\alpha} = \myvec{a_i}, \
+		\vec{\beta}=\myvec{b_i} \ \forall \ i=1,2,\cdots,n \in \vec{F}^n$ 
+then
+\begin{align}
+	a(\vec{\alpha}+\vec{\beta}) &=
+	a\myvec{a_i+b_i} 
+\end{align}
+\begin{align}
+	&=\myvec{a[a_i+b_i]} \\
+	&=\myvec{aa_i+ab_i} \\
+	&\myvec{aa_i}
+	+ \myvec{ab_i} \\
+	&=a\myvec{a_i}
+	+ a\myvec{b_i} \\
+	&=a\alpha+a\beta
+\end{align}
+\item If $a$,$b$ $\in \vec{F}$ and 
+	$\alpha=\myvec{a_i} \ \forall \ i=1,2,\cdots,n \in \vec{F}^n$ then
+\begin{align}
+	(a+b)\alpha
+	&=\myvec{[a+b]a_i} 
+\end{align}
+\begin{align}
+	&=\myvec{aa_i+ba_i} \\ 
+	&=\myvec{aa_i}+\myvec{ba_i} \\
+	&=a\myvec{a_i}+b\myvec{a_i} \\
+	&=a\alpha+b\alpha
+\end{align}
+\item If $a$,$b$ $\in \vec{F}$ and 
+	$\alpha=\myvec{a_i} \ \forall \ i=1,2,\cdots,n \in \vec{F}^n$ 
+then
+\begin{align}
+     (ab)\alpha&=\myvec{[ab]a_i} \\
+	  &=\myvec{a[ba_i]} \\
+	  &=a\myvec{ba_i} \\
+	  &=a(b\alpha)
+\end{align}
+\item If 1 is the unity element of $\vec{F}$ and 
+	$\alpha=\myvec{a_i} \ \forall \ i=1,2,\cdots,n \in \vec{F}^n$ then
+\begin{align}
+	1\alpha &=\myvec{1a_i} \\
+		&=\myvec{a_i} \\
+		&= \alpha
+\end{align}
+\end{enumerate}
+Hence $\vec{F}^n$ is a vector space over $\vec{F}$.
