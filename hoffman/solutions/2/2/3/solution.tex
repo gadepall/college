@@ -1,0 +1,26 @@
+Expressing the given three vectors as columns of a matrix, 
+\begin{align}
+    \vec{A} = \myvec{2&-1&1\\-1&1&1\\3&1&9\\2&-3&-5} 
+\end{align}
+and
+\begin{align}
+    \vec{b} = \myvec{3\\-1\\0\\-1}
+\end{align}
+For the vector $\vec{b}$ to be in the subspace of $\vec{R}^{4}$ spanned  by the three vectors. 
+\begin{align}
+    \vec{A}\vec{x} = \vec{b}
+\end{align}
+must have a solution. 
+\begin{align}
+    \myvec{2&-1&1\\-1&1&1\\3&1&9\\2&-3&-5}\vec{x} =  \myvec{3\\-1\\0\\-1}
+\end{align}
+Forming the augmented matrix and row reducing it by elementary row operations,
+\begin{align}
+    &\myvec{2&-1&1&3\\-1&1&1&-1\\3&1&9&0\\2&-3&-5&-1} \xleftrightarrow[R_4\xleftarrow{}R_4-R_1 ]{R_2\xleftarrow{}2R_2+R_1,R_3\xleftarrow{} R_3-\frac{3}{2}R_1} \\
+    &\myvec{2&-1&1&3\\0&1&3&1\\0&\frac{5}{2}&\frac{15}{2}&\frac{-9}{2}\\0&-2&-6&-4}
+    \xleftrightarrow[R_4\xleftarrow{}R_4+2R_2]{R_3\xleftarrow{}2R_3-5R_2}
+    \myvec{2&-1&1&3\\0&1&3&1\\0&0&0&-14\\0&0&0&-2} \label{eq:solutions/2/2/3/aug}
+\end{align}
+From \eqref{eq:solutions/2/2/3/aug}, it is clear that the system does not have a solution. 
+Hence the vector $\myvec{3\\-1\\0\\-1}$ does not lie in the subspace of $\vec{R}^{4}$ spanned by the given three vectors. 
+

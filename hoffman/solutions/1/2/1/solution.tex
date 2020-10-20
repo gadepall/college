@@ -1,0 +1,21 @@
+System of Linear Equations \eqref{eq:solutions/1/2/1/eq:eq1} can be expressed in matrix form as,
+\begin{align}
+    &\vec{A}\vec{x}=0\\
+    &\myvec{1-i&-i\\2&1-i}\vec{x}=0
+\end{align}
+By row reduction , 
+\begin{align}
+     \myvec{1-i & -i \\ 2 & 1-i}
+  \xleftrightarrow[R_1\leftarrow R_1/2]{R_1\leftrightarrow R_2}
+     \myvec{1 & \frac{1-i}{2} \\ 1-i & -i}\\
+ \xleftrightarrow{R_2\leftarrow R_2-\brak{1-i}R_1}
+    \myvec{1 & \frac{1-i}{2} \\ 0& 0}
+    \label{eq:solutions/1/2/1/eq:eqn2}
+\end{align} 
+\begin{align}
+    \myvec{1 & \frac{1-i}{2}}\vec{x}=0\\
+    \myvec{1 & \frac{1-i}{2}}\myvec{x_1 \\ x_2} =0\\
+    x_1= -\frac{1-i}{2}x_2\\
+    \vec{x}= \myvec{-\frac{1-i}{2}x_2 \\ x_2}\\
+    \implies\vec{x}= x_2\myvec{-\frac{1-i}{2} \\ 1}
+\end{align}
