@@ -1,0 +1,63 @@
+
+%
+%
+{Lemma}
+Every elementary matrix is invertible and the inverse is again an elementary matrix. If an elementary matrix $E$ is obtained from I by using a certain row or column operation $q$, then $E^{-1}$ is obtained from $I$ by the "inverse" operation $q^{-1}$.
+
+{Solution}
+Given $\vec{A}$ is a $m\times n$ matrix. Converting $\vec{A}$ into row reduced echelon form by performing a series of elementary row operations $\vec{P}$. Let $\vec{R^{\prime}}$ be the row reduced echelon matrix. Also, by using the lemma we can tell that $\vec{P}$ is invertible and order $m\times m$.
+\begin{align} 
+    \vec{R^{\prime}} = \vec{P}\vec{A} \label{eq:solutions/1/5/11/eq:eq_1}
+\end{align}
+where,
+\begin{align}
+    \vec{R^{\prime}} = \myvec{\vec{I} & \vec{F} \\ \vec{0} & \vec{0}} \nonumber
+    \intertext{$\vec{I}$ is an identity matrix, $\vec{F}$ is Free variables matrix and $\vec{0}$ represents a block of zeroes} 
+    \nonumber
+\end{align} 
+$\vec{R^{\prime}}$ is in row-reduced echelon form. To perform column operations, elementary matrices should be multiplied on the right side in order to convert the $\vec{R^{\prime}}$ into column-reduced echelon form
+\begin{align} \label{eq:solutions/1/5/11/eq:eq_2}
+    \vec{R} = \vec{R^{\prime}} \vec{Q}
+\end{align}
+But performing column operations on a matrix is equivalent to performing row operations on the transposed matrix.
+\begin{align}
+    \vec{R}^T &= {(\vec{R^{\prime}} \vec{Q})}^T \nonumber \\
+    \implies \vec{R}^T &= {\vec{Q}}^T {\vec{R^{\prime}}}^T \label{eq:solutions/1/5/11/eq:eq_3}
+\end{align}
+Hence, by using lemma it can be observed that ${\vec{Q}}^T$ is invertible and of the order $n\times n$. Converting $\vec{R}^T$ to row-reduced echelon is equivalent to converting $\vec{R}$ to column-reduced echelon. 
+\begin{align} \label{eq:solutions/1/5/11/eq:eq_4}
+    \vec{R} = \vec{P}\vec{A}\vec{Q}
+\end{align}
+where,
+\begin{align}
+    \vec{R} = \myvec{\vec{I} & \vec{0} \\ \vec{0} & \vec{0}} \nonumber \\
+\end{align}
+$\vec{I}$ is an identity matrix and $\vec{0}$ represents a block of zeroes. $\vec{Q}$ is a upper triangular matrix. $\vec{R}$ in \eqref{eq:solutions/1/5/11/eq:eq_4} is in both row and column reduced echelon form. Hence proved.
+
+{Example}
+Let,
+\begin{align} \label{eq:solutions/1/5/11/eq:eq_41}
+    \vec{A} = \myvec{1 & 2 & 3 & 4 \\ 2 & 4 & 5 & 7 \\ 1 & 2 & 3 & 4}
+\end{align}
+To convert \eqref{eq:solutions/1/5/11/eq:eq_41} into row reduced echelon form, $\vec{A}$ has to be multiplied by $\vec{P}$
+\begin{align}
+    \vec{P} = \myvec{-5 & 3 & 0 \\ 2 & -1 & 0 \\ -1 & 0 & 1} \label{eq:solutions/1/5/11/eq:eq_42}
+\end{align}
+\begin{align}
+    \vec{R^{\prime}} = \vec{P}\vec{A} = \myvec{1 & 2 & 0 & 1\\ 0 & 0 & 1 & 1 \\ 0 & 0 & 0 & 0} \label{eq:solutions/1/5/11/eq:eq_43}
+\end{align}
+$\vec{R^{\prime}}$ is in row reduced echelon form. To convert \eqref{eq:solutions/1/5/11/eq:eq_43} into column-reduced echelon form, elementary operations have to be performed on ${\vec{R^{\prime}}}^T$. 
+By multiplying all the elementary matrices,
+\begin{align} 
+    \vec{Q}^T = \myvec{1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ -2 & 1 & 0 & 0 \\ -1 & 0 & -1 & 1} \label{eq:solutions/1/5/11/eq:eq_45} \\ 
+    \implies \vec{Q} = \myvec{1 & 0 & -2 & -1 \\ 0 & 0 & 1 & 0 \\ 0 & 1 & 0 & -1 \\ 0 & 0 & 0 & 1} \label{eq:solutions/1/5/11/eq:eq_46}
+\end{align}
+So $\vec{P}\vec{A}\vec{Q}$ is in both row-reduced and column-reduced echelon form.
+\begin{align} \label{eq:solutions/1/5/11/eq:eq_47}
+    \vec{R} = \vec{P}\vec{A}\vec{Q} = \myvec{1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0}
+\end{align}
+The inverses of $\vec{P}$ and $\vec{Q}$ are,
+\begin{align} \label{eq:solutions/1/5/11/eq:eq_48}
+    \vec{P}^{-1} = \myvec{1 & 3 & 0 \\ 2 & 5 & 0 \\ 1 & 3 & 1}; \quad 
+    \vec{Q}^{-1} = \myvec{1 & 2 & 0 & 1 \\ 0 & 0 & 1 & 1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1}
+\end{align}

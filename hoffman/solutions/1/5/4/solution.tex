@@ -1,0 +1,29 @@
+Given
+\begin{align}
+	\vec{A} = \myvec{5 & 0 & 0\\1 & 5 & 0\\0 & 1 & 5}
+\end{align}
+The given matrix has single eigenvalue as it is the lower triangular matrix and has equal diagonal elements. Hence $c_1 = c_2 = c_3 = 5$. To find the corresponding eigenvector, consider the following
+\begin{align}
+	(\vec{A} - c\vec{I})\vec{X} &= 0\\
+	\implies \myvec{0 & 0 & 0\\ 1 & 0 & 0\\0 & 1 & 0}\myvec{x_1 \\ x_2 \\ x_3} &= \myvec{0 \\ 0 \\ 0}
+\end{align}
+Solving the homogeneous system of linear equations by performing rref, we get
+\begin{align}
+	\begin{pmatrix}{3}
+		0 & 0 & 0 & 0\\ 1& 0 & 0 & 0\\ 0 & 0 & 0 & 0
+	\end{pmatrix}  
+	\xleftrightarrow[R_3 \xleftrightarrow{} R_2]{R_2 \xleftrightarrow{} R_1}
+	\begin{pmatrix}{3}
+		1 & 0 & 0 & 0\\ 0& 1 & 0 & 0\\ 0 & 0 & 0 & 0
+	\end{pmatrix}
+\end{align}
+Hence we get,
+\begin{align}
+	x_1 = 0, x_2 = 0, x_3 = t
+\end{align}
+where, $x_3$ is arbitrary.
+Therefore,
+\begin{align}
+	\vec{X} = \myvec{0 \\ 0 \\ 1}t
+\end{align}
+Hence, the given matrix has single eigenvector and is not diagonalizable.
