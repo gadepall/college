@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  21 OCT 2020 08:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  21 OCT 2020 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2313,17 +2313,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]))
-(./chapters/2/2.3.tex (./solutions/2/3/9/solution.tex)
+(./chapters/2/2.3.tex (./solutions/2/3/2/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(./solutions/2/3/9/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30])
 (./solutions/2/3/12/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]))
-[31
-
-]
+)) [31]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
- (./gvv_hoffman.aux)
+
+(./gvv_hoffman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
 Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
@@ -2331,10 +2336,10 @@ Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
- 43353 strings out of 480608
- 1007941 string characters out of 5892806
+ 43364 strings out of 480608
+ 1008134 string characters out of 5892806
  1405890 words of memory out of 5000000
- 57527 multiletter control sequences out of 15000+600000
+ 57528 multiletter control sequences out of 15000+600000
  627217 words of font info for 235 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,505b,1044s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2355,10 +2360,10 @@ fb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmbi8a.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (31 pages, 723495 bytes).
+Output written on gvv_hoffman.pdf (31 pages, 724539 bytes).
 PDF statistics:
- 1253 PDF objects out of 1440 (max. 8388607)
- 1150 compressed objects within 12 object streams
- 706 named destinations out of 1000 (max. 500000)
+ 1261 PDF objects out of 1440 (max. 8388607)
+ 1158 compressed objects within 12 object streams
+ 713 named destinations out of 1000 (max. 500000)
  199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
