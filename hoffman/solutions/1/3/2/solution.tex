@@ -1,0 +1,36 @@
+Let R be a row-reduced echelon matrix which is row equivalent to A. Then the systems
+%
+\begin{align}
+A \vec{x} = \vec{0}, R \vec{x} = \vec{0} \label{eq:solutions/1/3/2/th}
+\end{align}
+have the same solutions.
+On performing elementary row operations on $\eqref{eq:solutions/1/3/2/A}$,
+\begin{align}
+\vec{R}=\vec{B}\vec{A}
+\end{align}
+where $\vec{B}$ is the product of all elementary matrices. Reducing the given matrix, we get
+\begin{multline}
+\vec{B} = \brak{\vec{E_5}\vec{E_4}\vec{E_3}\vec{E_2}\vec{E_1}}\\
+=\myvec{1&i&0\\0&1&0\\0&0&1}\myvec{1&0&0\\0&1&0\\0&-i&1}\myvec{1&0&0\\0&\frac{1}{4}(1-i)&0\\0&0&1}\\
+\myvec{1&0&0\\0&1&0\\-i&0&1}\myvec{1&0&0\\-2&1&0\\0&0&1} \\
+=\myvec{\frac{1}{2}(1-i)&\frac{1}{4}(1+i)&0\\
+\frac{1}{2}(-1+i)&\frac{1}{4}(1-i)&0\\
+\frac{1}{2}(1-i)&\frac{1}{4}(-1-i)&1}
+\end{multline}
+\begin{align}
+\vec{R}=\myvec{1&0\\0&1\\0&0} \label{eq:solutions/1/3/2/R}
+\end{align}
+$\therefore$ Row-reduced matrix of $\vec{A}$ is,
+\begin{align}
+\vec{A} =  \myvec{1&-i\\2&2\\i&1+i}\xleftrightarrow[]{RREF}\myvec{1&0\\0&1\\0&0}\label{eq:solutions/1/3/2/final}
+\end{align}
+From\eqref{eq:solutions/1/3/2/th} and \eqref{eq:solutions/1/3/2/final},
+\begin{align}
+A\vec{x} = \myvec{1&0\\0&1\\0&0}\myvec{x_1\\x_2} = 0
+\end{align}
+The solution of  $\vec{A}\vec{x}=\vec{0}$ is,
+\begin{align}
+\vec{I_2} \vec{x} = 0\\
+\implies \vec{x} = 0
+\end{align}
+As $\vec{I_2}$ is invertible.

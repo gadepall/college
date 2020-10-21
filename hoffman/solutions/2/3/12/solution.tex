@@ -1,0 +1,31 @@
+Let $\vec{M}$ be the space of all $\vec{m}\times\vec{n}$ matrices. Let, $\vec{M}_{ij} \in \vec{M}$ be,
+\begin{align}
+\vec{M}_{ij} = \begin{cases} 0 &  m\neq i, n\neq j \\ 1 & m=i,n=j \end{cases}
+\end{align}
+For example,
+\begin{align}
+\vec{M}_{12} = \myvec{0&1&0&\cdots&0\\0&0&0&\cdots&0\\\vdots&\vdots&\vdots&\vdots&\vdots\\0&0&0&\cdots&0}_{mxn}\\
+\end{align}
+Let $\vec{A} \in \vec{M}$ given as,
+\begin{align}
+\vec{A} = \myvec{a_{11}&a_{12}&a_{13}&\cdots&a_{1n}\\a_{21}&a_{22}&a_{23}&\cdots&a_{2n}\\\vdots&\vdots&\vdots&\vdots&\vdots\\a_{m1}&a_{m2}&a_{m3}&\cdots&a_{mn}}_{mxn}
+\end{align}
+Now clearly,
+\begin{align}
+\vec{a}_{11} = \myvec{a_{11}&a_{12}&\cdots&a_{1n}\\a_{21}&a_{22}&\cdots&a_{2n}\\\vdots&\vdots&\vdots&\vdots\\a_{m1}&a_{m2}&\cdots&a_{mn}} \myvec{1&0&\cdots&0\\0&0&\cdots&0\\\vdots&\vdots&\vdots&\vdots\\0&0&\cdots&0}
+\end{align}
+\begin{align}
+\implies \vec{a}_{11} = \vec{A}\vec{M}_{11}
+\end{align}
+\begin{align}
+\therefore\vec{A} = \sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij}M_{ij} \label{eq:solutions/2/3/12/span}
+\end{align}
+$\implies \vec{M}_{ij}$ span $\vec{M}$. 
+Also from equation \eqref{eq:solutions/2/3/12/span}, $\vec{A}$=  0 if and only if all elements are zero, that is, 
+\begin{align}
+\vec{A} = \myvec{a_{11}&a_{12}&\cdots&a_{1n}\\a_{21}&a_{22}&\cdots&a_{2n}\\\vdots&\vdots&\vdots&\vdots\\a_{m1}&a_{m2}&\cdots&a_{mn}}= \myvec{0&0&\cdots&0\\0&0&\cdots&0\\\vdots&\vdots&\vdots&\vdots\\0&0&\cdots&0}
+\end{align}
+\begin{align}
+\implies a_{ij} = 0
+\end{align}
+Hence, $\vec{M}_{ij}$ are linearly independent as well. Hence, $\vec{M}_{ij}$ constitutes a basis for $\vec{M}$. and number of elememts in basis are mn. Hence dimension of space of all mxn matrices $\vec{M}$ is mn. 
