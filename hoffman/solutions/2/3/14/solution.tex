@@ -1,0 +1,58 @@
+Given $\vec{V}$ is a vector space over field $\mathbbf{Q}$ (rational numbers)\\
+It is finite dimensional with dimensionality $n$ if every vector $\vec{v}$ in $\vec{V}$ can be written as
+\begin{align}
+    \vec{v}=\sum_{i=0}^{n-1} c_i\alpha_i\\
+    \text{where }c_i \in \mathbbf{Q}\\
+    \text{and } \vec{B}= \cbrak{\alpha_0,\alpha_1,\hdots,\alpha_{n-1} }
+\end{align}
+is the basis with linearly independent $\alpha_i$\\
+that is, basis is the largest set with linearly independent vectors from $\vec{V}$\\
+Consider the set of vectors \cbrak{1,x} , where $x$ is irrational.\\
+Assume there exists non zero $\beta_0,\beta_1 \in \mathbbf{Q}$ such that
+\begin{align}
+   \beta_0+\beta_1x=0 \\
+   \implies x=-\frac{\beta_0}{\beta_1}\label{eq:solutions/2/3/14/1}
+\end{align}
+But $x$ is irrational and $-\frac{\beta_0}{\beta_1}$ is rational so \eqref{eq:solutions/2/3/14/1} can't be possible so $\beta_0,\beta_1=0$\\
+Hence $\cbrak{1,x}$ are independent.\\
+Similarly for the set \cbrak{1,x,x^2} \\
+for  $\beta_0,\beta_1,\beta_2 \in \mathbbf{Q}$
+\begin{align}
+  \beta_0+\beta_1x+\beta_2x^2=0  
+\end{align}
+$\beta_1x+\beta_2x^2$ is irrational and $\beta_0$ is rational. Therefore
+\begin{align}
+  \beta_0=0\label{eq:solutions/2/3/14/2}\\
+  \text{and  } \beta_1x+\beta_2x^2=0,( x \neq 0)\label{eq:solutions/2/3/14/3}\\
+  \implies \beta_1+\beta_2x=0  \\
+  \implies \beta_1,\beta_2=0\\
+  \therefore  \beta_0+\beta_1x+\beta_2x^2=0\\ \iff \beta_0,\beta_1,\beta_2=0
+\end{align}
+Hence \cbrak{1,x,x^2} are independent \\
+By induction, let us say the set \cbrak{1,x,x^2,\hdots,x^n} is independent
+\begin{align}
+\text{for  }\beta_0,\beta_1,\beta_2,\hdots,\beta_n \in \mathbbf{Q}\\
+    \beta_0+\beta_1x+\beta_2x^2+\hdots+\beta_nx^n=0 \label{eq:solutions/2/3/14/4}\\ \iff    \beta_0,\beta_1,\beta_2,\hdots,\beta_n=0
+\end{align}
+To prove this for the set $\vec{A}$=\cbrak{1,x,x^2,\hdots,x^{n+1}}
+\begin{align}
+\text{for  }\beta_0,\beta_1,\beta_2,\hdots,\beta_n,\beta_{n+1} \in \mathbbf{Q}\\  
+  \beta_0+\beta_1x+\hdots+\beta_nx^n+\beta_{n+1}x^{n+1}=0 
+\end{align}
+Comparing to \eqref{eq:solutions/2/3/14/2} and \eqref{eq:solutions/2/3/14/3}
+\begin{align}
+    \beta_0=0\\
+    \beta_1+\beta_2x+\hdots+\beta_{n+1}x^n=0
+\end{align}
+Comparing with \eqref{eq:solutions/2/3/14/4},we have\\
+$\beta_1,\beta_2,\hdots,\beta_{n+1}=0$
+\begin{align}
+    \therefore  \beta_0+\beta_1x+\hdots+\beta_nx^n+\beta_{n+1}x^{n+1}=0 
+\\ \iff
+    \beta_0,\beta_1,\beta_2,\hdots,\beta_n,\beta_{n+1}=0
+\end{align}
+Hence $\vec{A}$ has linearly independent vectors\\
+Let the set $\vec{B} =\cbrak{1,x,x^2,\hdots,x^m}$ be the largest linearly independent set in $\vec{V}$ and hence can form the basis leading to dimensionality $m+1$\\
+But from induction, we have proved that $\cbrak{1,x,x^2,\hdots,x^m,x^{m+1}}$ is also independent which is a contradiction to dimensionality being $m+1$\\
+Hence we deduce that the vector space $\vec{V}$ is not finite dimensional over the field $\mathbbf{Q}$
+

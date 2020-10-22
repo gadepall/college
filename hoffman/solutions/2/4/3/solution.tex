@@ -1,0 +1,36 @@
+Given
+\begin{align}
+\vec{B} = \myvec{1&1&1\\0&1&0\\-1&1&0}\label{eq:solutions/2/4/3/eq:B}
+\end{align}
+be the ordered basis for $R^3$,then the coordinates of vector,
+\begin{align}
+\vec{\alpha} = \myvec{a\\b\\c}\label{eq:solutions/2/4/3/eq:alpha}
+\end{align}
+in the ordered basis $R^3$ is the vector,
+\begin{align}
+\vec{[\alpha]_B} = \myvec{x_1\\x_2\\x_3}\label{eq:solutions/2/4/3/eq:x}
+\end{align}
+hence
+\begin{align}
+x_1\alpha_1+x_2\alpha_2+x_3\alpha_3 = \alpha\label{eq:solutions/2/4/3/eq:a1}
+\end{align}
+substituting \eqref{eq:solutions/2/4/3/eq:B} and \eqref{eq:solutions/2/4/3/eq:alpha} in \eqref{eq:solutions/2/4/3/eq:a1}
+\begin{align}
+\myvec{1&1&1\\0&1&0\\-1&1&0}\myvec{x_1\\x_2\\x_3} = \myvec{a\\b\\c}
+\end{align}
+augmented matrix form
+\begin{align}
+\myvec{1&1&1&a\\0&1&0&b\\-1&1&0&c}
+\end{align}
+converting above matrix into row reduced echelon form
+\begin{align}
+\myvec{1&1&1&a\\0&1&0&b\\-1&1&0&c}\xleftrightarrow[]{R_3\leftarrow R_3+R_1}\myvec{1&1&1&a\\0&1&0&b\\0&2&1&c+a}\\
+\xleftrightarrow[]{R_3\leftarrow R_3-2R_2}\myvec{1&1&1&a\\0&1&0&b\\0&0&1&a-2b+c}\\
+\xleftrightarrow[]{R_1\leftarrow R_1-R_2}\myvec{1&0&1&a-b\\0&1&0&b\\0&0&1&a-2b+c}\\
+\xleftrightarrow[]{R_1\leftarrow R_1-R_3}\myvec{1&0&0&b-c\\0&1&0&b\\0&0&1&a-2b+c}
+\end{align}
+$\therefore$ The coordinates of $\alpha$ w.r.t $\vec{B}$ is
+\begin{align}
+\vec{[\alpha]_B} = \myvec{b-c\\b\\a-2b+c}
+\end{align}
+

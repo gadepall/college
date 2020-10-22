@@ -1,0 +1,14 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\item 
+Let $\vec{B} = \myvec{\alpha_1&\alpha_2&\alpha_3}$ be the ordered basis for $R^3$ consisting of 
+$$\vec{\alpha_1} = \myvec{1&0&-1}, \vec{\alpha_2} = \myvec{1&1&1}, \vec{\alpha_3} = \myvec{1&0&0}.$$
+What are the coordinates of vector $\myvec{a&b&c}$ in the ordered basis $\vec{B}$ ?
+%
+\\
+\solution
+\input{./solutions/2/4/3/solution.tex}
+\end{enumerate}

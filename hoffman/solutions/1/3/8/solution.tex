@@ -1,18 +1,18 @@
 
 Given , 
 \begin{align}
-    \vec{A}\vec{X}&=\vec{Y}\label{system}\\
-    \myvec{3 & -1 & 2\\2 & 1 & 1\\1 & -3 & 0}\vec{X}&=\myvec{y_1 \\y_2\\y_3}\label{given}
+    \vec{A}\vec{X}&=\vec{Y}\label{eq:solutions/1/3/8/system}\\
+    \myvec{3 & -1 & 2\\2 & 1 & 1\\1 & -3 & 0}\vec{X}&=\myvec{y_1 \\y_2\\y_3}\label{eq:solutions/1/3/8/given}
 \end{align}
 Now we try to find the matrix $\vec{B}$ such that $\vec{B}\vec{A}$ gives the row echelon form of matrix $\vec{A}$.
 
 Here, $\vec{B}$ is given by , 
 \begin{align}
-    \vec{B}&=\myvec{1&0&0\\-\frac{2}{3}&1&0\\-\frac{7}{5}&\frac{8}{5}&1}\label{B}\\
-    \implies\vec{B}\vec{A}&=\myvec{3 & -1 & 2\\0 & \frac{5}{3} & -\frac{1}{3}\\0 & 0 & -\frac{6}{5}}\label{refB}
+    \vec{B}&=\myvec{1&0&0\\-\frac{2}{3}&1&0\\-\frac{7}{5}&\frac{8}{5}&1}\label{eq:solutions/1/3/8/B}\\
+    \implies\vec{B}\vec{A}&=\myvec{3 & -1 & 2\\0 & \frac{5}{3} & -\frac{1}{3}\\0 & 0 & -\frac{6}{5}}\label{eq:solutions/1/3/8/refB}
 \end{align}
 
-Therefore, from \eqref{refB} rank of matrix $\vec{A}$ is 3 and it is a full rank matrix.
+Therefore, from \eqref{eq:solutions/1/3/8/refB} rank of matrix $\vec{A}$ is 3 and it is a full rank matrix.
 
 Hence the columns of $\vec{A}$ are linearly independent.
 
