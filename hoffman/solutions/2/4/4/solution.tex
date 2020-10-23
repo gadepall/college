@@ -1,0 +1,131 @@
+\begin{enumerate}[label=\emph{\alph*)}]
+\item 
+It is given that $\alpha_1$ and $\alpha_2$ span $\vec{W}$. For $\alpha_1$ and
+$\alpha_2$ to be the basis for $\vec{W}$ they must be linearly independent.
+Let
+\begin{align}
+	S_1=\cbrak{\alpha_1,\alpha_2}=\cbrak{\myvec{1\\0\\i},\myvec{1+i\\1\\-1}}
+\end{align}
+Using row reduction on matrix $\vec{A}=\myvec{\alpha_1 & \alpha_2}$
+\begin{align}
+	\myvec{1 & 1+i \\ 0 & 1 \\ i & -1}
+	\xleftrightarrow[]{R_3 \leftarrow R_3-iR_1}
+	\myvec{1 & 1+i \\ 0 & 1 \\ 0 & -i}\\   
+	\xleftrightarrow[]{R_3 \leftarrow R_3+iR_2}
+	\myvec{1 & 1+i \\ 0 & 1 \\ 0 & 0}\\
+	\xleftrightarrow[]{R_1 \leftarrow R_1 - (i+1)R_2}
+	 \myvec{1 & 0 \\ 0 & 1 \\ 0 & 0} \label{eq:solutions/2/4/4/rrefA}
+\end{align}
+Since $\vec{A}$ is a full-rank matrix the column vectors are linearly 
+independent. Therefore $S_1= \cbrak{ \alpha_1, \alpha_2 } $ is a basis set for 
+$\vec{W}$.
+\item
+\begin{align}
+	\beta_1=\myvec{1\\1\\0} \\
+	\beta_2=\myvec{1\\i\\1+i} 
+\end{align}
+		Since column vectors of $\vec{A}=\myvec{\alpha_1 & \alpha_2}$ are basis for $\vec{W}$ and if $\beta_1$ and $\beta_2 \ \in \vec{W}$ there exist a unique solution $\vec{x}$ such that
+\begin{align}
+	\myvec{\alpha_1 & \alpha_2}\vec{x}=\myvec{\beta_1 & \beta_2} 
+\end{align}
+Using row reduction on augmented matrix
+		\begin{align}
+			\myvec{1 & 1+i & | & 1 & 1\\
+			       0 & 1   & | & 1 & i\\
+			       i & -1  & | & 0 & 1+i}\\
+			\xleftrightarrow[]{R3 \leftarrow R_3-iR-1}
+			\myvec{1 & 1+i & | & 1 & 1\\
+			       0 & 1   & | & 1 & i\\
+			       0 & -i  & | & -i & 1}\\
+			\xleftrightarrow[]{R_3 \leftarrow R_3+iR_2}
+			\myvec{1 & 1+i & | & 1 & 1\\
+			       0 & 1   & | & 1 & i\\
+			       0 & 0  &  | & 0 & 0}\\
+			\xleftrightarrow[]{R_1 \leftarrow R_1-(i+1)R_2}
+			\myvec{1 & 0 &  | & -i & 2-i\\
+			       0 & 1   &| & 1  & i\\
+			       0 & 0  & | & 0  & 0}\\
+			       \implies 
+			       \vec{x}=\myvec{-i & 2-i\\1 & i}
+		\end{align}
+Therefore $\beta_1$ and $\beta_2 \in \vec{W}$.\\
+Consider 
+\begin{align}
+	S_2=\cbrak{\beta_1,\beta_2}=\cbrak{\myvec{1\\1\\0},\myvec{1\\i\\1+i}}
+\end{align}
+and also let 
+\begin{align}
+	\vec{B}=\myvec{1 & 1 \\
+		       1 & i \\
+		       0 & 1+i}
+\end{align}
+Using row reduction on matrix $\vec{B}$
+\begin{align}
+	\myvec{1 & 1 \\
+               1 & i \\
+               0 & 1+i}
+        \xleftrightarrow[]{R_2 \leftarrow R_2-R_1}
+	\myvec{1 & 1 \\
+               0 & i-1 \\
+	       0 & 1+i}\\
+	\xleftrightarrow[]{R_2\leftarrow \frac{R_2}{i-1}}
+	\myvec{1 & 1 \\
+               0 & 1 \\
+               0 & 1+i}\\
+	\xleftrightarrow[R_3 \leftarrow R_3-(i-1)R_2]
+	{R_1 \leftarrow R_1 - R_2}
+	 \myvec{1 & 0 \\ 0 & 1 \\ 0 & 0} \label{eq:solutions/2/4/4/Binv}
+\end{align}
+Since $\vec{B}$ is a full rank matrix the column vectors are linearly independent.\\
+Let $\alpha$ be any vector in the subspace $\vec{W}$, then it can be expressed as 
+span $\cbrak{\alpha_1,\alpha_2}$ i.e
+\begin{align}
+	\alpha = \myvec{\alpha_1 & \alpha_2}\vec{x_1} =\vec{A}\vec{x_1} \label{eq:solutions/2/4/4/Ax}
+\end{align}
+$S_2=\cbrak{\beta_1,\beta_2}$ spans $\vec{W}$ if any vector $\alpha \in \ \vec{W}$ can be 
+expressed as
+\begin{align}
+	\alpha=\myvec{\beta_1,\beta_2}\vec{x_2}=\vec{B}\vec{x_2} \label{eq:solutions/2/4/4/Bx}
+\end{align}
+From (\ref{eq:solutions/2/4/4/Ax}) and (\ref{eq:solutions/2/4/4/Bx}) we conclude
+\begin{align}
+	\vec{B}\vec{x_2}=\vec{A}\vec{x_1}\\
+	\implies \vec{x_2}=\vec{B}^{-1}\vec{A}\vec{x_1} \label{eq:solutions/2/4/4/x2}
+\end{align}
+Therefore from (\ref{eq:solutions/2/4/4/x2}) $\vec{x_2}$ exists if $\vec{B}$ is invertible. From
+(\ref{eq:solutions/2/4/4/Binv}) we conclude $\vec{x_2}$ exists and hence any vector $\alpha \in \ \vec{W}$
+can be expressed as span$\cbrak{\beta_1,\beta_2}$. Therefore $\cbrak{\beta_1,\beta_2}$
+is basis for $\vec{W}$.
+\item
+	Since $\alpha_1,\alpha_2 \in \ \vec{W}$ and $\cbrak{\beta_1,\beta_2}$ are ordered
+	basis for $\vec{W}$ there must exist unique value of $\vec{x}$ such that
+	\begin{align}
+		\myvec{\beta_1 & \beta_2}\vec{x}=\myvec{\alpha_1 & \alpha_2} \label{eq:solutions/2/4/4/a1}
+	\end{align}
+Using row reduction on (\ref{eq:solutions/2/4/4/a1}) we get,
+\begin{align}
+	\myvec{1 & 1 & | & 1 & 1+i\\
+	       1 & i & | & 0 & 1\\
+	       0 & 1+i &| & i & -1}\\
+	\xleftrightarrow[]{R_2 \leftarrow R_2-R_1}
+	\myvec{1 & 1 & | & 1 & 1+i\\
+	       0 & i-1 & | & -1 & -i\\
+	       0 & 1+i &| & i & -1}\\
+        \xleftrightarrow[]{R_2 \leftarrow \frac{R_2}{i-1}}
+	\myvec{1 & 1 & | & 1 & 1+i\\
+	       0 & 1 & | & \frac{1+i}{2} & \frac{-1+i}{2}\\
+	       0 & 1+i &| & i & -1}\\
+	\xleftrightarrow[]{R_3 \leftarrow R_3 - (i+1)R_2}
+	\myvec{1 & 1 & | & 1 & 1+i\\
+	       0 & 1 & | & \frac{1+i}{2} & \frac{-1+i}{2} \\
+	       0 & 0 &| & 0 & 0}\\
+	\xleftrightarrow[]{R_1 \leftarrow R_2- R_1}
+	\myvec{1 & 0 & | & \frac{1-i}{2} & \frac{3+i}{2} \\
+	       0 & 1 & | & \frac{1+i}{2} & \frac{-1+i}{2}\\
+	       0 & 0 &| & 0 & 0}\\
+	\implies 
+	\vec{x}=\frac{1}{2}\myvec{1-i & 3+i\\ 1+i & -1+i} \label{eq:solutions/2/4/4/x}
+\end{align}
+Thus the column vectors of (\ref{eq:solutions/2/4/4/x}) are corresponding coordinates of $\alpha_1$ and $\alpha_2$ 
+in ordered basis $\cbrak{\beta_1,\beta_2}$.
+\end{enumerate}

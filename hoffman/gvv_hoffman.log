@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  23 OCT 2020 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  23 OCT 2020 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2512,24 +2512,69 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ))
-(./chapters/2/2.4.tex
-Overfull \hbox (16.00755pt too wide) detected at line 8
-[] \OT1/txr/m/n/12 = [] \OML/txmi/m/it/12 ; [] \OT1/txr/m/n/12 = [] \OML/txmi/m
-/it/12 ; [] \OT1/txr/m/n/12 = [] \OML/txmi/m/it/12 :
+(./chapters/2/2.4.tex (./solutions/2/4/2/solution.tex
+Underfull \hbox (badness 4699) in paragraph at lines 7--1
+[]\OT1/txr/m/n/12 Find the co-or-di-nate ma-trix of the vec-
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 7--1
+\OT1/txr/m/n/12 tor $[]$ in the ba-sis of $\OML/txmi/m/it/12 C[]$ \OT1/txr/m/n/
+12 con-sist-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
-(./solutions/2/4/3/solution.tex
+Underfull \hbox (badness 10000) detected at line 6
+ []$[]  [] []$ []  
+ []
+
+
+Overfull \hbox (4.14853pt too wide) in paragraph at lines 14--14
+[] 
+ []
+
+)
+Overfull \hbox (16.00755pt too wide) detected at line 15
+[] \OT1/txr/m/n/12 = [] \OML/txmi/m/it/12 ; [] \OT1/txr/m/n/12 = [] \OML/txmi/m
+/it/12 ; [] \OT1/txr/m/n/12 = [] \OML/txmi/m/it/12 :
+ []
+
+(./solutions/2/4/3/solution.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 25--28
+[]\OT1/txr/m/n/12 Show that the vec-tors $\OML/txmi/m/it/12 ^^L[] \OT1/txr/m/n/
+12 = []$ and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)) [39]
+ [39]
+(./solutions/2/4/4/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]))
+[41
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
-
-(./gvv_hoffman.aux)
+ (./gvv_hoffman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
@@ -2537,10 +2582,10 @@ Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
  ) 
 Here is how much of TeX's memory you used:
- 43591 strings out of 480608
- 1011922 string characters out of 5892806
- 1413158 words of memory out of 5000000
- 57565 multiletter control sequences out of 15000+600000
+ 43649 strings out of 480608
+ 1012862 string characters out of 5892806
+ 1413506 words of memory out of 5000000
+ 57574 multiletter control sequences out of 15000+600000
  627217 words of font info for 235 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1101s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2561,10 +2606,10 @@ fb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmbi8a.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (39 pages, 759705 bytes).
+Output written on gvv_hoffman.pdf (41 pages, 769158 bytes).
 PDF statistics:
- 1507 PDF objects out of 1728 (max. 8388607)
- 1394 compressed objects within 14 object streams
- 874 named destinations out of 1000 (max. 500000)
+ 1571 PDF objects out of 1728 (max. 8388607)
+ 1455 compressed objects within 15 object streams
+ 917 named destinations out of 1000 (max. 500000)
  207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
