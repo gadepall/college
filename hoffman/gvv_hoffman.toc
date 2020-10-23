@@ -7,5 +7,5 @@
 \contentsline {section}{\numberline {2}Vector Spaces}{25}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Vector Spaces}{25}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Subspaces}{28}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Bases and Dimension}{32}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Coordinates}{35}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.3}Bases and Dimension}{34}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Coordinates}{39}{subsection.2.4}%

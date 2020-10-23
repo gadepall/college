@@ -1,0 +1,64 @@
+ \begin{enumerate}
+   \item Prove that $\vec{V_e}$ and $\vec{V_o}$ are subspaces of $\vec{V}$.
+ \end{enumerate}
+
+A non-empty subset $\vec{W}$ of $\vec{V}$ is a subspace of $\vec{V}$ if and only if for each pair of vectors $\vec{\alpha}$, $\vec{\beta}$ in $\vec{W}$ and each scalar $c$ in $\vec{F}$ the vector $c\vec{\alpha}+\vec{\beta}$ is again in $\vec{W}$.\\
+
+Let $\vec{u}$, $\vec{v}$ $\in$ $\vec{V_e}$ and $c$ $\in$ $\vec{R}$ and let $\vec{h}$ = $c\vec{u}$ + $\vec{v}$. Then,
+\begin{equation} \label{eq:solutions/2/2/8/eq:eq1}
+\begin{split}
+\vec{h}(-x) &= c \vec{u}(-x) + \vec{v}(-x)\\
+ & = c \vec{u}(x) + \vec{v}(x)\\
+& = \vec{h}(x)\\
+\end{split}
+\end{equation}
+From \eqref{eq:solutions/2/2/8/eq:eq1}
+\begin{align}
+\implies \vec{h}(-x) = \vec{h}(x)\\
+\implies \vec{h} \in \vec{V_e} \label{eq:solutions/2/2/8/eq:eq2}
+\end{align}
+
+Let $\vec{u}$, $\vec{v}$ $\in$ $\vec{V_o}$ and $c$ $\in$ $\vec{R}$ and let $\vec{h}$ = $c\vec{u}$ + $\vec{v}$. Then,
+\begin{equation} \label{eq:solutions/2/2/8/eq:eq3}
+\begin{split}
+\vec{h}(-x) &= c \vec{u}(-x) + \vec{v}(-x)\\
+ & = -c \vec{u}(x) - \vec{v}(x)\\
+& = -\vec{h}(x)\\
+\end{split}
+\end{equation}
+From \eqref{eq:solutions/2/2/8/eq:eq3}
+\begin{align}
+\implies \vec{h}(-x) = -\vec{h}(x)\\
+\implies \vec{h} \in \vec{V_o} \label{eq:solutions/2/2/8/eq:eq4}
+\end{align}
+From \eqref{eq:solutions/2/2/8/eq:eq2} and \eqref{eq:solutions/2/2/8/eq:eq4}, $\vec{V_e}$ and $\vec{V_o}$ are subspaces of $\vec{V}$.\\
+\begin{enumerate}
+    \setcounter{enumi}{1}
+   \item Prove that $\vec{V_e} + \vec{V_o} = \vec{V}$.
+ \end{enumerate}
+Let $\vec{u}$ $\in$ $\vec{V}$
+\begin{align}
+    \vec{u_e}(x) = \frac{\vec{u}(x)+\vec{u}(-x)}{2} \label{eq:solutions/2/2/8/eq:eq10}\\
+    \vec{u_o}(x) = \frac{\vec{u}(x)-\vec{u}(-x)}{2} \label{eq:solutions/2/2/8/eq:eq11}
+\end{align}
+Equation equation \eqref{eq:solutions/2/2/8/eq:eq10} and \eqref{eq:solutions/2/2/8/eq:eq11}, $\vec{u_e}$ is even and $\vec{u_o}$ is odd. Adding both the equations,
+\begin{align}
+    \vec{u} = \vec{u_e} + \vec{u_o} \label{eq:solutions/2/2/8/eq:eq12}
+\end{align}
+
+\begin{enumerate}
+    \setcounter{enumi}{2}
+   \item Prove that $\vec{V_e} \cap \vec{V_o} = \{0\}$.
+ \end{enumerate}
+Let $\vec{u} \in \vec{V_e} \cap \vec{V_o}$
+\begin{align}
+    \vec{u} \in \vec{V_e} \implies \vec{u}(-x) &= \vec{u}(x) \label{eq:solutions/2/2/8/eq:eq7}\\
+    \vec{u} \in \vec{V_o} \implies \vec{u}(-x) &= -\vec{u}(x) \label{eq:solutions/2/2/8/eq:eq8}
+\end{align}
+Equating \eqref{eq:solutions/2/2/8/eq:eq7} and \eqref{eq:solutions/2/2/8/eq:eq8},
+\begin{align}
+    \vec{u}(x) = -\vec{u}(x)\\
+    \implies 2\vec{u}(x)=0\\
+    \implies \vec{u}=0 \label{eq:solutions/2/2/8/eq:eq13}
+\end{align}
+Equations \eqref{eq:solutions/2/2/8/eq:eq2}, \eqref{eq:solutions/2/2/8/eq:eq4}, \eqref{eq:solutions/2/2/8/eq:eq12}, \eqref{eq:solutions/2/2/8/eq:eq13} proves 1, 2 and 3.

@@ -1,0 +1,53 @@
+\begin{enumerate}[label=\alph*.]
+\item 
+Let $W \neq {0}$ be subspace of $\mathbb{R}^1$. Then $W$ is a nonempty subset of $\mathbb{R}^1$ and there exist $w \in W$ such that $w \neq 0$ which gives us that there exist $w^{-1}$.\\
+\\
+Let $x\in\mathbb{R}^1$. Since W is in $\mathbb{R}^1$ we have that it is closed under scalar multiplication which gives us that $(xw^{-1})w=x(w^{-1}w)=x.1=x \in W$\\
+\\
+Hence $\mathbb{R}^1 \subset W$ and therefore $ W = \mathbb{R}^1$\\
+\\
+Thus the only subspace of $\mathbb{R}^1$ distinct of {0} is $\mathbb{R}^1$ and therefore only subspaces of $\mathbb{R}^1$ are {0} and $\mathbb{R}^1$. 
+\\
+\item
+Clearly, {0} and $\mathbb{R}^2$ itself are subspaces of $\mathbb{R}^2$. If $u \neq 0$ and $u \in \mathbb{R}^2$ then span$\{\vec{u}\}$ = ${c\vec{u}: c\in \mathbb{R}}$ = set of all scalar multiples of $\vec{u}$ is a subspace of $\mathbb{R}^2$.\\
+\\
+To show that these are the only subspaces of $\mathbb{R}^2$, assume that $W \subset \mathbb{R}^2$ is any subspace of $\mathbb{R}^2$. Since $W\subset\mathbb{R}^2$ is a subspace of $\mathbb{R}^2$, we have that $\vec{0} \in W$. If $W \neq {\vec{0}}$ then there is a vector $\vec{u} \neq 0$ and $\vec{u} \in W$, and hence $W$ contains $c\vec{u}$ for every $c \in \mathbb{R}$. If $W \neq span\{\vec{u}\}$, then there is a vector $v \in W$ so that $\vec{v} \neq k\vec{u}$ for any $k \in \mathbb{R}$.\\
+\\
+Then $\vec{z} = c\vec{u} + d\vec{v} \in span\{\vec{u}$,$\vec{v}\}$ for any $c,d \in \mathbb{R}$. Since W is a subspace $c\vec{u}$ and $d\vec{v} \in W$ for any $c,d \in \mathbb{R}$, and hence so does $\vec{z} = c\vec{u} + d\vec{v}$. Thus $\vec{z} \in span\{\vec{u}$,$\vec{v}\} \implies z \in W$, and so $span\{\vec{u}$,$\vec{v}\} \subset W \subset \mathbb{R}^2$.\\
+\\
+Let $\vec{x} = \myvec{x_1 \\x_2} \in \mathbb{R}^2$ be any vector in $\mathbb{R}^2$, and let $\vec{u} = \myvec{u_1\\u_2} \neq \myvec{0\\0}$ and let $\vec{v} = \myvec{v_1\\v_2} \neq \myvec{0\\0}$. We show that there are real numbers $c$ and $d$ so that $c\vec{u} + d\vec{v} = \vec{x}$
+\begin{align}
+	\label{eq:solutions/2/2/6/1}\myvec{cu_1\\cu_2} + \myvec{dv_1\\dv_2} = \myvec{x_1\\x_2}\\
+	\label{eq:solutions/2/2/6/2}\myvec{u_1 & v_1\\u_2 & v_2}\myvec{c\\d} = \myvec{x_1\\x_2}
+\end{align}
+Since $\vec{v} \neq k\vec{u}$ for any $k \in \mathbb{R}$ and since $\vec{u} = \myvec{u_1 \\ u_2} \neq \myvec{0\\0}$ assume that $u_1 \neq 0$, and since $k\vec{u} \neq \vec{v} = \myvec{v_1\\v_2} = \myvec{0\\0}$ assume that $v_2 \neq 0$. Then
+\begin{align}\label{eq:solutions/2/2/6/3}
+	A = \myvec{u_1 & v_1\\u_2 & v_2} \rightarrow \myvec{1 & 0\\0 & 1}
+\end{align}
+\\
+Hence $A$ is row equivalent to $I_2$ and so $A$ is invertible and so \eqref{eq:solutions/2/2/6/2} has unique solution for $c$ and $d$. Thus for any $\vec{x} \in \mathbb{R}^2$ we can find real numbers $c$ and $d$ such that $\vec{x} = c\vec{u} + d\vec{v}$. Hence $\vec{x} \in \mathbb{R}^2 \implies x \in span\{\vec{u},\vec{v}\}$. Thus $\mathbb{R}^2 \subset span\{\vec{u},\vec{v}\} \subset W \subset \mathbb{R}^2$.\\
+\\
+Hence $span\{ \vec{u}$,$\vec{v} \}$ = W = $\mathbb{R}^2$, and so the only subspace of $\mathbb{R}^2$ are ${\vec{0}}$, $\mathbb{R}^2$, and $L = {c\vec{u} : \vec{u} \neq 0, c \in \mathbb{R}}$.
+\\
+\item
+The following are the subspaces of $\mathbb{R}^3$ :
+\begin{enumerate}[label=\arabic*.]
+\item
+Origin is a trivial subspace of $\mathbb{R}^3$.\\
+\item
+$\mathbb{R}^3$ itself is a trivial subspace of $\mathbb{R}^3$.\\
+\item
+Every line through origin is subspace of $\mathbb{R}^3$.\\
+\item
+Every plane in $\mathbb{R}^3$ passing through origin is a subspace $\mathbb{R}^3$.\\
+\textit{Proof : }
+Let $W$ be a plane passing through origin. We need $\vec{0} \in  W$, but we have that since we’re only considering planes that contain origin. Next, we need $W$ is closed under vector addition. If $\vec{w_1}$ and $\vec{w_2}$ both belong to $W$, then so does $\vec{w_1} + \vec{w_2}$ because it’s found by constructing a parallelogram, and the whole parallelogram lies in the plane $W$. Finally, we need $W$ is closed under
+scalar products, but it is since scalar multiples lie in a straight line through the origin, and that line lies in $W$. Thus, each plane $W$ passing through the origin is a subspace of $\mathbb{R}^3$.\\
+\item
+The intersection of any of the above subspaces will also be a subspace of $\mathbb{R}^3$. Because intersection of subspaces of a vector space is also a subspace of vector space.\\
+\textit{Proof} :
+Let $W$ be a collection of subspaces of $V$, and let $W = \cap W_i$ be their intersection. Since each $W_i$ is a subspace, each of it contains the zero vector. Thus the zero vector is in the intersection $W$, and $W$ is non-empty. Let $\vec{\alpha}$ and $\vec{\beta}$ be vectors in $W$ and let $c$ be a scalar. By definition of $W$, both $\vec{\alpha}$ and $\vec{\beta}$ belong to each $W_i$, and because each $W_i$ is a subspace, the vector $(c\vec{\alpha} + \vec{\beta})$ is again in $W$. Hence by definition of subspace, $W$ is a subspace of $V$.
+\\
+\end{enumerate}
+These 5 are only subspaces of $\mathbb{R}^3$ possible. Because dimension of vector space $\mathbb{R}^3$ is 3. Any subspace of $\mathbb{R}^3$ should have dimension less than or equal to it's dimension. Hence possible dimensions of subspaces are {0,1,2,3}. Only subspace with 0 dimension is origin. Subspaces of dimension 1 with zero vector are lines passing through origin. Subspaces of dimension 2 with zero vector are plane passing through origin. Subspace of dimension 3 are all of $\mathbb{R}^3$ itself.
+\end{enumerate}

@@ -1,0 +1,85 @@
+A non-empty subset W of V is a subspace of V if and only if for each pair of vectors $\alpha$, $\beta$ in W and each scalar c $\in$ F, the vector $c\alpha+\beta \in$ W.
+
+\begin{enumerate}
+\item Let ${A_1,A_2}\in W_1$ where,
+\begin{align}
+    A_1 = \myvec{x_1&-x_1\\y_1&z_1}, A_2 = \myvec{x_2&-x_2\\y_2&z_2}
+\end{align}
+Let $c\in F$ then,
+\begin{align}
+    cA_1+A_2 = \myvec{cx_1+x_2&-cx_1-x_2\\cy_1+y_2&cz_1+z_2} = \myvec{u&-u\\v&w}
+\end{align}
+Thus $cA_1+A_2 \in W_1$. \textbf{Hence $W_1$ is a subspace.} 
+Similarly, let ${A_1,A_2}\in W_2$ where,
+\begin{align}
+    A_1 = \myvec{a_1&b_1\\-a_1&c_1}, A_2 = \myvec{a_2&b_2\\-a_2&c_2}
+\end{align}
+Let $c\in F$ then,
+\begin{align}
+    cA_1+A_2 = \myvec{ca_1+a_2&cb_1+b_2\\-ca_1-a_2&cc_1+c_2} = \myvec{u&v\\-u&w}
+\end{align}
+Thus $cA_1+A_2 \in W_2$. \textbf{Hence $W_2$ is a subspace.}
+
+\item The subspace $W_1$ can be given as, 
+\begin{align}
+    \myvec{x&-x\\y&z} &= x\myvec{1&-1\\0&0} + y\myvec{0&0\\1&0} + z\myvec{0&0\\0&1} \\
+    &= xA_1 + yA_2 + zA_2 \label{eq:solutions/2/3/7/span_w1}
+\end{align}
+Now, 
+\begin{align}
+    &x\myvec{1&-1\\0&0} + y\myvec{0&0\\1&0} + z\myvec{0&0\\0&1} = \myvec{0&0\\0&0} \\
+    &\implies x = y = z = 0 \label{eq:solutions/2/3/7/indep_w1}
+\end{align}
+$A_1, A_2, A_3$ are linearly independent and spans $W_1$. Thus $\cbrak{A_1, A_2, A_3}$ forms basis for $W_1$. 
+
+\textbf{$\therefore$ dimension of $W_1$ is 3.}   
+
+The subspace $W_2$ can be given as, 
+\begin{align}
+    \myvec{a&b\\-a&c} &= a\myvec{1&0\\-1&0} + b\myvec{0&1\\0&0} + c\myvec{0&0\\0&1} \\
+    &= aA_1 + bA_2 + cA_2 \label{eq:solutions/2/3/7/span_w2}
+\end{align}
+Now, 
+\begin{align}
+    &a\myvec{1&0\\-1&0} + b\myvec{0&1\\0&0} + c\myvec{0&0\\0&1} = \myvec{0&0\\0&0} \\
+    &\implies a = b = c = 0 \label{eq:solutions/2/3/7/indep_w2}
+\end{align}
+$A_1, A_2, A_3$ are linearly independent and spans $W_2$. Thus $\cbrak{A_1, A_2, A_3}$ forms basis for $W_2$. 
+
+\textbf{$\therefore$ dimension of $W_2$ is 3.}
+
+Subspace $W_1+W_2$ is given by, 
+\begin{align}
+    &\myvec{x+a&-x+b\\y-a&z+c}
+\end{align}
+For $x+a\ne -x+b\ne y-a\ne z+c $, 
+\begin{align}
+    &\myvec{x+a&-x+b\\y-a&z+c} = \myvec{j&k\\l&m} \\
+    &= j\myvec{1&0\\0&0}+k\myvec{0&1\\0&0}+l\myvec{0&0\\1&0} + m\myvec{0&0\\0&1} \\
+    &= jA_1 + kA_2 + lA_3 + mA_4
+\end{align}
+Now, 
+\begin{align}
+    &jA_1 + kA_2 + lA_3 + mA_4 = 0 \\
+    &\implies j=k=l=m=0
+\end{align}
+$A_1, A_2, A_3, A_4 $ are linearly independent and spans $W_1+W_2$. 
+Thus $\cbrak{A_1, A_2, A_3, A_4}$ forms a basis. 
+
+\textbf{$\therefore$ dimension of $W_1+W_2$ is 4.}
+
+The subspace $W_1 \cap W_2$ is given as, 
+\begin{align}
+   \myvec{x&-x\\-x&y} &= x\myvec{1&-1\\-1&0} + y\myvec{0&0\\0&1} \\
+   &= xA_1 + yA_2
+\end{align}
+ Now, 
+\begin{align}
+    &x\myvec{1&-1\\-1&0} + y\myvec{0&0\\0&1} = \myvec{0&0\\0&0} \\
+    &\implies x = y = 0
+\end{align}
+$A_1, A_2$ are linearly independent and spans $W_1 \cap W_2$. Thus, $\cbrak{A_1, A_2}$ forms a basis. 
+
+\textbf{$\therefore$ dimension of $W_1 \cap W_2$ is 2.}
+    
+\end{enumerate}
