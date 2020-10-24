@@ -1,0 +1,52 @@
+Let $\vec{V}$ is the set of all  $\myvec{x_1, & x_2, & x_3 }\in \mathbb{R}^{3} $ which satisfy the \eqref{eq:solutions/1/3/4/1.1}, \eqref{eq:solutions/1/3/4/1.2} and \eqref{eq:solutions/1/3/4/1.3}\\
+From equation \eqref{eq:solutions/1/3/4/1.1} to \eqref{eq:solutions/1/3/4/1.3} we can write,
+\begin{align}
+\myvec{1 & -1 & 2 \\ 1 & 0 & 2 \\ 1 & -3 & 4}\vec{x}= \myvec{1 \\ 1 \\ 2}\\
+\implies \vec{A}\vec{x} = \vec{b}  \label{eq:solutions/1/3/4/2.2}\\
+\intertext{Where,}\\
+\vec{A} = \myvec{1 & -1 & 2 \\ 1 & 0 & 2 \\ 1 & -3 & 4}, \vec{b}= \myvec{1 \\ 1 \\ 2}, \vec{x} = \myvec{x_1 \\ x_2 \\ x_3} \label{eq:solutions/1/3/4/2.4}
+\end{align}
+Solving the  matrix $\vec{A}$ for rank  we get,
+\begin{align}
+\myvec{1&-1& 2\\ 2& 0 & 2 \\ 1 & -3 & 4} &\xleftrightarrow{R_2=R_1 - 2R_1}\myvec{1&-1&2 \\ 0 &2 & -2 \\ 1 &-3 & 4}\\
+&\xleftrightarrow{R_3=R_3 -R_1}\myvec{1 &-1&2 \\0 &2 &-2 \\ 0 & -2 & 2}\\
+&\xleftrightarrow{R_3=R_3 + R_2}\myvec{1 &-1&2 \\0 &2 &-2 \\ 0 & 0 & 0}
+\end{align}
+Hence, rank $\left(  \vec{A}  \right) = 2. $
+Now solving the augmented matrix of \eqref{eq:solutions/1/3/4/2.2} we get,
+\begin{align}
+\myvec{1&-1& 2 & 1 \\ 2& 0 & 2 & 1 \\ 1 & -3 & 4 & 2 } &\xleftrightarrow{R_2=R_1 - 2R_1}\myvec{1&-1&2 & 1  \\ 0 &2 & -2 & -1 \\ 1 &-3 & 4 & 2}\\
+&\xleftrightarrow{R_3=R_3 -R_1}\myvec{1 &-1&2 & 1\\0 &2 &-2 &-1 \\ 0 & -2 & 2 & 1} \\
+&\xleftrightarrow{R_3=R_3 + R_2}\myvec{1 &-1&2 & 1 \\0 &2 &-2 & -1 \\ 0 & 0 & 0 & 0}
+\end{align}
+We have rank $\left( \vec{A} \right) = $  rank $\left( \vec{A:b}\right) = 2 < n $, where $n = 3. $ Hence we have infinite no of solutions for given system of equations.\\
+Using Gauss - Jordan elimination method to getting the solution,
+\begin{align}
+\myvec{1&-1& 2 & 1 \\ 2& 0 & 2 & 1 \\ 1 & -3 & 4 & 2 } &\xleftrightarrow{R_2=R_1 - 2R_1}\myvec{1&-1&2 & 1  \\ 0 &2 & -2 & -1 \\ 1 &-3 & 4 & 2}
+\end{align}
+\begin{align}
+&\xleftrightarrow{R_3=R_3 -R_1}\myvec{1 &-1&2 & 1\\0 &2 &-2 &-1 \\ 0 & -2 & 2 & 1} \\
+&\xleftrightarrow{R_2= \frac{R_2}{2}}\myvec{1 &-1&2 & 1 \\ 0 & 1 & -1 & -\frac{1}{2} \\ 0 & -2 & 2 & 1} 
+\end{align}
+\begin{align}
+&\xleftrightarrow{R_3 = R_3 +2R_2}\myvec{1 &-1&2 & 1 \\ 0 & 1 & -1 & -\frac{1}{2} \\ 0 & 0 & 0 & 0} \\ 
+&\xleftrightarrow {R_1 = R_1 + R_2}\myvec{1 & 0 & 1 & \frac{1}{2} \\ 0 & 1 & -1 & -\frac{1}{2} \\ 0 & 0 & 0 & 0}
+\end{align}
+\begin{align}
+\implies x_1 +x_3 = \frac{1}{2}, x_2 - x_3 = - \frac{1}{2} \label{eq:solutions/1/3/4/2.16}\\
+\implies x_2 = - \frac{1}{2} +x_3 , x_1 = \frac{1}{2} - x_3 \label{eq:solutions/1/3/4/2.17}
+\end{align}
+From  equation \eqref{eq:solutions/1/3/4/2.16} and \eqref{eq:solutions/1/3/4/2.17}
+\begin{align}
+\vec{x} = \myvec{\frac{1}{2} - x_3 \\ -\frac{1}{2} + x_3 \\ x_3 }
+\end{align}
+
+which can be written as,
+\begin{align}
+\vec{x}=x_3\myvec{-1 \\1\\1} + \myvec{-\frac{1}{2} \\ -\frac{1}{2}\\ 0} \label{eq:solutions/1/3/4/2.19}
+\end{align}
+
+from \ref{eq:solutions/1/3/4/2.19} we can say that for any value $x_3$, $\vec{V}$ will no be gives zero vector. Hence the given solution space will not span of  the vector space $\vec{V}$
+
+
+

@@ -1,0 +1,28 @@
+For the given equation $AX = 0$ can be defined as follows:
+\begin{align}\label{eq:solutions/1/2/2/eq_1}
+    \myvec{3 & -1 & 2 \\
+                2 & 1 & 1 \\
+                1 & -3 & 0}
+    \myvec{x_1 \\ x_2 \\ x_3} &=
+    \myvec{0 \\ 0 \\ 0}
+\end{align}
+Now, we can apply Row Reduction Methodology of matrix $A$ :
+\begin{align}
+\myvec{3&-1&2&0\\2&1&1&0\\1&-3&0&0} 
+&\xleftrightarrow{R_1 
+= R_1+R_2}\myvec{5&0&3&0\\2&1&1&0\\1&-3&0&0}\\
+&\xleftrightarrow{R_2 = R_2-2R_3}\myvec{5&0&3&0\\0&7&1&0\\1&-3&0&0}\\
+&\xleftrightarrow{R_3 = 
+R_3 -\frac{1}{5}R_1}\myvec{5&0&3&0\\0&7&1&0\\0&-3&-\frac{3}{5}&0}\\
+&\xleftrightarrow{R_1 =  \frac{1}{5}R_1}\myvec{1&0&\frac{3}{5}&0\\0&7&1&0\\0&-3&-\frac{3}{5}&0}\\
+&\xleftrightarrow{R_2 = \frac{1}{7}R_2}\myvec{1&0&\frac{3}{5}&0\\0&1&\frac{1}{7}&0\\0&-3&-\frac{3}{5}&0}\\
+&\xleftrightarrow{R_3 = R_3 + 3R_2}\myvec{1&0&\frac{3}{5}&0\\0&1&\frac{1}{7}&0\\0&0&-\frac{6}{35}&0}\\
+&\xleftrightarrow{R_3 = -\frac{35}{6} R_3}\myvec{1&0&\frac{3}{5}&0\\0&1&\frac{1}{7}&0\\0&0&1&0} \\
+&\xleftrightarrow{R_2 = R_2 - \frac{1}{7} R_3}\myvec{1&0&\frac{3}{5}&0\\0&1&0&0\\0&0&1&0} \\
+&\xleftrightarrow{R_1 = R_1 - \frac{3}{5} R_3}\myvec{1&0&0&0\\0&1&0&0\\0&0&1&0} 
+\end{align} 
+So, as we can see the only solution we got after row reducing of matrix $A$ is zero vector.
+Thus, the solution is :
+\begin{align}
+    \myvec{x_1 \\ x_2 \\ x_3} = \myvec{0 \\ 0 \\ 0}
+\end{align}

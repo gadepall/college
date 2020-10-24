@@ -1,0 +1,11 @@
+An $n\times n$ matrix $\vec{A}$ is called upper-triangular if $\vec{A_{ij}}=0$ for $i>j$, that is, if every entry below the main diagonal is 0. Prove that an upper-triangular (square) matrix is invertible if and only if every entry on its main diagonal is different from 0.
+Considering $\vec{A}$, an upper triangular matrix. Using the property that determinant of upper triangular matrix is the product of diagonal elements,
+\begin{align}
+\mydet{\vec{A}}= \prod_{i=1}^{n} a_{i,i}\label{eq:solutions/1/5/9/eq:1}
+\end{align}
+If $\vec{A}$ be invertible then  $\mydet{\vec{A}} \neq 0$. Hence from \eqref{eq:solutions/1/5/9/eq:1} we get,
+\begin{align}
+\prod_{i=1}^{n} a_{i,i} \neq 0 \label{eq:solutions/1/5/9/eq:2}
+\end{align}
+if any diagonal element is 0 then \eqref{eq:solutions/1/5/9/eq:2} won't be right hence no diagonal elements should be 0.
+Hence Proved.

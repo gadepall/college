@@ -1,0 +1,67 @@
+The matrix $B$ is obtained by multiplying the matrix $A$ with matrix $C$. $B$ is a $2 \times 2$ matrix and $A$ is a $3 \times 2$ matrix. so matrix $C$ must be a $2 \times 3$ matrix.
+Let the matrix $C$ is:
+\begin{align}
+C = \myvec{a_1 & b_1 & c_1\\a_2 & b_2 & c_2}\\
+\implies C^T = \myvec{a_1 & a_2\\b_1 & b_2\\c_1 & c_2}
+\end{align}
+So, after multiplying with $A$ matrix we get,
+\begin{multline}
+\myvec{a_1 & b_1 & c_1\\a_2 & b_2 & c_2}\myvec{1 & -1\\2 & 2\\1 & 0} =\\ \myvec{a_1+2b_1+c_1 & -a_1+2b_1\\a_2+2b_2+c_2 & -a_2+2b_2}  
+\end{multline}
+
+Matrix $A$ is a rectangular matrix.
+Now, Considering $CA$ =$B$ and by transposing both side,
+\begin{align}
+(CA)^T = B^T\\
+\implies A^T C^T = B^T\\
+\implies \myvec{1 & 2 & 1\\-1 & 2 & 0} \myvec{\vec{c_1} & \vec{c_2}} = \myvec{3 & -4\\1 & 4}
+\end{align}
+We can represent it like this:
+\begin{align}
+\myvec{1 & 2 & 1\\-1 & 2 & 0} \vec{c_1} = \myvec{3\\1}\\
+\end{align}
+Now the augmented matrix is:
+\begin{multline}
+\myvec{1 & 2 & 1 & 3\\-1 & 2 & 0 & 1}\xleftrightarrow[]{R_2\leftarrow R_1+R_2}\myvec{1 & 2 & 1 & 3\\0 & 4 & 1 & 4}\\ 
+\xleftrightarrow[]{R_2\leftarrow R_2/2}\myvec{1 & 2 & 1 & 3\\0 & 2 & \frac{1}{2} & 2}\xleftrightarrow[]{R_1\leftarrow R_1-R_2}\\
+\myvec{1 & 0 & \frac{1}{2} & 1\\0 & 2 & \frac{1}{2} & 2}\xleftrightarrow[]{R_2\leftarrow R_2/2}\myvec{1 & 0 & \frac{1}{2} & 1\\0 & 1 & \frac{1}{4} & 1}
+\label{eq:solutions/1/4/5/eqn:1}
+\end{multline}
+Similarly,
+\begin{align}
+\myvec{1 & 2 & 1\\-1 & 2 & 0} \vec{c_2} = \myvec{-4\\4}\\
+\end{align}
+Now the augmented matrix is:
+\begin{multline}
+\myvec{1 & 2 & 1 & -4\\-1 & 2 & 0 & 4}\xleftrightarrow[]{R_2\leftarrow R_1+R_2}\myvec{1 & 2 & 1 & -4\\0 & 4 & 1 & 0}\\ 
+\xleftrightarrow[]{R_2\leftarrow R_2/2}\myvec{1 & 2 & 1 & -4\\0 & 2 & \frac{1}{2} & 0}\xleftrightarrow[]{R_1\leftarrow R_1-R_2}\\
+\myvec{1 & 0 & \frac{1}{2} & -4\\0 & 2 & \frac{1}{2} & 0}\xleftrightarrow[]{R_2\leftarrow R_2/2}\myvec{1 & 0 & \frac{1}{2} & -4\\0 & 1 & \frac{1}{4} & 0}
+\label{eq:solutions/1/4/5/eqn:2}
+\end{multline}
+From equations \ref{eq:solutions/1/4/5/eqn:1} and \ref{eq:solutions/1/4/5/eqn:2}, it can be observed that solutions exist and there is a matrix $C$ such that $CA$ = $B$.
+Now,
+\begin{align}
+\vec{c_1} = \myvec{1- \frac{c_1}{2}\\1-\frac{c_1}{4}\\c_1}\\
+\implies \vec{c_1} = \myvec{1\\1\\0} + c_1\myvec{-\frac{1}{2}\\-\frac{1}{4}\\1}\\
+\vec{c_2} = \myvec{-4- \frac{c_2}{2}\\-\frac{c_2}{4}\\c_2}\\
+\implies \vec{c_2} = \myvec{-4\\0\\0} + c_2\myvec{-\frac{1}{2}\\-\frac{1}{4}\\1}
+\end{align}
+Now,
+\begin{multline}
+C^T = \myvec{1 & -4\\1 & 0\\0 & 0}+c_1\myvec{-\frac{1}{2} & 0\\-\frac{1}{4} & 0\\1 & 0} + c_2\myvec{0 & -\frac{1}{2}\\0 & -\frac{1}{4}\\0 & 1}\\
+\implies C = \myvec{1 & 1 & 0\\-4 & 0& 0} + c_1 \myvec{-\frac{1}{2} & -\frac{1}{4} & 1\\0 & 0 &0}\\
++c_2\myvec{0 & 0 &0\\-\frac{1}{2} & -\frac{1}{4} & 1}
+\end{multline}
+Now,
+\begin{multline}
+CA = \myvec{1 & 1 & 0\\-4 & 0& 0}\myvec{1 & -1\\2 & 2\\1 & 0}\\
++ c_1 \myvec{-\frac{1}{2} & -\frac{1}{4} & 1\\0 & 0 &0}\myvec{1 & -1\\2 & 2\\1 & 0}\\+c_2\myvec{0 & 0 &0\\-\frac{1}{2} & -\frac{1}{4} & 1}\myvec{1 & -1\\2 & 2\\1 & 0}\\
+\implies CA = \myvec{3 & 1\\-4 & 4}+c_1\myvec{0 & 0\\0 & 0}+c_2\myvec{0 & 0\\0 & 0}\\
+\implies CA = B
+\end{multline}
+Hence, it is proved that there there exist a matrix $C$ such that $CA=B$.
+%%
+
+
+
+
