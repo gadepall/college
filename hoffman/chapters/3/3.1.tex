@@ -1,0 +1,34 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+%
+\item 
+\begin{enumerate}
+\item Whether the given function T from $R^2$ into $R^2$ is linear transformation or not.
+\begin{align}
+    T\myvec{x_1\\x_2}=\myvec{1+x_1\\x_2}
+\label{eq:solutions/3/1/1/a/1}
+\end{align}
+\solution
+\input{./solutions/3/1/1/a/solution.tex}
+
+\end{enumerate}
+\item Let $\mathbb{F}$ be a subfield of the complex numbers and let $\mathbb{T}$ be the function from $\mathbb{F}^3$ into $\mathbb{F}^3$ defined by 
+\begin{align}
+    \mathbb{T}(x_1,x_2,x_3)=\\(x_1-x_2+2x_3,2x_1+x_2,-x_1-2x_2+2x_3)
+\end{align}
+\begin{enumerate}
+\item  Verify that $\mathbb{T}$ is a linear transformation.\\
+\item  If $(a,b,c)$ is a vector in  $\mathbb{F}^3$, what are the conditions on $a,b,c$ that the vector be in the range of  $\mathbb{T}$ ?What is the rank of  $\mathbb{T}$?\\
+\item  What are the conditions on $a,b,c$ that $(a,b,c)$ be in the null space of  
+$\mathbb{T}$? What is the nullity of  $\mathbb{T}$?
+\end{enumerate}
+\solution
+\input{./solutions/3/1/7/solution.tex}
+\item Describe explicitly a linear transformation from $R^{3}$ into $R^{3}$ which has as its range the subspace spanned by \myvec{1&0&-1} and \myvec{1&2&2}.  
+%
+\solution
+\input{./solutions/3/1/8/solution.tex}
+\end{enumerate}

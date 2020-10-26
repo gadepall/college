@@ -1,0 +1,52 @@
+Representing the transformation in matrix form
+\begin{align}
+ \mathbb{T}(x_1,x_2,x_3)=\vec{T}\vec{x}\\
+    \vec{T}=\myvec{1&-1&2\\2&1&0\\-1&-2&2}\\
+    \vec{x}=\myvec{x_1\\x_2\\x_3}
+\end{align}
+{Part (a)}
+Consider the matrices $\vec{x},\vec{y} \in \mathbb{F}^3$ and the scalar $c \in \mathbb{F}$\\
+By the associativity of matrix multiplications, we can write
+\begin{align}
+    \vec{T}(c\vec{x}+\vec{y})=\vec{T}(c\vec{x})+\vec{T}\vec{y}\\
+    =c\vec{T}\vec{x}+\vec{T}\vec{y}
+\end{align}
+So, $\vec{T}$ is a linear transformation.
+{Part (b)}
+\begin{align}
+range(\vec{T})
+=\cbrak{\vec{y}:\vec{T}\vec{x}=\vec{y} \text{ where }\vec{x},\vec{y} \in \mathbb{F}^3}
+\end{align}
+\begin{align}
+    \vec{y}=\myvec{a\\b\\c}\\
+    \vec{T}\vec{x}=\vec{y}\\
+    \implies \vec{B}\vec{T}\vec{x}=\vec{B}\vec{y}\\
+    \implies \myvec{\frac{1}{3}&\frac{1}{3}&0\\\frac{-2}{3}&\frac{1}{3}&0\\-1&1&1}\myvec{1&-1&2\\2&1&0\\-1&-2&2}\vec{x}=\\ \myvec{\frac{1}{3}&\frac{1}{3}&0\\\frac{-2}{3}&\frac{1}{3}&0\\-1&1&1}\myvec{a\\b\\c}\\
+    \myvec{1&0&\frac{2}{3}\\0&1&\frac{-4}{3}\\0&0&0}\vec{x}=\myvec{\frac{1}{3}&\frac{1}{3}&0\\\frac{-2}{3}&\frac{1}{3}&0\\-1&1&1}\myvec{a\\b\\c}\label{eq:solutions/3/1/7/4}
+\end{align}
+So, rank($\vec{T}$)=2 and comparing the third row element in LHS and RHS of \eqref{eq:solutions/3/1/7/4}
+\begin{align}
+  -a+b+c=0 \label{eq:solutions/3/1/7/1} 
+\end{align}
+All vectors $\myvec{a\\b\\c} \in \mathbb{F}^3$ that satisfy \eqref{eq:solutions/3/1/7/1} lie in the range of $\vec{T}$
+{Part (c)}
+\begin{align}
+nullspace(\vec{T})=\cbrak{\vec{x} :\vec{T}\vec{x}=\vec{0} \text{  where  } \vec{x} \in \mathbb{F}^3}
+\end{align}
+\begin{align}
+\vec{x}=\myvec{a\\b\\c}\\
+    \vec{T}\vec{x}=\vec{0}\\
+    \vec{B}\vec{T}\vec{x}=\vec{0}
+    \end{align}
+    where $ \vec{B}\vec{T}$ is in reduced row echelon form
+    \begin{align}
+     \myvec{\frac{1}{3}&\frac{1}{3}&0\\\frac{-2}{3}&\frac{1}{3}&0\\-1&1&1}\myvec{1&-1&2\\2&1&0\\-1&-2&2}\vec{x}=\vec{0}\\
+     \implies  \myvec{1&0&\frac{2}{3}\\0&1&\frac{-4}{3}\\0&0&0}\myvec{a\\b\\c}=\myvec{0\\0\\0}
+    \\\implies a+\frac{2}{3}c=0\label{eq:solutions/3/1/7/2}\\b-\frac{4}{3}c=0\label{eq:solutions/3/1/7/3}
+    \end{align}
+    
+The number of free variables in the reduced row echelon form of $\vec{T}$ is 1 hence nullity($\vec{T}$) =1\\
+So, the null space of $\vec{T}$ is set of all vectors $\myvec{a\\b\\c} \in \mathbb{F}^3$ that satisfy \eqref{eq:solutions/3/1/7/2} and \eqref{eq:solutions/3/1/7/3}\\
+\underline{\textbf{Note}}\\
+rank($\vec{T}$)+nullity($\vec{T}$)=2+1=dim($ \mathbb{F}^3$)
+
