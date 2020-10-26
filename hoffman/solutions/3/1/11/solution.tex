@@ -1,0 +1,44 @@
+If $\vec{A}_{m \times n}$ is a zero transformation and $\vec{X}_{n \times 1}$ is a vector, then 
+\begin{equation}\label{eq:solutions/3/1/11/eq1}
+	\vec{A}\vec{X} = \vec{0}_{m \times 1}	
+\end{equation}
+Let,
+\begin{align}
+	\label{eq:solutions/3/1/11/eq2}\vec{A} &= \myvec{\vec{A_1} & \dots & \vec{A_j} & \dots & \vec{A_n}}_{1\times n} \text{ and }\\
+	\label{eq:solutions/3/1/11/eq3}\vec{X_j} &= \myvec{x_1\\ \vdots \\x_j\\ \vdots\\x_n}, \text{ where }
+	x_i = 
+	\begin{cases}
+		1 & \text{if $i=j$}\\
+		0 & \text{otherwise}
+	\end{cases}
+\end{align}
+If $\vec{A}_{m \times n}$ is zero transformation, then for any vector $\vec{X}_{n \times 1}$, $\vec{A}\vec{X} = \vec{0}$.\\ Consider ,
+\begin{align}
+	\label{eq:solutions/3/1/11/eq4}\vec{A}{\vec{X_j}} &= \vec{0}_{m \times 1}\\
+	\label{eq:solutions/3/1/11/eq5}\myvec{\vec{A_1}\dots\vec{A_j}\dots\vec{A_n}}
+	\myvec{x_1\\\vdots\\x_j\\\vdots\\x_n} &= \vec{0}_{m \times 1}
+\end{align}
+From \eqref{eq:solutions/3/1/11/eq3} and \eqref{eq:solutions/3/1/11/eq5}
+\begin{align}
+	\label{eq:solutions/3/1/11/eq6}\vec{A_j} &= \vec{0}_{m\times1} \text{ for $j=1,2,...n$}
+\end{align}
+Substitute \eqref{eq:solutions/3/1/11/eq6} in \eqref{eq:solutions/3/1/11/eq2}
+\begin{align}
+	\vec{A} &= \myvec{\vec{0}_{m \times 1} & \vec{0}_{m \times 1} & \dots & \vec{0}_{m \times 1}}_{1 \times n}\\
+	\label{eq:solutions/3/1/11/eq7}\therefore \vec{A} &= \vec{0}_{m \times n}
+\end{align}
+Hence $\vec{A}$ is zero matrix.\\
+\\
+Let us assume $\vec{A}_{m \times n}$ is a zero matrix
+\begin{align}
+	\label{eq:solutions/3/1/11/eq8}\vec{A} = \vec{0}_{m \times n}
+\end{align}
+Then,
+\begin{align}
+	\label{eq:solutions/3/1/11/eq9}T(\vec{X}) &= \vec{A}\vec{X}\\
+	&= \vec{0}.\vec{X}\\ 
+	\label{eq:solutions/3/1/11/eq10}&= \vec{0}_{m \times 1}\text{     ,  }\forall \vec{X} \in F
+\end{align}
+Hence $T(\vec{X}) = \vec{A}\vec{X}$ is the zero transformation.\\
+\\
+From \eqref{eq:solutions/3/1/11/eq7} and \eqref{eq:solutions/3/1/11/eq10} it is proved that T is the zero transformation if and only if $\vec{A}$ is the zero matrix.

@@ -3,11 +3,11 @@
 \contentsline {subsection}{\numberline {1.2}Matrices and Elementary Row Operations}{7}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Row Reduced Echelon Matrices}{14}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Matrix Multiplication}{21}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Invertible Matrices}{24}{subsection.1.5}%
-\contentsline {section}{\numberline {2}Vector Spaces}{28}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Vector Spaces}{28}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Subspaces}{31}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Bases and Dimension}{37}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Coordinates}{42}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Linear Transformations}{45}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Linear Transformations}{45}{subsection.3.1}%
+\contentsline {subsection}{\numberline {1.5}Invertible Matrices}{25}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Vector Spaces}{29}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Vector Spaces}{29}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Subspaces}{32}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Bases and Dimension}{38}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Coordinates}{43}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Linear Transformations}{46}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Linear Transformations}{46}{subsection.3.1}%
