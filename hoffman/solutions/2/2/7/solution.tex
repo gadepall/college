@@ -1,0 +1,27 @@
+Given $\vec{W}_1 \cup \vec{W}_2$ is a subspace, we need to prove that 
+\begin{align}
+\vec{W}_1 \subseteq \vec{W}_2  \quad or\quad  \vec{W}_2 \subseteq \vec{W}_1
+\end{align}
+ Let us assume that 
+ \begin{align}
+ \vec{W}_1 \not\subseteq \vec{W}_2
+ \end{align}
+  We need to show that 
+  \begin{align}
+  \vec{W}_2 \subseteq \vec{W}_1
+  \end{align}
+  i.e.,  the generators of $\vec{W}_2$ are in $\vec{W}_1$. Consider a vector, $\vec{w}_1 \in \vec{W}_1$\textbackslash $\vec{W}_2$ and a vector $\vec{w}_2 \in \vec{W}_2$. Since $\vec{W}_1 \cup \vec{W}_2$ is a subspace,
+\begin{align}
+\vec{w}_1 + \vec{w}_2 &\in \vec{W}_1 \cup \vec{W}_2\\
+\implies \vec{w}_1 + \vec{w}_2 &\in \vec{W}_1 \quad or\\
+ \vec{w}_1 + \vec{w}_2 &\in \vec{W}_2
+\end{align}
+But, $\vec{w}_1 + \vec{w}_2 \not \in \vec{W}_2$ because for some vector $-\vec{w}_2 \in \vec{W}_2$,
+\begin{align}
+	 \brak{\vec{w}_1 + \vec{w}_2} - \vec{w}_2 = \vec{w}_1 \not\in \vec{W}_2
+\end{align}
+Hence it must be that, $\vec{w}_1 + \vec{w}_2 \in \vec{W}_1$ because for some vector $-\vec{w}_1 \in \vec{W}_1$,
+\begin{align}
+	\brak{\vec{w}_1 + \vec{w}_2}- \vec{w}_1 = w_2 \in \vec{W}_1
+\end{align}
+Thus, we have shown that every vector $\vec{w}_2$ in $\vec{W}_2$ is also in $\vec{W}_1$. Hence, $\vec{W}_2 \subseteq \vec{W}_1$

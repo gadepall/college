@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {2}Vector Spaces}{29}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Vector Spaces}{29}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Subspaces}{32}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Bases and Dimension}{38}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Bases and Dimension}{39}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Coordinates}{43}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Linear Transformations}{46}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Linear Transformations}{46}{subsection.3.1}%
