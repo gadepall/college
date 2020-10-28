@@ -1,0 +1,31 @@
+we need to show that $\alpha$ and $\beta$ are linearly independent in order to proove that $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
+
+
+Given in the question are:
+\begin{align}
+\alpha^T\beta&=0\label{eq:solutions/2/4/5/eq0}\\
+\norm{\alpha}^2 &=\norm{\beta}^2=1 \label{eq:solutions/2/4/5/eq1}
+\end{align}
+Let,
+\begin{align}
+ \vec{A}=\myvec{\alpha & \beta}=\myvec{x_1&y_1\\x_2&y_2}
+\end{align}
+then,
+\begin{align}
+ \vec{A}^T\vec{A}&=\myvec{\norm{\alpha}^2 &\alpha^T\beta\\\alpha^T\beta&\norm{\beta}^2}\\ &=\myvec{1&0\\0&1}\\
+ \therefore \vec{A}^T\vec{A}&=\vec{I}
+\end{align}
+Inverse of $\vec{A}$ exist. $\vec{A}^T$ is the inverse of $\vec{A}$. 
+Thus, the columns of $\vec{A}$ are linearly independent i.e, $\alpha$ and $\beta$ are linearly independent. \\
+Hence, $\ss=\{\vec{\alpha},\vec{\beta}\}$ is a basis of $\mathbb{R}^2$.\\
+
+
+
+To, find the coordinates of the vector $\myvec{a,b}$ in the ordered basis $\ss=\{\vec{\alpha},\vec{\beta}\}$. 
+   \begin{align}
+   \myvec{\alpha&\beta}\myvec{c_1\\c_2}=\myvec{a\\b}\\
+\vec{A}^T\vec{A}\myvec{c_1\\c_2}=\vec{A}^T\myvec{a\\b}\\
+\myvec{c_1\\c_2}=\vec{A}^T\myvec{a\\b}\\
+\myvec{c_1\\c_2}=\myvec{x_1&x_2\\y_1&y_2}\myvec{a\\b}
+\end{align}
+ 

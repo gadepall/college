@@ -1,0 +1,49 @@
+The addition of elements in the field $\vec{F}$ is defined as,
+\begin{align}
+    0 + 0 = 0 \nonumber \\
+    1 + 1 = 0 \label{eq:solutions/2/3/13/eq:eq_1}
+\end{align}
+A set are vectors $\{\vec{v_1},\vec{v_2},\vec{v_3}\}$ are linearly independent if
+\begin{align}
+    a\vec{v_1} + b\vec{v_2} + c\vec{v_3} = 0 \label{eq:solutions/2/3/13/eq:eq_2}
+    \intertext{has only one trivial solution} a = b = c = 0 \label{eq:solutions/2/3/13/eq:eq_3}
+\end{align}
+Now,
+\begin{align}
+    a(\alpha + \beta) + b(\beta + \gamma) + c(\gamma + \alpha) = 0 \label{eq:solutions/2/3/13/eq:eq_4} \\
+    \implies (a+c)\alpha + (a+b)\beta + (b+c)\gamma &= 0 \label{eq:solutions/2/3/13/eq:eq_5}
+\end{align}
+Writing \eqref{eq:solutions/2/3/13/eq:eq_5} in matrix form,
+\begin{align}
+    \myvec{\alpha & \beta & \gamma} \myvec{1 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 1 & 1} \vec{x} = 0
+\end{align}
+where,
+\begin{align}
+    \vec{x} = \myvec{a \\ b \\ c} \nonumber
+\end{align}
+\begin{align}
+    \vec{x}^T \myvec{1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1} \myvec{\alpha \\ \beta \\ \gamma} = 0
+\end{align}
+Since $\alpha$, $\beta$ and $\gamma$ are linearly independent vectors,
+\begin{align}
+    \vec{x}^T \myvec{1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1} = \myvec{0 & 0 & 0}
+\end{align}
+Transposing on both sides,
+\begin{align} \label{eq:solutions/2/3/13/eq:eq_9}
+    \myvec{1 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 1 & 1} \vec{x} = 0
+\end{align}
+By using the properties from \eqref{eq:solutions/2/3/13/eq:eq_1} and reducing \eqref{eq:solutions/2/3/13/eq:eq_9} to row echelon form,
+\begin{align}
+    \myvec{1 & 0 & 1 \\ 1 & 1 & 0 \\ 0 & 1 & 1} \xleftrightarrow[]{R_2\leftarrow R_1+R_2} \myvec{1 & 0 & 1 \\ 0 & 1 & 1 \\ 0 & 1 & 1 } \nonumber \\ \xleftrightarrow[]{R_3\leftarrow R_2+R_3} \myvec{1 & 0 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 0} \label{eq:solutions/2/3/13/eq:eq_10}
+\end{align}
+Expressing \eqref{eq:solutions/2/3/13/eq:eq_10} as a linear combination of vectors,
+\begin{align}
+    a \myvec{1 \\ 0 \\ 0} + b \myvec{0 \\ 1 \\ 0} + c \myvec{1 \\ 1 \\ 0} = \myvec{0 \\ 0 \\ 0} \nonumber \\
+    \implies \myvec{a+c \\ b+c \\ 0} = \myvec{0 \\ 0 \\ 0} \nonumber \\
+    \implies a+c = 0; \quad b+c = 0 \label{eq:solutions/2/3/13/eq:eq_11}
+\end{align}
+The solutions to \eqref{eq:solutions/2/3/13/eq:eq_11} are,
+\begin{align}
+    a=b=c=0; \quad a=b=c=1
+\end{align}
+Since there is no trivial solution, $(\alpha + \beta)$, $(\beta + \gamma)$ and $(\gamma + \alpha)$ are linearly dependent

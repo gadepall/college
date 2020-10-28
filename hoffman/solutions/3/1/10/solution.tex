@@ -1,0 +1,30 @@
+Let
+\begin{align}
+    T : V \xrightarrow{} V
+\end{align}
+be a function such that, 
+\begin{align}
+    &T\brak{x+iy} = Re\brak{x+iy} = x  \\
+    &\implies T : x+iy \xrightarrow{} x
+\end{align}
+ where $ x,y \in \mathbb{R}$.
+ 
+Let, $ \alpha = a+ib$, $\beta = c+id$. 
+\begin{align}
+    \implies T\brak{k\alpha+\beta} &= T\brak{ka+ikb+c+id} \\
+    &= T\brak{ka+c + i(kb+d)} \\
+    &= ka+c \\
+    &= kT\brak{\alpha} + T\brak{\beta} \label{eq:solutions/3/1/10/lin_real}
+\end{align}
+Now, let $z \in V$ such that, 
+\begin{align}
+    z &= i \\
+    \implies T\brak{z} &= T\brak{i} = 0 
+\end{align}
+We can also write,  
+\begin{align}
+    T\brak{i} = T\brak{i(1)} = iT\brak{1} = i \ne 0 \label{eq:solutions/3/1/10/comp}
+\end{align}
+Thus from \eqref{eq:solutions/3/1/10/lin_real}, $T$ is real linear transformation and
+from \eqref{eq:solutions/3/1/10/comp}, $T$ is not complex linear. 
+
