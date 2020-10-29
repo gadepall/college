@@ -9,5 +9,6 @@
 \contentsline {subsection}{\numberline {2.2}Subspaces}{32}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Bases and Dimension}{39}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Coordinates}{45}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Linear Transformations}{48}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Linear Transformations}{48}{subsection.3.1}%
+\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{48}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Linear Transformations}{49}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Linear Transformations}{49}{subsection.3.1}%

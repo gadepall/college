@@ -1,0 +1,31 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+%
+\item Let
+\begin{align} 
+\alpha_1=\myvec{1&1&-2&1}^T \\
+\alpha_2=\myvec{3&0&4&-1}^T \\
+\alpha_3=\myvec{-1&2&5&2}^T
+\end{align}
+Let
+\begin{align}
+\alpha=\myvec{4&-5&9&-7}^T \\
+\beta=\myvec{3&1&-4&4}^T \\
+\gamma=\myvec{-1&1&0&1}^T
+\end{align}
+\begin{enumerate}
+\item Which of the vectors $\alpha$, $\beta$, $\gamma$ are in the subspace of $\mathbb{R}^4$ spanned by $\alpha_i$?
+\item Which of the vectors $\alpha$, $\beta$, $\gamma$ are in the subspace of $\mathbb{C}^4$ spanned by $\alpha_i$?
+\item Does this suggest a theorem?
+\end{enumerate}
+%
+%
+\solution
+\input{./solutions/2/5/2/solution.tex}
+%
+
+\end{enumerate}

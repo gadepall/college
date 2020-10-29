@@ -1,0 +1,53 @@
+\begin{enumerate}
+\item The linear combination of $\alpha_i$ for $i=1,2,3$ spans subspace S. We can write,
+\begin{align}
+c_1\myvec{1\\1\\-2\\1}+c_2\myvec{3\\0\\4\\-1}+c_3\myvec{-1\\2\\5\\2}=\text{span(S)}
+\end{align}
+where $c_1$,$c_2$,$c_3$ are scalars.
+Vectors in matrix form is given by
+\begin{align}
+\vec{A}=\myvec{1&3&-1\\1&0&2\\-2&4&5\\1&-1&2}
+\end{align}
+We can observe that the columns of matrix $\vec{A}$ formed by vectors $\alpha_i$ are independent as the rank of matrix is 3. Hence $\alpha_i$ forms basis for subspace S.
+\begin{enumerate}
+\item \textbf{Checking for $\alpha$}:
+To check if a solution exists for $\vec{AX}=\alpha$. The corresponding agumented matrix can be written as,
+\begin{align} \label{eq:solutions/2/5/2/eq:auga}
+\myvec{\vec{A}&\alpha}=\myvec{1&3&-1&4\\1&0&2&-5\\-2&4&5&9\\1&-1&2&-7}
+\end{align}
+On performing row-reduction on \eqref{eq:solutions/2/5/2/eq:auga}, 
+\begin{align}\label{eq:solutions/2/5/2/eq:refa}
+\myvec{\vec{A}&\alpha}=\myvec{1&0&0&-3\\0&1&0&2\\0&0&1&-1\\0&0&0&0}
+\end{align}
+As Rank($\myvec{\vec{A}&\alpha}$)=Rank($\vec{A}$)=3, the vector $\alpha$ can be represented as linear combination of $\alpha_i$. From equation \eqref{eq:solutions/2/5/2/eq:refa}, we can write
+\begin{align}
+-3\myvec{1\\1\\-2\\1}+2\myvec{3\\0\\4\\-1}-1\myvec{-1\\2\\5\\2}=\myvec{4\\-5\\9\\-7}
+\end{align}
+Hence $\alpha$ is in the subspace S.
+
+\item \textbf{Checking for $\beta$}:
+To check if a solution exists for $\vec{AX}=\beta$. The corresponding agumented matrix can be written as,
+\begin{align} \label{eq:solutions/2/5/2/eq:augb}
+\myvec{\vec{A}&\beta}=\myvec{1&3&-1&3\\1&0&2&1\\-2&4&5&-4\\1&-1&2&4}
+\end{align}
+On performing row-reduction on \eqref{eq:solutions/2/5/2/eq:augb}, 
+\begin{align}\label{eq:solutions/2/5/2/eq:refb}
+\myvec{\vec{A}&\beta}=\myvec{1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1}
+\end{align}
+As Rank($\myvec{\vec{A}&\beta}$)=4 and Rank($\vec{A}$)=3, Solution doesn't exist for $AX=\beta$ and hence $\beta$ is not in the subspace S.
+
+\item \textbf{Checking for $\gamma$}:
+To check if a solution exists for $\vec{AX}=\gamma$. The corresponding agumented matrix can be written as,
+\begin{align} \label{eq:solutions/2/5/2/eq:augg}
+\myvec{\vec{A}&\gamma}=\myvec{1&3&-1&-1\\1&0&2&1\\-2&4&5&0\\1&-1&2&1}
+\end{align}
+On performing row-reduction on \eqref{eq:solutions/2/5/2/eq:augg}, 
+\begin{align}\label{eq:solutions/2/5/2/eq:refg}
+\myvec{\vec{A}&\gamma}=\myvec{1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1}
+\end{align}
+As Rank($\myvec{\vec{A}&\gamma}$)=4 and Rank($\vec{A}$)=3, Solution doesn't exist for $AX=\gamma$ and hence $\gamma$ is not in the subspace S.
+\end{enumerate}
+\item In part 1, we haven't considered the field to be either $\mathbb{R}$ or $\mathbb{C}$. The above equations solved holds for field $\mathbb{C}$ and that implies, they hold for field $\mathbb{R}$ also. Hence $\alpha$ is in the subspace and $\beta$ and $\gamma$ are not in the subspace.
+\item \textbf{Theorem suggested:}
+Let $\mathbb{F}_1$ and $\mathbb{F}_2$ are two fields where $\mathbb{F}_2$ is subfield of $\mathbb{F}_1$. Let $\alpha_i$, i=1,2,3...,n forms basis for subspace of $\mathbb{F}_2^n$ and a vector $\alpha \in \mathbb{F}_2^n$. Then $\alpha$ is in the subspace of $\mathbb{F}_2^n$ spanned by $\alpha_i$, i=1,2,3...,n if only if $\alpha$ is in the subspace of $\mathbb{F}_1^n$ spanned by $\alpha_i$, i=1,2,3...,n.
+\end{enumerate}
