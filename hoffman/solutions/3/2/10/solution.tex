@@ -1,0 +1,92 @@
+\begin{table*}[!ht]
+	\begin{center}
+\resizebox{2\columnwidth}{!}
+{
+		\begin{tabular}{|c|c|}
+			\hline
+			\multirow{3}{*}{singular} &\\
+			& A linear transformation $T : \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}$ is said to be singular if $\exists$ some non-zero $\vec{X} \in \mathbb{R}^n$\\
+			& s.t $\vec{A}\vec{X} = \vec{0}$ $\text{ i.e } Nullity(A) \neq 0$. \\
+			& \\
+			& From rank-nullity theorem we can say $rank(A)<n$\\
+			& \\
+			\hline
+			\multirow{3}{*}{non-singular} & \\
+			& A linear transformation $T : \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ is said to be non-singular if $\vec{A}\vec{X} = \vec{0} \text{ implies } \vec{X} = \vec{0}$\\
+			& $\text{ i.e } Nullity(A) = 0$\\
+			& \\
+			\hline			
+			\multirow{3}{*}{onto} & \\
+			& A linear transformation $T : \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$, $m\leq n$ is said to be onto if for every  $\vec{b} \in \mathbb{R}^{m}$,\\
+			&  $\vec{A}\vec{X} =\vec{b}$ has atleast one solution $\vec{X} \in \mathbb{R}^{n}$..\\
+			& \\
+			& i.e $dim(Col(\vec{A})) = m$ or $Rank(\vec{A}) = m$\\
+			& \\
+			& If $m>n$, then $\vec{A}\vec{X}=\vec{b}$ has no solution because rank-nullity theorem is not satisfied.\\
+			& \\
+			\hline
+		\end{tabular}
+}
+	\end{center}
+\caption{}
+\label{table:solutions/3/2/10/1}
+\end{table*}
+{Proof}
+\begin{table*}[!hb]
+	\begin{center}
+%	\begin{adjustbox}{width=1\textwidth}
+\resizebox{2\columnwidth}{!}
+{
+		\begin{tabular}{|c|c|c|}			
+			\hline
+			\multicolumn{3}{|c|}{Let $\vec{A}$ be an $m \times n$ matrix with entries in $F$ and}\\
+			\multicolumn{3}{|c|}{let $T$ be the linear transformation from $F^{n \times1 }$ into $F^{m \times l}$}\\
+			\multicolumn{3}{|c|}{defined by $T(\vec{X}) = \vec{A}\vec{X}$. If,}\\			
+			\hline
+			& \multicolumn{1}{|c|}{$m < n$} & \multicolumn{1}{c|}{$m > n$}\\
+			\hline
+			\multirow{4}{*}{singular} & &\\
+			& Since $rank(\vec{A})<n$, by definition T is singular & Consider an non-singular $T$ such that $rank(\vec{A}) > n$\\
+			&  & \\
+			\hline
+			\multirow{3}{*}{onto} & &\\
+			& Since $m<n$, by definition $T$ can be onto & Since $m>n$, by definition $T$ is not onto.\\
+			& &\\
+			\hline
+			\end{tabular}
+}
+%			\end{adjustbox}
+	\end{center}
+\caption{}
+\label{table:solutions/3/2/10/2}
+\end{table*}
+\begin{enumerate}
+\item {$m<n$}
+\begin{align}
+	\text{Let, }T:\mathbb{R}^3 \rightarrow &\mathbb{R}^2\\
+	T(\vec{X}) = \vec{A}\vec{X} &= \vec{b}\\
+	\text{Let, }\vec{A} &= \myvec{1 & 1 & 0\\0 & 1 & 1}\\
+	\text{Consider, }\vec{X} &= \myvec{2\\4\\1}\\
+	\implies \vec{A}\vec{X} &= \myvec{1 & 1 & 0\\0 & 1 & 1}\myvec{2\\4\\1}\\
+	&= \myvec{6\\5}
+\end{align}
+Hence T is onto.
+\begin{align}
+	\text{Consider, } \vec{X} &= \myvec{1\\-1\\1}\\
+	\implies \vec{A}\vec{X} &= \myvec{1 & 1 & 0\\0 & 1 & 1}\myvec{1\\-1\\1}\\
+	&= \vec{0}
+\end{align}
+Since $\exists \quad \vec{X} \neq \vec{0}$ such that $\vec{A}\vec{X} = \vec{0}$, T is singular.\\
+\\
+$\therefore$ T is both onto and singular.
+\item {$m>n$}
+\begin{align}
+	\text{Let, }T:\mathbb{R}^3 \rightarrow &\mathbb{R}^2\\
+	T(\vec{X}) = \vec{A}\vec{X} &= \vec{b}\\
+	\text{Let, }\vec{A} &= \myvec{1 & 0\\0 & 1\\1 & 0}\\
+	\text{Consider, }\vec{X} &= \myvec{-1\\2}\\
+	\implies \vec{A}\vec{X} &= \myvec{1 & 0\\0 & 1\\1 & 0}\myvec{-1\\2}\\
+	&= \myvec{-1\\2\\-1}\\
+\end{align}
+$\therefore$ T is not onto, and is also non-singular.
+\end{enumerate}

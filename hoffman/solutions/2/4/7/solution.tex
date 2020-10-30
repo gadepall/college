@@ -1,0 +1,51 @@
+   We start by taking,\begin{align}\vec{f}=\myvec{1\\x\\x^2}\end{align}
+   Let's start by proving that $\vec{g}$ is linearly independent.
+    \begin{align}
+    \vec{g}=\vec{B}\vec{f}
+    \end{align}
+    where,
+    \begin{align}
+    \vec{B}=\myvec{1&0&0\\t&1&0\\t^2&2t&1}
+    \end{align}
+    Now,
+    \begin{align}
+    \vec{v}^T\vec{g}=0\\
+    \implies \vec{v}^T\vec{B}\vec{f}=0
+    \end{align}
+    Since $\vec{f}$ is linearly independent,
+    \begin{align}
+     \vec{v}^T\vec{B}=0\\
+     \vec{B}^T\vec{v}=0
+    \end{align}
+   Since $\vec{B}^T$ is an upper triangular matrix with non zero values in principal diagonal  , it is invertible matrix and hence $\vec{v}$ will be zero vector.Now, Finding the inverse of $\vec{B}^T$
+   \begin{align}
+   \myvec{1&t&t^2&\vrule&1&0&0\\0&1&2t&\vrule&0&1&0\\0&0&1&\vrule&0&0&1}\\
+  \xleftrightarrow{R_1=R_1-tR_2} \myvec{1&0&-t^2&\vrule&1&-t&0\\0&1&2t&\vrule&0&1&0\\0&0&1&\vrule&0&0&1}\\
+ \xleftrightarrow{R_1=R_1+t^2R_3}  \myvec{1&0&0&\vrule&1&-t&t^2\\0&1&2t&\vrule&0&1&0\\0&0&1&\vrule&0&0&1}\\
+   \xleftrightarrow{R_2=R_2-2tR_3} \myvec{1&0&0&\vrule&1&-t&t^2\\0&1&0&\vrule&0&1&-2t\\0&0&1&\vrule&0&0&1}
+   \end{align}
+   So, 
+   \begin{align}
+   (\vec{B}^{T})^{-1}=\myvec{1&-t&t^2\\0&1&-2t\\0&0&1}\label{eq:solutions/2/4/7/inverse}
+   \end{align}
+   Now, to find the coordinates,
+  \begin{align}
+  f(x)=\vec{w}^T\vec{g}
+  \end{align}
+  So,
+  \begin{align}
+  \vec{c}^T\vec{f}=\vec{w}^T\vec{g}\\
+\vec{c}^T\vec{f}=\vec{w}^T\vec{B}\vec{f}\\
+(\vec{c}^T-\vec{w}^T\vec{B})\vec{f}=0
+  \end{align} 
+  Since, $\vec{f}$ is linearly independent,
+  \begin{align}
+  \vec{c}^T-\vec{w}^T\vec{B}=0\\
+  \vec{c}^T=\vec{w}^T\vec{B}\\
+  \vec{c}^T\vec{B}^{-1}=\vec{w}^T\\
+   (\vec{B}^{-1})^T\vec{c}=\vec{w}\label{eq:solutions/2/4/7/final}\end{align}
+   Using \eqref{eq:solutions/2/4/7/inverse} in \eqref{eq:solutions/2/4/7/final}
+   \begin{align}
+ \vec{w}= \myvec{1&-t&t^2\\0&1&-2t\\0&0&1}\myvec{c_0\\c_1\\c_2}
+  \end{align} 
+
