@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  30 OCT 2020 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  31 OCT 2020 08:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1706,103 +1706,103 @@ Package chngcntr Info: \counterwithout already defined.
 ) (./gvv_hoffman.aux)
 \openout1 = `gvv_hoffman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 89.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 91.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-89.
+91.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 91.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-89.
+91.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 91.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-89.
+91.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 89.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 8
-9.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 91.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 9
+1.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 8
-9.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
+1.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <6> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <6> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 89.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 89.
+LaTeX Info: Redefining \celsius on input line 91.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 91.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 89.
-Package gensymb Info: Using \Omega for \ohm on input line 89.
+LaTeX Info: Redefining \ohm on input line 91.
+Package gensymb Info: Using \Omega for \ohm on input line 91.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1854,7 +1854,7 @@ Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box129
-Package hyperref Info: Link coloring OFF on input line 89.
+Package hyperref Info: Link coloring OFF on input line 91.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/na
 meref.sty
@@ -1870,64 +1870,64 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count389
 )
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
+LaTeX Info: Redefining \ref on input line 91.
+LaTeX Info: Redefining \pageref on input line 91.
+LaTeX Info: Redefining \nameref on input line 91.
  (./gvv_hoffman.out) (./gvv_hoffman.out)
 \@outlinefile=\write4
 \openout4 = `gvv_hoffman.out'.
 
 \c@lstlisting=\count390
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 89
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 91
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 9
+1.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 9
+1.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 9
+1.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 9
+1.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-89.
+91.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 89.
+(Font)              scaled to size 11.39996pt on input line 91.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 89.
+(Font)              scaled to size 7.59998pt on input line 91.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 89.
+(Font)              scaled to size 5.69998pt on input line 91.
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-89.
+91.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txtt.fd
@@ -1947,55 +1947,55 @@ on <1.5> allowed
 <iith_logo.pdf, id=91, 359.3425pt x 486.81876pt>
 File: iith_logo.pdf Graphic file (type pdf)
 <use iith_logo.pdf>
-Package pdftex.def Info: iith_logo.pdf  used on input line 245.
+Package pdftex.def Info: iith_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 71.86722pt x 97.36201pt.
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 245.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 247.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 22.79993pt on input line 245.
+(Font)              scaled to size 22.79993pt on input line 247.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 15.95987pt on input line 245.
+(Font)              scaled to size 15.95987pt on input line 247.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 245.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 247.
 <tlc.pdf, id=92, 597.51233pt x 845.0471pt>
 File: tlc.pdf Graphic file (type pdf)
 <use tlc.pdf>
-Package pdftex.def Info: tlc.pdf  used on input line 245.
+Package pdftex.def Info: tlc.pdf  used on input line 247.
 (pdftex.def)             Requested size: 143.40588pt x 202.81544pt.
 
-Overfull \hbox (14.40588pt too wide) in paragraph at lines 245--245
+Overfull \hbox (14.40588pt too wide) in paragraph at lines 247--247
 [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 245.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 247.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 13.29996pt on input line 245.
+(Font)              scaled to size 13.29996pt on input line 247.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 9.30992pt on input line 245.
+(Font)              scaled to size 9.30992pt on input line 247.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 245.
+(Font)              scaled to size 6.64998pt on input line 247.
 File: iith_logo.pdf Graphic file (type pdf)
 <use iith_logo.pdf>
-Package pdftex.def Info: iith_logo.pdf  used on input line 245.
+Package pdftex.def Info: iith_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 71.86722pt x 97.36201pt.
 File: tlc.pdf Graphic file (type pdf)
 <use tlc.pdf>
-Package pdftex.def Info: tlc.pdf  used on input line 245.
+Package pdftex.def Info: tlc.pdf  used on input line 247.
 (pdftex.def)             Requested size: 143.40588pt x 202.81544pt.
 
-Overfull \hbox (14.40588pt too wide) in paragraph at lines 245--245
+Overfull \hbox (14.40588pt too wide) in paragraph at lines 247--247
 [][] 
  []
 
 File: iith_logo.pdf Graphic file (type pdf)
 <use iith_logo.pdf>
-Package pdftex.def Info: iith_logo.pdf  used on input line 245.
+Package pdftex.def Info: iith_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 71.86722pt x 97.36201pt.
 File: tlc.pdf Graphic file (type pdf)
 <use tlc.pdf>
-Package pdftex.def Info: tlc.pdf  used on input line 245.
+Package pdftex.def Info: tlc.pdf  used on input line 247.
 (pdftex.def)             Requested size: 143.40588pt x 202.81544pt.
 
-Overfull \hbox (14.40588pt too wide) in paragraph at lines 245--245
+Overfull \hbox (14.40588pt too wide) in paragraph at lines 247--247
 [][] 
  []
 
@@ -2753,21 +2753,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ))
 (./chapters/3/3.1.tex (./solutions/3/1/1/a/solution.tex) [53]
-(./solutions/3/1/1/c/solution.tex) (./solutions/3/1/2/solution.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
+(./solutions/3/1/1/c/solution.tex) (./solutions/3/1/1/d/solution.tex
+Underfull \hbox (badness 3557) in paragraph at lines 13--15
+\OT1/txr/m/n/12 From [] and [] ad-di-tive
  []
 
 
+Underfull \hbox (badness 2932) in paragraph at lines 13--15
+\OT1/txr/m/n/12 trans-for-ma-tion prop-erty is not sat-is-fied.
+ []
+
+) (./solutions/3/1/2/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+)
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 53--55
 []\OT1/txr/m/n/12 What are the con-di-tions on $\OML/txmi/m/it/12 a; b; c$ \OT1
 /txr/m/n/12 that
  []
@@ -2780,32 +2790,60 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
 (./solutions/3/1/8/solution.tex
-Underfull \hbox (badness 2165) in paragraph at lines 45--3
+Underfull \hbox (badness 2165) in paragraph at lines 58--3
 []\OT1/txr/m/n/12 Describe ex-plic-itly a lin-ear trans-for-ma-tion
  []
 
-) (./solutions/3/1/9/solution.tex) (./solutions/3/1/10/solution.tex
+) (./solutions/3/1/9/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55])
-(./solutions/3/1/11/solution.tex
+(./solutions/3/1/10/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+)
+(./solutions/3/1/11/solution.tex
 Underfull \hbox (badness 10000) in paragraph at lines 29--33
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 41--69
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56])
+Underfull \hbox (badness 10000) in paragraph at lines 41--83
 
  []
 
-) (./chapters/3/3.2.tex
+(./solutions/3/1/12/solution.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 13--14
+[]\OT1/txr/m/n/12 Example: Let us con-sider a vec-tor space
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56]
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
+))
+(./chapters/3/3.2.tex
+Underfull \hbox (badness 10000) detected at line 14
+ []$[]  [] []$ []  
+ []
+
+(./solutions/3/2/2/solution.tex
+Underfull \vbox (badness 6047) has occurred while \output is active []
+
+ [57])
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
@@ -2813,30 +2851,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
 Underfull \hbox (badness 10000) in paragraph at lines 78--82
 
  []
 
-)) [58
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]))
+[59
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./gvv_hoffman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 (rerunfilecheck)             Checksum: 004590264D5A938C1936E7A45129681E;1020.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 44189 strings out of 480608
- 1022174 string characters out of 5892806
- 1415383 words of memory out of 5000000
- 57673 multiletter control sequences out of 15000+600000
+ 44235 strings out of 480608
+ 1023024 string characters out of 5892806
+ 1415837 words of memory out of 5000000
+ 57687 multiletter control sequences out of 15000+600000
  627217 words of font info for 235 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1087s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2858,10 +2897,10 @@ c.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw
 ts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (58 pages, 845211 bytes).
+Output written on gvv_hoffman.pdf (59 pages, 850679 bytes).
 PDF statistics:
- 2131 PDF objects out of 2487 (max. 8388607)
- 1992 compressed objects within 20 object streams
- 1273 named destinations out of 1440 (max. 500000)
+ 2166 PDF objects out of 2487 (max. 8388607)
+ 2025 compressed objects within 21 object streams
+ 1296 named destinations out of 1440 (max. 500000)
  239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,37 @@
+Let $\vec{V}$ and $\vec{W}$ be vector spaces over the field $\vec{F}$ and let $\vec{T}$ be a linear transformation from $\vec{V}$ into $\vec{W}$. Then,
+\begin{align}
+    \rank (\vec{T}) + \nullity (\vec{T}) = \dim \vec{V} \label{eq:solutions/3/1/12/eq:eq1}
+\end{align}
+It is given that range and null space of $\vec{T}$ are same, let us assume it to be $m$.
+Substituting in equation \eqref{eq:solutions/3/1/12/eq:eq1}
+\begin{align}
+    m + m = n\\
+\implies n = 2m \label{eq:solutions/3/1/12/eq:eq2}
+\end{align}
+From equation \eqref{eq:solutions/3/1/12/eq:eq2}, we can say that $n$ is even.\\
+
+Example: Let us consider a vector space $\vec{V}$, such that $\vec{V} \in \mathbb{R}^2$ and let us consider a linear transformation $\vec{T} : \vec{V} \xrightarrow{}  \vec{V}$ defined by $\vec{T}\myvec{x\\y} = \myvec{y\\0}$ and is given by matrix $\vec{M}$\\
+\begin{align}
+    \vec{T}\myvec{x\\y} = \myvec{y\\0}\\
+    \vec{M} = \myvec{0&1\\0&0} \label{eq:solutions/3/1/12/eq:eq5}
+\end{align}
+Let us consider basis of $\mathbb{R}^2$ $\left\{\myvec{1\\0}, \myvec{0\\1}\right\}$ and apply linear transformation on it.
+\begin{align}
+    \vec{T}\myvec{1\\0} = \myvec{0\\0}\\
+    \vec{T}\myvec{0\\1} = \myvec{1\\0}
+\end{align}
+From \eqref{eq:solutions/3/1/12/eq:eq5},\\
+The range of matrix can be found from row reduced echelon form. But as matrix $\vec{M}$ is in RREF form,\\
+the basis for range is given by $\myvec{1\\0}$.\\
+The null space of matrix is,
+\begin{align}
+    \myvec{0&1\\0&0}\myvec{x_1\\x_2} = \myvec{0\\0}\\
+\implies x_1 = t \quad x_2 = 0\\
+\implies \vec{X} = \myvec{t\\0} = t\myvec{1\\0}
+\end{align}
+The basis for null space is $\myvec{1\\0}$.
+\begin{align}
+    \rank(\vec{T}) &= 1 \quad \nullity(\vec{T}) = 1 \label{eq:solutions/3/1/12/eq:eq6}\\
+    \dim(\vec{V}) &= 2 \label{eq:solutions/3/1/12/eq:eq7}
+\end{align}
+Thus the range and null space are equal, and $n$ is even. 
