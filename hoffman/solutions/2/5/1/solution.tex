@@ -1,0 +1,22 @@
+\textbf{Theorem 4:}\textit{Let $\mathbb{V}$ be a vector space which is spanned by a finite set of vectors $\beta_1,\beta_2,...,\beta_m$. Then any independent set of vectors in $\mathbb{V}$ is finite and contains no more than m elements.}
+Let $\mathbb{V}$ be a vector space spanned by $a_1,a_2,\dots,a_n$, where $a_i$, i=1,2,\dots,n are columns of matrix $\vec{A}_{s\times n}$.
+\begin{align}
+    \vec{A}=\myvec{a_1&a_2&\dots&a_n}\\
+    \vec{A}=\myvec{a_{11}&a_{12}&\dots&a_{1n}\\a_{21}&a_{22}&\dots&a_{2n}\\\vdots&&&\vdots\\a_{s1}&a_{s2}&\dots&a_{sn}}
+\end{align}
+Let us take ${a_i}$,i=1,2,\dots,n as standard ${s\times1}$ bases.\newline 
+\begin{align}
+     \vec{A}=\myvec{1&0&\dots&0&a_{1,s+1}&\dots&a_{1n}\\0&1&\dots&0&a_{2,s+1}&\dots&a_{2n}\\\vdots&&\vdots&&\vdots&&\vdots\\0&0&\dots&1&a_{s,s+1}&\dots&a_{sn}}\label{eq:solutions/2/5/1/eqmatrix}
+\end{align}
+From \eqref{eq:solutions/2/5/1/eqmatrix}, it is clear that
+\begin{align}
+    dim(col(A))\leq s&\\
+    \implies rank(A)\leq s&
+\end{align}
+Now, from rank-nullity theorem,
+    \begin{align}
+    rank(A)+nullity(A)=n&\\
+    nullity(A)=n-rank(A)&\\
+   \implies nullity(A)>0& \label{eq:solutions/2/5/1/eq2}
+    \end{align}
+From equation \eqref{eq:solutions/2/5/1/eq2} it is clear that there will be a non zero $\vec{x}$ such that $\vec{A}\vec{x}=\vec{0}$

@@ -1,0 +1,157 @@
+Let the vector space of n-dimension be deined as
+\begin{align}
+        \vec{V}=\cbrak{f:\vec{F}\rightarrow \vec{F} : f(x)=\sum_{k=0}^{n}c_kx^k, \ c_k \in \vec{F} }
+\end{align}
+The corresponding standard basis for $\vec{V}$ is
+\begin{align}
+	\cbrak{\myvec{1\\0\\\vdots\\0},\myvec{0\\x\\\vdots\\0},\cdots,\myvec{0\\0\\\vdots\\x^{n-1}}}
+\end{align}
+\begin{enumerate}[label=\emph{\alph*)}]
+\item
+Let $f$ and $g \in \vec{V}$ and let $\alpha$ and $\beta \in \vec{F}$ then 
+		\begin{align}
+			\vec{D}(\alpha f + \beta g)&=\frac{d(\alpha f(x) + \beta g(x))}{dx} \\
+			&=\alpha\frac{df(x)}{dx}+\beta\frac{dg(x)}{dx}\\
+			&=\alpha(\vec{D}f)+\beta(\vec{D}g)
+		\end{align}
+Therefore $\vec{D}$ is a linear transformation.\\
+The $\vec{D}$ transformation maps the $k^{th}$ basis vector as follows
+		\begin{align}
+			\vec{D}\myvec{0\\\vdots\\0\\x^k\\\vdots\\0}
+			=\myvec{0\\\vdots\\kx^{k-1}\\0\\\vdots\\0}
+		\end{align}
+Since the transformed vector 
+		\begin{align}
+			\myvec{0\\\vdots\\kx^{k-1}\\0\\\vdots\\0} \in \vec{V}
+		\end{align}
+the range of $\vec{D}$ is the vector space $\vec{V}$. Thus the transformation is defined as
+$\vec{D}:\vec{V} \rightarrow \vec{V}$.
+Therefore the $\vec{D}$ Transformation on the basis vector set is
+		\begin{align}
+			\vec{D}\myvec{1 & 0 & 0 & \cdots & 0 & 0\\
+				      0 & 1 & 0 & \cdots & 0 & 0 \\
+				      0 & 0 & 1 & \cdots & 0 & 0 \\
+				      \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+				      0 & 0 & 0 & \cdots & 1 & 0 \\
+				      0 & 0 & 0 & \cdots & 0 & 1}\\
+			      =\myvec{0 & 1 & 0 & \cdots & 0 & 0\\
+				      0 & 0 & 2 & \cdots & 0 & 0\\
+				      0 & 0 & 0 & \cdots & 0 & 0\\
+				      \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+				      0 & 0 & 0 & \cdots & 0 & n-2 \\
+				      0 & 0 & 0 & \cdots & 0 & 0}
+		\end{align}
+Thus the $\vec{D}$ transformation coefficient matrix is		
+\begin{align}
+	D=\myvec{0 & 1 & 0 & \cdots & 0 & 0\\
+                 0 & 0 & 2 & \cdots & 0 & 0\\
+                 0 & 0 & 0 & \cdots & 0 & 0\\
+                \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+                 0 & 0 & 0 & \cdots & 0 & n-2 \\
+                 0 & 0 & 0 & \cdots & 0 & 0}
+\end{align}
+Since $D$ contains a zero row hence $\mydet{D}=0$. Therefore $\vec{D}$ transformation matrix is 
+singular. The nullspace for differentiation transformation is defined as
+\begin{align}
+        \vec{N}=\cbrak{f \in \vec{V} : \vec{D}f=0} 
+\end{align}
+		Let the coefficient matrix of $f \in \vec{V}$ be 
+		\begin{align}
+			\vec{f}=\myvec{c_0\\c_1\\\vdots\\c_{n-1}}
+		\end{align}
+		then
+		\begin{align}
+			\vec{D}f&=0 \\
+			\implies
+			&\myvec{0 & 1 & 0 & \cdots & 0 & 0\\
+                 0 & 0 & 2 & \cdots & 0 & 0\\
+                 0 & 0 & 0 & \cdots & 0 & 0\\
+                \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+                 0 & 0 & 0 & \cdots & 0 & n-2 \\
+		0 & 0 & 0 & \cdots & 0 & 0}\myvec{c_0\\c_1\\\vdots\\c_{n-1}}=\vec{0} \label{eq:solutions/3/1/3/dx}
+		\end{align}
+Since $D$ is in row reduced echolon form and $rank(D)=n-1$ the solution of (\ref{eq:solutions/3/1/3/dx}) is
+\begin{align}
+\vec{f}=\myvec{k\\0\\\vdots\\0}
+\end{align}
+where $k \in \vec{R}$. Therefore the nullspace for \\$\vec{D}:\vec{V}\rightarrow\vec{V}$ is
+\begin{align}
+	\vec{N}=\cbrak{\myvec{k\\0\\\vdots\\0}:k \in \vec{R}}
+\end{align}
+\item
+Let $f$ and $g \in \vec{V}$ and let $\alpha$ and $\beta \in \vec{F}$ then
+\begin{align}
+	\vec{T}(\alpha f + \beta g)&=\int_{0}^{x}(\alpha f(t) + \beta g(t))\,dt\\
+	&=\alpha\int_{0}^{x} f(t)\,dt+\beta\int_{0}^{x} g(t)\,dt\\
+     &=\alpha(\vec{T}f)+\beta(\vec{T}g)
+\end{align}
+Therefore $\vec{T}$ is a linear transformation.\\
+The $\vec{T}$ transformation maps the $k^{th}$ basis vector as follows
+\begin{align}
+      \vec{T}\myvec{0\\ \vdots \\ x^k \\0 \\ \vdots \\0}
+      =\myvec{0\\ \vdots \\ 0\\ \frac{x^{k+1}}{k+1} \\ \vdots \\0}
+\end{align}
+Since the transformed vector
+\begin{align}
+	\myvec{0\\ \vdots \\ 0\\ \frac{x^{k+1}}{k+1} \\ \vdots \\0} \in \vec{V}
+\end{align}
+the range of $\vec{T}$ is the vector space $\vec{V}$. Thus the transformation is defined as 
+$\vec{T} : \vec{V}\rightarrow \vec{V}$.
+Therefore the $\vec{T}$ Transformation on the basis vector set is
+                \begin{align}
+                        \vec{T}\myvec{1 & 0 & 0 & \cdots & 0 & 0\\
+                                      0 & 1 & 0 & \cdots & 0 & 0 \\
+                                      0 & 0 & 1 & \cdots & 0 & 0 \\
+                                      \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+                                      0 & 0 & 0 & \cdots & 1 & 0 \\
+                                      0 & 0 & 0 & \cdots & 0 & 1} \\
+                              =\myvec{0 & 0 & 0 & \cdots & 0 & 0\\
+                                      1 & 0 & 0 & \cdots & 0 & 0\\
+				      0 & \frac{1}{2} & 0 & \cdots & 0 & 0\\
+                                      \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+				      0 & 0 & 0 & \cdots & 0 & 0 \\
+				      0 & 0 & 0 & \cdots & \frac{1}{n-1} & 0 \\
+				      0 & 0 & 0 & \cdots & 0 & \frac{1}{n} }
+                \end{align}
+Thus the $\vec{T}$ transformation coefficient matrix is
+\begin{align}
+	                     T=\myvec{0 & 0 & 0 & \cdots & 0 & 0\\
+                                      1 & 0 & 0 & \cdots & 0 & 0\\
+                                      0 & \frac{1}{2} & 0 & \cdots & 0 & 0\\
+                                      \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+                                      0 & 0 & 0 & \cdots & 0 & 0 \\
+                                      0 & 0 & 0 & \cdots & \frac{1}{n-1} & 0 \\
+                                      0 & 0 & 0 & \cdots & 0 & \frac{1}{n} } 
+\end{align}
+Since $T$ contains a zero row hence $\mydet{T}=0$. Therefore $\vec{T}$ transformation matrix is 
+singular.
+The nullspace for integration transformation is defined as
+\begin{align}
+        \vec{N}=\cbrak{f \in \vec{V} : \vec{T}f=0}
+\end{align}
+                Let the coefficient matrix of $f \in \vec{V}$ be
+                \begin{align}
+                        \vec{f}=\myvec{c_0\\c_1\\\vdots\\c_{n-1}}
+                \end{align}
+                then
+\begin{align}
+	&\vec{T}f=0 \\
+	\implies 
+	&\myvec{0 & 0 & 0 & \cdots & 0 & 0\\
+               1 & 0 & 0 & \cdots & 0 & 0\\
+               0 & \frac{1}{2} & 0 & \cdots & 0 & 0\\
+               \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+               0 & 0 & 0 & \cdots & 0 & 0 \\
+               0 & 0 & 0 & \cdots & \frac{1}{n-1} & 0 \\
+               0 & 0 & 0 & \cdots & 0 & \frac{1}{n} }
+	       \myvec{c_0\\c_1\\\vdots\\c_{n-1}}=\vec{0} \label{eq:solutions/3/1/3/tx}
+\end{align}
+Since $T$ is in row reduced echolon form and $rank(T)=n$ the solution of (\ref{eq:solutions/3/1/3/tx}) is
+\begin{align}
+\vec{f}=\myvec{0\\0\\\vdots\\0}
+\end{align}
+where $k \in \vec{R}$. Therefore the nullspace for \\$\vec{T}:\vec{V}\rightarrow\vec{V}$ is
+\begin{align}
+        \vec{N}=\cbrak{\myvec{0\\0\\\vdots\\0}:k \in \vec{R}}
+\end{align}
+\end{enumerate}

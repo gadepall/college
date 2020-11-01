@@ -1,0 +1,64 @@
+An ordered basis for $\mathbb{C}^{2\times2}$ is given by
+\begin{align}
+& \vec{A_{11}} = \myvec{1 & 0 \\ 0 & 0} \qquad \vec{A_{12}} = \myvec{0 & 1 \\ 0 & 0} \\
+& \vec{A_{21}} = \myvec{0 & 0 \\ 1 & 0} \qquad \vec{A_{22}} = \myvec{0 & 0 \\ 0 & 1}
+\end{align}
+Now, we compute
+\begin{align}  
+\vec{T(A_{11})} & = \vec{BA_{11}} \\
+                & = \myvec{1 & -1 \\ -4 & 4}\myvec{1 & 0 \\ 0 & 0} \\
+                & = \myvec{1 & 0 \\ -4 & 0} \label{eq:solutions/3/2/5/3}
+\end{align}
+from \eqref{eq:solutions/3/2/5/3} we have
+\begin{align}
+\vec{T(A_{11})} = \vec{A_{11}} -4\vec{A_{21}}\label{eq:solutions/3/2/5/7}
+\end{align}
+\begin{align}  
+	\vec{T(A_{12})} & = \vec{BA_{12}} \\
+	& = \myvec{1 & -1 \\ -4 & 4}\myvec{0 & 1 \\ 0 & 0} \\
+	& = \myvec{0 & 1 \\ 0 & -4} \label{eq:solutions/3/2/5/4}
+\end{align}
+from \eqref{eq:solutions/3/2/5/4}, we have
+\begin{align}
+	\vec{T(A_{12})} = \vec{A_{12}} -4\vec{A_{22}}\label{eq:solutions/3/2/5/8}
+\end{align}
+\begin{align}  
+	\vec{T(A_{21})} & = \vec{BA_{21}} \\
+	& = \myvec{1 & -1 \\ -4 & 4}\myvec{0 & 0 \\ 1 & 0} \\
+	& = \myvec{-1 & 0 \\ 4 & 0} \label{eq:solutions/3/2/5/5}
+\end{align}
+from \eqref{eq:solutions/3/2/5/5}, we have 
+\begin{align}
+	\vec{T(A_{21})} = -\vec{A_{11}} + 4\vec{A_{21}}\label{eq:solutions/3/2/5/9}
+\end{align}
+\begin{align}  
+	\vec{T(A_{22})} & = \vec{BA_{22}} \\
+	& = \myvec{1 & -1 \\ -4 & 4}\myvec{0 & 0 \\ 0 & 1} \\
+	& = \myvec{0 & -1 \\ 0 & 4} \label{eq:solutions/3/2/5/6}
+\end{align}
+from \eqref{eq:solutions/3/2/5/6}, we have
+\begin{align}
+	\vec{T(A_{22})} = -\vec{A_{12}} + 4\vec{A_{22}}\label{eq:solutions/3/2/5/10}
+\end{align}
+Now, by \eqref{eq:solutions/3/2/5/7}, \eqref{eq:solutions/3/2/5/8}, \eqref{eq:solutions/3/2/5/9} and \eqref{eq:solutions/3/2/5/10} we write matrix of the linear transformation as follows
+\begin{align}
+\vec{P} = \myvec{1 & 0 & -1 & 0 \\ 0 & 1 & 0 & -1 \\ -4 & 0 & 4 & 0 \\ 0 & -4 & 0 & 4 }
+\end{align}
+Also, we know that the rank of a linear transformation is same as the rank of the matrix of the linear transformation. Thus, we find the rank of matrix $\vec{P}$.
+\begin{align}
+& \myvec{1 & 0 & -1 & 0 \\ 0 & 1 & 0 & -1 \\ -4 & 0 & 4 & 0 \\ 0 & -4 & 0 & 4}\xleftrightarrow[]{r_3= r_3 + 4r_1}  \myvec{1 & 0 & -1 & 0 \\ 0 & 1 & 0 & -1 \\ 0 & 0 & 0 & 0 \\ 0 & -4 & 0 & 4 } \\
+& \myvec{1 & 0 & -1 & 0 \\ 0 & 1 & 0 & -1 \\ 0 & 0 & 0 & 0 \\ 0 & -4 & 0 & 4 } \xleftrightarrow[]{r_4 = r_4 + 4r_1}\myvec{1 & 0 & -1 & 0 \\ 0 & 1 & 0 & -1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 } \label{eq:solutions/3/2/5/11}
+\end{align}
+from \eqref{eq:solutions/3/2/5/11}, we found out that rank($\vec{T}$) =$2$.
+
+Now, we compute
+\begin{align}
+\vec{T^2(A)} & = \vec{T(T(A))} \\
+             & = \vec{T(BA)} \\
+             & = \vec{B^2A}
+\end{align}
+where
+\begin{align}
+\vec{B^2} & = \myvec{1 & -1 \\ -4 & 4}\myvec{1 & -1 \\ -4 & 4} \\
+          & = \myvec{5 & -5 \\ -20 & 20}
+\end{align}

@@ -1,0 +1,27 @@
+ Let us assume two equations as given below 
+ \myvec{5&2}$\vec{x}$ = 7 and \myvec{10&4}$\vec{x}$ = -3 \\
+ 
+ Let the coefficient matrix be given as
+ \begin{align}
+ \vec{A}=\myvec{5&2\\10&4},\vec{b}=\myvec{7\\-3}
+  \end{align}
+   the  augmented matrix be given as matrix be given as
+  \begin{align}
+      \vec{A|B} = \myvec{5&2&7\\10&4&-3}
+  \end{align}
+  Applying row reduction 
+\begin{align}
+\myvec{5&2&7\\10&4&-3}&\xleftrightarrow{R_2=R_2-2R_1}\myvec{5&2&7\\0&0&-17}\\
+&\xleftrightarrow{R_1=\frac{R_1}{5}}\myvec{1&\frac{2}{5}&\frac{7}{5}\\0&0&-17}\\
+&\xleftrightarrow{R_2=\frac{R_2}{-17}}\myvec{1&\frac{2}{5}&\frac{7}{5}\\0&0&1}\\
+&\xleftrightarrow{R_1=R_1-\frac{7}{5}R_2}\myvec{1&\frac{2}{5}&0\\0&0&1}\\
+\end{align}
+Clearly,On comparing the ranks of matrix $\vec{A}$ and $\vec{A|B}$, we find that rank of matrix  $\vec{A|B} \neq \vec{A}$
+Hence the system of linear equation have no solutions.
+Consider the system $\vec{A}$$\vec{x}$ = $\vec{b}$, with coefficient matrix $\vec{A}$ and augmented matrix $\vec{A|B}$.\\
+As above, the sizes of $\vec{b}$, $\vec{A}$, and $\vec{A|B}$ are m × 1, m × n, and
+m × (n + 1), respectively; in addition, the number of unknowns is n.\\
+$\vec{A}$$\vec{x}$ is inconsistent (i.e., no solution exists) if and only if rank $\vec{A}$ $<$ rank $\vec{A|B}$.
+
+
+ 
