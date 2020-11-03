@@ -1,0 +1,91 @@
+\begin{table*}[h!]
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Transformation}&\textbf{Matrix Representation}&\textbf{Dimension}&\textbf{Max Rank  of transformation matrix}\\[0.5ex]
+\hline
+$T:\mathbb{R}^3\rightarrow\mathbb{R}^2$ & $T(\vec{v})=\vec{A}\vec{v}$ & $\vec{A}:2\times 3$ & $Rank(\vec{A})=2$\\[0.5ex]
+\hline
+$U:\mathbb{R}^2\rightarrow\mathbb{R}^3$ & $U(\vec{w})=\vec{B}\vec{w}$ & $\vec{B}:3\times 2$ & $Rank(\vec{B})=2$\\[0.5ex]
+\hline
+$UT:\mathbb{R}^3\rightarrow\mathbb{R}^3$ & $UT(\vec{x})=\vec{C}\vec{x}$ & $\vec{C}:3\times 3$ & $Rank(\vec{C})\le min(Rank(\vec{B}),Rank(\vec{A}))$\\[0.5ex]
+&$U(T(\vec{x}))=\vec{B}(\vec{A}\vec{x})$&&$Rank(\vec{C})=2$\\[0.5ex]
+&$\vec{C}=\vec{A}\vec{B}$&&\\[0.5ex]
+\hline
+\end{tabular}
+\caption{Proof for non-invertibility of the transformation UT where $T:\mathbb{R}^3\rightarrow\mathbb{R}^2$ and $U:\mathbb{R}^2\rightarrow\mathbb{R}^3$}
+\label{eq:solutions/3/2/6/tab:proof}
+\end{center}
+\vspace{0.5cm}
+\end{table*}
+Let $\vec{v},\vec{x}\in\mathbb{R}^3$ and $\vec{w}\in\mathbb{R}^2$. Table \ref{eq:solutions/3/2/6/tab:proof} shows that maximum rank the transformation matrix $\vec{C}$ can have is 2. 
+\begin{align}
+Rank(\vec{C})=2\\
+dim(\vec{C})=3\\
+\implies Rank(\vec{C})<dim(\vec{C})\label{eq:solutions/3/2/6/proofeq}
+\end{align}
+Therefore from the equation \eqref{eq:solutions/3/2/6/proofeq}, we can say transformation UT is not invertible.
+Generalizing the proof, for $n>m$ and considering vectors $\vec{v},\vec{x}\in\mathbb{R}^n$ and $\vec{w}\in\mathbb{R}^m$. From the Table \ref{eq:solutions/3/2/6/tab:general}, 
+\begin{align}
+Rank(\vec{C})=m\\
+dim(\vec{C})=n\\
+\implies Rank(\vec{C})<dim(\vec{C})\label{eq:solutions/3/2/6/prove}
+\end{align}
+From equation \eqref{eq:solutions/3/2/6/prove}we can say that the transformation UT is not invertible. 
+\begin{table*}[h!]
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Transformation}&\textbf{Matrix Representation}&\textbf{Dimension}&\textbf{Max Rank  of transformation matrix}\\[0.5ex]
+\hline
+$T:\mathbb{R}^n\rightarrow\mathbb{R}^m$ & $T(\vec{v})=\vec{A}\vec{v}$ & $\vec{A}:m\times n$ & $Rank(\vec{A})=m$\\[0.5ex]
+\hline
+$U:\mathbb{R}^m\rightarrow\mathbb{R}^n$ & $U(\vec{w})=\vec{B}\vec{w}$ & $\vec{B}:n\times m$ & $Rank(\vec{B})=m$\\[0.5ex]
+\hline
+$UT:\mathbb{R}^n\rightarrow\mathbb{R}^n$ & $UT(\vec{x})=\vec{C}\vec{x}$ & $\vec{C}:n\times n$ & $Rank(\vec{C})\le min(Rank(\vec{B}),Rank(\vec{A}))$\\[0.5ex]
+&$U(T(\vec{x}))=\vec{B}(\vec{A}\vec{x})$&&$Rank(\vec{C})=m$\\[0.5ex]
+&$\vec{C}=\vec{A}\vec{B}$&&\\[0.5ex]
+\hline
+\end{tabular}
+\caption{Generalization of the proof }
+\label{eq:solutions/3/2/6/tab:general}
+\end{center}
+\vspace{-0.5cm}
+\end{table*}
+Let the vectors $\vec{v}=\myvec{3\\2\\1} \in \mathbb{R}^3$ and $\vec{w}=\myvec{4\\2} \in \mathbb{R}^2$.
+\begin{enumerate}
+\item Calculating transformation matrix $\vec{A}$,
+\begin{align}
+T(\vec{v})=\vec{A}\vec{v}
+\end{align}
+\begin{align}
+\myvec{4\\2}=\myvec{1&0&1\\1&0&-1}\myvec{3\\2\\1}\\
+\myvec{1&0&1\\1&0&-1} \sim \myvec{1&0&0\\0&0&1}=rref(\vec{A})\\
+\implies Rank(\vec{A})=2 \label{eq:solutions/3/2/6/RankA}
+\end{align}
+\item Calculating transformation matrix $\vec{B}$, 
+\begin{align}
+U(\vec{w})=\vec{B}\vec{w}
+\end{align}
+\begin{align}
+\myvec{3\\2\\1}=\myvec{\frac{3}{4}&2\\1&-1\\0&\frac{1}{2}}\myvec{4\\2}\\
+\myvec{\frac{3}{4}&2\\1&-1\\0&\frac{1}{2}} \sim \myvec{1&0\\0&1\\0&0}=rref(\vec{B})\\
+\implies Rank(\vec{B})=2 \label{eq:solutions/3/2/6/RankB}
+\end{align}
+\item Now for the transformation UT, calculating the transformation matrix $\vec{C}$,
+\begin{align}
+UT:\mathbb{R}^3\rightarrow\mathbb{R}^3\\
+\implies UT(\vec{x})=\vec{C}\vec{x}\\
+U(T(\vec{x}))=\vec{B}(\vec{A}\vec{x})\\
+\implies \vec{C}=\vec{B}\vec{A}
+\end{align}
+\begin{align}
+\vec{C}=\myvec{\frac{3}{4}&2\\1&-1\\0&\frac{1}{2}}\myvec{1&0&1\\1&0&-1}=\myvec{\frac{3}{4}&0&\frac{3}{4}\\0&0&2\\\frac{1}{2}&0&\frac{-1}{2}}\\
+\myvec{\frac{3}{4}&0&\frac{3}{4}\\0&0&2\\\frac{1}{2}&0&\frac{-1}{2}} \sim \myvec{1&0&0\\0&0&1\\0&0&0}=rref(\vec{C})
+\end{align}
+\begin{align}
+\implies Rank(\vec{C})=2 \label{eq:solutions/3/2/6/RankC}\\
+dim(\vec{C})=3
+\end{align}
+As $Rank(\vec{C})<dim(\vec{C})$, transformation UT is not invertible.
+\end{enumerate}

@@ -1,0 +1,16 @@
+Expressing \eqref{eq:solutions/3/2/4/eq:1} in matrix form
+\begin{align}
+    \vec{T}=\myvec{3&0&0\\1&-1&0\\2&1&1}\label{eq:solutions/3/2/4/eq:2.1}
+\end{align}    
+The characteristic equation of $\vec{T}$ is given as follows,
+\begin{align}
+\mydet{\vec{T}-\lambda\vec{I}} = \mydet{3-\lambda&0&0\\1&-1-\lambda&0\\2&1&1-\lambda} &= 0\\
+\implies(3-\lambda)(-1-\lambda)(1-\lambda)=0 \nonumber\\
+\implies(\lambda-3)(1+\lambda)(1-\lambda)=0 \nonumber\\
+\implies(\lambda-3)(1-\lambda^2)=0\nonumber\\
+\implies(\lambda^2-1)(\lambda-3)=0\label{eq:solutions/3/2/4/eqchar}
+\end{align}
+By the Cayley-Hamilton theorem,We can write \eqref{eq:solutions/3/2/4/eqchar} as
+\begin{align}
+    \vec(\vec{T}^2-I)\vec(\vec{T}-3I)=0
+\end{align}
