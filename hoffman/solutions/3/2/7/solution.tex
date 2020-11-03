@@ -1,0 +1,23 @@
+Let,
+\begin{align}\label{eq:solutions/3/2/7/eq:eq_1}
+    \vec{x}, \vec{y} \in \vec{R^2}
+\end{align}
+Let $\vec{T}$ and $\vec{U}$ be given by the matrices
+\begin{align}
+    \vec{T}(\vec{x}) = \vec{A}\vec{x}; \quad 
+    \vec{U}(\vec{x}) = \vec{B}\vec{x} \label{eq:solutions/3/2/7/eq:eq_2a}
+\end{align}
+where,
+\begin{align}
+    \vec{A} = \myvec{0 & 1 \\ 0 & 0}; \quad \vec{B} = \myvec{1 & 0 \\ 0 & 0} \label{eq:solutions/3/2/7/eq:eq_2}
+\end{align}
+\begin{align}
+    \vec{T}(a\vec{x} + \vec{y}) = a \vec{T}\vec{x} + \vec{T} \vec{y} \label{eq:solutions/3/2/7/eq:eq_3} \\
+    \vec{U}(a\vec{x} + \vec{y}) = a \vec{U}\vec{x} + \vec{U} \vec{y} \label{eq:solutions/3/2/7/eq:eq_4}
+\end{align}
+From \eqref{eq:solutions/3/2/7/eq:eq_3} and \eqref{eq:solutions/3/2/7/eq:eq_4}, we can tell that $\vec{T}$ and $\vec{U}$ are linear operators. Now,
+\begin{align}
+    \vec{T}\vec{U} = \vec{A}\vec{B} = \myvec{0 & 1 \\ 0 & 0} \myvec{1 & 0 \\ 0 & 0} = \myvec{0 & 0 \\ 0 & 0} = \vec{0} \label{eq:solutions/3/2/7/eq:eq_6} \\
+    \vec{U}\vec{T} = \vec{B}\vec{A} =  \myvec{1 & 0 \\ 0 & 0} \myvec{0 & 1 \\ 0 & 0} = \myvec{0 & 1 \\ 0 & 0} \neq \vec{0} \label{eq:solutions/3/2/7/eq:eq_7}
+\end{align}
+From \eqref{eq:solutions/3/2/7/eq:eq_6} and \eqref{eq:solutions/3/2/7/eq:eq_7} it can be observed that $\vec{T}\vec{U}$ = 0 but $\vec{U}\vec{T} \neq 0$

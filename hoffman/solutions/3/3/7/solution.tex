@@ -1,0 +1,124 @@
+
+\begin{table}[!ht]
+\begin{center}
+\resizebox{\columnwidth}{!}
+{
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Given & $\mathcal{T}(T): T \rightarrow UTU^{-1}$\\
+& \\
+& $U$ is isomorphism of V onto W\\
+& that means $U$ is $one-one$\\
+& \\
+& $\mathcal{T}: L(V,V) \rightarrow L(W,W)$\\
+& \\
+\hline
+&\\
+To prove & $\mathcal{T}$ is isomorphism of $L(V,V)$\\
+&  onto $L(W,W)$\\
+& \\
+& It is same as proving\\
+& $\mathcal{T}$ is invertible, because \\
+& \\
+& $isomorphim \implies one-one$\\
+& $\implies invertible$ by definition\\
+& \\
+\hline
+& \\
+Proof & Consider inverse transformation\\
+& $\mathcal{S}: L(W,W) \rightarrow L(V,V)$\\
+& $\mathcal{S}: S \rightarrow U^{-1}SU$\\
+& \\
+& where $U^{-1}SU$ is a composition\\ 
+& of 3 linear transformations\\
+& $V \xrightarrow{U} W \xrightarrow{S} W \xrightarrow{U^{-1}} V$\\
+& \\
+& Now consider $\mathcal{S}(UTU^{-1})$,\\
+& \\
+& $\mathcal{S}(UTU^{-1}) = U^{-1}(UTU^{-1})U = T$\\
+& \\
+& Similarly consider $\mathcal{T}(U^{-1}SU)$,\\
+& \\
+& $\mathcal{T}(U^{-1}SU) = U(U^{-1}SU)U^{-1} = S$\\
+& \\
+& $\implies TS = I \text{ and } ST = I$\\
+& \\
+& we can say $\mathcal{T}$ is invertible\\
+& since we have found an inverse $\mathcal{S}$\\
+& \\
+& Hence $\mathcal{T}$ is one-one implies \\
+& $\mathcal{T}$ isomorphism of $V$ onto $W$\\
+&\\
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{Proof}
+\label{table:solutions/3/3/7/2}
+\end{table}
+{Example}
+Let
+\begin{equation}
+	U = \myvec{1 & 2\\3 & 4}
+\end{equation}
+here $U$ is an isomorphism from $\mathbb{R}^{2 \times 2}$ to $\mathbb{R}^{2 \times 2}$ since inverse of U exists and
+\begin{equation}
+	U^{-1} = \myvec{-2 & -\frac{3}{2}\\-1 & -\frac{1}{2}}
+\end{equation}
+Consider
+\begin{equation}
+	T = \myvec{-1 & 2\\3 & 1} \in \mathbb{R}^{2 \times 2}
+\end{equation}
+Now
+\begin{align}
+	UTU^{-1} &= \myvec{1 & 2\\3 & 4}\myvec{-1 & 2\\3 & 1}\myvec{-2 & -1\\-\frac{3}{2} & -\frac{1}{2}}\\
+	&= \myvec{-16 & -7\\-33 & -14} \in \mathbb{R}^{2 \times 2}
+\end{align}
+Also inverse exists for $T$
+\begin{align}
+	S = T^{-1} = \myvec{-\frac{1}{2} & \frac{2}{7}\\\frac{3}{7} & \frac{1}{7}}
+\end{align}
+Since T inverse exists $\mathcal{T}(T) = UTU^{-1}$ is an isomorphism from $\mathbb{R}^{2\times2}$ onto $\mathbb{R}^{2\times2}$.  
+
+\begin{table*}[!ht]
+	\begin{center}
+\resizebox{2\columnwidth}{!}
+{
+		\begin{tabular}{|c|c|}
+			\hline
+			\multirow{3}{*}{linear transformation} & \\
+			& Let $V$ and $W$ be vector spaces over field $F$.\\
+			& A $\textbf{linear transformation}$ $V$ into $W$ is a function T from V into W such that\\
+			& $T(c\alpha + \beta) = c(T\alpha) + T\beta$\\
+			& for all $\alpha$ and $\beta$ in $V$ and all scalars in $c$ in $F$.\\
+			& \\
+			\hline
+			\multirow{3}{*}{isomorphism} &\\
+			& If $V$ and $W$ are vector spaces over the field $F$, any $one-one$ linear transformation \\
+			& $T : V\rightarrow W$ is called $\textbf{isormorphism of}$ $V$ $\textbf{onto}$ $W$\\
+			& \\
+			\hline			
+			\multirow{3}{*}{one-one} & \\
+			& A linear transformation $T : \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}$ is said to be $\textbf{one-one}$ if for every  $\vec{b} \in \mathbb{R}^{m}$,\\
+			&  $\vec{A}\vec{X} =\vec{b}$ has atmost one solution in $\mathbb{R}^{n}$.\\
+			& \\
+			& Equivalently, if $T(\vec{u}) = T(\vec{v})$, then $u = v$. \\
+			& \\
+			& By definition, all $invertible$ transformations are $\textbf{one-one}$\\
+			& \\
+			\hline
+			\multirow{6}{*}{invertible} & \\
+			& A linear transformation $T : V \rightarrow W$ is $\textbf{invertible}$ if there exists another\\
+			& linear transformation $U: W \rightarrow V$ such that \\
+			& $UT$ is the $identity$ transformation on $V$ and $TU$ is the identity transformation on $W$.\\
+			& \\
+			& $T$ is $\textbf{invertible}$ if and only if $T$ is $one-one$ and $onto$\\
+			& \\
+			\hline
+		\end{tabular}
+}
+	\end{center}
+\caption{Definitions}
+\label{table:solutions/3/3/7/1}
+\end{table*}

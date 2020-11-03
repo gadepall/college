@@ -1,0 +1,13 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+%
+\item Let $V$ and $W$ be finite-dimensional vector spaces over the field $F$ and let $U$ be an isomorphism of $V$ and $W$. Prove that $T \rightarrow UTU^{-1}$ is an isomorphism of $L(V,V)$ onto $L(W,W)$.
+%
+\solution
+\input{./solutions/3/3/7/solution.tex}
+%
+\end{enumerate}

@@ -1,0 +1,65 @@
+Now,
+\begin{align}
+C_1 \vec{\alpha_1} +C_2 \vec{\alpha_2}+C_3 \vec{\alpha_3} = \vec{0}\\
+\implies C_1 \myvec{1\\0\\-i}+ C_2\myvec{1+i\\1-i\\1} + C_3\myvec{i\\i\\i} = \vec{0}
+\end{align}
+So,
+\begin{align}
+\myvec{1 & 1+i & i\\0 & 1-i & i\\-i & 1 & i}\myvec{C_1\\C_2\\C_3} = \myvec{0\\0\\0}
+\end{align}
+Considering the co-efficient matrix $A$:
+\begin{multline}
+\myvec{1 & 1+i & i\\0 & 1-i & i\\-i & 1 & i}\xleftrightarrow[]{R_3\leftarrow R_3+iR_1}\myvec{1 & 1+i & i\\0 & 1-i & i\\0 & i & i-1}\\
+\xleftrightarrow[]{R_3\leftarrow R_3/i}\myvec{1 & 1+i & i\\0 & 1-i & i\\0 & 1 & 1+i}\xleftrightarrow[]{R_3\leftarrow (1-i)R_3}\\
+\myvec{1 & 1+i & i\\0 & 1-i & i\\0 & 1-i & 2}\xleftrightarrow[]{R_3\leftarrow R_3-R_2}\myvec{1 & 1+i & i\\0 & 1-i & i\\0 & 0 & 2-i}\\
+\xleftrightarrow[]{R_2\leftarrow \frac{1+i}{1-i}R_2}\myvec{1 & 1+i & i\\0 & 1+i & -1\\0 & 0 & 2-i}\xleftrightarrow[]{R_1\leftarrow R_1-R_2}\\
+\myvec{1 & 0 & i+1\\0 & 1+i & -1\\0 & 0 & 2-i}
+\end{multline}
+Now let 
+\begin{align}
+R = \myvec{1 & 0 & i+1\\0 & 1+i & -1\\0 & 0 & 2-i}
+\end{align}
+Where $R$ is the row reduced form of matrix $A$. So $\vec{\alpha_1}$,$\vec{\alpha_2}$ and $\vec{\alpha_3}$ are linearly independent which implies that these 3 vectors form a basis of vector space $C^3$.
+
+Now, consider a vector $\beta$ = $\myvec{a\\b\\c}$ and let the coordinates are $x=\myvec{x_1\\x_2\\x_3}$ such that
+\begin{align}
+Ax = \myvec{a\\b\\c}\\
+\implies x = A^{-1} \myvec{a\\b\\c}
+\end{align}
+Let us consider a matrix $(A | I)$ where I is a 3x3 identity matrix.
+Now, applying the Gauss-Jordon theorem we can get $A^{-1}$
+\begin{multline}
+\myvec{1 & 1+i & i & 1 & 0 & 0\\0 & 1-i & i & 0 & 1 & 0\\-i & 1 & i & 0 & 0 & 1}\\\xleftrightarrow[]{R_3\leftarrow R_3+iR_1}\\
+\myvec{1 & 1+i & i & 1 & 0 & 0\\0 & 1-i & i & 0 & 1 & 0\\0 & i & i-1 & i & 0 & 1}\\
+\xleftrightarrow[]{R_3\leftarrow R_3/i}\\
+\myvec{1 & 1+i & i & 1 & 0 & 0\\0 & 1-i & i & 0 & 1 & 0\\0 & 1 & 1+i & 1 & 0 & -i}\\
+\xleftrightarrow[]{R_3\leftarrow (1-i)R_3}\\
+\myvec{1 & 1+i & i &1 & 0 & 0\\0 & 1-i & i & 0 & 1 & 0\\0 & 1-i & 2 & 1-i & 0 & -i-1}\xleftrightarrow[]{R_3\leftarrow R_3-R_2}\\
+\myvec{1 & 1+i & i&1 & 0 & 0\\0 & 1-i & i&0 & 1 & 0\\0 & 0 & 2-i & 1-i & -1 & -i-1}\\
+\xleftrightarrow[]{R_2\leftarrow \frac{1+i}{1-i}R_2}\\
+\myvec{1 & 1+i & i & 1 & 0 & 0\\0 & 1+i & -1 & 0 & i & 0\\0 & 0 & 2-i & 1-i & -1 & -i-1}\\
+\xleftrightarrow[]{R_1\leftarrow R_1-R_2}\\
+\myvec{1 & 0 & i+1 & 1 & -i & 0\\0 & 1+i & -1 & 0 & i & 0\\0 & 0 & 2-i & 1-i & -1 & -i-1}\\
+\xleftrightarrow[R_1\leftarrow R_1+R_3]{R_3\leftarrow\frac{R_3}{2-i}}\\
+\myvec{1 & 0 & 3 & 2-i & -i-1 & -i-1\\0 & 1+i & -1 & 0 & i & 0\\0 & 0 & 1 & \frac{3-i}{5} & -\frac{2+i}{5} & -\frac{3i+1}{5}}\\
+\xleftrightarrow[]{R_2\leftarrow R_2+R_3}\\
+\myvec{1 & 0 & 3 & 2-i & -i-1 & -i-1\\0 & 1+i & 0 & \frac{3-i}{5} & \frac{-2+4i}{5} & -\frac{3i+1}{5}\\0 & 0 & 1 & \frac{3-i}{5} & -\frac{2+i}{5} & -\frac{3i+1}{5}}\\
+\xleftrightarrow[]{R_2\leftarrow \frac{R_2}{1+i}}\\
+\myvec{1 & 0 & 3 & 2-i & -i-1 & -i-1\\0 & 1 & 0 & \frac{3-i}{5(1+i)} & \frac{-2+4i}{5(1+i)} & -\frac{3i+1}{5(1+i)}\\0 & 0 & 1 & \frac{3-i}{5} & -\frac{2+i}{5} & -\frac{3i+1}{5}}\\
+\xleftrightarrow[]{R_1\leftarrow R_1-3R_3}\\
+\end{multline}
+\begin{align}
+\myvec{1 & 0 & 0 & \frac{1-4i}{5} & \frac{1-2i}{5} & \frac{-2+4i}{5}\\0 & 1 & 0 & \frac{1-2i}{5} & \frac{1+3i}{5} & -\frac{2+i}{5}\\0 & 0 & 1 & \frac{3-i}{5} & -\frac{2+i}{5} & -\frac{3i+1}{5}}\\
+\implies (I|A^{-1}) = \myvec{1 & 0 & 0 & \frac{1-4i}{5} & \frac{1-2i}{5} & \frac{-2+4i}{5}\\0 & 1 & 0 & \frac{1-2i}{5} & \frac{1+3i}{5} & -\frac{2+i}{5}\\0 & 0 & 1 & \frac{3-i}{5} & -\frac{2+i}{5} & -\frac{3i+1}{5}}\\
+\implies A^{-1}=\myvec{\frac{1-4i}{5} & \frac{1-2i}{5} & \frac{-2+4i}{5}\\\frac{1-2i}{5} & \frac{1+3i}{5} & -\frac{2+i}{5}\\\frac{3-i}{5} & -\frac{2+i}{5} & -\frac{3i+1}{5}}
+\end{align}
+ So,
+\begin{align}
+x = A^{-1} \myvec{a\\b\\c}\\
+\implies x = \myvec{\frac{1-4i}{5} & \frac{1-2i}{5} & \frac{-2+4i}{5}\\\frac{1-2i}{5} & \frac{1+3i}{5} & -\frac{2+i}{5}\\\frac{3-i}{5} & -\frac{2+i}{5} & -\frac{3i+1}{5}}\myvec{a\\b\\c}\\
+\implies \myvec{x_1\\x_2\\x_3} =  \myvec{\frac{1-4i}{5} & \frac{1-2i}{5} & \frac{-2+4i}{5}\\\frac{1-2i}{5} & \frac{1+3i}{5} & -\frac{2+i}{5}\\\frac{3-i}{5} & -\frac{2+i}{5} & -\frac{3i+1}{5}}\myvec{a\\b\\c}
+\end{align}
+
+
+
+
