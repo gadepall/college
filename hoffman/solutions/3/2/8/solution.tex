@@ -1,0 +1,60 @@
+Given, 
+\begin{align}
+    \vec{T} : \vec{V} \xrightarrow{} \vec{V}
+\end{align}
+Now, $\vec{T}^2$ is also a linear operator as,
+\begin{align}
+    \vec{T}^2\brak{c\alpha} = \vec{T}\brak{\vec{T}\brak{c\alpha}} = \vec{T}\brak{c\vec{T}\brak{\alpha}} \\
+    = c\vec{T}\brak{\vec{T}\brak{\alpha}} = c\vec{T}^2\brak{\alpha} 
+\end{align}
+Let some vector $\vec{y}\in $ Range$\brak{\vec{T}}$ then there exists $\vec{x} \in \vec{V}$ such that,
+\begin{align}
+    \vec{T}\brak{\vec{x}} = \vec{y}
+\end{align}
+Now given that,
+\begin{align}
+    \vec{T}^2(\vec{x}) = \vec{0} \\
+    \implies \vec{T}(\vec{T}(\vec{x})) = \vec{0}\\
+    \vec{T}(\vec{y}) = \vec{0}
+\end{align}
+$\therefore$ $\vec{y}$ lies in the Null space of $\vec{T}$. Hence $\vec{T}$ is singular. Thus, the range of $\vec{T}$ must be contained in Null space of $\vec{T}$ i.e.,
+Range($\vec{T}$) $\subseteq$ NullSpace($\vec{T}$)
+\\
+{\em Example: }
+\begin{align}
+    \vec{T} : \vec{R}^2 \xrightarrow{} \vec{R}^2
+\end{align}
+Consider, 
+\begin{align}
+    \vec{T}\brak{\vec{x}} = \myvec{0&0\\1&0}\vec{x} \\
+    \implies \vec{T} \ne 0 \label{eq:solutions/3/2/8/t}
+\end{align}
+Now,
+\begin{align}
+    \vec{T}^2 : \vec{R}^2 \xrightarrow{} \vec{R}^2
+\end{align}
+\begin{align}
+    &\vec{T}^2\brak{\vec{x}} = \vec{T}\brak{\vec{T}\brak{\vec{x}}} \\
+    &= \myvec{0&0\\1&0}\myvec{0&0\\1&0}\vec{x} = \vec{0} \\
+    &\implies \vec{T}^2\brak{\vec{x}} = \vec{0} \label{eq:solutions/3/2/8/t2}
+\end{align}
+Thus $\vec{T}^2$ is a zero transformation, $\vec{T}^2 = \vec{0}$.
+
+Now, Kernel of $\vec{T}$ is given by,
+\begin{align}
+    \vec{T}(\vec{x}) = \vec{0}  \\
+    \myvec{0&0\\1&0}\myvec{x\\y} = \myvec{0\\0} \\
+    \implies x = 0
+\end{align}
+Thus, 
+\begin{align}
+    \vec{Ker}(\vec{T}) &= y\myvec{0\\1} ; y \in \vec{R}
+\end{align}
+Now, 
+\begin{align}
+    \vec{Range}(\vec{T}) &= \vec{ColumnSpace}\cbrak{\myvec{0&0\\1&0}} \\
+    &= k\myvec{0\\1} ; k \in \vec{R}
+\end{align}
+Thus for the example, Range($\vec{T}$) = Kernel($\vec{T}$) and from \eqref{eq:solutions/3/2/8/t}, \eqref{eq:solutions/3/2/8/t2} it is clear that 
+$\vec{T}^2 = 0$ but $\vec{T}\ne 0$.
+

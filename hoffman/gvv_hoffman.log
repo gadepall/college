@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  4 NOV 2020 08:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  4 NOV 2020 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2942,11 +2942,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65])
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
+(./solutions/3/2/8/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 (./solutions/3/2/10/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2957,40 +2964,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--82
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66])
+ [67])
 (./solutions/3/2/12/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [67]
+ [68]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]))
+ [69]))
 (./chapters/3/3.3.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 10000) detected at line 13
  []$[]  [] []$ [][]  
  []
 
 (./solutions/3/3/2/a/solution.tex
-Underfull \vbox (badness 3439) has occurred while \output is active []
+Underfull \vbox (badness 3386) has occurred while \output is active []
 
- [69])
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70])
 (./solutions/3/3/7/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (11.85818pt too high) has occurred while \output is active []
+Overfull \vbox (18.81818pt too high) has occurred while \output is active []
 
 
-[70])) [71
+[71])) [72
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
@@ -3003,10 +3007,10 @@ Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
  ) 
 Here is how much of TeX's memory you used:
- 44635 strings out of 480608
- 1029848 string characters out of 5892806
- 1421912 words of memory out of 5000000
- 57790 multiletter control sequences out of 15000+600000
+ 44663 strings out of 480608
+ 1030307 string characters out of 5892806
+ 1422064 words of memory out of 5000000
+ 57793 multiletter control sequences out of 15000+600000
  627878 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3029,10 +3033,10 @@ lic/txfonts/txsyc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.term
 ux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (71 pages, 907957 bytes).
+Output written on gvv_hoffman.pdf (72 pages, 911165 bytes).
 PDF statistics:
- 2577 PDF objects out of 2984 (max. 8388607)
- 2392 compressed objects within 24 object streams
- 1543 named destinations out of 1728 (max. 500000)
+ 2609 PDF objects out of 2984 (max. 8388607)
+ 2422 compressed objects within 25 object streams
+ 1565 named destinations out of 1728 (max. 500000)
  247 words of extra memory for PDF output out of 10000 (max. 10000000)
 

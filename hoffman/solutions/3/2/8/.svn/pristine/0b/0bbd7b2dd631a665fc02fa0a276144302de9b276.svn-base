@@ -1,0 +1,208 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{Assignment 15}
+\author{Gaydhane Vaibhav Digraj \\ Roll No. AI20MTECH11002}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{abstract}
+This document solves a problem involving linear transformations.
+\end{abstract}
+%
+Download latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/Vaibhav11002/EE5609/tree/master/Assignment_15
+\end{lstlisting}
+%
+\section{Problem}
+Let $\vec{V}$ be a vector space over the field $\vec{F}$ and $\vec{T}$ is a linear operator on $\vec{V}$. If $\vec{T}^2=0$, what can you say about the relation of the range of $\vec{T}$ to the null space of $\vec{T}$ ?
+Give an example of linear operator $\vec{T}$ on $\vec{R}^2$ such that $\vec{T}^2=0$ but $\vec{T}\ne0$.
+
+\section{Solution}
+Given, 
+\begin{align}
+    \vec{T} : \vec{V} \xrightarrow{} \vec{V}
+\end{align}
+Now, $\vec{T}^2$ is also a linear operator as,
+\begin{align}
+    \vec{T}^2\brak{c\alpha} = \vec{T}\brak{\vec{T}\brak{c\alpha}} = \vec{T}\brak{c\vec{T}\brak{\alpha}} \\
+    = c\vec{T}\brak{\vec{T}\brak{\alpha}} = c\vec{T}^2\brak{\alpha} 
+\end{align}
+Let some vector $\vec{y}\in $ Range$\brak{\vec{T}}$ then there exists $\vec{x} \in \vec{V}$ such that,
+\begin{align}
+    \vec{T}\brak{\vec{x}} = \vec{y}
+\end{align}
+Now given that,
+\begin{align}
+    \vec{T}^2(\vec{x}) = \vec{0} \\
+    \implies \vec{T}(\vec{T}(\vec{x})) = \vec{0}\\
+    \vec{T}(\vec{y}) = \vec{0}
+\end{align}
+$\therefore$ $\vec{y}$ lies in the Null space of $\vec{T}$. Hence $\vec{T}$ is singular. Thus, the range of $\vec{T}$ must be contained in Null space of $\vec{T}$ i.e.,
+Range($\vec{T}$) $\subseteq$ NullSpace($\vec{T}$)
+
+\subsection{Example}
+\begin{align}
+    \vec{T} : \vec{R}^2 \xrightarrow{} \vec{R}^2
+\end{align}
+Consider, 
+\begin{align}
+    \vec{T}\brak{\vec{x}} = \myvec{0&0\\1&0}\vec{x} \\
+    \implies \vec{T} \ne 0 \label{t}
+\end{align}
+Now,
+\begin{align}
+    \vec{T}^2 : \vec{R}^2 \xrightarrow{} \vec{R}^2
+\end{align}
+\begin{align}
+    &\vec{T}^2\brak{\vec{x}} = \vec{T}\brak{\vec{T}\brak{\vec{x}}} \\
+    &= \myvec{0&0\\1&0}\myvec{0&0\\1&0}\vec{x} = \vec{0} \\
+    &\implies \vec{T}^2\brak{\vec{x}} = \vec{0} \label{t2}
+\end{align}
+Thus $\vec{T}^2$ is a zero transformation, $\vec{T}^2 = \vec{0}$.
+
+Now, Kernel of $\vec{T}$ is given by,
+\begin{align}
+    \vec{T}(\vec{x}) = \vec{0}  \\
+    \myvec{0&0\\1&0}\myvec{x\\y} = \myvec{0\\0} \\
+    \implies x = 0
+\end{align}
+Thus, 
+\begin{align}
+    \vec{Ker}(\vec{T}) &= y\myvec{0\\1} ; y \in \vec{R}
+\end{align}
+Now, 
+\begin{align}
+    \vec{Range}(\vec{T}) &= \vec{ColumnSpace}\cbrak{\myvec{0&0\\1&0}} \\
+    &= k\myvec{0\\1} ; k \in \vec{R}
+\end{align}
+Thus for the example, Range($\vec{T}$) = Kernel($\vec{T}$) and from \eqref{t}, \eqref{t2} it is clear that 
+$\vec{T}^2 = 0$ but $\vec{T}\ne 0$.
+
+\end{document}
