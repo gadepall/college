@@ -13,4 +13,4 @@
 \contentsline {section}{\numberline {3}Linear Transformations}{56}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Linear Transformations}{56}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{62}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Isomorphism}{67}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Isomorphism}{69}{subsection.3.3}%

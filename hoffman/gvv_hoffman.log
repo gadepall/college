@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  3 NOV 2020 21:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  4 NOV 2020 08:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2896,45 +2896,57 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ))
 (./chapters/3/3.2.tex
-Underfull \hbox (badness 10000) detected at line 14
+Underfull \hbox (badness 6477) in paragraph at lines 8--12
+[]\OT1/txr/m/n/12 Let $\OT1/txr/bx/n/12 T$ \OT1/txr/m/n/12 and $\OT1/txr/bx/n/1
+2 U$ \OT1/txr/m/n/12 be the lin-ear op-er-a-tors
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 8--12
+\OT1/txr/m/n/12 on $\U/txsyb/m/n/12 R[]$ \OT1/txr/m/n/12 de-fined by $\OT1/txr/
+bx/n/12 T$$\OT1/txr/m/n/12 (\OML/txmi/m/it/12 x[]; x[]\OT1/txr/m/n/12 )$ =$(\OM
+L/txmi/m/it/12 x[]; x[]\OT1/txr/m/n/12 )$ and
+ []
+
+(./solutions/3/2/1/b/solution.tex)
+Underfull \hbox (badness 10000) detected at line 25
  []$[]  [] []$ []  
  []
 
-(./solutions/3/2/2/solution.tex) [62] (./solutions/3/2/4/solution.tex)
+(./solutions/3/2/2/solution.tex [62]) (./solutions/3/2/4/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 (./solutions/3/2/5/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63])
+)
 (./solutions/3/2/6/solution.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64])
-(./solutions/3/2/7/solution.tex
+ [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+(./solutions/3/2/7/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65])
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
 (./solutions/3/2/10/solution.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2945,12 +2957,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--82
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]))
-(./chapters/3/3.3.tex (./solutions/3/3/7/solution.tex [67])) [68]
+ [66])
+(./solutions/3/2/12/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]))
+(./chapters/3/3.3.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) detected at line 13
+ []$[]  [] []$ [][]  
+ []
+
+(./solutions/3/3/2/a/solution.tex
+Underfull \vbox (badness 3439) has occurred while \output is active []
+
+ [69])
+(./solutions/3/3/7/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (11.85818pt too high) has occurred while \output is active []
+
+
+[70])) [71
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
-
-(./gvv_hoffman.aux)
+ (./gvv_hoffman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 327.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 327.
 Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
@@ -2958,10 +3003,10 @@ Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
  ) 
 Here is how much of TeX's memory you used:
- 44536 strings out of 480608
- 1028218 string characters out of 5892806
- 1421441 words of memory out of 5000000
- 57780 multiletter control sequences out of 15000+600000
+ 44635 strings out of 480608
+ 1029848 string characters out of 5892806
+ 1421912 words of memory out of 5000000
+ 57790 multiletter control sequences out of 15000+600000
  627878 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2984,10 +3029,10 @@ lic/txfonts/txsyc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.term
 ux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (68 pages, 892004 bytes).
+Output written on gvv_hoffman.pdf (71 pages, 907957 bytes).
 PDF statistics:
- 2434 PDF objects out of 2487 (max. 8388607)
- 2281 compressed objects within 23 object streams
- 1463 named destinations out of 1728 (max. 500000)
+ 2577 PDF objects out of 2984 (max. 8388607)
+ 2392 compressed objects within 24 object streams
+ 1543 named destinations out of 1728 (max. 500000)
  247 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,149 @@
+\begin{table}[!ht]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{tabular}{|p{3.7cm}|p{4cm}|}
+\hline
+\textbf{Parameter}&\textbf{Description}\\
+\hline
+$p,m,n$&Positive integers\\
+\hline
+$\mathbb{F}$&Field\\
+\hline
+$\vec{V}$&Space of $m\times n$ matrices over $\mathbb{F}$\\
+\hline
+$\vec{W}$&Space of $p\times n$ matrices over $\mathbb{F}$\\
+\hline
+$\vec{B}$&Fixed $p\times m$ matrix\\
+\hline
+Linear transformation  $\mathbb{T}:\vec{V} \rightarrow \vec{W}$&$ \mathbb{T}(\vec{A})=\vec{B}\vec{A}$\\
+\hline
+\end{tabular}
+}
+\caption{Input Parameters}
+\end{table}
+\begin{align}
+    \mathbb{T}(\vec{A})=\vec{B}\vec{A}
+\end{align}
+So, $\vec{B}$ is the transformation matrix.\\
+$\vec{B}$ is invertible if
+\begin{enumerate}
+    \item $\mathbb{T}$ is one to one mapping,that is
+    \begin{align}
+       \vec{B}\vec{A}=\vec{B}\vec{A'}\\
+       \implies \vec{A}=\vec{A'}
+    \end{align}
+    \item $\mathbb{T}$ must be onto, that is range($\vec{B}$)=$\vec{W}$ 
+\end{enumerate}
+{Case 1: }
+Let us assume that $\mathbb{T}$ is invertible with inverse transformation $\mathbb{T}_1$ from $\vec{W}$ to $\vec{V}$ that satisfies
+\begin{align}
+  \mathbb{T}(\vec{A})=\vec{B}\vec{A} \in \vec{W}\\
+  \implies \mathbb{T}_1(\vec{B}\vec{A})=\vec{A} \in \vec{V}\\
+  \text{dim}(\vec{V})=mn, \text{dim}(\vec{W})=pn\label{eq:solutions/3/2/12/1}
+\end{align}
+Since $ \mathbb{T}$ is one-one mapping, the zero vector in $\vec{V}, \vec{0}_{m \times n}$ is uniquely mapped to 
+\begin{align}
+   \mathbb{T}(\vec{0}_{m \times n})= \vec{B} \vec{0}_{m \times n}=\vec{0}_{p \times n}\\
+     \text{So, }\vec{B}\vec{A}=\vec{0} \iff \vec{A}=\vec{0}\label{eq:solutions/3/2/12/3}
+\end{align}
+Let $\cbrak{\vec{V}_1,\vec{V}_2,\hdots,\vec{V}_{mn}}$ be the basis for $\vec{V}$
+\begin{align}
+    c_1\vec{V}_1+ c_2\vec{V}_2+\hdots+ c_{mn}\vec{V}_{mn}=\vec{0}\\
+    \iff c_1,c_2,\hdots,c_{mn} \in \mathbb{F}=0\label{eq:solutions/3/2/12/2}
+\end{align}
+Any matrix $\vec{A} \in \vec{V}$ can be written as
+\begin{align}
+ \vec{A}= \sum_{i=1}^{mn} \alpha_i\vec{V}_i  
+\end{align}
+Since $\mathbb{T}$ is onto, any matrix $\vec{C} \in \vec{W}$ can be expressed as 
+\begin{align}
+    \vec{C}=\vec{B}\left( \sum_{i=1}^{mn} \alpha_i\vec{V}_i\right)\\
+    =\sum_{i=1}^{mn} \alpha_i(\vec{B}\vec{V}_i)
+\end{align}
+So, the set $\vec{S}=\cbrak{\vec{B}\vec{V}_1,\vec{B}\vec{V}_2,\hdots,\vec{B}\vec{V}_{mn}}$ forms basis of $\vec{W}$ if all matrices in it are linearly independent.
+\begin{align}
+    c_1(\vec{B}\vec{V}_1)+ c_2(\vec{B}\vec{V}_2)+\hdots+ c_{mn}(\vec{B}\vec{V}_{mn})=\vec{0}\\
+     \vec{B}( c_1\vec{V}_1+ c_2\vec{V}_2+\hdots+ c_{mn}\vec{V}_{mn})=\vec{0}\\
+    \eqref{eq:solutions/3/2/12/3} \implies c_1\vec{V}_1+\hdots+ c_{mn}\vec{V}_{mn}=0\\
+    \iff c_1,c_2,\hdots,c_{mn}=0 (\text{from \eqref{eq:solutions/3/2/12/2}})
+\end{align}
+So,the set $\vec{S}$ with cardinality $mn$ is basis for $\vec{W}$ 
+\begin{align}
+   \eqref{eq:solutions/3/2/12/1} \implies pn=mn\\
+    p=m\label{eq:solutions/3/2/12/4}
+\end{align}
+\eqref{eq:solutions/3/2/12/3},\eqref{eq:solutions/3/2/12/4} prove that $\vec{B}$ is invertible $m \times m$ matrix.
+{Case 2: }
+ Consider $p=m$ and $\vec{B}$ is an invertible $m \times m$ matrix.\\
+Verifying if $\mathbb{T}$ is onto,\\
+Let the set of matrices \cbrak{\vec{A}_1,\vec{A}_2,\hdots,\vec{A}_{mn}} be the basis for $\vec{V}$\\
+Any matrix $\vec{A} \in \vec{V}$ can be written as
+\begin{align}
+   \vec{A}= \sum_{i=1}^{mn} \alpha_i\vec{A}_i\label{eq:solutions/3/2/12/5}
+\end{align}
+where $\alpha_i \in \mathbb{F}$\\
+The set $\vec{M}= $ \cbrak{\vec{B}\vec{A}_1,\vec{B}\vec{A}_2,\hdots,\vec{B}\vec{A}_{mn}} lie in $\vec{W}$
+\begin{align}
+    c_1(\vec{B}\vec{A}_1)+c_2(\vec{B}\vec{A}_2)+\hdots+c_{mn}(\vec{B}\vec{A}_{mn})=\vec{0}\\
+    \implies \vec{B}(c_1\vec{A}_1+c_2\vec{A}_2+\hdots+c_{mn}\vec{A}_{mn})=\vec{0}
+\end{align}
+Since $\vec{B}$ is non-singular,
+\begin{align}
+    (c_1\vec{A}_1+c_2\vec{A}_2+\hdots+c_{mn}\vec{A}_{mn})=\vec{0}\\
+    \iff c_1,c_2,\hdots,c_{mn}=0
+\end{align}
+because \cbrak{\vec{A}_1,\vec{A}_2,\hdots,\vec{A}_{mn}} are linearly independent\\ 
+So,$\vec{M}$ forms basis for $\vec{W}$\\
+Any vector $\vec{C} \in \vec{W}$ can be written as
+\begin{align}
+    \vec{C}=\sum_{i=1}^{mn} \beta_i\vec{B}\vec{A}_i \text{  where }\beta_i \in \mathbb{F}\\
+    =\vec{B}(\sum_{i=1}^{mn}\beta_i\vec{A}_i)\\
+    =\vec{B}\vec{A} \text{  (from \eqref{eq:solutions/3/2/12/5} )}
+\end{align}
+So,range($\vec{B}$)=$\vec{W}$\\
+Consider the matrix $\vec{A},\vec{A'} \in \vec{V}$ such that
+\begin{align}
+    \vec{B}\vec{A}= \vec{B}\vec{A'}\\
+    \vec{B}^{-1}( \vec{B}\vec{A})= \vec{B}^{-1}(\vec{B}\vec{A'})\\
+    (\vec{B}^{-1} \vec{B})\vec{A}= (\vec{B}^{-1}\vec{B})\vec{A'}\\
+    \implies \vec{A}=\vec{A'}
+\end{align}
+So, $\mathbb{T}$ is invertible.
+{Conclusion: }
+From case 1,case 2 $\mathbb{T}$ is invertible if and only if $p=m$ and $\vec{B}$ is an invertible $m \times m$ matrix.
+{Example: }
+Let $p=m=3 ,n=4$
+Let $\mathbb{T}:\vec{V} \rightarrow \vec{W}$ adds row 2 to row 3 for a matrix $\vec{A} \in \vec{V}$\\
+The elementary matrix that performs this is
+\begin{align}
+    \vec{B}= \myvec{1&0&0\\0&1&0\\0&1&1}
+\end{align}
+\begin{align}
+    \text{Let }\vec{A}=\myvec{1&2&2&5\\1&3&6&7\\4&9&2&6}\\
+    \mathbb{T}(\vec{A})=\vec{B}\vec{A}\\=
+    \myvec{1&0&0\\0&1&0\\0&1&1}\myvec{1&2&2&5\\1&3&6&7\\4&9&2&6}\\
+    =\myvec{1&2&2&5\\1&3&6&7\\5&12&8&13}\\
+    =\vec{C} \in \vec{W}
+\end{align}
+Let transformation $\mathbb{T}_1:\vec{W} \rightarrow \vec{V}$ subtracts row2 from row 3 for a matrix $\vec{C} \in \vec{W}$ and is performed by elementary matrix
+\begin{align}
+\vec{U}=\myvec{1&0&0\\0&1&0\\0&-1&1}\\
+     \text{Let }\vec{C}=\myvec{1&2&2&5\\1&3&6&7\\5&12&8&13}\\
+     \mathbb{T}_1(\vec{C})=\myvec{1&0&0\\0&1&0\\0&-1&1}\myvec{1&2&2&5\\1&3&6&7\\5&12&8&13}\\
+     =\myvec{1&2&2&5\\1&3&6&7\\4&9&2&6}\\=\vec{A}\\
+     \implies \mathbb{T}_1(\vec{C})=\vec{A}\\
+     \mathbb{T}_1(\mathbb{T}(\vec{A}))=\vec{A}\\
+     \text{and  } \mathbb{T}(\vec{A})=\vec{C}\\
+     \implies \mathbb{T}(\mathbb{T}_1(\vec{C}))=\vec{C}
+     \end{align}
+     So,$\mathbb{T}_1$ is the inverse transformation of $\mathbb{T}$ and
+     \begin{align}
+     \mathbb{T}_1=\mathbb{T}^{-1}\\
+     \vec{U}\vec{B}=\myvec{1&0&0\\0&1&0\\0&-1&1}\myvec{1&0&0\\0&1&0\\0&1&1}\\
+     =\myvec{1&0&0\\0&1&0\\0&0&1}\\
+     \vec{B}\vec{U}=\myvec{1&0&0\\0&1&0\\0&1&1}\myvec{1&0&0\\0&1&0\\0&-1&1}\\=\myvec{1&0&0\\0&1&0\\0&0&1}\\
+     \implies \vec{B}^{-1}=\vec{U}
+\end{align}
+So, $\mathbb{T}$ is invertible and ,$\vec{B}$ is an invertible $3 \times 3$ matrix.
+
