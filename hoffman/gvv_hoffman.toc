@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.3}Bases and Dimension}{39}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Coordinates}{45}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{51}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Linear Transformations}{56}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Linear Transformations}{56}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{62}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Isomorphism}{72}{subsection.3.3}%
+\contentsline {section}{\numberline {3}Linear Transformations}{57}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Linear Transformations}{57}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{63}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Isomorphism}{73}{subsection.3.3}%
