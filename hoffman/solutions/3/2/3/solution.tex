@@ -1,0 +1,50 @@
+The transformed vector can be re-written by expanding the columns as follows
+\begin{align}
+	\myvec{3x_1\\x_1-x_2\\2x_1+x_2+x_3}
+	&=\myvec{3\\1\\2}x_1+\myvec{0\\-1\\1}x_2+\myvec{0\\0\\1}x_3\\
+	&=\myvec{3&0&0\\
+		 1&-1&0\\
+		 2&1&1}\myvec{x_1\\x_2\\x_3} \\
+	&\implies \vec{T}=\myvec{3&0&0\\
+                 1&-1&0\\
+                 2&1&1}
+\end{align}
+Using Gauss-Jordan Elimination to find the inverse of $\vec{T}$, if it exists
+\begin{align}
+	\myvec{3&0&0&|&1&0&0\\
+	       1&-1&0&|&0&1&0\\
+	       2&1&1&|&0&0&1}\\
+	\xleftrightarrow[]{R_1\leftarrow\frac{R_1}{3}}
+	\myvec{1&0&0&|&\frac{1}{3}&0&0\\
+               1&-1&0&|&0&1&0\\
+               2&1&1&|&0&0&1}\\
+	\xleftrightarrow[R_3\leftarrow R_3-2R_1]{R_2\leftarrow R_2-R_1}
+	\myvec{1&0&0&|&\frac{1}{3}&0&0\\
+	       0&-1&0&|&-\frac{1}{3}&1&0\\
+	       0&1&1&|&-\frac{2}{3}&0&1}\\
+        \xleftrightarrow[]{R_2\leftarrow \ -R_2}
+	\myvec{1&0&0&|&\frac{1}{3}&0&0\\
+               0&1&0&|&\frac{1}{3}&-1&0\\
+               0&1&1&|&-\frac{2}{3}&0&1}\\
+        \xleftrightarrow[]{R_3\leftarrow R_3-R_2}
+	\myvec{1&0&0&|&\frac{1}{3}&0&0\\
+               0&1&0&|&\frac{1}{3}&-1&0\\
+               0&0&1&|&-1&1&1}
+\end{align}
+Since $rank(\vec{T})=3, \ \vec{T}$ is invertible and the inverse is
+\begin{align}
+	\vec{T}^{-1}=\myvec{\frac{1}{3}&0&0\\ 
+                            \frac{1}{3}&-1&0\\
+                            -1&1&1}
+\end{align}
+Now consider any vector $\myvec{x_1\\x_2\\x_3} \in \vec{R}^3$, then
+\begin{align}
+	\vec{T}^{-1}\myvec{x_1\\x_2\\x_3}&=\myvec{\frac{1}{3}&0&0\\
+                            \frac{1}{3}&-1&0\\
+                            -1&1&1}\myvec{x_1\\x_2\\x_3}\\
+			    &=\myvec{\frac{x_1}{3}\\\frac{x_1}{3}-x_2\\-x_1+x_2+x_3}
+\end{align}
+Therefore the transformation $\vec{T}^{-1}$ is defined on $\vec{R}^3 $ as
+\begin{align}
+\vec{T}^{-1}\myvec{x_1\\x_2\\x_3}=\myvec{\frac{x_1}{3}\\\frac{x_1}{3}-x_2\\-x_1+x_2+x_3}
+\end{align}
