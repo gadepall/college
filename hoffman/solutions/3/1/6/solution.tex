@@ -1,0 +1,45 @@
+We are given a linear transformation,
+\begin{align}
+T:\mathbb{F}^2 \xrightarrow{} {\mathbb{F}^2}
+\end{align} 
+The transformation for  $\in_1$ and $\in_2$ can be written as,
+\begin{align}
+T(\in_1)=\myvec{a\\b}\\
+T(\in_2)=\myvec{c\\d}
+\end{align}
+ Now,let's assume $\in_1$ and $\in_2$ as linearly independent. So the linear transformation T for any vector $\vec{v}$ in two dimensional space will be,
+\begin{align}
+T(\vec{v})=\myvec{T(\vec{\in_1})&T(\vec{\in_2})}\vec{v}\\
+=\myvec{a&c\\b&d}\vec{v}\label{eq:solutions/3/1/6/range}
+\end{align}
+Now, there can be two cases here, transformation of linearly independent vector can be independent or it can be dependent.Considering the first case and \eqref{eq:solutions/3/1/6/range} we can say that,
+\begin{align}
+Range(T)=\text{columnspace of} \myvec{a&c\\b&d}
+\end{align}
+Now, considering the case when linear transformation will be linearly dependent,
+\begin{align}
+Range(T)=\text{columnspace of} \myvec{a\\b}
+\end{align}
+Now, considering that vectors $\in_1$ and $\in_2$ itself are linearly dependent.Let $\vec{v}$=$\in_1$ + $\in_2$
+\begin{align}
+T(\vec{v})=T(\in_1)+T(\in_2)\\
+=T(\in_1)+T(k\in_1)\\
+=(k+1)T(\in_1)\\
+=(k+1)\myvec{a\\b}
+\end{align}
+We can see from above equation that when $\in_1$ and $\in_2$ as linearly dependent then the transformation T will be along the line only.
+\begin{table}[!ht]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{tabular}{|c|c|} \hline
+\textbf{Vectors Independent} & \textbf{Vectors Dependent}  \\ \hline
+$T(\vec{v})$=\myvec{a&c\\b&d}$\vec{v}$ & $T(\vec{v})$=(k+1)\myvec{a\\b}  \\ \hline
+Output:& Output:
+          \\On the plane & On the line \\\hline
+\end{tabular}
+}
+\caption{}
+\label{table:solutions:3/1/6/}
+\end{table}
+
