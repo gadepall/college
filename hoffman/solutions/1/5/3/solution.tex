@@ -1,0 +1,38 @@
+Given 
+\begin{align}
+\vec{A}=\myvec{2&5&-1\\4&-1&2\\6&4&1},
+\vec{B}=\myvec{1&-1&2\\3&2&4\\0&1&-2}
+\end{align}
+ By applying row reductions on $\vec{A}$
+ \begin{align}
+&\myvec{2&5&-1\\4&-1&2\\6&4&1}\xleftrightarrow{R_2=R_2-2R_1}\vec{A}=\myvec{2&5&-1\\0&-11&4\\6&4&1}\\
+&\xleftrightarrow{R_3=R_3-3R_1}\myvec{2&5&-1\\0&-11&4\\0&-11&4}\\
+&\xleftrightarrow{R_1=\frac{R_1}{2}}\myvec{1&\frac{5}{2}&\frac{-1}{2}\\0&-11&4\\0&-11&4}
+\end{align}
+\begin{align}
+&\xleftrightarrow{R_3=R_3-R_2}\myvec{1&\frac{5}{2}&\frac{-1}{2}\\0&-11&4\\0&0&0}\\
+&\xleftrightarrow{R_2=\frac{-R_2}{11}}\myvec{1&\frac{5}{2}&\frac{-1}{2}\\0&1&\frac{-4}{11}\\0&0&0}\\
+&\xleftrightarrow{R_1=R_1-\frac{5}{2}R_2}\myvec{1&0&\frac{9}{22}\\0&1&\frac{-4}{11}\\0&0&0}
+\end{align}
+For a matrix to be invertible, it has to be a matrix of full rank. However the matrix $\vec{A}$ is not of full rank ($Rank(\vec{A})<3$).Therefore $\vec{A}$ is not invertible.
+
+Let us now consider augmented matrix $\vec{B|I}$, By applying row reductions on $\vec{B|I}$
+\begin{multline}
+\myvec{1&-1&2&\vrule&1&0&0\\3&2&4&\vrule&0&1&0\\0&1&-2&\vrule&0&0&1}
+\xleftrightarrow{R_2=R_2-3R_1}\\
+\myvec{1&-1&2&\vrule&1&0&0\\0&5&-2&\vrule&-3&1&0\\0&1&-2&\vrule&0&0&1}
+\end{multline}
+\begin{align}
+&\xleftrightarrow{R_2=\frac{R_2}{5}}\myvec{1&-1&2&\vrule&1&0&0\\0&1&\frac{-2}{5}&\vrule&\frac{-3}{5}&\frac{1}{5}&0\\0&1&-2&\vrule&0&0&1}\\
+&\xleftrightarrow{R_1=R_1+R_2}\myvec{1&0&\frac{8}{5}&\vrule&\frac{2}{5}&\frac{1}{5}&0\\0&1&\frac{-2}{5}&\vrule&\frac{-3}{5}&\frac{1}{5}&0\\0&1&-2&\vrule&0&0&1}\\
+&\xleftrightarrow{R_3=R_3-R_2}\myvec{1&0&\frac{8}{5}&\vrule&\frac{2}{5}&\frac{1}{5}&0\\0&1&\frac{-2}{5}&\vrule&\frac{-3}{5}&\frac{1}{5}&0\\0&0&\frac{-8}{5}&\vrule&\frac{3}{5}&\frac{-1}{5}&1}\\
+&\xleftrightarrow{R_1=R_1+R_3}\myvec{1&0&0&\vrule&1&0&1\\0&1&\frac{-2}{5}&\vrule&\frac{-3}{5}&\frac{1}{5}&0\\0&0&\frac{-8}{5}&\vrule&\frac{3}{5}&\frac{-1}{5}&1}
+\end{align}
+\begin{align}
+&\xleftrightarrow{R_3=\frac{-5}{8}R_3}\myvec{1&0&0&\vrule&1&0&1\\0&1&\frac{-2}{5}&\vrule&\frac{-3}{5}&\frac{1}{5}&0\\0&0&1&\vrule&\frac{-3}{8}&\frac{1}{8}&\frac{-5}{8}}\\
+&\xleftrightarrow{R_3=R_2+\frac{2}{5}R_3}\myvec{1&0&0&\vrule&1&0&1\\0&1&0&\vrule&\frac{-3}{4}&\frac{1}{4}&\frac{-1}{4}\\0&0&1&\vrule&\frac{-3}{8}&\frac{1}{8}&\frac{-5}{8}}\label{eq:solutions/1/5/3/eq1}
+\end{align}
+For a matrix to be invertible, it has to be a matrix of full rank. Here, the matrix $\vec{B}$ is of full rank ($Rank(\vec{B})=3$). Therefore $\vec{B}$ is invertible and the inverse matrix $\vec{B}^{-1}$ can be written from \eqref{eq:solutions/1/5/3/eq1}:
+\begin{align}
+\vec{B}^{-1}=\myvec{1&0&1\\\frac{-3}{4}&\frac{1}{4}&\frac{-1}{4}\\\frac{-3}{8}&\frac{1}{8}&\frac{-5}{8}}  
+\end{align}
