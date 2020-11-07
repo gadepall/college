@@ -1,0 +1,17 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+%
+\item Let T be the linear operator on $\mathbb{C}^{2}$ defined by $T\brak{x_1 , x_2}=\myvec{x_1 , 0}$.
+Let $\beta$ be the standard ordered basis for $\mathbb{C}^{2}$ and $\beta^{'}=\{\alpha_1 , \alpha_2\}$
+be the ordered basis defined by $\alpha_1 = \myvec{1 , i} , \alpha_2 = \myvec{-i , 2}$.\\
+What is the matrix of T in the ordered basis $\{\alpha_2,\alpha_1\}$?
+%
+%
+\\
+\solution
+\input{./solutions/3/4/1/d/solution.tex}
+
+\end{enumerate}

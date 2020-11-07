@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  7 NOV 2020 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  7 NOV 2020 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1999,12 +1999,7 @@ Overfull \hbox (14.40588pt too wide) in paragraph at lines 247--247
 [][] 
  []
 
-(./gvv_hoffman.toc
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
- [][] [][]\OT1/txr/m/n/12 Matrices and El-e-men-tary 
- []
-
-)
+(./gvv_hoffman.toc)
 \tf@toc=\write5
 \openout5 = `gvv_hoffman.toc'.
 
@@ -2018,8 +2013,8 @@ File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 1.
-
-Underfull \vbox (badness 1728) has occurred while \output is active []
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
 Non-PDF special ignored!
@@ -2029,7 +2024,7 @@ ap/pdftex.map}
 
 
  </data/data/com.termux/files/home/texmf/tex/latex/logo/iith_logo.pdf> </data/d
-ata/com.termux/files/home/texmf/tex/latex/logo/tlc.pdf>])
+ata/com.termux/files/home/texmf/tex/latex/logo/tlc.pdf>]
 (./solutions/1/1/2/solution.tex
 Overfull \hbox (25.30655pt too wide) detected at line 18
  []$[] \OT1/txr/m/n/12 = [] [] [] [] [] [] []$ 
@@ -2042,22 +2037,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 (./solutions/1/1/3/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3])
-(./solutions/1/1/4/solution.tex
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [3]
+(./solutions/1/1/4/solution.tex
 Overfull \hbox (5.13579pt too wide) in paragraph at lines 27--27
 [] 
  []
 
-) (./solutions/1/1/5/solution.tex [4]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(./solutions/1/1/5/solution.tex [4]
 Underfull \hbox (badness 1708) in paragraph at lines 31--32
 []\OT1/txr/m/n/12 For any a,b and c in $\U/txsyb/m/n/12 F$ \OT1/txr/m/n/12 the 
 prop-
@@ -2066,27 +2062,26 @@ prop-
 ) (./solutions/1/1/6/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5])
+)
 (./solutions/1/1/7/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
-(./solutions/1/1/8/solution.tex
+ [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]))
-(./chapters/1/1.2.tex
+)
+(./solutions/1/1/8/solution.tex)) (./chapters/1/1.2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-(./solutions/1/2/1/solution.tex) (./solutions/1/2/2/solution.tex
+(./solutions/1/2/1/solution.tex [6]) (./solutions/1/2/2/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7])
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
 (./solutions/1/2/3/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2983,7 +2978,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--3
 
  []
 
-<./solutions/3/2/1/a/Python_Code/Reflection.png, id=1997, 462.528pt x 346.896pt
+<./solutions/3/2/1/a/Python_Code/Reflection.png, id=1979, 462.528pt x 346.896pt
 >
 File: ./solutions/3/2/1/a/Python_Code/Reflection.png Graphic file (type png)
 <use ./solutions/3/2/1/a/Python_Code/Reflection.png>
@@ -2994,7 +2989,7 @@ n input line 26.
 Underfull \vbox (badness 1831) has occurred while \output is active []
 
  [66 <./solutions/3/2/1/a/Python_Code/Reflection.png>]
-<./solutions/3/2/1/a/Python_Code/projection.png, id=2023, 462.528pt x 346.896pt
+<./solutions/3/2/1/a/Python_Code/projection.png, id=2005, 462.528pt x 346.896pt
 >
 File: ./solutions/3/2/1/a/Python_Code/projection.png Graphic file (type png)
 <use ./solutions/3/2/1/a/Python_Code/projection.png>
@@ -3108,49 +3103,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (11.85818pt too high) has occurred while \output is active []
 
 
-[77])) [78
+[77]) (./solutions/3/3/9/solution.tex
+! Misplaced alignment tab character &.
+<argument> Such that $T(V) = V$. Defining $TU &
+                                               :\mathbb {V}\xrightarrow {}\m...
+l.9 \end{align}
+               
+? 
+! Emergency stop.
+<argument> Such that $T(V) = V$. Defining $TU &
+                                               :\mathbb {V}\xrightarrow {}\m...
+l.9 \end{align}
+               
+End of file on the terminal!
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
- (./gvv_hoffman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 327.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 327.
-Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
-(rerunfilecheck)             Checksum: FB4CEF5D3C209C03C83EFB7B68E17477;1081.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 44814 strings out of 480608
- 1033191 string characters out of 5892806
- 1422684 words of memory out of 5000000
+ 44810 strings out of 480608
+ 1033177 string characters out of 5892806
+ 1422633 words of memory out of 5000000
  57821 multiletter control sequences out of 15000+600000
  627878 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/
-public/txfonts/rtcxr.pfb></data/data/com.termux/files/usr/share/texlive/texmf-d
-ist/fonts/type1/public/txfonts/rtxb.pfb></data/data/com.termux/files/usr/share/
-texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></data/data/com.termux/f
-iles/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></data/d
-ata/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rt
-xr.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/txfonts/rtxsc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dis
-t/fonts/type1/public/txfonts/txex.pfb></data/data/com.termux/files/usr/share/te
-xlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></data/data/com.termux/fil
-es/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></data/dat
-a/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy
-b.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/txfonts/txsyc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmb8a.pfb></data/data/com.termux/files/usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.term
-ux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (78 pages, 973484 bytes).
-PDF statistics:
- 2758 PDF objects out of 2984 (max. 8388607)
- 2560 compressed objects within 26 object streams
- 1663 named destinations out of 1728 (max. 500000)
- 257 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+!  ==> Fatal error occurred, no output PDF file produced!

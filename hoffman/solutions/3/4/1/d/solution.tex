@@ -1,0 +1,22 @@
+Transformation T from $\mathbb{C}^{2}$ to $\mathbb{C}^{2}$. Let
+\begin{align}
+    \vec{e_1}&=\myvec{1\\0},\vec{e_2}=\myvec{0\\1}\\
+        \vec{\beta} &= \myvec{\vec{e_1} & \vec{e_2}}=\myvec{1&0\\0&1}\\
+\vec{\beta}^\prime&=\myvec{\alpha_2 & \alpha_1}=\myvec{-i&1\\2&i}
+\end{align}
+$T$ in the ordered basis $\beta$ is:
+\begin{align}
+[\vec{T}]_\beta=\myvec{-i&1\\2&i}
+\end{align}
+T is defined by
+\begin{align}
+   T(\vec{x})&= \vec{A}\vec{x}\\
+    T(\vec{x})&=\myvec{1&0\\0&0}\vec{x}\\
+        T(\vec{\alpha_2})&=\myvec{1&0\\0&0}\myvec{-i\\2}=\myvec{-i\\0}\\
+    T(\vec{\alpha_1})&=\myvec{1&0\\0&0}\myvec{1\\i}=\myvec{1\\0}\\
+    [\alpha]_\beta&=\myvec{-i&1\\0&0}
+\end{align}
+The matrix of T in the ordered basis $\{\alpha_2,\alpha_1\}$ is given as:
+\begin{align}
+[\vec{T}_\alpha]_\beta=[\vec{T}]_\beta[\alpha]_\beta=\myvec{-i&1\\2&i}\myvec{-i&1\\0&0}=\myvec{-1&-i\\-2i&2}
+\end{align}
