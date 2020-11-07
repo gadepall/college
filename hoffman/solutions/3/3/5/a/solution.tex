@@ -1,0 +1,52 @@
+The kronecker product also called as matrix direct product is defined as \begin{align}
+    \vec{A} \otimes \vec{B} = \myvec{a_{11}\vec{B} & \cdots & a_{1n}\vec{B} \\ \vdots & \ddots & \vdots \\
+    a_{m1}\vec{B} & \cdots & a_{mn}\vec{B}} \label{eq:solutions/3/3/5/a/eq:eq_21}
+\end{align}
+Also,
+\begin{align}
+    \vec{A} \otimes (\vec{B}+\vec{C}) &=
+    \vec{A} \otimes \vec{B} + \vec{A} \otimes \vec{C} \label{eq:solutions/3/3/5/a/eq:eq_22} \\
+    \vec{A} \otimes (k\vec{B}) &= 
+     k (\vec{A} \otimes \vec{B}) \label{eq:solutions/3/3/5/a/eq:eq_23}
+\end{align}
+Given,
+\begin{align}
+    \vec{T} : \vec{C}\rightarrow \vec{R^{2\times2}} \nonumber \\
+    \vec{T}(x+iy) = \myvec{x + 7y & 5y \\ -10y & x-7y} \label{eq:solutions/3/3/5/a/eq:eq_1}
+\end{align}
+Let,
+\begin{align}
+    z = x+iy; \quad w = a+ib; \quad z,w \in \vec{C} \nonumber
+\end{align}
+Also the RHS of \eqref{eq:solutions/3/3/5/a/eq:eq_1} can be expressed as,
+\begin{align}
+    \vec{T} (\vec{z}) &= \myvec{\myvec{1 & 7 \\ 0 & -10} \myvec{x \\ y} & \myvec{0 & 5 \\ 1 & -7} \myvec{x \\ y}} \nonumber \\ 
+    &= \myvec{1 & 7 & 0 & 5\\ 0 & -10 & 1 & -7} \myvec{x & 0 \\ y & 0 \\ 0 & x \\ 0 & y} \nonumber \\
+    &= \myvec{\vec{A} & \vec{B}} \myvec{\vec{x} & 0 \\ 0 & \vec{x}} \label{eq:solutions/3/3/5/a/eq:eq_2}
+\end{align}
+where $\vec{A}$ and $\vec{B}$ are block matrices and,
+\begin{align}
+    \vec{x} = \myvec{x \\ y} \nonumber 
+\end{align}
+The diagonal block matrix can be expressed as the kronecker product of $\vec{I}$ and $\vec{x}$
+\begin{align} 
+    \vec{I} \otimes \vec{x} = \myvec{\vec{x} & 0 \\ 0 & \vec{x}} \label{eq:solutions/3/3/5/a/eq:eq_3}
+\end{align}
+Where $\vec{I}$ is an identity matrix. \eqref{eq:solutions/3/3/5/a/eq:eq_2} can be rewritten as,
+\begin{align}
+    \vec{T} (\vec{z}) = \myvec{\vec{A} & \vec{B}} (\vec{I} \otimes \vec{x}) \label{eq:solutions/3/3/5/a/eq:eq_4}
+\end{align}
+Consider,
+\begin{align}
+    \vec{T}(\alpha \vec{z} + \vec{w}) = \myvec{\vec{A} & \vec{B}} (\vec{I} \otimes (\alpha \vec{z} + \vec{w})) \nonumber 
+\end{align}
+Using properties \eqref{eq:solutions/3/3/5/a/eq:eq_22}, \eqref{eq:solutions/3/3/5/a/eq:eq_23}, the above equation can be expressed as,
+\begin{align}
+    \vec{T}(\alpha \vec{z} + \vec{w}) &=  
+    \myvec{\vec{A} & \vec{B}} (\vec{I} \otimes (\alpha \vec{z})) +
+    \myvec{\vec{A} & \vec{B}} (\vec{I} \otimes \vec{x}) \nonumber \\
+    &= \alpha \myvec{\vec{A} & \vec{B}} (\vec{I} \otimes \vec{z}) + 
+    \myvec{\vec{A} & \vec{B}} (\vec{I} \otimes \vec{w}) \nonumber \\ 
+    &= \alpha \vec{T} (\vec{z}) + \vec{T} (\vec{w})\label{eq:solutions/3/3/5/a/eq:eq_5}
+\end{align}
+From \eqref{eq:solutions/3/3/5/a/eq:eq_5}, it can be proved that $\vec{T}$ is a linear operator.

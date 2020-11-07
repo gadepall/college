@@ -1,0 +1,118 @@
+Let $T:\mathbb{V} \xrightarrow{} \mathbb{V}$ be a linear operator, where $\mathbb{V}$ is a finite dimensional vectors space and $U:\mathbb{V} \xrightarrow{} \mathbb{V}$ is also a linear operator such that,
+\begin{align}
+TU &= I
+\end{align}
+Where, $I$ is an identity transformation. Now we know that linear transformations are functions. Hence,
+\begin{align}
+&TU = I \quad{\text{is a function}}\\
+\implies& I :\mathbb{V}\xrightarrow{}\mathbb{V}
+\end{align}
+Such that $T(V) = V$. Defining $TU :\mathbb{V}\xrightarrow{}\mathbb{V}$ to be a linear operator, we have,
+\begin{align}
+T[U(V_i)] &= V_i \qquad{\text{[$V_i \in \mathbb{V}$]}}
+\end{align}
+Now we show in the below Table that $T$ is one-one and onto as follows,\\
+\begin{table}[h!]
+\centering
+%\renewcommand\cellalign{lc}
+%\makegapedcells
+%\resizebox{\columnwidth}{!}
+%{
+\begin{tabular}{|c|c|} \hline
+\textbf{Proof} & \textbf{Conclusion}  \\ \hline
+%\makecell
+%{
+Let $\vec{V_1},\vec{V_2} \in \mathbb{V}$ then, &
+         \\If $\vec{V_1} \ne \vec{V_2}$ then, & $T$ is one-one function
+         \\$T[U(\vec{V_1})] \ne T[U(\vec{V_2})]$
+%} 
+&  \\ \hline
+%\makecell
+%{
+$T$ is linear operator on & 
+          \\finite dimensional & $T$ is onto function 
+          \\ vector space
+%} 
+& \\\hline
+\end{tabular}
+%}
+\caption{Proof of Invertibility of transformation}
+\label{eq:solutions/3/3/9/tab:invert}
+\end{table}\\
+\\Hence we get from Table \ref{eq:solutions/3/3/9/tab:invert} that, $T$ is invertible.
+Hence we get the following,
+\begin{align}
+TT^{-1} &= I
+\end{align}
+Where $T^{-1}$ is an inverse function of linear operator $T$. Hence,
+\begin{align}
+TT^{-1} &= I = TU\\
+\implies T^{-1}(TT^{-1}) &= T^{-1}(TU)\\
+\implies T^{-1}(I) &= IU\\
+\implies T^{-1} &= U\label{eq:solutions/3/3/9/proof}
+\end{align}
+Hence from \eqref{eq:solutions/3/3/9/proof} it is proven that $T$ is invertible and $T^{-1} = U$
+\\
+{\em Example: }
+Let $D$ be the differential operator $D:\mathbb{V} \xrightarrow{} \mathbb{V}$ where $\mathbb{V}$ is a space of polynomial functions in one variable $x$ over $\mathbb{R}$ as follows,
+\begin{align}
+D(c_0+c_1x+\dots+c_nx^n) &= c_1+c^{\prime}_2x+\dots+c^{\prime}_nx^{n-1}\label{eq:solutions/3/3/9/See}
+\end{align}
+We first prove that the vector space $\mathbb{V}$ is infinite dimensional.\\
+Suppose to the contrary that $\mathbb{V}$ is finite dimensional vector space and is given by the span of $k$ polynomials in $\mathbb{V}$ as follows,
+\begin{align}
+span(\mathbb{V}) &= \{p_1,p_2,\dots,p_k\}\label{eq:solutions/3/3/9/basis}
+\end{align}
+Also let $m$ be the maximum of the degree of these $k$ polynomials in \eqref{eq:solutions/3/3/9/basis}. Now let an element of the vector space $\mathbb{V}$ be,
+\begin{align}
+cx^{m+1} &\in \mathbb{V}
+\end{align}
+As maximum degree of the basis of $\mathbb{V}$ is $m$ hence $cx^{m+1}$ cannot be represented by any linear combination of the basis of $\mathbb{V}$. If $\mathbb{F}$ is field corresponding to $\mathbb{V}$ then we have,
+\begin{align}
+cx^{m+1} &\ne \sum_{i=1}^{k}\alpha_ip_i \quad{\text{[$\alpha_i \in \mathbb{F}$ $\forall i$]}}
+\end{align}
+Hence, $cx^{m+1}$ is not in the span of ${p_1,p_2,\dots,p_k}$. Hence, $\mathbb{V}$ is infinite dimensional vector space.\\
+Next we prove that $D$ is not one-one operator. Let, two different elements from the vector space $\mathbb{V}$ be as follows,
+\begin{align}
+c_1+x^m &\in \mathbb{V}\\
+c_2+x^m &\in \mathbb{V}
+\end{align}
+From definition \eqref{eq:solutions/3/3/9/See} of operator $D$ we have,
+\begin{align}
+D(c_1+x^m) &= mx^{m-1}\label{eq:solutions/3/3/9/a1}\\
+D(c_2+x^m) &= mx^{m-1}\label{eq:solutions/3/3/9/a2}
+\end{align}
+From \eqref{eq:solutions/3/3/9/a1} and \eqref{eq:solutions/3/3/9/a2},
+\begin{align}
+c_1+x^m &\ne c_2+x^m\\
+D(c_1+x^m) &= D(c_2+x^m)\label{eq:solutions/3/3/9/Not_Oneone}
+\end{align}
+Hence from \eqref{eq:solutions/3/3/9/Not_Oneone} we see that $D$ is not One-One operator.\\
+And, $U:\mathbb{V} \xrightarrow{} \mathbb{V}$ is another linear operator such that,
+\begin{align}
+U(c_0+c_1x+\dots+c_nx^n) &= c_0x+c_1\frac{x^2}{2}+\dots+c_n\frac{x^{n+1}}{n+1}
+\end{align}
+Now, $DU:\mathbb{V} \xrightarrow{} \mathbb{V}$ is a linear operator such that,
+\begin{align}
+&DU(c_0+c_1x+\dots+c_nx^n) \\
+&= D[U(c_0x+c_1\frac{x^2}{2}+\dots+c_n\frac{x^{n+1}}{n+1})]\\
+&= D[c_0x+c_1\frac{x^2}{2}+\dots+c_n\frac{x^{n+1}}{n+1}]\\
+&= c_0+c_1\frac{2x}{2}+\dots+c_n\frac{(n+1)x^{n}}{n+1}\\
+&= c_0+c_1x+\dots+c_nx^n\label{eq:solutions/3/3/9/eq1}
+\end{align}
+Hence, from \eqref{eq:solutions/3/3/9/eq1},
+\begin{align}
+DU = I\label{eq:solutions/3/3/9/show1}
+\end{align}
+Again $UD:\mathbb{V} \xrightarrow{} \mathbb{V}$ is a linear operator such that,
+\begin{align}
+&UD(c_0+c_1x+\dots+c_nx^n) \\
+&= U[D(c_0x+c_1\frac{x^2}{2}+\dots+c_n\frac{x^{n+1}}{n+1})]\\
+&= U[c_1+c^{\prime}_2x+\dots+c^{\prime}_nx^{n-1}]\\
+&= c_1x+c_2\frac{x^2}{2}+\dots+c_n\frac{x^{n}}{n}\label{eq:solutions/3/3/9/eq2}\
+\end{align}
+Hence, from \eqref{eq:solutions/3/3/9/eq2},
+\begin{align}
+UD \ne I\label{eq:solutions/3/3/9/show2}
+\end{align}
+Hence, from \eqref{eq:solutions/3/3/9/show1} and \eqref{eq:solutions/3/3/9/show2}, $D$ is not invertible.
