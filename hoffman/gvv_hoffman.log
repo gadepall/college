@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  6 NOV 2020 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  7 NOV 2020 09:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3092,14 +3092,25 @@ Underfull \vbox (badness 3386) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
+(./solutions/3/3/2/c/solution.tex
+Overfull \hbox (9.15915pt too wide) detected at line 14
+ []$[]   [] [] []$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76])
 (./solutions/3/3/7/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
-Overfull \vbox (18.81818pt too high) has occurred while \output is active []
 
-))
-[77] [78]
+Overfull \vbox (11.85818pt too high) has occurred while \output is active []
+
+
+[77])) [78
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
  (./gvv_hoffman.aux)
@@ -3110,10 +3121,10 @@ Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
  ) 
 Here is how much of TeX's memory you used:
- 44806 strings out of 480608
- 1033029 string characters out of 5892806
+ 44814 strings out of 480608
+ 1033191 string characters out of 5892806
  1422684 words of memory out of 5000000
- 57820 multiletter control sequences out of 15000+600000
+ 57821 multiletter control sequences out of 15000+600000
  627878 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3136,10 +3147,10 @@ lic/txfonts/txsyc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.term
 ux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (78 pages, 971096 bytes).
+Output written on gvv_hoffman.pdf (78 pages, 973484 bytes).
 PDF statistics:
- 2753 PDF objects out of 2984 (max. 8388607)
- 2555 compressed objects within 26 object streams
- 1659 named destinations out of 1728 (max. 500000)
+ 2758 PDF objects out of 2984 (max. 8388607)
+ 2560 compressed objects within 26 object streams
+ 1663 named destinations out of 1728 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,21 @@
+$V$ is a vector space and $V$ is isomorphic to $C^3$ via isomorphism $T$ which implies that $C^3$ is also isomorphic to $V$ via isomorphism $T^{-1}$. 
+
+As $V$ is isomorphic to $C^3$, so 
+\begin{align}
+dim(V)= dim(C^3)=3
+\end{align}
+Now,
+\begin{multline}
+\myvec{1 & 0 & i\\-2 & 1+i & 0\\-1 & 1 & 1\\\sqrt{2} & i & 3}\xleftrightarrow[R_4\leftarrow\sqrt{2}R_4]{R_3\leftarrow R_3+R_1}\myvec{1 & 0 & i\\-2 & 1+i & 0\\0 & 1 & 1+i\\2 & i\sqrt{2} & 3\sqrt{2}}\\
+\xleftrightarrow[]{R_4\leftarrow R_4+R_2}\myvec{1 & 0 & i\\-2 & 1+i & 0\\0 & 1 & 1+i\\0 & 1+i(1+\sqrt{2}) & 3\sqrt{2}}\\
+\xleftrightarrow[]{R_2\leftarrow R_2+2R_1}\myvec{1 & 0 & i\\0 & 1+i & 2i\\0 & 1 & 1+i\\0 & 1+i(1+\sqrt{2}) & 3\sqrt{2}}\\
+\xleftrightarrow[]{R_3\leftarrow (1+i)R_3}\myvec{1 & 0 & i\\0 & 1+i & 2i\\0 & 1+i & 2i\\0 & 1+i(1+\sqrt{2}) & 3\sqrt{2}}\\
+\xleftrightarrow[]{R_3\leftarrow R_3-R_2}\myvec{1 & 0 & i\\0 & 1+i & 2i\\0 & 0 & 0\\0 & 1+i(1+\sqrt{2}) & 3\sqrt{2}}
+\end{multline}
+From here we can get that $T\alpha_3$ is dependent vector while $T\alpha_1$, $T\alpha_2$ and $T\alpha_4$ are independent vector. These $T\alpha_1$, $T\alpha_2$ and $T\alpha_4$ also span the vector space $C^3$, so these 3 vectors are the basis of $C^3$. 
+
+As $dim(V)=3$, so it must have 3 basis and as $V$ and $C^3$ are isomorphic so $\alpha_1$, $\alpha_2$ and $\alpha_4$ are the basis of $V$.
+
+
+
+
