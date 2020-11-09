@@ -1,0 +1,101 @@
+See Tables \ref{table:3/3/4/1},
+\ref{table:3/3/4/2} and 
+\ref{table:3/3/4/3/}.
+
+\begin{table*}[!ht]
+\resizebox{2\columnwidth}{!}
+{
+		\begin{tabular}{|c|c|}
+			\hline
+			\multirow{3}{*}{Invertible} & \\
+			& A linear map $\vec{T}\in \vec{L(V,W)}$ is called invertible if there exists a linear map $\vec{S}\in \vec{L(W,V)}$ \\
+			Linear Map & such that $\vec{ST}$ equals the identity map on $\vec{V}$ and $\vec{TS}$ equals the identity map on $\vec{W}$. \\
+			& \\
+			& A linear map $\vec{S}\in \vec{L(W,V)}$ satisfying $\vec{ST=I_{V}}$ and $\vec{TS=I_{W}}$ is called an inverse of $\vec{T}$.\\
+			& \\
+			\hline
+			\multirow{3}{*}{Isomorphic} & \\
+			& Two vector spaces $\vec{V}$ and $\vec{W}$ are called isomorphic if there is an isomorphism from one \\
+			Vector Spaces & vector space onto the other one. An isomorphism is an invertible linear map. \\
+			& \\
+			\hline
+			\multirow{3}{*}{Rank Nullity} & \\
+			  & Let $\vec{V}$ and $\vec{W}$ be finite dimensional vector spaces. Let $\vec{T}$: $\vec{V}$ $\to$ $\vec{W}$ be a linear transformation \\
+			Theorem &  Rank($\vec{T}$) + Nullity($\vec{T}$) = dim $\vec{V}$\\
+			& \\
+			\hline	
+		\end{tabular}
+}
+\caption{Definition}
+\label{table:3/3/4/1}
+\end{table*}
+\begin{table*}[!ht]
+\resizebox{2\columnwidth}{!}
+{
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Result 1} & \\
+		& The space of all $m \times n$ matrices over the field $\vec{F}$ has dimension $mn$.\\
+		\hline
+		\multirow{3}{*}{Result 2} & \\
+	   & Let $\vec{V}$ and $\vec{W}$ be finite-dimensional vector spaces over the field $\vec{F}$ such that dim $\vec{V}$ = dim $\vec{W}$. If $\vec{T}$ \\
+	   & is a linear transformation from $\vec{V}$ into $\vec{W}$, then the following are equivalent:\\
+	   & (a). $\vec{T}$ is invertible. \\
+	   & (b). $\vec{T}$ is non-singular.\\
+	   & (c). $\vec{T}$ is onto, that is, range of $\vec{T}$ is $\vec{W}$.\\
+	   \hline	
+	\end{tabular}
+}
+\caption{Results Used}
+\label{table:3/3/4/2}
+\end{table*}
+\begin{table*}[!ht]
+\resizebox{2\columnwidth}{!}
+{
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Defining} & \\
+		& We define set $S$ and set $T$ as\\
+		Sets&  $S = \{\brak{a,b}: a,b \in \mathbb{N}, 1 \leq a \leq m, 1 \leq b \leq n \},  \quad T = \{ 1,2,...,mn\}$\\
+		& \\
+		\hline
+		\multirow{3}{*}{Defining} & \\
+		& We now define a bijection $\sigma: S \to T$ as\\
+		Bijection& \qquad \qquad \brak{a,b} $\to$	\brak{a-1}n + b \\
+		& \\
+		\hline
+		\multirow{3}{*}{Defining} & \\
+		& We now define a function $G$ from $F^{m\times n}$ to $F^{mn}$ as follows. Let $\vec{A} \in F^{m\times n}$.\\
+		Function $G$ & Then map $\vec{A}$ to the $mn$ tupple that has $\vec{A_{ij}}$ in the $\sigma(i,j)$ position. In other words,\\ 
+		& \qquad \qquad \qquad \qquad $\vec{A} \to \brak{\vec{A_{11}},\vec{A_{12}},...,\vec{A_{1n}},...,\vec{A_{m1}},\vec{A_{m2}},...,\vec{A_{mn}}}$\\
+		& \\
+		\hline
+		\multirow{3}{*}{Proving $G$ to} & \\
+		& Since, addition in $F^{m\times n}$ and in $F^{mn}$ is performed component-wise, $G\brak{\vec{A+B}} = G(\vec{A}) + G(\vec{B})$\\
+	be Linear & and scalar multiplication in $F^{m\times n}$ and in $F^{mn}$ is also defined  as $G\brak{c\vec{A}}= cG\brak{\vec{A}}$. \\
+	& \\
+		\hline	
+		\multirow{3}{*}{Proving $G$ to} & \\
+		& $G(\vec{A}) = G(\vec{B})$ \\
+		be One-One & $\implies \brak{\vec{A_{11}},\vec{A_{12}},...,\vec{A_{1n}},...,\vec{A_{m1}},\vec{A_{m2}},...,\vec{A_{mn}}}=
+		\brak{\vec{B_{11}},\vec{B_{12}},...,\vec{B_{1n}},...,\vec{B_{m1}},\vec{B_{m2}},...,\vec{B_{mn}}}$ \\
+		& $ \implies \vec{A_{i,j}} = \vec{B_{ij}} \quad \forall 1 \leq i \leq m ,1 \leq j \leq n $\\
+		& $\implies$ $\vec{A}$ = $\vec{B}$\\
+		& \\
+		\hline
+		\multirow{3}{*}{Proving $G$ to} & \\
+	    & Since $G$ is one to one, so Null($G$) $=0$. Thus, by Rank-Nullity Theorem dim(Range($G$))$=mn$, \\ 
+		be Onto & proving $G$ to be a surjective (onto) map as by Result 1 dimension of $F^{m\times n} = mn$\\
+		& \\
+		\hline
+		\multirow{3}{*}{$F^{m\times n} \cong F^{mn}$} & \\
+		& Since $G$ has an inverse and is an isomorphism of $\vec{T}$. Thus, by Result 2\\ 
+	    & \qquad \qquad \qquad  $F^{m\times n} \cong F^{mn}$\\
+	    & \\
+		\hline
+	\end{tabular}
+}
+\caption{Proof}
+\label{table:3/3/4/3/}
+\end{table*}
+$\mathbb{R}^{2\times 2}$ is isomorphic to $\mathbb{R}^{4}$ ie, $\mathbb{R}^{2\times 2}$ $\cong$ $\mathbb{R}^{4}$.

@@ -1,0 +1,51 @@
+Given 
+\begin{align}
+\vec{A}=\myvec{1&2&1&0\\-1&0&3&5\\1&-2&1&1}
+\end{align}
+Row reduce $\vec{A}$ by applying the elementary row operations and equivalently at each operations find the elementary matrix $\vec{E}$
+\begin{align}
+    \vec{A|I}=&\myvec{1&2&1&0&\vrule&1&0&0\\-1&0&3&5&\vrule&0&1&0\\1&-2&1&1&\vrule&0&0&1}
+\end{align}
+\begin{align}
+    \xleftrightarrow{R_2=R_2+R_1}\myvec{1&2&1&0&\vrule&1&0&0\\0&2&4&5&\vrule&1&1&0\\1&-2&1&1&\vrule&0&0&1}
+\end{align}
+\begin{align}
+\xleftrightarrow{R_3=R_3-R_1}\myvec{1&2&1&0&\vrule&1&0&0\\0&2&4&5&\vrule&1&1&0\\0&-4&0&1&\vrule&-1&0&1}
+\end{align}
+\begin{align}
+\xleftrightarrow{R_1=R_1-R_2}\myvec{1&0&-3&-5&\vrule&0&-1&0\\0&2&4&5&\vrule&1&1&0\\0&-4&0&1&\vrule&-1&0&1}
+\end{align}
+\begin{align}
+\xleftrightarrow{R_3=R_3+2R_2}\myvec{1&0&-3&-5&\vrule&0&-1&0\\0&2&4&5&\vrule&1&1&0\\0&0&8&11&\vrule&1&2&1}
+\end{align}
+\begin{align}
+\xleftrightarrow{R_2=\frac{R_2}{2}}\myvec{1&0&-3&-5&\vrule&0&-1&0\\0&1&2&\frac{5}{2}&\vrule&\frac{1}{2}&\frac{1}{2}&0\\0&0&8&11&\vrule&1&2&1}
+\end{align}
+\begin{align}
+\xleftrightarrow{R_3=\frac{R_3}{8}}\myvec{1&0&-3&-5&\vrule&0&-1&0\\0&1&2&\frac{5}{2}&\vrule&\frac{1}{2}&\frac{1}{2}&0\\0&0&1&\frac{11}{8}&\vrule&\frac{1}{8}&\frac{1}{4}&\frac{1}{8}}
+\end{align}
+\begin{align}
+\xleftrightarrow{R_1=R_1+3R_3}\myvec{1&0&0&-\frac{7}{8}&\vrule&\frac{3}{8}&-\frac{1}{4}&\frac{3}{8}\\0&1&2&\frac{5}{2}&\vrule&\frac{1}{2}&\frac{1}{2}&0\\0&0&1&\frac{11}{8}&\vrule&\frac{1}{8}&\frac{1}{4}&\frac{1}{8}}
+\end{align}
+\begin{align}
+\xleftrightarrow{R_2=R_2-2R_3}\myvec{1&0&0&-\frac{7}{8}&\vrule&\frac{3}{8}&-\frac{1}{4}&\frac{3}{8}\\0&1&0&-\frac{1}{4}&\vrule&\frac{1}{4}&0&-\frac{1}{4}\\0&0&1&\frac{11}{8}&\vrule&\frac{1}{8}&\frac{1}{4}&\frac{1}{8}}\label{eq:solutions/1/5/1/1}
+\end{align}
+Hence,row reduced echelon matrix that is row equivalent to $\vec{A}$ is 
+\begin{align}
+\vec{R}=\myvec{1&0&0&-\frac{7}{8}\\0&1&0&-\frac{1}{4}\\0&0&1&\frac{11}{8}}
+\end{align}
+where $\vec{E}$ is the elementary matrices that transform $\vec{A}$ to $\vec{R}$ Thus:-
+\begin{align}
+ \vec{E}\vec{A}=\vec{R}  
+\end{align}
+Since elementary matrices is invertible
+\begin{align}
+  \vec{P}=\vec{E} 
+\end{align}
+is invertible.\\
+From \eqref{eq:solutions/1/5/1/1}
+\begin{align}
+\vec{P}=\myvec{\frac{3}{8}&-\frac{1}{4}&\frac{3}{8}\\\frac{1}{4}&0&-\frac{1}{4}\\\frac{1}{8}&\frac{1}{4}&\frac{1}{8}}\\
+\vec{R}=\myvec{1&0&0&-\frac{7}{8}\\0&1&0&-\frac{1}{4}\\0&0&1&\frac{11}{8}}
+\end{align}
+such that $\vec{R}=\vec{P}\vec{A}$.
