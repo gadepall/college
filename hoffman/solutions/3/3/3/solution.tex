@@ -1,0 +1,53 @@
+\begin{enumerate}
+\item \textbf{Check for linearity:}
+The transformation T is given by
+\begin{align}
+T\colon\mathbb{R}^4\to\mathbb{W}\\
+T\myvec{x\\y\\z\\t}=\myvec{t+x&y+iz\\y-iz&t-x} \label{eq:solutions/3/3/3/Trans}
+\end{align}
+Let $\vec{x}=\myvec{x\\y\\t\\z}$. Expressing R.H.S of equation \eqref{eq:solutions/3/3/3/Trans} using Kronecker Product, 
+\begin{align}
+T\brak{\vec{x}}=\myvec{\myvec{1&0&0&1}\vec{x}&\myvec{0&1&i&0}\vec{x}\\\myvec{0&1&-i&0}\vec{x}&\myvec{-1&0&0&1}\vec{x}}\\
+=\myvec{\myvec{1&0&0&1\\0&1&-i&0}\vec{x}&\myvec{0&1&i&0\\-1&0&0&1}\vec{x}}\\
+=\myvec{1&0&0&1&0&1&i&0\\0&1&-i&0&-1&0&0&1}\myvec{x&0\\y&0\\z&0\\t&0\\0&x\\0&y\\0&z\\0&t}
+\end{align}
+\begin{align}
+\implies T\brak{\vec{x}}=\myvec{\vec{A}&\vec{B}}\myvec{\vec{x}&\vec{0}_{4\times1}\\\vec{0}_{4\times1}&\vec{x}}\label{eq:solutions/3/3/3/block}
+\end{align}
+Where $\vec{A}$ and $\vec{B}$ are block matrices.
+\begin{align}
+\vec{A}=\myvec{1&0&0&1\\0&1&-i&0}\\
+\vec{B}=\myvec{0&1&i&0\\-1&0&0&1}
+\end{align}
+The Kronecker Product of $\vec{I}_2$ and $\vec{x}$ gives the block matrix in equation \eqref{eq:solutions/3/3/3/block}.
+\begin{align}
+\vec{I}_{2\times2}\otimes\vec{x}_{4\times1}=\myvec{\vec{x}&\vec{0}\\\vec{0}&\vec{x}}_{8\times2}
+\end{align}
+Hence we can write equation \eqref{eq:solutions/3/3/3/block} as,
+\begin{align}
+ T\brak{\vec{x}}=\myvec{\vec{A}&\vec{B}}\brak{\vec{I}\otimes\vec{x}} \label{eq:solutions/3/3/3/final}
+\end{align}
+Let $\vec{x}_1,\vec{x}_2\in\mathbb{R}^4$ and $\alpha,\beta\in\mathbb{R}$.
+\begin{align}
+T\brak{\alpha\vec{x}_1+\beta\vec{x}_2}=\myvec{\vec{A}&\vec{B}}\brak{\vec{I}\otimes\brak{\alpha\vec{x}_1+\beta\vec{x}_2}}\\
+=\alpha\myvec{\vec{A}&\vec{B}}\brak{\vec{I}\otimes\vec{x}_1}+\beta\myvec{\vec{A}&\vec{B}}\brak{\vec{I}\otimes\vec{x}_2}\\
+=\alpha T\vec{x}_1+\beta T\vec{x}_2 \label{eq:solutions/3/3/3/linear}
+\end{align}
+Therefore from equation \eqref{eq:solutions/3/3/3/linear}, we can say T is linear transformation.
+\item \textbf{Check for one-one property: }
+For transformation T to be one-one, we can prove if $T\brak{\vec{x}}=\vec{0}$, that implies $\vec{x}=\vec{0}$. From the equation \eqref{eq:solutions/3/3/3/final},
+\begin{align}
+T\brak{\vec{x}}=\vec{0}\label{eq:solutions/3/3/3/1}\\
+\myvec{\vec{A}&\vec{B}}\brak{\vec{I}\otimes\vec{x}}=\vec{0}
+\end{align}
+\begin{align}
+\implies \myvec{1&0&0&1&0&1&i&0\\0&1&-i&0&-1&0&0&1}\myvec{x&0\\y&0\\z&0\\t&0\\0&x\\0&y\\0&z\\0&t}=\vec{0}_{2\times2}
+\end{align}
+From equation \eqref{eq:solutions/3/3/3/Trans},
+\begin{align}
+\myvec{t+x&y+iz\\y-iz&t-x}=\vec{0}_{2\times2}\\
+\implies x=0,y=0,z=0,t=0\\
+\implies \vec{x}=\vec{0}\label{eq:solutions/3/3/3/2}
+\end{align}
+Hence from \eqref{eq:solutions/3/3/3/1} and \eqref{eq:solutions/3/3/3/2}, T is one-one and that implies $T\colon\mathbb{R}^4\to\mathbb{W}$ is isomorphism.
+\end{enumerate}

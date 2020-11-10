@@ -33,22 +33,41 @@
 \input{./solutions/3/3/2/c/solution.tex}
 \end{enumerate}
 %
+\item Let $\mathbb{W}$ be the set of all $2\times2$ complex Hermitian matrices, that is the sset of $2\times2$ complex matrices $\vec{A}$ ssuch that $\vec{A}_{ij}=\vec{\overline{A_{ji}}}$ (the bar denoting complex conjugation). $\mathbb{W}$ is a vector space over the field of real numbers, under the usual operations. Verify that
+\begin{align}\label{iso}
+\myvec{x\\y\\z\\t} \rightarrow \myvec{t+x&y+iz\\y-iz&t-x}
+\end{align}
+is an isomorphism of $\mathbb{R}^4$ onto $\mathbb{W}$.
+%
+\\
+\solution
+\input{./solutions/3/3/3/solution.tex}
 \item Show that $\vec{F^{m\times n}}$ is isomorphic to $\vec{F^{mn}}$.
 %
 \\
 \solution
 \input{./solutions/3/3/4/solution.tex}
-\item 
-\begin{enumerate}
+%\item Let $\vec{V}$ be the set of complex numbers regarded as a vector space over the field of real numbers.We define a function $\mathbb{T}$ from $\vec{V}$ into the space of $2 \times 2$ real matrices,as follows.If $z=x+i y$ with $x$ and $y$ real numbers,then 
+%\begin{align}
+%\mathbb{T}(z)=\myvec{x+7y&5y\\-10y&x-7y}
+%\end{align}
+%\begin{enumerate}}
 \item Let $\vec{V}$ be the set of complex numbers regarded as a vector space over the field of real numbers. We define a function T from $\vec{V}$ into the space of $2 \times 2$ real matrices, as follows. If $z = x + iy$ with $x$ and $y$ real numbers, then
 \begin{align}
     \vec{T}(z) = \myvec{x + 7y & 5y \\ -10y & x-7y} \nonumber
 \end{align}
-Verify that T is a one-one (real) linear transformation of $\vec{V}$ into the space of $2 \times 2$ real matrices.
+\begin{enumerate}
+\item  Verify that T is a one-one (real) linear transformation of $\vec{V}$ into the space of $2 \times 2$ real matrices.
 %
 \\
 \solution
 \input{./solutions/3/3/5/a/solution.tex}
+\item How would you describe the range of $\mathbb{T}$?
+%
+\\
+\solution
+\input{./solutions/3/3/5/c/solution.tex}
+
 \end{enumerate}
 \item Let $V$ and $W$ be finite-dimensional vector spaces over the field $F$ and let $U$ be an isomorphism of $V$ and $W$. Prove that $T \rightarrow UTU^{-1}$ is an isomorphism of $L(V,V)$ onto $L(W,W)$.
 %

@@ -1,0 +1,22 @@
+Let $\vec{V}$ and $\vec{W}$ be the vector spaces.  The function $T : \vec{V} \rightarrow \vec{W}$ is called a linear transformation of $\vec{V}$ into $\vec{W}$ if for all $\vec{u}$ and $\vec{v}$ in $\vec{V}$ and for any scalar $k$ in field $\vec{F}$,
+\begin{align}
+	T(k\vec{u} + \vec{v}) &= kT(\vec{u}) + T(\vec{v})
+\end{align}
+Given, 
+\begin{align}
+	T \myvec{x_1 \\x_2}  = \myvec{1 & -1\\0 & 0} \myvec{x_1 \\ x_2}
+\end{align}
+Consider,
+\begin{align}
+	T(k\vec{x} + \vec{y})  &= \myvec{1  & -1\\0 & 0}\brak{k\vec{x} + \vec{y}}\\
+    &=\myvec{k & -k\\0 &0}\vec{x} + \myvec{1 & -1\\0 &0}\vec{y} \\
+      &=k\myvec{1 & -1\\0 &0}\vec{x} + \myvec{1 & -1\\0 &0}\vec{y} \\
+  T(\vec{x} + \vec{y})  &= kT(\vec{x}) + T(\vec{y})
+\end{align}
+%Also, we need to show that for some constant $k$, $T(k\vec{x}) = kT(\vec{x})$. Consider,
+%\begin{align}
+%	T(k\vec{x})  &= \myvec{k & -k \\0 & 0} \vec{x}\\
+%	&= k\myvec{1 & -1 \\0 & 0} \vec{x}\\
+%	T(k\vec{x}) &= kT(\vec{x})
+%\end{align}
+Therefore, the given function T is a linear transformation.

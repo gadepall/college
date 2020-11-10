@@ -1,0 +1,32 @@
+%
+
+\begin{align}
+    \mathbb{T}:\vec{V}\xrightarrow{}\mathbb{R}^{2 \times 2}
+\end{align}
+where $\mathbb{R}^{2 \times 2}$,is the space of all $2 \times 2$ real matrices\\
+\begin{align}
+ \mathbb{T}(z)=\myvec{x+7y&5y\\-10y&x-7y}\\
+ \vec{x}=\myvec{x\\y}\\
+ \mathbb{T}(\vec{x})=\myvec{\myvec{1&7}\vec{x}&\myvec{0&5}\vec{x}\\\myvec{0&-10}\vec{x}&\myvec{1&-7}\vec{x}}\\
+ =\myvec{\myvec{1&7\\0&-10}\vec{x}&\myvec{0&5\\1&-7}\vec{x}}\\
+ \text{Let } \vec{A}=\myvec{1&7\\0&-10}\\
+ \vec{B}=\myvec{0&5\\1&-7}\\
+ \implies  \mathbb{T}(\vec{x})=\myvec{\vec{A}\vec{x}&\vec{B}\vec{x}}\\
+  \mathbb{T}(\vec{x})=\myvec{\vec{A}&\vec{B}}\myvec{\vec{x}&\vec{0}_{2 \times 1}\\\vec{0}_{2 \times 1}&\vec{x}}\label{eq:solutions/3/3/5/c/1}
+\end{align}
+The kronecker product of $\vec{I},\vec{x}$ gives the block matrix
+\begin{align}
+    \vec{I}_{2 \times 2}\otimes \vec{x}_{2\times 1}=\myvec{\vec{x}&\vec{0}\\\vec{0}&\vec{x}}_{4 \times 2}\\
+    \eqref{eq:solutions/3/3/5/c/1} \implies  \mathbb{T}(\vec{x})= \myvec{\vec{A}&\vec{B}}\vec{I}\otimes \vec{x}\\
+    =\myvec{\vec{A}&\vec{B}}\vec{I}\otimes\left[\myvec{x\\0}+\myvec{0\\y}\right]\\
+   =x\myvec{\vec{A}&\vec{B}}  \vec{I}\otimes \myvec{1\\0}+y\myvec{\vec{A}&\vec{B}}  \vec{I}\otimes \myvec{0\\1}\label{eq:solutions/3/3/5/c/2}\\
+   \vec{I}\otimes \myvec{1\\0}=\myvec{1&0\\0&0\\0&1\\0&0}\\
+   \vec{I}\otimes \myvec{0\\1}=\myvec{0&0\\1&0\\0&0\\0&1}
+\end{align}
+Kronecker product in the first term of \eqref{eq:solutions/3/3/5/c/2} picks out 1st columns of $\vec{A},\vec{B}$ and in the second term picks out 2nd columns of $\vec{A},\vec{B}$ so basis for range($\mathbb{T}$) is
+\begin{align}
+    \cbrak{\myvec{\vec{A}&\vec{B}}  \vec{I}\otimes \myvec{1\\0},\myvec{\vec{A}&\vec{B}}  \vec{I}\otimes \myvec{0\\1}}=\\\cbrak{\myvec{1&0\\0&1},\myvec{7&5\\-10&-7}}\\
+    \text{range}(\mathbb{T})
+    =\\\text{span of }\cbrak{\myvec{1&0\\0&1},\myvec{7&5\\-10&-7}}
+\end{align}
+

@@ -1,0 +1,39 @@
+If a linear operator $\vec{S}$ is defined on $\vec{R}^2$ such that $\vec{S}^2=\vec{S}$, then
+\begin{align}
+	\vec{S}^2-\vec{S}=\vec{0}\\
+	\vec{S}(\vec{S}-\vec{I})=\vec{0}\\
+	\implies\vec{S}=\vec{0},\vec{S}=\vec{I}
+\end{align}
+The transformation of a vector $\vec{x} \in \vec{R}^2$ can be represented as
+\begin{align}
+	\vec{S}\vec{x}=\vec{y}\\
+	\implies \vec{S}(\vec{S}\vec{x})=\vec{S}\vec{y}\\
+	\implies \vec{S}^2\vec{x}=\vec{S}\vec{y}\\
+	\implies \vec{S}\vec{x}=\vec{S}\vec{y}\\
+	\implies \vec{x}=\vec{y}
+\end{align}
+Therefore the transformation of a vector $\vec{x} \in \vec{R}^2$ can be given as
+\begin{align}
+	\vec{S}\vec{x}=\vec{x} \ \forall \ \vec{x} \in \vec{R}^2 \label{eq:solutions/3/4/10/sx}
+\end{align}
+Consider the ordered basis set
+\begin{align}
+        B=\cbrak{\epsilon_1,\epsilon_2} \in \vec{R}^2
+\end{align}
+and if
+\begin{align}
+\vec{[S]_B}=\vec{A} \\
+        \implies \vec{[S]_B}=\myvec{1&0\\0&0}
+\end{align}
+Thus we can re-write the column vectors of $\vec{[S]_B}$ using (\ref{eq:solutions/3/4/10/sx}) as
+\begin{align}
+\vec{S}\myvec{1\\0}=\myvec{1\\0}=1\myvec{1\\0}+0\myvec{0\\1} \\
+\vec{S}\myvec{0\\0}=\myvec{0\\0}=0\myvec{1\\0}+0\myvec{0\\1}
+\end{align}
+Therefore, any vector $\vec{x}$ in column space of $\vec{[S]_B}$ can be uniquely expressed by 
+$\cbrak{\myvec{1\\0}}$, hence it forms the basis for column space of $\vec{[S]_B}$. Therefore 
+one of the basis vector of $B$ is $\myvec{1\\0}$. The other basis vector can be any vector which 
+is linearly independent to $\myvec{1\\0}$. One of the ordered basis set can be 
+\begin{align}
+	B=\cbrak{\myvec{1\\0},\myvec{1\\1}}
+\end{align}

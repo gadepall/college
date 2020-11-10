@@ -1,0 +1,42 @@
+
+The goal is to effect the transformation $\brak{\vec{A}|\vec{I}} \rightarrow \brak{\vec{I}|\vec{A}^{-1}}$. Augmenting $\vec{A}$ with the $2 \times 2$ identity matrix, we get:
+\begin{align}
+ \myvec{a & b & 1 & 0 \\ c & d & 0 & 1} 
+\end{align}
+Now, if $a = 0$, switch the rows. If c is also 0, then the process of reducing $\vec{A}$ to $\vec{I}$ cannot even begin. So, one necessary condition for $\vec{A}$ to be invertible is that the entries a and c are not both 0. 
+\begin{enumerate}
+    \item Assume that $a \neq 0$, Then :
+\begin{align}
+     \label{eq:solutions/1/5/8/anotzero}\myvec{a & b & 1 & 0 \\ c & d & 0 & 1}
+&\xleftrightarrow{R_1 
+= R_1/a} \myvec{1 & \frac{b}{a} & \frac{1}{a} & 0 \\ c & d & 0 & 1}\\
+&\xleftrightarrow{R_2 = R_2 - c R_1} \myvec{1 & \frac{b}{a} & \frac{1}{a} & 0 \\ 0 & \frac{ad-bc}{a} & \frac{-c}{a} & 1}\nonumber
+\end{align}
+Next, assuming that $ad - bc \neq 0$, we get:
+\begin{align}
+    &\xleftrightarrow{R_1 = R_1 - \frac{b}{ad-bc} R_2} \myvec{1 & 0 & \frac{d}{ad-bc} & \frac{-b}{ad-bc} \\ 0 & \frac{ad-bc}{a} & \frac{-c}{a} & 1} \nonumber\\
+    &\xleftrightarrow{R_2 = R_2\frac{a}{ad-bc}} \myvec{1 & 0 & \frac{d}{ad-bc} & \frac{-b}{ad-bc} \\ 0 & 1 & \frac{-c}{ad-bc} & \frac{a}{ad-bc}} \nonumber
+\end{align}
+Therefore, if $ad - bc \neq 0$, then the matrix is invertible and it's inverse is given by 
+\begin{align}
+    \myvec{a & b \\ c  & d}^{-1} = \frac{1}{ad-bc}\myvec{d & -b \\ -c  & a}
+\end{align}
+
+\item
+In \eqref{eq:solutions/1/5/8/anotzero}, we have assumed that $a \neq 0$. Now consider $a = 0$, then, as we have seen before, it is mandatory that $c \neq 0$:
+\begin{align}
+    \myvec{0 & b & 1 & 0 \\ c & d & 0 & 1} &\xleftrightarrow{R_1\leftrightarrow R_2}  \myvec{c & d & 0 & 1 \\ 0 & b & 1 & 0} \\
+    &\xleftrightarrow{R_1 = R_1/c}\myvec{1 & \frac{d}{c} & 0 & \frac{1}{c} \\ 0 & b & 1 & 0}  \nonumber \\
+    &\xleftrightarrow{R_1 = R_1 - R_2\times \frac{d}{bc}}\myvec{1 & 0 & -\frac{d}{bc} & \frac{1}{c} \\ 0 & b & 1 & 0}\nonumber\\
+    &\xleftrightarrow{R_2 = R_2/b}\myvec{1 & 0 & -\frac{d}{bc} & \frac{1}{c} \\ 0 & 1 & \frac{1}{b} & 0} \nonumber
+\end{align}
+Therefore, When we consider $a=0$ the matrix is invertible if $bc\neq0$, which is included in the condition $ad-bc\neq0$. 
+\item Similarly, consider $c=0$, then, as we have seen before, it is mandatory that $a\neq0$:
+\begin{align}
+     \myvec{a & b & 1 & 0 \\ 0 & d & 0 & 1} &\xleftrightarrow{R_1 = R_1/a}\myvec{1 & \frac{b}{a} & \frac{1}{a} & 0 \\ 0 & d & 0 & 1}\\
+     &\xleftrightarrow{R_1 = R_1 - R_2\times\frac{b}{ad}}\myvec{1 & 0 & \frac{1}{a} & -\frac{b}{ad} \\ 0 & d & 0 & 1}\nonumber\\
+     &\xleftrightarrow{R_2 = R_2/d}\myvec{1 & 0 & \frac{1}{a} & -\frac{b}{ad} \\ 0 & 1 & 0 & \frac{1}{d}} \nonumber
+\end{align}
+\end{enumerate}
+Therefore, When we consider $c=0$, the matrix is invertible if $ad\neq0$, which is included in the condition $ad-bc\neq0$.\par
+Hence, it is proved from above three cases that the given matrix is invertible iff $ad - bc \neq 0$. 
