@@ -1,0 +1,23 @@
+Here $T$ is a linear operator on $V$ and $B$ is an ordered basis of $V$.
+Let us consider $[T]_B = A$, so $A = \myvec{a & b\\c & d}$.
+
+Now, the characteristic equation of $A$ is:
+\begin{align}
+\mydet{A-\lambda I}=0\\
+\implies \mydet{a-\lambda & b\\c & d-\lambda}=0\\
+\implies \lambda^2 - (a+d)\lambda + (ad-bc)=0
+\end{align}
+According to the Cayley-Hamilton's Theorem, every square matrix satisfies its own characteristic equation. Here $A$ is a 2x2 square matrix, so it should also satisfy its characteristic equation.
+
+Now,
+\begin{align}
+\lambda^2 - (a+d)\lambda + (ad-bc)=0\\
+\implies A^2 - (a+d)A + (ad-bc)I=0
+\label{eq:solutions/3/4/4/eqn:1}
+\end{align}
+
+We can also write the equation \ref{eq:solutions/3/4/4/eqn:1} as:
+\begin{align}
+[T]_B^2 - (a+d)[T]_B + (ad-bc)I=0\\
+\text{or, } T^2 - (a+d)T + (ad-bc)I=0
+\end{align}

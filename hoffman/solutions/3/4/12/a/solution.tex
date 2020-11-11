@@ -1,0 +1,31 @@
+Given that, 
+\begin{align}
+    T: V \xrightarrow{} V \\
+    [T(\alpha)]_\mathcal{B} = A[\alpha]_{\mathcal{B}} \\
+    T\alpha_{j} = \alpha_{j+1} \\
+    T\alpha_{n} = 0
+\end{align}
+where $j = 1,\ldots, n-1$. 
+The matrix A of T in the ordered basis $\mathcal{B}$ is given by, 
+\begin{align}
+    \implies A &= \myvec{[T\alpha_1]_{\mathcal{B}} & \cdots & [T\alpha_n]_{\mathcal{B}}} \label{eq:solutions/3/4/12/a/A_basis}
+\end{align}
+For $j = 1,\ldots, n-1$ we have,
+\begin{align}
+    T\alpha_{j} = \alpha_{j+1}
+\end{align}
+we can write, 
+\begin{align}
+    &T\alpha_{j} = 0\alpha_{1} + \ldots + 0\alpha_{j} + 1\alpha_{j+1} + \ldots + 0\alpha_{n} \\
+    &\implies [T\alpha_{j}]_{\mathcal{B}} = (0,\ldots,0, 1,0,\ldots, 0)^{T} \label{eq:solutions/3/4/12/a/talpha_j}
+\end{align}
+where 1 is in ($j+1$)th position. Now,
+\begin{align}
+    T\alpha_{n} &= 0 \\
+    \implies [T\alpha_{n}]_{\mathcal{B}} &= 0 \label{eq:solutions/3/4/12/a/talpha_n}
+\end{align}
+Thus from \eqref{eq:solutions/3/4/12/a/A_basis}, \eqref{eq:solutions/3/4/12/a/talpha_j} and \eqref{eq:solutions/3/4/12/a/talpha_n} we get matrix A of T in the ordered basis $\mathcal{B}$ as,
+\begin{align}
+    A = \myvec{0&0&0&0&\cdots&0&0& \\ 1&0&0&0&\cdots&0&0 \\ 0&1&0&0&\cdots&0&0 \\ 0&0&1&0&\cdots&0&0 \\ \vdots&\vdots&\vdots&\vdots&\ddots&\vdots&\vdots \\ 0&0&0&0&\cdots&1&0}
+\end{align}
+

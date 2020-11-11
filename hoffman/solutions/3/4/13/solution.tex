@@ -1,0 +1,42 @@
+Given,
+\begin{equation}\label{eq:solutions/3/4/13/eq1}
+	T = \displaystyle \sum_{p=1}^m \displaystyle \sum_{q=1}^n A_{pq}E^{p,q}
+\end{equation}
+where
+\begin{align}
+	E^{p,q}(\alpha_i) &=
+	\begin{cases}
+	\beta_p & p=i\\
+	0 & \text{otherwise}
+	\end{cases}\\
+	\label{eq:solutions/3/4/13/eq3}&= \delta_{iq}\beta_p
+\end{align}
+where $\mathcal{B} = \{\alpha_1, \dots, \alpha_n\}$ is basis of $V$ and $\mathcal{B}' = \{\beta_1, \dots, \beta_n\}$ is basis of $W$.
+\\
+\\
+Consider a vector $\vec{x} = \{x_1, x_2, \dots, x_n\} \in V$,
+\begin{align}\label{eq:solutions/3/4/13/eq4}
+	\vec{x} &= \displaystyle\sum_{q=1}^{n}x_q \vec{\alpha}_q\\
+	\therefore E^{p,q}(\vec{x}) &= \displaystyle\sum_{q=1}^{n}x_qE^{p,q}(\alpha_q)\\
+	\label{eq:solutions/3/4/13/eq6}&= x_q \delta_{iq}\beta_p
+\end{align}
+Consider $T(\vec{x})$, from \eqref{eq:solutions/3/4/13/eq1}
+\begin{align}\label{eq:solutions/3/4/13/eq7}
+	T(\vec{x}) 
+	&= \displaystyle \sum_{p=1}^m \displaystyle \sum_{q=1}^n A_{pq}E^{p,q}(\vec{x})
+\end{align}
+Substitute \eqref{eq:solutions/3/4/13/eq6} in \eqref{eq:solutions/3/4/13/eq7}
+\begin{align}\label{eq:solutions/3/4/13/eq8}
+	T(\vec{x}) &= \displaystyle \sum_{p=1}^m \displaystyle \sum_{q=1}^n A_{pq}x_p \delta_{iq}\beta_q
+\end{align}
+\\
+From \eqref{eq:solutions/3/4/13/eq3}, $\delta_{iq}\beta_q$ is the transformation of basis of $V$ to $W$. Hence $T: V \rightarrow W$ is\\
+\begin{align}
+	T &= \myvec{\sum_{p=1}^nA_{p1}x_p\\\sum_{p=1}^nA_{p2}x_p\\\vdots\\\sum_{p=1}^nA_{pm}x_p}\\
+	T &= \myvec{A_{11} & A_{12} & \dots & A_{1n}\\
+	A_{21} & A_{22} & \dots & A_{2n}\\
+	\vdots & \vdots & \dots & \vdots\\
+	A_{m1} & A_{m2} & \dots & A_{mn}}\myvec{x_1\\x_2\\\vdots\\x_n}
+\end{align}
+\\\\
+$\therefore$ We showed that the matrix $A$ with entries $A(p,q) = A_{pq}$ is precisely the matrix of $T$ relative to the pair $\mathcal{B},\mathcal{B}'$.

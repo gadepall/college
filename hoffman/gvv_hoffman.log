@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  10 NOV 2020 22:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  11 NOV 2020 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3193,18 +3193,56 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 7981) has occurred while \output is active []
 
 )
-(./solutions/3/4/5/solution.tex
+(./solutions/3/4/4/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [85])
+(./solutions/3/4/5/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 (./solutions/3/4/10/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)) [86]
+ [86])
+(./solutions/3/4/12/a/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+\OT1/txr/m/n/12 Thus from [], [] and
+ []
+
+) (./solutions/3/4/13/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87]
+Underfull \hbox (badness 10000) in paragraph at lines 13--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 40--81
+
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 40--81
+\U/txsya/m/n/12 )$ \OT1/txr/m/n/12 We showed that the ma-trix $\OML/txmi/m/it/1
+2 A$ \OT1/txr/m/n/12 with
+ []
+
+) [88
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
-
-(./gvv_hoffman.aux)
+ (./gvv_hoffman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
 Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
@@ -3212,10 +3250,10 @@ Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 329.
  ) 
 Here is how much of TeX's memory you used:
- 45074 strings out of 480608
- 1037751 string characters out of 5892806
- 1421664 words of memory out of 5000000
- 57871 multiletter control sequences out of 15000+600000
+ 45136 strings out of 480608
+ 1038891 string characters out of 5892806
+ 1422490 words of memory out of 5000000
+ 57884 multiletter control sequences out of 15000+600000
  627878 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1086s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3238,10 +3276,10 @@ lic/txfonts/txsyc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.term
 ux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (86 pages, 1015497 bytes).
+Output written on gvv_hoffman.pdf (88 pages, 1023944 bytes).
 PDF statistics:
- 3042 PDF objects out of 3580 (max. 8388607)
- 2826 compressed objects within 29 object streams
- 1837 named destinations out of 2073 (max. 500000)
+ 3103 PDF objects out of 3580 (max. 8388607)
+ 2885 compressed objects within 29 object streams
+ 1877 named destinations out of 2073 (max. 500000)
  265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
