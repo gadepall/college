@@ -1,0 +1,20 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item Let $\mathbb{V}$ be the vector space of all $2 \times 2$ matrices over the field of real numbers, and let
+\begin{align}
+\vec{B} &= \myvec{2&-2\\-1&1}
+\end{align}
+Let $\mathbb{W}$ be the subspace of $\mathbb{V}$ consisting of all $\vec{A}$ such that $\vec{AB} = 0$. Let $f$ be a linear functional on $\mathbb{V}$ which is in the annihilator of $\mathbb{W}$. Suppose that $f(\vec{I}) = 0$ and $f(\vec{C}) = 3$, where $\vec{I}$ is the $2 \times 2$ identity matrix and
+\begin{align}
+\vec{C} &= \myvec{0&0\\0&1}
+\end{align}
+Find $f(\vec{B})$
+%
+\\
+\solution
+%\input{./solutions/3/5/9/solution.tex}
+\end{enumerate}
