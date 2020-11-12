@@ -1,0 +1,23 @@
+From the equation $\eqref{eq:solutions/3/4/6/c/Tx}$, the matrix of T in standard order basis is,
+\begin{align}
+\vec{T}=\myvec{0&-1\\1&0}\label{eq:solutions/3/4/6/c/matT}
+\end{align}
+To find the invertibility of the operator $\brak{\vec{T}-c\vec{I}}$ for every real number c, let us start with
+\begin{align}
+\brak{\vec{T}-c\vec{I}}\brak{\vec{T}+c\vec{I}}\\
+=\vec{T}^2-c^2\vec{I}\label{eq:solutions/3/4/6/c/eq1}
+\end{align}
+Consider $\vec{T}^2$
+\begin{align}
+\vec{T}^2=\myvec{0&-1\\1&0}\myvec{0&-1\\1&0}=\myvec{-1&0\\0&-1}
+\implies \vec{T}^2=-\vec{I}\label{eq:solutions/3/4/6/c/eq2}
+\end{align}
+Substituting equation \eqref{eq:solutions/3/4/6/c/eq2} in \eqref{eq:solutions/3/4/6/c/eq1}, 
+\begin{align}
+\brak{\vec{T}-c\vec{I}}\brak{\vec{T}+c\vec{I}}=-\brak{1+c^2}\vec{I}\label{eq:solutions/3/4/6/c/eq3}
+\end{align}
+As c is a real number, $c^2\ge0$ and hence factor $-\brak{1+c^2}$ is always non-zero. Therefore, from the equation \eqref{eq:solutions/3/4/6/c/eq3},
+\begin{align}
+\brak{\vec{T}-c\vec{I}}^{-1}=\frac{-1}{1+c^2}\brak{\vec{T}+c\vec{I}}\label{eq:solutions/3/4/6/c/eq4}
+\end{align}
+Hence the operator $\brak{T-cI}$ is invertible and its inverse is given by the equation \eqref{eq:solutions/3/4/6/c/eq4}
