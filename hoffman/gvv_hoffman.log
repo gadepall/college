@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  12 NOV 2020 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  13 NOV 2020 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3191,56 +3191,66 @@ Overfull \hbox (5.15106pt too wide) in paragraph at lines 94--94
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ))
-(./chapters/3/3.4.tex (./solutions/3/4/1/d/solution.tex [85])
+(./chapters/3/3.4.tex (./solutions/3/4/1/c/solution.tex [85])
+(./solutions/3/4/1/d/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 (./solutions/3/4/4/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+ [86])
 (./solutions/3/4/5/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86])
-(./solutions/3/4/6/c/solution.tex) (./solutions/3/4/7/a/solution.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 )
-(./solutions/3/4/10/solution.tex
+(./solutions/3/4/6/c/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [87])
+(./solutions/3/4/7/a/solution.tex) (./solutions/3/4/10/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 (./solutions/3/4/12/a/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [88]
 Underfull \hbox (badness 10000) in paragraph at lines 26--28
 \OT1/txr/m/n/12 Thus from [], [] and
  []
 
 ) (./solutions/3/4/13/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88]
 Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 40--101
+Underfull \hbox (badness 10000) in paragraph at lines 40--115
 
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 40--101
+Underfull \hbox (badness 4872) in paragraph at lines 40--115
 \U/txsya/m/n/12 )$ \OT1/txr/m/n/12 We showed that the ma-trix $\OML/txmi/m/it/1
 2 A$ \OT1/txr/m/n/12 with
  []
 
-) (./chapters/3/3.5.tex) [89]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [89])
+(./chapters/3/3.5.tex) [90
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
  (./gvv_hoffman.aux)
@@ -3251,10 +3261,10 @@ Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 45186 strings out of 480608
- 1039815 string characters out of 5892806
- 1427064 words of memory out of 5000000
- 57896 multiletter control sequences out of 15000+600000
+ 45206 strings out of 480608
+ 1040161 string characters out of 5892806
+ 1427234 words of memory out of 5000000
+ 57899 multiletter control sequences out of 15000+600000
  627878 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3277,10 +3287,10 @@ lic/txfonts/txsyc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.term
 ux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (89 pages, 1028949 bytes).
+Output written on gvv_hoffman.pdf (90 pages, 1031903 bytes).
 PDF statistics:
- 3151 PDF objects out of 3580 (max. 8388607)
- 2928 compressed objects within 30 object streams
- 1903 named destinations out of 2073 (max. 500000)
+ 3173 PDF objects out of 3580 (max. 8388607)
+ 2949 compressed objects within 30 object streams
+ 1917 named destinations out of 2073 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 

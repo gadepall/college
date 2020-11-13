@@ -1,0 +1,31 @@
+We know that,
+\begin{align}
+[T\alpha]_{\beta^{'}}=\vec{A}[\alpha]_{\beta}\label{eq:solutions/3/4/2/a/T}
+\end{align}
+where $\vec{A}$ is called the matrix of T relative to ordered basis $\beta$, $\beta^{'}$ and $\alpha$ is any vector in the space formed using basis vectors $\beta$.
+Using the ordered basis,
+\begin{align}
+\beta=\myvec{1&0&0\\0&1&0\\0&0&1}\\
+\beta^{'}=\myvec{1&0\\0&1}
+\end{align}
+Now, Let's consider the equation given in the question,
+\begin{align}
+T\myvec{x_1\\x_2\\x_3}=\myvec{x_1+x_2\\2x_3-x_1}
+\end{align}
+R.H.S of the equation can be written as a product of 2$\times$3 and 3$\times$1 matrices,
+\begin{align}
+=\myvec{1&1&0\\-1&0&2}\myvec{x_1\\x_2\\x_3}
+\end{align}
+Hence the transformation matrix is,
+\begin{align}
+\myvec{1&1&0\\-1&0&2}
+\end{align}
+Now, since the transformation has to be found relative to the pair $\vec{\beta}$, $\vec{\beta^{'}}$ we should row reduce,
+\begin{align}
+\myvec{1&0&\vline&1&1&0\\0&1&\vline&-1&0&2}
+\end{align}
+but from here we can see that $\vec{\beta^{'}}$ is already an identity matrix and hence no row reduction is required. So by using \eqref{eq:solutions/3/4/2/a/T} we can say that,
+\begin{align}
+[T\alpha]_{\beta^{'}}=\myvec{1&1&0\\-1&0&2}[\alpha]_{\beta}
+\end{align}
+

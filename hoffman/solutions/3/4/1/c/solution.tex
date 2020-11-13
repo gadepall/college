@@ -1,0 +1,31 @@
+\begin{align}
+\intertext{Let}
+ \beta = \myvec{1 & 0\\ 0 & 1}
+\intertext{We have }\vec{\alpha_1} = \myvec{1 \\ i},\vec{\alpha_2} = \myvec{-i \\ 2} \label{eq:solutions/3/4/1/c/1}\\
+\intertext{So,}
+\beta' = \myvec{1 & -i\\ i &2}
+\end{align}
+Geometrically, \textbf{T} is a projection onto the x-axis. 
+\begin{align}
+\intertext{ For projection, let Consider Matrix A as} \vec{A} = \myvec{1 & 0 \\ 0 & 0 } 
+\end{align}
+The matrix  $\vec{A}$ is representation  of the linear transformation \textbf{T} that is projection on x-axis.
+After applying linear operator \textbf{T} on it,
+
+\begin{multline}
+\textbf{T}\brak{\beta'}  = \vec{A}\beta'= \myvec{1 & 0 \\ 0 & 0 }\myvec{1 & -i \\ i & 2}=\myvec{ 1 & -i \\ 0 & 0} \label{eq:solutions/3/4/1/c/2.1}
+\end{multline}
+Now, for finding the matrix of \textbf{T} in the ordered basis $\beta'$,we combine the \ref{eq:solutions/3/4/1/c/1} and \ref{eq:solutions/3/4/1/c/2.1}  and  use concept of row-reduction of  the augmented matrix:
+\begin{align}
+\myvec{1&-i& 1 & -i \\ i& 2 & 0 & 0 } &\xleftrightarrow{R_2 = R_2 - iR_1}\myvec{1&-i&1 & -i  \\ 0 &1 & -i & -1}\\
+&\xleftrightarrow{R_1=R_1 +iR_2}\myvec{1 &0&2 & -2i\\0 &1 &-i &-1 \\ }
+\end{align}
+
+Hence, the matrix of \textbf{T} in the ordered basis $\beta'$ is
+\begin{align}
+\textbf{B} = \myvec{2 & 2i \\ -i & -1}
+\end{align}
+And this can also be represented using   $\beta$  and $\beta'$, which shows the relation between \textbf{T}, $\beta$  and $\beta'$ .
+\begin{align}
+\textbf{T}\brak{\vec{\beta}} =\vec{\textbf{A}}\vec{\beta} =\vec{\textbf{B}}\vec{\beta^{'}}   
+\end{align}

@@ -15,4 +15,4 @@
 \contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{68}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Isomorphism}{77}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{85}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Linear Functionals}{89}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Linear Functionals}{90}{subsection.3.5}%
