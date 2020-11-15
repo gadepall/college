@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  13 NOV 2020 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  15 NOV 2020 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2629,25 +2629,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (./solutions/2/3/7/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
-(./solutions/2/3/8/solution.tex
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45]
+ [45])
+(./solutions/2/3/8/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46])
-(./solutions/2/3/9/solution.tex) (./solutions/2/3/12/solution.tex
+(./solutions/2/3/9/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(./solutions/2/3/13/solution.tex
+(./solutions/2/3/12/solution.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
+(./solutions/2/3/13/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
@@ -2669,7 +2670,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ))
 (./chapters/2/2.4.tex (./solutions/2/4/1/solution.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4441) has occurred while \output is active []
 
  [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2994,7 +2995,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--3
 
  []
 
-<./solutions/3/2/1/a/Python_Code/Reflection.png, id=2055, 462.528pt x 346.896pt
+<./solutions/3/2/1/a/Python_Code/Reflection.png, id=2058, 462.528pt x 346.896pt
 >
 File: ./solutions/3/2/1/a/Python_Code/Reflection.png Graphic file (type png)
 <use ./solutions/3/2/1/a/Python_Code/Reflection.png>
@@ -3005,7 +3006,7 @@ n input line 26.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [68]
-<./solutions/3/2/1/a/Python_Code/projection.png, id=2083, 462.528pt x 346.896pt
+<./solutions/3/2/1/a/Python_Code/projection.png, id=2086, 462.528pt x 346.896pt
 >
 File: ./solutions/3/2/1/a/Python_Code/projection.png Graphic file (type png)
 <use ./solutions/3/2/1/a/Python_Code/projection.png>
@@ -3191,7 +3192,15 @@ Overfull \hbox (5.15106pt too wide) in paragraph at lines 94--94
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ))
-(./chapters/3/3.4.tex (./solutions/3/4/1/c/solution.tex [85])
+(./chapters/3/3.4.tex (./solutions/3/4/1/a/solution.tex [85])
+(./solutions/3/4/1/b/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(./solutions/3/4/1/c/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86])
 (./solutions/3/4/1/d/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3199,34 +3208,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (./solutions/3/4/4/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86])
+ [87])
 (./solutions/3/4/5/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(./solutions/3/4/6/c/solution.tex
+(./solutions/3/4/6/c/solution.tex) (./solutions/3/4/7/a/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87])
-(./solutions/3/4/7/a/solution.tex) (./solutions/3/4/10/solution.tex
+ [88])
+(./solutions/3/4/10/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
 (./solutions/3/4/12/a/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88]
+ [89]
 Underfull \hbox (badness 10000) in paragraph at lines 26--28
 \OT1/txr/m/n/12 Thus from [], [] and
  []
 
 ) (./solutions/3/4/13/solution.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 31--34
@@ -3234,23 +3243,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--34
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 40--115
+Underfull \hbox (badness 10000) in paragraph at lines 40--125
 
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 40--115
+Underfull \hbox (badness 4872) in paragraph at lines 40--125
 \U/txsya/m/n/12 )$ \OT1/txr/m/n/12 We showed that the ma-trix $\OML/txmi/m/it/1
 2 A$ \OT1/txr/m/n/12 with
  []
 
+) (./chapters/3/3.5.tex [90] (./solutions/3/5/16/solution.tex
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [89])
-(./chapters/3/3.5.tex) [90
-
-]
+)) [91]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
  (./gvv_hoffman.aux)
@@ -3261,10 +3268,10 @@ Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 45206 strings out of 480608
- 1040161 string characters out of 5892806
- 1427234 words of memory out of 5000000
- 57899 multiletter control sequences out of 15000+600000
+ 45250 strings out of 480608
+ 1040974 string characters out of 5892806
+ 1426404 words of memory out of 5000000
+ 57905 multiletter control sequences out of 15000+600000
  627878 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,641b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3287,10 +3294,10 @@ lic/txfonts/txsyc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.term
 ux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (90 pages, 1031903 bytes).
+Output written on gvv_hoffman.pdf (91 pages, 1038840 bytes).
 PDF statistics:
- 3173 PDF objects out of 3580 (max. 8388607)
- 2949 compressed objects within 30 object streams
- 1917 named destinations out of 2073 (max. 500000)
+ 3215 PDF objects out of 3580 (max. 8388607)
+ 2990 compressed objects within 30 object streams
+ 1946 named destinations out of 2073 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 

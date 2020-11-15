@@ -1,0 +1,80 @@
+See Tables \ref{table:solutions/3/5/16/1} and \ref{table:solutions/3/5/16/2}
+
+\begin{table}[h!]
+\begin{center}
+\resizebox{\columnwidth}{!}
+{
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Given &  $W$ is the space of $n \times n$ matrices over\\
+&  the field $F$\\
+ & \\
+& $f$ is a linear functional on $W$, that\\
+& $f(AB) = f(BA)$\\
+& \\
+\hline
+& \\
+To prove & $f$ is scalar multiple of trace \\
+& $f(A) = c\times \text{trace}(A)$\\
+ & and\\
+& If $f(I)=n$, then $f$ is the trace\\
+& $f(A) = \text{trace}(A)$\\
+& \\
+\hline
+& \\
+Basis & Let $\{E^{pq}, 1\leq p,q \leq n\}$ be the basis\\
+of $W$ &  of $W$ where $E^{pq}$ is a  $n \times n$ matrix\\
+& \\
+& $E^{pq} = \begin{cases} 1  \quad pq^{th} \text{-position}\\ 0 \quad \text{everywhere else}\end{cases}$\\
+& \\
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{}
+\label{table:solutions/3/5/16/1}
+\end{table}
+\begin{table}[h!]
+\begin{center}
+\resizebox{\columnwidth}{!}
+{
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Find $f(E^{pq})$ & If $p=q$, we know $I = \displaystyle\sum_{p,q = 1}^n E^{pp}$ then\\
+& $f(I) = \displaystyle\sum_{p,q = 1}^n f(E^{pp}) \implies f(I) = n f(E^{pp})$\\ 
+& \\
+ & $\implies f(E^{pp}) = \frac{f(I)}{n}$\\
+& \\
+ & If $p \neq q$, then \\
+& \\
+& $f(E^{pq}) =  f(E^{p1}E^{1q}) = f(E^{1q}E^{p1}) = \vec{0} $\\
+& \\
+& $\text{trace}(E^{pq}) = \begin{cases}1 \quad \text{if $i=j$}\\ 0 \quad \text{if $i\neq j$}\end{cases}$\\
+& \\
+& $\therefore f(E^{pq}) = \frac{f(I)}{n}\text{trace}(E^{pq})$\\
+& \\
+\hline
+& \\
+Proof & Let $A \in W$, then $A = \displaystyle\sum_{p,q = 1}^n c^{pq}E^{pq}$\\
+$\left( find \enspace f(A)\right)$ & \\
+& Also, $\text{trace}(A) = \displaystyle\sum_{p,q = 1}^n c^{pq}\text{trace}(E^{pq})$\\
+ & \\
+ & Since $f$ is linear, $f(A) = \displaystyle\sum_{p,q = 1}^n c^{pq}f(E^{pq})$\\
+ & \\
+ & $f(A) = \displaystyle\sum_{p,q = 1}^n c^{pq}\left(\frac{f(I)}{n}\text{trace}(E^{pq})\right)$\\
+ & \\
+& $f(A) = \frac{f(I)}{n}\text{trace}(A)$\\
+& \\
+& Hence $f$ is a scalar multiple of trace.\\
+& \\
+& If $f(I)=n$, then $f(A) = \text{trace}(A)$\\
+& Hence $f$ is the trace function\\
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{}
+\label{table:solutions/3/5/16/2}
+\end{table}

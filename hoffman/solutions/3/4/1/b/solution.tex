@@ -1,0 +1,36 @@
+Transformation T from $C^{2}$ to $C^{2}$. Let
+\begin{align}
+    \beta = \myvec{1&0\\0&1}
+\end{align}
+\begin{align}
+ \beta^{'}= \myvec{1&-i\\i&2}
+\end{align}
+T is defined by
+\begin{align}
+   T\brak{\vec{x}} = \vec{A}\vec{x}
+ \end{align}
+ \begin{align}
+    T\brak{\beta}=\myvec{1&0\\0&0}{\beta}
+\end{align}
+\begin{align}
+    T\brak{\beta}=\myvec{1&0\\0&0}\myvec{1&0\\0&1}
+    =\myvec{1&0\\0&0}
+\end{align}
+To find relative matrix we will use row reduce augmented matrix.
+\begin{align}
+    \myvec{1&-i&1&0\\i&2&0&0}
+\end{align}
+\begin{align}
+\myvec{1&-i&1&0\\i&2&0&0}
+\xleftrightarrow[R_1\rightarrow R_1+iR_2]{R_2\rightarrow R_2-iR_1}
+\myvec{1&0&2&0\\0&1&-i&0}
+\end{align}
+Hence the matrix of T in the order basis of $\beta^{'}$
+\begin{align}
+    \vec{B}=\myvec{2&0\\-i&0}
+\end{align}
+ Therefore matrix of relative to the pair $\beta$ , $\beta^{'}$  
+ \begin{align}
+  T\brak{\vec{\beta}}=\vec{A}\beta = \vec{B}\beta^{'}=\myvec{2&0\\-i&0}\vec{\beta^{'}}   
+ \end{align}
+

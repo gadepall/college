@@ -1,0 +1,48 @@
+\begin{align}
+    \beta = \{\epsilon_1 , \epsilon_2\}\implies 
+    \epsilon_1=\myvec{1\\0},\epsilon_2=\myvec{0\\1}
+\end{align}
+Hence,$\beta$ as  matrix 
+\begin{align}
+    \beta=\myvec{1&0\\0&1}
+\end{align}
+\begin{align}
+ \beta^{'}=\{\alpha_1 , \alpha_2\}\implies
+  \alpha_1 = \myvec{1\\i} , \alpha_2 = \myvec{-i\\2}
+  \end{align}
+ Hence, $\beta^{'}$ as matrix 
+  \begin{align}
+     \beta^{'} =\myvec{
+     1&-i\\i&2
+     }
+  \end{align}
+Geometrically, \textbf{T} is a projection onto the x-axis.
+\begin{align}
+\intertext{ For projection, let Consider Matrix A as} 
+    {\vec{A}}=\myvec{1&0\\0&0}
+\end{align}
+The matrix  $\vec{A}$ is representation  of the linear transformation \textbf{T} that is projection on x-axis.
+After applying linear operator \textbf{T} on it,
+\begin{multline}
+\textbf{T}\brak{\beta}  = \vec{A}\beta= \myvec{1 & 0 \\ 0 & 0 }\myvec{1 & 0 \\ 0 & 1}=\myvec{ 1 & 0\\ 0 & 0} \label{eq:solutions/3/4/1/a/2.1}
+\end{multline}
+ \begin{align}
+    \myvec{
+    1&-i&1&0\\i&2&0&0
+    }
+    &\xleftrightarrow{R_2=R_2-i{R_1}}
+    \myvec{
+    1&-i &1&0\\0&1&-i&0
+    }
+ \end{align}
+  \begin{align}
+    &\xleftrightarrow{R_1=R_1+i{R_2}}
+    \myvec{
+    1&0 &2&0\\0&1&-i&0
+    }
+ \end{align}
+ Therefore matrix of relative to the pair  $\beta$ , $\beta^{'}$
+ \begin{align}
+  \vec{T}\brak{\vec{\beta}}=\myvec{2&0\\-i&0}\vec{\beta^{'}}   
+ \end{align}
+
