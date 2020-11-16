@@ -1,0 +1,34 @@
+Two matrices $\vec{A}$ and $\vec{B}$ are said to be similar iff there exists a invertible matrix $\vec{P}$ such that:
+\begin{align} \label{eq:solutions/3/4/8/eq:2_1}
+    \vec{B} = \vec{P^{-1}}\vec{A}\vec{P}
+\end{align}
+Let,
+\begin{align}
+    \vec{A} = \myvec{\cos{\theta} & -\sin{\theta} \\ \sin{\theta} & \cos{\theta}}; \quad
+    \vec{B} = \myvec{e^{i\theta} & 0 \\ 0 & e^{-i\theta}} \label{eq:solutions/3/4/8/eq:3_1}
+\end{align}
+Finding the characteristic polynomial of $\vec{A}$,
+\begin{align}
+    \mydet{A-\lambda I} &= 
+    \mydet{\cos{\theta}-\lambda & -\sin{\theta} \\ 
+    \sin{\theta} & \cos{\theta}-\lambda} \nonumber \\
+    &= (\cos{\theta-\lambda})^2 + \sin^2{\theta} \nonumber \\
+    &= 1+\lambda^2+2\lambda\cos{\theta} \label{eq:solutions/3/4/8/eq:3_2}
+\end{align}
+The eigenvalues can be calculated by equating the characteristic polynomial to zero. The eigenvalues are,
+\begin{align}
+    \lambda_1 = \cos{\theta} + i \sin{\theta}; \:
+    \lambda_2 = \cos{\theta} - i \sin{\theta} \label{eq:solutions/3/4/8/eq:3_3}
+\end{align}
+The eigenvectors corresponding to \eqref{eq:solutions/3/4/8/eq:3_3} are,
+\begin{align}
+    \alpha_1 = \myvec{i \\ 1}; \: \alpha_2 = \myvec{-i \\ 1} \label{eq:solutions/3/4/8/eq:3_4} \\
+    \vec{P} = \myvec{\alpha_1 & \alpha_2} = \myvec{i & -i \\ 1 & 1} \label{eq:solutions/3/4/8/eq:3_5} 
+\end{align}
+Now,
+\begin{align}
+    \vec{P^{-1}}\vec{A}\vec{P} &= \frac{1}{2i} \myvec{1 & i \\ -1 & i} \myvec{\cos{\theta} & -\sin{\theta} \\ \sin{\theta} & \cos{\theta}} \myvec{i & -i \\ 1 & 1} \nonumber \\
+    &= \myvec{\cos{\theta} + i \sin{\theta} & 0 \\ 0 & \cos{\theta} - i \sin{\theta}} \nonumber \\
+    &= \myvec{e^{i\theta} & 0 \\ 0 & e^{-i\theta}} = \vec{B} \label{eq:solutions/3/4/8/eq:3_6}
+\end{align}
+Hence, from \eqref{eq:solutions/3/4/8/eq:3_6}, $\vec{A}$ and $\vec{B}$ are similar matrices. 

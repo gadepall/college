@@ -1,0 +1,70 @@
+Refer Table \ref{eq:solutions/3/3/6/table:1}.
+
+Therefore from equation \eqref{eq:solutions/3/3/6/eq:eq2} and \eqref{eq:solutions/3/3/6/eq:eq3} in Table \ref{eq:solutions/3/3/6/table:1}, $\{T(\vec{v_1}), T(\vec{v_2}),\cdots,T(\vec{v_n})\}$ are linearly independent and span $\vec{W}$.\\
+
+$\implies \dim{\vec{W}}$ = n = $\dim{\vec{V}}$\\
+
+$\vec{V}$ and $\vec{W}$ are isomorphic if and only if $\dim{\vec{V}}$ = $\dim{\vec{W}}$
+
+
+\begin{table*}[ht!]
+\begin{center}
+\resizebox{2\columnwidth}{!}
+{
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{
+T : $\vec{V}$ $\xrightarrow{}$ $\vec{W}$ \quad $\vec{V} = \{\vec{v_1}, \vec{v_2},\cdots,\vec{v_n}\}$ \quad $\vec{W} = \{T(\vec{v_1}), T(\vec{v_2}),\cdots,T(\vec{v_n})\}$}\\[1ex]
+\hline
+\textbf{Property Used} & \textbf{Derivation} \\[0.5ex]
+\hline
+\text{T is one-one} & 
+\text{Linear combination of vectors in $\vec{W}$}\\
+& \parbox{10cm}{\begin{align}
+    \sum_{k=1}^{n} \alpha_kT(\vec{v_k}) = \vec{0} \label{eq:solutions/3/3/6/eq:eq1}\\
+    \sum_{k=1}^{n} T(\alpha_k\vec{v_k}) = \vec{0}\\
+    \implies \sum_{k=1}^{n} \alpha_k\vec{v_k} = \vec{0}\\
+    \implies \alpha_1=\alpha_2=\cdots=\alpha_n=0 \label{eq:solutions/3/3/6/eq:eq2}
+\end{align}} \\
+& From equation \eqref{eq:solutions/3/3/6/eq:eq1} and \eqref{eq:solutions/3/3/6/eq:eq2}, the set of vectors $\{T(\vec{v_1}), T(\vec{v_2}),\cdots,T(\vec{v_n})\}$ \\ &are linearly independent
+\\ [0.5ex] 
+\hline
+\text{T is onto} & 
+\text{For any $\vec{y} \in \vec{W}$ there exists an $\vec{x} \in \vec{V}$ such that $T(\vec{x}) = \vec{y}$.}\\
+& \parbox{10cm}{\begin{align}
+    \vec{x} = \sum_{k=1}^{n} \alpha_k\vec{v_k}\\
+    T(\vec{x}) = T(\sum_{k=1}^{n} \alpha_k\vec{v_k} ) = \vec{y}\\
+    \sum_{k=1}^{n} \alpha_kT(\vec{v_k}) = \vec{y} \label{eq:solutions/3/3/6/eq:eq3}
+\end{align}} \\
+& From equation \eqref{eq:solutions/3/3/6/eq:eq3}, any vector in $\vec{W}$ can be represented as linear combination\\ & of $\{T(\vec{v_1}), T(\vec{v_2}),\cdots,T(\vec{v_n})\}$. That is it spans $\vec{W}$.
+\\ [0.5ex] 
+\hline
+\end{tabular}
+}
+\caption{Derivation}
+\label{eq:solutions/3/3/6/table:1}
+\end{center}
+%\vspace{-0.5cm}
+\end{table*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

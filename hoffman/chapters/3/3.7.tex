@@ -1,0 +1,30 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item Let $\mathbb{F}$ be a field and let $f$ be the linear functional on $\mathbb{F}^2$ defined by,
+\begin{align}
+f(x_1,x_2) = ax_1+bx_2
+\end{align}
+\begin{enumerate}
+\item For the linear operator $T(x_1,x_2) = (x_1,0)$\\
+Let, $g = T^ty$ and find $g(x_1,x_2)$
+%
+\\
+\solution
+\input{./solutions/3/7/1/a/solution.tex}
+\end{enumerate}
+%
+\item Let V be the vector space of all polynomial function over the field of real numbers. Let a and b be fixed real numbers and let f be the linear functional on V defined by  
+\begin{align}
+    f\brak{p} = \int_{a}^{b} p\brak{x} \,dx
+\end{align}
+If D is the differentiation operator on V , what is $D^{t}f$ ?
+%
+\\
+\solution
+\input{./solutions/3/7/2/solution.tex}
+\end{enumerate}

@@ -1,0 +1,27 @@
+Let,
+\begin{align}
+\vec{T} : \vec{V} \rightarrow \mathbb{R}^2\\
+\vec{T}(x+iy)=\myvec{x\\y} \label{eq:solutions/3/3/1/eq:1}\\
+x,y \in \mathbb{R} \quad i \in \mathbb{C}
+\end{align}
+Consider two vectors,
+\begin{align}
+\vec{u},\vec{v} \in \vec{V} 
+\end{align}
+Using \eqref{eq:solutions/3/3/1/eq:1} if $\vec{T}$ is Linear Transformation. 
+\begin{align}
+\vec{T}(\vec{u}+c\vec{v})= \vec{T}(\vec{u})+\vec{T}(c\vec{v})=\vec{T}(\vec{u})+c\vec{T}(\vec{v})
+\end{align}
+Hence this is a Linear transformation. Now, checking if $\vec{T}$ is one-one. let,
+\begin{align}
+\vec{u}=0 = 0+j0\\
+\end{align}
+from \eqref{eq:solutions/3/3/1/eq:1},
+\begin{align}
+\vec{T}(\vec{u})=\myvec{0\\0}\label{eq:solutions/3/3/1/eq:2}
+\end{align}
+From \eqref{eq:solutions/3/3/1/eq:2} we see $\vec{T}$ is one-one. Now, checking if $\vec{T}$ is onto. let,
+\begin{align}
+\vec{T}(\vec{u}) =\myvec{a\\b} \label{eq:solutions/3/3/1/eq:3}
+\end{align}
+where, $a$, $b$ are scalars. Using \eqref{eq:solutions/3/3/1/eq:1}, we see there exists a solution for \eqref{eq:solutions/3/3/1/eq:2} for all $a$, $b$. Hence $\vec{T}$ is onto. Therefore $\vec{T}$ is isomorphic over $\vec{V}$ and $\mathbb{R}^2$

@@ -1,0 +1,36 @@
+The linear functional $f$ on $\mathbb{F}^2$ is defined by,
+\begin{align}
+f(x_1,x_2) &= \vec{a^T}\vec{x}
+\quad{\text{$\forall (x_1,x_2) \in \mathbb{F}^2$}}\label{eq:solutions/3/7/1/a/def}
+\end{align}
+where,
+\begin{align}
+\vec{a} &= \myvec{a\\b}\\
+\vec{x} &= \myvec{x_1\\x_2}
+\end{align}
+We use the following theorem,\\
+Let $\mathbb{V}$ and $\mathbb{W}$ be vector spaces, over the field $F$. For each linear transformation $T: \mathbb{V} \xrightarrow{} \mathbb{W}$, there is a unique linear transformation $T^t: \mathbb{W}^* \xrightarrow{} \mathbb{V}^*$ such that,
+\begin{align}
+(T^tg)(\alpha) &= g(T\alpha)\label{eq:solutions/3/7/1/a/theorem}
+\end{align}
+The given linear operator $T$ defined as,
+\begin{align}
+T(x_1,x_2) &= \vec{A}\vec{x} = \myvec{x_1\\0} \quad{\text{$\forall (x_1,x_2) \in \mathbb{F}^2$}}\label{eq:solutions/3/7/1/a/qn}
+\end{align}
+Where,
+\begin{align}
+\vec{A} &= \myvec{1&0\\0&0}\\
+\end{align}
+Consider the following mapping,
+\begin{align}
+g = T^tf\label{eq:solutions/3/7/1/a/map}
+\end{align}
+Then, $\forall (x_1,x_2) \in \mathbb{F}^2$ we have,
+\begin{align}
+g(x_1,x_2) &= T^tf(x_1,x_2) \quad{\text{[From \eqref{eq:solutions/3/7/1/a/map}]}}\\
+&= f(T(x_1,x_2)) \quad{\text{[From \eqref{eq:solutions/3/7/1/a/theorem}]}}\\
+&= \vec{a^T}\vec{A}\vec{x}\\
+&= \vec{a^T}\myvec{x_1\\0} \quad{\text{[From \eqref{eq:solutions/3/7/1/a/qn}]}}\\
+&= ax_1 \quad{\text{[From \eqref{eq:solutions/3/7/1/a/def}]}}\label{eq:solutions/3/7/1/a/ans}
+\end{align}
+Hence, \eqref{eq:solutions/3/7/1/a/ans} is the required answer.

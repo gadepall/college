@@ -8,11 +8,12 @@
 \contentsline {subsection}{\numberline {2.1}Vector Spaces}{33}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Subspaces}{36}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Bases and Dimension}{43}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Coordinates}{49}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{55}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Linear Transformations}{61}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Linear Transformations}{61}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{68}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Isomorphism}{77}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{85}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Linear Functionals}{90}{subsection.3.5}%
+\contentsline {subsection}{\numberline {2.4}Coordinates}{50}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{57}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Linear Transformations}{62}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Linear Transformations}{62}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{70}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Isomorphism}{79}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{88}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Linear Functionals}{94}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}The Transpose of a Linear Transformation}{94}{subsection.3.6}%

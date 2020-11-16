@@ -19,11 +19,10 @@ for every vector $\vec{\alpha}$ in $\vec{V}$. The columns of $\vec{P}$ are given
 \end{bmatrix}_{\beta}	\qquad j = 1,2,...,n
 \end{align}
 \end{theorem}
-\section{Solution}
 In order to show that the set of vectors $\alpha_1$, $\alpha_2$,and $\alpha_3$  are basis for $\mathbb{R}^3$. We first show that $\alpha_1$, $\alpha_2$,and $\alpha_3$ a  are linearly independent in $\mathbb{R}^3$ and also they span $\mathbb{R}^3$. Consider,
 \begin{align}
 & \vec{A} = \myvec{\vec{\alpha_1}^T & \vec{\alpha_2}^T & \vec{\alpha_3}^T } \\
-& \vec{A} = \myvec{1 & 1 &  0 \\ 0 & 2 & -3  \\ -1 & 1 & 2 }\label{eq:solutions/2/3/4/eqA}
+& \vec{A} = \myvec{1 & 1 &  0 \\ 0 & 2 & -3  \\ -1 & 1 & 2 }\label{eq:solutions/2/3/4/2}
 \end{align}
 Now,by row reduction
 \begin{align}
@@ -33,45 +32,36 @@ Now,by row reduction
 &\xleftrightarrow[]{R_1=R_1-R_2}\myvec{1 & 0 &  \frac{3}{2} \\ 0 & 1 &\frac{-3}{2}   \\ 0 & 0 & 5  } \\
 &\xleftrightarrow[]{R_3=\frac{R_3}{5}}\myvec{1 & 0 &   \frac{3}{2} \\ 0 & 1 & \frac{-3}{2}   \\ 0 & 0 & 1  } \\
 &\xleftrightarrow[]{R_1=R_1-\frac{3}{2}R_3}\myvec{1 & 0 &  0 \\ 0 & 1 & \frac{-3}{2}   \\ 0 & 0 & 1  } \\
-&\xleftrightarrow[]{R_2=R_2+\frac{3}{2}R_3}\myvec{1 & 0 &  0 \\ 0 & 1 & 0  \\ 0 & 0 & 1  } \label{eq:solutions/2/3/4/2}
+&\xleftrightarrow[]{R_2=R_2+\frac{3}{2}R_3}\myvec{1 & 0 &  0 \\ 0 & 1 & 0  \\ 0 & 0 & 1  } \label{eq:solutions/2/3/4/3}
 \end{align}
-\eqref{eq:solutions/2/3/4/2} is the row reduced echelon form of $\vec{A}$ and since it is identity matrix of order 3, we say that vectors $\vec{\alpha_1}$, $\vec{\alpha_2}$, and $\vec{\alpha_3}$  are linearly independent and their column space is $\mathbb{R}^3$ which means vectors $\vec{\alpha_1}$, $\vec{\alpha_2}$, and $\vec{\alpha_3}$  span $\mathbb{R}^3$.
-Hence, vectors $\vec{\alpha_1}$, $\vec{\alpha_2}$, and $\vec{\alpha_3}$ form a basis for $\mathbb{R}^3$. \\\\
-Now,use theorem \eqref{eq:solutions/2/3/4/1}, and calculate the inverse of \eqref{eq:solutions/2/3/4/eqA}
-then the columns of $\vec{A^{-1}}$ will give the coefficients to write the standard basis vectors in terms of $\alpha_i's$. We try to find the inverse of $\vec{A}$ by row-reducing the augumented matrix.$\vec{A|I}$ 
+\eqref{eq:solutions/2/3/4/3} is the row reduced echelon form of $\vec{A}$ and since it is identity matrix of order 3, we say that vectors $\vec{\alpha_1}$, $\vec{\alpha_2}$, and $\vec{\alpha_3}$  are linearly independent and their column space is $\mathbb{R}^3$ which means vectors $\vec{\alpha_1}$, $\vec{\alpha_2}$, and $\vec{\alpha_3}$  span $\mathbb{R}^3$.
+Hence, vectors $\vec{\alpha_1}$, $\vec{\alpha_2}$, and $\vec{\alpha_3}$ form a basis for $\mathbb{R}^3$.\\\\
+Now,use theorem \eqref{eq:solutions/2/3/4/1}, and calculate the inverse of \eqref{eq:solutions/2/3/4/2}
+then the columns of $\vec{A^{-1}}$ will give the coefficients to write the standard basis vectors in terms of $\alpha_i's$. We try to find the inverse of $\vec{A}$ by row-reducing the augmented matrix.$\vec{A|I}$ 
+
 \begin{align}
-	\vec{A} = \myvec{1 & 1 &  0 \\ 0 & 2 & -3  \\ -1 & 1 & 2 }
+\vec{A} = \myvec{1 & 1 &  0 \\ 0 & 2 & -3  \\ -1 & 1 & 2 }
 \end{align}
 Now, by row reducing $\vec{A|I}$ as follows 
-\begin{multline}
- \myvec{1 & 1 & 0 & 1& 0 &0  \\ 0 & 2 & -3 & 0& 1&0 \\ -1 & 1 & 2& 0& 0 &1} &\xleftrightarrow[]{R_3=R_3+R_1}\myvec{1 & 1 & 0 & 1& 0 &0  \\ 0 & 2 & -3 & 0& 1&0 \\ 0 & 2 & 2& 1& 0 &1}
-\end{multline}
-\begin{multline}
-&\xleftrightarrow[]{R_3=R_3-R_2}\myvec{1 & 1 & 0 & 1& 0 &0  \\ 0 & 2 & -3 & 0& 1&0 \\ 0 & 0 & 5& 1& -1 &1}
-\end{multline}
-\begin{multline}
-&\xleftrightarrow[]{R_2=\frac{R_2}{2}}\myvec{1 & 1 & 0 & 1& 0 &0  \\ 0 & 1 & \frac{-3}{2} & 0& \frac{1}{2}&0 \\ 0 & 0 & 5& 1& -1 &1}
-\end{multline}
-\begin{multline}
-&\xleftrightarrow[]{R_1=R_1-R_2}\myvec{1 & 0 & \frac{3}{2} & 1& \frac{-1}{2} &0  \\ 0 & 1 & \frac{-3}{2} & 0& \frac{1}{2}&0 \\ 0 & 0 & 5& 1& -1 &1}
-\end{multline}
-\begin{multline}
-&\xleftrightarrow[]{R_3=\frac{R_3}{5}}\myvec{1 & 0 & \frac{3}{2} & 1& \frac{-1}{2} &0  \\ 0 & 1 & \frac{-3}{2} & 0& \frac{1}{2}&0 \\ 0 & 0 & 1& \frac{1}{5}& \frac{-1}{5} &\frac{1}{5}}
-\end{multline}
-\begin{multline}
-&\xleftrightarrow[]{R_1=R_1-\frac{3R_3}{2}}\myvec{1 & 0 & 0 & \frac{7}{10}& \frac{-1}{5} &\frac{-3}{10} \\ 0 & 1 & \frac{-3}{2} & 0& \frac{1}{2}&0 \\ 0 & 0 & 1& \frac{1}{5}& \frac{-1}{5} &\frac{1}{5}}
-\end{multline}
-\begin{multline}
-&\xleftrightarrow[]{R_2=R_2+\frac{3R_3}{2}}\myvec{1 & 0 & 0 & \frac{7}{10}& \frac{-1}{5} &\frac{-3}{10} \\ 0 & 1 & 0 & \frac{3}{10}& \frac{1}{5}&\frac{3}{10} \\ 0 & 0 & 1& \frac{1}{5}& \frac{-1}{5} &\frac{1}{5}}	\label{eq:solutions/2/3/4/3}
-\end{multline}
-Thus, by \eqref{eq:solutions/2/3/4/3}, we have
+\begin{align}
+\myvec{1 & 1 & 0 & 1& 0 &0  \\ 0 & 2 & -3 & 0& 1&0 \\ -1 & 1 & 2& 0& 0 &1}\\ \xleftrightarrow[]{R_3=R_3+R_1}\myvec{1 & 1 & 0 & 1& 0 &0  \\ 0 & 2 & -3 & 0& 1&0 \\ 0 & 2 & 2& 1& 0 &1}\\
+\xleftrightarrow[]{R_3=R_3-R_2}\myvec{1 & 1 & 0 & 1& 0 &0  \\ 0 & 2 & -3 & 0& 1&0 \\ 0 & 0 & 5& 1& -1 &1}\\
+\xleftrightarrow[]{R_2=\frac{R_2}{2}}\myvec{1 & 1 & 0 & 1& 0 &0  \\ 0 & 1 & \frac{-3}{2} & 0& \frac{1}{2}&0 \\ 0 & 0 & 5& 1& -1 &1}\\
+\xleftrightarrow[]{R_1=R_1-R_2}\myvec{1 & 0 & \frac{3}{2} & 1& \frac{-1}{2} &0  \\ 0 & 1 & \frac{-3}{2} & 0& \frac{1}{2}&0 \\ 0 & 0 & 5& 1& -1 &1}\\
+\xleftrightarrow[]{R_3=\frac{R_3}{5}}\myvec{1 & 0 & \frac{3}{2} & 1& \frac{-1}{2} &0  \\ 0 & 1 & \frac{-3}{2} & 0& \frac{1}{2}&0 \\ 0 & 0 & 1& \frac{1}{5}& \frac{-1}{5} &\frac{1}{5}}\\
+\xleftrightarrow[]{R_1=R_1-\frac{3R_3}{2}}\myvec{1 & 0 & 0 & \frac{7}{10}& \frac{-1}{5} &\frac{-3}{10} \\ 0 & 1 & \frac{-3}{2} & 0& \frac{1}{2}&0 \\ 0 & 0 & 1& \frac{1}{5}& \frac{-1}{5} &\frac{1}{5}}\\
+\xleftrightarrow[]{R_2=R_2+\frac{3R_3}{2}}\myvec{1 & 0 & 0 & \frac{7}{10}& \frac{-1}{5} &\frac{-3}{10} \\ 0 & 1 & 0 & \frac{3}{10}& \frac{1}{5}&\frac{3}{10} \\ 0 & 0 & 1& \frac{1}{5}& \frac{-1}{5} &\frac{1}{5}}	\label{eq:solutions/2/3/4/4}
+\end{align}
+Thus, by \eqref{eq:solutions/2/3/4/4}, we have
 \begin{align}
 	\vec{A^{-1}}= \myvec{ \frac{7}{10}& \frac{-1}{5} &\frac{-3}{10} \\ \frac{3}{10}& \frac{1}{5}&\frac{3}{10} \\  \frac{1}{5}& \frac{-1}{5} &\frac{1}{5}}
 \end{align}
 Now, let $\vec{e_1} = \myvec{1 & 0 & 0 }$, $\vec{e_2} = \myvec{0 & 1 & 0 }$, and $\vec{e_3} = \myvec{0 & 0 & 1 }$ be the standard basis for $\mathbb{R}^3$. Hence,each of the standard basis vectors as linear combinations of $\alpha_1, \alpha_2, \alpha_3$ is as under
-
 \begin{align}
 & \vec{e_1} = \frac{7}{10}\alpha_1 +\frac{3}{10} \alpha_2+\frac{1}{5}\alpha_3\\ 
 & \vec{e_2} = -\frac{1}{5}\alpha_1 +\frac{1}{5} \alpha_2 -\frac{1}{5} \alpha_3 \\
 & \vec{e_3} = \frac{-3}{10}\alpha_1 + \frac{3}{10} \alpha_2+\frac{1}{5}\alpha_3 
 \end{align}
+
+
+ 

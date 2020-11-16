@@ -1,0 +1,66 @@
+We will make use of the following theorem\\
+Let $\vec{V}$ be a finite dimensional vector space over the field $\mathbb{F}$ and let $\cbrak{\vec{v_1},\vec{v_2},\hdots,\vec{v_n}}$ be a basis for $\vec{V}$.Then there exists a unique dual basis $\cbrak{f_1,f_2,\hdots,f_n}$ for $\vec{V}^*$ such that
+\begin{align}
+    f_i(\vec{v}_j)=\delta_{ij}\label{eq:solutions/3/5/14/1}
+\end{align}
+and $\vec{V}^*$ is the space of all linear functionals on $\vec{V}$
+\begin{table}[!ht]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{tabular}{|c|c|}
+\hline
+\textbf{PARAMETERS}&\textbf{DESCRIPTION}\\
+\hline
+$\mathbb{F}$&Field\\
+\hline
+$\vec{V}$& Finite dimensional vector space over $\mathbb{F}$\\
+\hline
+$\alpha_1,\alpha_2,\hdots,\alpha_m$& non zero vectors in $\vec{V}$\\
+\hline
+$f:\vec{V}\rightarrow \mathbb{F}$&Linear functional on $\vec{V}$\\
+\hline
+\end{tabular}
+}
+\caption{Input Parameters}
+\label{eq:table/solutions/3/5/14/0}
+\end{table}
+
+\begin{table*}[!hb]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{PARAMETERS}&\textbf{MATRIX REPRESENTATION}\\
+\hline
+ Basis for $\vec{V}$&$ \vec{B}=\myvec{\vec{v}_1&\vec{v}_2&\hdots&\vec{v}_n}$\\
+\hline
+Basis for $\vec{V}^*$& $\vec{B}^*=\myvec{\vec{f}_1&\vec{f}_2&\hdots&\vec{f}_n}$\\
+\hline
+ & \\
+$f_i(\vec{v}_j)=\delta_{ij}$& $(\vec{f}_i)^T\vec{v}_j=\delta_{ij}$\\
+\hline
+ & \\
+$\vec{B},\vec{B}^*$ are dual basis&$(\vec{B}^*)^T\vec{B}=\vec{I}$\\
+\hline
+$\alpha_i=\sum _{k=1}^n a_k\vec{v}_k,i\in [1,m]$&$ \alpha_i=\vec{B}\vec{a}$ where $ \vec{a}=\myvec{a_1\\a_2\\\vdots\\a_n}, a_l \in \mathbb{F},l \in [1,n]$\\
+\hline
+$\alpha_i\neq \vec{0}$&$\vec{a}\neq\vec{0}$\\
+\hline
+Any linear functional $f$ over $\vec{V}$& $\vec{f}=\vec{B}^*\vec{c},\text{where }\vec{c}=\myvec{c_1\\c_2\\\vdots\\c_n}, c_l \in \mathbb{F} ,l \in [1,n]$\\
+\hline
+ & \\
+ & $ \vec{f}^T\alpha_i$\\
+$ f(\alpha_i)$ &$
+    =(\vec{B}^*\vec{c})^T\alpha_i$\\
+     &$=\vec{c}^T(\vec{B}^*)^T\vec{B}\vec{a}$\\
+     &$=\vec{c}^T\vec{a}$ \\
+\hline
+ & \\
+$f$ with  $c_l \neq 0 \forall l \in [1,n]$ lies in $\vec{V}^*,\vec{a}\neq\vec{0}$ & $f(\alpha_i)=\vec{c}^T\vec{a}\neq 0, i=1,2,\hdots,m $\\
+\hline
+\end{tabular}
+\caption{Proof}
+\label{eq:table/solutions/3/5/14/1}
+\end{table*}
+
+
