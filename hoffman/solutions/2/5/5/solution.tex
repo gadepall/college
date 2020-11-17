@@ -1,0 +1,31 @@
+Above matrix represented as: $Ax = \beta$
+\begin{align}
+    \myvec{1 & -1 & 2 & 2 \\
+                    0 & 2 & -1 & 1 \\
+                    2 & -4 & 5 & 3 \\
+                    1 & 2 & 2 & 5 \\
+                    -1 & 0 & 1 & 2}x &= \beta\\
+    \myvec{1 & -1 & 2 & 2 \\
+                    0 & 2 & -1 & 1 \\
+                    2 & -4 & 5 & 3 \\
+                    1 & 2 & 2 & 5 \\
+                    -1 & 0 & 1 & 2}x &= 
+                    \myvec{b_1 \\ b_2 \\ b_3\\ b_4 \\ b_5} \label{eq:solutions/2/5/5/eq_2}
+\end{align}
+$AX^T = Y^T$, where $A$, $X$ and $Y$ matrices have shown below:
+\begin{align}
+    A &= \myvec{1 & -1 & 2 & 2 \\
+                    0 & 2 & -1 & 1 \\
+                    2 & -4 & 5 & 3 \\
+                    1 & 2 & 2 & 5 \\
+                    -1 & 0 & 1 & 2} \\
+    X &= \myvec{\frac{67}{100}&-\frac{167}{100}&-2&\frac{133}{100}\\
+           \frac{1}{2}&-\frac{3}{2}&-\frac{5}{2}&\frac{3}{2}\\
+           -\frac{4}{25}&\frac{117}{100}&\frac{3}{2}&-\frac{83}{100}\\
+           -\frac{1}{2}&-\frac{1}{2}&-\frac{1}{2}&\frac{1}{2}} \\
+   Y &= \myvec{1 & 0 & 2 & 0 & 0 \\
+           0 & 1 & -1 & 0 & 0 \\
+           0 & 0 & 0 & 1 & 0 \\
+           0 & 0 & 0 & 0 & 1}
+\end{align}
+Now since the $Y^T$ matrix is full rank thus we can say that columns of matrix $A$ are linearly independent and b is described by \eqref{eq:solutions/2/5/5/eq_2}

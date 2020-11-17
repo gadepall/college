@@ -1,45 +1,65 @@
-The linear functional $f$ on $\mathbb{F}^2$ is defined by,
+Given, $\alpha = \myvec{a\\b\\c}$.
+Let,
 \begin{align}
-f(\vec{x}) &= \vec{a^T}\vec{x}
-\quad{\text{$\forall \vec{x} \in \mathbb{F}^2$}}\label{eq:solutions/3/7/1/c/def}
+\vec{A}=\myvec{\alpha_1&\alpha_2&\alpha_3}\\
+\vec{A}\vec{X}=\alpha\\
+\myvec{1 & 0 & -1\\0 & 1 & -1\\1 & -2 & 0}\myvec{x_1\\x_2\\x_3} = \myvec{a\\b\\c}
 \end{align}
-where,
+$ \vec{X}=A^{-1}\alpha$ will give solution of the equation.
 \begin{align}
-\vec{a} &= \myvec{a\\b}
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\
+0 & 1 & -1 & 0 & 1 & 0\\
+1 & -2 & 0 & 0 & 0 & 1}\xleftrightarrow[]{R_3\leftarrow R_3-R_1}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\
+0 & 1 & -1 & 0 & 1 & 0\\
+0 & -2 & 1 & -1 & 0 & 1}
+\xleftrightarrow[]{R_3\leftarrow R_3+2R_2}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\
+0 & 1 & -1 & 0 & 1 & 0\\
+0 & 0 & -1 & -1 & 2 & 1}\xleftrightarrow[]{R_3\leftarrow R_3/(-1)}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\
+0 & 1 & -1 & 0 & 1 & 0\\
+0 & 0 & 1 & 1 & -2 & -1}\xleftrightarrow{R_1\leftarrow R_1+R_3}\\
+\myvec{1 & 0 & 0 & 2 & -2 & -1\\
+0 & 1 & -1 & 0 & 1 & 0\\
+0 & 0 & 1 & 1 & -2 & -1}\xleftrightarrow{R_2\leftarrow R_2+R_3}\\
+\myvec{1 & 0 & 0 & 2 & -2 & -1\\
+0 & 1 & 0 & 1 & -1 & -1\\
+0 & 0 & 1 & 1 & -2 & -1}
 \end{align}
-We use the following theorem,\\
-Let $\mathbb{V}$ and $\mathbb{W}$ be vector spaces, over the field $F$. For each linear transformation $T: \mathbb{V} \xrightarrow{} \mathbb{W}$, there is a unique linear transformation $T^t: \mathbb{W}^* \xrightarrow{} \mathbb{V}^*$ such that,
+Thus,
 \begin{align}
-(T^tg)(\alpha) &= g(T\alpha)\label{eq:solutions/3/7/1/c/theorem}
+    A^{-1}=\myvec{
+    2 &-2&-1\\
+    1&-1&-1\\
+    1&-2&-1
+    }\\
+\vec{X} = A^{-1}\alpha=\myvec{2 &-2&-1\\1&-1&-1\\1&-2&-1}
+\myvec{a\\b\\c}
 \end{align}
-$\forall (\vec{x}) \in \mathbb{F}^2$ the given linear operator $T$ defined as,
+Given, $f$ is a linear functional on $R^3$,
 \begin{align}
-T(\vec{x}) &= \vec{A}\vec{x}
+\vec{\alpha} = \alpha_1 x_1 + \alpha_2 x_2 + \alpha_3 x_3\\
+\implies f(\alpha) = \vec{X}^T \myvec{f(\alpha_1)\\f(\alpha_2)\\f(\alpha_3)}
 \end{align}
-Where,
+Given, $f(\alpha_1)=0$, $f(\alpha_2)=0$ and $f(\alpha_3)\neq 0$.
 \begin{align}
-\vec{A}=\myvec{1&-1\\1&1}\label{eq:solutions/3/7/1/c/A}
+ f(\alpha) &= \vec{X}^T \myvec{0\\0\\f(\alpha_3)}\\
+\implies f(\alpha) &= \myvec{a\\b\\c}^T\myvec{2 &1&1\\-2&-1&-2 \\-1&-1&-1}\myvec{0\\0\\f(\alpha_3)}\\
+f(\alpha)&=\myvec{a\\b\\c}^T\myvec{f(\alpha_3)\\-2f(\alpha_3)\\-f(\alpha_3)}
 \end{align}
 Hence,
-\begin{align}
-\vec{A}\vec{x}=\myvec{1&-1\\1&1}\vec{x} \label{eq:solutions/3/7/1/c/qn}
+\begin{align}\label{eq:solutions/3/7/1/c/eq1}
+f(\alpha)=f(\alpha_3)(a-2b-c)
 \end{align}
-Consider the following mapping,
+Given 
+$\alpha$=$\myvec{2&3&-1}$
+Substituting value of $\alpha$ in equation \eqref{eq:solutions/3/7/1/c/eq1} we have,
 \begin{align}
-g = T^tf\label{eq:solutions/3/7/1/c/map}
+f(\alpha)=-3f(\alpha_3)\neq 0
 \end{align}
-Now,
-\begin{align}
-g(\vec{x}) &= T^tf(\vec{x})&\label{eq:solutions/3/7/1/c/ABC}
-\end{align}
-Using \eqref{eq:solutions/3/7/1/c/theorem} in \eqref{eq:solutions/3/7/1/c/ABC},
-\begin{align}
-&= f(T(\vec{x}))\\
-&= \vec{a^T}\vec{A}\vec{x}
-\end{align}
-Substituting \eqref{eq:solutions/3/7/1/c/A},
-\begin{align}
-&= \vec{a^T}\myvec{1&-1\\1&1}\vec{x}\\
-&= a(x_1-x_2)+b(x_1+x_2) \label{eq:solutions/3/7/1/c/ans}
-\end{align}
+Hence proved,$f(\alpha)\neq 0$
+
+   
+   
 

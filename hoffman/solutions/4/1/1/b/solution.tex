@@ -1,0 +1,19 @@
+We first find the eigen values of the $\vec{A}$. We get the characteristic equation of $\vec{A}$ as follows,
+\begin{align}
+\det{(\vec{A} - \lambda \vec{I})} &= 0\\
+\implies\lambda^2 - 5\lambda+7 &=0\label{eq:solutions/4/1/1/b/eqEigen}
+\end{align}
+Where $\vec{I}$ is $2 \times 2$ Identity matrix. Now using Cayley Hamilton Theorem we get from \eqref{eq:solutions/4/1/1/b/eqEigen} the following,
+\begin{align}
+\vec{A}^2 - 5\vec{A}+7\vec{I} &= 0\label{eq:solutions/4/1/1/b/eqCH}
+\end{align}
+Hence the polynomial $f(\vec{A})$ can be written using the characteristic function of $\vec{A}$ as follows,
+\begin{align}
+f(\vec{A}) &= \vec{A}^3 - \vec{I}\\
+&= (\vec{A-I})(\vec{A}^2+\vec{A}+\vec{I})\\
+&= (\vec{A-I})(\vec{A}^2-5\vec{A}+7\vec{I}+6\vec{A}-6\vec{I})\\
+&= 6(\vec{A-I})^2 \quad{\text{[From \eqref{eq:solutions/4/1/1/b/eqCH}]}}\\
+&= 6\left[\myvec{2&1\\-1&3} - \myvec{1&0\\0&1}\right]^2\\
+&= \myvec{0&18\\-18&18}\label{eq:solutions/4/1/1/b/Ans1}
+\end{align}
+Here, \eqref{eq:solutions/4/1/1/b/Ans1} is the required answer.
