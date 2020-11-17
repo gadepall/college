@@ -1,0 +1,24 @@
+
+\begin{align}
+trace(\vec{A}\vec{B})= \sum_{i=1}^{n}\vec{(AB)}_{ii}\\
+=\sum_{i=1}^{n}\sum_{k=1}^{n}\vec{A}_{ik}\vec{B}_{ki}\\
+=\sum_{i=1}^{n}\sum_{k=1}^{n}\vec{B}_{ki}\vec{A}_{ik}\\
+=\sum_{i=1}^{n}\vec{(BA)}_{kk}\\
+=trace(\vec{B}\vec{A}) \label{eq:solutions/3/5/3/eq:1}
+\end{align}
+Hence proved trace($\vec{A}\vec{B}$) = trace($\vec{B}\vec{A}$). Let $\vec{A}$ and $\vec{B}$ be similar matrices then $\exists$ $\vec{S}$ such that,
+\begin{align}
+\vec{A}= \vec{S}^{-1}\vec{B}\vec{S}
+\end{align}
+Taking trace of $\vec{A}$ we get,
+\begin{align}
+trace(\vec{A})= trace(\vec{S}^{-1}\vec{B}\vec{S}) =trace(\vec{S}^{-1}(\vec{B}\vec{S})) \label{eq:solutions/3/5/3/eq:2}
+\end{align}
+Using \eqref{eq:solutions/3/5/3/eq:1} in \eqref{eq:solutions/3/5/3/eq:2}
+\begin{align}
+trace(\vec{A})= trace(\vec{S}^{-1}\vec{S}\vec{B})\\
+=trace((\vec{S}^{-1}\vec{S})\vec{B})\\
+=trace(\vec{I}\vec{B})\\
+=trace(\vec{B})
+\end{align}
+Hence Proved

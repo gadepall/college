@@ -1,0 +1,36 @@
+The product of two Kronecker products yields another Kronecker product:
+\begin{align}
+    (\vec{A} \otimes\vec{B}) (\vec{C} \otimes\vec{D})&=
+    (\vec{A} \vec{C})\otimes (\vec{B} \vec{D}) 
+\label{eq:solutions/3/3/5/c/eq:1}
+%\label{eq:solutions/3/3/5/c/eq:eq_th}
+\end{align}
+Given,
+\begin{align}
+ \vec{T}(\vec{z})=\myvec{x+7y&5y\\-10y&x-7y}\label{eq:solutions/3/3/5/c/eq:2}\\
+ \vec{x}=\myvec{x\\y}\\
+ \vec{T}(\vec{x})=\myvec{\myvec{1&7}\vec{x}&\myvec{0&5}\vec{x}\\\myvec{0&-10}\vec{x}&\myvec{1&-7}\vec{x}}\end{align}\begin{align}
+ =\myvec{\myvec{1&7\\0&-10}\vec{x}&\myvec{0&5\\1&-7}\vec{x}}\\
+ \text{Let } \vec{A}=\myvec{1&7\\0&-10}\\
+ \vec{B}=\myvec{0&5\\1&-7}\\
+ \implies  \vec{T}(\vec{x})=\myvec{\vec{A}\vec{x}&\vec{B}\vec{x}}\\
+  \vec{T}(\vec{x})=\myvec{\vec{A}&\vec{B}}\myvec{\vec{x}&\vec{0}\\\vec{0}&\vec{x}}\label{eq:solutions/3/3/5/c/eq:2.1}
+\end{align}
+The diagonal block matrix can be expressed as the kronecker product of $\vec{I}$ and $\vec{x}$
+\begin{align}
+    \vec{I}\otimes\vec{x}=\myvec{\vec{x}&\vec{0}\\\vec{0}&\vec{x}}
+\end{align}
+We can write \eqref{eq:solutions/3/3/5/c/eq:2} as
+\begin{align}
+    \vec{T} (\vec{x}) = \myvec{\vec{A} & \vec{B}} (\vec{I} \otimes \vec{x})
+\end{align}
+Starting with RHS of \eqref{eq:solutions/3/3/5/c/eq:1}
+\begin{align}
+    \vec{T}(z_1)\vec{T}(z_2)= \myvec{\vec{A} & \vec{B}} (\vec{I} \otimes \vec{z_1})\myvec{\vec{A} & \vec{B}} (\vec{I} \otimes \vec{z_2}) \label{eq:solutions/3/3/5/c/eq:2.2}
+\end{align}
+If
+\begin{align}
+    (\vec{I} \otimes \vec{z_1})\myvec{\vec{A} & \vec{B}} (\vec{I} \otimes \vec{z_2})=(\vec{I} \otimes \vec{z_1z_2})
+    \intertext{then,we can write \eqref{eq:solutions/3/3/5/c/eq:2.2} as }
+    \vec{T}(z_1)\vec{T}(z_2)=\myvec{\vec{A} & \vec{B}}(\vec{I} \otimes \vec{z_1z_2})=\vec{T}(z_1z_2)
+\end{align}

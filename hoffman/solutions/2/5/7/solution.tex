@@ -1,0 +1,60 @@
+Consider $\vec{A}$ as,
+\begin{align}
+\vec{A} = \myvec{a_{11}&a_{12}&a_{13}&\cdots&a_{1n}\\a_{21}&a_{22}&a_{23}&\cdots&a_{2n}\\\vdots&\vdots&\vdots&\vdots&\vdots\\a_{m1}&a_{m2}&a_{m3}&\cdots&a_{mn}}_{mxn}
+\end{align} 
+Now to solve the equation $\vec{AX}=\vec{Y}$ for $\vec{X}$, we first write its augmented matrix $\vec{A_Y}$ and then convert it into row reduced echelon form given as $\vec{R_Y}$. Here $\vec{R}$ is the row reduced form of matrix $\vec{A}$. Also we know that, for $\vec{AX}=\vec{Y}$ to have a solution, $\vec{Y}$ should be in column space of $\vec{A}$.
+\begin{align}
+\vec{A_Y}=\myvec{\vec{A}&\vrule&\vec{Y}}
+\end{align} 
+Assume that the last \textbf{k} rows of $\vec{R}$ are zero rows.This implies that we have \textbf{k} number of linear dependent rows in matrix $\vec{A}$. Hence the row rank of matrix $\vec{A}$ is \textbf{r} = m-k. As there are m-k number of non-zero vectors in the row of $\vec{R}$. Now, 
+\begin{align}
+\vec{R}_{Y} = \vec{EA}_{Y} \\ \implies \vec{C} \myvec{a_{11}&a_{12}&\cdots&a_{1n}&\vrule&y_{1} \\a_{21}&a_{22}&\cdots&a_{2n}&\vrule&y_{2}\\\vdots&\vdots&\vdots&\vdots&\vrule&\vdots\\a_{m1}&a_{m2}&\cdots&a_{mn}&\vrule&y_{m}}
+\end{align}
+Here, $\vec{E}$ is product of matrix responsible for performing operation on matrix such as scaling, Row exchange etc, given as, 
+\begin{align}
+\vec{E} = E_iE_{i-1} \cdots E_1
+\end{align}
+Hence row reduced echelon form, $\vec{R_Y}$ is given as,
+\begin{align}
+\vec{R_Y} = E\vec{A_Y} = \myvec{E\vec{A}&\vrule&E\vec{Y}}
+\end{align}
+Now RREF can be represented in Block matrix as,
+\begin{align}
+\implies \vec{R_Y} = \myvec{I&F&\vrule&Y\\0&0&\vrule} \label{eq:solutions/2/5/7/rref}
+\end{align}
+\begin{comment}\myvec{1&a'_{12}&\cdots&a'_{1n}&\vrule&y'_{1} \\0&1&\cdots&a_{2n}&\vrule&y'_{2}\\\vdots&\vdots&\vdots&\vdots&\vrule&\vdots\\0&0&\cdots&0&\vrule&y'_{m-k}\\\vdots&\vdots&\ddots&\vdots&\vrule&\vdots\\0&0&\cdots&0&\vrule&y'_{m-1}\\0&0&\cdots&0&\vrule&y'_{m}}\end{comment}
+Also from equation \eqref{eq:solutions/2/5/7/rref} it can be observed that for   $\vec{AX}=\vec{Y}$ to have a solution,
+\begin{align}
+y'_{m-k} = y'_{m-k-1} = \cdots = y'_{m-1} = y'_{m} = 0 
+\end{align} 
+Hence, the rank of $\vec{R_Y'}$ is, also $\vec{r}$. This implies rank of augmented matrix $\vec{A_Y}$ is also \textbf{r}. \\
+\\
+{\em Example: }
+Let $\vec{A}$ be a $3\times 4$ matrix given as,
+\begin{align}
+\vec{A} = \myvec{1&2&5&7\\2&9&3&6\\1&7&2&9}\\
+\vec{Y} = \myvec{4\\8\\14}
+\end{align}
+For the time being it could be concluded that the following set of linear equation have a solution as $\vec{Y} \in$ Column-space($\vec{A}$)
+Hence to solve $\vec{AX} = \vec{Y}$ first the augmented matrix $\vec{A_Y}$ is given as,
+\begin{align}
+\vec{A_Y} = \myvec{1&2&5&7&\vrule&4\\2&9&3&6&\vrule&8\\1&7&2&9&\vrule&14}
+\end{align}
+Now reducing in RREF we get,
+\begin{align}
+\vec{R_Y} = E\vec{A_Y}
+\end{align}
+Here E is elementary matrix given as,
+\begin{align}
+E = \myvec{-3/20&31/20&-39/20\\-1/20&-3/20&7/20\\1/4&-1/4&1/4}
+\end{align}
+\begin{align}
+\implies \vec{R_Y} = E\vec{A_Y} = \myvec{E\vec{A}&\vrule&E\vec{Y}}\\
+\implies \vec{R_Y} =\myvec{I&F&\vrule&Y} 
+\end{align}
+\begin{align}
+\vec{I}_{3x3} = \myvec{1&0&0\\0&1&0\\0&0&1}\\
+\vec{F}_{3x1} = \myvec{-93/10\\19/10\\5/2}\\
+\vec{Y}_{3x1} = \myvec{-31/2\\7/2\\5/2}
+\end{align}
+Hence, rank = 3 as there are 0 non zero rows in row reduced echelon form. Also it could be observed that both $\vec{R}$ and $\vec{R_Y}$ have non zero rows hence we have a solution and same rank.  

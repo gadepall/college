@@ -1,0 +1,55 @@
+Given, $\alpha = \myvec{a\\b\\c}$.
+Let,
+\begin{align}
+\vec{A}=\myvec{\alpha_1&\alpha_2&\alpha_3}\\
+\vec{A}\vec{X}=\alpha\\
+\myvec{1 & 0 & -1\\0 & 1 & -1\\1 & -2 & 0}\myvec{x_1\\x_2\\x_3} = \myvec{a\\b\\c}
+\end{align}
+$ \vec{X}=A^{-1}\alpha$ will give solution of the equation.
+\begin{align}
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\
+0 & 1 & -1 & 0 & 1 & 0\\
+1 & -2 & 0 & 0 & 0 & 1}\xleftrightarrow[]{R_3\leftarrow R_3-R_1}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\
+0 & 1 & -1 & 0 & 1 & 0\\
+0 & -2 & 1 & -1 & 0 & 1}
+\xleftrightarrow[]{R_3\leftarrow R_3+2R_2}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\
+0 & 1 & -1 & 0 & 1 & 0\\
+0 & 0 & -1 & -1 & 2 & 1}\xleftrightarrow[]{R_3\leftarrow R_3/(-1)}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\
+0 & 1 & -1 & 0 & 1 & 0\\
+0 & 0 & 1 & 1 & -2 & -1}\xleftrightarrow{R_1\leftarrow R_1+R_3}\\
+\myvec{1 & 0 & 0 & 2 & -2 & -1\\
+0 & 1 & -1 & 0 & 1 & 0\\
+0 & 0 & 1 & 1 & -2 & -1}\xleftrightarrow{R_2\leftarrow R_2+R_3}\\
+\myvec{1 & 0 & 0 & 2 & -2 & -1\\
+0 & 1 & 0 & 1 & -1 & -1\\
+0 & 0 & 1 & 1 & -2 & -1}
+\end{align}
+Thus,
+\begin{align}
+    A^{-1}=\myvec{
+    2 &-2&-1\\
+    1&-1&-1\\
+    1&-2&-1
+    }\\
+\vec{X} = A^{-1}\alpha=\myvec{2 &-2&-1\\1&-1&-1\\1&-2&-1}
+\myvec{a\\b\\c}
+\end{align}
+Given, $f$ is a linear functional on $R^3$,
+\begin{align}
+\vec{\alpha} = \alpha_1 x_1 + \alpha_2 x_2 + \alpha_3 x_3\\
+\implies f(\alpha) = \vec{X}^T \myvec{f(\alpha_1)\\f(\alpha_2)\\f(\alpha_3)}
+\end{align}
+Given, $f(\alpha_1)=1$, $f(\alpha_2)=-1$ and $f(\alpha_3)=3$.
+\begin{align}
+ f(\alpha) &= \vec{X}^T \myvec{1\\-1\\3}\\
+\implies f(\alpha) &= \myvec{a\\b\\c}^T\myvec{2 &1&1\\-2&-1&-2 \\-1&-1&-1}\myvec{1\\-1\\3}\\
+f(\alpha)&=\myvec{a\\b\\c}^T\myvec{4\\-7\\-3}
+\end{align}
+Hence,
+\begin{align}
+f(\alpha)=4a-7b-3c
+\end{align}
+

@@ -1,0 +1,97 @@
+See Tables \ref{eq:solutions/3/4/11/table:1} and \ref{eq:solutions/3/4/11/table:2}.
+
+
+
+\begin{table*}[!ht]
+\centering
+\resizebox{2\columnwidth}{!}
+{
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Defining} & \\
+		& Let $\vec{T}:\vec{W} \to \vec{W}$ be a linear operator and ${\myvec{e_{1}, e_{2},...,e_{n}}}$ be a basis for $\vec{W}$. \quad \qquad \qquad\\
+		Linear& Now, \\
+		Map $T$ & \qquad \qquad$\vec{Te_{1}} = \alpha_{11}\vec{e_1} + \alpha_{12}\vec{e_2} + ... + \alpha_{1n}\vec{e_n}$ \\
+		& \qquad \qquad $\vec{Te_{2}} = \alpha_{21}\vec{e_1} + \alpha_{22}\vec{e_2} + ... + \alpha_{2n}\vec{e_n}$ \\
+		& \qquad \qquad \vdots \\
+		& \qquad \qquad $\vec{Te_{n}} = \alpha_{n1}\vec{e_1} + \alpha_{n2}\vec{e_2} + ... + \alpha_{nn}\vec{e_n}$ \\
+		& \\
+		\hline	
+		\multirow{3}{*}{Matrix of} & \\
+		& Let $\vec{A}$ be matrix of linear transformation $\vec{T}$. Then $\vec{A}$ is \qquad \qquad \qquad \qquad \qquad \\
+		Linear Map $T$ & \\
+		& \qquad \qquad \qquad  $\vec{A} = \myvec{\alpha_{11} & \alpha_{21} & ... & \alpha_{n1} \\ \alpha_{12} & \alpha_{22} & ... & \alpha_{n2} \\ \vdots & \vdots & ... & \vdots \\  \alpha_{1n} & \alpha_{2n} & ... & \alpha_{nn} }$\\
+		& \\
+		\hline	
+		\multirow{3}{*}{Proving every linear } & \\
+		&  \qquad $\vec{Ae_{1}} = \brak{\alpha_{11}, \alpha_{12},...,\alpha_{1n}}$ \\
+		operator on $\vec{W}$ is left &  \qquad \qquad = $ \alpha_{11}\vec{e_1} + \alpha_{12}\vec{e_2} + ... + \alpha_{1n}\vec{e_n}$  \qquad \qquad \quad \qquad \qquad \qquad \qquad \\
+		multiplication by &  \qquad \qquad = $\vec{Te_{i}}$\\
+		some $n\times n$ matrix, i.e, is & \\
+		$\vec{L_{A}}$ for some $\vec{A}$	 & Hence, \\
+		& \qquad \qquad $\vec{Te_{i}} = \vec{Ae_{i}}$ \\
+		& Since T and A are linear. Then \\
+		& \qquad \qquad $\vec{Tx} = \vec{Ax}$ \quad  \\
+		& \qquad \qquad $\vec{Tx} = \vec{L_Ax}$\\
+		& \\
+		\hline
+	\end{tabular}
+}
+\caption{}
+\label{eq:solutions/3/4/11/table:1}
+\end{table*}
+\begin{table*}[!ht]
+\centering
+\resizebox{2\columnwidth}{!}
+{
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Proving $\vec{U}$ as} & \\
+	    & $\vec{U}(c\alpha_{1} + \alpha_{2}) = [c\alpha_{1} + \alpha_{2}]_{\beta}$ \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \quad \qquad \\ 
+	 Linear and	 & \qquad \qquad \quad = c$[\alpha_{1}]_{\beta} + [\alpha_{2}]_{\beta}$  \\
+	defining a & \qquad \qquad \quad = c$\vec{U}(\alpha_{1}) + \vec{U}(\alpha_{2})$ \\
+	linear map	& Suppose $\beta = \{\alpha_{1}, \alpha_{2},...,\alpha_{n}\}$ be the ordered basis for $\vec{V}$.\\
+    \qquad $\vec{T}$ & Let $\vec{T}$ be the function from $\vec{W}$ to $\vec{V}$ as follows: \\
+		& \qquad \qquad \qquad $\myvec{a_1 \\ a_2 \\ \vdots \\a_n} \to a_1\alpha_{1} + a_2\alpha_{2} + ... + a_n\alpha_{n} $\\
+		& \\
+		\hline
+		\multirow{3}{*}{Proving $\vec{U}$ to be} & \\
+		& For isomorphism, we must show that $\vec{TU}$ is identity map on $\vec{V}$ \qquad \qquad \qquad \\
+		an isomorphism	&  and $\vec{UT}$ is an identity map on $\vec{W}$.\\
+		& \\
+		\hline
+		\multirow{3}{*}{$\vec{TU=I_V}$} & \\
+		& $\vec{TU(x)} = \vec{TU}(a_1\alpha_{1} + a_2\alpha_{2} + ... + a_n\alpha_{n})$  \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \\
+		& \qquad \quad $= \vec{T}\vec{U}(a_1\alpha_{1} + a_2\alpha_{2} + ... + a_n\alpha_{n}) $\\ 
+		& \qquad \quad $ = a_1\vec{T}\myvec{1 \\ 0 \\ \vdots \\0} + a_2\vec{T}\myvec{0 \\ 1 \\ \vdots \\0} + ... + a_n\vec{T}\myvec{0 \\ 0 \\ \vdots \\1}$ \\
+		& \qquad \quad $= a_1\alpha_{1} + a_2\alpha_{2} + ... + a_n\alpha_{n}$\\
+		& \\
+		& Hence, $\vec{TU}$ is identity map on $\vec{V}$.\\
+		& \\
+		\hline	
+		\multirow{3}{*}{$\vec{UT=I_W}$} & \\
+		& $\vec{UT(x)}  = \vec{UT}(a_1e_1 + a_2e_2 + ... + a_ne_n)$ \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \\
+		& $ \qquad \quad = \vec{U}\vec{T}((a_1e_1 + a_2e_2 + ... + a_ne_n)$ \\
+		& $ \qquad \quad = \vec{U}(a_1\vec{T}\myvec{1 \\ 0 \\ \vdots \\ 0 } + a_2\vec{T}\myvec{0 \\ 1 \\ \vdots \\ 0 } + ... + a_n\vec{T}\myvec{0 \\ 0 \\ \vdots \\ 1 }) $\\
+		& $ \qquad \quad = a_1\vec{U}(\alpha_{1}) + a_2\vec{U}(\alpha_{2}) + ... + a_n\vec{U}(\alpha_{n})$ \\
+		& $ \qquad \quad = a_1e_1 + a_2e_2 + ... + a_ne_n$ \\
+		&\\
+		& Hence, $\vec{UT}$ is identity map on $\vec{W}$. \\
+		& \\
+		\hline	
+		\multirow{3}{*}{Matrix of} & \\
+		& Now, we define the matrix of $\vec{UTU^{-1}}$. Since $\vec{U\alpha_{i}}$ is the standard $n \times 1$ matrix  \quad \\
+		\quad	$\vec{UTU^{-1}}$ & with all zeros except in the ith place which equals one. Let $\beta^{'}$ be the standard \\
+		& basis for $\vec{W}$. Then the matrix of $\vec{U}$ with respect to $\beta$ and $\beta^{'}$ is the      identity matrix. \\
+		& Likewise the matrix of $\vec{U}^{-1}$ with respect to $\beta^{'}$ and $\beta$ is the identity matrix. \\
+		& Thus,\\
+		& \qquad \qquad \qquad $[\vec{UTU^{-1}}]_\beta = \vec{I[T]_\beta I^{-1}} = [T]_\beta$\\
+		& \\
+		& Thus, the matrix $\vec{A}$ is simply $\vec{[T]_\beta}$, the matrix of $\vec{T}$ with respect to $\beta$.\\
+		& \\
+		\hline			
+	\end{tabular}
+}
+\caption{}
+\label{eq:solutions/3/4/11/table:2}
+\end{table*}
