@@ -1,0 +1,68 @@
+The proof is given in the table \eqref{eq:solutions/3/7/5/table:2} and the properties used for the proof are listed in the table \eqref{eq:solutions/3/7/5/table:1}
+\renewcommand{\thetable}{1}
+\begin{table*}[ht!]
+\begin{center}
+\resizebox{2\columnwidth}{!}
+{
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{
+\textbf{Properties Used}}\\
+\hline
+SVD of matrix $\vec{A}$ & $\vec{A}=\vec{U}\vec{\Sigma}\vec{V}^T$\\[0.5ex]
+\hline
+$\vec{U}$ is unitary & $\vec{U}^T\vec{U}=\vec{I}$\\[0.5ex] 
+\hline
+$\vec{V}$ is unitary & $\vec{V}^T\vec{V}=\vec{I}$\\[0.5ex] 
+\hline
+$\vec{\Sigma}$ is diagonal & $\vec{\Sigma}^T\vec{\Sigma}=\vec{\Sigma}^2$\\[0.5ex] 
+\hline
+Cyclic property & $tr\brak{\vec{ABC}}=tr\brak{\vec{CAB}}$\\[0.5ex] 
+\hline
+$Rank\brak{\vec{A}}$ & $Rank\brak{\vec{A}}=\# \text{non-zero singular values}$\\[0.5ex] 
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{Properties}
+\label{eq:solutions/3/7/5/table:1}
+\end{table*}
+\renewcommand{\thetable}{2}
+\begin{table*}[ht!]
+\begin{center}
+\resizebox{2\columnwidth}{!}
+{
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Statement} & \textbf{Proof} \\[0.5ex]
+\hline
+$tr\brak{\vec{A}^T\vec{A}}=0 \implies \vec{A}=\vec{0}$ & 
+ \parbox{10cm}{\begin{align}
+    tr\brak{\vec{A}^T\vec{A}}=tr\brak{\vec{V}\vec{\Sigma}^T\vec{U}^T\vec{U}\vec{\Sigma}\vec{V}^T}\\
+	=tr\brak{\vec{V}\vec{\Sigma}^T\vec{\Sigma}\vec{V}^T}\\
+	=tr\brak{\vec{V}\vec{\Sigma}^2\vec{V}^T}\\
+	=tr\brak{\vec{V}^T\vec{V}\vec{\Sigma}^2}\\
+	=tr\brak{\vec{\Sigma}^2}\\
+	=\sum\limits_{i=1}^r \sigma_{i}^2 \\ 
+	 tr\brak{\vec{A}^T\vec{A}}=0 \\
+	\implies \sum\limits_{i=1}^r \sigma_{i}^2=0 \; \forall i=1,2,\dots r\\
+	\implies \sigma_i=0 \; \forall i=1,2,\dots r \\
+	\therefore Rank\brak{\vec{A}}=\# \text{non-zero singular values}=0\\
+	\implies \vec{A}=\vec{0}
+\end{align}}
+\\ [0.5ex] 
+\hline
+$\vec{A}=\vec{0} \implies  tr\brak{\vec{A}^T\vec{A}}=0$
+& \parbox{10cm}{\begin{align}
+    \vec{A}=\vec{0}\\
+    \implies \vec{A}^T\vec{A}=\vec{0}\\
+    \implies tr\brak{\vec{A}^T\vec{A}}=0
+\end{align}}
+\\ [0.5ex] 
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{Proofs}
+\label{eq:solutions/3/7/5/table:2}
+\end{table*}

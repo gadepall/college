@@ -1,0 +1,105 @@
+
+%
+
+{\em Theorem 20: }
+Let $g,f_1,f_2,\hdots,f_r$ be linear functionals on vector space $\vec{V}$ with respective null spaces $\vec{N},\vec{N}_1,\hdots,\vec{N}_r$.\\Then $g$ is a linear combination of $f_1,\hdots ,f_r$ if and only if $\vec{N}$ contains the intersection $\vec{N}_1 \cap \vec{N}_2\cap \hdots \cap \vec{N}_r$.
+
+See Tables \ref{eq:table/solutions/3/6/2/1}, \ref{eq:table/solutions/3/6/2/2} for the proof.
+
+\begin{table}[!h]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{tabular}{|p{3cm}|p{5cm}|}
+\hline
+\textbf{PARAMETERS}&\textbf{DESCRIPTION}\\
+\hline
+$\vec{V}$& Finite dimensional vector space with $dim(\vec{V})=n$\\
+\hline
+$\vec{W}$ & Subspace of $\vec{V}$\\
+\hline
+$\vec{W}^0$ & Annihilator of $\vec{W}$\\
+\hline
+$g \in \vec{W}^0$ & $g(\vec{w})=0 \forall \vec{w} \in \vec{W}$\\
+\hline
+$\cbrak{g_1,g_2,\hdots,g_r}$& basis for $\vec{W}^0$\\
+\hline
+$\vec{N}_{g_i}$ & Null space of $g_i$\\
+\hline
+\end{tabular}
+}
+\caption{Input Parameters}
+\label{eq:table/solutions/3/6/2/1}
+\end{table}
+
+
+
+\begin{table*}[!t]
+    \centering
+\resizebox{2\columnwidth}{!}
+{
+    \begin{tabular}{|l|l|}
+    \hline
+    \textbf{STATEMENT} & \textbf{DESCRIPTION}\\
+    \hline
+      $g \in \vec{W}^0$   & 
+      \parbox{10cm}{\begin{align}
+          g=\sum_{i=1}^r c_ig_i
+      \end{align}}\\
+      \hline
+       & From the theorem,\\
+       If $\vec{N}$ is nullspace of $g$  & 
+       \parbox{10cm}{\begin{align}
+           \bigcap_{i=1}^r \vec{N}_{g_i} \subseteq \vec{N}\label{eq:solutions/3/6/2/1}
+       \end{align}}\\
+       \hline
+       $ \forall \vec{w} \in \vec{W}$ &
+       \parbox{10cm}{\begin{align}
+          g(\vec{w})=0\label{eq:solutions/3/6/2/2} 
+       \end{align}}\\
+       \hline
+       $ \eqref{eq:solutions/3/6/2/1},\eqref{eq:solutions/3/6/2/2} \implies$&
+        \parbox{10cm}{\begin{align}
+           \vec{W} \subseteq \bigcap_{i=1}^r \vec{N}_{g_i}\label{eq:solutions/3/6/2/3} 
+       \end{align}}\\
+       \hline
+       Starting with method of contradiction &
+        \parbox{10cm}{\begin{align}
+          \vec{W} \neq \bigcap_{i=1}^r \vec{N}_{g_i} \label{eq:solutions/3/6/2/4} 
+       \end{align}}\\
+       \hline
+       From \eqref{eq:solutions/3/6/2/3},\eqref{eq:solutions/3/6/2/4} there exists & \\
+       a vector $\vec{e}$ such that &
+        \parbox{10cm}{\begin{align}
+          \vec{e} \in  \bigcap_{i=1}^r \vec{N}_{g_i}, \vec{e} \notin \vec{W}\\
+           \text{So  }\forall g \in \vec{W}^0, g(\vec{e})=0 \label{eq:solutions/3/6/2/5}
+       \end{align}}\\
+       \hline
+       Since $g$ is a linear functional on $\vec{V}$ &
+       \parbox{10cm}{\begin{align}
+          \eqref{eq:solutions/3/6/2/5} \implies \vec{e} \in \vec{V}
+       \end{align}}\\
+       \hline
+       $f$ &
+       \parbox{10cm}{A linear functional on $\vec{V}$ defined as\\
+       \begin{align}
+         f(\alpha)
+         \begin{cases}
+         = 0 & \text{ for }     \alpha \in \vec{W}\\
+         \neq 0 & \text{ for } \alpha \in \vec{V},\alpha \notin \vec{W}
+       \end{cases}\\
+        \therefore f \in \vec{W}^0 \text{ and } f(e) \neq 0  \label{eq:solutions/3/6/2/6}
+       \end{align}}\\
+       \hline
+       \eqref{eq:solutions/3/6/2/5},\eqref{eq:solutions/3/6/2/6} contradict each other & 
+       \parbox{10cm}{\begin{align}
+          \vec{W}=\bigcap_{i=1}^r \vec{N}_{g_i}
+       \end{align}}\\
+       \hline
+    \end{tabular}
+}
+    \caption{Proof}
+\label{eq:table/solutions/3/6/2/2}
+\end{table*}
+
+

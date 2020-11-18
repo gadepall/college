@@ -1,61 +1,40 @@
-Let,
+The general Linear functional f on $\vec{V}$ is of the form,
 \begin{align}
-\vec{A} &= \myvec{a&b\\c&d} \quad{\text{$\forall$ $\vec{A} \in \mathbb{W}$}}
+f(\vec{A}) = aA_{11}+bA_{12}+cA_{21}+dA_{22}
+\label{eq:solutions/3/5/9/1}
 \end{align}
-From $\vec{AB} = 0$ we have,
+for a,b,c,d $\in\vec{R}$
+Let $\vec{A} \in \vec{W}$ be,
 \begin{align}
-\myvec{x&y\\z&w}\myvec{2&-2\\-1&1} = \myvec{0&0\\0&0}\label{eq:solutions/3/5/9/eq2}
+\vec{A} = \myvec{p&q\\q&s}\\
+\because \vec{AB} = 0\\
+\implies \myvec{p&q\\q&s}\myvec{2&-2\\-1&1} = 0\\
+\implies \myvec{2p-q&-2p+q\\2q-s&-2q+s} = 0
 \end{align}
-From \eqref{eq:solutions/3/5/9/eq2} we get,
+$\therefore$ q=2p and s=2q.
+Hence $\vec{W}$ consists of all matrices of the form 
 \begin{align}
-y &= 2x\label{eq:solutions/3/5/9/eqy}\\
-w &= 2z\label{eq:solutions/3/5/9/eqn}
+\myvec{p&2p\\q&2q}
 \end{align}
-Hence, using \eqref{eq:solutions/3/5/9/eqy} and \eqref{eq:solutions/3/5/9/eqn} we conclude that $\mathbb{W}$ consists of all the matrices of the following form,
+Now V is an annihilator of W. Hence, f$\in\vec{W}^0$
 \begin{align}
-\vec{A} &= \myvec{x&2x\\z&2z} \quad{\text{$\forall$ $\vec{A} \in \mathbb{W}$}}\label{eq:solutions/3/5/9/eqw}
+\implies f\myvec{p&2p\\q&2q} = 0 \forall p,q \in \vec{R}
 \end{align}
-Hence from \eqref{eq:solutions/3/5/9/eqw} we get,
+from equation \eqref{eq:solutions/3/5/9/1}
 \begin{align}
-A &\in \left\{a\myvec{1&2\\0&0}+b\myvec{0&0\\1&2}\right\} \quad{\text{$\forall$ $a,c \in \mathbb{R}$}}\\
-\implies span(\mathbb{W}) &= \left\{\vec{e_1} = \myvec{1&2\\0&0}, \vec{e_2} = \myvec{0&0\\1&2}\right\}
+\implies ap+2bp+cq+2dq = 0 \forall p,q \in \vec{R}\\
+\implies (a+2b)p + (c+2d)q = 0, \forall p,q \in \vec{R}
 \end{align}
-Hence, $\vec{e_1}$ and $\vec{e_2}$ are basis of $\mathbb{W}$.
-Since $f \in \mathbb{W}^0$, it follows that,
+Hence, b=$\frac{-1}{2}$a and d=$\frac{-1}{2}$c. Hence general $f\in\vec{W}^0$ is of the form,
 \begin{align}
-f(\vec{e_1}) &= 0\label{eq:solutions/3/5/9/v1}\\
-f(\vec{e_2}) &= 0\label{eq:solutions/3/5/9/v2}
+f(\vec{A}) = aA_{11}-\frac{1}{2}a A_{12}+cA_{21}-\frac{1}{2}cA_{22}
+\label{eq:solutions/3/5/9/2}
 \end{align}
-Again given,
+Now, f($\vec{C}$) = 3 $\implies$ d =3 $\implies$ c=-6. Also given that, f($\vec{I}$) = 0 $\implies$ a-$\frac{1}{2}$c =0 $\implies$ a=-3. Substituting the above parameters in equation \eqref{eq:solutions/3/5/9/2} we get,
 \begin{align}
-f(\vec{I}) &= 0\label{eq:solutions/3/5/9/v3}\\
-f(\vec{C}) &= 0\label{eq:solutions/3/5/9/v4}
+\therefore f(\vec{A}) = -3A_{11}+\frac{3}{2} A_{12}-6A_{21}+3A_{22} \\
+\mbox{Now, } f(\vec{B}) = f\myvec{2&-2\\-1&1} 
 \end{align}
-From \eqref{eq:solutions/3/5/9/v1}, \eqref{eq:solutions/3/5/9/v2}, \eqref{eq:solutions/3/5/9/v3} and \eqref{eq:solutions/3/5/9/v4} we conclude that $\vec{I},\vec{C},\vec{e_1}, \vec{e_2}$ are linearly independent. We prove the statement as follows,
 \begin{align}
-c_1\myvec{1&0\\0&1}+c_2\myvec{0&0\\0&1}+c_3\myvec{1&2\\0&0}+c_4\myvec{0&0\\1&2} &= \myvec{0&0\\0&0}\\
-\implies \myvec{c_1+c_3&2c_3\\c_4&c_1+c_2+2c_4} &= \myvec{0&0\\0&0}\\
-\implies c_1 = c_2 = c_3 = c_4 &= 0\label{eq:solutions/3/5/9/ind}
+\implies f(\vec{B}) = -3(2)+\frac{3}{2}(-2)-6(-1)+3(1) = 0 
 \end{align}
-Since $dim(\mathbb{V}) = 2\times2 = 4$, hence the set $\left\{\vec{I},\vec{C},\vec{e_1}, \vec{e_2}\right\}$ forms a basis for the vector-space $\mathbb{V}$ which is the vector-space of all $2 \times 2$ matrices.\\
-Since $\vec{B} \in \mathbb{V}$ then there exists $c_1,c_2,c_3,c_4$ such that,
-\begin{align}
-&c_1\vec{I}+c_2\vec{C}+c_3\vec{e_1}+c_4\vec{e_2} =\vec{B}\\
-&c_1\myvec{1&0\\0&1}+c_2\myvec{0&0\\0&1}+c_3\myvec{1&2\\0&0}+c_4\myvec{0&0\\1&2}\\
-&=\myvec{2&-2\\-1&1}\\
-&\myvec{c_1+c_3&2c_3\\c_4&c_1+c_2+2c_4} = \myvec{2&-2\\-1&1}\label{eq:solutions/3/5/9/sys}
-\end{align}
-From \eqref{eq:solutions/3/5/9/sys} we get,
-\begin{align}
-c_1 &= 3\label{eq:solutions/3/5/9/val1}\\
-c_2 &= 0\label{eq:solutions/3/5/9/val2}\\
-c_3 &= -1\label{eq:solutions/3/5/9/val3}\\
-c_4 &= -1\label{eq:solutions/3/5/9/val4}
-\end{align}
-From \eqref{eq:solutions/3/5/9/val1}, \eqref{eq:solutions/3/5/9/val2}, \eqref{eq:solutions/3/5/9/val3} and \eqref{eq:solutions/3/5/9/val4} we get,
-\begin{align}
-f(\vec{B}) &= f(3\vec{I}-\vec{e_1}-\vec{e_2})\\
-&= 3f(\vec{I})-f(\vec{e_1})-f(\vec{e_2})\\
-&= 0\label{eq:solutions/3/5/9/Ans}
-\end{align}
-The \eqref{eq:solutions/3/5/9/Ans} is the required answer.

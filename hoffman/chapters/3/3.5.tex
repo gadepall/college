@@ -14,6 +14,10 @@ $\alpha_3 =\myvec{-1\\-1\\0}$.
 \\
 \solution
 \input{./solutions/3/5/1/a/solution.tex}
+\item Describe explicitly a linear functional f on $R^3$ such that $f(\alpha_1)=f(\alpha_2)=0$ but $f(\alpha_3)\neq 0$.
+\\
+\solution
+\input{./solutions/3/5/1/b/solution.tex}
 \end{enumerate}
 %
 \item If $\vec{A}$ and $\vec{B}$ are $n\times n$ matrices over the field $\vec{F}$, show that trace($\vec{A}\vec{B}$) = trace($\vec{B}\vec{A}$). Now show that similar matrices have the same trace. 
@@ -21,6 +25,29 @@ $\alpha_3 =\myvec{-1\\-1\\0}$.
 \\
 \solution
 \input{./solutions/3/5/3/solution.tex}
+\item Let $\vec{V}$ be the vector space of all polynomial functions p from $\vec{R}$ into $\vec{R}$ which have degree 2 or less:
+\begin{align}
+    p(x) = c_0 + c_1x + c_2x^2 \nonumber
+\end{align}
+Define three linear functionals on $\vec{V}$ by
+\begin{align}
+    f_1(p) = \int_{0}^{1} p(x) \, dx; \: f_2(p) = \int_{0}^{2} p(x) \, dx; \nonumber \\
+    f_3(p) = \int_{0}^{-1} p(x) \, dx \nonumber
+\end{align}
+Show that $\{f_1, f_2,f_3\}$ is a basis for $\vec{V}^*$ by exhibiting the basis for $\vec{V}$ of which it is the dual. 
+%
+\\
+\solution
+\input{./solutions/3/5/4/solution.tex}
+\item Let $\alpha_1$ = $(1, 0,-1, 2)$ and $\alpha_2$ = $(2,3, 1,1)$ and let $\vec{W}$ be the subspace of $\mathbb{R}^4$ spanned by $\alpha_1$ and $\alpha_2$. Which linear functionals $\vec{f}$ :
+\begin{align}
+f(x_1,x_2,x_3,x_4) = c_1x_1 + c_2x_2 + c_3x_3 + c_4x_4 \label{eq:solutions/3/5/7/3} 
+\end{align}
+are in the annihilator of $\vec{W}$?
+%
+\\
+\solution
+\input{./solutions/3/5/7/solution.tex}
 \item Let $\mathbb{V}$ be the vector space of all $2 \times 2$ matrices over the field of real numbers, and let
 \begin{align}
 \vec{B} &= \myvec{2&-2\\-1&1}
@@ -33,7 +60,7 @@ Find $f(\vec{B})$
 %
 \\
 \solution
-%\input{./solutions/3/5/9/solution.tex}
+\input{./solutions/3/5/9/solution.tex}
 \item Let $\mathbb{F}$ be a field of characteristic zero and let $\vec{V}$ be a finite dimensional vector space over  $\mathbb{F}$.If $\alpha_1,\alpha_2,\hdots,\alpha_m$ are finitely many vectors in $\vec{V}$ , each different from the zero vector, prove that there is a linear functional $f$ on $\vec{V}$ such that
 \begin{align}
     f(\alpha_i) \neq 0, i=1,2,\hdots,m

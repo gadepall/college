@@ -1,0 +1,84 @@
+Given the basis $\vec{F}$ and corresponding dual basis $\vec{G}$, the defining property of the dual basis states that:
+\begin{align}
+    \vec{G}^T \vec{F} &= \vec{I} \nonumber \\
+    \implies \vec{G} &= (\vec{F}^{-1})^T \label{eq:solutions/3/5/4/eq:2_1}
+\end{align}
+
+Let the indexed vector sets,
+\begin{align}
+    \vec{V} = \{f_1, f_2, f_3\}; \: \vec{V}^* = \{\alpha_1, \alpha_2, \alpha_3\} \nonumber 
+\end{align}
+1. Let,
+\begin{align}
+    \vec{p^\prime} = \vec{c}^T\vec{x} \label{eq:solutions/3/5/4/eq:4_1}
+\end{align}
+where,
+\begin{align}
+    \vec{c} = \myvec{c_0 \\ c_1 \\ c_2}; \quad 
+    \vec{x} = \myvec{1 \\ x \\ x^2} \nonumber
+\end{align}
+2. Representing the functionals as vector,
+\begin{align}
+    \vec{f} = \myvec{f_1 \\ f_2 \\ f_3} \label{eq:solutions/3/5/4/eq:4_2}
+\end{align}
+3. Representing the integrations as vector,
+\begin{align}
+    \vec{I} = \myvec{\int_{0}^{1} \, dx \\ \int_{0}^{2} \, dx \\
+    \int_{0}^{-1} \, dx} \label{eq:solutions/3/5/4/eq:4_3}
+\end{align}
+4. So,
+\begin{align}
+    \vec{f} = \vec{I} \vec{c}^T \vec{x} = \vec{I} \vec{p^\prime} \label{eq:solutions/3/5/4/eq:4_4}
+\end{align}
+\eqref{eq:solutions/3/5/4/eq:4_4} can written in matrix format as,
+\begin{align}
+    \vec{f} = \vec{P} \vec{c} \label{eq:solutions/3/5/4/eq:4_5}
+\end{align}
+where,
+\begin{align}
+    \vec{P}  = \myvec{1 & \frac{1}{2} & \frac{1}{3} \\ 2 & 2 & \frac{8}{3} \\ -1 & \frac{1}{2} & \frac{-1}{3}} \label{eq:solutions/3/5/4/eq:4_6}
+\end{align}
+5. $\vec{P}$ is one-one if it has a inverse. Calculating the determinant of $\vec{P}$,
+\begin{align}
+    \implies \mydet{P} = -2 \label{eq:solutions/3/5/4/eq:4_7}
+\end{align}
+From, \eqref{eq:solutions/3/5/4/eq:4_7}, $\vec{P}$ is one-one. Also,
+\begin{align}
+    \vec{V} = \vec{f}^T = \myvec{f_1 & f_2 & f_3} \label{eq:solutions/3/5/4/eq:4_8} 
+\end{align}
+From \eqref{eq:solutions/3/5/4/eq:4_5}, \eqref{eq:solutions/3/5/4/eq:4_7} and \eqref{eq:solutions/3/5/4/eq:4_8}, the rows of $\vec{P}$ are isomorphic to $\vec{V}$. So, finding the dual basis by performing matrix operations on $\vec{P}^T$
+\begin{align}
+    \myvec{1 & 2 & -1 & 1 & 0 & 0 \\
+    \frac{1}{2} & 2 & \frac{1}{2} & 0 & 1 & 0\\
+    \frac{1}{3} & \frac{8}{3} & \frac{-1}{3} & 0 & 0 & 1} \xleftrightarrow[R_2\leftarrow R_2-\frac{R_1}{2}]{R_3\leftarrow R_3-\frac{R_1}{3}} \nonumber \\
+    \myvec{1 & 2 & -1 & 1 & 0 & 0 \\ 
+    0 & 1 & 1 & \frac{-1}{2} & 1 & 0 \\
+    0 & 2 & 0 & \frac{-1}{3} & 0 & 1}
+    \xleftrightarrow[]{R_3 \leftarrow \frac{R_3-2R_2}{-2}} \nonumber
+\end{align}
+\begin{align}
+    \myvec{1 & 2 & -1 & 1 & 0 & 0 \\ 
+    0 & 1 & 1 & \frac{-1}{2} & 1 & 0 \\
+    0 & 0 & 1 & \frac{-1}{3} & 1 & \frac{-1}{2}} 
+    \xleftrightarrow[R_2 \leftarrow R_2 - R_3]{R_1 \leftarrow R_1 + R_3} \nonumber \\
+    \myvec{1 & 2 & 0 & \frac{2}{3} & 1 & \frac{-1}{2} \\ 
+    0 & 1 & 0 & \frac{-1}{6} & 0 & \frac{1}{2} \\
+    0 & 0 & 1 & \frac{-1}{3} & 1 & \frac{-1}{2}} 
+    \xleftrightarrow[]{R_1\leftarrow R_1-2R_2} \nonumber
+\end{align}
+\begin{align}
+    \myvec{1 & 0 & 0 & 1 & 1 & \frac{-3}{2} \\
+    0 & 1 & 0 & \frac{-1}{6} & 0 & \frac{1}{2} \\
+    0 & 0 & 1 & \frac{-1}{3} & 1 & \frac{-1}{2}} \label{eq:solutions/3/5/4/eq:4_9}
+\end{align}
+From \eqref{eq:solutions/3/5/4/eq:4_9}, the dual of $\vec{V} \implies \vec{V^*}$ can be written in matrix form as,
+\begin{align}
+    \vec{V^*} = \vec{A}\vec{x} \label{eq:solutions/3/5/4/eq:4_10}
+\end{align}
+where,
+\begin{align}
+    \vec{A} = \myvec{1 & 1 & \frac{-3}{2} \\
+    \frac{-1}{6} & 0 & \frac{1}{2} \\
+    \frac{-1}{3} & 1 & \frac{-1}{2}}; \quad 
+    \vec{x} = \myvec{1 \\ x \\ x^2} \nonumber
+\end{align}

@@ -1,0 +1,57 @@
+Let us consider $\vec{\alpha} = \myvec{a\\b\\c}$ such that
+\begin{align}
+\alpha_1 x_1 + \alpha_2 x_2 + \alpha_2 x_2 = \vec{\alpha}\\
+\alpha_1 x_1 + \alpha_2 x_2 + \alpha_2 x_2 = \myvec{a\\b\\c}
+\end{align}
+The coefficient matrix is :
+\begin{align}
+A = \myvec{1 & 0 & -1\\0 & 1 & -1\\1 & -2 & 0}
+\end{align}
+So,
+\begin{align}
+A\vec{x}= \vec{\alpha}\\
+\implies x = A^{-1} \alpha\\
+\end{align}
+Now to get $A^{-1}$, we will consider Gauss-Jordon theorem. So, we will take $(A|I)$, where $I$ is a $3\times3$ identity matrix.
+\begin{multline}
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\0 & 1 & -1 & 0 & 1 & 0\\1 & -2 & 0 & 0 & 0 & 1}\xleftrightarrow[]{R_3\leftarrow R_3-R_1}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\0 & 1 & -1 & 0 & 1 & 0\\0 & -2 & 1 & -1 & 0 & 1}
+\xleftrightarrow[]{R_3\leftarrow R_3+2R_2}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\0 & 1 & -1 & 0 & 1 & 0\\0 & 0 & -1 & -1 & 2 & 1}\xleftrightarrow[]{R_3\leftarrow R_3/(-1)}\\
+\myvec{1 & 0 & -1 & 1 & 0 & 0\\0 & 1 & -1 & 0 & 1 & 0\\0 & 0 & 1 & 1 & -2 & -1}\xleftrightarrow[R_1\leftarrow R_1+R_3]{R_2\leftarrow R_2+R_3}\\
+\myvec{1 & 0 & 0 & 2 & -2 & -1\\0 & 1 & 0 & 1 & -1 & -1\\0 & 0 & 1 & 1 & -2 & -1}
+\end{multline}
+Now, we can say that
+\begin{align}
+A^{-1} = \myvec{2 & -2 & -1\\1 & -1 & -1\\1 & -2 & -1}
+\end{align}
+As
+\begin{align}
+\vec{x} = A^{-1} \vec{\alpha}\\
+\implies \myvec{x_1\\x_2\\x_3}= A^{-1} \myvec{a\\b\\c}\\
+\implies \vec{x}= \myvec{2 & -2 & -1\\1 & -1 & -1\\1 & -2 & -1} \myvec{a\\b\\c}
+\end{align}
+
+Now, as $f$ is a linear functional on $R^3$,
+\begin{align}
+\vec{\alpha} = \alpha_1 x_1 + \alpha_2 x_2 + \alpha_2 x_2\\
+\implies f(\alpha) = f(\alpha_1 x_1 + \alpha_2 x_2 + \alpha_2 x_2)\\
+\implies f(\alpha) = x_1 f(\alpha_1) + x_2f(\alpha_2)+ x_3f(\alpha_3)\\
+\implies f(\alpha) = \myvec{x_1 & x_2 & x_3} \myvec{f(\alpha_1)\\f(\alpha_2)\\f(\alpha_3)}\\
+\implies f(\alpha) = \vec{x}^T \myvec{f(\alpha_1)\\f(\alpha_2)\\f(\alpha_3)}
+\end{align}
+As mentioned in the problem statement, $f(\alpha_1)=f(\alpha_2)=0$ and $f(\alpha_3)\neq 0$.
+
+Now,
+\begin{align}
+f(\alpha) = \vec{x}^T \myvec{f(\alpha_1)\\f(\alpha_2)\\f(\alpha_3)}\\
+\implies f(\alpha) =  \vec{x}^T \myvec{0\\0\\f(\alpha_3)}\\
+\implies f(\alpha) = \myvec{a\\b\\c}^T \myvec{2 & 1 & 1\\-2 & -1 & -2\\-1 & -1 & -1} \myvec{0\\0\\f(\alpha_3)}\\
+\implies f(\alpha) = \myvec{a\\b\\c}^T \myvec{f(\alpha_3)\\-2f(\alpha_3)\\-f(\alpha_3)}\\
+\implies f(a,b,c) = f(\alpha_3) \myvec{a\\b\\c}^T \myvec{1\\-2\\-1}
+\end{align}
+So, the function can be defined as:
+\begin{align}
+f(a,b,c) = f(\alpha_3) \myvec{a\\b\\c}^T \myvec{1\\-2\\-1}\\
+\textbf{or,} f(\vec{\alpha}) = f(\alpha_3) (a-2b-c)
+\end{align}

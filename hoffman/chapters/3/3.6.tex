@@ -1,0 +1,26 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item Use theorem 20 to prove the following.If $\vec{W}$ is a subspace of a finite dimensional vector space $\vec{V}$ and if $\cbrak{g_1,g_2,\hdots,g_r}$ is any basis for $\vec{W}^0$ then
+\begin{align}
+    \vec{W}=\bigcap_{i=1}^r \vec{N}_{g_i}
+\end{align}
+%
+\\
+\solution
+\input{./solutions/3/6/2/solution.tex}
+
+\item Let $S$ be a set, $F$ a field, and $V(S;F)$ the space of all functions from $S$ into $F$:
+\begin{align}
+	\nonumber (f+g)(x) &= f(x) + g(x)\\
+	\nonumber (cf)(x) &= cf(x)
+\end{align}
+Let $W$ be any $n$-dimensional  subspace of $V(S,F)$. Show that there exist points $x_1,x_2, \dots, x_n$ in $S$ and functions $f_1,\dots,f_n$ in $W$ such that $f_i(x_j) = \delta_{ij}$
+%
+\\
+\solution
+\input{./solutions/3/6/3/solution.tex}
+\end{enumerate}

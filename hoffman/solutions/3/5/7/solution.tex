@@ -1,0 +1,69 @@
+\begin{table}[!ht]
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Linear Functional} & \\
+		& If $\vec{V}$ is a vector space over the field $\vec{F}$, a linear transformation $\vec{f}$ from $\vec{V}$
+		into the scalar \\
+		& field $\vec{F}$ is also called a linear functional on $\vec{V}$. \\
+		& \\
+		\hline
+		\multirow{3}{*}{Dual Space of $\vec{V}$} & \\
+		& If $\vec{V}$ is a vector space, the collection of all linear functionals on $\vec{V}$ forms a vector space\\
+		& It is the space $\vec{L(V, F)}$ which we denote by $\vec{V}^{*}$ and is called as dual space of $\vec{V}$.\\
+		\hline
+		\multirow{3}{*}{Annihilator of $S$} & \\
+		& $\vec{V}$ is a vector space over the field $\vec{F}$ and $S$ is a subset of $\vec{V}$, the annihilator of $S$ is the set \\
+		& $S^{o}$ of linear functionals $\vec{f}$ on $\vec{V}$ such that $\vec{f(\alpha)}$ = 0 for every $\alpha$ in $S$. \\
+		& \\
+		\hline
+	\end{tabular}
+\end{table}
+\eqref{eq:solutions/3/5/7/3}, can be expressed as
+\begin{align}
+& \vec{f}\brak{\vec{x}} = \vec{x}^T\vec{c} \label{eq:solutions/3/5/7/5} \\
+& \text{where} \quad \vec{x} = \myvec{x_1 \\ x_2 \\ x_3 \\ x_4} \quad \text{and} \quad \vec{c} = \myvec{c_1 \\ c_2 \\ c_3 \\ c_4}
+\end{align}
+ 
+Given two vectors 
+\begin{align}
+\vec{\alpha_1} = \myvec{1 \\ 0 \\ -1 \\ 2} \quad and \quad \vec{\alpha_2} = \myvec{2 \\ 3 \\ 1 \\ 1}
+\end{align}
+Since, $\vec{\alpha_1}$ is not a scalar multiple of $\vec{\alpha_2}$. Thus, $\vec{\alpha_1}$ and $\vec{\alpha_2}$ are linearly independent. Also, given $\vec{\alpha_1}$ and $\vec{\alpha_2}$ span $\vec{W}$, thus \{$\vec{\alpha_1}$, $\vec{\alpha_2}$\} form basis for $\vec{W}$. Hence, $\vec{W}$ has dimension 2.
+
+Now, a functional $\vec{f}$ is in the annihilator of $\vec{W}$ if and only if $\vec{f(\alpha_1)} = \vec{f(\alpha_2)} = 0$. We find such $\vec{f}$ by solving the system 
+\begin{align}
+\vec{f(\alpha_1)} = \vec{f(\alpha_2)} = 0 \label{eq:solutions/3/5/7/4}
+\end{align}
+%\begin{align}
+%& \vec{f(\alpha_1)} = \vec{\alpha_1}^T\vec{c} = \myvec{1 & 0 & -1 & 2}\myvec{c_1 \\ c_2 \\ c_3 \\ c_4} = 0 \\
+%& \vec{f(\alpha_2)} = \vec{\alpha_2}^T\vec{c} = \myvec{2 & 3 & 1 & 1}\myvec{c_1 \\ c_2 \\ c_3 \\ c_4} =  0
+%\end{align}
+
+%\begin{align}
+%& c_1 - c_3 + 2c_4 = 0  \label{eq:solutions/3/5/7/4}\\
+%& 2c_1 + 3c_2 + c_3 + c_4 = 0 \label{eq:solutions/3/5/7/5}
+%\end{align}
+From, \eqref{eq:solutions/3/5/7/5} and \eqref{eq:solutions/3/5/7/4}, we have
+\begin{align}
+\myvec{1 & 0 & -1 & 2 \\ 2 & 3 & 1 & 1}\myvec{c_1 \\ c_2 \\ c_3 \\ c_4} = 0 \label{eq:solutions/3/5/7/1}
+\end{align} 
+Converting \eqref{eq:solutions/3/5/7/1} into row reduced echelon form
+\begin{align}
+& \myvec{1 & 0 & -1 & 2 \\ 2 & 3 & 1 & 1} \xleftrightarrow[]{r_2 = r_2 - 2r_1} & \myvec{1 & 0 & -1 & 2 \\ 0 & 3 & 3 & -3} \\
+& \myvec{1 & 0 & -1 & 2 \\ 0 & 3 & 3 & -3} \xleftrightarrow[]{r_2 = \frac{r_2}{3}} & \myvec{1 & 0 & -1 & 2 \\ 0 & 1 & 1 & -1} \label{eq:solutions/3/5/7/2}
+\end{align}
+from \eqref{eq:solutions/3/5/7/2}, we have
+\begin{align}
+\myvec{1 & 0 & -1 & 2 \\ 0 & 1 & 1 & -1}\myvec{c_1 \\ c_2 \\ c_3 \\ c_4} = 0
+\end{align}
+The general element of $\vec{W}^{o}$ is therefore
+\begin{align}
+ \vec{f}(\vec{x}) = \vec{x}^T\vec{a} 
+\end{align}
+where 
+\begin{align}
+\vec{x} = \myvec{x_1 \\ x_2 \\ x_3 \\ x_4} \quad and \quad \vec{a} = \myvec{c_3 - 2c_4 \\ -c_3 + c_4 \\ c_3 \\ c_4 }	
+\end{align}
+for arbitrary constants $c_3$ and $c_4$. 
+
+Also, $\vec{W}^{o}$ has dimension 2.

@@ -1,0 +1,37 @@
+The given transformation can be written as,
+\begin{align}
+T(\vec{x})=&\vec{A}\vec{x}\\
+=&\myvec{1&0&0\\0&0&1\\0&-2&-1}\vec{x}
+\end{align}
+Hence,
+\begin{align}
+\vec{A}=\myvec{1&0&0\\0&0&1\\0&-2&-1}
+\end{align}
+Now the characteristic equation of $\vec{A}$ is given by,
+\begin{align}
+\det{(\vec{A} - \lambda \vec{I})} =&0\\
+=&\myvec{1-\lambda&0&0\\0&-\lambda&1\\0&-2&-1-\lambda}\\
+&\implies(1-\lambda)(\lambda^2 +\lambda+2) =0
+\end{align}
+Now, simplifying the above equation,
+\begin{align}
+(1-\lambda)(\lambda^2 +\lambda+2) =0\\
+\lambda^2 +\lambda+2-\lambda^3-\lambda^2-2\lambda=0\\
+\lambda^3=2-\lambda
+\end{align}
+ Now using Cayley Hamilton Theorem we get,
+\begin{align}
+\vec{A}^3=2\vec{I}-\vec{A}
+\end{align}
+Hence the polynomial $f(\vec{A})$ can be written using the characteristic function of $\vec{A}$ as follows,
+\begin{align}
+f(\vec{A}) &= -\vec{A}^3 + 2\vec{I}\\
+&= 2\vec{I}-\vec{A}+2\vec{I}\\
+&= \vec{A}
+\end{align}
+Hence,
+\begin{align}
+f(T)(\vec{x})&=\vec{A}\vec{x}\\
+&=\myvec{1&0&0\\0&0&1\\0&-2&-1}\vec{x}
+\end{align}
+

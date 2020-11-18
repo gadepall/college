@@ -1,0 +1,95 @@
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Given & $\vec{T}:\mathbb{V} \rightarrow \mathbb{V}$\\
+&\\
+\hline
+& \\
+To prove & a) $ range(\vec{T}) \cap null space(\vec{T}) = \left\lbrace 0 \right\rbrace$\\
+& \\
+& b) If $\vec{T}(\vec{T}\alpha) = 0$, then $\vec{T}\alpha = 0$.\\
+& \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Proof(a) & Let $\vec{x} \in \mathbb{V}$\\
+& and \\
+& $\vec{x} \in range(\vec{T}) \cap null space(\vec{T})$\\
+& then,\\
+& $\vec{x} \in range(\vec{T})$\\
+& $\vec{x} \in null space(\vec{T})$\\
+& \\
+& Consider $\vec{y} \in \mathbb{V}$ whose\\
+& linear transformation into $\mathbb{V}$ is $\vec{x}$.\\
+& $\implies \vec{T}(\vec{y}) = \vec{x}$\\
+& \\
+& since $\vec{x} \in $ null space$(\vec{T})$ \\
+& and the sub space is linearly independent \\
+& $\vec{T}(\vec{x}) = 0$\\
+& from above equations \\
+& $\vec{T}(\vec{T}(y)) = 0$\\
+& \\
+& from the definition of linear\\
+& transformation of independent vector space\\
+& $\vec{T}(y) = 0$\\
+& $\implies \vec{x} = 0$\\
+& $\implies \left\lbrace 0 \right\rbrace \subseteq range(\vec{T}) \cap null space(\vec{T})$ \\
+& $\therefore range(\vec{T}) \cap null space(\vec{T}) = \left\lbrace 0 \right\rbrace$\\
+& Hence Proved.\\
+& \\
+\hline
+& \\
+Proof(b) & If $\vec{T}(\vec{T}\alpha) = 0$\\
+& then, from the definition of linear\\
+& transformation, $\vec{T}\alpha$ will \\
+& be in the null space of linear \\
+& transformation $\vec{T}$ and is linearly \\
+& independent \\
+& $\therefore \vec{T}\alpha = 0$\\
+& \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Eg: & Let $\alpha \in \mathbb{V}$ and\\
+& \\
+& $\alpha = \myvec{1&7&-1&-1\\-1&1&2&1\\4&-2&0&-4\\2&3&4&-2}$\\
+& \\
+& linear transformation of $\alpha$ into $\mathbb{V}$\\
+& $\vec{T}(\alpha) = c\alpha$\\
+& \\
+& then row reduced echelon form of $\vec{T}$ is\\
+& $rref(\vec{T}) = \myvec{1&0&0&-1\\0&1&0&0\\0&0&1&0\\0&0&0&0}$\\
+& \\
+& $\implies rank(\vec{T}) = 3,$\\
+& $nullity(\vec{T}) = 1$\\
+& \\
+& $\implies range(\vec{T}) = \myvec{1&7&-1\\-1&1&2\\4&-2&0\\2&3&4},$\\
+& $null space(\vec{T}) = \myvec{1\\0\\0\\1}$\\
+& \\
+& $\therefore range(\vec{T}) \cap null space(\vec{T}) = \left\lbrace 0 \right\rbrace$\\
+& \\
+& Hence proved that the intersection \\
+& of the range of $\vec{T}$ and \\
+& null space of $\vec{T}$ is the zero \\
+& subspace of $\mathbb{V}$.\\
+& \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+

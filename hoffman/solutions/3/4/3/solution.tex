@@ -1,0 +1,40 @@
+See Table \ref{eq:solutions/3/4/3/table:1}.
+\begin{table*}[ht!]
+\begin{center}
+\resizebox{2\columnwidth}{!}
+{
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{
+Let $\{\vec{\alpha_1}, \vec{\alpha_2}, \cdots, \vec{\alpha_n}\}$ be an ordered basis of $\vec{F^n}$}\\[1ex]
+\hline
+\textbf{Given} & \textbf{Explanation} \\[0.5ex]
+\hline
+\text{T is a linear operator $\vec{F^n}$} & 
+\text{As T is linear,}\\
+& \parbox{10cm}{\begin{align}
+    &T(\vec{x}) = \vec{Ax}\\
+    &\vec{A} = \myvec{T\vec{\epsilon_1}&T\vec{\epsilon_2}&\cdots&T\vec{\epsilon_n}} \label{eq:solutions/3/4/3/eq:eq1}
+\end{align}} \\
+& From equation \eqref{eq:solutions/3/4/3/eq:eq1}, columns of $\vec{A}$ are the images of the standard basis \\ &elements of $\vec{F^n}$.
+\\ [0.5ex]
+\hline
+Range of T & 
+ \parbox{10cm}{\begin{align}
+    \text{range}(T) = \{T\vec{\epsilon_1}, T\vec{\epsilon_2}, \cdots, T\vec{\epsilon_n}\} \label{eq:solutions/3/4/3/eq:eq2}
+\end{align}} \\
+& From equation \eqref{eq:solutions/3/4/3/eq:eq1} and \eqref{eq:solutions/3/4/3/eq:eq2}, columns of $\vec{A}$ generate the range of T.
+\\ [0.5ex]
+\hline
+\text{W spanned by column vectors $\vec{A}$} & 
+Since any generating set contains a basis for the generated space, \\&we can say that the columns of $\vec{A}$ contains a basis of the range of T.\\
+&As W is spanned by column vectors of $\vec{A}$, we can say that W \\
+&contains a basis for the range of T.
+\\ [0.5ex]
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{Expanation}
+\label{eq:solutions/3/4/3/table:1}
+\end{table*}

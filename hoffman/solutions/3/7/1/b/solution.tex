@@ -1,0 +1,47 @@
+
+ The linear operator \textbf{T} can be represented as a matrix $\vec{A}$ as follows
+ \begin{align}
+\vec{A} = \myvec{0 & -1 \\ 1 & 0}\\
+\end{align}
+Let suppose,
+\begin{align}
+\vec{X_1} = \myvec{x_1 \\ x_2}, \vec{X_2} = \myvec{-x_2 \\ x_1}\\
+\intertext{And,}
+\vec{U} = \myvec{a & b}
+\end{align}
+
+
+\begin{align}
+\textbf{T}(x_1, x_2) = \vec{A}\vec{X_1}\\
+\implies \vec{A}\vec{X_1} = \myvec{0 & -1 \\ 1 & 0}\vec{X_1} = \vec{X_2}
+\intertext{And \eqref{eq:solutions/3/7/1/b/1.2} can be written as}
+f(x_1,x_2) = \vec{U}\vec{X_1}
+ \end{align}
+Now, we have given,
+\begin{align}
+g = \textbf{T}^{t}f\\ 
+\implies g(x_1, x_2) = \textbf{T}^{t} f(x_1, x_2)\label{eq:solutions/3/7/1/b/2.5}
+\end{align}
+We know that, if \textbf{V} and \textbf{W} be vector spaces over the field $\mathbb{F}$. For each linear transformation \textbf{T} from \textbf{V} into \textbf{W}, there is a unique linear transformation
+$\textbf{T}^{t}$ from $\textbf{W*}$ into $\textbf{V*}$ such that,
+
+\begin{align}
+(\textbf{T}^{t}g)(\alpha)  = g (\textbf{T}\alpha) \label{eq:solutions/3/7/1/b/2.7}
+\end{align}
+Where for every $g$ in $\textbf{W*}$ and $\alpha$ in \textbf{V}.\\
+
+Now using \eqref{eq:solutions/3/7/1/b/2.7} in \eqref{eq:solutions/3/7/1/b/2.5} we can write,
+\begin{align}
+ \textbf{T}^{t} f(x_1, x_2) = f(\textbf{T}(x_1, x_2)) \label{eq:solutions/3/7/1/b/2.8}\\
+ \implies f(\textbf{T}(x_1, x_2)) = \vec{U}\vec{A}\vec{X_1}\\
+f(\textbf{T}(x_1, x_2)) = \myvec{a & b}\myvec{0 & -1 \\ 1 & 0}\myvec{x_1 \\x_2} = \vec{U}\vec{X_2}\\
+\implies f(\textbf{T}(x_1, x_2)) = -ax_2 + bx_1 \label{eq:solutions/3/7/1/b/2.10}
+\end{align}
+Hence,
+\begin{multline}
+%\intertext{Combining \eqref{eq:solutions/3/7/1/b/2.5}, \eqref{eq:solutions/3/7/1/b/2.8} and \eqref{eq:solutions/3/7/1/b/2.10} we have}
+ % g(x_1, x_2) = -ax_2 + bx_1
+ f(\textbf{T}(x_1, x_2)) = -ax_2 + bx_1 =  g(x_1, x_2) \\ = \myvec{a & b}\myvec{-x_2 \\ x_1} = \vec{U}\vec{X_2}
+  \end{multline}
+
+

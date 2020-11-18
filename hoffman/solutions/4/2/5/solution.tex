@@ -1,0 +1,35 @@
+First we observe the following,
+\begin{align}
+(\vec{P}^{-1}\vec{A}\vec{P})^2 &= (\vec{P}^{-1}\vec{A}\vec{P})(\vec{P}^{-1}\vec{A}\vec{P})\\
+&= \vec{P}^{-1}\vec{A}^2\vec{P}\label{eq:solutions/4/2/5/eq1}
+\end{align}
+Let the \eqref{eq:solutions/4/2/5/eq1} be true for a positive integer $m$ i.e,
+\begin{align}
+(\vec{P}^{-1}\vec{A}\vec{P})^m &= \vec{P}^{-1}\vec{A}^m\vec{P}\label{eq:solutions/4/2/5/eq2}
+\end{align}
+Now for the integer $m+1$ we get from \eqref{eq:solutions/4/2/5/eq2},
+\begin{align}
+(\vec{P}^{-1}\vec{A}\vec{P})^{m+1} &= (\vec{P}^{-1}\vec{A}^m\vec{P})(\vec{P}^{-1}\vec{A}\vec{P})\\
+&= \vec{P}^{-1}\vec{A}^{m+1}\vec{P}\label{eq:solutions/4/2/5/eq3}
+\end{align}
+From \eqref{eq:solutions/4/2/5/eq2} and \eqref{eq:solutions/4/2/5/eq3} we get for any positive integer $n$,
+\begin{align}
+(\vec{P}^{-1}\vec{A}\vec{P})^{n} &= \vec{P}^{-1}\vec{A}^n\vec{P} \label{eq:solutions/4/2/5/obs}
+\end{align}
+Again we have,
+\begin{align}
+\vec{P}^{-1}\vec{P} &= \vec{I}\label{eq:solutions/4/2/5/Id}
+\end{align}
+The general form of polynomial $f(\vec{A})$ is defined as,
+\begin{align}
+f(\vec{A}) &= a_0+a_1\vec{A}+a_2\vec{A}^2+\dots+a_n\vec{A}^n\label{eq:solutions/4/2/5/Pol}
+\end{align}
+Now we have,
+\begin{align}
+f(\vec{P}^{-1}\vec{A}\vec{P}) &= a_0+a_1(\vec{P}^{-1}\vec{A}\vec{P})+\dots+a_n(\vec{P}^{-1}\vec{A}\vec{P})^n\\
+&= (\vec{P}^{-1}a_0\vec{P})+(\vec{P}^{-1}a_1\vec{A}\vec{P})+\dots+(\vec{P}^{-1}a_n\vec{A}\vec{P})^n\\
+&= (\vec{P}^{-1}a_0\vec{P})+(\vec{P}^{-1}a_1\vec{A}\vec{P})+\dots+(\vec{P}^{-1}a_n\vec{A}^n\vec{P})\\
+&= \vec{P}^{-1}(a_0+a_1\vec{A}+a_2\vec{A}^2+\dots+a_n\vec{A}^n)\vec{P}\\
+&= \vec{P}^{-1}f(\vec{A})\vec{P}\label{eq:solutions/4/2/5/proof} \quad\text{[From \eqref{eq:solutions/4/2/5/Pol}]}
+\end{align}
+Hence proved \eqref{eq:solutions/4/2/5/proof}

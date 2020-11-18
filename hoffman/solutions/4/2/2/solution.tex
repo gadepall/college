@@ -1,0 +1,31 @@
+The transformation is given as:
+\begin{align}
+T(\vec{x})=\myvec{x_1\\x_3\\-2x_2-x_3}\\
+T(\vec{x})=\vec{T}\vec{X}\\
+T(\vec{x})=\myvec{1&0&0\\0&0&1\\0&-2&-1}\vec{X}
+\end{align}
+Characteristic equation of $\vec{T}$ can be written as:
+\begin{align}
+    \mydet{\vec{T}-\lambda\vec{I}}=0
+\end{align}
+\begin{align}
+    \myvec{1-\lambda&0&0\\0&-\lambda&1\\0&-2&-1-\lambda}=0
+\end{align}
+ The characteristics equation of the matrix will  be,
+ \begin{align}
+     -\lambda^{3}-\lambda + 2 = 0\\
+     -\lambda^{3}+2=\lambda \label{eq:solutions/4/2/2/eq1}
+ \end{align}
+Given, Polynomial
+ \begin{align}
+ f(x)=-x^3+2\\
+ f(\lambda)=-\lambda^{3}+2
+ \end{align}
+ Using \ref{eq:solutions/4/2/2/eq1},
+ \begin{align}
+ f(\lambda)=\lambda \label{eq:solutions/4/2/2/eq2}
+     \end{align}
+Substituting $\vec{T}$ for $\lambda$ in equation \ref{eq:solutions/4/2/2/eq2}, We get
+     \begin{align}
+     f\brak{\vec{T}}=\vec{T}=\myvec{1&0&0\\0&0&1\\0&-2&-1}
+ \end{align}

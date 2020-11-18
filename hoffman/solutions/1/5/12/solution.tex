@@ -1,0 +1,296 @@
+\underline{\textbf{Proof that A is Invertible.}}\\
+The elements of the given matrix is of the form:
+\begin{align}
+    A_{ij} = \frac{1}{i+j-1}= \int_{0}^{1}t^{i+j-2}dt= \int_{0}^{1}t^{i-1}t^{j-1}dt \label{eq:solutions/1/5/12/eq2.2}
+\end{align}
+We will prove that the matrix $\vec{A}$ is positive definite:\\
+$\vec{A}$ is Positive definite, if $\vec{X}\Vec{A}\vec{X}^T>0$
+\begin{align}
+   \text{Let } \vec{X}=(x_i)_{1\leq i\leq n} \in \mathbb{R}^N\\
+   \vec{X}\Vec{A}\vec{X}^T=\sum_{1\leq i,j\leq n}\frac{x_ix_j}{i+j-1}
+\end{align}
+From \eqref{eq:solutions/1/5/12/eq2.2},
+\begin{align}
+   \vec{X}\Vec{A}\vec{X}^T &=\sum_{1\leq i,j\leq n}x_ix_j\int_0^1t^{i+j-2}dt\\
+   &=\int_0^1\left(\sum_{i=1}^nx_it^{i-1}\right)\left(\sum_{j=1}^nx_jt^{j-1}\right)dt
+\end{align}
+\begin{align}
+       \implies \vec{X}\Vec{A}\vec{X}^T=\int_0^1\left(\sum_{i=1}^nx_it^{i-1}\right)^2dt>0
+\end{align}
+Thus, Matrix $\vec{A}$ is Positive definite. \\
+Now, let's say $\lambda$ is an eigen value of $\vec{A}$. Then, for the corresponding eigen vector $\vec{X}=(x_1,x_2,...,x_n)$, we can write:
+\begin{align}
+       \vec{X}\Vec{A}\vec{X}^T&=\vec{X}\lambda\vec{X}^T \quad [\because  \Vec{A}\vec{X}^T=\lambda\vec{X}^T]\\
+       &=\norm{\vec{X}}^2\lambda\\
+       \implies \lambda&=\frac{\vec{X}\Vec{A}\vec{X}^T}{\norm{\vec{X}}^2}>0
+\end{align}
+So, all of the eigenvalues belonging to  $\vec{A}$ must be positive. The product of the eigenvalues of a matrix equals the determinant.
+\begin{align}
+    \boxed{\therefore \det({\vec{A}})>0}
+\end{align}
+Thus, the given matrix $\vec{A}$ is non-singular and its inverse exist (Invertible).\\ \\
+\underline{\textbf{Proof that $\vec{A}^{-1}$ has integer values.}}\\
+Let us consider a set of shifted legendre polynomials as follow:
+\begin{align}
+    P_i(x)=
+    \left\{\begin{matrix}
+P_1(x)=P_{11}\\ 
+P_2(x)=P_{21}+P_{22}x\\
+P_3(x)=P_{31}+P_{32}x+p_{33}x^2\\
+.\\.\\
+P_n(x)=P_{n1}+P_{n2}x+P_{n3}x^2+..+P_{nn}x^{n-1}
+\end{matrix}\right. \label{eq:solutions/1/5/12/eq2.11}
+\end{align}
+Where, the coefficients $P_{ij}$ are given as:
+\begin{align}
+P_{ij}=(-1)^{i+j-1} {j-1 \choose i-1} {i+j-2 \choose i-1} \label{eq:solutions/1/5/12/eq2.12}
+\end{align}
+The shifted legendre polynomials are analogous to legendre polynomials, but defined on the interval $[0,1]$ (whereas the interval is $[-1,1]$ for legendre polynomial). \newpage
+A set of shifted legendre polynomials obey the following orthogonal relationship:
+\begin{align}
+    \int_{0}^{1}P_i(x)P_j(x)dx=0\text{ for }i \neq j\\
+    \int_{0}^{1}P_i(x)P_j(x)dx=\frac{1}{2i+1}\text{ for }i=j \label{eq:solutions/1/5/12/eq2.14}
+\end{align}
+Forming a matrix $\vec{P}$ whose elements are the coefficients of polynomials in \eqref{eq:solutions/1/5/12/eq2.11}
+\begin{align}
+    \vec{P}=\myvec{P_{11} & 0 &.&.&0\\
+    P_{21} & P_{22} &.&.&0\\
+    .&.&.&.&.\\.&.&.&.&.\\P_{n1} & P_{n2} &.&.&P_{nn}}
+\end{align}
+Forming a matrix $\vec{P}\vec{A}\vec{P}^T$, the elements of the matrix $\vec{P}\vec{A}\vec{P}^T$ can be written as:
+\begin{align}
+    \vec{P}\vec{A}\vec{P}^T_{ij}&=\sum_{s=1}^N\sum_{r=1}^NP_{ir}P_{js}A_{rs} \label{eq:solutions/1/5/12/eq2.15}
+    \\
+    \intertext{From \eqref{eq:solutions/1/5/12/eq2.2} with suitable change in variable notations, we can write:}
+    A_{rs}&=\int_0^1x^{r-1}x^{s-1}dx \label{eq:solutions/1/5/12/eq2.16}\\
+    \intertext{From \eqref{eq:solutions/1/5/12/eq2.15} and \eqref{eq:solutions/1/5/12/eq2.16},}
+    \vec{P}\vec{A}\vec{P}^T_{ij}&=\int_0^1\sum_{s=1}^N\sum_{r=1}^NP_{ir}P_{js}x^{r-1}x^{s-1}dx\\
+    &=\int_0^1\sum_{s=1}^NP_{ir}x^{r-1}\sum_{r=1}^NP_{js}x^{s-1}dx \\
+    &=\int_0^1P_i(x)P_j(x)dx\\
+    \intertext{From \eqref{eq:solutions/1/5/12/eq2.14}}
+    \vec{P}\vec{A}\vec{P}^T_{ij}&=
+    \left\{\begin{matrix}
+    0 & i\neq j\\ 
+    \frac{1}{2i+1} & i=j
+    \end{matrix}\right.
+\end{align}
+Thus, Matrix $\vec{P}\vec{A}\vec{P}^T$ is diagonal matrix:
+\begin{align}
+    \vec{P}\vec{A}\vec{P}^T=\vec{D}=\myvec{\frac{1}{3} & 0 &.&.&0\\
+    0 & \frac{1}{5} &.&.&0\\
+    .&.&.&.&.\\.&.&.&.&.\\0 &0 &.&.&\frac{1}{2n+1}} \label{eq:solutions/1/5/12/eq2.22}
+\end{align}
+From \eqref{eq:solutions/1/5/12/eq2.22}, the inverse of matrix $\vec{A}$ can be written as:
+\begin{align}
+    \vec{A}=\vec{P}^{-1}\vec{D}(\vec{P}^T)^{-1}\\
+    \implies \vec{A}^{-1}=\vec{P}^T\vec{D}^{-1}\vec{P}
+\end{align}
+From \eqref{eq:solutions/1/5/12/eq2.12} and \eqref{eq:solutions/1/5/12/eq2.22}, It can be clearly observed that the elements of matrix $\vec{P}$, $\vec{P}^T$ and $\vec{D}^{-1}$ are all integers given as:
+\begin{align}
+    \vec{P}_{ij}=(-1)^{i+j-1} {j-1 \choose i-1} {i+j-2 \choose i-1} \\
+    \vec{D}^{-1}_{ij}=\frac{1}{\vec{D}_{ij}}=   \left\{\begin{matrix}
+    0 & i\neq j\\ 
+    2i+1 & i=j
+    \end{matrix}\right.
+\end{align}
+Since, matrix $\vec{P}$, $\vec{P}^T$ and $\vec{D}^{-1}$ are integer matrices, therefore $\vec{A}^{-1}$ is also an integer matrix.\\
+Hence proved.\\
+
+{\textbf{Solution 2}}
+\begin{lstlisting}
+https://github.com/Arko98/EE5609/blob/master/Assignment_14
+\end{lstlisting}
+\begin{comment}
+Let $\vec{H_n}$ be the $n$-th Hilbert matrix given by
+\begin{align}
+\vec{H_n} &= \left[\frac1{i+j-1}\right]_{i,j}\\
+\intertext{Then $\vec{H_{n+1}}$ is given by,}
+\vec{H_{n+1}} &= \myvec{\vec{H_n}&\vec{u}\\\vec{u^T}&\frac{1}{2n-1}}
+\end{align}
+\end{comment}
+Let $\vec{A_3}$ be $3 \times 3$ matrix i.e
+\begin{align}
+\vec{A_3} &= \myvec{1&\frac{1}{2}&\frac{1}{3}\\\frac{1}{2}&\frac{1}{3}&\frac{1}{4}\\\frac{1}{3}&\frac{1}{4}&\frac{1}{5}}
+\end{align}
+Now we find the inverse of the matrix $\vec{A_3}$ as follows,
+\begin{align}
+\myvec{1&\frac{1}{2}&\frac{1}{3}&1&0&0\\\frac{1}{2}&\frac{1}{3}&\frac{1}{4}&0&1&0\\\frac{1}{3}&\frac{1}{4}&\frac{1}{5}&0&0&1}\\
+\xleftrightarrow[R_3 = R_3 - \frac{1}{3}R_1]{R_2 = R_2 - \frac{1}{2}R_1}\myvec{1&\frac{1}{2}&\frac{1}{3}&1&0&0\\0&\frac{1}{12}&\frac{1}{12}&-\frac{1}{2}&1&0\\0&\frac{1}{12}&\frac{4}{45}&-\frac{1}{3}&0&1}\\
+\xleftrightarrow[]{R_3 = R_3 - R_2}\myvec{1&\frac{1}{2}&\frac{1}{3}&1&0&0\\0&\frac{1}{12}&\frac{1}{12}&-\frac{1}{2}&1&0\\0&0&\frac{1}{180}&\frac{1}{6}&-1&1}\\
+\xleftrightarrow[R_3 = 180R_3]{R_2 = 12R_2}\myvec{1&\frac{1}{2}&\frac{1}{3}&1&0&0\\0&1&1&-6&12&0\\0&0&1&30&-180&180}\\
+\xleftrightarrow[R_1=R_1-R_3]{R_2 = R_2 - R3}\myvec{1&\frac{1}{2}&0&-9&60&-60\\0&1&0&-36&192&-180\\0&0&1&30&-180&180}\\
+\xleftrightarrow{R_1 =R_1-\frac{1}{2}R_2}\myvec{1&0&0&9&-36&30\\0&1&0&-36&192&-180\\0&0&1&30&-180&180}
+\end{align}
+Hence we see that $\vec{A_3}$ is invertible and the inverse contains integer entries and $\vec{A_3^{-1}}$ is given by,
+\begin{align}
+\vec{A_3^{-1}} = \myvec{9&-36&30\\-36&192&-180\\30&-180&180}\label{eq:solutions/1/5/12/eq8}
+\end{align}
+Let, $\vec{A_4}$ be $4 \times 4$ matrix as follows,
+\begin{align}
+\vec{A_4} &= \myvec{1&\frac{1}{2}&\frac{1}{3}&\frac{1}{4}\\\frac{1}{2}&\frac{1}{3}&\frac{1}{4}&\frac{1}{5}\\\frac{1}{3}&\frac{1}{4}&\frac{1}{5}&\frac{1}{6}\\\frac{1}{4}&\frac{1}{5}&\frac{1}{6}&\frac{1}{7}}
+\end{align}
+Now, expressing $\vec{A_4}$ using $\vec{A_3}$ we get,
+\begin{align}
+\vec{A_4} &= \myvec{\vec{A_3}&\vec{u}\\\vec{u^T}& d}\label{eq:solutions/1/5/12/eqA4}
+\intertext{where,}
+\vec{u} &= \myvec{\frac{1}{4} \\ \frac{1}{5} \\ \frac{1}{6}} \\
+d &= \frac{1}{7}
+\end{align}
+Now assuming $\vec{A_4}$ has an inverse, then from \eqref{eq:solutions/1/5/12/eqA4}, the inverse of $\vec{A_4}$ can be written using block matrix inversion,
+
+\textbf{Block matrix inversion} \\ \\
+If a matrix is partitioned into four blocks, it can be inverted blockwise as follows:
+{\scriptsize 
+\begin{gather}
+    \text{If } \vec{M}=
+    \myvec{\vec{A} &\vec{B} \\\vec{C} &\vec{D}} \text{ then,} \nonumber \\
+    \vec{M}^{-1}=\myvec{\vec {A} ^{-1}+\vec {A} ^{-1}\vec {B} \left(\vec {D} -\vec {CA} ^{-1}\vec {B} \right)^{-1}\vec {CA} ^{-1}&-\vec {A} ^{-1}\vec {B} \left(\vec {D} -\vec {CA} ^{-1}\vec {B} \right)^{-1}\\-\left(\vec {D} -\vec {CA} ^{-1}\vec {B} \right)^{-1}\vec {CA} ^{-1}&\left(\vec {D} -\vec {CA} ^{-1}\vec {B} \right)^{-1}}
+\end{gather}
+}%
+
+\begin{align}
+\therefore \vec{A_4^{-1}} &= \myvec{\vec{A_3^{-1}}+\vec{A_3^{-1}}\vec{u}x_4^{-1}\vec{u^T}\vec{A_3^{-1}} & -\vec{A_3^{-1}}\vec{u}x_4^{-1}\\-x_4^{-1}\vec{u^T}\vec{A_3^{-1}} & x_4^{-1}}\label{eq:solutions/1/5/12/eq14}\\
+&=x_4^{-1} \myvec{\vec{A_3^{-1}}x_4+\vec{A_3^{-1}}\vec{u}\vec{u^T}\vec{A_3^{-1}} & -\vec{A_3^{-1}}\vec{u}\\\vec{u^T}\vec{A_3^{-1}} & 1}\\
+\text{where, }x_4 &= d-{\vec{u^T}\vec{A_3^{-1}}\vec{u}}\label{eq:solutions/1/5/12/eq16}
+\end{align}
+Now, the assumption of $\vec{A_4}$ being invertible will hold if and only if $\vec{A_3}$ is invertible, which has been proved in \eqref{eq:solutions/1/5/12/eq8} and $x_4$ from \eqref{eq:solutions/1/5/12/eq16} is invertible or $x_4$ is a nonzero scalar. We now prove that $x_4$ is invertible as follows,
+\begin{align}
+x_4 &= \frac{1}{7}-\myvec{\frac{1}{4}&\frac{1}{5}&\frac{1}{6}}\myvec{9&-36&30\\-36&192&-180\\30&-180&180}\myvec{\frac{1}{4} \\ \frac{1}{5} \\ \frac{1}{6}}\\
+\implies x_4 &= \frac{1}{2800}
+\intertext{Hence, $x_4$ is a scalar, hence $x_4^{-1}$ exists and is given by,}
+x_4^{-1} &= 2800
+\end{align}
+Hence, $\vec{A_4}$ is invertible. Now putting the values of $\vec{A_3^{-1}}$, $x_4^{-1}$ and $\vec{u}$ we get,
+\begin{align}
+\vec{A_3^{-1}}+\vec{A_3^{-1}}\vec{u}x_4^{-1}\vec{u^T}\vec{A_3^{-1}} &= \myvec{16&-120&240\\-120&1200&-2700\\240&-2700&6480}\label{eq:solutions/1/5/12/eq20}\\
+-\vec{A_3^{-1}}\vec{u}x_4^{-1} &= \myvec{-140\\1680\\-4200}\label{eq:solutions/1/5/12/eq21}\\
+x_4^{-1}\vec{u^T}\vec{A_3^{-1}} &= \myvec{-140&1680&-4200}\label{eq:solutions/1/5/12/eq22}\\
+x_4^{-1} &= 2800\label{eq:solutions/1/5/12/eq23}
+\end{align}
+Putting values from \eqref{eq:solutions/1/5/12/eq20}, \eqref{eq:solutions/1/5/12/eq21}, \eqref{eq:solutions/1/5/12/eq22} and \eqref{eq:solutions/1/5/12/eq23} into \eqref{eq:solutions/1/5/12/eq14} we get,
+\begin{align}
+\vec{A_4^{-1}} &= \myvec{16&-120&240&-140\\-120&1200&-2700&1680\\240&-2700&6480&-4200\\-140&1680&-4200&2800}\label{eq:solutions/1/5/12/A4invfin}
+\end{align}
+Hence, from \eqref{eq:solutions/1/5/12/A4invfin} we proved that, $\vec{A_4}$ is invertible and has integer entries.\\ 
+By successively repeating this method, we can prove that $\vec{A_5}$, $\vec{A_6}$,$\vec{A_7}$,.... and so on, are invertible and have integer values.
+Thus, we can say, $\vec{A_{n-1}}$ will be invertible with integer entries. Then we can represent $\vec{A_{n}}$ as follows,
+\begin{align}
+\vec{A_{n}} &= \myvec{\vec{A_{n-1}}&\vec{u}\\\vec{u^T}&d}\label{eq:solutions/1/5/12/eq25}
+\intertext{where,}
+\vec{u} &=  \myvec{\frac{1}{4} \\ \frac{1}{5} \\ \vdots \\ \frac{1}{2n-2}} \\
+d &= \frac{1}{2n-1}
+\end{align}
+Now assuming $\vec{A_{n}}$ has an inverse, then from \eqref{eq:solutions/1/5/12/eq25}, the inverse of $\vec{A_n}$ can be written using block matrix inversion as follows,
+\begin{align}
+\vec{{A_n}^{-1}} &= \myvec{\vec{A_{n-1}^{-1}}+\vec{A_{n-1}^{-1}}\vec{u}x_n^{-1}\vec{u^T}\vec{A_{n-1}^{-1}} & -\vec{A_{n-1}^{-1}}\vec{u}x_n^{-1}\\-x_n^{-1}\vec{u^T}\vec{A_{n-1}^{-1}} & x_n^{-1}}\\
+&= x_n^{-1}\myvec{x_n\vec{A_{n-1}^{-1}}+\vec{A_{n-1}^{-1}}\vec{u^T}\vec{A_{n-1}^{-1}} & -\vec{A_{n-1}^{-1}}\vec{u}\\-\vec{u^T}\vec{A_{n-1}^{-1}} &1}
+\intertext{where,}
+x_n &= d-\vec{u^T}\vec{A_{n-1}^{-1}}\vec{u}\label{eq:solutions/1/5/12/eq30}
+\end{align}
+Now, the assumption of $\vec{A_n}$ being invertible will hold if and only if $\vec{A_{n-1}}$ is invertible, which is intuitively proved and $x$ from \eqref{eq:solutions/1/5/12/eq30} is invertible or $x_n$ is a nonzero scalar. We now prove that $x_n$ is invertible as follows,
+\begin{align}
+x_n &= \frac{1}{2n-1}-\myvec{\frac{1}{4}&\frac{1}{5}&\dots&\frac{1}{2n-2}}\vec{A_{n-1}^{-1}}\myvec{\frac{1}{4}\\\frac{1}{5}\\\dots\\\frac{1}{2n-2}} \label{eq:solutions/1/5/12/eq31}
+\end{align}
+In equation \eqref{eq:solutions/1/5/12/eq31} $\vec{u}$ contains no negative or zero entries, again $\vec{A_{n-1}^{-1}}$ has non zero integer entries, hence $\vec{u^T}\vec{A_{n-1}^{-1}}\vec{u}$ is a non zero scalar. Moreover $d$ is not equal to $\vec{u^T}\vec{A_{n-1}^{-1}}\vec{u}$ hence in \eqref{eq:solutions/1/5/12/eq31} $x$ is non-zero scalar and invertible and hence it has an inverse. Hence $\vec{A_n}$ is invertible, proved.
+\\ \\
+\textbf{Proof for $\vec{A}_{n+1}$:}\\
+Expressing $\vec{A}_{n+1}$ using $\vec{A}_{n}$ we get:
+\begin{align}
+    \vec{A_{n+1}} &= \myvec{\vec{A_{n}}&\vec{u}\\\vec{u^T}&d} \label{eq:solutions/1/5/12/eq32}
+\intertext{where,}
+\vec{u} &=  \myvec{\frac{1}{4} \\ \frac{1}{5} \\ \vdots \\ \frac{1}{2n-1}} \\
+d &= \frac{1}{2n}
+\end{align}
+Now assuming $\vec{A_{n+1}}$ has an inverse, then from \eqref{eq:solutions/1/5/12/eq32}, the inverse of $\vec{A_{n+1}}$ can be written using block matrix inversion as follows,
+\begin{align}
+\vec{{A_{n+1}}^{-1}} &= \myvec{\vec{A_{n}^{-1}}+\vec{A_{n}^{-1}}\vec{u}x_{n+1}^{-1}\vec{u^T}\vec{A_{n}^{-1}} & -\vec{A_{n}^{-1}}\vec{u}x_{n+1}^{-1}\\-x_{n+1}^{-1}\vec{u^T}\vec{A_{n}^{-1}} & x_{n+1}^{-1}}\\
+&= x_{n+1}^{-1}\myvec{x_{n+1}\vec{A_{n}^{-1}}+\vec{A_{n}^{-1}}\vec{u^T}\vec{A_{n}^{-1}} & -\vec{A_{n}^{-1}}\vec{u}\\-\vec{u^T}\vec{A_{n}^{-1}} &1}
+\intertext{where,}
+x_{n+1} &= d-\vec{u^T}\vec{A_{n}^{-1}}\vec{u}\label{eq:solutions/1/5/12/eq37}
+\end{align}
+Now, the assumption of $\vec{A_{n+1}}$ being invertible will hold if and only if $\vec{A_{n}}$ is invertible, which is proved and $x$ from \eqref{eq:solutions/1/5/12/eq37} is invertible or $x_{n+1}$ is a nonzero scalar. We now prove that $x_{n+1}$ is invertible as follows,
+\begin{align}
+x_{n+1} &= \frac{1}{2n}-\myvec{\frac{1}{4}&\frac{1}{5}&\dots&\frac{1}{2n-1}}\vec{A_{n}^{-1}}\myvec{\frac{1}{4}\\\frac{1}{5}\\\dots\\\frac{1}{2n-1}} \label{eq:solutions/1/5/12/eq38}
+\end{align}
+In equation \eqref{eq:solutions/1/5/12/eq38} $\vec{u}$ contains no negative or zero entries, again $\vec{A_{n}^{-1}}$ has non zero integer entries, hence $\vec{u^T}\vec{A_{n}^{-1}}\vec{u}$ is a non zero scalar. Moreover $d$ is not equal to $\vec{u^T}\vec{A_{n}^{-1}}\vec{u}$ hence in \eqref{eq:solutions/1/5/12/eq38} $x$ is non-zero scalar and invertible and hence it has an inverse. Hence $\vec{A_{n+1}}$ is also invertible. \newpage
+\textbf{Problem statement:} If $\vec{A_{n-1}^{-1}}$ is invertible and has integer values, Then $\vec{A_{n}^{-1}}$ also has integer values. \\\\
+\textbf{Proof:} \\
+The matrix $\vec{A_{n}^{-1}}$ can be expressed as:
+\begin{align}
+\vec{A_{n}} &= \myvec{\vec{A_{n-1}}&\vec{u}\\\vec{u^T}&d}
+\intertext{where,}
+\vec{u} &=  \myvec{\frac{1}{n} \\ \frac{1}{n+1} \\ \vdots \\ \frac{1}{2n-2}} \\
+d &= \frac{1}{2n-1}
+\end{align}
+The inverse of $\vec{A_{n}}$ can be written using block matrix inversion,
+
+\textbf{Block matrix inversion} \\ \\
+If a matrix is partitioned into four blocks, it can be inverted blockwise as follows:
+{\scriptsize 
+\begin{gather}
+    \text{If } \vec{M}=
+    \myvec{\vec{A} &\vec{B} \\\vec{C} &\vec{D}} \text{ then,} \nonumber \\
+    \vec{M}^{-1}=\myvec{\vec {A} ^{-1}+\vec {A} ^{-1}\vec {B} \left(\vec {D} -\vec {CA} ^{-1}\vec {B} \right)^{-1}\vec {CA} ^{-1}&-\vec {A} ^{-1}\vec {B} \left(\vec {D} -\vec {CA} ^{-1}\vec {B} \right)^{-1}\\-\left(\vec {D} -\vec {CA} ^{-1}\vec {B} \right)^{-1}\vec {CA} ^{-1}&\left(\vec {D} -\vec {CA} ^{-1}\vec {B} \right)^{-1}}
+\end{gather}
+}%
+
+\begin{align}
+    \vec{{A_n}^{-1}} &= \myvec{\vec{A_{n-1}^{-1}}+\vec{A_{n-1}^{-1}}\vec{u}x_n^{-1}\vec{u^T}\vec{A_{n-1}^{-1}} & -\vec{A_{n-1}^{-1}}\vec{u}x_n^{-1}\\-x_n^{-1}\vec{u^T}\vec{A_{n-1}^{-1}} & x_n^{-1}}\label{eq:solutions/1/5/12/eq43}\\
+\intertext{where,}
+x_n &= d-\vec{u^T}\vec{A_{n-1}^{-1}}\vec{u}
+\end{align}
+For $\vec{A_{n}^{-1}}$ to have integer values, each of the four blocks in \eqref{eq:solutions/1/5/12/eq43} should have integer values.\\
+Let us first prove that $x_n^{-1}$ have integer values as follow:
+\begin{align}
+    x_n &= d-\vec{u^T}\vec{A_{n-1}^{-1}}\vec{u}\\
+    &=\frac{1}{2n-1}-\sum_i ^{n-1}\sum_j^{n-1} u_iu_j (A_{n-1}^{-1})_{ij}\\
+    &=\frac{1}{2n-1}-\sum_i ^{n-1}\sum_j^{n-1} \frac{1}{n+i-1}\frac{1}{n+j-1}(A_{n-1}^{-1})_{ij}
+\end{align}
+Thus, $x_n$ is a scalar of the form $\frac{p}{q}$. Also, by calculation, $x_2=\frac{1}{12}$, $x_3=\frac{1}{180}$ and $x_3=\frac{1}{2800}$. Thus, by induction, we can say $p=1$ for any value of $n$. Thus, $x_n^{-1}$ can be written as:
+\begin{align}
+    x_n^{-1}=\frac{1}{x_n}=\frac{q}{p}
+\end{align}
+Since, $p=1$ for any value of $n$, Hence $x_n^{-1}=q$ is always integer.\\ \\
+Now, let us consider the block $-\vec{A_{n-1}^{-1}}\vec{u}x_n^{-1}$, we can write:
+\begin{align}
+   (-\vec{A_{n-1}^{-1}}\vec{u}x_n^{-1})_{i,1}= -q\sum_j ^{n-1}\frac{1}{n+j-1}(A_{n-1}^{-1})_{i,j}
+\end{align}
+Here, the considered block is a $(n-1) \times 1$ matrix, with each element of rational form $\frac{p_1}{q_1}$. For $n=2,3,4$ the value of $q_1$ comes as $1$. Thus by induction, the value of $q_1$ is always $1$ for any value of $n$. Hence, this matrix always has integer values. \\\\
+Now, let us consider the block $-x_n^{-1}\vec{u}^T\vec{A_{n-1}^{-1}}$, we can write:
+\begin{align}
+   (-x_n^{-1}\vec{u}^T\vec{A_{n-1}^{-1}})_{1,j}= -q\sum_i ^{n-1}\frac{1}{n+i-1}(A_{n-1}^{-1})_{i,j}
+\end{align}
+Here, the considered block is a $1 \times (n-1)$ matrix, with each element of rational form $\frac{p_2}{q_2}$. For $n=2,3,4$ the value of $q_2$ comes as $1$. Thus by induction, the value of $q_2$ is always $1$ for any value of $n$. Hence, this matrix always has integer values. \\\\
+Considering the block $\vec{A_{n-1}^{-1}}+\vec{A_{n-1}^{-1}}\vec{u}x_n^{-1}\vec{u^T}\vec{A_{n-1}^{-1}}$, let denote it as $V_{n-1}^{-1}$:
+\begin{align}
+    V_{n-1}^{-1}&=\vec{A_{n-1}^{-1}}+\vec{A_{n-1}^{-1}}\vec{u}x_n^{-1}\vec{u^T}\vec{A_{n-1}^{-1}}\\
+    &=\vec{A_{n-1}^{-1}}+\vec{A_{n-1}^{-1}}\vec{u}\brak{d-\vec{u^T}\vec{A_{n-1}^{-1}}\vec{u}}^{-1}\vec{u^T}\vec{A_{n-1}^{-1}} \label{eq:solutions/1/5/12/eq52}
+\end{align}
+The Woodbury matrix identity is given by:
+\begin{align}
+    \boxed{\left(A+UCV\right)^{-1}=A^{-1}-A^{-1}U\left(C^{-1}+VA^{-1}U\right)^{-1}VA^{-1}} \label{eq:solutions/1/5/12/eq53}
+\end{align}
+Comparing \eqref{eq:solutions/1/5/12/eq52} and \eqref{eq:solutions/1/5/12/eq53}, we can write:
+\begin{align}
+    V_{n-1}^{-1}=\brak{A_{n-1}-(2n-1)\vec{u}\vec{u}^T}^{-1}\\
+    \therefore  V_{n-1}=A_{n-1}-(2n-1)\vec{u}\vec{u}^T
+\end{align}
+Here, $V_{n-1}$ can be expanded as:
+\begin{align}
+    V_{n-1}&=A_{n-1}-(2n-1)\vec{u}\vec{u}^T\\
+    &=\frac{1}{i+j-1}-\frac{(2n-1)}{(n+i-1)(n+j-1)}\\
+    &=\frac{n^2-ni-nj-ij}{(i+j-1)(n+i-1)(n+j-1)}\\
+    &=\frac{(n-i)(n-j)}{(i+j-1)(n+i-1)(n+j-1)}\\
+    \therefore (V_{n-1})_{ij}&=\brak{(A_{n-1})_{ij}\frac{(n-i)(n-j)}{(n+i-1)(n+j-1)}} \label{eq:solutions/1/5/12/eq60}
+\end{align}
+Using \eqref{eq:solutions/1/5/12/eq60}, The inverse $V_{n-1}^{-1}$ can be written as:
+\begin{align}
+    (V_{n-1}^{-1})_{ij}&=\brak{(A_{n-1}^{-1})_{ij}\frac{(n+i-1)(n+j-1)}{(n-i)(n-j)}}
+\end{align}
+Here, the considered block is a $(n-1) \times (n-1)$ matrix, with each element of rational form $\frac{p_3}{q_3}$. For $n=2,3,4$ the value of $q_3$ comes as $1$. Thus by induction, the value of $q_3$ is always $1$ for any value of $n$. Hence, this matrix always has integer values.\\
+Since, all the four blocks has integer values, the inverse $A_n^{-1}$ has integer values.
+{\textbf{Observations:}} 
+\begin{enumerate}
+    \item The given matrix is a $n\times n$ Hilbert matrix. Which is always invertible with its inverse having integer values.
+    \item The Hilbert matrix is symmetric and positive definite.
+\end{enumerate}
