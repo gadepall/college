@@ -9,15 +9,16 @@
 \contentsline {subsection}{\numberline {2.2}Subspaces}{42}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Bases and Dimension}{49}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Coordinates}{57}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{63}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Linear Transformations}{70}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Linear Transformations}{70}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{77}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Isomorphism}{88}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{97}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Linear Functionals}{107}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}The Double Dual}{112}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{113}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Polynomials}{118}{section.4}%
-\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{118}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{122}{subsection.4.2}%
+\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{64}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Linear Transformations}{71}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Linear Transformations}{71}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{78}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Isomorphism}{89}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{98}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Linear Functionals}{109}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}The Double Dual}{115}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{116}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Polynomials}{121}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{121}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{125}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{128}{subsection.4.3}%

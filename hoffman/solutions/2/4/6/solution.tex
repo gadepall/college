@@ -1,0 +1,70 @@
+	\begin{enumerate}[label=(\alph*)]
+		\item To check for independence, lets represent the function in a polynomial format as \\
+		
+		\begin{align}
+			\alpha f_1 + \beta f_2 + \gamma f_3 = 0\\
+			\alpha + \beta e^{ix} + \gamma e^{-ix} = 0 
+		\end{align}
+		
+		Multiply the whole equation with $e^{ix}$ 
+		
+		\begin{align}
+			\beta (e^{ix})^{2} + \alpha e^{ix} + \gamma = 0
+		\end{align}
+		
+		Let $y = e^{ix}$
+		\begin{align}
+			\beta y^{2} + \alpha y + \gamma = 0 \label{eq:solutions/2/4/6/eq1}
+		\end{align}
+		
+		The above quadratic polynomial in $y$ can be zero for atmost two values of $y$. But, 
+		\begin{align}
+			y = e^{ix} \quad x \in \mathbf{R}
+		\end{align}
+		So $\eqref{eq:solutions/2/4/6/eq1}$ cannot be zero for all $y = e^{ix}$. Which implies there is a contradiction. \\
+		
+		Then, the only case when $\eqref{eq:solutions/2/4/6/eq1}$ gets satisfied is
+		
+		\begin{align}
+			\alpha = \beta = \gamma = 0
+		\end{align}
+		Therefore, $f_1, f_2, f_3$ are linearly independent. \\
+		
+		\item We need to find the coordinates of vectors $g_i$ where $i = 1, 2, 3$ in ordered basis
+		\begin{align}
+			B = \myvec{f_1 & f_2 & f_3} \label{eq:solutions/2/4/6/eq5}
+		\end{align}
+		
+		It is given that $g_1 = 1$, which can be written as 
+		\begin{align}
+			g_1 = f_1 \label{eq:solutions/2/4/6/eq4}   \\ 
+			\implies g_1 = \myvec{f_1 & f_2 & f_3}\myvec{1\\0\\0}
+		\end{align}
+		
+		We can use the following identities:-
+		
+		\begin{align}
+			\cos (x) = \frac{1}{2}e^{ix} + \frac{1}{2}e^{-ix} \label{eq:solutions/2/4/6/eq2}\\
+			\sin (x) = \frac{1}{2i}e^{ix} - \frac{1}{2i}e^{-ix} \label{eq:solutions/2/4/6/eq3}
+		\end{align}
+		
+		
+		Comparing equations \eqref{eq:solutions/2/4/6/eq2} and \eqref{eq:solutions/2/4/6/eq3} with $f_2, f_3$, we can write $g_2$ and $g_3$ as 
+		
+		\begin{align}
+			g_2 = \frac{1}{2}f_2 + \frac{1}{2}f_3 \\
+			\implies g_2 = \myvec{f_1 & f_2 & f_3} \myvec{0\\\frac{1}{2}\\\frac{1}{2}}
+		\end{align}
+		
+		\begin{align}
+			g_3 = \frac{1}{2i}f_2 - \frac{1}{2i}f_3 \\
+			\implies g_3 = \myvec{f_1 & f_2 & f_3} \myvec{0\\\frac{1}{2i}\\\frac{-1}{2i}}
+		\end{align}
+		
+		Therefore, the required matrix $P$ is
+		\begin{align}
+			P = \myvec{1&0&0\\0&\frac{1}{2}&\frac{1}{2i}\\0&\frac{1}{2}&\frac{-1}{2i}}
+		\end{align}
+		
+	\end{enumerate}
+	

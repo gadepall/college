@@ -1,0 +1,61 @@
+Refer Table \ref{eq:solutions/3/5/13/table:1}.
+
+
+\begin{table*}[ht!]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Given} & \textbf{Derivation} \\[0.5ex]
+\hline
+\text{$f$, $g$, $h$ are linear functionals of $\vec{V}$} & 
+\text{By contradiction, let us assume $f \not= 0$ and $g \not= 0$. For all $\vec{v} \in \vec{V}$}\\
+& \parbox{10cm}{\begin{align}
+    h(\vec{v}) &= f(\vec{v}) g(\vec{v}) \\
+    h(2\vec{v}) &= f(2\vec{v}) g(2\vec{v})\\
+    &=2f(\vec{v}) 2g(\vec{v})\\
+    &=4f(\vec{v})g(\vec{v}) \label{eq:solutions/3/5/13/eq:eq1}
+\end{align}} \\
+& Similarly,\\
+& \parbox{10cm}{\begin{align}
+    h(2\vec{v}) &= 2h(\vec{v}) \\
+    &= 2f(\vec{v})g(\vec{v}) \label{eq:solutions/3/5/13/eq:eq2}
+\end{align}} \\
+& From equation \eqref{eq:solutions/3/5/13/eq:eq1} and \eqref{eq:solutions/3/5/13/eq:eq2},\\
+& \parbox{10cm}{\begin{align}
+    \implies 4f(\vec{v})g(\vec{v}) = 2f(\vec{v})g(\vec{v})\\
+    \implies f(\vec{v}).g(\vec{v})=0 \label{eq:solutions/3/5/13/eq:eq3}
+\end{align}}
+\\ [0.5ex]
+\hline
+\text{Choosing Basis} & 
+\text{Let $\vec{B}$ be a basis for $\vec{V}$. Let,}\\
+& \parbox{10cm}{\begin{align}
+    \vec{B_1} &= \{\vec{b} \in \vec{B}\ \vert \ f(\vec{b})=0\}, \\
+    \vec{B_2} &= \{\vec{b} \in \vec{B}\ \vert \ g(\vec{b})=0\}
+\end{align}} \\
+& Since,\\
+& \parbox{10cm}{\begin{align}
+    f(\vec{b}).g(\vec{b})=0 \quad \forall \vec{b} \in \vec{B}\\
+    \implies f(\vec{b})=0 \ortext g(\vec{b})=0\\
+    \implies \vec{b} \in \vec{B_1} \ortext \vec{b} \in \vec{B_2}
+\end{align}}
+\\ [0.5ex]
+\hline
+\text{Choosing $\vec{b_1}$ and $\vec{b_2}$ from basis} & 
+Let us choose $\vec{b_1} \in \vec{B_1}-\vec{B_2}$ and $\vec{b_2} \in \vec{B_2}-\vec{B_1}$ \\
+& $\implies$ $f(\vec{b_2}) \not = 0$ and $g(\vec{b_1}) \not = 0$\\
+& \parbox{10cm}{\begin{align}
+    f(\vec{b_1}+\vec{b_2}).g(\vec{b_1}+\vec{b_2})= (f(\vec{b_1})+ f(\vec{b_2})).(g(\vec{b_1})+ g(\vec{b_2}))\\
+    =f(\vec{b_1}).g(\vec{b_1}) + f(\vec{b_1}).g(\vec{b_2}) +f(\vec{b_2}).g(\vec{b_1}) + f(\vec{b_2}).g(\vec{b_2})\\
+    = 0 + 0 + f(\vec{b_2}).g(\vec{b_1}) + 0\\
+    = f(\vec{b_2}).g(\vec{b_1}) \not= 0 \label{eq:solutions/3/5/13/eq:eq6}
+\end{align}}\\
+& Equation \eqref{eq:solutions/3/5/13/eq:eq6} is contradiction to the fact that $f(\vec{v}).g(\vec{v})=0$.\\
+& $\implies \boxed{f=0 \ortext g=0}$
+\\ [0.5ex]
+\hline
+\end{tabular}
+\caption{Expanation}
+\label{eq:solutions/3/5/13/table:1}
+\end{center}
+\end{table*}

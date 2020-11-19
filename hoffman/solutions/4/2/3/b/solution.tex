@@ -1,0 +1,23 @@
+Lagrange polynomials are given by,
+\begin{align}
+P_i = \prod_{i\neq j}\frac{x-t_j}{t_i-t_j}\\
+P_1 = \frac{(x-3)(x-1)}{(2-3)(2-1)} = -(x-3)(x-1)\\
+P_2 = \frac{(x-2)(x-1)}{(3-2)(3-1)} = \frac{1}{2}(x-2)(x-1)\\
+P_3 = \frac{(x-2)(x-3)}{(1-2)(1-3)} = \frac{1}{2}(x-2)(x-3)
+\end{align}
+Now calculating $E_i$,
+\begin{align}
+E_1 = P_1(\vec{A})=-(\vec{A}-3\vec{I})(\vec{A}-\vec{I})\\=
+-\myvec{-1&0&0&0\\0&-1&0&0\\0&0&0&0\\0&0&0&-2}\myvec{1&0&0&0\\0&1&0&0\\0&0&2&0\\0&0&0&0}\\
+\implies E_1=\myvec{1&0&0&0\\0&1&0&0\\0&0&0&0\\0&0&0&0}
+\end{align}
+\begin{align}
+E_2 = P_2(\vec{A})=\frac{1}{2}(\vec{A}-2\vec{I})(\vec{A}-\vec{I})\\=
+\frac{1}{2}\myvec{0&0&0&0\\0&0&0&0\\0&0&1&0\\0&0&0&-1}\myvec{1&0&0&0\\0&1&0&0\\0&0&2&0\\0&0&0&0}\\
+\implies E_2=\myvec{0&0&0&0\\0&0&0&0\\0&0&1&0\\0&0&0&0}
+\end{align}
+\begin{align}
+E_3 = P_3(\vec{A})=\frac{1}{2}(\vec{A}-2\vec{I})(\vec{A}-3\vec{I})\\=
+\frac{1}{2}\myvec{0&0&0&0\\0&0&0&0\\0&0&1&0\\0&0&0&-1}\myvec{-1&0&0&0\\0&-1&0&0\\0&0&0&0\\0&0&0&-2}\\
+\implies E_3=\myvec{0&0&0&0\\0&0&0&0\\0&0&0&0\\0&0&0&1}
+\end{align}

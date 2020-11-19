@@ -16,6 +16,18 @@ Let $f$ be the polynomial over $R$ defined by $f=-x^3+2$. Find $f(T)$.
 \\
 \solution
 \input{./solutions/4/2/2/solution.tex}
+\item Let $\vec{F}$ be the field of real numbers, 
+\begin{align}
+\vec{A}=\myvec{2&0&0&0\\0&2&0&0\\0&0&3&0\\0&0&0&1}\\
+p= (x - 2)(x - 3)(x - 1) 
+\end{align}
+\begin{enumerate}
+\item Let $P_1$, $P_2$, $P_3$ be the Lagrange polynomials for $t_1 = 2$, $t_2 = 3$, $t_3 = 1$. Compute $E_i = P_i(\vec{A})\quad i = 1, 2, 3$. 
+%
+\\
+\solution
+\input{./solutions/4/2/3/b/solution.tex}
+\end{enumerate}
 \item Let $n$ be a positive integer and $\mathbb{F}$ be a field. Suppose $\vec{A}$ is an $n \times n$ matrix over field $\mathbb{F}$ and $\vec{P}$ is an invertible $n \times n$ matrix over field $\mathbb{F}$. If $f$ is any polynomial over $\mathbb{F}$, prove
 that,
 \begin{align}
@@ -25,4 +37,12 @@ f(\vec{P}^{-1}\vec{A}\vec{P}) &= \vec{P}^{-1}f(\vec{A})\vec{P}
 \\
 \solution
 \input{./solutions/4/2/5/solution.tex}
+\item Let $\vec{F}$ be a field. We have considered certain special linear functionals on $\vec{F}[x]$
+obtained via ‘evaluation at t’:
+$L(f) = f(t)$.
+Such functionals are not only linear but also have the property that L(fg) =L(f)L(g). Prove that if L is any linear functional on F[x] such that L(fg) =L(f)L(g)for all f and g, then either L = 0 or there is a t in F such that L(f) = f(t) for all f.
+%
+\\
+\solution
+\input{./solutions/4/2/6/solution.tex}
 \end{enumerate}

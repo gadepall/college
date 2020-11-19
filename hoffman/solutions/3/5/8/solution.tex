@@ -1,0 +1,60 @@
+ If $\vec{V}$ is a vector space over the field $\mathbb{F}$ and $\vec{W}$ is a subset of $\vec{V}$, the annihilator of $\vec{W}$ is the set $\vec{W^0}$ of linear functionals $\vec{f}$ on $\vec{V}$ such that $\vec{f}(\alpha)=0$ for every $\alpha$ in $\vec{W}$.
+\\
+{\em Properties of Annihilator: }
+If $f$ is a linear functional on $R^n$:
+\begin{align}
+    f\brak{x_1,x_2,\dots,x_n}=\sum_{j=1}^{n}c_j x_j\label{eq:solutions/3/5/8/eqDefn}
+\end{align}
+Then $f$ is in $W^0$ if and only if 
+\begin{align}
+    \forall \alpha \in W\colon f\brak{\alpha}=0 \iff f=0
+\end{align}
+\eqref{eq:solutions/3/5/8/eqDefn} can be expressed as:
+\begin{align}
+    \vec{f(x)}=\vec{x}^T\vec{c}\\
+    \text{where  } \Vec{x}=\myvec{x_1\\x_2\\x_3\\x_4\\x_5} \text{ and } \vec{c}=\myvec{c_1\\c_2\\c_3\\c_4\\c_5}
+\end{align}
+Given three vectors
+\begin{multline}
+    \begin{aligned}
+    &\alpha_1=\myvec{1\\2\\1\\0\\0}, &\alpha_2=\myvec{0\\1\\3\\3\\1},
+    &\alpha_3=\myvec{1\\4\\6\\4\\1}
+    \end{aligned}
+    \end{multline}
+Let matrix $A$ with column vectors $\alpha_1,\alpha_2,\alpha_3$:
+\begin{align}
+    \Vec{A}=\myvec{1&0&1\\2&1&4\\1&3&6\\0&3&4\\0&1&1}\label{eq:solutions/3/5/8/eqA}
+\end{align}
+Given that $\vec{f}$ is a linear functional on $\mathbb{R}^5$, then $\vec{f}$ is in $\vec{W^0}$ if and only if,
+\begin{align}
+    f\brak{\alpha_i}=0, i=1,2,3\\
+    \implies \vec{A}^T\vec{c}=\vec{0}\label{eq:solutions/3/5/8/eqATc}
+\end{align}
+Converting the \eqref{eq:solutions/3/5/8/eqATc} into system of equations, we have,
+\begin{align}
+    \myvec{1&2&1&0&0\\0&1&3&3&1\\1&4&6&4&1}\myvec{c_1\\c_2\\c_3\\c_4\\c_5}=0\label{eq:solutions/3/5/8/eqmatrix}
+\end{align}
+Converting \eqref{eq:solutions/3/5/8/eqmatrix} into row reduced echelon form,
+\begin{align}
+     \myvec{1&2&1&0&0\\0&1&3&3&1\\1&4&6&4&1}\xrightarrow[]{rref}\myvec{1&0&0&4&3\\0&1&0&-3&-2\\0&0&1&2&1}\label{eq:solutions/3/5/8/eqrref}
+\end{align}
+From \eqref{eq:solutions/3/5/8/eqrref}, we have,
+\begin{align}
+    c_1=-(4c_4+3c_5)\\
+    c_2=(3c_4+2c_5)\\
+    c_3=-(2c_4+c_5)
+\end{align}
+Therefore, general element of $\vec{W^0}$ is therefore,
+\begin{multline}
+\begin{aligned}
+f(x_1,\dots,x_5)=-(4c_4+3c_5)x_1+(3_4+2c_5)x_2\\
+-(2c_4+c_5)x_3+c_4x_4+c_5x_5 \label{eq:solutions/3/5/8/eqf}
+\end{aligned}
+\end{multline}
+Therefore, dimension of $\vec{W^0}$ is 2 and a basis $\{f_1,f_2\}$ can be obtained by putting $c_4=0,c_5=1$ and $c_4=1,c_5=0$ in \eqref{eq:solutions/3/5/8/eqf}
+\begin{align}
+    f_1\brak{x_1,\dots,x_5}=-3x_1+2x_2-x_3+x_5\\
+    f_2\brak{x_1,\dots,x_5}=-4x_1+3x_2-2x_3+x_4
+\end{align}
+
+
