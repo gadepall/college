@@ -1,0 +1,90 @@
+	{Theorem}
+	
+	\begin{theorem}\label{eq:solutions/3/2/9/thm1}
+		Let $f$ be a function from $X$ into $Y$. We say that $f$ is invertible if there is a function $g$ from $Y$ to $X$ such that
+		\begin{enumerate}
+			\item $g \circ f$ is the identity function on $X$ i.e. $g \circ f$ = I. Here, g will be onto and f will be one-one.
+			\item $f \circ g$ is the identity function on $Y$ i.e. $f \circ g$ = I. Here, f will be onto and g will be one-one.
+		\end{enumerate}
+	\end{theorem}
+	
+	\begin{theorem}\label{eq:solutions/3/2/9/thm2}
+		Let V and W be finite dimensional vector spaces such that  dim V = dim W. If T is a linear transformation from V into W, then the following are equivalent:
+		\begin{enumerate}
+			\item T is non-singular
+			\item T is onto
+		\end{enumerate}
+		If any of the above two condition is satisfied then T is invertible.
+	\end{theorem}
+	
+	
+	
+	
+	\begin{enumerate}
+		\item We are given $\vec{V}$ which is a finite dimensional vector space, with the following linear operators defined as:-
+		
+		\begin{align}
+			\mathbf{T} : \vec{V} \xrightarrow{} \vec{V} \\
+			\mathbf{U} : \vec{V} \xrightarrow{} \vec{V}
+		\end{align}
+		
+		The linear operators also satifies the condition
+		
+		\begin{align}
+			\mathbf{T}\mathbf{U} = \vec{I} \label{eq:solutions/3/2/9/eq1}
+		\end{align}
+		Where $\vec{I}$ is an Identity transformation. This identity transformation can be written as 
+		\begin{align}
+			\vec{I} : \vec{V} \xrightarrow{} \vec{V} \\
+			\implies \mathbf{TU} : \vec{V} \xrightarrow{} \vec{V}\\
+			\implies \mathbf{T}\left[ \mathbf{U}\left(\vec{V}\right)\right] = \vec{V}
+		\end{align}
+		From theorem $\eqref{eq:solutions/3/2/9/thm1}$ we can say that $\mathbf{U}$ must be one-one and $\mathbf{V}$ must be onto.\\
+		From theorem $\eqref{eq:solutions/3/2/9/thm2}$ we can say that $\mathbf{T}$ is invertible.\\
+		
+		Now we know that
+		\begin{align}
+			\mathbf{T}\mathbf{T}^{-1} = \vec{I} \label{eq:solutions/3/2/9/eq2}
+		\end{align}
+		
+		Comparing $\eqref{eq:solutions/3/2/9/eq1}$ and \eqref{eq:solutions/3/2/9/eq2} we get
+		\begin{align}
+			\mathbf{T}\mathbf{T}^{-1} = \vec{I} = \mathbf{T}\mathbf{U}
+		\end{align}
+		Multiply both sides with $\mathbf{T}^{-1}$
+		\begin{align}
+			\mathbf{T}^{-1}\left(\mathbf{T}\mathbf{T}^{-1}\right) &= \mathbf{T}^{-1}\left(\mathbf{T}\mathbf{U}\right) \\
+			\mathbf{T}^{-1}\vec{I} &= \left(\mathbf{T}^{-1}\mathbf{T}\right)\mathbf{U} \\
+			\mathbf{T}^{-1} &= \vec{I}\mathbf{U}\\
+			\therefore \mathbf{T}^{-1} &= \mathbf{U}
+		\end{align}
+		
+		
+		\item Let $\mathbf{D}$ be a differential operator $\mathbf{D} : \Vec{V} \xrightarrow{} \Vec{V}$, where $\vec{V}$ is a space of polynomial functions in one variable over $\mathbf{R}$.
+		
+		\begin{align}
+			\mathbf{D}\left( c_0 + c_1x + ... + c_nx^{n}\right) = c_1 + c_2x + ... \nonumber\\+ c_nx^{n-1}
+		\end{align}
+		And $\mathbf{U} : \Vec{V} \xrightarrow{} \Vec{V}$ be linear operator such that
+		\begin{align}
+			\mathbf{U}\left( c_0 + c_1x + ... + c_nx^{n}\right) = c_0x + \frac{c_1x^{2}}{2} + ... \nonumber\\+ \frac{c_nx^{n+1}}{n+1}
+		\end{align}
+		Therefore, the linear operator $\mathbf{U}\mathbf{D} : \Vec{V} \xrightarrow{} \Vec{V}$ will be $\mathbf{U}\mathbf{D}\left( c_0 + c_1x + ... + c_nx^{n}\right)$
+		\begin{align}\label{eq:solutions/3/2/9/eq3}
+			&= \mathbf{U}\left[\mathbf{D}\left( c_0 + c_1x + ... + c_nx^{n}\right)\right] \nonumber\\
+			&= \mathbf{U}\left[c_1 + c_2x + ... + c_nx^{n-1}\right]\nonumber\\
+			&= c_1x + \frac{c_2x^{2}}{2} + ... + \frac{c_nx^{n}}{n}\nonumber\\
+			&= c_1x + c_2x^{2} + ... + c_nx^{n}\nonumber\\
+			&\neq \vec{I}
+		\end{align}
+		Now, the linear operator $\mathbf{D}\mathbf{U} : \Vec{V} \xrightarrow{} \Vec{V}$ will be $\mathbf{D}\mathbf{U}\left( c_0 + c_1x + ... + c_nx^{n}\right)$
+		\begin{align}\label{eq:solutions/3/2/9/eq4}
+			&= \mathbf{D}\left[\mathbf{U}\left( c_0 + c_1x + ... + c_nx^{n}\right)\right] \nonumber\\
+			&= \mathbf{D}\left[c_0x + \frac{c_1x^{2}}{2} + ... + \frac{c_nx^{n+1}}{n+1}\right]\nonumber\\
+			&= c_0 + \frac{2c_2x}{2} + ... + \frac{\left( n+1\right)c_nx^{n}}{n+1}\nonumber\\
+			&= c_0 + c_1x + c_2x^{2} + ... + c_nx^{n}\nonumber\\
+			&= \vec{I}
+		\end{align}
+		From $\eqref{eq:solutions/3/2/9/eq3}$ and $\eqref{eq:solutions/3/2/9/eq4}$ we see that $\mathbf{D}\mathbf{U} = \mathbf{I}$, but $\mathbf{U}\mathbf{D} \neq \mathbf{I}$. 
+	\end{enumerate}
+

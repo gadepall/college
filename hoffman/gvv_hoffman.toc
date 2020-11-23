@@ -12,13 +12,13 @@
 \contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{64}{subsection.2.5}%
 \contentsline {section}{\numberline {3}Linear Transformations}{71}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Linear Transformations}{71}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{78}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Isomorphism}{89}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{98}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Linear Functionals}{109}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}The Double Dual}{115}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{116}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Polynomials}{121}{section.4}%
-\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{121}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{125}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{128}{subsection.4.3}%
+\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{79}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Isomorphism}{90}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{101}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Linear Functionals}{111}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}The Double Dual}{121}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{125}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Polynomials}{129}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{129}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{132}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{136}{subsection.4.3}%

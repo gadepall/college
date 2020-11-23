@@ -1,0 +1,57 @@
+{\em Definition 1: }
+If the vector space $\vec{V}$ is finite dimensional (say dimension =n), the dimension of null-space $\vec{N}_f$ by rank nullity theorem is given by,
+\begin{align}
+\abs{\vec{N}_f}  = \abs{\vec{V}} - 1 = n - 1
+\end{align}  
+{\em Definition 2: }
+If $\vec{V}$ is a vector space over the field $\vec{F}$ and $\vec{S}$ is a subset of $\vec{V}$, the annihilator of $\vec{S}$ is the set $\vec{S}^0$ of linear functional f on $\vec{V}$ such that $f(\alpha) = 0$ for every $\alpha$ in $\vec{S}$. 
+{Solution}
+Let h be the functional,
+\begin{align}
+h\myvec{\vec{x_1},&\vec{x_2},\cdots ,\vec{x_n}} = \vec{x_1}+\vec{x_2}+\cdots \vec{x_n}\\
+\mbox{Let, } \vec{X} = \myvec{\vec{x_1}\\\vec{x_2}\\\vdots\\\vec{x_n}}
+\end{align}
+\begin{align}
+\implies h\myvec{\vec{x_1},&\vec{x_2},\cdots ,\vec{x_n}} = 0
+\end{align}
+Then $\vec{W}$ is in null-space of h. Hence by definition-1, the dimension of $\vec{W}$ is,
+\begin{align}
+\abs{W} = n - 1
+\label{eq:solutions/3/6/1/a/dim}
+\end{align}
+Now let, 
+\begin{align}
+a_j = \epsilon_1-\epsilon_{i+1}, \mbox{ for } i = (1,\cdots ,n-1)
+\label{eq:solutions/3/6/1/a/aj} 
+\end{align}
+Hence clearly $\{a_1, a_2, \cdots, a_{n-1}\}$ are linearly independent. Hence from \eqref{eq:solutions/3/6/1/a/dim} and above statement we can conclude that $\{a_1, a_2, \cdots, a_{n-1}\}$ are all in $\vec{W}$ so they must form basis for $\vec{W}$. Now, it is given that f is linear functional hence,
+\begin{align}
+f\myvec{\vec{x_1},&\vec{x_2},\cdots ,\vec{x_n}} = \sum_{j=1}^{n}c_j\vec{x_j}
+\end{align}
+\begin{align}
+\implies f\myvec{\vec{x_1},&\vec{x_2},\cdots ,\vec{x_n}} = C^T\vec{X}
+\end{align}
+Where,
+\begin{align}
+C = \myvec{c_1\\\vdots\\c_n}
+\end{align}
+Now $f \in \vec{W}^0$ from definition-2 is given as,
+\begin{align}
+f(a_1) = f(a_2) = \cdots = f(a_n) = 0 \mbox{ for every } a_j \in \vec{W}
+\end{align}
+\begin{align}
+\implies c_1 - c_i = 0 \forall i= 2\cdots n\\
+\implies c_i = c_1 = c \forall i\\
+\implies C = c\myvec{1\\\vdots\\1}
+\end{align}
+Hence,
+\begin{align}
+f\myvec{\vec{x_1},&\vec{x_2},\cdots ,\vec{x_n}} = C^T\vec{X}
+\end{align}
+\begin{align}
+\implies f\myvec{\vec{x_1},&\vec{x_2}&,\cdots &,\vec{x_n}} = c\sum_{j=1}^{n}\vec{x_j}
+\end{align}
+\begin{center}
+\textbf{Hence, proved}
+\end{center}
+

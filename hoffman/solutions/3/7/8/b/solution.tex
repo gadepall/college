@@ -1,0 +1,19 @@
+ For $\vec{A}=(a_{ij})\in \Vec{V}$, a linear functional $f_B:\vec{V}\longrightarrow\mathbb{F}$ is defined as:
+\begin{align}
+    f_B\brak{\vec{A}}=\vec{A}^T\vec{c}\label{eq:solutions/3/7/8/b/eqDefn}
+\end{align}
+\eqref{eq:solutions/3/7/8/b/eqDefn} can be written as,
+\begin{align}
+    f_B\brak{\vec{A}}=\sum_{i=1}^{n}\sum_{j=1}^{n}c_{ij}a_{ij}\label{eq:solutions/3/7/8/b/eq1}
+\end{align}
+Now,
+\begin{align}
+    Tr(\vec{B}^t\vec{A})=&\sum_{i=1}^{n}(\vec{B}^t\Vec{A})_{ii}\\
+    &=\sum_{j=1}^{n}\sum_{i=1}^{n}(b_{ji})^Ta_{ij}\\
+    &=\sum_{j=1}^{n}\sum_{j=1}^{n}b_{ij}a_{ij}\label{eq:solutions/3/7/8/b/eqtrace}
+\end{align}
+Let $c_{ij}=b_{ij}$, from \eqref{eq:solutions/3/7/8/b/eq1} and \eqref{eq:solutions/3/7/8/b/eqtrace},
+\begin{align}
+    Tr(\vec{B}^T\vec{A})=f_B
+\end{align}
+Hence, Proved.

@@ -4,6 +4,27 @@
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
 
+\item Let n be a positive integer and $\vec{F}$ a field. let $\vec{W}$ be the set of all vectors $\myvec{\vec{x_1},&\vec{x_2},\cdots ,\vec{x_n}} \in \vec{F}^n$ such that $\vec{x_1}+\vec{x_2}+\vec{x_3}+\cdots \vec{x_n} = 0$. 
+%
+\begin{enumerate}
+\item Prove that $\vec{W}^0$ consists of all linear functional f of the form
+\begin{align}
+f\myvec{\vec{x_1},&\vec{x_2}&,\cdots &,\vec{x_n}} = c\sum_{j=1}^{n}\vec{x_j}
+\end{align}
+\\
+\solution
+\input{./solutions/3/6/1/a/solution.tex}
+\item Show that the dual space $\vec{W}^*$ of $\vec{W}$ can be ‘naturally’ identified with the linear functionals
+\begin{align}
+    f(x_1, \hdots , x_n) = c_1x_1 + \hdots c_nx_n \nonumber
+\end{align}
+on $\vec{F}^n$ which satisfy $c_1 + \hdots + c_n = 0$
+\\
+\solution
+\input{./solutions/3/6/1/b/solution.tex}
+
+\end{enumerate}
+
 \item Use theorem 20 to prove the following.If $\vec{W}$ is a subspace of a finite dimensional vector space $\vec{V}$ and if $\cbrak{g_1,g_2,\hdots,g_r}$ is any basis for $\vec{W}^0$ then
 \begin{align}
     \vec{W}=\bigcap_{i=1}^r \vec{N}_{g_i}

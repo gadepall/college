@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  16 OCT 2020 09:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  23 NOV 2020 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -471,6 +471,25 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \stm@phasetot=\skip64
 \stm@phasewd=\skip65
 )
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/supertabula
+r/supertabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count284
+\ST@wd=\dimen186
+\ST@rightskip=\skip66
+\ST@leftskip=\skip67
+\ST@parfillskip=\skip68
+\ST@pageleft=\dimen187
+\ST@headht=\dimen188
+\ST@tailht=\dimen189
+\ST@pagesofar=\dimen190
+\ST@pboxht=\dimen191
+\ST@lineht=\dimen192
+\ST@prevht=\dimen193
+\ST@toadd=\dimen194
+\ST@dimen=\dimen195
+\ST@pbox=\box60
+)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/cite/cite.s
 ty
 LaTeX Info: Redefining \cite on input line 302.
@@ -480,7 +499,7 @@ Package: cite 2015/02/27  v 5.5
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/cases/cases
 .sty
 Package: cases 2020/03/10 ver 3.1
-\numc@numwid=\dimen186
+\numc@numwid=\dimen196
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/subfig/subf
 ig.sty
@@ -494,13 +513,13 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 tion3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen187
-\captionmargin@=\dimen188
-\captionwidth=\dimen189
-\caption@tempdima=\dimen190
-\caption@indent=\dimen191
-\caption@parindent=\dimen192
-\caption@hangindent=\dimen193
+\captionmargin=\dimen197
+\captionmargin@=\dimen198
+\captionwidth=\dimen199
+\caption@tempdima=\dimen256
+\caption@indent=\dimen257
+\caption@parindent=\dimen258
+\caption@hangindent=\dimen259
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
@@ -520,59 +539,60 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count284
-\c@continuedfloat=\count285
+\c@caption@flags=\count285
+\c@continuedfloat=\count286
+Package caption Info: supertabular package is loaded.
 )
-\c@KVtest=\count286
-\sf@farskip=\skip66
-\sf@captopadj=\dimen194
-\sf@capskip=\skip67
-\sf@nearskip=\skip68
-\c@subfigure=\count287
-\c@subfigure@save=\count288
-\c@lofdepth=\count289
-\c@subtable=\count290
-\c@subtable@save=\count291
-\c@lotdepth=\count292
-\sf@top=\skip69
-\sf@bottom=\skip70
+\c@KVtest=\count287
+\sf@farskip=\skip69
+\sf@captopadj=\dimen260
+\sf@capskip=\skip70
+\sf@nearskip=\skip71
+\c@subfigure=\count288
+\c@subfigure@save=\count289
+\c@lofdepth=\count290
+\c@subtable=\count291
+\c@subtable@save=\count292
+\c@lotdepth=\count293
+\sf@top=\skip72
+\sf@bottom=\skip73
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/longt
 able.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip71
-\LTright=\skip72
-\LTpre=\skip73
-\LTpost=\skip74
-\LTchunksize=\count293
-\LTcapwidth=\dimen195
-\LT@head=\box60
-\LT@firsthead=\box61
-\LT@foot=\box62
-\LT@lastfoot=\box63
-\LT@cols=\count294
-\LT@rows=\count295
-\c@LT@tables=\count296
-\c@LT@chunks=\count297
+\LTleft=\skip74
+\LTright=\skip75
+\LTpre=\skip76
+\LTpost=\skip77
+\LTchunksize=\count294
+\LTcapwidth=\dimen261
+\LT@head=\box61
+\LT@firsthead=\box62
+\LT@foot=\box63
+\LT@lastfoot=\box64
+\LT@cols=\count295
+\LT@rows=\count296
+\c@LT@tables=\count297
+\c@LT@chunks=\count298
 \LT@p@ftn=\toks30
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/multirow/mu
 ltirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip75
-\multirow@cntb=\count298
-\multirow@dima=\skip76
-\bigstrutjot=\dimen196
+\multirow@colwidth=\skip78
+\multirow@cntb=\count299
+\multirow@dima=\skip79
+\bigstrutjot=\dimen262
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/enumitem/en
 umitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip77
-\enit@outerparindent=\dimen197
+\labelindent=\skip80
+\enit@outerparindent=\dimen263
 \enit@toks=\toks31
-\enit@inbox=\box64
-\enit@count@id=\count299
-\enitdp@description=\count300
+\enit@inbox=\box65
+\enit@count@id=\count300
+\enitdp@description=\count301
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/mathtools/m
 athtools.sty
@@ -581,16 +601,16 @@ Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/calc.
 sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count301
-\calc@Bcount=\count302
-\calc@Adimen=\dimen198
-\calc@Bdimen=\dimen199
-\calc@Askip=\skip78
-\calc@Bskip=\skip79
+\calc@Acount=\count302
+\calc@Bcount=\count303
+\calc@Adimen=\dimen264
+\calc@Bdimen=\dimen265
+\calc@Askip=\skip81
+\calc@Bskip=\skip82
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count303
-\calc@Cskip=\skip80
+\calc@Ccount=\count304
+\calc@Cskip=\skip83
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/mathtools/m
 hsetup.sty
@@ -607,17 +627,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count304
-\l_MT_multwidth_dim=\dimen256
-\origjot=\skip81
-\l_MT_shortvdotswithinadjustabove_dim=\dimen257
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen258
-\l_MT_above_intertext_sep=\dimen259
-\l_MT_below_intertext_sep=\dimen260
-\l_MT_above_shortintertext_sep=\dimen261
-\l_MT_below_shortintertext_sep=\dimen262
-\xmathstrut@box=\box65
-\xmathstrut@dim=\dimen263
+\g_MT_multlinerow_int=\count305
+\l_MT_multwidth_dim=\dimen266
+\origjot=\skip84
+\l_MT_shortvdotswithinadjustabove_dim=\dimen267
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen268
+\l_MT_above_intertext_sep=\dimen269
+\l_MT_below_intertext_sep=\dimen270
+\l_MT_above_shortintertext_sep=\dimen271
+\l_MT_below_shortintertext_sep=\dimen272
+\xmathstrut@box=\box66
+\xmathstrut@dim=\dimen273
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/pgf/fronten
 dlayer/tikz.sty
@@ -628,14 +648,14 @@ es/pgfrcs.sty
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/utili
 ties/pgfutil-common.tex
 \pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen264
-\pgfutil@tempdimb=\dimen265
+\pgfutil@tempdima=\dimen274
+\pgfutil@tempdimb=\dimen275
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/utili
 ties/pgfutil-common-lists.tex))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/utili
 ties/pgfutil-latex.def
-\pgfutil@abb=\box66
+\pgfutil@abb=\box67
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi
 .sty
@@ -666,26 +686,26 @@ ties/pgfkeys.code.tex
 ties/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks35
 ))
-\pgf@x=\dimen266
-\pgf@y=\dimen267
-\pgf@xa=\dimen268
-\pgf@ya=\dimen269
-\pgf@xb=\dimen270
-\pgf@yb=\dimen271
-\pgf@xc=\dimen272
-\pgf@yc=\dimen273
-\pgf@xd=\dimen274
-\pgf@yd=\dimen275
+\pgf@x=\dimen276
+\pgf@y=\dimen277
+\pgf@xa=\dimen278
+\pgf@ya=\dimen279
+\pgf@xb=\dimen280
+\pgf@yb=\dimen281
+\pgf@xc=\dimen282
+\pgf@yc=\dimen283
+\pgf@xd=\dimen284
+\pgf@yd=\dimen285
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count305
-\c@pgf@countb=\count306
-\c@pgf@countc=\count307
-\c@pgf@countd=\count308
+\c@pgf@counta=\count306
+\c@pgf@countb=\count307
+\c@pgf@countc=\count308
+\c@pgf@countd=\count309
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count309
+\pgf@sys@id@count=\count310
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/syste
 mlayer/pgf.cfg
@@ -704,8 +724,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/syste
 mlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count310
-\pgfsyssoftpath@bigbuffer@items=\count311
+\pgfsyssoftpath@smallbuffer@items=\count311
+\pgfsyssoftpath@bigbuffer@items=\count312
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/syste
 mlayer/pgfsysprotocol.code.tex
@@ -741,9 +761,9 @@ pgfmathcalc.code.tex
 pgfmathutil.code.tex)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/math/
 pgfmathparser.code.tex
-\pgfmath@dimen=\dimen276
-\pgfmath@count=\count312
-\pgfmath@box=\box67
+\pgfmath@dimen=\dimen286
+\pgfmath@count=\count313
+\pgfmath@box=\box68
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
@@ -768,59 +788,59 @@ pgfmathfunctions.misc.code.tex)
 pgfmathfunctions.integerarithmetics.code.tex)))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/math/
 pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count313
+\c@pgfmathroundto@lastzeros=\count314
 ))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/math/
 pgfint.code.tex)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen277
-\pgf@picmaxx=\dimen278
-\pgf@picminy=\dimen279
-\pgf@picmaxy=\dimen280
-\pgf@pathminx=\dimen281
-\pgf@pathmaxx=\dimen282
-\pgf@pathminy=\dimen283
-\pgf@pathmaxy=\dimen284
-\pgf@xx=\dimen285
-\pgf@xy=\dimen286
-\pgf@yx=\dimen287
-\pgf@yy=\dimen288
-\pgf@zx=\dimen289
-\pgf@zy=\dimen290
+\pgf@picminx=\dimen287
+\pgf@picmaxx=\dimen288
+\pgf@picminy=\dimen289
+\pgf@picmaxy=\dimen290
+\pgf@pathminx=\dimen291
+\pgf@pathmaxx=\dimen292
+\pgf@pathminy=\dimen293
+\pgf@pathmaxy=\dimen294
+\pgf@xx=\dimen295
+\pgf@xy=\dimen296
+\pgf@yx=\dimen297
+\pgf@yy=\dimen298
+\pgf@zx=\dimen299
+\pgf@zy=\dimen300
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen291
-\pgf@path@lasty=\dimen292
+\pgf@path@lastx=\dimen301
+\pgf@path@lasty=\dimen302
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen293
-\pgf@shorten@start@additional=\dimen294
+\pgf@shorten@end@additional=\dimen303
+\pgf@shorten@start@additional=\dimen304
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box68
-\pgf@hbox=\box69
-\pgf@layerbox@main=\box70
-\pgf@picture@serial@count=\count314
+\pgfpic=\box69
+\pgf@hbox=\box70
+\pgf@layerbox@main=\box71
+\pgf@picture@serial@count=\count315
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen295
+\pgflinewidth=\dimen305
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen296
-\pgf@pt@y=\dimen297
-\pgf@pt@temp=\dimen298
+\pgf@pt@x=\dimen306
+\pgf@pt@y=\dimen307
+\pgf@pt@temp=\dimen308
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcorequick.code.tex
@@ -837,14 +857,14 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen299
+\pgfarrowsep=\dimen309
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen300
-\pgf@sys@shading@range@num=\count315
-\pgf@shadingcount=\count316
+\pgf@max=\dimen310
+\pgf@sys@shading@range@num=\count316
+\pgf@shadingcount=\count317
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcoreimage.code.tex
@@ -853,7 +873,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box71
+\pgfexternal@startupbox=\box72
 ))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/basic
 layer/pgfcorelayers.code.tex
@@ -874,7 +894,7 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/modul
 es/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box72
+\pgfnodeparttextbox=\box73
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/modul
 es/pgfmoduleplot.code.tex
@@ -883,8 +903,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/pgf/compati
 bility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen301
-\pgf@nodesepend=\dimen302
+\pgf@nodesepstart=\dimen311
+\pgf@nodesepend=\dimen312
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/pgf/compati
 bility/pgfcomp-version-1-18.sty
@@ -906,8 +926,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/math/
 pgfmath.code.tex)
-\pgffor@iter=\dimen303
-\pgffor@skip=\dimen304
+\pgffor@iter=\dimen313
+\pgffor@skip=\dimen314
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
 ))
@@ -918,34 +938,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
 ries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count317
-\pgfplotmarksize=\dimen305
+\pgf@plot@mark@count=\count318
+\pgfplotmarksize=\dimen315
 )
-\tikz@lastx=\dimen306
-\tikz@lasty=\dimen307
-\tikz@lastxsaved=\dimen308
-\tikz@lastysaved=\dimen309
-\tikz@lastmovetox=\dimen310
-\tikz@lastmovetoy=\dimen311
-\tikzleveldistance=\dimen312
-\tikzsiblingdistance=\dimen313
-\tikz@figbox=\box73
-\tikz@figbox@bg=\box74
-\tikz@tempbox=\box75
-\tikz@tempbox@bg=\box76
-\tikztreelevel=\count318
-\tikznumberofchildren=\count319
-\tikznumberofcurrentchild=\count320
-\tikz@fig@count=\count321
+\tikz@lastx=\dimen316
+\tikz@lasty=\dimen317
+\tikz@lastxsaved=\dimen318
+\tikz@lastysaved=\dimen319
+\tikz@lastmovetox=\dimen320
+\tikz@lastmovetoy=\dimen321
+\tikzleveldistance=\dimen322
+\tikzsiblingdistance=\dimen323
+\tikz@figbox=\box74
+\tikz@figbox@bg=\box75
+\tikz@tempbox=\box76
+\tikz@tempbox@bg=\box77
+\tikztreelevel=\count319
+\tikznumberofchildren=\count320
+\tikznumberofcurrentchild=\count321
+\tikz@fig@count=\count322
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/modul
 es/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count322
-\pgfmatrixcurrentcolumn=\count323
-\pgf@matrix@numberofcolumns=\count324
+\pgfmatrixcurrentrow=\count323
+\pgfmatrixcurrentcolumn=\count324
+\pgf@matrix@numberofcolumns=\count325
 )
-\tikz@expandcount=\count325
+\tikz@expandcount=\count326
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarytopaths.code.tex
@@ -963,10 +983,10 @@ File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
 ries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowinset=\dimen314
-\pgfarrowlength=\dimen315
-\pgfarrowwidth=\dimen316
-\pgfarrowlinewidth=\dimen317
+\pgfarrowinset=\dimen324
+\pgfarrowlength=\dimen325
+\pgfarrowwidth=\dimen326
+\pgfarrowlinewidth=\dimen327
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarybending.code.tex
@@ -979,18 +999,18 @@ File: pgfmodulebending.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/modul
 es/pgfmodulenonlineartransformations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgftransformnonlinearflatness=\dimen318
+\pgftransformnonlinearflatness=\dimen328
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
 ries/pgflibrarycurvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@curvilinear@time@a=\dimen319
-\pgf@curvilinear@length@a=\dimen320
-\pgf@curvilinear@length@b=\dimen321
-\pgf@curvilinear@length@c=\dimen322
-\pgf@curvilinear@length@d=\dimen323
+\pgf@curvilinear@time@a=\dimen329
+\pgf@curvilinear@length@a=\dimen330
+\pgf@curvilinear@length@b=\dimen331
+\pgf@curvilinear@length@c=\dimen332
+\pgf@curvilinear@length@d=\dimen333
 )
-\pgf@arrows@the@rigidity=\dimen324
+\pgf@arrows@the@rigidity=\dimen334
 ))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibraryfpu.code.tex
@@ -998,20 +1018,20 @@ endlayer/tikz/libraries/tikzlibraryfpu.code.tex
 ries/pgflibraryfpu.code.tex))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/circuitik
 z/pgfcirc.defines.tex
-\pgf@circ@count@a=\count326
-\pgf@circ@count@b=\count327
-\pgf@circ@count@c=\count328
-\pgf@circ@res@up=\dimen325
-\pgf@circ@res@down=\dimen326
-\pgf@circ@res@zero=\dimen327
-\pgf@circ@res@left=\dimen328
-\pgf@circ@res@right=\dimen329
-\pgf@circ@res@other=\dimen330
-\pgf@circ@res@step=\dimen331
-\pgf@circ@res@temp=\dimen332
-\pgfstartlinewidth=\dimen333
-\pgf@circ@Rlen=\dimen334
-\pgf@circ@scaled@Rlen=\dimen335
+\pgf@circ@count@a=\count327
+\pgf@circ@count@b=\count328
+\pgf@circ@count@c=\count329
+\pgf@circ@res@up=\dimen335
+\pgf@circ@res@down=\dimen336
+\pgf@circ@res@zero=\dimen337
+\pgf@circ@res@left=\dimen338
+\pgf@circ@res@right=\dimen339
+\pgf@circ@res@other=\dimen340
+\pgf@circ@res@step=\dimen341
+\pgf@circ@res@temp=\dimen342
+\pgfstartlinewidth=\dimen343
+\pgf@circ@Rlen=\dimen344
+\pgf@circ@scaled@Rlen=\dimen345
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/circuitik
 z/pgfcircutils.tex)
@@ -1023,7 +1043,7 @@ z/pgfcircmonopoles.tex)
 z/pgfcircbipoles.tex)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/circuitik
 z/pgfcirctripoles.tex
-\pgf@circ@res@count=\count329
+\pgf@circ@res@count=\count330
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/circuitik
 z/pgfcircquadpoles.tex)
@@ -1111,9 +1131,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 voptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen336
-\Hy@linkcounter=\count330
-\Hy@pagecounter=\count331
+\@linkdim=\dimen346
+\Hy@linkcounter=\count331
+\Hy@pagecounter=\count332
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd
 1enc.def
@@ -1129,7 +1149,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count332
+\Hy@SavedSpaceFactor=\count333
 Package hyperref Info: Option `breaklinks' set `true' on input line 4421.
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
@@ -1138,14 +1158,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count333
+\c@Hy@tempcnt=\count334
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen337
+\XeTeXLinkMargin=\dimen347
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/bitset/bi
 tset.sty
@@ -1156,9 +1176,9 @@ c/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count334
-\Field@Width=\dimen338
-\Fld@charsize=\dimen339
+\Fld@menulength=\count335
+\Field@Width=\dimen348
+\Fld@charsize=\dimen349
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -1173,9 +1193,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count335
-\c@Item=\count336
-\c@Hfootnote=\count337
+\Hy@abspage=\count336
+\c@Item=\count337
+\c@Hfootnote=\count338
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -1188,8 +1208,8 @@ tveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count338
-\c@bookmark@seq@number=\count339
+\Fld@listcount=\count339
+\c@bookmark@seq@number=\count340
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/rerunfilech
 eck/rerunfilecheck.sty
@@ -1202,7 +1222,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip82
+\Hy@SectionHShift=\skip85
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
 /tkz-euclide.sty
@@ -1225,7 +1245,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
 ries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen340
+\arrowsize=\dimen350
 ))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarybabel.code.tex
@@ -1235,16 +1255,16 @@ File: tikzlibrarybabel.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 endlayer/tikz/libraries/tikzlibrarydecorations.code.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/modul
 es/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen341
-\pgfdecoratedremainingdistance=\dimen342
-\pgfdecoratedinputsegmentcompleteddistance=\dimen343
-\pgfdecoratedinputsegmentremainingdistance=\dimen344
-\pgf@decorate@distancetomove=\dimen345
-\pgf@decorate@repeatstate=\count340
-\pgfdecorationsegmentamplitude=\dimen346
-\pgfdecorationsegmentlength=\dimen347
+\pgfdecoratedcompleteddistance=\dimen351
+\pgfdecoratedremainingdistance=\dimen352
+\pgfdecoratedinputsegmentcompleteddistance=\dimen353
+\pgfdecoratedinputsegmentremainingdistance=\dimen354
+\pgf@decorate@distancetomove=\dimen355
+\pgf@decorate@repeatstate=\count341
+\pgfdecorationsegmentamplitude=\dimen356
+\pgfdecorationsegmentlength=\dimen357
 )
-\tikz@lib@dec@box=\box77
+\tikz@lib@dec@box=\box78
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex
@@ -1262,9 +1282,9 @@ ries/decorations/pgflibrarydecorations.shapes.code.tex))
 endlayer/tikz/libraries/tikzlibrarydecorations.text.code.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
 ries/decorations/pgflibrarydecorations.text.code.tex
-\pgf@lib@dec@text@box=\box78
+\pgf@lib@dec@text@box=\box79
 )
-\tikz@lib@dec@te@box=\box79
+\tikz@lib@dec@te@box=\box80
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
@@ -1274,7 +1294,7 @@ ries/decorations/pgflibrarydecorations.pathmorphing.code.tex))
 endlayer/tikz/libraries/tikzlibraryintersections.code.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
 ries/pgflibraryintersections.code.tex
-\pgf@intersect@solutions=\count341
+\pgf@intersect@solutions=\count342
 ))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarypatterns.code.tex
@@ -1327,23 +1347,23 @@ File: tikzlibrarythrough.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/numprint/nu
 mprint.sty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-\c@nprt@mantissa@digitsbefore=\count342
-\c@nprt@mantissa@digitsafter=\count343
-\c@nprt@exponent@digitsbefore=\count344
-\c@nprt@exponent@digitsafter=\count345
-\nprt@digitwidth=\skip83
-\nprt@sepwidth=\skip84
-\nprt@decimalwidth=\skip85
-\nprt@blockwidth=\skip86
+\c@nprt@mantissa@digitsbefore=\count343
+\c@nprt@mantissa@digitsafter=\count344
+\c@nprt@exponent@digitsbefore=\count345
+\c@nprt@exponent@digitsafter=\count346
+\nprt@digitwidth=\skip86
+\nprt@sepwidth=\skip87
+\nprt@decimalwidth=\skip88
+\nprt@blockwidth=\skip89
 \nprt@digittoks=\toks46
 \nprt@pretoks=\toks47
 \nprt@posttoks=\toks48
-\nprt@thisdigit=\count346
-\nprt@curpos=\count347
-\nprt@rndpos=\count348
-\c@nprt@digitsfirstblock=\count349
-\c@nprt@blockcnt=\count350
-\c@nprt@cntprint=\count351
+\nprt@thisdigit=\count347
+\nprt@curpos=\count348
+\nprt@rndpos=\count349
+\c@nprt@digitsfirstblock=\count350
+\c@nprt@blockcnt=\count351
+\c@nprt@cntprint=\count352
  No configuration file `numprint.cfg' found.)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/l3packages/
 xfp/xfp.sty
@@ -1356,20 +1376,20 @@ Package: fp 1995/04/02
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/defpatte
 rn.sty
 Package: defpattern 1994/10/12
-\actioncount=\count352
+\actioncount=\count353
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic
 .sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count353
-\FP@xia=\count354
-\FP@xib=\count355
-\FP@xfa=\count356
-\FP@xfb=\count357
-\FP@rega=\count358
-\FP@regb=\count359
-\FP@regs=\count360
-\FP@times=\count361
+\FP@xs=\count354
+\FP@xia=\count355
+\FP@xib=\count356
+\FP@xfa=\count357
+\FP@xfb=\count358
+\FP@rega=\count359
+\FP@regb=\count360
+\FP@regs=\count361
+\FP@times=\count362
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addon
 s.sty
@@ -1394,7 +1414,7 @@ Package: fp-pas 1994/08/29
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-rando
 m.sty
 Package: fp-random 1995/02/23
-\FPseed=\count362
+\FPseed=\count363
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.s
 ty
@@ -1408,26 +1428,26 @@ Package: fp-upn 1996/10/21
 sty
 Package: fp-eval 1995/04/03
 ))
-\tkzRadius=\dimen348
-\tkzLength=\dimen349
-\tkz@radi=\dimen350
-\tkz@ax=\dimen351
-\tkz@ay=\dimen352
-\tkz@bx=\dimen353
-\tkz@by=\dimen354
-\tkz@cx=\dimen355
-\tkz@cy=\dimen356
-\tkz@dx=\dimen357
-\tkz@dy=\dimen358
-\tkz@tax=\dimen359
-\tkz@tay=\dimen360
-\tkz@tbx=\dimen361
-\tkz@tby=\dimen362
-\tkz@tcx=\dimen363
-\tkz@tcy=\dimen364
-\tkz@tdx=\dimen365
-\tkz@tdy=\dimen366
-\tkz@cntmk=\count363
+\tkzRadius=\dimen358
+\tkzLength=\dimen359
+\tkz@radi=\dimen360
+\tkz@ax=\dimen361
+\tkz@ay=\dimen362
+\tkz@bx=\dimen363
+\tkz@by=\dimen364
+\tkz@cx=\dimen365
+\tkz@cy=\dimen366
+\tkz@dx=\dimen367
+\tkz@dy=\dimen368
+\tkz@tax=\dimen369
+\tkz@tay=\dimen370
+\tkz@tbx=\dimen371
+\tkz@tby=\dimen372
+\tkz@tcx=\dimen373
+\tkz@tcy=\dimen374
+\tkz@tdx=\dimen375
+\tkz@tdy=\dimen376
+\tkz@cntmk=\count364
 
 Local configuration file tkz-base.cfg found and used
 
@@ -1507,8 +1527,8 @@ z-obj-rep.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
 /tkz-obj-eu-angles.tex
 2020/03/03 3.05c tkz-tool-eu-angles.tex
-\tkz@arcsize=\dimen367
-\tkz@fillsize=\dimen368
+\tkz@arcsize=\dimen377
+\tkz@fillsize=\dimen378
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
 /tkz-obj-eu-arcs.tex
@@ -1578,31 +1598,31 @@ z-obj-rep.tex
 ))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarymath.code.tex
-\tikz@math@for@depth=\count364
-\tikz@math@dimen=\dimen369
+\tikz@math@for@depth=\count365
+\tikz@math@dimen=\dimen379
 \tikz@math@toks=\toks49
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
 stings.sty
-\lst@mode=\count365
-\lst@gtempboxa=\box80
+\lst@mode=\count366
+\lst@gtempboxa=\box81
 \lst@token=\toks50
-\lst@length=\count366
-\lst@currlwidth=\dimen370
-\lst@column=\count367
-\lst@pos=\count368
-\lst@lostspace=\dimen371
-\lst@width=\dimen372
-\lst@newlines=\count369
-\lst@lineno=\count370
-\lst@maxwidth=\dimen373
+\lst@length=\count367
+\lst@currlwidth=\dimen380
+\lst@column=\count368
+\lst@pos=\count369
+\lst@lostspace=\dimen381
+\lst@width=\dimen382
+\lst@newlines=\count370
+\lst@lineno=\count371
+\lst@maxwidth=\dimen383
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
 tmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count371
-\lst@skipnumbers=\count372
-\lst@framebox=\box81
+\c@lstnumber=\count372
+\lst@skipnumbers=\count373
+\lst@framebox=\box82
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
 stings.cfg
@@ -1625,33 +1645,32 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/multi
 col.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count373
+\c@tracingmulticols=\count374
 
 
 Package multicol Warning: May not work with the twocolumn option on input line 
 141.
 
-\mult@box=\box82
-\multicol@leftmargin=\dimen374
-\c@unbalance=\count374
-\c@collectmore=\count375
-\doublecol@number=\count376
-\multicoltolerance=\count377
-\multicolpretolerance=\count378
-\full@width=\dimen375
-\page@free=\dimen376
-\premulticols=\dimen377
-\postmulticols=\dimen378
-\multicolsep=\skip87
-\multicolbaselineskip=\skip88
-\partial@page=\box83
-\last@line=\box84
-\maxbalancingoverflow=\dimen379
-\mult@rightbox=\box85
-\mult@grightbox=\box86
-\mult@gfirstbox=\box87
-\mult@firstbox=\box88
-\@tempa=\box89
+\mult@box=\box83
+\multicol@leftmargin=\dimen384
+\c@unbalance=\count375
+\c@collectmore=\count376
+\doublecol@number=\count377
+\multicoltolerance=\count378
+\multicolpretolerance=\count379
+\full@width=\dimen385
+\page@free=\dimen386
+\premulticols=\dimen387
+\postmulticols=\dimen388
+\multicolsep=\skip90
+\multicolbaselineskip=\skip91
+\partial@page=\box84
+\last@line=\box85
+\maxbalancingoverflow=\dimen389
+\mult@rightbox=\box86
+\mult@grightbox=\box87
+\mult@gfirstbox=\box88
+\mult@firstbox=\box89
 \@tempa=\box90
 \@tempa=\box91
 \@tempa=\box92
@@ -1688,15 +1707,16 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \@tempa=\box123
 \@tempa=\box124
 \@tempa=\box125
-\c@minrows=\count379
-\c@columnbadness=\count380
-\c@finalcolumnbadness=\count381
-\last@try=\dimen380
-\multicolovershoot=\dimen381
-\multicolundershoot=\dimen382
-\mult@nat@firstbox=\box126
-\colbreak@box=\box127
-\mc@col@check@num=\count382
+\@tempa=\box126
+\c@minrows=\count380
+\c@columnbadness=\count381
+\c@finalcolumnbadness=\count382
+\last@try=\dimen390
+\multicolovershoot=\dimen391
+\multicolundershoot=\dimen392
+\mult@nat@firstbox=\box127
+\colbreak@box=\box128
+\mc@col@check@num=\count383
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/chngcntr/ch
 ngcntr.sty
@@ -1707,120 +1727,120 @@ Package chngcntr Info: \counterwithout already defined.
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/blkarray/bl
 karray.sty
 Package: blkarray 2015/02/27 v0.07 Block array (dpc)
-\c@BAenumi=\count383
-\BA@col=\count384
-\BA@block@cnt=\count385
-\BA@final@box=\box128
-\BA@first@box=\box129
-\BA@colsep=\dimen383
+\c@BAenumi=\count384
+\BA@col=\count385
+\BA@block@cnt=\count386
+\BA@final@box=\box129
+\BA@first@box=\box130
+\BA@colsep=\dimen393
 \BA@ftn=\toks51
-\BAextrarowheight=\dimen384
-\BAextraheightafterhline=\dimen385
-\BAarrayrulewidth=\dimen386
-\BAdoublerulesep=\dimen387
-\BAfootskip=\dimen388
-\BA@dashbox=\box130
-\BA@ddashbox=\box131
+\BAextrarowheight=\dimen394
+\BAextraheightafterhline=\dimen395
+\BAarrayrulewidth=\dimen396
+\BAdoublerulesep=\dimen397
+\BAfootskip=\dimen398
+\BA@dashbox=\box131
+\BA@ddashbox=\box132
 ) (./gvv_ugc_linalg.aux)
 \openout1 = `gvv_ugc_linalg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 89.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 90.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-89.
+90.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 90.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-89.
+90.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 90.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-89.
+90.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 89.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 8
-9.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 90.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 9
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 8
-9.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <6> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <6> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 89.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 90.
 
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 89.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 89.
+LaTeX Info: Redefining \celsius on input line 90.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 90.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 89.
-Package gensymb Info: Using \Omega for \ohm on input line 89.
+LaTeX Info: Redefining \ohm on input line 90.
+Package gensymb Info: Using \Omega for \ohm on input line 90.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1836,16 +1856,16 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/context/base/mkii
 /supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count386
-\scratchdimen=\dimen389
-\scratchbox=\box132
-\nofMPsegments=\count387
-\nofMParguments=\count388
+\scratchcounter=\count387
+\scratchdimen=\dimen399
+\scratchbox=\box133
+\nofMPsegments=\count388
+\nofMParguments=\count389
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count389
-\MPscratchDim=\dimen390
-\MPnumerator=\count390
-\makeMPintoPDFobject=\count391
+\MPscratchCnt=\count390
+\MPscratchDim=\dimen400
+\MPnumerator=\count391
+\makeMPintoPDFobject=\count392
 \everyMPtoPDFconversion=\toks53
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pk
@@ -1871,8 +1891,8 @@ Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box133
-Package hyperref Info: Link coloring OFF on input line 89.
+\AtBeginShipoutBox=\box134
+Package hyperref Info: Link coloring OFF on input line 90.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/na
 meref.sty
@@ -1886,134 +1906,134 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count392
+\c@section@level=\count393
 )
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+LaTeX Info: Redefining \nameref on input line 90.
  (./gvv_ugc_linalg.out) (./gvv_ugc_linalg.out)
 \@outlinefile=\write4
 \openout4 = `gvv_ugc_linalg.out'.
 
-\c@lstlisting=\count393
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 89
+\c@lstlisting=\count394
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 90
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 9
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 9
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 9
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 9
+0.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-89.
+90.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 89.
+(Font)              scaled to size 11.39996pt on input line 90.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 89.
+(Font)              scaled to size 7.59998pt on input line 90.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 89.
+(Font)              scaled to size 5.69998pt on input line 90.
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-89.
+90.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
-\c@theorem=\count394
-\c@problem=\count395
-\c@proposition=\count396
-\c@lemma=\count397
-\c@example=\count398
-\c@rem=\count399
+\c@theorem=\count395
+\c@problem=\count396
+\c@proposition=\count397
+\c@lemma=\count398
+\c@example=\count399
+\c@rem=\count400
 
 
 pdfTeX warning: pdflatex (file /data/data/com.termux/files/home/texmf/tex/latex
 /logo/iith_logo.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<iith_logo.pdf, id=43, 359.3425pt x 486.81876pt>
+<iith_logo.pdf, id=51, 359.3425pt x 486.81876pt>
 File: iith_logo.pdf Graphic file (type pdf)
 <use iith_logo.pdf>
-Package pdftex.def Info: iith_logo.pdf  used on input line 245.
+Package pdftex.def Info: iith_logo.pdf  used on input line 246.
 (pdftex.def)             Requested size: 71.86722pt x 97.36201pt.
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 245.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 246.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 22.79993pt on input line 245.
+(Font)              scaled to size 22.79993pt on input line 246.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 15.95987pt on input line 245.
+(Font)              scaled to size 15.95987pt on input line 246.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 245.
-<tlc.pdf, id=44, 597.51233pt x 845.0471pt>
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 246.
+<tlc.pdf, id=52, 597.51233pt x 845.0471pt>
 File: tlc.pdf Graphic file (type pdf)
 <use tlc.pdf>
-Package pdftex.def Info: tlc.pdf  used on input line 245.
+Package pdftex.def Info: tlc.pdf  used on input line 246.
 (pdftex.def)             Requested size: 143.40588pt x 202.81544pt.
 
-Overfull \hbox (14.40588pt too wide) in paragraph at lines 245--245
+Overfull \hbox (14.40588pt too wide) in paragraph at lines 246--246
 [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 245.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 246.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 13.29996pt on input line 245.
+(Font)              scaled to size 13.29996pt on input line 246.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 9.30992pt on input line 245.
+(Font)              scaled to size 9.30992pt on input line 246.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 245.
+(Font)              scaled to size 6.64998pt on input line 246.
 File: iith_logo.pdf Graphic file (type pdf)
 <use iith_logo.pdf>
-Package pdftex.def Info: iith_logo.pdf  used on input line 245.
+Package pdftex.def Info: iith_logo.pdf  used on input line 246.
 (pdftex.def)             Requested size: 71.86722pt x 97.36201pt.
 File: tlc.pdf Graphic file (type pdf)
 <use tlc.pdf>
-Package pdftex.def Info: tlc.pdf  used on input line 245.
+Package pdftex.def Info: tlc.pdf  used on input line 246.
 (pdftex.def)             Requested size: 143.40588pt x 202.81544pt.
 
-Overfull \hbox (14.40588pt too wide) in paragraph at lines 245--245
+Overfull \hbox (14.40588pt too wide) in paragraph at lines 246--246
 [][] 
  []
 
 File: iith_logo.pdf Graphic file (type pdf)
 <use iith_logo.pdf>
-Package pdftex.def Info: iith_logo.pdf  used on input line 245.
+Package pdftex.def Info: iith_logo.pdf  used on input line 246.
 (pdftex.def)             Requested size: 71.86722pt x 97.36201pt.
 File: tlc.pdf Graphic file (type pdf)
 <use tlc.pdf>
-Package pdftex.def Info: tlc.pdf  used on input line 245.
+Package pdftex.def Info: tlc.pdf  used on input line 246.
 (pdftex.def)             Requested size: 143.40588pt x 202.81544pt.
 
-Overfull \hbox (14.40588pt too wide) in paragraph at lines 245--245
+Overfull \hbox (14.40588pt too wide) in paragraph at lines 246--246
 [][] 
  []
 
@@ -2088,25 +2108,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+)
+(./chapters/2017/dec.tex (./solutions/2017/dec/30/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(./gvv_ugc_linalg.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+ [7])
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+(./solutions/2017/dec/31/solution.tex) (./solutions/2017/dec/51/solution.tex
+[8]) (./solutions/2017/dec/77/solution.tex
+Underfull \vbox (badness 4967) has occurred while \output is active []
+
+
+
+LaTeX Warning: Float too large for page by 9.28831pt on input line 83.
+
+) (./solutions/2017/dec/105/solution.tex [9] [10] [11]
+Underfull \vbox (badness 10000) detected at line 161
+ []
+
+[12
+
+])) [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+ (./gvv_ugc_linalg.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `gvv_ugc_linalg.out' has not changed.
-(rerunfilecheck)             Checksum: F575326D5F31DF0EA941E70152E6A9ED;105.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
+(rerunfilecheck)             Checksum: 7701161DDB10CDA6718174A99307BFD2;226.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 42858 strings out of 480608
- 996139 string characters out of 5892806
- 1386142 words of memory out of 5000000
- 57574 multiletter control sequences out of 15000+600000
- 627482 words of font info for 241 fonts, out of 8000000 for 9000
+ 43118 strings out of 480608
+ 1000890 string characters out of 5892806
+ 1396050 words of memory out of 5000000
+ 57736 multiletter control sequences out of 15000+600000
+ 629096 words of font info for 244 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,14n,91p,506b,963s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,24n,91p,506b,980s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
 e/8r.enc}</data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/
 public/txfonts/rtxmi.pfb></data/data/com.termux/files/usr/share/texlive/texmf-d
@@ -2122,10 +2164,10 @@ exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></data/data/com.termux/files
 .termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></d
 ata/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on gvv_ugc_linalg.pdf (7 pages, 617779 bytes).
+Output written on gvv_ugc_linalg.pdf (13 pages, 644608 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 313 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 634 PDF objects out of 1000 (max. 8388607)
+ 579 compressed objects within 6 object streams
+ 386 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

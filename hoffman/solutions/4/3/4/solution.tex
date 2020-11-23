@@ -1,0 +1,30 @@
+let, ideal $I = f(x) \in F[x]$ such that $f(\vec{A}) = 0$. where,
+\begin{align}
+f(x)=\sum_{i=0}^n a_ix^i \quad a_n=1  \label{eq:solutions/4/3/4/eq:1}
+\end{align}
+Computing $f(\vec{A})$ for $deg(f)\leq1$ we get,
+\begin{align}
+\vec{A}^0 = \vec{I}\\
+\vec{A}^1 = \myvec{1&-2\\0&3}\\
+f(\vec{A}) = a_0\myvec{1&0\\0&1}+a_1\myvec{1&-2\\0&3} \label{eq:solutions/4/3/4/eq:2}
+\end{align}
+As $\vec{I}$ and $\vec{A}$ are linearly independent so from \eqref{eq:solutions/4/3/4/eq:2} we see  $f(\vec{A}) = 0$ only if $a_1=0$ and $a_0=0$ but this can't happen from \eqref{eq:solutions/4/3/4/eq:1}. Hence for $deg(f)\leq1$, $f(\vec{A})\neq0$. Hence for any $f(x) \in I$ such that $deg(f)=2$ then $f$ is Monic generator or minimal polymial. We can write,
+\begin{align}
+f(x) = x^2+a_1x^1+a_0 \label{eq:solutions/4/3/4/eq:3}
+\end{align}
+Minimal polynomial or monic generator can be found using Characteristic equation,
+\begin{align}
+\mydet{\vec{A}-\vec{I}\lambda} =0\\
+\mydet{1-\lambda&-2\\0&3-\lambda} =0\\
+(1-\lambda)(3-\lambda)=0\\
+\implies \lambda^2-4\lambda+3=0 \label{eq:solutions/4/3/4/eq:4}
+\end{align}
+comparing \eqref{eq:solutions/4/3/4/eq:3} and \eqref{eq:solutions/4/3/4/eq:4} we get,
+\begin{align}
+f(x) = x^2 -4x+3 = 0
+\end{align}
+using Cayley-Hamilton equation,
+\begin{align}
+f(\vec{A}) = \vec{A}^2-4\vec{A}+3 = 0
+\end{align}
+Hence, $f=x^2 -4x+3$ is the monic generator.

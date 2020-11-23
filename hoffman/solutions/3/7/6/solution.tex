@@ -1,0 +1,83 @@
+See Tables \ref{eq:solutions/3/7/6table:1}  and \ref{eq:solutions/3/7/6table:2}
+
+
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|p{3cm}|p{5cm}|}
+\hline
+\textbf{PARAMETERS}&\textbf{DESCRIPTION}\\
+\hline
+$\mathbb{R}$&Field of real numbers\\
+\hline
+$\vec{V}$&Vector space of all polynomials over $\mathbb{R}$\\
+\hline
+$a,b$ & Fixed real numbers\\
+\hline
+$f$ &Linear functional on $\vec{V}$\\
+\hline
+$D$ & Differentiator operator on $\vec{V}$\\
+\hline
+$D^t$ &Transpose of $D$\\
+\hline
+\end{tabular}
+\caption{Input Parameters}
+\label{eq:solutions/3/7/6table:1}
+\end{table}
+
+
+
+\begin{table*}[!t]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    \textbf{STATEMENTS} & \textbf{DERIVATIONS}\\
+    \hline
+      $D^t$ is transpose of $D$ & 
+      \parbox{10cm}{\begin{align}
+         (D^tf)(p)=f[D(p)]
+      \end{align}}\\
+      \hline
+      A polynomial of degree $n$ & \\
+       $ p(x)=c_0+c_1x+c_2x^2+\hdots+c_nx^n$ &
+       \parbox{10cm}{\begin{align}
+         p=\vec{c}^T\vec{x}\\
+         \vec{c}=\myvec{c_0\\c_1\\c_2\\\vdots\\c_n},
+         \vec{x}=\myvec{1\\x\\x^2\\\vdots\\x^n}
+       \end{align}}\\
+       \hline
+       $ f(p)=\int_a ^b p(x) \,dx$& 
+        \parbox{10cm}{\begin{align}
+          f(p)=\vec{c}^T\vec{F}\\
+          \vec{F}=\myvec{b-a\\\frac{b^2-a^2}{2}\\\frac{b^3-a^3}{3}\\\vdots\\\frac{b^{n+1}-a^{n+1}}{n+1}}
+       \end{align}}\\
+       \hline
+      $D(p)=c_1+2c_2x+3c_3x^2+\hdots+nc_nx^{n-1}$ &
+        \parbox{10cm}{\begin{align}
+          D(p)=\vec{c}^T\vec{D}\vec{x}\\
+          \vec{D}=\myvec{0&0&0&\hdots&0&0\\1&0&0&\hdots&0&0\\0&2&0&\hdots&0&0\\0&0&3&\hdots&0&0\\\vdots&\vdots&\vdots&\hdots&\vdots&\vdots\\0&0&0&\hdots&n&0}
+       \end{align}}\\
+       \hline
+            $f[D(p)]=c_1(b-a)+c_2(b^2-a^2)+\hdots+c_n(b^n-a^n)$
+      & 
+        \parbox{10cm}{\begin{align}
+        \text{Let  }D(p)=p'\\
+         \implies p'=\vec{c'}^T\vec{x}\\
+         \text{where }\vec{c'}^T=\myvec{c_1\\2c_2\\3c_3\\\vdots\\nc_n\\0}\\
+         f[D(p)]=\vec{c'}^T\vec{F}
+       \end{align}}\\
+       \hline
+      $(D^t f)(p)=p(b)-p(a)$ & 
+         \parbox{10cm}{\begin{align}
+         (D^t f)(p)=c_1(b-a)+c_2(b^2-a^2)+\\\hdots+c_n(b^n-a^n)+c_0-c_0\\
+         =(c_0+c_1b+c_2b^2+\hdots+c_nb^n)-\\
+         (c_0+c_1a+c_2a^2+\hdots+c_na^n)\\
+         =p(b)-p(a)
+       \end{align}}\\
+       \hline
+    \end{tabular}
+    \caption{Proof}
+\label{eq:solutions/3/7/6table:2}
+\end{table*}
+
+

@@ -1,0 +1,41 @@
+Given V is the space of all 2$\times$2 matrices over field F. P is a 2$\times$2 matrix, 
+\begin{align}
+    P = \myvec{p_{11}&p_{12}\\ p_{21}&p_{22}}
+\end{align}
+Let $\mathcal{B}=\cbrak{e_{11}, e_{12}, e_{21}, e_{22}}$ be the ordered basis of V where, 
+\begin{align}
+    e_{11}=\myvec{1&0\\0&0}, e_{12}=\myvec{0&1\\0&0}\\
+    e_{21}=\myvec{0&0\\1&0}, e_{22}=\myvec{0&0\\0&1}
+\end{align}
+Given, $T(A)=PA$, 
+\begin{align}
+    T(e_{11}) = Pe_{11}
+    = \myvec{p_{11}&0\\p_{21}&0} \\
+    = p_{11}e_{11} + p_{21}e_{21} \\
+    T(e_{12}) = Pe_{12} = \myvec{0&p_{11}\\0&p_{21}}\\
+    = p_{11}e_{12} + p_{21}e_{22} \\
+    T(e_{21}) = Pe_{21} = 
+    \myvec{p_{12}&0\\p_{22}&0}\\
+    = p_{12}e_{11} + p_{22}e_{21} \\
+    T(e_{22}) = Pe_{22} = 
+    \myvec{0&p_{12}\\0&p_{22}} \\
+    = p_{12}e_{12} + p_{22}e_{22}
+\end{align}
+The matrix representation of linear functional T in the ordered basis $\mathcal{B}$ is given as,
+\begin{align}
+    T = \myvec{[T(e_{11})]_{\mathcal{B}} & [T(e_{12})]_{\mathcal{B}} & [T(e_{21})]_{\mathcal{B}} & [T(e_{22})]_{\mathcal{B}}}
+\end{align}
+\begin{align}
+    T &= \myvec{p_{11}&0&p_{12}&0\\0&p_{11}&0&p_{12}\\p_{21}&0&p_{22}&0\\0&p_{21}&0&p_{22}} \\
+    &= \myvec{p_{11}\myvec{1&0\\0&1} & p_{12}\myvec{1&0\\0&1} \\ p_{21}\myvec{1&0\\0&1} & p_{22}\myvec{1&0\\0&1}} \\
+    &= \myvec{p_{11}I & p_{12}I \\ p_{21}I & p_{22}I} = P \otimes I
+\end{align}
+Now by using the property of kronecker product we get, 
+\begin{align}
+    tr(T) = tr(P\otimes I)
+    = tr(P)tr(I)\\
+    = 2tr(P) \\
+    \therefore tr(T)= 2tr(P)
+\end{align}
+
+

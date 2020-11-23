@@ -1,0 +1,66 @@
+See Tables \ref{eq:solutions/4/1/9/b/table:1} and \ref{eq:solutions/4/1/9/b/table:2}
+%
+\begin{table*}[!ht]
+	\begin{tabular}{|l|l|}
+	\hline
+	\multirow{3}{*}{Linear Transformation} & \\
+	& A linear transformation from $\vec{V}$ into $\vec{W}$ is a function $\vec{T}$ from $\vec{V}$ into $\vec{W}$ such that \\
+	& \qquad \qquad \qquad \qquad \qquad $\vec{T}(c\alpha + \beta) = c\vec{T}(\alpha) + \vec{T}(\beta)$  \\
+	& $\forall$ $\alpha$ and $\beta$ in $\vec{V}$ and $\forall$ scalars $c$ in $\vec{F}$. \\
+	& \\
+	\hline
+	\multirow{3}{*}{\qquad \qquad $\vec{F}[x]$} & \\
+	& Let $\vec{F}[x]$ be the subspace of $\vec{F}^{\infty}$ spanned by the vectors $1, x, x^2,...$. An element of $\vec{F}[x]$ \\
+	& is called a polynomial over $\vec{F}$. \\
+	& \\
+	\hline
+	\multirow{3}{*}{\qquad Differentiation} & \\
+	& Let $\vec{F}$ be a field and let $\vec{V}$ be the space of polynomial functions $f$ from $\vec{F}$ into $\vec{F}$,\\
+\qquad Transformation & given by \\
+    & \qquad \qquad \qquad  $f(x) = c_0 + c_1x + . . . + c_kx^k$\\  
+    & Then,\\
+    &\qquad \qquad \qquad $\vec{D}f(x) = c_1 + 2c_2x + ...+ kc_kx^{k-1} $\\
+    & is called Differentiation Transformation. The Differentiation Transformation is a \\
+	& Linear map because \\
+	& \qquad \qquad \qquad $\vec{D}(cf+g)(x) = \brak{c.c_1 + c_1^{'}} + 2\brak{c.c_2 + c_2^{'}}x + ... + k\brak{c.c_k + c_k^{,}}x^{k-1}$ \\
+    & \qquad \qquad \qquad \qquad \qquad \qquad = $c.c_1 + 2c.c_2x + ... + kc.c_kx^{k-1} + c_1^{'} + 2c_2^{'}x + ... + kc_k^{'}x^{k-1}$ \\	
+    & \qquad \qquad \qquad \qquad \qquad \qquad = c$\vec{D}f(x) + \vec{D}g(x)$ \label{eq:solutions/4/1/9/b/2}\\
+    &\\
+    \hline
+\end{tabular}
+\caption{}
+\label{eq:solutions/4/1/9/b/table:1}
+\end{table*}
+\begin{table*}[!ht]
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Proving $\vec{D}$ is Linear} & \\
+		& From \eqref{eq:solutions/4/1/9/b/1}, clearly $\vec{D}$ is a function from $\vec{F[x]}$ to $\vec{F[x]}$. We must show that $\vec{D}$ is linear.\\
+		& Clearly $\vec{D}$ is a Differentiation Transformation, and hence is linear. In other words \\
+		& \\
+		& Let $\vec{m} = \myvec{c_0 \\ c_1 \\ \vdots \\c_n}$, $\vec{n} = \myvec{c_0^{'} \\ c_1^{'} \\ \vdots \\ c_n^{'}}$ and $\alpha$ be a scalar. Then\\
+		& \qquad \qquad  $\vec{D}\brak{\vec{x^T(\alpha m + n)}} = \vec{y^{T}p}$, where $\vec{p} = \myvec{\alpha c_1 + c_1 ^{'} \\ 2\brak{\alpha c_2 + c_2 ^{'}} \\ \vdots \\ n\brak{\alpha c_n + c_n ^{'}}}$  and $\vec{\alpha m + n} = \myvec{\alpha c_0 + c_0^{'} \\ \alpha c_1 + c_1^{'} \\ \vdots \\ \alpha c_n + c_n^{'} }$\\
+		& \qquad \qquad  $\vec{D}\brak{\vec{x^T(\alpha m + n)}}$ = $\vec{y^{T}}(\vec{m^{'} + n^{'}})$, where $\vec{m^{'}} = \alpha\myvec{c_1 \\ 2c_2 \\ \vdots \\ nc_n}$ and $\vec{n^{'}} = \myvec{\ c_1^{'} \\ 2c_2^{'} \\ \vdots \\ nc_n^{'}}$\\
+		& Thus,\\
+		& \qquad \qquad $\vec{D}\brak{\vec{x^T(\alpha m + n)}}$ = $\vec{y^{T}m^{'}}$ + $\vec{y^{T}n^{'}}$ \\
+        & Now,\\	
+		& \qquad \qquad $\vec{D}\brak{\vec{x^T(\alpha m + n)}}$ = $\alpha\vec{D}\brak{\vec{x^{T}m}} + \vec{D}\brak{\vec{x^{T}n}} $\\
+		& \\
+		& Hence, $\vec{D}$ is a linear transformation.\\
+		& \\
+		\hline
+		\multirow{3}{*}{Null Space of $\vec{D}$} & \\
+		& Let $\vec{N(D)}$ denotes the nullspace of $\vec{D}$. Then\\
+		& \qquad \qquad \qquad \qquad \qquad $\vec{N(D)} = \{f \in\vec{F[x]} : \vec{D}f(x) = 0 \}$\\
+		& A polynomial is zero if and only if its every coeficient is zero. Thus, it must be such  \\
+		& that each $c_1 = c_2 = ....=0$. Since, $\vec{D}$ is a Differentiation Transformation and we know \\
+		& that derivative of a constant polynomial is zero. Thus, the nullspace of $\vec{D}$ contains \\
+		& the constant polynomials. Hence,\\
+		& \qquad \qquad \qquad \qquad \qquad $\vec{N(D)} =\{f \in \vec{F[x]} : f(x) = c \}$ \\
+		& \\
+		\hline
+	\end{tabular}
+\caption{}
+\label{eq:solutions/4/1/9/b/table:2}
+\end{table*}
+

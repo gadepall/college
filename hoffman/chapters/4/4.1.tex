@@ -52,4 +52,29 @@ polynomial over $\vec{F}$, show that fh and gh are independent.
 \\
 \solution
 \input{./solutions/4/1/4/solution.tex}
+\item Let $\mathbb{F}$ be a subfield of complex numbers and let T be the transformation on $\mathbb{F}\brak{x}$ defined by
+\begin{align}
+T\brak{\sum \limits_{i=0}^n c_i x^i}=\sum \limits_{i=0}^n \frac{c_i}{i+1} x^{i+1}\label{q}
+\end{align}
+\begin{enumerate}
+\item  Show that T is a non-singular linear operator on $\mathbb{F}\sbrak{x}$. Also show that T is not invertible.
+\\
+\solution
+\input{./solutions/4/1/9/a/solution.tex}
+\item Let $\vec{F}$ be a sub-field of the complex numbers and let $\vec{D}$ be the transformation on $\vec{F}[x]$ defined by
+\begin{align}
+& \vec{D}\brak{\sum_{i=0}^{n}c_ix^{i}} = \sum_{i=0}^{n}ic_ix^{i-1} \label{eq:solutions/4/1/9/b/1} \\
+& \vec{D}\brak{\vec{x^Tc}} = \vec{y^{T}b}
+\end{align}
+where
+\begin{align}
+& \vec{x} = \myvec{1 \\ x \\ \vdots \\ x^n} \quad and \quad \vec{c} =\myvec{c_0 \\ c_1 \\ \vdots \\ c_n} \\
+& \vec{y} = \myvec{1 \\ x \\ \vdots \\ x^{n-1}} \quad and \quad  \vec{b} = \myvec{c_1 \\ 2c_2 \\ \vdots \\ nc_n}
+\end{align}
+Show that $\vec{D}$ is a linear operator on $\vec{F}[x]$ and find its null space.
+%
+\\
+\solution
+\input{./solutions/4/1/9/b/solution.tex}
+\end{enumerate}
 \end{enumerate}

@@ -1,0 +1,50 @@
+Let
+\begin{align}
+\beta &= \brak{\alpha_1,\alpha_2,\alpha_3}
+\end{align}
+\begin{align}
+\implies \beta=\myvec{1&1&1\\0&1&0\\-1&1&0}
+\end{align}
+and
+\begin{align}
+\beta' = \{\beta_1 , \beta_2\}
+\end{align}
+\begin{align}
+\implies \beta'=\myvec{0&1\\1&0}
+\end{align}
+T is defined by
+\begin{align}
+   T\brak{\vec{x}} = \vec{A}\vec{x}
+ \end{align}
+using equation \eqref{T}
+\begin{align}
+T\myvec{x_1\\x_2\\x_3}=\myvec{x_1+x_2\\2x_3-x_1}
+\end{align}
+R.H.S of the equation can be written as a product of 2$\times$3 and 3$\times$1 matrices,
+\begin{align}
+=\myvec{1&1&0\\-1&0&2}\myvec{x_1\\x_2\\x_3}\\
+\implies \vec{A}=\myvec{1&1&0\\-1&0&2}
+\end{align}
+Now,
+ \begin{align}
+    T\brak{\beta}=\myvec{1&1&0\\-1&0&2}{\beta}
+\end{align}
+\begin{align}
+    T\brak{\beta}=\myvec{1&1&0\\-1&0&2}\myvec{1&1&1\\0&1&0\\-1&1&0}
+    =\myvec{1&2&1\\-3&1&-1}
+\end{align}
+To find relative matrix we will use row reduce augmented matrix.
+\begin{align}
+    \myvec{1&2&1&\vline&0&1\\-3&1&-1&\vline&1&0}
+\end{align}
+\begin{align}
+\myvec{1&2&1&\vline&0&1\\-3&1&-1&\vline&1&0}\xleftrightarrow{R_1\leftrightarrow R_2}\myvec{-3&1&-1&\vline&1&0\\1&2&1&\vline&0&1}
+\end{align}
+Hence the matrix of \textbf{T} in the order basis of $\beta^{'}$
+\begin{align}
+    \vec{B}=\myvec{-3&1&-1\\1&2&1}
+\end{align}
+ Therefore matrix of relative to the pair $\beta$ , $\beta^{'}$  
+ \begin{align}
+  T\brak{\vec{\beta}}=\vec{A}\beta = \vec{B}\beta^{'}=\myvec{-3&1&-1\\1&2&1}\vec{\beta^{'}}   
+ \end{align}

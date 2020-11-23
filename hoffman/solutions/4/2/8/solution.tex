@@ -1,0 +1,79 @@
+%
+Here, $F[x]$ is a set of polynomials over field $F$, written as:
+\begin{align}
+    F[x]&=\left \{\sum_{i=0}^\infty a_ix^i\quad \mid \quad a_i\in F\right \}
+\end{align}
+Let,
+\begin{align}
+    G(f)&=f(h) \label{eq:solutions/4/2/8/eq1.1}
+\end{align}
+Thus, $G(f)$ is clearly a function from $F[x]$ into $F[x]$.\\
+Now, we need to show that the function $G$ is one-one linear transformation. Let us first show that $G$ is a linear transformation:
+\begin{align}
+    \text{Let, }f,g \in F[x] \text{ and }\alpha \in F \nonumber
+\end{align}
+\begin{align}
+    G(\alpha f+g)&=(\alpha f+g)(h) \nonumber\\
+    &=(\alpha f)(h)+g(h)\nonumber \\
+    &=\alpha f(h)+g(h)\nonumber \\
+    &=\alpha G(f)+G(g) \label{eq:solutions/4/2/8/eq2.3} 
+\end{align}
+From \eqref{eq:solutions/4/2/8/eq2.3}, $G$ is a linear transformation. \\
+%
+For $G$ to be one-one linear transformation, it should map a set of linearly independent polynomials in $F(x)$ to another  set of linearly independent polynomials in $F(x)$. let us consider the following basis set for $F(x)$:
+\begin{align}
+    S&=\{f_0,f_1,f_2,f_3,f_4,\hdots\}
+    \intertext{Where,}
+    f_i&=x^i
+\end{align}
+Since, the set $S$ forms the basis for $F(x)$, the set $S$ is a set of linearly independent polynomials. Let us apply the transformation $G$ to set S, then we obtain another set $S'$ as:
+\begin{align}
+    S'&=\{f_0(h),f_1(h),f_2(h),f_3(h),f_4(h),\hdots\}
+    \intertext{Where,}
+    f_i&=x^i
+\end{align}
+Here, The degree of each polynomial in set $S'$ is distinct and given by $i\cdot$deg$(h)$. Thus, set $S'$ is also a set of linearly independent polynomials.\\ \\
+\textbf{Conclusion:} $G$ will maps any arbitrary set $S_a$ of linearly independent polynomials in $F(x)$ to another set $S_a'$ of linearly independent polynomials in $F(x)$. (Since any arbitrary set $S_a$ can be written in terms of basis set $S$). Hence, \underline{G is one-one linear transformation}.\\\\
+Now, Let us prove that $G$ is an isomorphism of $F(x)$ onto $F(x)$ if and only if deg$(h)=1$. \\
+Let deg$(h)=1$, then $h$ can be written as:
+\begin{align}
+    h=a+bx, \quad \text{Where, }b \ne 0
+\end{align}
+Let us define $h'$ such that:
+\begin{align}
+    h'=\frac1bx-\frac ab
+\end{align}
+Let $G'$ be the linear transformation from $F(x)$ to $F(x)$ given by:
+\begin{align}
+    G’(f)=f\brak{\frac1bx-\frac ab}
+\end{align}
+It can be shown that $G'$ is inverse of $G$ as follow:
+\begin{align}
+    G(G'(f))&=G\brak{f\brak{\frac1bx-\frac ab}}\\
+    &=f\brak{a\brak{\frac1ax-\frac ba}+b}\\
+    &=f(x)
+\end{align}
+Similarly, 
+\begin{align}
+    G'(G(f))&=G'\brak{f\brak{ax+b}}\\
+    &=f\brak{\frac1a\brak{ax+b}-\frac ba}\\
+    &=f(x)
+\end{align}
+Thus, $G'$ is inverse of $G$. Therefore, $G$ is isomorphism and we can say: 
+\begin{align}
+    \boxed{\deg(h)=1 \implies \text{$G$ is isomorphism.}} \label{eq:solutions/4/2/8/eq16}
+\end{align}
+Let deg$(h)>1$, then 
+\begin{align}
+    \deg f(h)&=\deg f\cdot \deg h \\
+    \implies \deg f(h)&\geq 1\\
+    \implies G(f)=f(h) &\ne x
+\end{align}
+This means the image of $G$ does not contain polynomials of degree one. Hence $G$ is not onto and therefore $G$ can not be an isomorphism. Thus we can write:
+\begin{align}
+    \boxed{\deg(h)>1 \implies \text{$G$ is not isomorphism.}} \label{eq:solutions/4/2/8/eq20} 
+\end{align}
+From \eqref{eq:solutions/4/2/8/eq16} and \eqref{eq:solutions/4/2/8/eq20}, We can conclude:
+\begin{align}
+    \boxed{\text{$G$ is isomorphism.} \iff \deg(h)=1}  
+\end{align}
