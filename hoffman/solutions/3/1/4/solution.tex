@@ -1,0 +1,120 @@
+ {\em Linear Transformation}
+ A linear transformation is a function $\vec{T} :\mathbb{R}^n \rightarrow  \mathbb{R}^m$ which satisfies:
+ 
+ 1. $\forall \vec{x},\vec{y} \in \mathbb{R}^n$,
+ \begin{align}
+     \vec{T}\myvec{\vec{x}+\vec{y}}&=\vec{T}\myvec{\vec{x}}+\vec{T}\myvec{\vec{y}} 
+ \end{align}
+ 2. $\forall \vec{x}\in \mathbb{R}^n$ and c $\in \mathbb{R}$,
+ \begin{align}
+     \vec{T}\myvec{c\vec{x}}=c\vec{T}\myvec{\vec{x}}
+ \end{align}
+{\em Matrix of the Linear Transformation}
+Let,
+$\vec{T} :\mathbb{R}^n \rightarrow  \mathbb{R}^m$ is a linear transformation and $\vec{x} \in \mathbb{R}^n$ is given by ,
+\begin{align}
+    \vec{x}&=\myvec{x_1\\x_2\\\vdots\\x_n}\\
+    &=x_1\myvec{1\\0\\\vdots\\0}+x_2\myvec{0\\1\\\vdots\\0}+\dots+x_n\myvec{0\\0\\\vdots\\1}\label{eq:solutions/3/1/4/1}
+\end{align}
+Let $\vec{e_1},\vec{e_2},\dots,\vec{e_n}$ be the standard basis of $\mathbb{R}^n$ and the equation \eqref{eq:solutions/3/1/4/1} can be rewritten as,
+\begin{align}
+    \vec{x}=\sum_{i=1}^{n} x_i\vec{e_i}
+\end{align}
+\begin{align}
+    \vec{T}\myvec{\vec{x}}&=\sum_{i=1}^{n} x_i\vec{T}\myvec{\vec{e_i}}\\
+    &=\myvec{\vec{T}\myvec{\vec{e_1}} &\vec{T}\myvec{\vec{e_2}}& \dots &\vec{T}\myvec{\vec{e_n}}}\myvec{x_1\\x_2\\\vdots\\x_n}\\
+   \vec{T}\myvec{\vec{x}} &=\vec{A}\vec{x}\label{eq:solutions/3/1/4/ax}
+\end{align}
+Where,
+\begin{align}
+    \vec{A}=\myvec{\vec{T}\myvec{\vec{e_1}} &\vec{T}\myvec{\vec{e_n}}& \dots &\vec{T}\myvec{\vec{e_n}}}
+\end{align}
+If  $\vec{T}$  is any linear transformation which maps $\mathbb{R}^n \rightarrow  \mathbb{R}^m$ there is always an $m\times n$  matrix  $\vec{A}$  with the property that
+\begin{align}
+    \vec{T}\myvec{\vec{x}} &=\vec{A}\vec{x}\notag
+\end{align}
+where , $\vec{x} \in \mathbb{R}^n$
+{\em Solution}
+Let,
+\begin{align}
+    \vec{v}=\myvec{1\\-1\\1}\\
+    \vec{u}=\myvec{1\\1\\1}
+\end{align}
+Given,
+\begin{align}
+    \vec{T}\myvec{\vec{v}}=\myvec{1\\0}\\
+    \vec{T}\myvec{\vec{u}}=\myvec{0\\1}
+\end{align}
+Let the standard basis vectors is denoted as, 
+\begin{align}
+    \vec{e_1}&=\myvec{1\\0\\0}\\
+    \vec{e_2}&=\myvec{0\\1\\0}\\
+    \vec{e_3}&=\myvec{0\\0\\1}
+\end{align}
+Let, 
+$\vec{T} :\mathbb{R}^3 \rightarrow  \mathbb{R}^2$ be a linear transformation. Then the function $\vec{T}$ is just matrix-vector multiplication $\vec{T}(\vec{x}) = \vec{A}\vec{x}$ for some matrix $\vec{A}$ as shown in equation \eqref{eq:solutions/3/1/4/ax}
+
+Matrix $\vec{A}$ of order $2 \times 3$ is given by,
+\begin{align}
+    \vec{A}=\myvec{\vec{T}\myvec{\vec{e_1}} & \vec{T}\myvec{\vec{e_2}} & \vec{T}\myvec{\vec{e_3}}}\label{eq:solutions/3/1/4/A}
+\end{align}
+Consider the vector $\vec{b} \in \mathbb{R}^3$ which is the linear combinations of the vectors $\vec{v}$ and $\vec{u}$.
+
+For $x_1,x_2 \in \mathbb{R}$,
+\begin{align}
+    \vec{b}=\myvec{b_1\\b_2\\b_3}=x_1\myvec{1\\-1\\1}+x_2\myvec{1\\1\\1}
+\end{align}
+\begin{align}
+    \vec{T}\myvec{b_1\\b_2\\b_3}=x_1\vec{T}\myvec{1\\-1\\1}+x_2\vec{T}\myvec{1\\1\\1}\label{eq:solutions/3/1/4/eq1}
+\end{align}
+To find $x_1,x_2$, we solve the linear system,$\vec{M}\vec{x}=\vec{b}$ where $\vec{M}$ is the $3 \times 2$ matrix obtained by stacking the given vectors $\vec{v}$ and $\vec{u}$ as columns
+\begin{align}
+    \vec{M}=\myvec{1 & 1\\-1 & 1 \\ 1 & 1}
+\end{align}
+\begin{align}
+\myvec{1 & 1\\-1 & 1 \\ 1 & 1}\myvec{x_1\\x_2}=\myvec{b_1\\b_2\\b_3}\label{eq:solutions/3/1/4/eq}
+\end{align}
+The augumented matrix of the equation \eqref{eq:solutions/3/1/4/eq} is given by ,
+\begin{align}
+    &\myvec{1& 1 &\vrule & b_1 \\ -1 & 1 & \vrule& b_2\\ 1 & 1 &\vrule & b_3}\label{eq:solutions/3/1/4/eqaug}
+\end{align}
+By row reducing the above equation \eqref{eq:solutions/3/1/4/eqaug},
+\begin{align}
+    &\myvec{1& 1 &\vrule & b_1 \\ -1 & 1 & \vrule& b_2\\ 1 & 1 &\vrule & b_3}&\xleftrightarrow{R_2=R_2+R_1}&\myvec{1& 1 &\vrule & b_1 \\ 0 & 2 & \vrule& b_2+b_1\\ 1 & 1 &\vrule & b_3}
+\end{align}
+\begin{align}
+&\myvec{1& 1 &\vrule & b_1 \\ 0 & 2 & \vrule& b_2+b_1\\ 1 & 1 &\vrule & b_3}&\xleftrightarrow{R_3=R_3-R_1}&\myvec{1& 1 &\vrule & b_1 \\ 0 & 2 & \vrule& b_2+b_1\\ 0 & 0 &\vrule & b_3-b_1}\\
+&\myvec{1& 1 &\vrule & b_1 \\ 0 & 2 & \vrule& b_2+b_1\\ 0 & 0 &\vrule & b_3-b_1}&\xleftrightarrow{R_2=\frac{R_2}{2}}&\myvec{1& 1 &\vrule & b_1 \\ 0 & 1 & \vrule& \frac{b_2+b_1}{2}\\ 0 & 0 &\vrule & b_3-b_1}\\
+&\myvec{1& 1 &\vrule & b_1 \\ 0 & 1 & \vrule& \frac{b_2+b_1}{2}\\ 0 & 0 &\vrule & b_3-b_1}&\xleftrightarrow{R_1=R_1-R_2}&\myvec{1& 0 &\vrule & \frac{b_1-b_2}{2} \\ 0 & 1 & \vrule& \frac{b_2+b_1}{2}\\ 0 & 0 &\vrule & b_3-b_1}
+\end{align}
+Now equation \eqref{eq:solutions/3/1/4/eq} can be written as,
+\begin{align}
+    \myvec{1 & 0\\0 & 1 \\ 0& 0}\myvec{x_1\\x_2}=\myvec{\frac{b_1-b_2}{2}\\\frac{b_2+b_1}{2}\\b_3-b_1}
+\end{align}
+Solving the above equation we get ,
+\begin{align}
+    x_1&=\frac{b_1-b_2}{2}\label{eq:solutions/3/1/4/x1}\\
+    x_2&=\frac{b_1+b_2}{2}\label{eq:solutions/3/1/4/x2}
+\end{align}
+Substituting the above equations \eqref{eq:solutions/3/1/4/x1},\eqref{eq:solutions/3/1/4/x2} in equation \eqref{eq:solutions/3/1/4/eq1}, we get,
+\begin{align}
+    \vec{T}\myvec{b_1\\b_2\\b_3}&=\left(\frac{b_1-b_2}{2}\right)\vec{T}\myvec{1\\-1\\1}+\left(\frac{b_1+b_2}{2}\right)\vec{T}\myvec{1\\1\\1}\label{eq:solutions/3/1/4/in}
+\end{align}
+Substituting the equations \eqref{eq:solutions/3/1/4/g1} and \eqref{eq:solutions/3/1/4/g2} in equation \eqref{eq:solutions/3/1/4/in} we get,
+\begin{align}
+        \vec{T}\myvec{b_1\\b_2\\b_3}&=\left(\frac{b_1-b_2}{2}\right)\myvec{1\\0}+\left(\frac{b_1+b_2}{2}\right)\myvec{0\\1}\\
+        \vec{T}\myvec{b_1\\b_2\\b_3}&=\myvec{\frac{b_1-b_2}{2}\\\frac{b_1+b_2}{2}}\label{eq:solutions/3/1/4/ch}
+\end{align}
+Using the above equation \eqref{eq:solutions/3/1/4/ch} we compute,
+\begin{align}
+    \vec{T}\myvec{\vec{e_1}}=\vec{T}\myvec{1\\0\\0}&=\myvec{\frac{1}{2}\\\frac{1}{2}}\label{eq:solutions/3/1/4/a1}\\
+    \vec{T}\myvec{\vec{e_2}}=\vec{T}\myvec{0\\1\\0}&=\myvec{\frac{-1}{2}\\\frac{1}{2}}\label{eq:solutions/3/1/4/a2}\\
+    \vec{T}\myvec{\vec{e_3}}=\vec{T}\myvec{0\\0\\1}&=\myvec{0\\0}\label{eq:solutions/3/1/4/a3}
+\end{align}
+Substituting the equations \eqref{eq:solutions/3/1/4/a1},\eqref{eq:solutions/3/1/4/a2} and \eqref{eq:solutions/3/1/4/a3} in equation \eqref{eq:solutions/3/1/4/A} we get,
+\begin{align}
+    \vec{A}&=\myvec{\frac{1}{2} & \frac{-1}{2} & 0\\\frac{1}{2} & \frac{1}{2} & 0}\\
+   \implies \vec{A}&=\frac{1}{2}\myvec{1 & -1 & 0\\1 & 1 & 0}
+\end{align}
+Therefore from the above matrix $\vec{A}$ we can say that there is a linear transformation $\vec{T}$ from $\mathbb{R}^3$ into $\mathbb{R}^2$ which satisfies the given conditions \eqref{eq:solutions/3/1/4/g1} and \eqref{eq:solutions/3/1/4/g2}.
+

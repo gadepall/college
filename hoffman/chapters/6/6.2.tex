@@ -1,0 +1,18 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item Let T be the linear operator on $\vec{R}^3$ which is represented in the standard ordered basis by the matrix
+\begin{align}
+\myvec{-9&4&4\\-8&3&4\\-16&8&7}
+\label{eq:solutions/6/2/4/Q}
+\end{align}
+Prove that T is diagonalizable by exhibiting a basis for $\vec{R}^3$, each vector of which is a characteristic vector of T. 
+%
+%
+\\
+\solution
+\input{./solutions/6/2/4/solution.tex}
+\end{enumerate}

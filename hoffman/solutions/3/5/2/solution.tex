@@ -1,0 +1,32 @@
+Let $\cbrak{f_1, f_2, f_3}$ be the dual basis of $\vec{B}$ such that,
+\begin{align}
+	f_i(\alpha_j) = \begin{cases}
+		1 \quad i = j\\
+		0 \quad i \not= j
+	\end{cases}
+\end{align}
+and 
+\begin{align}
+	f_i(\alpha_1, \alpha_2, \alpha_3) = \sum_{j=1}^{3} \delta_{ij}\alpha_j \label{eq:solutions/3/5/2/eq:eq1}
+\end{align}
+Given,
+\begin{align}
+	\vec{B} = \myvec{1 & 1 & 2\\ 0 & 1& 2 \\ -1 & 1& 0}
+\end{align}
+Then, 
+\begin{align}
+	\vec{B}^{-1} = \myvec{1  & -1 & 0\\ 1 & -1 & 1\\ -\frac{1}{2} & 1 & -\frac{1}{2}}
+\end{align}
+So the elements of dual basis are rows of matrix $\vec{B}^{-1}$.
+Therefore we get, 
+\begin{align}
+	(\delta_{11}, \delta_{12}, \delta_{13} ) &= (1, -1, 0)\\
+	(\delta_{21}, \delta_{22}, \delta_{23} ) &= (1, -1, 1)\\
+	(\delta_{31}, \delta_{32}, \delta_{33} ) &= (-\frac{1}{2}, 1, -\frac{1}{2})
+\end{align}
+Using \eqref{eq:solutions/3/5/2/eq:eq1}, we get 
+\begin{align}
+	\myvec{f_1 \\ f_2 \\ f_3} &= \myvec{1  & -1 & 0\\ 1 & -1 & 1\\ -\frac{1}{2} & 1 & -\frac{1}{2}} \myvec{\alpha_1 \\ \alpha_2\\ \alpha_3}\\
+	&= \myvec{\alpha_1 - \alpha_2 \\ \alpha_1 - \alpha_2 + \alpha_3\\ -\frac{1}{2}\alpha_1 + \alpha_2 -\frac{1}{2} \alpha_3}
+\end{align}
+Hence, $\cbrak{f_1, f_2, f_3}$ is the required dual basis for $\vec{B}$.

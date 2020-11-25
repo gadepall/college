@@ -1,0 +1,125 @@
+See Tables 
+\ref{eq:solutions/4/1/6/table0},
+\ref{eq:solutions/4/1/6/table1} and 
+\ref{eq:solutions/4/1/6/table2}
+
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Given & $\vec{S}$ be a set of non-zero\\
+& polynomial over a field $F$\\
+& \\
+& No two elements of $\vec{S}$ have\\
+& the same degree\\
+& \\
+\hline
+& \\
+To prove & $\vec{S}$ is an independent set\\
+& in $\vec{F[x]}$\\
+& \\
+\hline
+& \\
+Linear &\\
+Independency  & Let $f_1$,$f_2$,...,$f_n$ are the\\
+& polynomials and they will be \\
+& linearly independent if\\
+& $a_1f_1+a_2f_2+...+a_nf_n=\theta$ \\
+& for $a_1=a_2=....=a_n=0$ \\
+& where $a_1$,$a_2$,...,$a_n$ are \\
+& scalars from field $F$\\
+\hline
+\end{tabular}
+\end{center}
+\caption{}
+\label{eq:solutions/4/1/6/table0}
+\end{table}
+
+
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Proof & Let the degrees of $f_1$,$f_2$,...,$f_n$ are\\
+& $d_1$,$d_2$,...,$d_n$ respectively such that\\
+& the degree of $f_i$ = $d_i \neq d_j$\\
+& for j=1,2,....,n and $i \neq j$\\
+& and $d_1 < d_2 < ....< d_n$\\
+& so $d_n$ is the largest degree\\
+\hline
+& Now, let $a_1f_1+a_2f_2+...+a_nf_n=\theta$\\
+& \\
+& where $f_1 = \sum_{i=0}^{d_1}k_{1i}x^i$\\
+& \\
+& $f_2 = \sum_{i=0}^{d_2}k_{2i}x^i$\\
+& $\textbf{or,}f_2 = \sum_{i=0}^{d_1}k_{2i}x^i+ \sum_{i=d_1+1}^{d_2}k_{2i}x^i$\\
+& \\
+& Similarly, $f_{n-1}=\sum_{i=0}^{d_{n-1}}k_{(n-1)i}x^i$\\
+& $\implies f_{n-1}= \sum_{i=0}^{d_{n-2}}k_{(n-1)i}x^i+ \sum_{i=d_{n-2}+1}^{d_{n-1}}k_{(n-1)i}x^i$\\
+& \\
+& and $f_n = \sum_{i=0}^{d_{n-1}}k_{ni}x^i+ \sum_{i=d_{n-1}+1}^{d_{n}}k_{ni}x^i$\\
+\hline
+& Now,\\
+& $a_1f_1+a_2f_2+...+a_nf_n$\\
+& $=a_1\sum_{i=0}^{d_1}k_{1i}x^i + a_2(\sum_{i=0}^{d_1}k_{2i}x^i+ \sum_{i=d_1+1}^{d_2}k_{2i}x^i)$\\
+& $+ ...+a_n(\sum_{i=0}^{d_1}k_{ni}x^i+ \sum_{i=d_1+1}^{d_2}k_{ni}x^i+..$\\
+& $..+\sum_{i=d_{n-1}+1}^{d_{n}}k_{ni}x^i)$\\
+& \\
+& $=\sum_{i=0}^{d_1}(a_1k_{1i}+a_2k_{2i}+..+a_nk_{ni})x^i$\\
+& $+\sum_{i=d_1+1}^{d_2}(a_2k_{2i}+..+a_nk_{ni})x^i$\\
+& $+..+\sum_{i=d_{n-1}+1}^{d_{n}}a_nk_{ni}x^i$\\
+& \\
+& Now, as $a_1f_1+a_2f_2+...+a_nf_n=\theta$ \\
+& for $d_{n-1}+1\leq i \leq d_n$, $k_{ni}\neq 0$\\
+& so $a_n$ must be 0\\
+\hline
+& Now, discarding $a_n$ associated term, we get\\
+& $\sum_{i=0}^{d_1}(a_1k_{1i}+a_2k_{2i}+..+a_nk_{ni})x^i$\\
+& $+\sum_{i=d_1+1}^{d_2}(a_2k_{2i}+..+a_nk_{ni})x^i$\\
+& $+..+\sum_{i=d_{n-2}+1}^{d_{n-1}}a_{n-1}k_{(n-1)i}x^i =0$\\
+& so, for $d_{n-2}+1\leq i \leq d_{n-1}$, $k_{(n-1)i}\neq 0$\\
+& $\implies a_{n-1}=0$ \\
+%& In this way, it can be proved that\\
+%& $a_1=a_2=....=a_n=0$ for\\
+%& $a_1f_1+a_2f_2+...+a_nf_n=\theta$\\
+%& $\implies$ $f_1$,$f_2$,....,$f_n$ are\\
+%& linearly independent\\
+& \\
+\hline
+\end{tabular}
+\end{center}
+\caption{}
+\label{eq:solutions/4/1/6/table1}
+%
+\end{table}
+
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& \\
+Proof & \\
+& Similarly, for $d_1+1 \leq i \leq d_2$\\
+& $\sum_{i=0}^{d_1}(a_1k_{1i}+a_2k_{2i})x^i + \sum_{i=d_1+1}^{d_2}a_2k_{2i}x^i$\\
+& $\implies a_2=0$ as $k_{2i} \neq 0$\\
+& $\implies \sum_{i=0}^{d_1}a_1k_{1i}x^i=0$\\
+& $\implies a_1=0$ as $k_{1i} \neq 0$\\
+\hline
+& In this way, it can be proved that\\
+& $a_1=a_2=....=a_{n-1}=a_n=0$ for\\
+& $a_1f_1+a_2f_2+...+a_nf_n=\theta$\\
+& $\implies$ $f_1$,$f_2$,....,$f_n$ are\\
+& linearly independent\\
+& \\
+\hline
+\end{tabular}
+\end{center}
+\caption{}
+\label{eq:solutions/4/1/6/table2}
+%
+\end{table}
+
+
+Hence, it is proved that $\vec{S}$ is an independent set in $\vec{F[x]}$.

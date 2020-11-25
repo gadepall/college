@@ -1,0 +1,60 @@
+%
+{\em Theory: }
+Table \ref{eq:solutions/7/3/4/table:1} gives the overview of properties of a Jordan block based on characteristic polynomial, minimal polynomial, algebraic multiplicity and geometric multiplicity.
+\begin{table*}[!ht]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+& &\\
+Feature & Effect on Jordan block & Example\\
+& &\\
+\hline
+
+& &\\
+characteristic & The multiplicity of $\lambda$ & Let, $f = (x-2)^4$ be characteristic polynomial\\
+polynomial or & in the characteristic polynomial & $\vec{J} = \myvec{2 & * & 0 & 0 \\ 0 & 2 & * & 0 \\ 0 & 0 & 2 & * \\ 0 & 0 & 0 & 2}$\\
+Algebraic & determines the size of the & where $*$ can be either 1 or 0\\
+multiplicity & Jordan block for that eigenvalue.&\\
+& $A_M$ = Size of Jordan block for $\lambda$& \\
+& &\\
+\hline
+
+& & \\
+Geometric & The geometric multiplicity & If $A_M = 4; \: G_M = 2; \: \lambda = 2$\\
+multiplicity & determines the total number of & $\implies$ There should be 2 Jordan sub blocks\\ 
+& Jordan sub blocks for $\lambda$ & for $\lambda = 2$. So, $\vec{J}$ has 2 possibilities\\
+& & $\vec{J} = \myvec{2 & 1 & 0 & 0 \\ 0 & 2 & 0 & 0 \\ 0 & 0 & 2 & 1 \\ 0 & 0 & 0 & 2}$;\: or $\vec{J} = \myvec{2 & 1 & 0 & 0 \\ 0 & 2 & 1 & 0 \\ 0 & 0 & 2 & 0 \\ 0 & 0 & 0 & 2}$\\
+\hline
+
+& &\\
+minimal & The multiplicity of $\lambda$ & Let $p = (x-2)^3$ be minimal polynomial\\
+polynomial & in the minimal polynomial& $\implies$ Size of largest sub-block is 3\\
+& determines the size of & Hence, one sub-block of size 3 and\\
+& the largest sub-block & one sub-block of size 1\\
+& (Elementary Jordan block).& $\vec{J} = \myvec{2 & 1 & 0 & 0 \\ 0 & 2 & 1 & 0 \\ 0 & 0 & 2 & 0 \\ 0 & 0 & 0 & 2}$\\
+& &\\
+\hline
+\end{tabular}
+\caption{Properties of Jordan blocks and Jordan canonical form}
+\label{eq:solutions/7/3/4/table:1}
+\end{center}
+\end{table*}
+
+From the properties stated in table \ref{eq:solutions/7/3/4/table:1}, the Jordan blocks for eigenvalues of $\vec{A}$ can be written as,
+\begin{align}
+    \vec{J_1} = \myvec{2 & 1 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2}; \quad 
+    \vec{J_2} = \myvec{-7 & 0 \\ 0 & -7} \label{eq:solutions/7/3/4/eq:3_1}
+\end{align}
+Where $\vec{J_1}$ and $\vec{J_1}$ are the Jordan blocks corresponding to $\lambda_1 = 2$ and $\lambda_1 = -7$ respectively. The Jordan form for $\vec{A}$ can be written as,
+\begin{align}
+    \vec{J} = \myvec{\vec{J_1} & 0 \\ 0 & \vec{J_2}} = \myvec{2 & 1 & 0 & 0 & 0 \\ 0 & 2 & 0 & 0 & 0 \\ 0 & 0 & 2 & 0 & 0 \\ 0 & 0 & 0 & -7 & 0 \\ 0 & 0 & 0 & 0 & -7} 
+\end{align}
+{\em Inference}
+An $n\times n$ matrix with with $\lambda$ as diagonal elements, ones on the super diagonal and zeroes in all other entries is nilpotent with minimal polynomial $(A-\lambda I)^n$
+{\em Example}
+Let,
+\begin{align}
+    \vec{A} = \myvec{0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0} \label{eq:solutions/7/3/4/5_1}
+\end{align}
+\eqref{eq:solutions/7/3/4/5_1} is nilpotent for minimal polynomial $A^3$
+%

@@ -1,0 +1,23 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item If A is a complex $5 \times 5$ matrix with characteristic polynomial $f = (x-2)^3 (x+7)^2$ and minimal polynomial $p = (x-2)^2 (x+7)$, what is the Jordan form for A? 
+%
+\\
+\solution
+\input{./solutions/7/3/4/solution.tex}
+
+\item The differentiation operator on the space of polynomials of degree less than or equal to 3 is represented in the natural ordered basis by the matrix,
+\begin{align}
+\vec{A} = \myvec{0&1&0&0\\0&0&2&0\\0&0&0&3\\0&0&0&0}
+\end{align}
+What is the Jordan form of this matrix? ($\mathbb{F}$ a subfield of the complex numbers.) 
+%
+%
+\\
+\solution
+\input{./solutions/7/3/5/solution.tex}
+\end{enumerate}

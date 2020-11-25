@@ -1,24 +1,28 @@
 \contentsline {section}{\numberline {1}Linear Equations}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Fields and Linear Equations}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Matrices and Elementary Row Operations}{7}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Row Reduced Echelon Matrices}{14}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}Row Reduced Echelon Matrices}{15}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Matrix Multiplication}{22}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Invertible Matrices}{26}{subsection.1.5}%
 \contentsline {section}{\numberline {2}Vector Spaces}{39}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Vector Spaces}{39}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Subspaces}{42}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Bases and Dimension}{49}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Coordinates}{57}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{64}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Linear Transformations}{71}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Linear Transformations}{71}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{79}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Isomorphism}{90}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{101}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Linear Functionals}{111}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}The Double Dual}{121}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{125}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Polynomials}{129}{section.4}%
-\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{129}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{132}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{136}{subsection.4.3}%
+\contentsline {subsection}{\numberline {2.3}Bases and Dimension}{50}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Coordinates}{58}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{65}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Linear Transformations}{72}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Linear Transformations}{72}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{82}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Isomorphism}{94}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{103}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Linear Functionals}{114}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}The Double Dual}{124}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{128}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Polynomials}{132}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{132}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{135}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{140}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Elementary Canonical Forms}{141}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Characteristic Values}{141}{subsection.5.1}%
+\contentsline {section}{\numberline {6}The Rational and Jordan Forms}{142}{section.6}%
+\contentsline {subsection}{\numberline {6.1}The Jordan Form}{142}{subsection.6.1}%

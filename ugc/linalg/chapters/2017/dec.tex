@@ -34,7 +34,46 @@ Then, $P(X_3 = 1 \: | \: X_0 = 1)$ equals
 \\
 \solution
 \input{./solutions/2017/dec/51/solution.tex}
-\item For every $4 \times 4$ real symmetric non-singular matrix $\vec{A}$ there exists a positive integer $p$ such that
+%
+\item 	Let $\vec{A}$ be an $m\times n$ matrix with rank $r$. If the linear system $\vec{A}\vec{X} = \vec{b}$ has a solution for each $\vec{b} \in \mathbf{R}^{m}$, then
+	\begin{enumerate}
+		\item $m=r$
+		\item the column space of $\vec{A}$ is a proper subspace of $\mathbf{R}^{m}$ 
+		\item the null space of $\vec{A}$ is a non-trivial subspace of $\mathbf{R}^{n}$ whenever $m=n$
+		\item $m\geq n$ implies $m=n$
+	\end{enumerate}
+%
+\solution
+\input{./solutions/2017/dec/72/solution.tex}
+\item Let $\vec{M}$ =$\cbrak{\myvec{a&b\\c&d} : a,b,c,d \in \mathbb{Z} \text{ and eigen values of} \vec{A} \in \mathbb{Q}}$ \label{main}
+\begin{enumerate}
+    \item $\vec{M}$ is empty
+    \item $\vec{M}$ =\cbrak{\myvec{a&b\\c&d} : a,b,c,d \in \mathbb{Z}}
+    \item If $\vec{A}$ $\in$ $\vec{M}$ then the eigen values of $\vec{A}$ $\in$ $\mathbb{Z}$
+    \item If $\vec{A}$,$\vec{B}$ $\in$ $\vec{M}$ such that $\vec{A} \vec{B}$=$\vec{I}$ then $\mydet{\vec{A}}$ $\in$ \{+1,-1\}
+\end{enumerate}
+%
+\solution
+\input{./solutions/2017/dec/74/solution.tex}
+\item Let $V$ be a vector space over $C$ of all the polynomials in a variable $X$ of degree atmost 3. Let $D:V \xrightarrow{} V$ be the linear operator given by differentiation with respect to $X$. Let $A$ be the matrix of $D$ with respect to some 
+basis for $V$. Which of the following are true? \\
+\begin{enumerate}
+\item A is nilpotent matrix \\
+\item A is diagonalizable matrix \\ 
+\item the rank of A is 2 \\
+\item the Jordan canonical form of A is
+\begin{align}\nonumber
+    \myvec{0&1&0&0\\
+       0&0&1&0\\
+       0&0&0&1\\
+       0&0&0&0}
+\end{align}
+\end{enumerate}
+%
+\solution
+\input{./solutions/2017/dec/76/solution.tex}
+\item For every $4 \times 4$ real symmetric non-singular matrix $\vec{A}$ there 
+exists a positive integer $p$ such that
 
     \begin{enumerate}
         \item $p\vec{I}+\vec{A}$ is positive definite
@@ -44,6 +83,20 @@ Then, $P(X_3 = 1 \: | \: X_0 = 1)$ equals
         \end{enumerate}
 \solution
 \input{./solutions/2017/dec/77/solution.tex}
+\item Let $\vec{A}$ be an $m \times n$ matrix of rank $m$ with $n>m$. If for some non-zero real number $\alpha$, we have $\vec{x^TAA^Tx} = \alpha\vec{x^Tx}$, for all $x \in \vec{R^m}$, then $\vec{A^TA}$ has,
+\begin{enumerate}
+
+\item  exactly two distinct eigenvalues.
+
+\item  0 as an eigenvalue with multiplicity $n-m$.
+
+\item  $\alpha$ as a non-zero eigenvalue.
+
+\item  exactly two non-zero distinct eigenvalues.
+\end{enumerate}
+%
+\solution
+\input{./solutions/2017/dec/78/solution.tex}
 \item %
 Consider a Markov chain with five states $\{1,2,3,4,5\}$ and transition matrix
 \begin{align}

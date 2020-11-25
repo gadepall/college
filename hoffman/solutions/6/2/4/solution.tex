@@ -1,0 +1,48 @@
+Let $\vec{T}$ be a linear operator on a finite-dimensional space $\vec{V}$. Let $c_1, \cdots, c_k$ be the distinct characteristic values of $\vec{T}$ and let $\vec{W}_i$ be the null space of $\vec{T}-c_i\vec{I}$. The following are equivalent.
+\begin{enumerate}
+\item[(i)] $\vec{T}$ is diagonalizable.
+\item[(ii)] The characteristic polynomial for $\vec{T}$ is,
+\begin{align}
+f = (x-c_1)^d_1 \cdots (x - c_k)^{d_k}
+\end{align}
+and $\dim W_i = d_i, i=1,\cdots ,k$
+\item[(iii)] $\dim W_1+\cdots+\dim W_k = \dim V$ 
+\end{enumerate}  
+Now let,
+\begin{align}
+\vec{A} = \myvec{-9&4&4\\-8&3&4\\-16&8&7}
+\label{eq:solutions/6/2/4/A}
+\end{align} 
+Solving $\mydet{\lambda \vec{I} - \vec{A}} = 0$
+\begin{align}
+\mydet{\lambda \vec{I} - \vec{A}} = \mydet{\lambda + 9&-4&-4\\8&\lambda - 3&-4\\16&-8&\lambda - 7}\\
+\xleftrightarrow[]{C_2\leftarrow C_2-C_3} \mydet{\lambda + 9&0&-4\\8&\lambda + 1&-4\\16&-\lambda - 1&\lambda - 7}
+\end{align}
+\begin{align}
+\therefore \mydet{\lambda \vec{I} - \vec{A}} = (\lambda + 1)\mydet{\lambda + 9&0&-4\\8&1&-4\\16&-1&\lambda - 7}\\
+\xleftrightarrow[]{R_3\leftarrow R_3+R_2} (\lambda + 1)\mydet{\lambda + 9&0&-4\\8&1&-4\\24&0&\lambda - 11}\\
+\implies (\lambda + 1)\mydet{\lambda + 9 & -4\\24& \lambda - 11}\\
+\implies \mydet{\lambda \vec{I} - \vec{A}} = (\lambda + 1)^{2}(\lambda - 3) = 0\\
+\implies \lambda_1 = -1, \lambda_2 = -1, \lambda_3 =3
+\label{eq:solutions/6/2/4/lambda}
+\end{align} 
+Now at $\lambda_1$ and $\lambda_3$,
+\begin{align}
+\vec{A} + \vec{I} = \myvec{-8&4&4\\-8&4&4\\-16&8&8}\\
+\vec{A} - 3\vec{I} = \myvec{-12&4&4\\-8&0&4\\-16&8&4}
+\end{align}
+Now we know that $\vec{A}-3\vec{I}$ is singular and rank($\vec{A}-3\vec{I})\geq 2.$ Therefore, rank($\vec{A}-3\vec{I}$) = 2. Hence from the theorem-1 (iii) it is evident that rank($\vec{A}+\vec{I}) = 1$. Let $X_1$ and $X_3$ be the spaces of characteristic vectors associated with the characteristic values 1 and 3 respectively. We know from rank nullity theorem that $\dim X_1 = 2$ and $\dim X_3 = 1$. Hence by Theorem-2 (i) $\vec{T}$ is diagonalizable. \\
+The null-space of $\vec{T+I}$ is spanned by the vectors,
+\begin{align}
+\alpha_1 = \myvec{1&0&2}\\
+\alpha_2 = \myvec{1&2&0}
+\end{align}
+As both $\alpha_1$ and $\alpha_2$ are independent, hence they form basis for $X_1$. The null-space of $\vec{T-3I}$ is spanned by the vector,
+\begin{align}
+\alpha_3 = \myvec{1&1&2}
+\end{align}
+Here $\alpha_3$ is a characteristic vector and a basis for $\vec{X_3}$.
+Also the matrix P which enables us to change coordinates from the basis $\beta$ to the standard basis is the matrix which has transposes of $\alpha_1, \alpha_2 $ and $\alpha_3$ as it's column vectors:
+\begin{align}
+\vec{P} = \myvec{1&1&1\\0&2&1\\2&0&2}
+\end{align} 
