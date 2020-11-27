@@ -1,0 +1,18 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item Let, $\vec{T}$ be the linear operator on $\mathbb{R}^3$ which is represented in the standard ordered
+basis by the matrix
+\begin{align}
+	\myvec{2 & 0 & 0 \\ 1 & 2 & 0 \\ 0 & 0 & 3}
+\end{align}
+Let $\vec{W}$ be the null space of $\vec{T-2I}$. Prove that $\vec{W}$ has no complementary $\vec{T}$-invariant
+subspace.
+%
+\\
+\solution
+\input{./solutions/7/2/3/solution.tex}
+\end{enumerate}

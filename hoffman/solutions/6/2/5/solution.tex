@@ -1,0 +1,92 @@
+See Tables \ref{eq:solutions/6/2/5/table:1} and \ref{eq:solutions/6/2/5/table:2}
+
+
+%
+%
+\onecolumn
+%
+\begin{longtable}{|l|l|}
+\hline
+\multirow{3}{*}{Theorem 2} & \\
+& Let $T$ be the linear operator on a finite dimensional space $V$ and $c_1$,..,$c_k$ be a distinct \\
+&\\
+&characteristic values of $T$ and let $W_i$ be the null space of $(T-c_iI)$ then \\
+&\\
+& $1)T$ is diagonalizable \\
+&\\
+& $2)$ characteristic polynomial for $T$ is \\
+& $f$ = $(x-c_1)^{d_1}$....$(x-c_k)^{d_k}$ and \\
+&\\
+& $3)$ $dim W_i$ = $d_i$, $i= 1,...k$\\
+&\\
+\hline
+\multirow{3}{*}{Concept} & \\
+&
+A linear operator $T$ on a $n$-dimensional space $V$ is\\ 
+&\\ for diagonalization
+& diagonalizable , if and only if $T$ has $n$ distinct \\
+&\\
+& characteristic vectors or null spaces corresponding to the characteristic values\\
+\hline
+\caption{Illustration of theorem.}
+\label{eq:solutions/6/2/5/table:1}
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+\multirow{3}{*}{Given} & \\
+& Let the given matrix be  \\
+&\\
+& $\vec{A}$=$\myvec{6&-3&-2\\4&-1&-2\\10&-5&-3}$\\
+&\\
+\hline
+\multirow{3}{*}{Finding Characteristics} & \\
+&
+Characteristics polynomial of the matrix $A$ is $det(xI-A)$\\ 
+polynomial
+& $\det(xI-A)$= $\left|
+                \begin{array}{ccc}
+                (x-6) & 3 & 2\\
+                -4 & (x+1) & 2\\
+                -10 & 5 & x+3
+                \end{array} \right|$  \\
+&\\
+& Characteristic Polynomial = $(x-2)(x^2+1)=(x-2)(x-i)(x+i)$\\
+&\\
+\hline
+\multirow{3}{*}{Checking whether $A$ similar} & \\
+& As the characteristics  polynomial is not product of linear factors\\
+over the field $R$ to a
+& over $R$ . Therefore from Theorem 2, $A$ is not diagonalizable over $R$\\
+diagonal matrix
+&\\
+\hline
+\multirow{3}{*}{Checking whether $A$ similar} & \\
+& The Characteristic Polynomial can be wriiten \\
+over the field $C$ to a
+& as a product of linear factors over $C$ i.e \\
+diagonal matrix
+&\\
+& $\det(xI-A)=(x-2)(x-i)(x+i)$ \\
+&\\
+& To find characteristic values of the operator $\det(xI-A) = 0$ which gives  \\
+& $c_1= 2 , c_2= i, c_3= -i$\\
+&\\
+& Thus over $C$ matrix $A$ has three distinct characteristic values.\\
+&\\
+&There will be atleast one characteristics vector i.e., one\\ & dimension with each characteristics value .\\
+&\\
+& From Theorem 2;\\
+& $\sum_{i} W_i = n = 3$ , which is equal to $dim$ of $A$.\\
+&\\
+& Thus , $A$ is diagonalizable over $C$.\\
+&\\
+\hline
+\multirow{3}{*}{Conclusion} & \\
+& 1) $A$ is not diagonalizable over $R$. \\
+&\\
+& 2) $A$ is diagonalizable over $C$.\\
+&\\
+\hline
+\caption{Finding of characterisctics values and diagonalization over different field}
+\label{eq:solutions/6/2/5/table:2}
+\end{longtable}

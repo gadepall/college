@@ -1,0 +1,51 @@
+See Tables \ref{eq:solutions/7/2/3/table0} and \ref{eq:solutions/7/2/3/table1}
+
+
+\begin{table*}[!ht]
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Invariant Subspaces} & \\
+		& Suppose $\vec{T}$ $\in$ $\vec{L(V)}$. A subspace $\vec{U}$ of $\vec{V}$ is called invariant under $\vec{T}$ if $\vec{u}$ $\in$ $\vec{U}$ implies\\
+		& $\vec{T(u)}$ $\in$ $\vec{U}$. Suppose $\vec{T}$ $\in$ $\vec{L(V)}$, then null $\vec{T}$ and range $\vec{T}$ are invariant subspaces of $\vec{T}$.  \\
+		& \\
+		\hline
+		\multirow{3}{*}{Complementary $\vec{T}$} & \\
+		& Suppose we have a vector space $\vec{V}$, if $\vec{V}$ is written as direct sum of its subspaces $\vec{W}$ and \\
+invariant subspace		& $\vec{W^{'}}$, i.e $\vec{V} = \vec{W} \bigoplus \vec{W^{'}}$ and each of $\vec{W}$ and $\vec{W^{'}}$ is invariant under $\vec{T}$, then we say $\vec{W}$ has a \\
+		&  complementary $\vec{T}$ invariant subspace.\\
+		&   \\
+		\hline
+\end{tabular}
+\caption{Definition and Result used}
+\label{eq:solutions/7/2/3/table0}
+\end{table*}	
+\begin{table*}[!ht]
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Nullspace of $\vec{T-2I}$ } & \\
+		& We Know that Nullspace of a linear operator $\vec{T}$ is the nullspace of its matrix \\
+		& representation of $\vec{T}$ w.r.t standard basis. Thus, Nullspace($\vec{W}$) = Nullspace($\vec{T-2I}$). \\
+		& Now, Nullspace($\vec{T-2I}$) =  Nullspace $\myvec{0 & 0 & 0 \\  1 & 0 & 0 \\ 0 & 0 &1 }$\\
+		&  Hence, Nullspace($\vec{T-2I}$) = $\{ \myvec{0 \\ k \\ 0}: k \in \mathbb{R}\}$\\
+		&\qquad \qquad \qquad \qquad \qquad \quad = $\{k\myvec{0 \\ 1 \\ 0}:k \in \mathbb{R} \}$ \\
+		& \\
+		\hline
+		\multirow{3}{*}{ \qquad Proof} & \\
+		& Let $\beta = \myvec{1 \\ 0 \\0}$. Then\\
+        & \qquad \qquad \qquad $ (\vec{T-2I})\beta = \myvec{0 & 0 & 0 \\  1 & 0 & 0 \\ 0 & 0 & 1}\myvec{1 \\ 0 \\0} = \myvec{0 \\ 1 \\ 0} = \gamma \in \vec{W} $ \\
+    	& Now, \\
+        & \qquad \qquad \qquad $ (\vec{T-2I})\gamma = \myvec{0 & 0 & 0 \\  1 & 0 & 0 \\ 0 & 0 & 1}\myvec{0 \\ 1 \\0} = \myvec{0 \\ 0 \\ 0} \in \vec{W}. $\\
+        & Now, we assume that $\vec{W}$ has a complementary $\vec{T}$-invariant subspace $\vec{S}$. Then $\beta$ can be  \\
+        & written as $\beta = s + w, s\in \vec{W}, w \in \vec{W^{'}}$. \\
+        & Finally, we see that\\
+        &  $\myvec{0 \\ 1 \\0}= \brak{\vec{T-2I}}\beta = \brak{\vec{T-2I}}\brak{s + w} =  \brak{\vec{T-2I}}w \in \vec{W^{'}} $ as $\vec{W^{'}}$ is invariant under $\vec{T}$ and \\
+        & s $\in$ Nullspace $\vec{W}$.\\
+        & Thus, we coclude that $\myvec{0 \\ 1 \\ 0} \in \vec{W} \cap \vec{W^{'}}$, which is a contradiction. Since, $\vec{V} = \vec{W} \bigoplus \vec{W^{'}}$,  \\
+        & thus $\vec{W} \cap \vec{W^{'}} = \myvec{0 \\ 0 \\0}$. \\
+        & Therefore, $\vec{W}$ has no complementary $\vec{T}$-invariant subspace. \\
+        & \\
+		\hline
+	\end{tabular}
+\caption{Solution}
+\label{eq:solutions/7/2/3/table1}
+\end{table*}	
