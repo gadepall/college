@@ -1,0 +1,166 @@
+See Table \label{table}
+%
+\onecolumn
+\begin{longtable}{|p{5cm}|p{13cm}|}
+\hline
+\textbf{Statement} &\textbf{Solution}\\
+\hline
+\multicolumn{2}{|c|}{\textbf{Jordan Form}}\\
+\hline 
+Given & Linear operator \\
+& \parbox{12cm}{\begin{align}
+    T:\vec{V}\rightarrow \vec{V}\\
+   \text{ Characteristic polynomial} f(x)=x^3(x-1)^4\\
+\text{Minimal polynomial} p(x)=x^2(x-1)^2
+\end{align}}\\
+\hline
+The jordan block corresponding to eigen value 0&
+\parbox{12cm}{\begin{align}
+    \vec{J}_1=\myvec{0&1&0\\0&0&0\\0&0&0}
+\end{align}}\\
+\hline
+One of the possible jordan blocks corresponding to eigen value 1 &
+\parbox{12cm}{\begin{align}
+  \vec{J}_2=\myvec{1&1&0&0\\0&1&0&0\\0&0&1&1\\0&0&0&1} 
+\end{align}}\\
+\hline
+The jordan form of transformation matrix $\vec{T}$&
+\parbox{12cm}{\begin{align}
+  \vec{J}=\myvec{\vec{J}_1&\vec{0}\\\vec{0}&\vec{J}_2}\\
+    =\myvec{0&1&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&1&1&0&0\\0&0&0&0&1&0&0\\0&0&0&0&0&1&1\\0&0&0&0&0&0&1}
+\end{align}}\\
+\hline
+\multicolumn{2}{|c|}{\textbf{Primary Decomposition,Finding the basis}}\\
+\hline
+ According to primary decomposition theorem &
+ \parbox{12cm}{\begin{align}
+  \text{If }p(x)={p_{1} (x)}^{r_{1}}{p_{2} (x)}^{r_{2}},\\
+      \vec{V}=\vec{V}_1+\vec{V}_2\\
+      \vec{V}_i=\text{Null space of} (p_i(\vec{T}))^r_i\\
+      {p_{1} (x)}^{r_{1}}=x^2\\
+      {p_{2} (x)}^{r_{2}}=(x-1)^2
+\end{align}}\\
+\hline
+ Null space of $\vec{J}^2$&
+ \parbox{12cm}{\begin{align}
+   \vec{J}^2=\myvec{0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&1&2&0&0\\0&0&0&0&1&0&0\\0&0&0&0&0&1&2\\0&0&0&0&0&0&1}\label{1}\\
+   \text{Nullity of } \vec{J}^2=3
+\end{align}}\\
+& From \eqref{1},the basis for the nullspace is\\
+& \parbox{12cm}{\begin{align}
+  \cbrak{\vec{v}_1,\vec{v}_2,\vec{v}_3}\\
+    \vec{v}_1=\myvec{1\\0\\0\\0\\0\\0\\0},\vec{v_2}=\myvec{0\\1\\0\\0\\0\\0\\0},\vec{v}_3=\myvec{0\\0\\1\\0\\0\\0\\0}
+\end{align}} \\
+\hline
+Nullspace of $(\vec{J}-\vec{I})^2$ &
+\parbox{12cm}{\begin{align}
+   (\vec{J}-\vec{I})^2=\myvec{1&-2&0&0&0&0&0\\0&1&0&0&0&0&0\\0&0&1&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0}  \label{2}\\
+   \text{Nullity of }  (\vec{J}-\vec{I})^2=4
+\end{align}}\\
+& From \eqref{2},the basis for the nullspace is\\
+& \parbox{12cm}{\begin{align}
+    \cbrak{\vec{v}_4,\vec{v}_5,\vec{v}_6,\vec{v}_7}\\
+    \vec{v}_4=\myvec{0\\0\\0\\1\\0\\0\\0},\vec{v_5}=\myvec{0\\0\\0\\0\\1\\0\\0},\vec{v}_6=\myvec{0\\0\\0\\0\\0\\1\\0},\vec{v}_7=\myvec{0\\0\\0\\0\\0\\0\\1}
+\end{align}}\\
+\hline
+\begin{align}
+    \vec{T}=\vec{J}
+\end{align}&
+$\vec{T}$ is similar to block diagonal jordan matrix $\vec{J}$ in the basis 
+\parbox{12cm}{\begin{align}
+    \cbrak{\vec{v}_1,\vec{v}_2,\vec{v}_3,\vec{v}_4,\vec{v}_5,\vec{v}_6,\vec{v}_7}
+\end{align}}\\
+& which is the standard ordered basis.
+\hline
+\multicolumn{2}{|c|}{\textbf{Finding the projections}}\\
+\hline
+The projection matrices $\vec{E}_1,\vec{E}_2$ are such that&
+\parbox{12cm}{ \begin{enumerate}
+       \item for $i \in [1,2]$\begin{align}
+           \vec{E}_i(\vec{v})=\begin{cases}
+          \vec{v} & \text{ for }  \vec{v} \in \vec{V}_i\\
+          0 & \text{ for } \vec{v} \notin \vec{V}_i
+       \end{cases}
+       \end{align}
+       \item \begin{align}
+           (\vec{E}_i)^2=\vec{E}_i
+       \end{align}
+       \item \begin{align}
+           \vec{E}_1+\vec{E}_2=\vec{I}
+       \end{align}
+   \end{enumerate} }\\
+   \hline
+   The projection matrices are &
+   \parbox{12cm}{\begin{align}
+    \vec{E}_1=\myvec{\vec{I}_3&\vec{0}\\\vec{0}&\vec{0}}\\
+    =\myvec{1&0&0&0&0&0&0\\0&1&0&0&0&0&0\\0&0&1&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0}\\
+     \vec{E}_2=\myvec{\vec{0}&\vec{0}\\\vec{0}&\vec{I}_4}\\
+     =\myvec{0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&1&0&0&0\\0&0&0&0&1&0&0\\0&0&0&0&0&1&0\\0&0&0&0&0&0&1}
+\end{align}}\\
+\hline
+\multicolumn{2}{|c|}{\textbf{Cyclic Decomposition}}\\
+\hline
+Cyclic decomposition theorem(Theorem 3)&Let $T$ be a linear operator on a finite-dimensional vector space $\vec{V}$ and let $\vec{W}_0$ be a proper $T$-admissible subspace of $\vec{V}.$ There exists non zero vectors $\alpha_1,\alpha_2,\hdots,\alpha_r$ in $\vec{V}$ with respective $T$-annihilators $p_1,p_2,\hdots,p_r$ such that 
+\begin{enumerate}
+    \item 
+    \begin{align}
+        \vec{V}=\vec{W}_0\oplus \vec{Z}(\alpha_1;T)\oplus \vec{Z}(\alpha_2;T)\oplus\\\hdots\oplus \vec{Z}(\alpha_r;T)
+    \end{align}
+    \item $p_k$ divides $p_{k-1}$,$k=2, \hdots,r$
+\end{enumerate}\\
+\hline
+The T-cyclic subspace $ \vec{Z}(\alpha_i;T)$ is defined as &
+\parbox{12cm}{\begin{align}
+   \text{degree of }p_i=k\\
+  \implies  \text{ basis of }\vec{Z}(\alpha_i;T)=\\\cbrak{\alpha_i,\vec{T}\alpha_i,\hdots,\vec{T}^{k-1}\alpha_i}
+\end{align}}\\
+\hline
+Finding the cyclic subspaces & Let us choose\\
+&\parbox{12cm}{\begin{align}
+ \vec{W}_0=\vec{0} \\
+ \end{align}}\\
+ \begin{align}
+ p_1=x^2(x-1)^2
+ \end{align}&
+ \parbox{12cm}{\begin{align}
+ \alpha_1=\myvec{1\\0\\0\\0\\0\\0\\0}\\
+ \vec{T}^2(\vec{T}-\vec{I})^2=\vec{0}_{7 \times 7}\\
+ \implies p_1(\vec{T})(\alpha_1)=0\\
+ \text{dim}(\vec{Z}(\alpha_1;T))=4
+ \end{align}}\\
+ \hline
+ \begin{align}
+ p_2=x(x-1)^2
+ \end{align}
+& Now to chose $\alpha_2$ we need to chose a vector such that\\
+ &\parbox{12cm}{\begin{align}
+ \alpha_2 \notin \vec{Z}(\alpha_1;T),p_2(\vec{T})\alpha_2=0\label{3}\\
+ p_2=x(x-1)^2\\
+  \frac{p_1}{p_2}=x \implies p_2 \text{ divides }p_1 \\
+  p_2(\vec{T})=\vec{T}(\vec{T}-\vec{I})^2=\\\myvec{0&1&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0}
+  \end{align}}\\
+ & One such vector that satisfies \eqref{3} is\\
+ & \parbox{12cm}{\begin{align}
+  \alpha_2=\myvec{0\\0\\1\\0\\0\\0\\0} \\
+   \text{dim}(\vec{Z}(\alpha_2;T))=3\\
+   \text{dim}\vec{Z}(\alpha_1;T)+\text{dim}\vec{Z}(\alpha_2;T)=7\\
+  \implies \vec{V}=\vec{Z}(\alpha_1;T)\oplus \vec{Z}(\alpha_2;T)
+\end{align}}\\
+& is the cyclic decomposition.\\
+\hline
+\multicolumn{2}{|c|}{\textbf{Invariant Factors}}\\
+\hline
+Invariant factors are &
+\parbox{12cm}{\begin{align}
+   p_1=x^2(x-1)^2\\
+    p_2=x(x-1)^2
+\end{align}}\\
+\hline
+\caption{Solution}
+\label{table}
+\end{longtable}
+
+
+
+
+

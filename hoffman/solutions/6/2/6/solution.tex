@@ -1,0 +1,78 @@
+	
+	\begin{theorem}\label{eq:solutions/6/2/6/thm1}
+	    A linear operator $\mathbf{T}$ on a $n-$ dimensional space $\Vec{V}$ is diagonalizable, if and only if  $\mathbf{T}$ has an n distinct characteristic vectors (or) null spaces corresponding to the characteristic values. 
+	\end{theorem}
+	
+	\begin{theorem}\label{eq:solutions/6/2/6/thm2}
+	    Let $\mathbf{T}$ be a linear operator on a finite-dimensional space $\Vec{V}$. Let $c_1, c_2,...,c_k$ be the distinct characteristic values of $\mathbf{T}$ and let $\mathbf{W_i}$ be the null space of $\left(\Vec{T}-c_{i}\Vec{I}\right)$. The following are equivalent:
+	    \begin{enumerate}
+	        \item $\mathbf{T}$ is diagonizable
+	        \item $dim\ \Vec{W_1}+...+dim\ \Vec{W_k} = dim\ \Vec{V}$
+	    \end{enumerate}
+	\end{theorem}
+	    
+	
+	
+	Let the given matrix be,
+    
+    \begin{align}
+        \vec{A} = \myvec{0&0&0&0 \\ a&0&0&0 \\ 0&b&0&0 \\ 0&0&c&0}
+    \end{align}
+	
+	As per theorem $\ref{eq:solutions/6/2/6/thm1}$, we need to find the characteristic polynomial for the matrix $\Vec{A}$. Characteristic equation is given by $det\left ( x\Vec{I} - \Vec{A}\right)$.
+	
+	\begin{align}
+	    det\left(x\Vec{I} - \Vec{A}\right) &= \begin{vmatrix}
+                                                x-0 & 0 & 0 & 0 \\ 
+                                                -a & x-0 & 0 & 0 \\
+                                                0 & -b & x-0 & 0 \\
+                                                0 & 0 & -c & x-0 \\
+                                            \end{vmatrix}\\
+        det\left(x\Vec{I} - \Vec{A}\right) &= x^{4}
+	\end{align}
+	
+	The characteristic equation will be,
+	
+	\begin{align}
+	    det\left(x\Vec{I} - \Vec{A}\right) &= 0\\
+	    x^{4} &= 0 \label{eq:solutions/6/2/6/eq1}
+	\end{align}
+	
+	From $\eqref{eq:solutions/6/2/6/eq1}$ we get the characteristic value as $c_1 = 0$ with a multiplicity of 4.\\ \\
+	The basis for the characteristic value $c_1 = 0$ can be obtained by solving the equation
+	\begin{align}
+	    \left( \Vec{A} - c_1\Vec{I}\right) \Vec{x} &= \Vec{0}
+	\end{align}
+	i.e.
+	\begin{align}
+	    \left( \Vec{A} - (0)\Vec{I}\right) \Vec{x} &= \Vec{0} \\
+	    \myvec{0&0&0&0 \\ a&0&0&0 \\ 0&b&0&0 \\ 0&0&c&0}\myvec{x\\y\\z\\t} &= \Vec{0} 
+	\end{align}
+	
+	Solving the above equation we get
+	
+	\begin{align}\label{eq:solutions/6/2/6/eq2}
+	    ax = 0,\ by = 0,\ cz = 0 
+	\end{align}
+	
+	We know that the null space of $\left( \Vec{A} - (0)\Vec{I}\right)$, is spanned by the vector $\vec{x}$, where the basis for the space $\Vec{W_1}$ need to satisfy the condition of $\eqref{eq:solutions/6/2/6/eq2}$. If we assume that 
+	
+	\begin{align}\label{eq:solutions/6/2/6/eq3}
+		a \neq 0 \ , \ b \neq 0 \ , \ c \neq 0
+	\end{align} 
+	
+	This will correspond that the elements in the basis of the vector $\vec{x}$ will be 
+	
+	\begin{align}
+		\myvec{0\\0\\0\\t}
+	\end{align}
+	
+	Which implies that the $dim\ \Vec{W_1} = 1$. From theorem $\ref{eq:solutions/6/2/6/thm2}$, for $\mathbf{T}$ to be diagonalizable, the null space $\Vec{W_1}$ of $\vec{A}$ must have the $dim\ \Vec{W_1} = 4$, since $dim\ \Vec{\mathbf{R}^4} = 4$. So, there is a contradiction with $\eqref{eq:solutions/6/2/6/eq3}$.
+	
+	$\therefore$ $\Vec{A}$ is diagonalizable only if
+	\begin{align}
+		a \ = \ b  \ = \ c \ = \ 0
+	\end{align}
+	
+	i.e.\ $\Vec{A}$ is a zero matrix.
+		

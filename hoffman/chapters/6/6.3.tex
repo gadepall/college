@@ -5,13 +5,53 @@
 \numberwithin{figure}{enumi}
 
 
-\item Let $\vec{A}$ and $\vec{B}$ be $n\times n$ matrices over the field $F$.Prove that if $\brak{\vec{I}-\vec{A}\vec{B}}$ is invertibe
+\item Let a, b and c be the elements of a field $\vec{F}$, and let $\vec{A}$ be the following 3$\times$ 3 matrix over $\vec{F}$
+\begin{align}
+\vec{A} = \myvec{0&0&c\\1&0&b\\0&1&a}
+\label{eq:solutions/6/3/2/Q}
+\end{align}
+Prove that the characteristic polynomial for $\vec{A}$ is $x^3-ax^2-bx-c$ and that this is also minimal polynomial for $\vec{A}$.
+%
+\solution
+\input{./solutions/6/3/2/solution.tex}
+\item %
+Let $\Vec{A}$ be the $4\times 4$ real matrix
+\begin{align}
+    \Vec{A}=\myvec{1&1&0&0\\-1&-1&0&0\\-2&-2&2&1\\1&1&-1&0}
+\end{align}
+Show that the characteristic polynomial for $\Vec{A}$ is $x^2\brak{x-1}^2$ and that it is also the minimal polynomial
+%
+\\
+%
+\solution
+\input{./solutions/6/3/3/solution.tex}
+\twocolumn
+\item Let $\vec{A}$ and $\vec{B}$ be $n\times n$ matrices over the 
+field $F$.Prove that if $\brak{\vec{I}-\vec{A}\vec{B}}$ is invertibe
 \begin{enumerate}
     \item $\brak{\vec{I}-\vec{B}\vec{A}}$ is invertible and
     \item $\brak{\vec{I}-\vec{B}\vec{A}}^{-1}=\vec{I}+\vec{B}\brak{\vec{I}-\vec{A}\vec{B}}^{-1}\vec{A}$
 \end{enumerate}
 %
+\item Let $P$ be the operator on $R^2$ which projects each vector onto the x-axis, parallel to the y-axis: $p\brak{x,y}$ = $\brak{x,0}$. Show that $P$ is linear. What is the minimal polynomial for $P$? 
+%
+\\
 \solution
-%\input{./solutions/6/3/8/solution.tex}
-%\twocolumn
+\input{./solutions/6/3/8/solution.tex}
+\twocolumn
+\item %
+Let $\vec{A}$ be an $n\times n$ matrix with characteristics polynomial\\
+\begin{align}
+& f = (x-c_1)^{d_1}....(x-c_k)^{d_k} 
+\end{align}
+Show that
+\begin{align}
+& c_1d_1+....+c_kd_k = tr(A)
+\end{align}
+%
+%
+\\
+\solution
+\input{./solutions/6/3/9/solution.tex}
+\twocolumn
 \end{enumerate}

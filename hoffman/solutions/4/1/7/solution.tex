@@ -1,0 +1,93 @@
+
+ Let consider we have a set $S$ such that,
+ \begin{align}
+ S = \left \{    1, ax+b, \brak{ax+b}^2, \brak{ax+b}^3,  \dots  \right \}
+ \end{align}
+ And let $\left \langle S \right \rangle$ be the subspace, that is spanned by $S$.
+ \begin{align}
+ \intertext{Since}
+  1 \in S\\
+ \intertext{and}
+  ax+b \in S,\\
+  \implies  b.1 + \frac{1}{a}\brak{b +ax} \in \left \langle S \right \rangle \\
+  \intertext{and hence, it follows}
+   \implies x \in \left \langle S \right \rangle 
+ \end{align}
+% 
+ Now to prove
+ \begin{align}
+  x^2 \in \left \langle S \right \rangle \\
+ \intertext{let consider another element form $S$ which is}
+    \brak{ax+b}^2
+\end{align}
+Subtracting $1.a^2 +2.a.b.x$ from $\brak{ax+b}^2$
+ \begin{align}
+ \implies \brak{ax+b}^2 - a^2 - 2.a.b.x = a^2.x^2 \label{eq:solutions/4/1/7/2.2}\\
+ \implies a^2.x^2 \in \left \langle S \right \rangle\\
+ \implies   \frac{1}{a^2} . a^2. x^2 \in S.\\
+ \implies x^2 \in  \left \langle S \right \rangle .
+ \end{align}
+ Now, Thus  Hence using this concept with higher degree we can prove that,
+ \begin{align}
+   x^n \in  \left \langle S \right \rangle, \forall  n
+  \end{align}
+Consider,
+ \begin{align}
+ S' =   \left \{    1, x, x^2, x^3,  \dots  \right \} \label{eq:solutions/4/1/7/2.3}
+   \end{align}
+ Hence we can say that, \eqref{eq:solutions/4/1/7/2.3} span the space of all polynomials which form with the help of
+ \begin{align} 
+  \brak{ax + b}^n
+  \end{align}
+   
+Hence we conclude   that $S$ spans the space of all polynomials.
+We can summarize our procedure step by step using Table \ref{eq:solutions/4/1/7/t1}.
+
+
+\onecolumn
+\begin{longtable}{|p{2cm}|p{5cm}|p{6cm}|}
+%{ \small
+%\begin{longtable}{|c|c|c|}
+\endfirsthead
+\endhead
+	   \hline
+       \centering
+		\textbf{ Sr. No} &\textbf{Description} &  \textbf{ Mathematical  representation}  \\ 
+		\hline
+			\centering
+					1. & Consider  a set $S$ & $S = \left \{    1, ax+b, \dots  \right \}$ \\
+					\hline 
+					\centering
+					2. & Provide a proof that subset $S$ span the subspace $\left \langle S \right \rangle$  & Since
+					$1 \in S$
+					and
+					$ax+b \in S,$ \newline
+					$\implies  b.1 + \frac{1}{a}\brak{b +ax} \in \left \langle S \right \rangle$  \newline
+					  $\implies x \in \left \langle S \right \rangle$  Given element are $\in S $  \\
+					\hline
+					\centering
+					3. & Repeat  step 2 for the higher degree of polynomial also lie in the subspace and the also lie in the subset $S$. & Since $\brak{ax+b}^2 \in S $  \newline $ \implies \brak{ax+b}^2 - a^2 - 2.a.b.x  = a^2.x^2 \newline 
+					\implies a^2.x^2 \in \left \langle S \right \rangle \newline
+					\implies   \frac{1}{a^2} . a^2. x^2 \in S.\newline
+					\implies x^2 \in  \left \langle S \right \rangle$
+					 Given element are $\in S $ \\
+					\hline
+					\centering
+					4. &After providing proof for all element $\in S$ find the basis  . & $ S'=\left \{    1, x, x^2, x^3,  \dots  \right \} $ \\
+					\hline
+					\centering
+				5. & Show the element $\in S'$ are  able to form all element $S$ over $\mathbb{F}$ . & Hence $S$ form basis of $\mathbb{F}$ \\
+	      		\hline			      			      		
+\caption{Step of solution for given problem}
+\label{eq:solutions/4/1/7/t1}
+\end{longtable}
+%}
+
+
+
+
+
+
+
+
+

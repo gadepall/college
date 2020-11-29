@@ -1,0 +1,110 @@
+See Tables    \ref{eq:solutions/6/3/3/table:1} and  \ref{eq:solutions/6/3/3/table:2}
+
+\begin{table*}[ht!]
+\centering
+\begin{tabular}{|c|l|}
+    \hline
+	\multirow{3}{*}{Characteristic Polynomial} 
+	& \\
+	& For an $n\times n$ matrix $\vec{A}$, characteristic polynomial is defined by,\\
+	&\\
+	& $\qquad\qquad\qquad p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Cayley-Hamilton Theorem}
+    &\\
+    & If $p\brak{x}$ is the characteristic polynomial of an $n\times n$ matrix $\vec{A}$, then,\\
+    &\\
+    &$\qquad \qquad \qquad p\brak{\vec{A}}=\vec{0}$\\
+    &\\
+    \hline
+	\multirow{3}{*}{Minimal Polynomial} 
+	&\\
+	& Minimal polynomial $m\brak{x}$ is he smallest factor of characteristic polynomial\\
+	& $p\brak{x}$ such that,\\
+	&\\
+	& $\qquad \qquad \qquad m\brak{\vec{A}}=0$\\
+	&\\
+    \hline
+    \multirow{3}{*}{Algebraic Multiplicity $\brak{A_M}$}
+    &\\
+    & No. of times an eigen value appears in a characteristic equation.\\
+    &\\
+    \hline
+\end{tabular}
+    \caption{Definitions}
+\label{eq:solutions/6/3/3/table:1}
+\end{table*}
+\onecolumn
+\begin{longtable}{|c|l|}
+    \hline
+	\multirow{3}{*}{Characteristic polynomial} 
+	& \\
+	& $p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	& $\qquad = \mydet{x-1&-1\\1&x+1}\mydet{x-2&-1\\1&x}$\\
+	& $\qquad=\brak{\brak{x-1}\brak{x+1}+1}\brak{\brak{x-2}x+1}$\\
+	&$\qquad=x^2\brak{x^2-2x+1}$\\
+	&$\qquad=x^2\brak{x-1}^2$\\
+	&\\
+	\hline
+	\multirow{3}{*}{$A_M$} 
+	&\\
+	& For $\lambda=0,\quad A_M=2$\\
+	& For $\lambda=1,\quad A_M=2$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Minimal Polynomial} & \\
+	& $p\brak{x}=x^a\brak{x-1}^b,\quad a\leq2, b\leq2$\\
+	&\\
+	\hline
+	\multirow{3}{*}{$a=1,b=1$} & \\
+	&$m\brak{x}=x\brak{x-1}$\\
+	&\\
+	& $\implies m\brak{\vec{A}}=\vec{A}\brak{\Vec{A}-\vec{I}}$\\
+	&\\
+	& $\qquad\qquad=\myvec{1&1&0&0\\-1&-1&0&0\\-2&-2&2&1\\1&1&-1&0}\myvec{0&1&0&0\\-1&-2&0&0\\-2&-2&1&1\\1&1&-1&-1}$\\
+	& $\qquad \qquad = \myvec{-1&-1&0&0\\1&1&0&0\\-1&-1&1&1\\1&1&-2&-2}\neq\Vec{0}$\\
+	&\\
+	& $\implies x\brak{x-1}$ is not a minimal polynomial\\
+	&\\
+	\hline
+	\multirow{3}{*}{$a=2,b=1$} & \\
+	&$m\brak{x}=x^2\brak{x-1}$\\
+	&\\
+	& $\implies m\brak{\vec{A}}=\vec{A}^2\brak{\Vec{A}-\vec{I}}$\\
+	&\\
+	& $\qquad \qquad=\myvec{0&0&0&0\\0&0&0&0\\-3&-3&3&2\\2&2&-2&-1}\myvec{0&1&0&0\\-1&-2&0&0\\-2&-2&1&1\\1&1&-1&-1}$\\
+	& $\qquad \qquad = \myvec{0&0&0&0\\0&0&0&0\\-1&-1&1&1\\1&1&-1&-1}\neq\Vec{0}$\\
+	&\\
+	&$\implies x^2\brak{x-1}$ is not a minimal polynomial\\
+	&\\
+	\hline
+	\multirow{3}{*}{$a=1,b=2$} & \\
+	&$m\brak{x}=x\brak{x-1}^2$\\
+	&\\
+	& $\implies m\brak{\vec{A}}=\vec{A}\brak{\Vec{A}-\vec{I}}^2$\\
+	&\\
+	& $\qquad\qquad=\myvec{1&1&0&0\\-1&-1&0&0\\-2&-2&2&1\\1&1&-1&0}\myvec{1&-2&0&0\\2&3&0&0\\1&1&0&0\\0&0&0&0}$\\
+	& $\qquad\qquad = \myvec{1&1&0&0\\-1&-1&0&0\\0&0&0&0\\0&0&0&0}\neq\Vec{0}$\\
+	&\\
+	&$\implies x^2\brak{x-1}$ is not a minimal polynomial\\
+	&\\
+	\hline
+	\multirow{3}{*}{$a=2,b=2$} & \\
+	&$m\brak{x}=x^2\brak{x-1}^2$\\
+	&\\
+	&$\implies m\brak{\vec{A}}=\vec{A}^2\brak{\Vec{A}-\vec{I}}^2$\\
+	& $\qquad \qquad \quad=p\brak{\Vec{A}}$\\
+	&$\qquad\qquad\quad=\vec{0}$ (Cayley-Hamilton Theorem)\\
+	&\\
+	&$\implies x^2\brak{x-1}^2$ is a minimal polynomial\\
+	&\\
+	\hline
+	\multirow{3}{*}{Conclusion} & \\
+	& For the given matrix $\Vec{A}$,\\
+	&$x^2\brak{x-1}^2$ is the characteristic polynomial as well as minimal polynomial.\\
+	&\\
+	\hline
+	\caption{Checking for minimal polynomial}
+    \label{eq:solutions/6/3/3/table:2}
+\end{longtable}

@@ -1,0 +1,80 @@
+See Table     \ref{eq:solutions/6/2/10/table:2}
+
+\onecolumn
+%
+\begin{longtable}{|c|l|}
+    \hline
+	\multirow{5}{*}{Given} 
+	& \\
+	& $\vec{A}$ is a $2\times2$ matrix with real entries\\
+	& and $\vec{A}$ is symmetric $\brak{\vec{A}^t=\vec{A}}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{To Prove} 
+	&\\
+	& $\vec{A}$ is similar to diagonal matrix over $\mathbb{R}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Theory} & \\
+	& $\vec{A}$ is similar to diagonal matrix $\vec{\Lambda}$ if\\
+	&$\exists$ an invertible matrix $\vec{P}$ such that:\\
+	& $\vec{A}=\vec{P}\vec{\Lambda} \vec{P}^{-1}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Proof} & \\
+	& Let $\vec{A}=\myvec{a&c\\c&b}, a,b,c \in \mathbb{R}$\\
+	&\\
+	& Characteristic polynomial:\\
+	& $p(t)=\mydet{\vec{A}-\lambda\vec{I}}$\\
+	& $p\brak{t}=\mydet{a-t&c\\c&b-t}$\\
+	&\\
+	& $\implies p\brak{t}=t^2-(a+b)t+ab-c^2=0$\\
+	& Roots of p(t) are eigenvalues of $\vec{A}$\\
+	&\\
+	& Discriminant of $p\brak{t}$ is given by\\
+	& $(a+b)^2-4(ab-c^2)=a^2+b^2-2ab+c^2$\\
+	& $\qquad\qquad\qquad\qquad=(a-b)^2+4c^2>0$\\
+	&\\
+	& We observe that the above equation has positive discriminant, hence $\lambda$ \\
+	& has real values\\
+	&\\
+	\hline 
+	&\\
+	& Eigen vectors are obtained by:\\
+	& $\brak{\vec{A}-\lambda \vec{I}}\vec{X}=0$\\
+	&\\
+	& Let $\vec{v_1}$ and $\vec{v_2}$ be the eigen vectors corresponding to eigen values $\lambda_1$ and $\lambda_2$\\
+	& $\implies \vec{A}\vec{v_1}=\lambda_1\vec{v_1}$ and\\
+	& $\qquad \vec{A}\vec{v_2}=\lambda_2\vec{v_2}$\\
+	&\\
+	& Let linear combination of the two eigen vectors be,\\
+	& $\qquad c_1\vec{v_1}+c_2\vec{v_2}=\vec{0}$\\
+	& Multiplying both sides by $\lambda_1$, we have,\\
+	& $\implies c_1\lambda_1\vec{v_1}+c_2\lambda_1\vec{v_2}=0\qquad \qquad \qquad \dots \brak{1}$\\
+	& Consider,\\
+	& $\qquad\qquad\vec{A}.\vec{0}=\vec{0}$\\
+	& $\implies \vec{A}\brak{c_1\vec{v_1}+c_2\vec{v_2}}=\vec{0}$\\
+	& $\implies c_1\brak{\vec{A}\vec{v_1}}+ c_2\brak{\vec{A}\vec{v_2}}=\vec{0}$\\
+	& $\implies c_1\lambda_1\vec{v_1}+c_2\lambda_2\vec{v_2}=0\qquad \qquad \qquad \dots \brak{2}$\\
+	&\\
+	& Subtracting equation $\brak{1}$ and $\brak{2}$, we have,\\
+	& $c_2\brak{\lambda_1-\lambda_2}\vec{v_2}=\vec{0}$\\
+	& Since, $\lambda_1$ and $\lambda_2$ are real and distinct,\\
+	& $c_2=0$\\
+	&\\
+	& Similarly,\\
+	& $c_1=0$\\
+	& Therefore, eigen vectors $\vec{v_1}$ and $\vec{v_2}$ are linearly independent.\\
+	&\\
+	& Let $\vec{P}=\myvec{\vec{v_1}& \vec{v_2}}$\\
+	& $\implies \vec{A}\vec{P}=\myvec{\lambda_1 \vec{v_1}&\lambda_2 \vec{v_2}}$\\
+	& $\implies \vec{A}\vec{P}=\vec{P}\vec{\Lambda}$, \\
+	& where $\vec{\Lambda}=\myvec{\lambda_1&0\\0&\lambda_2}$\\
+	& $\implies \vec{A}=\vec{P}\vec{\Lambda} \vec{P}^{-1}$\\
+	&\\
+	& Therefore, $\vec{A}$ is similar to diagonal matrix $\vec{\Lambda}$\\
+	& Hence, Proved.\\
+	\hline
+	\caption{Proving that eigen vectors are linearly independent for real eigen values and symmetric matrix is similar to diagonal matrix}
+    \label{eq:solutions/6/2/10/table:2}
+\end{longtable}

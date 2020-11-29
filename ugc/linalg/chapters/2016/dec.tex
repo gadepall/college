@@ -1,0 +1,70 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item %
+Let $\vec{A}=\myvec{1 & 1\\1 & 0}$ and let $\alpha_n$ and $\beta_n$ denote the two eigenvalues of $\vec{A}^n$ such that $\abs{\alpha_n}\geq\abs{\beta_n}$.\\
+Then
+\begin{enumerate}
+    \item $\alpha_n\rightarrow \infty$ as $n\rightarrow \infty$
+    \item $\beta_n\rightarrow 0$ as $n\rightarrow \infty$
+    \item $\beta_n$ is positive if n is even.
+    \item $\beta_n$ is negative if n is odd.
+\end{enumerate}
+%
+\solution
+\input{./solutions/2016/dec/73/solution.tex}
+
+\item If $\vec{P}$ and $\vec{Q}$ are invertible matrices such that   
+$\vec{P}\vec{Q} = -\vec{Q}\vec{P}$,then we can conclude that
+\begin{enumerate}
+\item  $Tr(\vec{P})=Tr(\vec{Q})=0$ \label{eq:solutions/2016/dec/75/1}
+\item  $Tr(\vec{P})=Tr(\vec{Q})=1$ \label{eq:solutions/2016/dec/75/2}
+\item  $Tr(\vec{P})=-Tr(\vec{Q})$ \label{eq:solutions/2016/dec/75/3}
+\item  $Tr(\vec{P}) \neq Tr(\vec{Q})$ \label{eq:solutions/2016/dec/75/4}
+\end{enumerate}
+%
+%
+\solution
+%\input{./solutions/2016/dec/75/solution.tex}
+\twocolumn
+\item Let $\vec{W_1}$, $\vec{W_2}$, $\vec{W_3}$ be 3 distinct subspaces of $\vec{R}^{10}$ such that each $\vec{W_i}$ has dimension of 9. Let $\vec{W} = \vec{W_1} \cap \vec{W_2} \cap \vec{W_3}$. Then we can conclude that\\
+\begin{enumerate}
+\item $\vec{W}$ may not be a subspace of $\vec{R}^{10}$\\
+\item dim $\vec{W} \leq 8$\\
+\item dim $\vec{W} \geq 7$\\
+\item  dim $\vec{W} \leq 3$\\
+\end{enumerate}
+ %
+\solution
+\input{./solutions/2016/dec/77/solution.tex}
+\twocolumn
+
+
+%\item Consider a Markov Chain with state space $\cbrak{0,1,2}$ and transition matrix
+%\begin{align}
+%P = 
+%\begin{blockarray}{c@{\hspace{1pt}}rrr@{\hspace{3pt}}}
+%         & 0   & 1   & 2 \\
+%        \begin{block}{r@{\hspace{3pt}}@{\hspace{1pt}}
+%    (@{\hspace{1pt}}rrr@{\hspace{1pt}}@{\hspace{1pt}})}
+%        0 & \frac{1}{2} & \frac{1}{2} & 0  \\
+%        1 & 0 &\frac{1}{2}  & \frac{3}{4}  \\
+%%
+%        2 &  \frac{1}{3} & \frac{1}{3} & \frac{1}{3}  \\
+%        \end{block}
+%    \end{blockarray}
+%\end{align}
+%For any two states $i$ and $j$, let $p_{ij}^{(n)}$ denote the $n$-step transition probability of going from $i$ to $j$.  Identify correct statements.
+%\begin{enumerate}
+%\item $\lim_{n \to \infty} p_{11}^{(n)} = \frac{2}{9}$
+%\item $\lim_{n \to \infty} p_{21}^{(n)} = 0$
+%\item $\lim_{n \to \infty} p_{32}^{(n)} = \frac{1}{3}$
+%\item $\lim_{n \to \infty} p_{13}^{(n)} = \frac{1}{3}$
+%\end{enumerate}
+
+\end{enumerate}

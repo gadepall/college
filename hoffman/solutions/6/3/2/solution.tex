@@ -1,0 +1,66 @@
+Minimal polynomial of $\vec{A}$ is a polynomial which satisfies,
+\begin{enumerate}
+\item[1)] P($\vec{A}$) = 0
+\item[2)] P(x) is monic.
+\item[3)] It there is some other annihilating polynomial q(x) such that, q($\vec{A}$) = 0, then q does not divide p. 
+\end{enumerate}
+The characteristic polynomial is calculated by solving $\mydet{\vec{A}-\lambda \vec{I}} = 0$
+\begin{align}
+\implies \mydet{\vec{A}-\lambda \vec{I}} = \mydet{-\lambda &0&c\\1&-\lambda &b\\0&1&a-\lambda}\\
+\xleftrightarrow[]{R_2\leftarrow R_2+\lambda R_3} \mydet{-\lambda &0&c\\1&0&b+a\lambda-\lambda^2\\0&1&a-\lambda}\\
+\implies \mydet{\vec{A}-\lambda \vec{I}} = 1\mydet{-\lambda & c \\1 & b+a\lambda-\lambda^2}\\
+\implies \mydet{\vec{A}-\lambda \vec{I}} = (-\lambda)( b+a\lambda-\lambda^2) - c
+\end{align}
+Hence the characteristic polynomial of $\vec{A}$ is,
+\begin{align}
+\lambda^3-a\lambda^2-b\lambda-c
+\label{eq:solutions/6/3/2/cp}
+\end{align}
+Now for any r,s $\in \vec{F}$ and considering the annihilating polynomial f with degree 2.
+\begin{align}
+f(\vec{A}) = \vec{A}^2+r\vec{A}+s
+\end{align}
+\begin{align}
+\implies \myvec{0&c&ac\\0&b&c+ba\\1&a&b+a^2} + \myvec{0&0&rc\\r&0&rb\\0&r&ra}+ \myvec{s&0&0\\0&s&0\\0&0&s}
+\end{align}
+\begin{align}
+\therefore f(\vec{A}) = \vec{A}^2+r\vec{A}+s = \myvec{s&c&ac+rc\\r&b+s&c+ba+br\\1&a+r&b+a^2+ra+s} \neq 0
+\label{eq:solutions/6/3/2/fa}
+\end{align}
+Element positioned at row-3 and column-1 is non-zero, hence for any $r,s \in \vec{F} \implies f(\vec{A})\neq 0  \forall f \in \vec{F}$. Hence minimal polynomial cannot have degree 2. Hence degree of minimal polynomial is 3. Also $x^3-ax^2-bx-c$ divides f. Hence from definition-1 we can conclude that,
+\begin{align}
+p(x) = x^3-ax^2-bx-c
+\end{align} 
+is a minimal polynomial.
+\\
+{\em Example: }
+Let a = 0,b = 0,c = 0 $\in \vec{F}$. Hence,
+\begin{align}
+\vec{A} = \myvec{0&0&0\\1&0&0\\0&1&0}
+\end{align}
+Now finding characteristic polynomial by substituting the values of a,b, and c in equation \eqref{eq:solutions/6/3/2/cp} we get,
+\begin{align}
+\lambda^3 = 0
+\end{align}
+Now let r=0, s=0 $\in \vec{F}$,
+Hence f($\vec{A}$) is given by using the equation \eqref{eq:solutions/6/3/2/fa},
+\begin{align}
+\implies f(\vec{A}) = \vec{A}^2+0.\vec{A}+0 = \myvec{0&0&0\\0&0&0\\1&0&0} \neq 0
+\end{align}
+Hence, $f(\vec{A})\neq 0$, Hence degree of minimal polynomial is 3 and is equal to,
+\begin{align}
+p(x) = x^3
+\end{align}
+Verification by calculating p($\vec{A}$),
+\begin{align}
+p(\vec{A}) = \vec{A}^3 = \myvec{0&0&0\\1&0&0\\0&1&0}\myvec{0&0&0\\1&0&0\\0&1&0}\myvec{0&0&0\\1&0&0\\0&1&0}
+\end{align}
+\begin{align}
+\implies \myvec{0&0&0\\0&0&0\\1&0&0}\myvec{0&0&0\\1&0&0\\0&1&0}\\
+\implies f(\vec{A}) = \myvec{0&0&0\\0&0&0\\0&0&0} = 0
+\end{align}
+Hence, from definition-1 it can be concluded that p(x) = $x^3$ is a minimal polynomial.
+For the $\vec{A}$ given by equation \eqref{eq:solutions/6/3/2/Q} ,characteristic and minimal polynomial is given by,
+\begin{align}
+x^3-ax^2-bx-c
+\end{align}
