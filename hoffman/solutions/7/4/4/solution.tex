@@ -1,4 +1,4 @@
-See Table \label{table}
+See Table \ref{eq:solutions/7/4/4/table}
 %
 \onecolumn
 \begin{longtable}{|p{5cm}|p{13cm}|}
@@ -43,10 +43,10 @@ The jordan form of transformation matrix $\vec{T}$&
 \hline
  Null space of $\vec{J}^2$&
  \parbox{12cm}{\begin{align}
-   \vec{J}^2=\myvec{0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&1&2&0&0\\0&0&0&0&1&0&0\\0&0&0&0&0&1&2\\0&0&0&0&0&0&1}\label{1}\\
+   \vec{J}^2=\myvec{0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&1&2&0&0\\0&0&0&0&1&0&0\\0&0&0&0&0&1&2\\0&0&0&0&0&0&1}\label{eq:solutions/7/4/4/1}\\
    \text{Nullity of } \vec{J}^2=3
 \end{align}}\\
-& From \eqref{1},the basis for the nullspace is\\
+& From \eqref{eq:solutions/7/4/4/1},the basis for the nullspace is\\
 & \parbox{12cm}{\begin{align}
   \cbrak{\vec{v}_1,\vec{v}_2,\vec{v}_3}\\
     \vec{v}_1=\myvec{1\\0\\0\\0\\0\\0\\0},\vec{v_2}=\myvec{0\\1\\0\\0\\0\\0\\0},\vec{v}_3=\myvec{0\\0\\1\\0\\0\\0\\0}
@@ -54,10 +54,10 @@ The jordan form of transformation matrix $\vec{T}$&
 \hline
 Nullspace of $(\vec{J}-\vec{I})^2$ &
 \parbox{12cm}{\begin{align}
-   (\vec{J}-\vec{I})^2=\myvec{1&-2&0&0&0&0&0\\0&1&0&0&0&0&0\\0&0&1&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0}  \label{2}\\
+   (\vec{J}-\vec{I})^2=\myvec{1&-2&0&0&0&0&0\\0&1&0&0&0&0&0\\0&0&1&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0}  \label{eq:solutions/7/4/4/2}\\
    \text{Nullity of }  (\vec{J}-\vec{I})^2=4
 \end{align}}\\
-& From \eqref{2},the basis for the nullspace is\\
+& From \eqref{eq:solutions/7/4/4/2},the basis for the nullspace is\\
 & \parbox{12cm}{\begin{align}
     \cbrak{\vec{v}_4,\vec{v}_5,\vec{v}_6,\vec{v}_7}\\
     \vec{v}_4=\myvec{0\\0\\0\\1\\0\\0\\0},\vec{v_5}=\myvec{0\\0\\0\\0\\1\\0\\0},\vec{v}_6=\myvec{0\\0\\0\\0\\0\\1\\0},\vec{v}_7=\myvec{0\\0\\0\\0\\0\\0\\1}
@@ -66,15 +66,15 @@ Nullspace of $(\vec{J}-\vec{I})^2$ &
 \begin{align}
     \vec{T}=\vec{J}
 \end{align}&
-$\vec{T}$ is similar to block diagonal jordan matrix $\vec{J}$ in the basis 
-\parbox{12cm}{\begin{align}
+$\vec{T}$ is similar to block diagonal jordan matrix $\vec{J}$ in the basis \\
+& \parbox{12cm}{\begin{align}
     \cbrak{\vec{v}_1,\vec{v}_2,\vec{v}_3,\vec{v}_4,\vec{v}_5,\vec{v}_6,\vec{v}_7}
 \end{align}}\\
-& which is the standard ordered basis.
+& which is the standard ordered basis.\\
 \hline
 \multicolumn{2}{|c|}{\textbf{Finding the projections}}\\
 \hline
-The projection matrices $\vec{E}_1,\vec{E}_2$ are such that&
+The projection matrices $\vec{E}_1,\vec{E}_2$ are such that & 
 \parbox{12cm}{ \begin{enumerate}
        \item for $i \in [1,2]$\begin{align}
            \vec{E}_i(\vec{v})=\begin{cases}
@@ -134,12 +134,12 @@ Finding the cyclic subspaces & Let us choose\\
  \end{align}
 & Now to chose $\alpha_2$ we need to chose a vector such that\\
  &\parbox{12cm}{\begin{align}
- \alpha_2 \notin \vec{Z}(\alpha_1;T),p_2(\vec{T})\alpha_2=0\label{3}\\
+ \alpha_2 \notin \vec{Z}(\alpha_1;T),p_2(\vec{T})\alpha_2=0\label{eq:solutions/7/4/4/3}\\
  p_2=x(x-1)^2\\
   \frac{p_1}{p_2}=x \implies p_2 \text{ divides }p_1 \\
   p_2(\vec{T})=\vec{T}(\vec{T}-\vec{I})^2=\\\myvec{0&1&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&0&0}
   \end{align}}\\
- & One such vector that satisfies \eqref{3} is\\
+ & One such vector that satisfies \eqref{eq:solutions/7/4/4/3} is\\
  & \parbox{12cm}{\begin{align}
   \alpha_2=\myvec{0\\0\\1\\0\\0\\0\\0} \\
    \text{dim}(\vec{Z}(\alpha_2;T))=3\\
@@ -157,8 +157,9 @@ Invariant factors are &
 \end{align}}\\
 \hline
 \caption{Solution}
-\label{table}
+\label{eq:solutions/7/4/4/table}
 \end{longtable}
+
 
 
 

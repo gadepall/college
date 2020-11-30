@@ -1,0 +1,137 @@
+See Tables \ref{eq:solutions/6/5/1/b/table:1} and \ref{eq:solutions/6/5/1/b/table:2}
+%
+\begin{table*}[ht!]
+\centering
+\begin{tabular}{|c|l|}
+\hline
+\multirow{3}{*}{Characteristic Polynomial} 
+     & \\
+     & For an $n\times n$ matrix $\vec{A}$, characteristic polynomial
+     is defined by,\\
+     &\\
+     & $\qquad\qquad\qquad p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+     &\\
+\hline
+\multirow{3}{*}{Theorem}
+     &\\
+     & According  to theorem 8, if a $2\times 2$ matrix has two 
+     characteristics \\
+     &\\
+     & values then the $\vec{P}$ that diagonalize $\vec{A}$ will
+     necessarily also   \\
+     &\\
+     & diagonalize any $\vec{B}$ that commutes with $\vec{A}$. \\
+     &\\
+\hline
+\multirow{3}{*}{Basis}&\\
+     & Let there exist a $\vec{P}$ in basis
+     $\vec{\beta}=\{\vec{b}_1,.....,\vec{b}_n\}$ of $\mathbb{V}$  
+     consisting of eigen vector\\
+     &\\
+     & which are common to both $\vec{A}$ and $\vec{B}$ such that\\
+     &\\
+     & $\qquad\qquad\qquad\vec{A}\vec{b}_i=\lambda_{i}\vec{b}_i
+     \qquad\qquad\qquad\vec{B}\vec{b}_i=\mu_{i}\vec{b}_i$\\
+     &\\
+     & $\qquad\qquad\qquad\Lambda_{A}=\myvec{\lambda_1&0\\0&\lambda
+     _2}\qquad\qquad\Lambda_{B}=\myvec{\mu_1&0\\0&\mu_2}$\\
+     &\\
+     & $\qquad\qquad\qquad\Lambda_{A}=\vec{P^{-1}AP} 
+     \qquad\qquad\Lambda_{B}=\vec{P^{-1}BP}$\\
+     &\\
+\hline
+\end{tabular}
+\caption{Definitions and theorem used}
+\label{eq:solutions/6/5/1/b/table:1}
+\end{table*}
+\onecolumn
+\begin{longtable}{|c|l|l|}
+\hline
+\multirow{3}{*}
+     &&\\
+     Operations &  Matrix A &  Matrix B\\
+\hline
+     &&\\
+     Characteristic Polynomial
+     &$p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$
+     &$p\brak{x}=\mydet{x\Vec{I}-\Vec{B}}$\\
+     &&\\
+     &$\qquad = \mydet{x-1&-1\\-1&x-1}$ 
+     &$\qquad = \mydet{x-1&-a\\-a&x-1}$ \\
+     &&\\
+     &$\qquad=\brak{x-1}\brak{x-1}-1$
+     &$\qquad=\brak{x-1}\brak{x-1}-a^{2}$\\
+     &&\\
+\hline
+     &&\\
+     Characteristic values
+     &$p\brak{x}=0$
+     &$p\brak{x}=0$\\
+     &&\\
+     &$x\brak{x-1}=0$
+     &$\brak{x-1}^{2}-a^{2}=0$\\
+     &&\\
+     &$\lambda_1=0$ ,$\lambda_2=2$
+     &$\mu_1=\brak{1-a}$ , $\mu_2=\brak{1+a}$\\ 
+     &&\\
+\hline
+     &&\\
+     Basis for Characteristics Values
+     &$(\vec{A}-\lambda_i\vec{I})\vec{X}=0$     &$(\vec{B}-\mu_i\vec{I})\vec{X}=0$\\
+     &&\\
+     & $\implies$ For $\lambda_1 = 0$
+     & $\implies$ For $\mu_1 = \brak{1-a}$\\
+     &&\\
+     & $\myvec{1&1\\1&1}\myvec{x_1\\x_2}= 0$
+     & $\myvec{a&a\\a&a}\myvec{x_1\\x_2}= 0$\\
+     &&\\
+     & So, $\vec{b_1} = \myvec{-1\\1}$
+     & So, $\vec{b_1} = \myvec{-1\\1}$\\
+     &&\\
+     & $\implies$ For $\lambda_2 = 2$
+     & $\implies$ For $\mu_2 = \brak{1+a}$\\
+     &&\\
+     & $\myvec{-1&1\\1&-1}\myvec{x_1\\x_2}= 0$
+     & $\myvec{-a&a\\a&-a}\myvec{x_1\\x_2}= 0$\\
+     &&\\
+     & So, $\vec{b_2} = \myvec{1\\1}$
+     & So, $\vec{b_2} = \myvec{1\\1}$\\
+     &&\\
+\hline
+     &&\\
+     Invertible matrix 
+     & Let $\vec{P} = \myvec{\vec{b_1} &\vec{b_2}}$
+     & Let $\vec{P} = \myvec{\vec{b_1} &\vec{b_2}}$\\
+     &&\\
+     & Then,
+     & Then,\\
+     &&\\
+     & $\vec{P}=\myvec{-1&1\\1&1}$
+     & $ \implies \vec{P}=\myvec{-1&1\\1&1}$\\
+     &&\\
+\hline
+     &&\\
+     Verification
+     & $\Lambda_A=\myvec{0&0\\0&2}$ &
+     $\Lambda_B=\myvec{1-a&0\\0&1+a}$\\
+     &&\\
+     & $\Lambda_{A}=\vec{P^{-1}AP}$&$\Lambda_{B}=\vec{P^{-1}BP}$\\
+     &&\\
+     & $\Lambda_A=\myvec{\frac{-1}{2}&\frac{1}{2}\\ \frac 
+     {1}{2}&\frac{1}{2}} \myvec{1&1\\1&1} \myvec{-1&1\\1&1}$
+     & $\Lambda_B=\myvec{\frac{-1}{2}&\frac{1}{2}\\ \frac
+     {1}{2}&\frac{1}{2}} \myvec{1&a\\a&1} \myvec{-1&1\\1&1}$\\
+     &&\\
+     & $=\myvec{0&0\\0&2}=\Lambda_A$ 
+     & $=\myvec{1-a&0\\0&1+a}=\Lambda_B$\\
+     &&\\
+     \hline
+     &&\\
+     Conclusion
+     &  $\vec{P}=\myvec{-1&1\\1&1}$
+     &  $\vec{P}=\myvec{-1&1\\1&1}$\\
+     &&\\
+\hline
+\caption{Finding an Invertible matrix}
+\label{eq:solutions/6/5/1/b/table:2}
+\end{longtable}

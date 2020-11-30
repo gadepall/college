@@ -1,0 +1,84 @@
+See Tables     \ref{eq:solutions/6/4/4/table:1}
+and     \ref{eq:solutions/6/4/4/table:2}
+%
+\begin{table*}[ht!]
+\centering
+\begin{tabular}{|c|l|}
+    \hline
+	\multirow{3}{*}{Characteristic Polynomial} 
+	& \\
+	& For an $n\times n$ matrix $\vec{A}$, characteristic polynomial is defined by,\\
+	&\\
+	& $\qquad\qquad\qquad p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Theory}
+    &\\
+    & $\vec{A}$ is similar to triangular matrix $\vec{J}$ if\\
+    & $\exists$ an invertible matrix $\vec{P}$ such that\\
+    &\\
+    & $\qquad \qquad \qquad \vec{A}=\Vec{P}\vec{J}\vec{P}^{-1}$\\
+    &\\
+    \hline
+\end{tabular}
+    \caption{Definitions}
+\label{eq:solutions/6/4/4/table:1}
+\end{table*}
+\onecolumn
+\begin{longtable}{|c|l|}
+    \hline
+	\multirow{3}{*}{Characteristic polynomial} 
+	& \\
+	& $p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	& $\qquad = \mydet{x&-1&0\\-2&x+2&-2\\-2&3&x-2}$\\
+	& $\qquad=x\brak{\brak{x+2}\brak{x-2}+6}+\brak{-2\brak{x-2}+4}+0$\\
+	&$\qquad=x\brak{x^2+2}-2x$\\
+	&$\qquad=x^3$\\
+	&\\
+	&$\implies \lambda=0$\\
+	&\\
+	\hline
+	\multirow{3}{*}{$dim\brak{Ker\brak{\vec{A}-\lambda\Vec{I}}}$} & \\
+	&$\qquad\brak{\vec{A}-0\vec{I}}\vec{X}=\vec{0}$\\
+	&\\
+	& $\qquad\implies \myvec{0&1&0\\2&-2&2\\2&-3&2}\myvec{x\\y\\z}=\myvec{0\\0\\0}$\\
+	&\\
+	& $\qquad\implies x=-z, y=0$\\
+	&\\
+	& So,\\
+	&$\qquad\vec{v_1}=\myvec{-1\\0\\1}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Find $\vec{v_2}$ such that $\vec{A}\vec{v_2}=\vec{v_1}$}&\\ &$\qquad\myvec{0&1&0\\2&-2&2\\2&-3&2}\vec{v_2}=\myvec{1\\0\\-1}$\\
+	&\\
+	& $\qquad\implies \vec{v_2}=\myvec{-1\\-1\\0}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Find $\vec{v_3}$ such that $\qquad\vec{A}\vec{v_3}=\vec{v_2}$}&\\ &$\qquad\myvec{0&1&0\\2&-2&2\\2&-3&2}\vec{v_3}=\myvec{-1\\-1\\0}$\\
+	&\\
+	& $\qquad\implies \vec{v_3}=\myvec{-\frac{3}{2}\\-1\\0}$\\
+	&\\
+	\hline
+	&\\
+	& Let $\Vec{P}=\myvec{\vec{v_1}&\vec{v_2}&\vec{v_3}}$\\
+	&\\
+	& Then,\\
+	& $\qquad\vec{A}\vec{P}=\myvec{\Vec{A}\vec{v_1}&\Vec{A}\vec{v_2}&\Vec{A}\vec{v_3}}$\\
+	& $\implies \vec{A}\vec{P}=\myvec{0&\vec{v_1}&\vec{v_2}}$\\
+	&$\qquad\qquad = \myvec{\vec{v_1}&\vec{v_2}&\vec{v_3}}\myvec{0&1&0\\0&0&1\\0&0&0}$\\
+	&$\qquad\qquad=\vec{P}\vec{J}$\\
+	&\\
+	&$\implies \vec{A}\vec{P}=\vec{P}\vec{J}$\\
+	&\\
+	&$\implies \vec{A}=\vec{P}\vec{J}\vec{P}^{-1}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Conclusion} & \\
+	& Therefore, $\vec{A}$ is similar to triangular matrix and the triangular matrix is,\\
+	&\\
+	&$\vec{J}=\myvec{0&1&0\\0&0&1\\0&0&0}$\\
+	&\\
+	\hline
+	\caption{Checking triangularizability of $\vec{A}$}
+    \label{eq:solutions/6/4/4/table:2}
+\end{longtable}

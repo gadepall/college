@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  29 NOV 2020 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  30 NOV 2020 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1944,7 +1944,7 @@ File: ot1txtt.fd 2000/12/15 v3.1
 pdfTeX warning: pdflatex (file /data/data/com.termux/files/home/texmf/tex/latex
 /logo/iith_logo.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<iith_logo.pdf, id=159, 359.3425pt x 486.81876pt>
+<iith_logo.pdf, id=167, 359.3425pt x 486.81876pt>
 File: iith_logo.pdf Graphic file (type pdf)
 <use iith_logo.pdf>
 Package pdftex.def Info: iith_logo.pdf  used on input line 247.
@@ -1956,7 +1956,7 @@ LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 (Font)              scaled to size 15.95987pt on input line 247.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 247.
-<tlc.pdf, id=160, 597.51233pt x 845.0471pt>
+<tlc.pdf, id=168, 597.51233pt x 845.0471pt>
 File: tlc.pdf Graphic file (type pdf)
 <use tlc.pdf>
 Package pdftex.def Info: tlc.pdf  used on input line 247.
@@ -2005,7 +2005,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--32
+Underfull \hbox (badness 3029) in paragraph at lines 30--30
+ [][] [][]\OT1/txr/m/n/12 Simultaneous Tri-an-gu-la-tion; 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
  [][] [][]\OT1/txr/m/n/12 Computation of In-vari-ant 
  []
 
@@ -2032,10 +2037,10 @@ ap/pdftex.map}
 
  </data/data/com.termux/files/home/texmf/tex/latex/logo/iith_logo.pdf> </data/d
 ata/com.termux/files/home/texmf/tex/latex/logo/tlc.pdf>])
-(./solutions/1/1/2/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+(./solutions/1/1/2/solution.tex
 Overfull \hbox (25.30655pt too wide) detected at line 18
  []$[] \OT1/txr/m/n/12 = [] [] [] [] [] [] []$ 
  []
@@ -3305,7 +3310,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [82]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./solutions/3/2/1/a/Python_Code/Reflection.png, id=2523, 462.528pt x 346.896pt
+<./solutions/3/2/1/a/Python_Code/Reflection.png, id=2534, 462.528pt x 346.896pt
 >
 File: ./solutions/3/2/1/a/Python_Code/Reflection.png Graphic file (type png)
 <use ./solutions/3/2/1/a/Python_Code/Reflection.png>
@@ -3313,7 +3318,7 @@ Package pdftex.def Info: ./solutions/3/2/1/a/Python_Code/Reflection.png  used o
 n input line 26.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
  [83 <./solutions/3/2/1/a/Python_Code/Reflection.png>]
-<./solutions/3/2/1/a/Python_Code/projection.png, id=2540, 462.528pt x 346.896pt
+<./solutions/3/2/1/a/Python_Code/projection.png, id=2552, 462.528pt x 346.896pt
 >
 File: ./solutions/3/2/1/a/Python_Code/projection.png Graphic file (type png)
 <use ./solutions/3/2/1/a/Python_Code/projection.png>
@@ -3812,18 +3817,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [125])
 (./solutions/3/6/1/b/solution.tex
-<solutions/3/6/1/b/W_Nullspace.png, id=3726, 281.55188pt x 351.56343pt>
+<solutions/3/6/1/b/W_Nullspace.png, id=3737, 281.55188pt x 351.56343pt>
 File: solutions/3/6/1/b/W_Nullspace.png Graphic file (type png)
 <use solutions/3/6/1/b/W_Nullspace.png>
 Package pdftex.def Info: solutions/3/6/1/b/W_Nullspace.png  used on input line 
 9.
 (pdftex.def)             Requested size: 140.77559pt x 175.78128pt.
-<solutions/3/6/1/b/WtoFn.png, id=3727, 398.99063pt x 283.81032pt>
+<solutions/3/6/1/b/WtoFn.png, id=3738, 398.99063pt x 283.81032pt>
 File: solutions/3/6/1/b/WtoFn.png Graphic file (type png)
 <use solutions/3/6/1/b/WtoFn.png>
 Package pdftex.def Info: solutions/3/6/1/b/WtoFn.png  used on input line 15.
 (pdftex.def)             Requested size: 199.49483pt x 141.9048pt.
-<solutions/3/6/1/b/Wdualmap.png, id=3728, 435.12563pt x 299.61937pt>
+<solutions/3/6/1/b/Wdualmap.png, id=3739, 435.12563pt x 299.61937pt>
 File: solutions/3/6/1/b/Wdualmap.png Graphic file (type png)
 <use solutions/3/6/1/b/Wdualmap.png>
 Package pdftex.def Info: solutions/3/6/1/b/Wdualmap.png  used on input line 21.
@@ -3860,13 +3865,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--100
  []
 
 ) (./solutions/3/6/3/solution.tex
-<solutions/3/6/3/fig/vector_space.png, id=3760, 500.87125pt x 524.96124pt>
+<solutions/3/6/3/fig/vector_space.png, id=3771, 500.87125pt x 524.96124pt>
 File: solutions/3/6/3/fig/vector_space.png Graphic file (type png)
 <use solutions/3/6/3/fig/vector_space.png>
 Package pdftex.def Info: solutions/3/6/3/fig/vector_space.png  used on input li
 ne 3.
 (pdftex.def)             Requested size: 200.34494pt x 209.98077pt.
-<solutions/3/6/3/fig/f.png, id=3761, 603.25375pt x 1180.41pt>
+<solutions/3/6/3/fig/f.png, id=3772, 603.25375pt x 1180.41pt>
 File: solutions/3/6/3/fig/f.png Graphic file (type png)
 <use solutions/3/6/3/fig/f.png>
 Package pdftex.def Info: solutions/3/6/3/fig/f.png  used on input line 10.
@@ -3889,7 +3894,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<solutions/3/6/3/fig/fig.png, id=3762, 350.30875pt x 231.86626pt>
+<solutions/3/6/3/fig/fig.png, id=3773, 350.30875pt x 231.86626pt>
 File: solutions/3/6/3/fig/fig.png Graphic file (type png)
 <use solutions/3/6/3/fig/fig.png>
 Package pdftex.def Info: solutions/3/6/3/fig/fig.png  used on input line 80.
@@ -3945,7 +3950,7 @@ Overfull \hbox (45.01352pt too wide) in paragraph at lines 32--79
 LaTeX Warning: Float too large for page by 17.29799pt on input line 81.
 
 ) (./solutions/3/7/7/solution.tex
-<solutions/3/7/7/fig/transpose.png, id=3909, 336.25626pt x 281.05pt>
+<solutions/3/7/7/fig/transpose.png, id=3920, 336.25626pt x 281.05pt>
 File: solutions/3/7/7/fig/transpose.png Graphic file (type png)
 <use solutions/3/7/7/fig/transpose.png>
 Package pdftex.def Info: solutions/3/7/7/fig/transpose.png  used on input line 
@@ -3971,7 +3976,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<solutions/3/7/7/fig/transpose_example.png, id=3910, 492.84125pt x 556.0775pt>
+<solutions/3/7/7/fig/transpose_example.png, id=3921, 492.84125pt x 556.0775pt>
 File: solutions/3/7/7/fig/transpose_example.png Graphic file (type png)
 <use solutions/3/7/7/fig/transpose_example.png>
 Package pdftex.def Info: solutions/3/7/7/fig/transpose_example.png  used on inp
@@ -4238,7 +4243,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [155]
-<solutions/4/3/5/index_set.png, id=4440, 298.716pt x 273.4215pt>
+<solutions/4/3/5/index_set.png, id=4451, 298.716pt x 273.4215pt>
 File: solutions/4/3/5/index_set.png Graphic file (type png)
 <use solutions/4/3/5/index_set.png>
 Package pdftex.def Info: solutions/4/3/5/index_set.png  used on input line 7.
@@ -4247,7 +4252,7 @@ Package pdftex.def Info: solutions/4/3/5/index_set.png  used on input line 7.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<solutions/4/3/5/ideal.png, id=4441, 295.1025pt x 228.25275pt>
+<solutions/4/3/5/ideal.png, id=4452, 295.1025pt x 228.25275pt>
 File: solutions/4/3/5/ideal.png Graphic file (type png)
 <use solutions/4/3/5/ideal.png>
 Package pdftex.def Info: solutions/4/3/5/ideal.png  used on input line 14.
@@ -4325,7 +4330,30 @@ Underfull \vbox (badness 1024) has occurred while \output is active []
 ) [162
 
 ]
-(./solutions/6/2/8/solution.tex
+(./solutions/6/2/7/solution.tex [163
+
+
+]
+Overfull \hbox (13.8735pt too wide) in alignment at lines 4--48
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 48
+ []
+
+[164
+
+]
+Overfull \hbox (0.60072pt too wide) in alignment at lines 49--65
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 65
+ []
+
+) [165] (./solutions/6/2/8/solution.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -4333,17 +4361,31 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./solutions/6/2/10/solution.tex [163
+(./solutions/6/2/10/solution.tex [166
 
 
-] [164] [165]
+] [167] [168]
 Underfull \vbox (badness 10000) detected at line 32
  []
 
-[166
+[169
 
 
-]) [167]) (./chapters/6/6.3.tex (./solutions/6/3/2/solution.tex
+]) [170]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+(./solutions/6/2/11/solution.tex [171
+
+
+]
+Underfull \vbox (badness 10000) detected at line 46
+ []
+
+[172
+
+] [173]) [174]) (./chapters/6/6.3.tex (./solutions/6/3/2/solution.tex
 Overfull \hbox (20.73235pt too wide) in paragraph at lines 29--29
 [] 
  []
@@ -4354,7 +4396,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [168
+ [175
 
 ])
 (./solutions/6/3/3/solution.tex
@@ -4362,7 +4404,7 @@ Overfull \hbox (19.37677pt too wide) in paragraph at lines 5--35
  [][] 
  []
 
-[169
+[176
 
 ]
 Overfull \hbox (2.05396pt too wide) in alignment at lines 39--66
@@ -4383,37 +4425,98 @@ Overfull \hbox (2.05396pt too wide) in alignment at lines 88--110
  [] [] 
  []
 
-[170
+[177
 
-]) [171] (./solutions/6/3/8/solution.tex
+]) [178] (./solutions/6/3/8/solution.tex
 Overfull \hbox (16.80872pt too wide) in paragraph at lines 5--33
  [][] 
  []
 
-[172
+[179
 
 
 ]
 Underfull \vbox (badness 10000) detected at line 64
  []
 
-) [173
+) [180
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-(./solutions/6/3/9/solution.tex [174
+(./solutions/6/3/9/solution.tex [181
 
 
 ]
 Underfull \vbox (badness 10000) detected at line 31
  []
 
-) [175
+) [182
 
-]) (./chapters/7/7.2.tex (./solutions/7/2/3/solution.tex
+]) (./chapters/6/6.4.tex (./solutions/6/4/4/solution.tex [183
+
+
+]
+Overfull \hbox (21.28369pt too wide) in alignment at lines 28--52
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 52
+ []
+
+
+Overfull \hbox (21.28369pt too wide) in alignment at lines 52--73
+ [] [] 
+ []
+
+
+Overfull \hbox (21.28369pt too wide) in alignment at lines 73--84
+ [] [] 
+ []
+
+[184
+
+]) [185] (./solutions/6/4/5/solution.tex
+Overfull \hbox (35.3513pt too wide) in paragraph at lines 5--41
+ [][] 
+ []
+
+[186
+
+
+]
+Underfull \vbox (badness 10000) detected at line 69
+ []
+
+) [187
+
+]) (./chapters/6/6.5.tex (./solutions/6/5/1/a/solution.tex [188
+
+
+]
+Underfull \vbox (badness 10000) detected at line 70
+ []
+
+[189
+
+]) [190] (./solutions/6/5/1/b/solution.tex
+Overfull \hbox (7.19951pt too wide) in paragraph at lines 5--44
+ [][] 
+ []
+
+[191
+
+
+]
+Underfull \vbox (badness 10000) detected at line 84
+ []
+
+[192
+
+]) [193]) (./chapters/7/7.2.tex (./solutions/7/2/3/solution.tex
 Overfull \hbox (46.28992pt too wide) in paragraph at lines 5--19
 [][] 
  []
@@ -4441,7 +4544,7 @@ Overfull \hbox (27.32553pt too wide) in paragraph at lines 67--67
 ) (./solutions/7/3/5/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [176
+ [194
 
 ]
 Overfull \vbox (8.11742pt too high) has occurred while \output is active []
@@ -4449,42 +4552,69 @@ Overfull \vbox (8.11742pt too high) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [177]
+ [195]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [178]
+ [196]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [179])
+ [197])
 (./solutions/7/3/15/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ))
-(./chapters/7/7.4.tex) [180]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 355.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 355.
+(./chapters/7/7.4.tex (./solutions/7/4/4/solution.tex [198]
+Underfull \hbox (badness 3884) in paragraph at lines 22--22
+[]|\OT1/txr/m/n/12 One of the pos-si-ble jor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]|\OT1/txr/m/n/12 The pro-jec-tion ma-tri-ces
+ []
+
+
+Overfull \hbox (21.34958pt too wide) in alignment at lines 4--92
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 92
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[]|\OT1/txr/m/n/12 The T-cyclic sub-space
+ []
+
+
+Overfull \hbox (21.34958pt too wide) in alignment at lines 92--161
+ [] [] 
+ []
+
+[199
+
+] [200] [201] [202]) [203])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
  (./gvv_hoffman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 355.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 355.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
 Package rerunfilecheck Info: File `gvv_hoffman.out' has not changed.
-(rerunfilecheck)             Checksum: 31256E37D2555B8C6995525FC9A436C7;2221.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 355.
+(rerunfilecheck)             Checksum: 31CAEC61EDF8538E6E27E8373958220B;2396.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 359.
  ) 
 Here is how much of TeX's memory you used:
- 47531 strings out of 480608
- 1079496 string characters out of 5892806
- 1492555 words of memory out of 5000000
- 58599 multiletter control sequences out of 15000+600000
+ 47741 strings out of 480608
+ 1082827 string characters out of 5892806
+ 1493951 words of memory out of 5000000
+ 58636 multiletter control sequences out of 15000+600000
  627878 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,28n,91p,641b,1164s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4507,10 +4637,10 @@ lic/txfonts/txsyc.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.term
 ux/files/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_hoffman.pdf (180 pages, 1610881 bytes).
+Output written on gvv_hoffman.pdf (203 pages, 1654854 bytes).
 PDF statistics:
- 5434 PDF objects out of 6186 (max. 8388607)
- 4991 compressed objects within 50 object streams
- 3208 named destinations out of 3580 (max. 500000)
- 435 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5741 PDF objects out of 6186 (max. 8388607)
+ 5244 compressed objects within 53 object streams
+ 3354 named destinations out of 3580 (max. 500000)
+ 451 words of extra memory for PDF output out of 10000 (max. 10000000)
 

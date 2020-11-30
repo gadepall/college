@@ -1,0 +1,28 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item Find an invertible matrix $\vec{P}$ such that $\vec{P^{-1}AP}$ and $\vec{P^{-1}BP}$ are both diagonal where $\vec{A}$ and $\vec{B}$ are real matrices.
+%
+\begin{enumerate}
+\item 
+\begin{align}
+\Vec{A}=\myvec{1&2\\0&2} , \Vec{B}=\myvec{3&-8\\0&-1}
+    \end{align}
+\solution
+\input{./solutions/6/5/1/a/solution.tex}
+\twocolumn
+\item %
+\begin{align}
+    \Vec{A}=\myvec{1&1\\1&1}\\ 
+    \vec{B}=\myvec{1&a\\a&1}
+\end{align}
+%
+\\
+\solution
+\input{./solutions/6/5/1/b/solution.tex}
+\twocolumn
+\end{enumerate}
+\end{enumerate}

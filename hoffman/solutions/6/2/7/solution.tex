@@ -1,0 +1,65 @@
+See Table     \ref{eq:solutions/6/2/7/table:2}
+
+\onecolumn
+\begin{longtable}{|l|l|}
+	\hline
+	\multirow{3}{*}{Diagonalizable} 
+	& \\
+	& A linear operator $\vec{T}$ on a finite-dimensional vector space $\vec{V}$ is diagonalizable if and\\
+    &only if there exists an basis of $\vec{V}$, consisting of eigen vectors of $\vec{T}$ \\ 
+	&\\
+	\hline
+	\multirow{3}{*}{Theorem}
+	& \\
+&If $\vec{v}_1,\vec{v}_2,\dots,\vec{v}_k$ are eigenvectors of a linear operator $\vec{T}$ with distinct eigen\\
+& values $\lambda_1,\lambda_2,\dots,\lambda_k$,then $\vec{v}_1,\vec{v}_2,\dots,\vec{v}_k$ are linearly independent.\\
+&\\
+&Let $S_k=\cbrak{\vec{v}_1,\vec{v}_2,\dots,\vec{v}_k}$.Let $P(k): S_k$ is linearly independent.$S_1$ is linearly independent.\\
+&So,$P(1)$ holds.Assume $P(k)$ holds for $1 \le k \le n$.Therefore,$S_k$ is linearly independent.\\
+&\parbox{10cm}{\begin{align}
+\text{Let} \sum_{i=1}^{k+1} a_i\vec{v}_i = 0 \label{eq:solutions/6/2/7/1}\\
+\text{Applying $\vec{T}$ on both sides , we get} \nonumber\\
+\implies \vec{T}(\sum_{i=1}^{k+1} a_i\vec{v}_i)=0\\
+\implies \sum_{i=1}^{k+1}a_i\vec{T}(\vec{v}_i)=0\\
+\implies \sum_{i=1}^{k+1}a_i\lambda_i\vec{v}_i=0\\
+\implies\sum_{i=1}^{k}a_i\lambda_i\vec{v}_i+a_{k+1}\lambda_{k+1}\vec{v}_{k+1}=0
+\label{eq:solutions/6/2/7/2}\\
+\text{Multiplying \eqref{eq:solutions/6/2/7/1} by $\lambda_{k+1}$,we get} \nonumber\\
+\lambda_{k+1}(\sum_{i=1}^{k+1} a_i\vec{v}_i)=0\\
+\implies \sum_{i=1}^{k+1}a_i\lambda_{k+1}\vec{v}_i=0
+\end{align}}\\
+\hline
+&\parbox{10cm}{\begin{align}
+\implies\sum_{i=1}^{k}a_i\lambda_{k+1}\vec{v}_i+a_{k+1}\lambda_{k+1}\vec{v}_{k+1}=0\label{eq:solutions/6/2/7/3}\\
+\text{Subtracting \eqref{eq:solutions/6/2/7/2} and \eqref{eq:solutions/6/2/7/3},we get} \nonumber \\
+ \sum_{i=1}^{k}a_i(\lambda_i-\lambda_{k+1})\vec{v}_i=0\\
+ \text{As $\lambda_i$ are distinct $\forall i \le k, a_i = 0$}\\
+ \text{Substituting this in \eqref{eq:solutions/6/2/7/1}} \nonumber \\
+ \sum_{i=1}^{k+1} a_i\vec{v}_i = 0\\
+ \implies a_{k+1}\vec{v}_{k+1} = 0
+\end{align}}\\
+    & As $\vec{v}_{k+1} \neq 0 \implies a_{k+1}=0$ \\
+    &Since $\forall i \le k+1, a_i = 0.S_{k+1}$ is linearly independent\\
+    & By principle of mathematic induction, $S_n$ is linearly independent.\\
+    & \\
+    \hline
+    \caption{Definitions and theorem used}
+    \label{eq:solutions/6/2/7/table:1}
+\end{longtable}
+\begin{longtable}{|l|l|}
+	\hline
+	\multirow{3}{*}{Given} & \\
+	& $\vec{T}$ has an n distinct characteristic values and dim$(\vec{V})$ = n\\
+    & \\
+    \hline
+	\multirow{3}{*}{$\vec{T}$ is diagonalizable}
+	& \\
+	& Let $\lambda_1,\lambda_2,\dots,\lambda_n$ be distinct eigen values of $\vec{T}$ and let $\vec{v}_1,\vec{v}_2,\dots,\vec{v}_n$ be the eigen\\
+	& vectors of $\vec{T}$..From above results we can state that \cbrak{\vec{v}_1,\vec{v}_2,\dots,\vec{v}_n} is linearly\\
+	&independent.And also given that dim$(\vec{V})$ = n .So,this set forms a basis of $\vec{V}$.\\
+	&\cbrak{\vec{v}_1,\vec{v}_2,\dots,\vec{v}_n} is a basis for $\vec{V}$ consisting of eigen vectors of $\vec{T}$.\\
+    &So, $\vec{T}$ is diagonalizable.\\
+	\hline
+	\caption{Solution}
+    \label{eq:solutions/6/2/7/table:2}
+\end{longtable}

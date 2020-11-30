@@ -25,8 +25,10 @@
 \contentsline {section}{\numberline {5}Determinants}{156}{section.5}%
 \contentsline {section}{\numberline {6}Elementary Canonical Forms}{156}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Characteristic Values}{156}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Annihilating Polynomials}{168}{subsection.6.2}%
-\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{176}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{176}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}The Jordan Form}{176}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{180}{subsection.7.3}%
+\contentsline {subsection}{\numberline {6.2}Annihilating Polynomials}{175}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Invariant Subspaces}{183}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Simultaneous Triangulation; Simultaneous Diagonalization}{188}{subsection.6.4}%
+\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{194}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{194}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}The Jordan Form}{194}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{198}{subsection.7.3}%

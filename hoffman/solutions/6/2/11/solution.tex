@@ -1,0 +1,100 @@
+See Table \ref{eq:solutions/6/2/11/table:1}
+\onecolumn
+\begin{longtable}{|l|l|}
+\hline
+\multirow{3}{*}{} & \\
+Statement&Solution\\
+\hline
+&\parbox{6cm}{\begin{align}
+\mbox{Let }\vec{N}&=\myvec{a&b\\c&d}\\
+\mbox{Since }\vec{N}^2&=0
+\end{align}}\\
+&If $\myvec{a\\c},\myvec{b\\d}$ are linearly independent then $\vec{N}$ is diagonalizable to $\myvec{0&0\\0&0}$.\\
+&\parbox{6cm}{\begin{align}
+\mbox{If }\vec{P}\vec{N}\vec{P}^{-1}=0\\
+\mbox{then }\vec{N}=\vec{P}^{-1}\vec{0}\vec{P}=0
+\end{align}}\\
+Proof that&So in this case $\vec{N}$ itself is the zero matrix.\\
+$\vec{N}=0$&This contradicts the assumption that $\myvec{a\\c},\myvec{b\\d}$ are linearly independent.\\
+&$\therefore$ we can assume that $\myvec{a\\c},\myvec{b\\d}$ are linearly dependent if both are\\
+&equal to the zero vector\\
+&\parbox{6cm}
+{\begin{align}
+   \mbox{then } \vec{N} &= 0.
+\end{align}}\\
+%\hline
+%\pagebreak
+\hline
+&\\
+&Therefore we can assume at least one vector is non-zero.\\
+Assuming $\myvec{b\\d}$ as&Therefore
+$\vec{N}=\myvec{a&0\\c&0}$\\
+the zero vector&\\
+&\parbox{6cm}{\begin{align}
+\mbox{So }\vec{N}^2&=0\\
+\implies a^2&=0\\
+\therefore a&=0\\
+\mbox{Thus }\vec{N}&=\myvec{a&0\\c&0}
+\end{align}}\\
+&In this case $\vec{N}$ is similar to $\vec{N}=\myvec{0&0\\1&0}$ via the matrix $\vec{P}=\myvec{c&0\\0&1}$\\
+&\\
+\hline
+&\\
+Assuming $\myvec{a\\c}$ as&Therefore
+$\vec{N}=\myvec{0&b\\0&d}$\\
+the zero vector&\\
+&\parbox{6cm}{\begin{align}
+\mbox{Then }\vec{N}^2&=0\\
+\implies d^2&=0\\
+\therefore d&=0\\
+\mbox{Thus }\vec{N}&=\myvec{0&b\\0&0}
+\end{align}}\\
+&In this case $\vec{N}$ is similar to $\vec{N}=\myvec{0&0\\b&0}$ via the matrix $\vec{P}=\myvec{0&1\\1&0}$,\\
+&which is similar to $\myvec{0&0\\1&0}$ as above.\\
+&\\
+\hline
+&\\
+Hence& we can assume neither $\myvec{a\\c}$ or $\myvec{b\\d}$ is the zero vector.\\
+&\\
+%\hline
+%\pagebreak
+\hline
+&\\
+Consequences of &Since they are linearly dependent we can assume,\\
+linear&\\
+independence&\\
+&\parbox{6cm}{\begin{align}
+\myvec{b\\d}&=x\myvec{a\\c}\\
+\therefore \vec{N}&=\myvec{a&ax\\c&cx}\\
+\therefore \vec{N}^2&=0\\
+\implies a(a+cx)&=0\\
+c(a+cx)&=0\\
+ax(a+cx)&=0\\
+cx(a+cx)&=0
+\end{align}}\\
+\hline
+&\\
+Proof that $\vec{N}$ is&We know that at least one of a or c is not zero.\\
+similar over $\mathbb{C}$ to&If a = 0 then c $\neq$ 0, it must be that x = 0.\\
+$\myvec{0&0\\1&0}$&So in this case $\vec{N}=\myvec{0&0\\c&0}$ which is similar to $\myvec{0&0\\1&0}$ as before.\\
+&\\
+&\parbox{6cm}{\begin{align}
+\mbox{If } a &\neq0\\
+\mbox{then }x &\neq0\\
+\mbox{else }a(a+cx)&=0\\
+\implies a&=0\\
+\mbox{Thus }a+cx&=0\\
+\mbox{Hence }\vec{N}&=\myvec{a&ax\\ \frac{-a}{x}&-a}
+\end{align}}\\
+ &This is similar to $\myvec{a&a\\-a&-a}$ via $\vec{P}=\myvec{\sqrt{x}&0\\0&\frac{1}{\sqrt{x}}}$.\\
+ &And $\myvec{a&a\\-a&-a}$ is similar to $\myvec{0&0\\-a&0}$ via $\vec{P}=\myvec{-1&-1\\1&0}$\\
+ &And this finally is similar to $\myvec{0&0\\1&0}$ as before.\\
+ &\\
+\hline
+&\\
+Conclusion &Thus either $\vec{N}$ = 0 or $\vec{N}$ is similar over $\mathbb{C}$ to $\myvec{0&0\\1&0}$.\\
+&\\
+\hline
+\caption{Solution summary}
+\label{eq:solutions/6/2/11/table:1}
+\end{longtable}

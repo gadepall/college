@@ -1,0 +1,103 @@
+See Tables 
+    \ref{eq:solutions/6/5/1/a/table:1} and 
+    \ref{eq:solutions/6/5/1/a/table:2}
+%
+\begin{table*}[ht!]
+\centering
+\begin{tabular}{|c|l|}
+   
+	\hline
+	\multirow{3}{*}{Theorem}
+    &\\
+    & According  to theorem , if a $2\times 2$ matrix has two characteristics \\
+    &\\
+    & values then the $\vec{P}$ that diagonalize $\vec{A}$ will
+    necessarily also   \\
+    &\\
+    & diagonalize any $\vec{B}$ that commutes with $\vec{A}$. \\
+    &\\
+    \hline 
+    &\\
+    Common Basis
+    &Let there exist a $\vec{P}$ in basis $\vec{\beta}=\{\vec{b}_1,.....,\vec{b}_n\}$ of $\mathbb{V}$ consisting of eigen vector\\& which are common to both $\vec{A}$ and $\vec{B}$ such that\\
+    &\\
+    &$\qquad\qquad\qquad\vec{A}\vec{b}_i=\lambda_{i}\vec{b}_i$\\
+    &\\
+    &$\qquad\qquad\qquad\vec{B}\vec{b}_i=\mu_{i}\vec{b}_i$\\
+    &\\
+    &$\qquad\qquad\qquad\Lambda_{A}=\myvec{\lambda_1&0\\0&\lambda_2}$\\
+    &\\
+    &$\qquad\qquad\qquad\Lambda_{B}=\myvec{\mu_1&0\\0&\mu_2}$\\
+    &\\
+    &$\qquad\qquad\qquad\Lambda_{A}=\vec{P^{-1}AP}$\\
+    &\\
+    &$\qquad\qquad\qquad\Lambda_{B}=\vec{P^{-1}BP}$\\
+    &\\
+    \hline
+
+    
+\end{tabular}
+    \caption{Theorems }
+\label{eq:solutions/6/5/1/a/table:1}
+\end{table*}
+\onecolumn
+\begin{longtable}{|c|l|l|}
+   \hline
+   \multirow{3}{*}
+   &&\\
+   Operations&Matrix A&Matrix B\\
+   \hline
+   &&\\
+   Characteristic Polynomial&$p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$&$p\brak{x}=\mydet{x\Vec{I}-\Vec{B}}$\\
+	& $\qquad = \mydet{x-1&-2\\0&x-2}$ &$\qquad = \mydet{x-3&8\\0&x+1}$ \\
+	&$\qquad=\brak{x-1}\brak{x-2}$&$\qquad=\brak{x-3}\brak{x+1}$ \\
+ \hline
+ &&\\
+ Characteristic values&$p\brak{x}=0$&$p\brak{x}=0$\\
+ &$\brak{x-1}\brak{x-2}=0$&$\brak{x-3}\brak{x+1}=0$\\
+ &$\lambda_1=1$ ,$\lambda_2=2$&$\mu_1=3$ , $\mu_2=-1$\\ 
+ \hline
+ &&\\
+ Basis for Characteristics Values& For $\lambda_1=1$& For $\mu_1=3$\\
+ &&\\
+ &$(\vec{A}-\lambda_1\vec{I})\vec{b_1}=0$&$(\vec{B}-\mu_1\vec{I})\vec{b_1}=0$\\
+ &&\\
+ &$\brak{\myvec{1&2\\0&2}-\myvec{1&0\\0&1}}\vec{b_1}=0$&$\brak{\myvec{3&-8\\0&-1}-3\myvec{1&0\\0&1}}\vec{b_1}=0$\\
+ &&\\
+ &$\brak{\myvec{0&2\\0&1}}\vec{b_1}=0$&$\brak{\myvec{0&-8\\0&-4}}\vec{b_1}=0$\\
+ &&\\
+ & $\vec{b_1}=\myvec{1\\0}$&$\vec{b_1}=\myvec{1\\0}$\\
+ &&\\
+ & For $\lambda_2=2$& For $\mu_2=-1$\\
+ &&\\
+ &$(\vec{A}-\lambda_2\vec{I})\vec{b_2}=0$&$(\vec{B}-\mu_2\vec{I})\vec{b_2}=0$\\
+ &&\\
+ &$\brak{\myvec{1&2\\0&2}-2\myvec{1&0\\0&1}}\vec{b_2}=0$&$\brak{\myvec{3&-8\\0&-1}-(-1)\myvec{1&0\\0&1}}\vec{b_2}=0$\\
+ &&\\
+ &$\brak{\myvec{-1&2\\0&0}}\vec{b_2}=0$&$\brak{\myvec{4&-8\\0&0}}\vec{b_2}=0$\\
+ &&\\
+ & $\vec{b_2}=\myvec{2\\1}$&$\vec{b_2}=\myvec{2\\1}$\\
+ &&\\
+ &$\vec{P}=\myvec{1&2\\0&1}$&$\vec{P}=\myvec{1&2\\0&1}$\\
+ \hline
+% \newpage
+% \hline
+ \multirow{3}{*}
+ &&\\
+ Verification& $\Lambda_A=\myvec{1&0\\0&2}$ & $\Lambda_B=\myvec{3&0\\0&-1}$\\
+ &&\\
+ &$\Lambda_{A}=\vec{P^{-1}AP}$&$\Lambda_{B}=\vec{P^{-1}BP}$\\
+ &&\\
+ &$\implies\myvec{1&-2\\0&1}\myvec{1&2\\0&2}\myvec{1&2\\0&1}$&$\implies\myvec{1&-2\\0&1}\myvec{3&-8\\0&-1}\myvec{1&2\\0&1}$\\
+ &&\\
+&$=\myvec{1&0\\0&2}=\Lambda_A$ & $=\myvec{3&0\\0&-1}=\Lambda_B$\\
+&&\\
+\hline
+&&\\
+Answer.The Invertible Matrix $\vec{P}$&$\vec{P}=\myvec{1&2\\0&1}$&$\vec{P}=\myvec{1&2\\0&1}$\\
+&&\\
+\hline
+	
+	\caption{Solution Table}
+    \label{eq:solutions/6/5/1/a/table:2}
+\end{longtable}

@@ -1,0 +1,72 @@
+See Tables \ref{eq:solutions/6/4/5/table:1} and \ref{eq:solutions/6/4/5/table:2}
+%
+\begin{table*}[ht!]
+\centering
+\begin{tabular}{|c|l|}
+    \hline
+	\multirow{3}{*}{Characteristic Polynomial} 
+	& \\
+	& For an $n\times n$ matrix $\vec{A}$, characteristic polynomial is defined by,\\
+	&\\
+	& $\qquad\qquad\qquad p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Cayley-Hamilton Theorem}
+    &\\
+    & If $p\brak{x}$ is the characteristic polynomial of an $n\times n$ matrix $\vec{A}$, then,\\
+    &\\
+    &$\qquad \qquad \qquad p\brak{\vec{A}}=\vec{0}$\\
+    &\\
+    \hline
+	\multirow{3}{*}{Minimal Polynomial} 
+	&\\
+	& Minimal polynomial $m\brak{x}$ is the smallest factor of characteristic polynomial\\
+	& $p\brak{x}$ such that,\\
+	&\\
+	& $\qquad \qquad \qquad m\brak{\vec{A}}=0$\\
+	& \\
+	& Every root of characteristic polynomial should be the root of minimal\\
+	& polynomial\\
+	&\\
+    \hline
+    \multirow{3}{*}{Theorem} 
+	&\\
+	& Let $\vec{V}$ be a finite-dimensional vector space over the field $\vec{F}$ \\
+	& and let $\vec{T}$ be a linear operator on $\vec{V}$\\
+	& Then $\vec{T}$ is diagonalizable if and only if the minimal polynomial for $\Vec{T}$\\
+	& has the form p = $\brak{x-c_1}$...$\brak{x-c_k}$,where $c_1,c_2,...,c_k$ are distinct elements of $F$. \\
+	&\\
+    \hline
+\end{tabular}
+    \caption{Definitions}
+\label{eq:solutions/6/4/5/table:1}
+\end{table*}
+\onecolumn
+\begin{longtable}{|c|l|}
+    \hline
+	\multirow{3}{*}{Proof} 
+	& \\
+	& $A^2$ = $A$ (Given)\\
+	& $\implies$ $A$ satisfies the polynomial $x^2-x$ = $x\brak{x-1}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Minimal Polynomial} & \\
+	& $p\brak{x}=x^a\brak{x-1}^b,\quad a\leq1, b\leq1$\\
+	& \\
+	& Minimal Polynomial $m_A\brak{x}$, of $A$ divides $x^2-x$, that is $m_A\brak{x}$=$x$\\
+	& or $m_A\brak{x}$=$x-1$ or $m_A\brak{x}$=$x(x-1)$\\
+	& If $m_A\brak{x}$=$x$, then $A$ = $0$.\\
+	& If $m_A\brak{x}$=$x-1$, then $A$ = $I$.\\
+	& If $m_A\brak{x}$=$x(x-1)$ \\
+	& In all above three cases, the minimal polynomial factors into distinct linears.\\
+	& So, it follows $A$ is diagonisable.\\
+	&\\
+	\hline
+	\multirow{3}{*}{Conclusion} & \\
+	& In all three cases, the minimal polynomial splits into\\ & distinct linear factors, so it follows that $\vec{A}$ is\\ 
+	& diagonalisable according to the Theorem mentioned in definitions section.\\
+	&\\
+	\hline
+	\caption{Illustration of Proof}
+    \label{eq:solutions/6/4/5/table:2}
+\end{longtable}

@@ -1,0 +1,25 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item %
+Let
+\begin{align}
+    \Vec{A}=\myvec{0&1&0\\2&-2&2\\2&-3&2}
+\end{align}
+Is $\vec{A}$ similar over the field of real numbers to a triangular matrix? If so, find such a triangular matrix.
+\\
+\solution
+\input{./solutions/6/4/4/solution.tex}
+\twocolumn
+
+
+\item  Every matrix $A$ such that $A^2$ = $A$ is similar to a diagonal matrix.
+%
+\\
+\solution
+\input{./solutions/6/4/5/solution.tex}
+\twocolumn
+\end{enumerate}
