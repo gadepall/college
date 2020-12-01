@@ -1,0 +1,164 @@
+See Table \ref{eq:solutions/7/3/11/table}
+
+\onecolumn
+\begin{longtable}{|p{5cm}|p{13cm}|}
+\hline
+\textbf{Statement} &\textbf{Derivation}\\
+\hline 
+\text{Given} & 
+$\vec{N_1}$ and $\vec{N_2}$ be $6 \times 6$ nilpotent matrices. \\
+& $\vec{N_1}$ and $\vec{N_2}$ have the same minimal polynomial and the same nullity.\\
+& To prove $\vec{N_1}$ and $\vec{N_2}$ are similar.
+\\ [0.5ex]
+\hline
+\text{From given statement} & 
+\text{Two matrices are similar if they have the same Jordan Canonical form.}\\
+& 1. As $\vec{N_1}$ and $\vec{N_2}$ are nilpotent matrices, $0$ is the only eigen value.\\
+& 2. As minimal polynomial is same, $p\vec{N_1} = p\vec{N_2}$, the two matrices should have the same maximum block size.\\
+& 3. As they have same nullity, they will have same total number of blocks.\\
+&\\
+&If $\vec{J_1}$ and $\vec{J_2}$ are similar, then $\vec{N_1}$ and $\vec{N_2}$ are similar.\\
+&\\
+& Let us consider all the possibilities for the dimensions of the block matrices for both Jordan forms.\\ [0.5ex]
+\hline
+Matrix size - 6 and Jordan size - 6 & If Jordan form $\vec{J_1}$ consists of one block of dimension 6, then by $(3)$ above $\vec{J_2}$ also has one block of dimension 6.\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11}} \quad \vec{J_2}=\myvec{\vec{J}_{21}}\\
+    \vec{J}_{11}: 6\times6 \quad \vec{J}_{21}: 6\times6\\
+    \vec{J}_{11}, \vec{J}_{21} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}\\
+\hline
+ Matrix size - 6 and Jordan size - 5 + 1 & If Jordan form $\vec{J_1}$ consists of one block of dimension 5 and other 1, then by $(2)$, $\vec{J_2}$ also has same maximum block of dimension 5 and by $(3)$ have other block of size 1.
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0 \\ 0&\vec{J}_{12}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0 \\ 0&\vec{J}_{22}}\\
+    \vec{J}_{11}: 5\times5 \quad \vec{J}_{21}: 5\times5\\
+    \vec{J}_{12}: 1\times1 \quad \vec{J}_{22}: 1\times1\\
+    \vec{J}_{11}, \vec{J}_{21} \text{ and } \vec{J}_{12}, \vec{J}_{22} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}\\
+\hline
+Matrix size - 6, Jordan size - 4+2, Jordan size - 4+1+1 & Although there are two different possibilities for Jordan blocks,\\& From (2) $\vec{J}_{11}, \vec{J}_{21} $ are of dimension 4, \\& From (3) $\vec{J}$ have same number of Jordan blocks
+\\& Case 1: 
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0 \\ 0&\vec{J}_{12}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0 \\ 0&\vec{J}_{22}}\\
+    \vec{J}_{11}: 4\times4 \quad \vec{J}_{21}: 4\times4\\
+    \vec{J}_{12}: 2\times2 \quad \vec{J}_{22}: 2\times2\\
+    \vec{J}_{11}, \vec{J}_{21} \text{ and } \vec{J}_{12}, \vec{J}_{22} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}
+\\& Case 2: 
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0&0 \\ 0&\vec{J}_{12}&0\\0&0&\vec{J}_{13}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0&0 \\ 0&\vec{J}_{22}&0\\0&0&\vec{J}_{23}}\\
+    \vec{J}_{11}: 4\times4 \quad \vec{J}_{21}: 4\times4\\
+    \vec{J}_{12}: 1\times1 \quad \vec{J}_{22}: 1\times1\\
+    \vec{J}_{13}: 1\times1 \quad \vec{J}_{23}: 1\times1\\
+    \vec{J}_{11}, \vec{J}_{21}\quad \vec{J}_{12}, \vec{J}_{22}  \text{ and } \vec{J}_{13}, \vec{J}_{23} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}\\
+\hline
+Matrix size - 6, Jordan size - 3+3, Jordan size - 3+2+1, Jordan size - 3+1+1+1 & There are three different possibilities for Jordan blocks,
+\\& From (2) $\vec{J}_{11}, \vec{J}_{21} $ are of dimension 3, \\& From (3) $\vec{J}$ have same number of Jordan blocks
+\\& Case 1: 
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0 \\ 0&\vec{J}_{12}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0 \\ 0&\vec{J}_{22}}\\
+    \vec{J}_{11}: 3\times3 \quad \vec{J}_{21}: 3\times3\\
+    \vec{J}_{12}: 3\times3 \quad \vec{J}_{22}: 3\times3\\
+    \vec{J}_{11}, \vec{J}_{21} \text{ and } \vec{J}_{12}, \vec{J}_{22} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}
+\\& Case 2: 
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0&0 \\ 0&\vec{J}_{12}&0\\0&0&\vec{J}_{13}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0&0 \\ 0&\vec{J}_{22}&0\\0&0&\vec{J}_{23}}\\
+    \vec{J}_{11}: 3\times3 \quad \vec{J}_{21}: 3\times3\\
+    \vec{J}_{12}: 2\times2 \quad \vec{J}_{22}: 2\times2\\
+    \vec{J}_{13}: 1\times1 \quad \vec{J}_{23}: 1\times1\\
+    \vec{J}_{11}, \vec{J}_{21}\quad \vec{J}_{12}, \vec{J}_{22}  \text{ and } \vec{J}_{13}, \vec{J}_{23} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}
+\\& Case 3: 
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0&0&0 \\ 0&\vec{J}_{12}&0&0\\0&0&\vec{J}_{13}&0\\0&0&0&\vec{J}_{14}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0&0&0 \\ 0&\vec{J}_{22}&0&0\\0&0&\vec{J}_{23}&0\\0&0&0&\vec{J}_{24}}\\
+    \vec{J}_{11}: 3\times3 \quad \vec{J}_{21}: 3\times3\\
+    \vec{J}_{12}: 1\times1 \quad \vec{J}_{22}: 1\times1\\
+    \vec{J}_{13}: 1\times1 \quad \vec{J}_{23}: 1\times1\\
+    \vec{J}_{14}: 1\times1 \quad \vec{J}_{24}: 1\times1\\
+    \vec{J}_{11}, \vec{J}_{21}\quad \vec{J}_{12}, \vec{J}_{22}  \text{ and } \vec{J}_{13}, \vec{J}_{23} \quad \vec{J}_{14}, \vec{J}_{24} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}\\
+\hline
+Matrix size - 6, Jordan size - 2+2+2, Jordan size - 2+2+1+1, Jordan size - 2+1+1+1+1  & There are three different possibilities for Jordan blocks,
+\\& From (2) $\vec{J}_{11}, \vec{J}_{21} $ are of dimension 2, \\& From (3) $\vec{J}$ have same number of Jordan blocks
+\\& Case 1: 
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0&0\\ 0&\vec{J}_{12}&0 \\ 0&0&\vec{J_{13}}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0&0\\ 0&\vec{J}_{22}&0 \\ 0&0&\vec{J_{23}}}\\
+    \vec{J}_{11}: 2\times2 \quad \vec{J}_{21}: 2\times2\\
+    \vec{J}_{12}: 2\times2 \quad \vec{J}_{22}: 2\times2\\
+    \vec{J}_{13}: 2\times2 \quad \vec{J}_{23}: 2\times2\\
+    \vec{J}_{11}, \vec{J}_{21} \quad \vec{J}_{12}, \vec{J}_{22} \text{ and } \vec{J}_{13}, \vec{J}_{23} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}
+\\& Case 2: 
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0&0&0 \\ 0&\vec{J}_{12}&0&0\\0&0&\vec{J}_{13}&0\\0&0&0&\vec{J}_{14}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0&0&0 \\ 0&\vec{J}_{22}&0&0\\0&0&\vec{J}_{23}&0\\0&0&0&\vec{J}_{24}}\\
+    \vec{J}_{11}: 2\times2 \quad \vec{J}_{21}: 2\times2\\
+    \vec{J}_{12}: 2\times2 \quad \vec{J}_{22}: 2\times2\\
+    \vec{J}_{13}: 1\times1 \quad \vec{J}_{23}: 1\times1\\
+    \vec{J}_{14}: 1\times1 \quad \vec{J}_{24}: 1\times1\\
+    \vec{J}_{11}, \vec{J}_{21}\quad \vec{J}_{12}, \vec{J}_{22}  \text{ and } \vec{J}_{13}, \vec{J}_{23} \quad \vec{J}_{14}, \vec{J}_{24} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}
+\\& Case 3: 
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11} & 0&0&0&0 \\ 0&\vec{J}_{12}&0&0&0\\0&0&\vec{J}_{13}&0&0\\0&0&0&\vec{J}_{14}&0\\0&0&0&0&\vec{J}_{15}} \quad \vec{J_2}=\myvec{\vec{J}_{21} & 0&0&0&0 \\ 0&\vec{J}_{22}&0&0&0\\0&0&\vec{J}_{23}&0&0\\0&0&0&\vec{J}_{24}&0\\0&0&0&0&\vec{J}_{25}}\\
+    \vec{J}_{11}: 2\times2 \quad \vec{J}_{21}: 2\times2\\
+    \vec{J}_{12}: 1\times1 \quad \vec{J}_{22}: 1\times1\\
+    \vec{J}_{13}: 1\times1 \quad \vec{J}_{23}: 1\times1\\
+    \vec{J}_{14}: 1\times1 \quad \vec{J}_{24}: 1\times1\\
+    \vec{J}_{15}: 1\times1 \quad \vec{J}_{25}: 1\times1\\   
+    \vec{J}_{11}, \vec{J}_{21}\quad \vec{J}_{12}, \vec{J}_{22}  \text{ and } \vec{J}_{13}, \vec{J}_{23} \quad \vec{J}_{14}, \vec{J}_{24} \quad \vec{J}_{15}, \vec{J}_{25} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}\\
+\hline
+Matrix size - 6, Jordan size-1+1+1+1+1+1 & $\vec{J_1}$ and $\vec{J_2}$ will have same number of blocks because of (3).
+\\&
+\parbox{12cm}{\begin{align*}
+    \vec{J_1}=\myvec{\vec{J}_{11}&0&0&0&0&0 \\ 0&\vec{J}_{12}&0&0&0&0 \\ 0&0&\vec{J}_{13}&0&0&0\\ 0&0&0&\vec{J}_{14}&0&0\\ 0&0&0&0&\vec{J}_{15}&0\\ 0&0&0&0&0&\vec{J}_{16}} \quad 
+    \vec{J_2}=\myvec{\vec{J}_{21}&0&0&0&0&0 \\ 0&\vec{J}_{22}&0&0&0&0 \\ 0&0&\vec{J}_{23}&0&0&0\\ 0&0&0&\vec{J}_{24}&0&0\\ 0&0&0&0&\vec{J}_{25}&0\\ 0&0&0&0&0&\vec{J}_{26}}\\
+    \vec{J}_{11}, \vec{J}_{21} \quad \vec{J}_{12}, \vec{J}_{22} \quad \vec{J}_{13}, \vec{J}_{23} \quad \vec{J}_{14}, \vec{J}_{24} \quad \vec{J}_{15}, \vec{J}_{25} \text{ and } \vec{J}_{16}, \vec{J}_{26} \text{ are similar }, \\
+    \vec{J}_{1}, \vec{J}_{2} \text{ are similar }\\
+    \implies \vec{N}_{1}, \vec{N}_{2} \text{ are similar }
+\end{align*}}\\
+\hline
+$7 \times 7$ Nielpotent matrix & 
+Let us take a counter example,\\
+& Matrix size - 7, Jordan block size - 3+3+1 and 3+2+2\\
+& \parbox{10cm}{\begin{align}
+    \vec{J_1} = \myvec{0&0&0&0&0&0&0\\1&0&0&0&0&0&0\\0&1&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&1&0&0&0\\0&0&0&0&1&0&0\\0&0&0&0&0&0&0} \quad 
+    \vec{J_2} = \myvec{0&0&0&0&0&0&0\\1&0&0&0&0&0&0\\0&1&0&0&0&0&0\\0&0&0&0&0&0&0\\0&0&0&1&0&0&0\\0&0&0&0&0&0&0\\0&0&0&0&0&1&0} 
+\end{align}}\\
+& From above, $\vec{J_1}$ and $\vec{J_2}$ are not same.\\
+&Hence $\vec{N_1}$ and $\vec{N_2}$ are not similar.\\
+\hline
+\caption{Solution}
+\label{eq:solutions/7/3/11/table}
+\end{longtable}

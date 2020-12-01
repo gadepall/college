@@ -1,0 +1,91 @@
+	
+	\begin{theorem}\label{eq:solutions/6/3/11/thm1}
+		If $\mathbf{T}$ is a linear operator on a finite-dimensional space $\vec{V}$ and c is a characteristic value of $\mathbf{T}$, then the operator $(c\vec{I}-\mathbf{T})$ is singular, i.e.
+		\begin{align}
+			det\left(c\vec{I}-\mathbf{T}\right) = 0 \nonumber
+		\end{align} 
+	\end{theorem}
+	\begin{theorem}\label{eq:solutions/6/3/11/thm2}
+		If $\vec{A}$ and $\vec{B}$ are $n\times n$ matrix, then ($\vec{I}-\vec{AB}$) is invertible if and only if ($\vec{I}-\vec{BA}$) is invertible. 
+	\end{theorem}
+	
+	
+	To prove that $\vec{AB}$ and $\vec{BA}$ have the same characteristic values in $\mathbf{F}$, we can use theorem $\ref{eq:solutions/6/3/11/thm1}$ and show
+	\begin{align}
+%\label{eq:solutions/6/3/11/eq1}
+		det\left(c\vec{I}-\mathbf{AB}\right) = det\left(c\vec{I}-\mathbf{BA}\right) = 0
+	\end{align}
+	
+	That is, if $c$ is a characteristic value for $\vec{AB}$ then $c$ is a characteristic value for $\vec{BA}$ as well. Which can be also said as, if $c$ is not the characteristic value of $\vec{BA}$ then it won't be the characteristic value for $\vec{AB}$. \\
+	
+	Let's say $c$ is not a characteristic value of the matrix $\vec{BA}$, which would imply that 
+	
+	\begin{align}\label{eq:solutions/6/3/11/eq1}
+		det(c\vec{I}-\mathbf{BA}) \neq 0
+	\end{align}
+	
+	There are two cases for this:
+	
+	\begin{enumerate}
+		\item $\textbf{c = 0}$ \\
+		In this case $det(- \vec(BA)) \neq 0$. 	
+		\begin{align}
+			det(- \vec(BA)) &= (-1)^{n} \ det(\vec{B}) \ det(\vec{A}) \nonumber\\ 
+			&= (-1)^{n} \ det(\vec{A}) \ det(\vec{B}) \nonumber\\ 
+			&= det(- \vec{AB}) \nonumber\\
+			&= det(c\vec{I} - \vec{AB}) \nonumber
+		\end{align}
+		From $\eqref{eq:solutions/6/3/11/eq1}$ we can write this as
+		\begin{align}
+			det(c\vec{I}-\vec{AB}) \neq 0
+		\end{align}
+		
+		
+		\item $\textbf{c $\neq$ 0}$ \\
+		In this case 
+		\begin{align}
+			c\vec{I} - \vec{BA} &= c \ \left(\vec{I} - \frac{1}{c}\vec{BA}\right) \nonumber\\
+			\implies det\left(c\left(\vec{I} - \frac{1}{c}\vec{BA}\right)\right) &= c^{n} \ det\left(\vec{I}-\frac{1}{c}\vec{BA}\right) \nonumber
+		\end{align}	
+		
+		From $\eqref{eq:solutions/6/3/11/eq1}$, we get
+		
+		\begin{align}
+			c^{n} \ det\left(\vec{I}-\frac{1}{c}\vec{BA}\right) \neq 0  \nonumber
+		\end{align}
+		
+		Therefore, $\left(\vec{I} - \frac{1}{c}\vec{BA}\right)$ is invertible. From theorem $\ref{eq:solutions/6/3/11/thm2}$ we can say $\left(\vec{I} - \frac{1}{c}\vec{AB}\right)$ is invertible. 
+		
+		\begin{align}
+			\implies det\left(\vec{I} - \frac{1}{c}\vec{AB}\right) &\neq 0 \nonumber\\
+			\implies c^{n} \ det\left(\vec{I} - \frac{1}{c}\vec{AB}\right) &\neq 0 \nonumber\\
+			\implies det\left(c\vec{I} - \vec{AB}\right) &\neq 0
+		\end{align}
+		
+		
+		
+	\end{enumerate}
+	
+	After proving both the cases of $c = 0$ and $c \neq 0$ we say that the characteristic value $c$ must be the same.\\$\therefore$ $\vec{AB}$ and $\vec{BA}$ have the same characteristic values. \\
+	
+	After proving both the above statements, we can say that the two polynomials of degree $n$ with exactly the same roots, will be equal in nature. So, the characteristic polynomials are equal. \\
+	
+	Even though the characteristic polynomials are same, they may not necessarily be the same minimal polynomial.
+	
+	Lets take the below examples
+	
+	\begin{align}
+		\vec{A} = \myvec{0&1\\0&0} \\
+		\vec{B} = \myvec{0&0\\0&1}
+	\end{align}
+	We get the matrices $\vec{AB}$ and $\vec{BA}$ as
+	
+	\begin{align}
+		\vec{AB} = \myvec{0&1\\0&0} \\
+		\vec{BA} = \myvec{0&0\\0&0}
+	\end{align}
+	Then $\vec{AB} = \vec{A}$, whereas $\vec{BA}$ is the zero matrix. Since $\vec{A^2} = 0$ and $\vec{A} \neq 0$, the minimal polynomial of $\vec{AB}$ is $x^2$, whereas the minimal polynomial of $\vec{BA}$ is $x$.
+	
+	$\therefore$, $\vec{AB}$ and $\vec{BA}$ have the same characteristic polynomial, but the minimal polynomials are not the same.
+	
+	
