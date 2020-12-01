@@ -1,0 +1,64 @@
+See Table \ref{eq:solutions/6/6/1/table:2}
+
+\onecolumn
+\begin{longtable}{|l|l|}
+\hline
+\multirow{3}{*}{Assumption and Claim} & \\
+&Let $\beta=\{\vec{u}_1,.....,\vec{u}_n\}$ be a basis for $\mathbb{W}_1$.Since $\mathbb{W}_1$ is the subspace of $\mathbb{V}$.\\
+&\\
+& therefore let us take  $\alpha=\{\vec{u}_1,.....,\vec{u}_n,\vec{u}_{n+1},....,\vec{u}_m\}$ the basis of $\mathbb{V}$\\
+&\\
+&So $\mathbb{W}_2$=span\brak{\{\vec{u}_{n+1},......,\vec{u}_m\}}\\
+&\\
+&Claim that $\mathbb{V}=\mathbb{W}_1\oplus\mathbb{W}_2$.\\
+&\\
+
+\hline
+
+\multirow{3}{*}{Proof of $\mathbb{V}=\mathbb{W}_1 + \mathbb{W}_2$} & \\
+&if $\vec{v}\in \mathbb{V}$, then  \\
+&\\
+& $\vec{v}=\sum_{i=1}^{m}a_i\vec{u}_i=\sum_{i=1}^{n}a_i\vec{u}_i + \sum_{i=n+1}^{m}a_i\vec{u}_i\in \mathbb{W}_1+\mathbb{W}_2$ for scalar $a_i$ , $i=1,....,m$ \\
+&\\
+&This implies that $\mathbb{V}\subseteq\mathbb{W}_1 +\mathbb{W}_2$ But by the defination  of $\mathbb{W}_1 + \mathbb{W}_2$ \\
+&\\
+&we know that $\mathbb{W}_1 + \mathbb{W}_2 \subseteq\mathbb{V}$.\\
+&\\
+&Hence $\mathbb{V}=\mathbb{W}_1+\mathbb{W}_2$\\
+&\\
+\hline
+\multirow{3}{*}{Proof of $\mathbb{W}_1\cap\mathbb{W}_2=\{0\}$} & \\
+&Let $\vec{u}\in\mathbb{W}_1\cap\mathbb{W}_2$\\ 
+&\\
+&Then $\vec{u}=\sum_{i=1}^{n}b_i\vec{u}_i=\sum_{i=n+1}^{m}c_i\vec{u}_i$ for some scalar $b_1,....b_n,c_{n+1},.....,c_m$\\
+&\\
+&$\implies \sum_{i=1}^{n}b_i\vec{u}_i + \sum_{i=n+1}^{m}\brak{-c_i}\vec{u}_i =0$\\
+&\\
+&But $\alpha$ is linearly independent ,since $\alpha$ is a basis. \\
+&\\
+&Hence $b_1=.....=b_n=c_{n+1}.....=c_m=0$.This implies $\vec{u}=0$.\\ 
+&\\
+& Thus $\mathbb{W}_1\cap\mathbb{W}_2=\{0\}$\\
+&\\
+
+\hline
+\multirow{3}{*}{Combining Both the proof} & \\
+&$\mathbb{V}=\mathbb{W}_1+\mathbb{W}_2$\\
+&\\
+&$\mathbb{W}_1\cap\mathbb{W}_2=\{0\}$\\
+
+\hline
+&\\
+
+&From  the above two condition we can say that $\mathbb{V}$ is the direct sum of \\
+&\\
+&subspaces $\mathbb{W}_1$ and $\mathbb{W}_2$ . Hence it is represented as\\
+&\\
+&$\mathbb{V}=\mathbb{W}_1\oplus\mathbb{W}_2$\\
+&\\
+&Hence Proved.\\
+\hline
+\caption{Solution Table}
+\label{eq:solutions/6/6/1/table:2}
+\end{longtable}
+\twocolumn

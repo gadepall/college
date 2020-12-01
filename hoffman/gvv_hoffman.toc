@@ -8,28 +8,29 @@
 \contentsline {subsection}{\numberline {2.1}Vector Spaces}{39}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Subspaces}{42}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Bases and Dimension}{50}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Coordinates}{58}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{65}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Linear Transformations}{72}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Linear Transformations}{72}{subsection.3.1}%
+\contentsline {subsection}{\numberline {2.4}Coordinates}{59}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Summary of Row Equivalence}{66}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Linear Transformations}{73}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Linear Transformations}{73}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{82}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Isomorphism}{94}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{103}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Linear Functionals}{114}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}The Double Dual}{124}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{128}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Polynomials}{132}{section.4}%
-\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{132}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{146}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{154}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Determinants}{156}{section.5}%
-\contentsline {section}{\numberline {6}Elementary Canonical Forms}{156}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Characteristic Values}{156}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Annihilating Polynomials}{175}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Invariant Subspaces}{185}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Simultaneous Triangulation; Simultaneous Diagonalization}{190}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Direct Sum Decomposition}{196}{subsection.6.5}%
-\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{198}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{198}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}The Jordan Form}{198}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{207}{subsection.7.3}%
+\contentsline {subsection}{\numberline {3.3}Isomorphism}{95}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{104}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Linear Functionals}{115}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}The Double Dual}{125}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{129}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Polynomials}{133}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{133}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{147}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{155}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Determinants}{157}{section.5}%
+\contentsline {section}{\numberline {6}Elementary Canonical Forms}{157}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Characteristic Values}{157}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Annihilating Polynomials}{179}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Invariant Subspaces}{196}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Simultaneous Triangulation; Simultaneous Diagonalization}{201}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Direct Sum Decomposition}{207}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Invariant Direct Sums}{216}{subsection.6.6}%
+\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{218}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{218}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}The Jordan Form}{218}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{227}{subsection.7.3}%

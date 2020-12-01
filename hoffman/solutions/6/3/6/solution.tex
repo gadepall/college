@@ -1,0 +1,102 @@
+See Tables \ref{eq:solutions/6/3/6/table:1} and \ref{eq:solutions/6/3/6/table:2}
+
+\begin{table*}[ht!]
+\centering
+\begin{tabular}{|c|l|}
+    \hline
+	\multirow{3}{*}{Characteristic Polynomial} 
+	& \\
+	& For an $n\times n$ matrix $\vec{A}$, characteristic polynomial is defined by,\\
+	&\\
+	& $\qquad\qquad\qquad p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Cayley-Hamilton Theorem}
+    &\\
+    & If $p\brak{x}$ is the characteristic polynomial of an $n\times n$ matrix $\vec{A}$, then,\\
+    &\\
+    &$\qquad \qquad \qquad p\brak{\vec{A}}=\vec{0}$\\
+    &\\
+    \hline
+	\multirow{3}{*}{Minimal Polynomial} 
+	&\\
+	& Minimal polynomial $m\brak{x}$ is the smallest factor of characteristic polynomial\\
+	& $p\brak{x}$ such that,\\
+	&\\
+	& $\qquad \qquad \qquad m\brak{\vec{A}}=0$\\
+	& \\
+	& Every root of characteristic polynomial should be the root of minimal\\
+	& polynomial\\
+	&\\
+    \hline
+\end{tabular}
+    \caption{Definitions}
+\label{eq:solutions/6/3/6/table:1}
+\end{table*}
+
+\onecolumn
+\begin{longtable}{|l|l|}
+\hline
+\multirow{3}{*}{} & \\
+Statement&Solution\\
+\hline
+&\\
+Assuming matrix $\vec{A}$ as follows:&Let us Consider 3 $\times$ 3 upper triangular matrix,\\
+&\parbox{6cm}{\begin{align*}
+    \vec{A}=\myvec{e&a&b\\0&f&c\\0&0&d}
+\end{align*}}\\
+\hline
+Characteristic polynomial of $\vec{A}$&
+\parbox{6cm}{\begin{align*}
+    \mydet{x\vec{I}-\vec{A}}&=\myvec{x-e&-a&-b\\0&x-f&-c\\0&0&x-d}\\
+    &=(x-e)(x-f)(x-d)
+\end{align*}}\\
+\hline
+&\\
+Given&The minimum polynomial is\\
+&\parbox{6cm}{\begin{align*}
+    p(x)&=x^2
+\end{align*}}\\
+&Therefore p(x) must divide characteristic polynomial.\\
+&This will be satisfied only if the values e,f,d are zeros.\\
+&\\
+\hline
+&\\
+Characteristic polynomial&\\
+when e=0,f=0 and d=0&\parbox{6cm}{\begin{align*}
+    \mydet{x\vec{I}-\vec{A}}&=x^3
+\end{align*}}\\
+&\\
+\hline
+&\\
+Since $p(x)=x^2$&\\
+Hence $ p(\vec{A})=\vec{A}^2=\vec{0}_{3\times3}$&Therefore calculating $p(\vec{A})$ as follows:\\
+&\parbox{6cm}{\begin{align*}
+    \myvec{0&a&b\\0&0&c\\0&0&0} \myvec{0&a&b\\0&0&c\\0&0&0}&=\vec{0}_{3\times3}\\
+    \myvec{0&0&ac\\0&0&0\\0&0&0}&=\vec{0}_{3\times3}
+\end{align*}}\\
+&\\
+\hline
+\pagebreak
+\hline
+&\\
+&For $\vec{A}^2$ to be a zero matrix, either a=0 or c=0\\
+With entries a=0,e=0,f=0,d=0&\\
+The matrix $\vec{A}$ will be:&\\
+For b=1,c=1&\parbox{6cm}{\begin{align*}
+    \vec{A}&=\myvec{0&0&b\\0&0&c\\0&0&0}\\
+    \vec{A}&=\myvec{0&0&1\\0&0&1\\0&0&0}
+\end{align*}}\\
+\hline
+&\\
+Conclusion&Thus the matrix,\\
+&\parbox{6cm}{\begin{align*}
+        \vec{A}&=\myvec{0&0&1\\0&0&1\\0&0&0}
+\end{align*}}\\
+&has the minimal polynomial as $x^2$.\\
+&\\
+\hline
+\caption{Solution summary}
+\label{eq:solutions/6/3/6/table:2}
+\end{longtable}
+\twocolumn

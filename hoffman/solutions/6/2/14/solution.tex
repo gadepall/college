@@ -1,0 +1,230 @@
+Let consider we have a matrix $A$ which is a diagonal matrix, which is  given as 
+\begin{align}  
+	 A =  \myvec{
+	c_{1}I & 0        & 0  & \dots & 0     & 0 \\ 
+	0      &  c_{2}I  & 0  & \dots & 0     & 0 \\ 
+	0      &  0       & 0  & \dots & .     & . \\
+	.      &  .       & .  & \dots & .     & .  \\
+	0     &  0        & .  & \dots & .     & c_{k}I\\ 
+}
+\end{align}
+ Consider $B$ as :
+ \begin{align}  
+ B =  
+ \myvec{
+ B_{11}    & B_{12}   & . & \dots   & . & B_{1k}  \\ 
+ B_{21}    & B_{22}   & . & \dots   & . & B_{2k} \\ 
+ .         &  .       & . & \dots   & . & . \\
+ .         &  .       & . & \dots   & . & .  \\
+ B_{k1}    & B_{k2}   & . & \dots   & . & B_{kk} \\
+}
+ \end{align} 
+Where $B_{ij}$ has dimension $d_{i} \times d_{j}$. Since  we have given ,
+\begin{align}
+AB = BA
+\end{align}
+\begin{multline}
+\implies   \myvec{
+c_1B_{11}    & c_1B_{12}   & . & \dots   & . & c_1B_{1k}  \\ 
+c_2B_{21}    &c_2 B_{22}   & . & \dots   & . & c_2B_{2k} \\ 
+.         &  .       & . & \dots   & . & . \\
+.         &  .       & . & \dots   & . & .  \\
+c_kB_{k1}    & c_kB_{k2}   & . & \dots   & . & c_kB_{kk} \\
+} =  \\ \\ \myvec{
+c_1B_{11}    & B_{12}   & . & \dots   & . & c_1B_{1k}  \\ 
+c_2B_{21}    & B_{22}   & . & \dots   & . &c_2 B_{2k} \\ 
+.         &  .       & . & \dots   & . & . \\
+.         &  .       & . & \dots   & . & .  \\
+c_kB_{k1}    & c_kB_{k2}   & . & \dots   & . & c_kB_{kk} \\
+} \label{eq:solutions/6/2/14/2.4}
+\end{multline}
+ Hence, from above  equation \eqref{eq:solutions/6/2/14/2.4} we can conclude,
+ \begin{align}
+ c_i \neq c_j, \forall i \neq j\\
+ \implies B_{ij} = 0, \forall i \neq j
+ \end{align}
+We can have $B_{11}, B_{22} \dots$ any arbitrary matrices. From \eqref{eq:solutions/6/2/14/2.4} we can have  
+\begin{align}
+ D(B_{ij}) = d_i^{2} 
+ \end{align}
+Where D  represents dimension of matrix. Therefore the dimension of the space of all such $B_{ij}{'}$s matrices is given as :
+\begin{align}
+{d_1}^2 + {d_2}^2 \dots + {d_k}^2
+\end{align}
+
+
+Let suppose we have matrix $A$ as :
+\begin{align}  
+A =  \myvec{
+c_1I & \vec{0} \\
+\vec{0}  & c_2I \\    
+}
+\intertext{Where,}   
+c_1I = \myvec{
+1 & 0 \\
+0& 1  \\   
+},
+c_2I = \myvec{
+2 & 0 \\
+0 & 2  \\   
+}
+\end{align}
+\begin{align}  
+\implies A =  \myvec{
+1 & 0  & 0 & 0 \\ 
+0 & 1  & 0 & 0  \\
+0 & 0  & 2 & 0  \\
+0 & 0  & 0 & 2  \\  
+}
+\end{align}
+
+and $B$ as :
+\begin{align}  
+B =  \myvec{
+B_{11} & B_{12}\\ 
+ B_{21}  & B_{22} \\ 
+}\\
+\intertext{Where,}
+B_{11} =  \myvec{
+b_{11} & b_{12}\\ 
+b_{21}  & b_{22}  \\
+},
+B_{12} =  \myvec{
+b_{13} & b_{14}\\ 
+b_{23}  & b_{24}\\  
+}\\ \\
+B_{21} =  \myvec{
+b_{31} & b_{32}\\
+b_{41}  & b_{42}  
+},
+B_{22} =  \myvec{
+b_{33} & b_{34}\\ 
+b_{43}  & b_{44}  
+}\\ \\
+ \implies B =  \myvec{
+b_{11} & b_{12}  & b_{13} & b_{14} \\ 
+b_{21} & b_{22}  & b_{23} & b_{24}  \\
+b_{31} & b_{32}  & b_{33} & b_{34}  \\
+b_{41} & b_{42}  & b_{43} & b_{44}   \\ 
+}
+\intertext{Consider,}
+C = AB\\
+\implies C = \myvec{
+b_{11} & b_{12}  & b_{13} & b_{14} \\ 
+b_{21} & b_{22}  & b_{23} & b_{24}  \\
+2b_{31} & 2b_{32}  & 2b_{33} & 2b_{34}  \\
+2b_{41} & 2b_{42}  & 2b_{43} & 2b_{44}   \\ 
+}
+\intertext{Let another matrix D as :}
+D = BA\\
+B =  \myvec{
+b_{11} & b_{12}  & 2b_{13} & 2b_{14} \\ 
+b_{21} & b_{22}  & 2b_{23} & 2b_{24}  \\
+b_{31} & b_{32}  & 2b_{33} & 2b_{34}  \\
+b_{41} & b_{42}  & 2b_{43} & 2b_{44}  \\  
+}
+\end{align}
+We have given as,
+\begin{align}
+BA = AB\\
+\implies C = D
+\end{align}
+\begin{align}
+\intertext{it is possible only when,}
+b_{13}= b_{14} = b_{23}= b_{24} = 0 \\
+\intertext{And,}
+ b_{31} = b_{32} = b_{41} = b_{42} = 0
+ \end{align}
+ \begin{align}
+B_{12} =  \myvec{
+b_{13} & b_{14}\\ 
+b_{23}  & b_{24}\\  
+} =  \myvec{
+0 & 0\\ 
+0  & 0 \\ 
+}\\ 
+\intertext{And,}
+B_{21} =  \myvec{
+b_{31} & b_{32}\\
+b_{41}  & b_{42} \\ 
+}  =  \myvec{
+0 & 0\\ 
+0  & 0  \\
+} 
+\end{align}
+Hence, therefore matrix $B$ becomes,
+\begin{align}
+B =  \myvec{
+b_{11} & b_{12}  & 0       & 0 \\ 
+b_{21} & b_{22}  & 0       & 0  \\
+0      & 0       & 2b_{33} & 2b_{34}  \\
+0      & 0       & 2b_{43} & 2b_{44}  \\  
+}\\
+\implies B =  \myvec
+{
+c_1B_{11} & \vec{0} \\ 
+\vec{0}   & c_2B_{22} \\ 
+}\\
+\implies B_{ij} = 0, \forall i \neq j
+\end{align}
+
+Now the basis of the $n \times n $  matrices for vector space of all $n \times n$ matrix B are,
+\begin{align}
+\beta_1 =  \myvec{
+1 & 0  & 0 & 0 \\ 
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0  \\  
+},
+ \beta_2 =  \myvec{
+0 & 1  & 0 & 0 \\ 
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0  \\  
+}\\
+\beta_3 =  \myvec{
+0 & 0  & 0 & 0 \\ 
+1 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0  \\  
+},
+\beta_4 =  \myvec{
+0 & 0  & 0 & 0 \\ 
+0 & 1  & 0 & 0  \\
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0   \\ 
+}\\
+\beta_5 =  \myvec{
+0 & 0  & 0 & 0 \\ 
+0 & 0  & 0 & 0  \\
+0 & 0  & 1 & 0  \\
+0 & 0  & 0 & 0\\    
+},
+\beta_6 =  \myvec{
+0 & 0  & 0 & 0 \\ 
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 1  \\
+0 & 0  & 0 & 0  \\  
+}\\
+\beta_7 =  \myvec{
+1 & 0  & 0 & 0 \\ 
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0  \\
+0 & 0  & 1 & 0   \\ 
+},
+\beta_8 =  \myvec{
+0 & 0  & 0 & 0 \\ 
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 0  \\
+0 & 0  & 0 & 1   \\ 
+},
+\end{align}
+Thus, Dimension of $\mathbf{V}$ $($vector space of all $n \times n$ matrices $ B ) = 8,$
+\begin{align}
+\intertext{Also}
+ {d_1}^{2} + d{_2}^2 = 2^{2}+2^{2} = 8. 
+ \end{align}
+Therefore, Dimension of $\mathbf{V}$ $($vector space of all $ n \times n$ matrix $B$ is :
+\begin{align}
+ d_1^2+d_2^2
+ \end{align}

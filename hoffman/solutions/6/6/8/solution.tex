@@ -1,0 +1,37 @@
+\begin{enumerate}
+\item[a)]From the given,
+\begin{align}
+E_1+...+E_k =\vec{I}\\
+E_i = \vec{I}-E_1-...-E_{i-1}-E_{i+1}-...-E_k\\
+E_i^2 = E_i\brak{\vec{I}-E_1-...-E_{i-1}-E_{i+1}-...-E_k}\\
+E_i^2 = E_i-E_iE_1..-E_iE_{i-1}-E_iE_{i+1}-..-E_iE_k\\
+\implies E_i^2 = E_i -\sum_{i\neq j}E_iE_j
+\end{align}
+substituting $E_iE_j = 0$ for $i\neq j$ in the above equation we get,
+\begin{align}
+E_i^2 = E_i -0\\
+\implies E_i^2 = E_i
+\end{align}
+Hence proved if $E_iE_j = 0$ for $i\neq j$, then $E_i^2=E_i$
+\item[b)] Using,
+\begin{align}
+E_1+E_2=\vec{I} \label{eq:solutions/6/6/8/eq:1}
+\end{align}
+Multiplying both sides by $E_1$,
+\begin{align}
+E_1(E_1+E_2) = E_1 \\
+\implies E_1^2 +E_1E_2 = E_1 
+\end{align}
+Substituting $E_1^2=E_1$ in \eqref{eq:solutions/6/6/8/eq:1} we get,
+\begin{align}
+\implies E_1 +E_1E_2 = E_1\\
+\implies E_1E_2 = 0 \label{eq:solutions/6/6/8/eq:2}
+\end{align}
+Similarly multiplying on both sides of \eqref{eq:solutions/6/6/8/eq:1}and substituting $E_2^2= E_2$ we get,
+\begin{align}
+\implies E_1E_2+ E_2^2 =E_2\\
+\implies E_1E_2 +E_2 =E_2\\
+\implies E_1E_2= 0 \label{eq:solutions/6/6/8/eq:3}
+\end{align}
+Hence proved from \eqref{eq:solutions/6/6/8/eq:2} and \eqref{eq:solutions/6/6/8/eq:3} that if $E_1+E_2=\vec{I}$ and $E_1^2 = E_1$, $E_2^2= E_2$, then $E_1E_2=0$
+\end{enumerate}

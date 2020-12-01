@@ -1,0 +1,85 @@
+	
+	\begin{theorem}\label{eq:solutions/6/6/7/thm1}
+		If $\vec{V}$ is a vector space, a projection of $\vec{V}$ is a linear operator $\mathbf{E}$ on $\vec{V}$ such that $\mathbf{E}^2$ = $\mathbf{E}$. Let $\mathbf{R}$ be the range and let $\mathbf{N}$ be the nullspace of $\mathbf{E}$. Then the vector space $\vec{V}$ can be written as $\Vec{V} = \mathbf{R} \bigoplus \mathbf{N}$. This operator is called as projection on $\mathbf{R}$ along $\mathbf{N}$. 
+	\end{theorem}
+	
+	
+	It is given that $\mathbf{E}$ is the projection. From thorem $\ref{eq:solutions/6/6/7/thm1}$, the linear operator $\mathbf{E}$ will satisfy $\mathbf{E}^{2} = \mathbf{E}$. Let's check whether $\mathbf{I-E}$ is also a projection. 
+	
+	\begin{align}\label{eq:solutions/6/6/7/eq1}
+		(\Vec{I}-\vec{E})^{2} &= \Vec{I}^{2} + \Vec{E}^{2} - 2\Vec{I}\Vec{E} \nonumber \\
+		&= \Vec{I} + \Vec{E} - 2\Vec{E} \nonumber \\
+		&= (\Vec{I} - \Vec{E})
+	\end{align}
+	
+	From $\eqref{eq:solutions/6/6/7/eq1}$, we can say that $(\Vec{I} - \Vec{E})$ is also a projector. But $(\Vec{I} - \Vec{E})$ is called as the "Complementary Projector", i.e.
+	\begin{align}
+		range(\Vec{I} - \Vec{E}) &= null(\Vec{E}) \label{eq:solutions/6/6/7/eq2}\\
+		null(\Vec{I} - \Vec{E}) &= range(\Vec{E}) \label{eq:solutions/6/6/7/eq3}
+	\end{align}
+	
+	Lets take a vector $\Vec{v}$ such that $\Vec{Ev} = 0$, where $\vec{v}$ is in the null space of $\vec{E}$. Then, 
+	
+	\begin{align}
+		(\Vec{I} - \Vec{E})\vec{v} &= \vec{v} - \vec{v}\vec{E} \nonumber \\
+		&= \vec{v}
+	\end{align}
+	In other words, any $\Vec{v}$ in the nullspace of $\Vec{E}$ is also in the range of $(\Vec{I} - \Vec{E})$.  
+	We know that any $\vec{x} \in range(\Vec{I} - \Vec{E})$ is characterized by
+	\begin{align}
+		\Vec{x} &= (\Vec{I} - \Vec{E})\Vec{v} \quad \textit{, for some $\Vec{v}$} \nonumber \\
+		&= \Vec{v} - \Vec{Ev} \nonumber \\
+		&= - \ (\Vec{Ev} - \Vec{v})
+	\end{align}
+	Now we need to check if $\Vec{x}$ is in the nullspace of $\Vec{E}$. i.e. $\Vec{Ex} = 0$
+	\begin{align}
+		\Vec{E}(- \ (\Vec{Ev} - \Vec{v})) &= -(\Vec{E}^{2}\Vec{v} - \Vec{E}\Vec{v}) \nonumber \\
+		&= -(\Vec{E}\Vec{v} - \Vec{E}\Vec{v}) \quad (\textit{$\because$ $\vec{E}$ is a projection}) \nonumber \\
+		&= 0
+	\end{align}
+	
+	Thus, if $\vec{x} \in range(\Vec{I} - \Vec{E})$, then $\Vec{x} \in null(\Vec{E})$.\\
+	
+	Therefore, we can say that $null(\Vec{E}) = range(\Vec{I} - \Vec{E})$. \\
+	
+	We can use the same argument as above for proving $\eqref{eq:solutions/6/6/7/eq3}$, by taking $\Vec{E} = \Vec{I} - (\Vec{I} - \Vec{E})$.\\
+	
+	$\therefore$ we can say that $(\Vec{I} - \Vec{E})$ is the projection on $\mathbf{N}$ along $\mathbf{R}$.\\
+	
+	As an example, lets take the below matrix.
+	
+	\begin{align}\label{eq:solutions/6/6/7/eq4}
+		\vec{A} = \myvec{\frac{2}{3}&&\frac{1}{3}&&\frac{1}{3}\\
+			\frac{1}{3}&&\frac{2}{3}&&\frac{-1}{3}\\
+			\frac{1}{3}&&\frac{-1}{3}&&\frac{2}{3}}
+	\end{align}
+	
+	We can check that the matrix in $\eqref{eq:solutions/6/6/7/eq4}$ satisfies the condition $\vec{A}^{2}$ = $\vec{A}$. Thus, $\vec{A}$ is a projection matrix.
+	
+	\begin{align}\label{eq:solutions/6/6/7/eq5}
+		(\vec{I-A}) &= \myvec{1&&0&&0\\
+			0&&1&&0\\
+			0&&0&&1} - \myvec{\frac{2}{3}&&\frac{1}{3}&&\frac{1}{3}\\
+			\frac{1}{3}&&\frac{2}{3}&&\frac{-1}{3}\\
+			\frac{1}{3}&&\frac{-1}{3}&&\frac{2}{3}} \nonumber\\
+		(\vec{I-A}) &= \myvec{\frac{1}{3}&&\frac{-1}{3}&&\frac{-1}{3}\\
+			\frac{-1}{3}&&\frac{1}{3}&&\frac{1}{3}\\
+			\frac{-1}{3}&&\frac{1}{3}&&\frac{1}{3}}
+	\end{align} 
+	
+	We can check that the matrix in $\eqref{eq:solutions/6/6/7/eq5}$ satisfies the condition $(\vec{I-A})^{2}$ = $(\vec{I-A})$. Thus, $(\vec{I-A})$ is a projection matrix.
+	
+	Null space of $\vec{A}$ is given by
+	\begin{align}\label{eq:solutions/6/6/7/eq6}
+		null(\Vec{A}) &= b \myvec{-1\\1\\1} \quad ( \textit{'b' is any real number})
+	\end{align}
+	
+	Range of $(\vec{I-A})$ is given by
+	\begin{align}\label{eq:solutions/6/6/7/eq7}
+		range(\Vec{I-A}) &= a \myvec{\frac{1}{3}\\\frac{-1}{3}\\\frac{-1}{3}} \quad ( \textit{'a' is any real number}) \nonumber \\
+		&= a \left(\frac{-1}{3}\right) \myvec{-1\\1\\1} \nonumber\\
+		&= a \myvec{-1\\1\\1}
+	\end{align}
+	
+	$\therefore$ from $\eqref{eq:solutions/6/6/7/eq6}$ and $\eqref{eq:solutions/6/6/7/eq7}$, we can say that $(\Vec{I-A})$ is a projection matrix on $\vec{N}$ along $\vec{R}$.
+	

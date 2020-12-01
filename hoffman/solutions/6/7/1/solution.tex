@@ -1,0 +1,44 @@
+See Table     \ref{eq:solutions/6/7/1/table:1}
+\onecolumn
+%
+\begin{longtable}{|c|l|}
+    \hline
+	\multirow{3}{*}{Proof of $ETE$ = $TE$} 
+	& \\
+	& Any projection $E$ is represented by a matrix that is a part of an identity matrix\\
+	& Assume the Basis can be defined as follows:\\
+	& $B$ = $\{\alpha_1,...,\alpha_r,....,\alpha_n\}$\\
+	& such that $E_{ii}$ = 1 for i $\le$ r and 0 elsewhere\\
+	& $E_{B}$ = $\myvec{$I$ & 0 \\ 0 & 0}$\\
+	& where $I$ is the $r$ $\times$ $r$ matrix\\
+	& Let $\alpha$ = $\brak{a_1,....,a_n}$\\
+	& $\implies$ $T\brak{E_{\alpha}}$ = $T\brak{a_1,...,a_r,...0}$ = $\beta$ \\
+	& If we assume $T$ to be invariant over the range $W$ of $E$, then $\beta$ $\in$ $W$ \\
+	& $\beta$ = $\brak{\beta_1,...,\beta_r,...,0}$, $E_{\beta}$ = $\beta$\\
+	& Therefore, $ETE$ = $TE$ \\
+	&\\
+	\hline
+	\multirow{3}{*}{Proof of $ET$ = $TE$} 
+	& \\
+	& Consider the same assumption for basis $B$ and projection $E$ as defined above.\\
+	& $B$ = $\{\alpha_1,...,\alpha_r,....,\alpha_n\}$\\
+	& $E_{B}$ = $\myvec{$I$ & 0 \\ 0 & 0}$\\
+	& where $I$ is the $r$ $\times$ $r$ matrix\\
+	& Let $TE$ $\ne$ $ET$, then there exists some vector $V$ such that \\
+	& $T\brak{a_1,...,a_r,...0}$ $\ne$ $\brak{Ta_1,...,Ta_r,...,0}$\\
+	& But for this case, $T$ is not an invariant of $W$.\\
+	& Assuming that $T$ is an invariant of $W$,$T\brak{a_1,...,a_r,...0}$ $\in$ $W$ for all $\alpha$ $\in$ $W$.\\
+	& Therefore, $T\brak{a_1,...,a_r,...0}$ = $\brak{Ta_1,...,Ta_r,...,0}$ $\implies$ $ET$ = $TE$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Conclusion} & \\
+	& Hence, it is proved that the range of $E$ is invariant under $T$ if and only if\\
+	& $ETE$ = $TE$.\\
+	& And both the range and null space of $E$ are invariant under $T$ if and only if\\
+	& $TE$ = $ET$.\\
+	&\\
+	\hline
+	\caption{Illustration of Proof}
+    \label{eq:solutions/6/7/1/table:1}
+\end{longtable}
+\twocolumn

@@ -1,0 +1,36 @@
+Given , 
+\begin{center}
+    $\vec{E}$ is the projection\\
+    $f$ is a polynomial
+\end{center}
+\begin{align}
+    f(\vec{E})=a\vec{I}+\vec{b}\vec{E}\label{eq:solutions/6/6/5/given}
+\end{align}
+Let ,
+\begin{align}
+    f(x)=c_0+c_1x+c_2x^2+\dots+c_nx^n
+\end{align}
+Then,$f(\vec{E})$ can be written as,
+\begin{align}
+    f(\vec{E})=c_0\vec{I}+c_1\vec{E}+c_2\vec{E}^2+\dots+c_n\vec{E}^n \label{eq:solutions/6/6/5/main}
+\end{align}
+Since $\vec{E}$ is the projection, 
+\begin{align}
+    \vec{E}^2&=\vec{E} \label{eq:solutions/6/6/5/1}\\
+    \vec{E}^k&=\vec{E} \hspace{0.5cm}\text{for any } k>1 \label{eq:solutions/6/6/5/2}
+\end{align}
+Using equations \eqref{eq:solutions/6/6/5/1} and \eqref{eq:solutions/6/6/5/2}, equation \eqref{eq:solutions/6/6/5/main} can be modified as , 
+\begin{align}
+        f(\vec{E})&=c_0\vec{I}+c_1\vec{E}+c_2\vec{E}+\dots+c_n\vec{E}\\
+        f(\vec{E})&=c_0\vec{I}+\vec{C}^T\vec{E}\label{eq:solutions/6/6/5/final}
+\end{align}
+where, $\vec{C}$ is the column vector and it is given as follows.
+\begin{align}
+    \vec{C}=\myvec{c_1\\c_2\\\vdots\\c_n}
+\end{align}
+Comparing the equations \eqref{eq:solutions/6/6/5/given} and \eqref{eq:solutions/6/6/5/final} we get,
+\begin{align}
+    a&=c_0\\
+    \vec{b}&=\vec{C}^T=\myvec{c_1 & c_2 & \dots&c_n}
+\end{align}
+Here, a is the constant term of f and $\vec{b}$ is the co-efficent vector of projection $\vec{E}$ which contains the all co-efficients of polynomial other than constant term $c_0$

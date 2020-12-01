@@ -1,0 +1,67 @@
+See Table \ref{eq:solutions/6/2/15/table:1}
+
+\onecolumn
+\begin{longtable}{|c|c|}
+\hline
+\multirow{3}{*}{} & \\
+$\textbf{Given}$ & $\vec{V}$ is the space of $n \times n$ matrices over $F$\\
+& \\
+& $\vec{A}$ is a fixed $n \times n$ matrix over $F$\\
+& \\
+& $\vec{T}$ be the linear operator on $\vec{V}$ such that\\
+& $\vec{T}(\vec{B})= \vec{AB}$\\
+& \\
+\hline
+\multirow{3}{*}{} & \\
+\textbf{To prove} & $\vec{A}$ and $\vec{T}$ have the same characteristic values\\
+& \\
+\hline
+\multirow{3}{*}{} & \\
+\textbf{Theorem} & Let $\lambda$ be a characteristic value of $\vec{T}$\\
+& and $\lambda \in F$ and $\vec{v}$ is the corresponding characteristic\\
+& vector which is a $n \times n$ matrix, then if $\vec{T}$ is a \\
+& linear operator on a finite dimensional space $\vec{V}$,\\
+&  it must be $\det{(T-\lambda I)} = 0$ and \\
+& for $\vec{(T-\lambda I)v} = \vec{0} $, $\vec{v} \neq \vec{0}$\\
+& \\
+\hline
+\multirow{3}{*}{} & \\
+\textbf{Proof} & As per the problem statement, $\vec{Tv} = \vec{\lambda v}$ \\
+& \textbf{or,}  $\vec{Av} = \vec{\lambda v}$, as $\vec{Tv} = \vec{Av}$\\
+& \textbf{or,}  $\vec{(A-\lambda I)v} = \vec{0}$\\
+& From here 2 cases can be arrived. \\
+& \\
+\hline
+Case 1: & $\det{(\vec{(A-\lambda I)})} = 0$, where $\vec{v} \neq \vec{0}$\\
+& $\implies$ $\lambda$ is characteristic value of $\vec{A}$.\\
+& \\
+\hline
+Case 2: & $\det{(\vec{(A-\lambda I)})} \neq 0 $\\
+& $\implies$ $\vec{(A-\lambda I)}$ is invertible and $\vec{v} = \vec{0}$\\
+& so, for $\vec{(T-\lambda I)v} = \vec{0}$ and \\
+& $\vec{(T-\lambda I)} \neq \vec{0}$\\
+& $\implies$ $\vec{v}$ is not a charcteristic vector of $\vec{T}$\\
+& which is a contradiction. So, case 2 is not possible.\\
+& \\
+\hline
+Conclusion & So, from the above 2 cases and from the theorem,\\
+&  it can be concluded that $\vec{A}$ and $\vec{T}$ \\
+& have the same  characteristic values\\
+\hline
+\caption{$\textbf{Solution summary}$}
+\label{eq:solutions/6/2/15/table:1}
+\end{longtable}
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+%\numberwithin{equation}{enumi}
+%\item Verification of the above problem using python code.\\
+%\solution The  following Python code verifies the above solution.
+%\begin{lstlisting}
+%codes/multiplication_test.py
+%\end{lstlisting}
+%%%
+%\end{enumerate}
+
+\twocolumn
+
+

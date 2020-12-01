@@ -1,0 +1,107 @@
+See Tables     \ref{eq:solutions/6/6/6/table:1} and     \ref{eq:solutions/6/6/6/table:2}
+
+
+
+\begin{table*}[ht!]
+\centering
+\begin{tabular}{|c|l|}
+    \hline
+    \multirow{3}{*}{Diagonalizable Operator} 
+	& \\
+	& For a linear operator $\vec{T}\colon \vec{V}\longrightarrow \vec{V}$, $\vec{T}$ is a diagonalizable operator if \\
+	& $\exists$ some basis for $\Vec{V}$ such that the matrix representing $\vec{T}$ is a diagonal matrix\\
+	&i.e.\\
+	& $\qquad\qquad\qquad \vec{T}\brak{\vec{X}}=\Vec{A}\Vec{X}$,\\
+    &$\implies \vec{A}$ is a diagonalizable matrix\\
+	&\\
+	\hline
+	\multirow{3}{*}{Properties of Projection} 
+	& \\
+	& If $n\times n$ matrix $\vec{A}$ is projecion matrix, then\\
+	&\\
+	&$\qquad\qquad\qquad \vec{A}^2=\vec{A}$\\
+	&\\
+	\hline
+\end{tabular}
+    \caption{Definitions}
+\label{eq:solutions/6/6/6/table:1}
+\end{table*}
+\onecolumn
+\begin{longtable}{|c|l|}
+    \hline
+	\multirow{3}{*}{Diagonalizability} 
+	& \\
+	& Let $\vec{A}$ be $n\times n$ matrix.\\
+	& Given that $\vec{A}$ is diagonalizable, it can be expressed as,\\
+	&\\
+	& $\qquad \qquad\qquad \vec{A}=\vec{P}\vec{\Lambda}\vec{P}^{-1}$\\
+	& $\qquad\qquad\implies \vec{A}\vec{P}=\vec{P}\vec{\Lambda}\qquad\qquad\qquad\qquad\qquad\dots\brak{1}$\\
+	&\\
+	& where, $\vec{\Lambda}=\myvec{\lambda_1&0&\dots&0\\0&\lambda_2&\dots&0\\ \vdots&\vdots&\dots&\vdots\\0&0&\dots&\lambda_n}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Eigen values} & \\
+	& Given that $\vec{A}$ has eigen values $0$ and $1$\\
+	&$\implies \vec{\Lambda}$ has diagonal entries of $0s$ and $1s$ only\\ 
+	&\\
+	&$\implies \lambda_i=0$ or $1,\qquad i=0,1,\dots,n$\\
+	&$\implies \lambda_i^2=0$ or $1$\\
+	&$\implies \lambda_i^2=\lambda_i$\\
+	&\\
+	& $\qquad\implies \Vec{\Lambda}^2=\Vec{\Lambda}\Vec{\Lambda}=\myvec{\lambda_1^2&0&\dots&0\\0&\lambda_2^2&\dots&0\\ \vdots&\vdots&\dots&\vdots\\0&0&\dots&\lambda_n^2}=\vec{\Lambda}\qquad\dots\brak{2}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Projection}&\\ 
+	&$\qquad\qquad\vec{A}=\vec{P}\vec{\Lambda}\vec{P}^{-1}$\\
+	&$\qquad\implies \vec{A}\vec{A}=\vec{A}\vec{P}\vec{\Lambda}\vec{P}^{-1}$\\
+	&$\qquad\implies \vec{A}^2=\brak{\vec{A}\vec{P}}\vec{\Lambda}\vec{P}^{-1}$\\
+	&\\
+	&From $\brak{1}$,\\
+	&$\qquad\implies \vec{A}^2=\vec{P}\vec{\Lambda}\vec{\Lambda}\vec{P}^{-1}$\\
+	&$\qquad\qquad\qquad=\vec{P}\vec{\Lambda}^2\vec{P}^{-1}$\\
+	&From $\brak{2}$,\\
+	&$\qquad\implies \vec{A}^2=\vec{P}\vec{\Lambda}\vec{P}^{-1}$\\
+	&$\qquad\qquad\qquad=\vec{A}$\\
+	&\\
+	&Therefore,\\
+	&$\qquad\qquad\qquad\vec{A}^2=\vec{A}$\\
+	&\\
+	& Hence, $\vec{A}$ is a projection matrix\\
+	&\\
+	\hline
+	\multirow{3}{*}{Example} & \\
+	& Consider a $2\times 2$ matrix\\
+	&\\
+	&$\qquad\qquad\qquad \vec{A}=\myvec{0&1\\0&1}$\\
+	& Characteristic polynomial,\\
+	&$p\brak{x}=\mydet{x\vec{I}-\vec{A}}$\\
+	&$\qquad =\mydet{x&-1\\0&x-1}$\\
+	&$\qquad =x\brak{x-1}$\\
+	&\\
+	&$\implies\lambda_1=0,\lambda_2=1$\\
+	&\\
+	&Also, $\vec{A}$ is diagonalizable,\\
+	&$\qquad\qquad \vec{A}=\vec{P}\vec{J}\vec{P}^{-1}$\\
+	& where\\
+	&$\qquad\qquad \vec{P}=\myvec{1&1\\0&1},\qquad\vec{J}=\myvec{0&0\\0&1}$\\
+	&\\
+	&Now we check if $\vec{A}$ is projection matrix.\\
+	&\\
+	&$\qquad \vec{A}^2=\myvec{0&1\\0&1}\myvec{0&1\\0&1}$\\
+	&$\qquad\qquad = \myvec{0&1\\0&1}$\\
+	&$\qquad\qquad=\Vec{A}$\\
+	&Therefore,\\
+	&$\qquad\qquad\Vec{A}^2=\Vec{A}$\\
+	&\\
+	&Hence, if $\vec{A}$ is diagonalizable and has eigen values $0$ and $1$, then \\
+	&$\vec{A}$ is a projection matrix.\\
+	&\\
+	\hline
+	\multirow{3}{*}{Conclusion} & \\
+	& Given statement is True\\
+	&\\
+	\hline
+	\caption{Checking for projection matrix}
+    \label{eq:solutions/6/6/6/table:2}
+\end{longtable}
+\twocolumn
