@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  1 DEC 2020 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  2 DEC 2020 09:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2329,7 +2329,27 @@ Overfull \hbox (8.54997pt too wide) in alignment at lines 76--105
 
 [28
 
-]) (./solutions/2017/june/74/solution.tex
+])
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
+
+ []
+
+(./solutions/2017/june/72/solution.tex) (./solutions/2017/june/74/solution.tex
 Overfull \hbox (19.9865pt too wide) in alignment at lines 4--29
  [] [] 
  []
@@ -2343,18 +2363,18 @@ Overfull \hbox (19.9865pt too wide) in alignment at lines 29--51
  [] [] 
  []
 
-
+[29]
 Overfull \hbox (19.9865pt too wide) in alignment at lines 51--73
  [] [] 
  []
 
-[29] [30])
-Underfull \hbox (badness 1466) in paragraph at lines 94--96
+[30])
+Underfull \hbox (badness 1466) in paragraph at lines 108--110
 []\OT1/txr/m/n/12 Which of the fol-low-ing 3x3 ma-tri-ces are
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
@@ -2474,10 +2494,10 @@ Package rerunfilecheck Info: File `gvv_ugc_linalg.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 43572 strings out of 480608
- 1008954 string characters out of 5892806
- 1427060 words of memory out of 5000000
- 57846 multiletter control sequences out of 15000+600000
+ 43583 strings out of 480608
+ 1009179 string characters out of 5892806
+ 1427100 words of memory out of 5000000
+ 57848 multiletter control sequences out of 15000+600000
  631782 words of font info for 248 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,625b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2499,10 +2519,10 @@ c.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw
 ts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ugc_linalg.pdf (44 pages, 743071 bytes).
+Output written on gvv_ugc_linalg.pdf (44 pages, 745603 bytes).
 PDF statistics:
- 1156 PDF objects out of 1200 (max. 8388607)
- 1041 compressed objects within 11 object streams
- 655 named destinations out of 1000 (max. 500000)
+ 1164 PDF objects out of 1200 (max. 8388607)
+ 1049 compressed objects within 11 object streams
+ 661 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

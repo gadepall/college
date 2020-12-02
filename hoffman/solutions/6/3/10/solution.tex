@@ -1,0 +1,85 @@
+See Tables     \ref{eq:solutions/6/3/10/tab:construction},     \ref{eq:solutions/6/3/10/tab:proof} and     \ref{eq:solutions/6/3/10/tab:example}.
+
+
+
+\onecolumn
+\begin{longtable}{|l|l|}
+    \hline
+        Given &  $\vec{A}$ is a fixed matrix from the vector space $\vec{V}$ of $n\times n$ matrices. A linear operator \\
+        &on the finite dimensional vector space $\vec{V}$, $\vec{T}$ is defined as $\vec{T\brak{B}}=\vec{AB}$.\\
+    \hline
+        Minimal polynomial & The minimal polynomial of a linear operator $\vec{T}$ is a monic polynomial which \\
+        &annihilates $\vec{T}$.\\
+    \hline
+        Matrix representation & If we stack up the columns of the matrix $\vec{B}$,the linear operator $\vec{T}$ can be \\
+        of $\vec{T}$ & represented in the equivalent form as \\
+        & If $\vec{B}=\myvec{b_1&b_2&.&.&b_n}$,then the linear transformation of $\vec{B}$ will be\\
+        &$\vec{T\brak{B}}=\myvec{\vec{A}b_1&\vec{A}b_2&.&.\vec{A}b_n}$\\
+        & $\vec{M_T\brak{B}}=\myvec{\vec{T}\brak{b_1}\\\vec{T}\brak{b_2}\\.\\.\\\vec{T}\brak{b_n}}=\myvec{\vec{A}&&&&\\&\vec{A}&&\vec{O}&\\&&.&&\\&\vec{O}&&.&\\&&&&\vec{A}}\myvec{b_1\\b_2\\.\\.\\b_n}$\\
+    \hline
+        & $\vec{M_T}=\myvec{\vec{A}&&&&\\&\vec{A}&&\vec{O}&\\&&.&&\\&\vec{O}&&.&\\&&&&\vec{A}}$\\
+    \hline
+    \caption{Construction}
+    \label{eq:solutions/6/3/10/tab:construction}
+\end{longtable}
+\begin{longtable}{|l|l|}
+    \hline
+        Properties of minimal & The roots of the characteristic polynomial,eigen values and the minimal  \\
+        polynomial &polynomial are same,except for multiplicities.The roots of\\
+        & the minimal polynomial of $\vec{A}$ are the roots of $\det\brak{\vec{A}-\lambda\vec{I}}$\\
+    \hline
+        The roots of minimal & The roots of the minimal polynomial of $\vec{T}$ are the roots\\
+        polynomial of $\vec{T}$& of $\det \brak{\vec{T}-\lambda\vec{I}}$\\
+        &$\det \brak{\vec{T}-\lambda\vec{I}}=\mydet{\brak{\vec{A}-\lambda\vec{I}}&&&&\\&\brak{\vec{A}-\lambda\vec{I}}&&\vec{O}&\\&&.&&\\&\vec{O}&&.&\\&&&&\brak{\vec{A}-\lambda\vec{I}}}$\\
+        &=$\brak{\det \brak{\vec{A}-\lambda\vec{I}}}^{n}$\\
+        & Therfore we can see that the eigen values of $\vec{A}$ are also the eigen values \\
+        &of the linear operator $\vec{T}$\\
+    \hline
+        Minimal polynomial  & The minimal polynomial of $\vec{A}$ divides the characteristic polynomial of $\vec{A}$ and  $\vec{T}$.\\
+        of $\vec{T}$ & Let the minimal polynomial of $\vec{A}$ is of degree $p\leq n$\\
+        & $f\brak{x}=a_0+a_1x+a_2x^2...a_px^p$ such that $f\brak{\vec{A}}=0$\\
+        &$f\brak{\vec{T}}=a_0\vec{I}+a_1\vec{T}+a_2\vec{T}^2+..+a_p\vec{T}^p$\\
+    \hline
+        &$f\brak{\vec{T}}=\myvec{f\brak{\vec{A}}&&&&\\&f\brak{\vec{A}}&&\vec{O}&\\&&.&&\\&\vec{O}&&.&\\&&&&f\brak{\vec{A}}}=\vec{O}_{n^2\times n^2}$\\
+        &Therefore the minimal polynomial for $\vec{T}$ is the minimal polynomial\\
+        & for $\vec{A}$.\\
+    \hline
+    \caption{Proof}
+    \label{eq:solutions/6/3/10/tab:proof}
+\end{longtable}
+\begin{longtable}{|l|l|}
+    \hline
+    \multirow{3}{*}{} & \\
+        Assuming matrix $\vec{A}$ as follows:&Let us Consider 2 $\times$ 2 matrix,\\
+        &\parbox{6cm}{\begin{align*}
+            \vec{A}=\myvec{1&4\\0&2}
+        \end{align*}}\\
+    \hline
+    Minimal polynomial of $\vec{A}$&The eigen values of $\vec{A}$ are $1,2$.\\
+         &So, the minimal polynomial is $f\brak{x}=\brak{x-1}\brak{x-2}$\\
+    \hline
+        Matrix of linear operator &So, the matrix of the linear operator $\vec{T}$ with respect to the basis \\
+         & $\vec{e_1}=\myvec{1&0\\0&0}$,\qquad$\vec{e_2}=\myvec{0&0\\1&0}$,\qquad$\vec{e_3}=\myvec{0&1\\0&0}$,\qquad$\vec{e_4}=\myvec{0&0\\0&1}$\\
+         & $\vec{T\brak{e_1}}=\myvec{1&4\\0&2}\myvec{1&0\\0&0}=\myvec{1&0\\0&0}=1.\vec{e_1}+0.\vec{e_2}+0.\vec{e_3}+0.\vec{e_4}$\\
+         &$\vec{T\brak{e_2}}=\myvec{1&4\\0&2}\myvec{0&0\\1&0}=\myvec{4&0\\2&0}=4.\vec{e_1}+2.\vec{e_2}+0.\vec{e_3}+0.\vec{e_4}$\\
+         &$\vec{T\brak{e_3}}=\myvec{1&4\\0&2}\myvec{0&1\\0&0}=\myvec{0&1\\0&0}=0.\vec{e_1}+0.\vec{e_2}+1.\vec{e_3}+0.\vec{e_4}$\\
+    \hline
+         &$\vec{T\brak{e_4}}=\myvec{1&4\\0&2}\myvec{0&0\\0&1}=\myvec{0&4\\0&2}=0.\vec{e_1}+0.\vec{e_2}+4.\vec{e_3}+2.\vec{e_4}$\\ 
+         &So the matrix of the linear operator will be\\
+         &$\vec{M_T}=\myvec{1&4&0&0\\0&2&0&0\\0&0&1&4\\0&0&0&2}=\myvec{\vec{A}&\vec{O}\\\vec{O}&\vec{A}}$\\
+         \hline
+        Characteristic equation of $\vec{T}$&The characteristic equation of $\vec{T}$ is $\brak{x-1}^2\brak{x-2}^2$\\
+        & So the eigen values are $1,1,2,2$\\
+        \hline
+        Minimal polynomial of $\vec{T}$&$f\brak{\vec{M_T}}=\brak{\vec{T-I}}\brak{\vec{T-2I}}=\myvec{\vec{A-I}&\vec{O}\\\vec{O}&\vec{A-I}}\myvec{\vec{A-2I}&\vec{O}\\\vec{O}&\vec{A-2I}}$\\
+         &$f\brak{\vec{M_T}}=\myvec{\vec{\brak{A-I}\brak{A-2I}}&\vec{O}\\\vec{O}&\vec{\brak{A-I}\brak{A-2I}}}=\myvec{f\brak{\vec{A}}&\vec{O}\\\vec{O}&f\brak{\vec{A}}}=\vec{O}$\\
+        & We know that eigen values of $\vec{T}$ should be roots of minimal polynomial\\
+        & of $\vec{T}$, thus minimal polynomial should be of the form $\brak{x-1}^p\brak{x-2}^q$\\
+        & where $p,q \in \mathbb{N}.. 1\leq p,q\leq2$\\
+        &Therefore the minimal polynomial $f\brak{\vec{A}}$ of $\vec{A}$ annihilates $\vec{T}$,thus we \\
+        & can conclude that $f\brak{{x}}$ is the minimal polynomial of linear operator $\vec{T}$\\
+    \hline
+    \caption{Example}
+    \label{eq:solutions/6/3/10/tab:example}
+\end{longtable}
+\twocolumn
