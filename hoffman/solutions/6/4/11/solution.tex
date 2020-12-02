@@ -1,0 +1,126 @@
+See Tables     \ref{eq:solutions/6/4/11/table:1}
+and     \ref{eq:solutions/6/4/11/table:2}
+
+\onecolumn
+\begin{longtable}{|l|l|}
+	\hline
+	\multirow{3}{*}{Characteristic Polynomial} 
+	& \\
+	& For an $n\times n$ matrix $\vec{A}$, characteristic polynomial is defined by,\\
+	&\\
+	& $\qquad\qquad\qquad p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Minimal Polynomial} 
+	&\\
+	& Minimal polynomial $m\brak{x}$ is the smallest factor of characteristic polynomial\\
+	& $p\brak{x}$ such that,\\
+	&\\
+	& $\qquad \qquad \qquad m\brak{\vec{A}}=0$\\
+	&\\
+    \hline
+    \multirow{3}{*}{Theorem} 
+	&\\
+	& Let $\vec{V}$ be a finite-dimensional vector space over the field $\vec{F}$ and let $\vec{T}$\\
+	&be a linear operator on $\vec{V}$.Then $\vec{T}$ is diagonalizable if and only if \\
+	&the minimal polynomial for $\Vec{T}$ has the form \\
+	&\parbox{10cm}
+	{\begin{align}
+	p = \brak{x-c_1}\dots\brak{x-c_k} \label{eq:solutions/6/4/11/eq:1}
+	\end{align}}\\ 
+	&\text{where} $c_1,c_2,...,c_k$ are distinct elements of $F$. \\
+	&\\
+	\hline
+	\multirow{3}{*}{Diagonalizable}
+	&\\
+	&$\vec{A}$ is called diagonalizable if it is similar to diagnol matrix $\vec{B}$ i.e., if $\exists$ an \\
+	&invertible matrix $\vec{P}$ such that\\
+	&\parbox{10cm}
+	{\begin{align}
+    \vec{B}=\vec{P}^{-1}\vec{A}\vec{P}
+	\end{align}}\\
+	&\\
+    \hline
+    \caption{Definitions and theorem used}
+    \label{eq:solutions/6/4/11/table:1}
+\end{longtable}
+\begin{longtable}{|l|l|}
+	\hline
+	\multirow{3}{*}{Given} & \\
+	& The triangular matrix $\vec{A}$ is similar to a diagonal matrix.\\
+    & \\
+    \hline
+	\multirow{3}{*}{Example}
+	& \\
+	& Let\\
+	&\parbox{10cm}
+	{\begin{align}
+	\vec{A}=\myvec{1&2\\0&3}
+	\end{align}}\\
+	&We can see that $\vec{A}$ is triangular but not diagonal.\\
+	&\\
+	\hline
+	\multirow{3}{*}{Characteristic polynomial}
+	&\\
+    &\parbox{10cm}
+	{\begin{align}
+	\mydet{x\Vec{I}-\Vec{A}}=\mydet{x-1&2\\0&x-3}\\
+	=\brak{x-1}\brak{x-3}
+	\end{align}}\\
+	&\\
+	\hline
+	\multirow{3}{*}{Minimal polynomial}
+	&\\
+	&As the eigen values are distinct,minimal polynomial\\
+    &\parbox{10cm}
+	{\begin{align}
+	m\brak{x}=\brak{x-1}\brak{x-3}
+	\end{align}}\\
+	&\\
+	\hline
+	\multirow{3}{*}{Diagonalizable}
+	&\\
+	&From theorem \eqref{eq:1},We can say that $\vec{A}$ diagonalizable i.e.,\\
+	&it is similar to a diagnol matrix.\\
+	&\\
+	\hline
+	\multirow{3}{*}{Finding matrix similar to $\vec{A}$}
+	&\\
+	&The eigen values are \\
+	&\parbox{10cm}
+	{\begin{align}
+	\lambda_1=1,\lambda_2=3
+	\end{align}}\\
+	&The eigen vectors are\\
+	&\parbox{10cm}
+	{\begin{align}
+	\brak{\vec{A}-\lambda_i\vec{I}}\vec{x_i}=0\\
+	\lambda_1=1
+	\implies \myvec{0&2\\0&2}\vec{x_1}=\myvec{0\\0}
+	\implies \vec{x_1}=\myvec{1\\0}\\
+	\lambda_2=3
+	\implies \myvec{-2&2\\0&0}\vec{x_2}=\myvec{0\\0}
+	\implies \vec{x_2}=\myvec{1\\1}
+	\end{align}}\\
+	& The invertible matrix\\
+	&\parbox{10cm}
+	{\begin{align}
+	\vec{P}=\myvec{\vec{x_1} &\vec{x_2}}=\myvec{1&1\\0&1}
+	\end{align}}\\
+	&The diagnol matrix similar to $\vec{A}$\\
+	&\parbox{10cm}
+	{\begin{align}
+	\vec{B}=\vec{P}^{-1}\vec{A}\vec{P}=\myvec{1&-1\\0&1}\myvec{1&2\\0&3}\myvec{1&1\\0&1}\\
+	\vec{B}=\myvec{1&0\\0&3}
+	\end{align}}\\
+	&\\
+    \hline
+	\multirow{3}{*}{Conclusion} & \\
+	& From above,we can say that $\vec{A}$  need not be diagonal to satisfy\\ 
+	& given conditions.So, given statement is false.\\
+	& \\
+	\hline
+	\caption{Finding minimal polynomial and similar matrix}
+    \label{eq:solutions/6/4/11/table:2}
+\end{longtable}
+\twocolumn
