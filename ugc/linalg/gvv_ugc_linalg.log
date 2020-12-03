@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  3 DEC 2020 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Termux) (preloaded format=pdflatex 2020.8.26)  3 DEC 2020 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2454,7 +2454,29 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )) (./chapters/2016/dec.tex (./solutions/2016/dec/22/solution.tex [41
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./solutions/2016/dec/31/solution.tex
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 95--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
@@ -2462,7 +2484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-(./solutions/2016/dec/32/solution.tex [42]
+(./solutions/2016/dec/32/solution.tex [43]
 Overfull \hbox (289.0699pt too wide) in paragraph at lines 18--18
 [] 
  []
@@ -2481,7 +2503,7 @@ Overfull \hbox (23.65843pt too wide) in alignment at lines 48--85
  [] [] 
  []
 
-[43
+[44
 
 ]
 Overfull \hbox (23.65843pt too wide) in alignment at lines 85--91
@@ -2491,55 +2513,55 @@ Overfull \hbox (23.65843pt too wide) in alignment at lines 85--91
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44])
+ [45])
 (./solutions/2016/dec/73/solution.tex) (./solutions/2016/dec/74/solution.tex)
 (./solutions/2016/dec/75/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45
+ [46
 
 ]
-[46]
+[47]
 Underfull \vbox (badness 10000) detected at line 58
  []
 
-[47
+[48
 
-]) [48]
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+]) [49]
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-(./solutions/2016/dec/77/solution.tex [49
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+(./solutions/2016/dec/77/solution.tex [50
 
 
 ]
 Underfull \vbox (badness 10000) detected at line 30
  []
 
-[50
+[51
 
-]) [51])
+]) [52])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
  (./gvv_ugc_linalg.aux)
@@ -2550,10 +2572,10 @@ Package rerunfilecheck Info: File `gvv_ugc_linalg.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
  ) 
 Here is how much of TeX's memory you used:
- 43664 strings out of 480608
- 1010635 string characters out of 5892806
- 1427480 words of memory out of 5000000
- 57860 multiletter control sequences out of 15000+600000
+ 43691 strings out of 480608
+ 1011058 string characters out of 5892806
+ 1427624 words of memory out of 5000000
+ 57864 multiletter control sequences out of 15000+600000
  631782 words of font info for 248 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,24n,91p,625b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2575,10 +2597,10 @@ c.pfb></data/data/com.termux/files/usr/share/texlive/texmf-dist/fonts/type1/urw
 ts/type1/urw/times/utmbi8a.pfb></data/data/com.termux/files/usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ugc_linalg.pdf (51 pages, 760973 bytes).
+Output written on gvv_ugc_linalg.pdf (52 pages, 765058 bytes).
 PDF statistics:
- 1280 PDF objects out of 1440 (max. 8388607)
- 1142 compressed objects within 12 object streams
- 718 named destinations out of 1000 (max. 500000)
+ 1310 PDF objects out of 1440 (max. 8388607)
+ 1171 compressed objects within 12 object streams
+ 738 named destinations out of 1000 (max. 500000)
  167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
