@@ -1,0 +1,76 @@
+See Table \ref{eq:solutions/6/6/3/table:1}	
+%
+\onecolumn
+\begin{longtable}{|p{4cm}|p{14cm}|}
+\hline
+\multirow{3}{*}{Given} 
+    	& \\
+     	&  Let $\vec{x} \in \mathbb{R}^{2}$\\
+     	&{\begin{align}\label{eq:solutions/6/6/3/eq1}
+     	& \vec{x} = a\myvec{1\\-1} +b\myvec{1\\2}
+     	\end{align}}\\
+     	& where $\myvec{a\\b}$ is representation of $\vec{x}$ in new basis.\\
+\hline
+\multirow{3}{*}{To find} 
+     	&\\
+        &
+        {\begin{align}\label{eq:solutions/6/6/3/eq2}
+        \vec{E} \brak{\vec{x}} = a\myvec{1\\-1}
+        \end{align}}\\
+     	
+\hline
+\multirow{3}{*}{Finding a Projection $\vec{E}$} & \\
+       & As, $\myvec{1\\-1},\myvec{1\\2}$ are linearly independent.\\
+       &\\
+       & Therefore,\{$\myvec{1\\-1},\myvec{1\\2}\}$ is a basis of $\mathbb{R}^{2}$\\
+       &\\
+       & As $\vec{x} \in \mathbb{R}^{2}$\\
+       &{\begin{align}
+       \implies \vec{x} = a\myvec{1\\-1} +b\myvec{1\\2}
+       \end{align}}\\
+       \hline
+       &{\begin{align}
+       \implies \vec{x} = \myvec{1&1\\-1&2}\myvec{a\\b}
+        \end{align}}\\
+        &{\begin{align}
+        \implies \myvec{a\\b}=\myvec{1&1\\-1&2}^{-1}\vec{x}
+        \end{align}}\\
+       &
+       {\begin{align}
+       \implies \myvec{a\\b} = \myvec{\frac{2}{3}&\frac{-1}{3}\\\frac{1}{3}&\frac{1}{3}}\vec{x}
+       \end{align}}\\
+       & Therefore,\\
+       &{\begin{align}\label{eq:solutions/6/6/3/eq3}
+          a &=\myvec{\frac{2}{3}&\frac{-1}{3}}\vec{x}
+       \end{align}}\\
+       
+     & Projection of $\vec{x}$ on subspace spanned by $\myvec{1\\-1}$;\\
+     &
+     {\begin{align}\label{eq:solutions/6/6/3/eq4}
+     & \vec{E}\brak{\vec{x}} = a\myvec{1\\-1}
+     \end{align}}\\
+     & Substituting \eqref{eq:solutions/6/6/3/eq3} in \eqref{eq:solutions/6/6/3/eq4}\\
+     &
+     {\begin{align}
+       \vec{E}\brak{\vec{x}} = \myvec{1\\-1}\myvec{\frac{2}{3}& \frac{-1}{3}}\vec{x}
+       \end{align}}\\
+       &{\begin{align}
+     \vec{E}\brak{\vec{x}} = \myvec{\frac{2}{3}&\frac{-1}{3}\\\frac{-2}{3}&\frac{1}{3}}\vec{x}
+      \end{align}}\\
+      &{\begin{align}
+      \implies{ \vec{E}= \myvec{\frac{2}{3}&\frac{-1}{3}\\\frac{-2}{3}& \frac{1}{3}}}
+      \end{align}}\\
+       \hline
+       \multirow{3}{*}{Verification} & \\
+& If $n\times n$ matrix $\vec{E}$ is projection matrix, then\\
+	&$\qquad\qquad\qquad \vec{E}^2=\vec{E}$\\
+  &{\begin{align}
+  \vec{E^{2}} = \myvec{\frac{2}{3}&\frac{-1}{3}\\\frac{-2}{3}& \frac{1}{3}}\myvec{\frac{2}{3}&\frac{-1}{3}\\\frac{-2}{3}& \frac{1}{3}}
+  \implies \vec{E}=\vec{E^{2}}=\myvec{\frac{2}{3}&\frac{-1}{3}\\\frac{-2}{3}& \frac{1}{3}}
+  \end{align}}\\
+  & Hence, Verified.\\
+  \hline
+\caption{Finding Projection Matrix}
+\label{eq:solutions/6/6/3/table:1}	
+\end{longtable}
+\twocolumn

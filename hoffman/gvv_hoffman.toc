@@ -28,9 +28,9 @@
 \contentsline {subsection}{\numberline {6.2}Annihilating Polynomials}{179}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Invariant Subspaces}{198}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Simultaneous Triangulation; Simultaneous Diagonalization}{206}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Direct Sum Decomposition}{212}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Invariant Direct Sums}{221}{subsection.6.6}%
-\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{223}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{223}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}The Jordan Form}{223}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{232}{subsection.7.3}%
+\contentsline {subsection}{\numberline {6.5}Direct Sum Decomposition}{215}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Invariant Direct Sums}{227}{subsection.6.6}%
+\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{231}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{231}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}The Jordan Form}{231}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{240}{subsection.7.3}%

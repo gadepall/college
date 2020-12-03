@@ -1,0 +1,19 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item %
+Let $T$ be a linear operator on $R^3$ which is represented in the standard ordered basis by the matrix 
+\begin{align}
+    \myvec{6&-3&-2\\
+           4&-1&-2\\
+           10&-5&-3}
+\end{align}
+Express the minimal polynomial $p$ for $T$ in the form $p$ = $p_1p_2$, where $p_1$ and $p_2$ are monic and irreducible over the field of real numbers. Let $W_i$ be the null space of $p_i\brak{T}$. Find the basis $B_i$ for the spaces $W_1$ and $W_2$. If $T_i$ is the operator induced on $W_i$ by $T_i$, find the matrix of $T_i$ in the basis $B_i$ above.
+%
+%
+\solution
+\input{./solutions/6/8/1/solution.tex}
+\end{enumerate}
