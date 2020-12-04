@@ -1,0 +1,48 @@
+\begin{enumerate}
+\item[(a)] From $\alpha = \myvec{1\\ 2}$ and $(\alpha^T\gamma)= -1$ we get,
+\begin{align}
+(\alpha^T\gamma)= -1 \\
+\implies \myvec{1\\2}^T\gamma =-1 \label{eq:solutions/8/1/5/eq:1}
+\end{align}
+from $\beta = \myvec{-1\\ 1}$ and $(\beta^T\gamma)=3$ we get,
+\begin{align}
+(\beta^T\gamma)=3\\
+\implies \myvec{-1\\ 1}^T\gamma = 3 \label{eq:solutions/8/1/5/eq:2}
+\end{align}
+using \eqref{eq:solutions/8/1/5/eq:1} and \eqref{eq:solutions/8/1/5/eq:2},
+\begin{align}
+\myvec{1&2\\-1&1}\myvec{\gamma} =\myvec{-1\\3}
+\end{align}
+row reductions,
+\begin{align}
+\myvec{1&2&-1\\-1&1&3} \xleftrightarrow{ R_2\rightarrow R_2 + R_1}
+\myvec{1&2&-1\\0&3&2} \\\xleftrightarrow{ R_2\rightarrow \frac{1}{3}
+R_2} \myvec{1&2&-1\\0&1&\frac{2}{3}} \xleftrightarrow{ R_1\rightarrow R_1-2R_2} \myvec{1&0&\frac{-7}{3}\\0&1&\frac{2}{3}}
+\end{align}
+Hence $\vec{\gamma} = \myvec{\frac{-7}{3}\\\frac{2}{3}}$
+\item[(b)] Here $\epsilon_1$, $\epsilon_2$  are standard basis vector in $\mathbb{R}^2$. As $\alpha \in \mathbb{R}^2$ we can write it as,
+\begin{align}
+\alpha = \alpha_1\epsilon_1+ \alpha_2\epsilon_2 = \alpha^T\myvec{\epsilon_1\\\epsilon_2} \label{eq:solutions/8/1/5/eq:3}
+\end{align}
+using this we can write,
+\begin{align}
+(\alpha^T\epsilon_1) = \brak{\alpha^T\myvec{\epsilon_1\\\epsilon_2}}^T\epsilon_1 = \alpha^T\myvec{\epsilon_1^T\\\epsilon_2^T}\epsilon_1\\
+=\alpha^T\myvec{\epsilon_1^T\epsilon_1\\\epsilon_2^T\epsilon_1} 
+=\alpha^T\myvec{1\\0}\\
+\implies(\alpha^T\epsilon_1)\epsilon_1=\alpha^T\myvec{\epsilon_1\\0} \label{eq:solutions/8/1/5/eq:4}\\
+(\alpha^T\epsilon_2)= \brak{\alpha^T\myvec{\epsilon_1\\\epsilon_2}}^T\epsilon_2 =\alpha^T\myvec{\epsilon_1^T\\\epsilon_2^T}\epsilon_2\\
+=\alpha^T\myvec{\epsilon_1^T\epsilon_2\\\epsilon_2^T\epsilon_2} 
+=\alpha^T\myvec{0\\1}\\
+\implies(\alpha^T\epsilon_2)\epsilon_2=\alpha^T\myvec{0\\\epsilon_2} \label{eq:solutions/8/1/5/eq:5}
+\end{align}
+using \eqref{eq:solutions/8/1/5/eq:4} and \eqref{eq:solutions/8/1/5/eq:5} we can write,
+\begin{align}
+(\alpha^T\epsilon_1)\epsilon_1 + (\alpha^T\epsilon_2)\epsilon_2 = \alpha^T\myvec{\epsilon_1\\0} + \alpha^T\myvec{0\\\epsilon_2}\\
+\implies (\alpha^T\epsilon_1)\epsilon_1 + (\alpha^T\epsilon_2)\epsilon_2 = \alpha^T\myvec{\epsilon_1\\\epsilon_2} \label{eq:solutions/8/1/5/eq:6}
+\end{align}
+hence using \eqref{eq:solutions/8/1/5/eq:3}and \eqref{eq:solutions/8/1/5/eq:6} we get,
+\begin{align}
+\alpha = (\alpha^T\epsilon_1)\epsilon_1 + (\alpha^T\epsilon_2)\epsilon_2
+\end{align}
+Hence proved
+\end{enumerate}

@@ -1,0 +1,146 @@
+See Table     \ref{eq:solutions/3/5/11/tab:proof}
+
+\onecolumn
+\begin{longtable}{|l|l|}
+    \hline
+        & \\
+        Given &  $W_1$ and $W_2$ are subspaces of a finite dimensional vector space $\mathbb V$\\
+        & \\
+        \hline
+        & \\
+        1. To prove & $(W_1 + W_2)^0 = W_1^0 \cap W_2^0$\\
+        & \\
+    \hline
+        & \\
+        Proof & Let $f \in (W_1 + W_2)^0$\\
+        of & \\
+        $(W_1 + W_2)^0$ & $\forall \vec{v} \in (W_1 + W_2)$\\
+        $\subseteq$ & $f(\vec{v}) = 0$\\
+        $(W_1^0 \cap W_2^0)$ & $\implies \forall \vec{w}_1 \in W_1, \vec{w}_2 \in W_2$\\
+        & $\vec{w_1} + \vec{w_2} \in (W_1 + W_2)$\\
+        & $\therefore f(\vec{w_1} + \vec{w_2}) = 0$\\
+        & \\
+        & $\implies$ When $\vec{w}_2 = 0$, then $\forall \vec{w}_1 \in W_1$\\
+        & $f(\vec{w_1}) = 0$\\
+        & $\therefore f \in W_1^0$\\
+        &\\
+        & And when $\vec{w_1} = 0, \forall \vec{w_2} \in W_2$\\
+        & $f(\vec{w_2}) = 0$\\
+        & $\therefore f \in W_2^0$\\
+        & \\
+        & $\because f \in W_1^0, f \in W_2^0$\\
+        & $\implies f \in (W_1^0 \cap W_2^0)$\\
+        & \\
+        & $\therefore (W_1 + W_2)^0 \subseteq (W_1^0 \cap W_2^0)$\\
+    \hline
+        & \\
+        Proof & Let $f \in (W_1^0 \cap W_2^0)$\\
+        of & \\
+        $(W_1^0 \cap W_2^0)$ & $\implies f \in W_1^0, f \in W_2^0$\\
+        $\subseteq$ & $\implies \forall \vec{w}_1 \in W_1, \vec{w}_2 \in W_2$\\
+        $(W_1 + W_2)^0$ & $f(\vec{w}_1) = 0$ and $f(\vec{w}_2) = 0$\\
+        & \\
+        & $\forall \vec{v} \in (W_1+W_2),$\\
+    \hline
+        & $\vec{v} = \vec{w}_1 + \vec{w}_2$\\
+        & $\implies f(\vec{v}) = f(\vec{w}_1 + \vec{w}_2)$\\
+        & $\implies f(\vec{v}) = f(\vec{w}_1) + f(\vec{w}_2)$\\
+        & $\implies f(\vec{v}) = 0$\\
+        & $\implies f \in (W_1 + W_2)^0$\\
+        & \\
+        & $\therefore (W_1^0 \cap W_2^0) \subseteq (W_1 + W_2)^0$\\
+        & \\
+    \hline
+        & \\
+        & Hence, $(W_1 + W_2)^0 = (W_1^0 \cap W_2^0)$\\
+        & \\
+    \hline
+        & \\
+        2. To prove & $(W_1 \cap W_2)^0 = W_1^0 + W_2^0$\\
+        & \\
+    \hline
+        & \\
+        Proof & Let $f \in (W_1^0 + W_2^0)$\\
+        of & for some $f_1 \in W_1^0, f_2 \in W_2^0$,\\
+        $(W_1^0 + W_2^0)$ & $f = f_1 + f_2$\\
+        $\subseteq$ & \\
+        $(W_1 \cap W_2)^0$ & Now, for $\vec{v} \in (W_1 \cap W_2)$\\
+        & $f(\vec{v}) = (f_1 + f_2)(\vec{v})$\\
+        & $\implies f(\vec{v}) = f_1(\vec{v}) + f_2(\vec{v})$\\
+        & \\
+        & $\because \vec{v} \in (W_1 \cap W_2)$\\
+        & $\implies \vec{v} \in W_1$, and $\vec{v} \in W_2$\\
+        & So, $f_1(\vec{v}) = 0$, and $f_2(\vec{v}) = 0$\\
+        & \\
+        & $\implies f(\vec{v}) = 0 + 0 = 0$\\
+        & $\implies f \in (W_1 \cap W_2)^0$\\
+        & \\
+        & $\therefore (W_1^0 + W_2^0) \subseteq (W_1 \cap W_2)^0$\\
+        & \\
+    \hline
+        & \\
+        Proof & Let $f \in (W_1 \cap W_2)^0$\\
+        of & \\
+        $(W_1 \cap W_2)^0$ & Assuming\\
+        $\subseteq$ & Basis of $W_1$ as $\{ \vec{\alpha}_1,\ldots,\vec{\alpha_k}, \vec{\beta}_1,\ldots,\vec{\beta}_l \}$\\
+        $(W_1^0 + W_2^0)$ & Basis of $W_2$ as $\{ \vec{\alpha}_1,\ldots,\vec{\alpha_k}, \vec{\gamma}_1,\ldots,\vec{\gamma}_m \}$\\
+        & \\
+        & $\therefore$ Basis of $(W_1 \cap W_2)$ is $\{ \vec{\alpha}_1,\ldots,\vec{\alpha_k} \}$\\
+        & and Basis of $W_1 + W_2$ is $\{ \vec{\alpha}_1,\ldots,\vec{\alpha_k}, \vec{\beta}_1,\ldots,\vec{\beta}_l, \vec{\gamma}_1,\ldots,\vec{\gamma}_m\}$\\
+        & \\
+        & Now, for $\vec{v} \in (W_1 + W_2)$\\
+        & $\vec{v} = \sum_{i=1}^{k} x_i\alpha_i + \sum_{i=1}^{l} y_i\beta_i + \sum_{i=1}^{m} z_i\gamma_i$\\
+        & $f(\vec{v}) = \sum_{i=1}^{k} a_ix_i + \sum_{i=1}^{l} b_iy_i + \sum_{i=1}^{m} c_iz_i$\\
+        & \\
+        & $\forall \vec{v} \in (W_1 \cap W_2)$\\
+        & $\vec{v} = \sum_{i=1}^{k} x_i\alpha_i$\\
+    \hline
+        & $f(\vec{v}) = \sum_{i=1}^{k} a_ix_i$\\
+        & But since $f \in (W_1 \cap W_2)^0$, thus $f(\vec{v}) = 0$\\
+        & $\therefore a_1 = a_2 = \ldots = a_k = 0$\\
+        & \\
+        & So, we can now write\\
+        & $f(\vec{v}) = \sum_{i=1}^{l} b_iy_i + \sum_{i=1}^{m} c_iz_i$\\
+        & \\
+        & Now, $\forall \vec{v} \in W_1$,\\
+        & $\vec{v} = \sum_{i=1}^{k} x_i\alpha_i + \sum_{i=1}^{l} y_i\beta_i$\\
+        & $\implies f_1(\vec{v}) = \sum_{i=1}^{k} a_ix_i + \sum_{i=1}^{l} b_iy_i$\\
+        & Comparing this to the original equation, we can say $c_i = 0$\\
+        & \\
+        & And $\forall \vec{v} \in W_2$,\\
+        & $\vec{v} = \sum_{i=1}^{k} x_i\alpha_i + \sum_{i=1}^{m} z_i\gamma_i$\\
+        & $\implies f_2(\vec{v}) = \sum_{i=1}^{k} a_ix_i + \sum_{i=1}^{m} c_iz_i$\\
+        & Comparing this to the original equation, we can say $b_i = 0$\\
+        & \\
+        & $f = f_1 + f_2$\\
+        & \\
+        & $\because a_i = b_i = c_i = 0$,\\
+        & $f_1(\vec{v}) = 0$\\
+        & $\implies f_1 \in W_1^0$\\
+        & Also, $f_2(\vec{v}) = 0$\\
+        & $\implies f_2 \in W_2^0$\\
+        & So, $f_1 + f_2 \in (W_1^0 + W_2^0)$\\
+        & $\implies f \in (W_1^0 + W_2^0)$\\
+        & \\
+        & $\therefore (W_1 \cap W_2)^0 \subseteq (W_1^0 + W_2^0)$\\
+        & \\
+    \hline
+        & \\
+        & Hence, $(W_1 \cap W_2)^0 = (W_1^0 + W_2^0)$\\
+        & \\
+    \hline
+        & \\
+        Verification & 1. Since the annihilator $(W_1 + W_2)^0$ is a complement of $(W_1 + W_2)$,\\
+        & Using Demorgan's Laws of the complement of union of two sets is\\
+        & the intersection of their complements, it is verified\\
+        & $(W_1 + W_2)^0 = W_1^0 \cap W_2^0$\\
+        &\\
+        & 2. And using De Morgan's laws of the complement of intersection of two sets is\\
+        & the union of their complements, it is verified\\
+        & $(W_1 \cap W_2)^0 = W_1^0 + W_2^0$\\
+        & \\
+    \hline
+    \caption{Proving properties of vectorspaces and subspaces}
+    \label{eq:solutions/3/5/11/tab:proof}
+\end{longtable}
+\twocolumn

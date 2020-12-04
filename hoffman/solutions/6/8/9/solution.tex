@@ -1,0 +1,148 @@
+See Tables     \ref{eq:solutions/6/8/9/table:1}
+and     \ref{eq:solutions/6/8/9/table:2}
+
+\begin{table*}[ht!]
+\centering
+\begin{tabular}{|p{5cm}|p{13cm}|}
+    \hline
+	\multirow{3}{*}{Characteristic Polynomial} 
+	& For an $n\times n$ matrix $\vec{A}$, characteristic polynomial is defined by,\\
+	&\\
+	& $\qquad\qquad\qquad p\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	&\\
+	\hline
+	\multirow{3}{*}{Minimal Polynomial} 
+	&\\
+	& Minimal polynomial $m\brak{x}$ is the smallest factor of characteristic polynomial\\
+	& $p\brak{x}$ such that,\\
+	&\\
+	& $\qquad \qquad \qquad m\brak{\vec{A}}=0$\\
+    \hline
+    \multirow{3}{*}{Cayley-Hamilton Theorem}
+    &\\
+    & If $p\brak{x}$ is the characteristic polynomial of an $n\times n$ matrix $\vec{A}$, then,\\
+    &\\
+    &$\qquad \qquad \qquad p\brak{\vec{A}}=\vec{0}$\\
+    &\\
+    \hline
+    \multirow{3}{*}{Similar matrices}&\\
+    &  Two   matrices $\vec{A}$ and $\vec{B}$ are said to be similar if\\
+    &{\begin{enumerate}
+        \item $det(\vec{A}) = det(\vec{B})$
+        
+        \item $tr (\vec{A}) = tr (\vec{B})$
+       
+        \item $rank(\vec{A})=rank(\vec{B})$
+    \end{enumerate}}\\
+    \hline
+    \multirow{3}{*}{Nilpotent Matrix}&\\
+    & A square matrix $\vec{A}$ is called a Nilpotent matrix if there exist a positive integer $'m'$ such that $\vec{A}^{m}=\vec{0}$ and $'m'$ is called Index of nilpotent matrix $\vec{A}$.\\
+    &\\
+   & The determinant and trace of a nilpotent matrix are always zero.\\
+   &\\
+    \hline
+    
+\end{tabular}
+\label{eq:solutions/6/8/9/table:1}
+    \caption{Definitions}
+\end{table*}
+\begin{longtable}{|p{5cm}|p{13cm}|}
+    \hline
+    \multirow{3}{*}{Given} 
+    &\\
+    & Let $\vec{A}$ and $\vec{B}$ be two nilpotent matrix.\\
+    &\\
+    &$\qquad\qquad\qquad \vec{A}=\myvec{0&1&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0}$\\
+    &\\
+    &$\qquad\qquad\qquad\vec{B}=\myvec{0&0&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0}$\\
+    &\\
+    \hline
+	\multirow{3}{*}{Characteristic polynomial} 
+	& \\
+	& For Matrix $\vec{A}$;\\
+	& $\qquad\qquad\qquad\qquad p_A\brak{x}=\mydet{x\Vec{I}-\Vec{A}}$\\
+	&\\
+	& $\qquad\qquad\qquad p_A\brak{x}=\mydet{x&-1&0&0\\0&x&0&0\\0&0&x&-1\\0&0&0&x} = x^4$\\
+	&\\
+	& For Matrix $\vec{B}$; \\
+	& $\qquad\qquad\qquad\qquad p_B\brak{x}=\mydet{x\Vec{I}-\Vec{B}}$\\
+	&\\
+	& $\qquad\qquad\qquad p_B\brak{x}= \mydet{x&0&0&0\\0&x&0&0\\0&0&x&-1\\0&0&0&x} = x^4$\\
+	&\\
+	& Therefore, Characteristics polynomial are same for both matrix $\vec{A}$ and $\vec{B}$.\\
+	&\\
+	\hline
+	\multirow{3}{*}{Minimal Polynomial} & \\
+	& For Matrix $\vec{A}$;\\
+	&\\
+    & $p_A(x)$ = $x^4$ \\
+    &\\
+    & Let, minimal polynomial of $\vec{A}$ is $m_A(x)$\\
+    &\\
+    & $m_A(x)$ always divide $p_A(x)$ \\
+    &\\
+    & $m_A(x)$ = $\{x,x^2,x^3,x^4\}$\\
+    &\\
+    &  Minimal polynomial always annihilates its matrix.\\
+    &\\
+    \hline
+    & $\qquad\qquad\qquad m_A(\vec{A}) = \vec{A} =\myvec{0&1&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0} \neq\vec{0}$\\
+    &\\
+    &$\qquad\qquad\qquad m_A\brak{\vec{A}}=\vec{A}^2 =\myvec{0&1&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0}\myvec{0&1&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0}=\vec{0}$\\
+    &\\
+    & $ \qquad\qquad\qquad\implies m_A\brak{x} = x^2$\\
+    &\\
+    & $\implies x^2$ is a minimal polynomial of Matrix $\vec{A}$\\
+    &\\
+    & For Matrix $\vec{B}$;\\
+    &$\qquad\qquad\qquad m_B(\vec{B}) = \vec{B} =\myvec{0&0&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0} \neq\vec{0}$\\
+    &\\
+    &$\qquad\qquad\qquad m_B\brak{\vec{B}}=\vec{B}^2 =\myvec{0&0&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0}\myvec{0&0&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0}=\vec{0}$\\
+    &\\
+    & $\qquad\qquad\qquad\implies m_B\brak{x} = x^2$\\
+    &\\
+    & $\implies x^2$ is a minimal polynomial of Matrix $\vec{B}$\\
+    &\\
+    & Therefore, minimial polynomial for both Matrix $\vec{A}$ and $\vec{B}$ are same.\\
+    &\\
+    \hline
+	\multirow{3}{*}{}&\\
+	Checking whether Matrix $\vec{A}$ & \\
+    and $\vec{B}$ are similar .
+    & $ \vec{A}=\myvec{0&1&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0}$\\
+    &\\
+   & rank of matrix = no of linearly independent row or column vectors in the matrix \\
+   &\\
+   &  $rank\brak{ \vec{A} }= 2$\\
+   &\\
+   & $tr(\vec{A})= 0 $\\
+   &\\
+   & $det(\vec{A})= 0$\\
+   &\\
+   \hline
+   & $ \vec{B}=\myvec{0&0&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&0}$\\
+   &\\
+   &  $rank\brak{ \vec{B} }= 1$\\
+   &\\
+   & $tr(\vec{B})= 0 $\\
+   &\\
+   & $det(\vec{B})= 0$\\
+   &\\
+   &$\implies rank\brak{\vec{A}} \neq rank\brak{\vec{B}}$\\
+   &\\
+   & Therefore, Matrix $\vec{A}$ and $\vec{B}$ are not similar.\\
+   &\\
+	\hline
+	\multirow{3}{*}{Conclusion}
+	&{\begin{enumerate}
+	    \item Characteristics polynomial for both Matrix $\vec{A}$ and $\vec{B}$ are same.
+	    
+	    \item Minimal polynomial for both matrix are same i.e $m_A\brak{x}=m_B\brak{x}=x^2$.
+	    
+	    \item Matrix $\vec{A}$ and $\vec{B}$ are not similar .
+	\end{enumerate}}\\
+	\hline
+	\caption{Solution Summary}
+    \label{eq:solutions/6/8/9/table:2}
+\end{longtable}
+%

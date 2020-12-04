@@ -1,0 +1,22 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item Let $( | )$ be the standard inner product on $\mathbb{R}^2$.
+\begin{enumerate}
+\item Let 
+\begin{align}
+\vec{\alpha} = \myvec{1\\ 2} \quad \vec{\beta} = \myvec{-1\\ 1}
+\end{align}
+If $\vec{\gamma}$ is a vector such that $(\alpha^T\gamma)=-1$ and $(\beta^T\gamma)=3$. Find $\vec{\gamma}$
+\item Show that for any $\vec{\alpha}$ in $\mathbb{R}^2$ we have
+\begin{align}
+\vec{\alpha} = (\alpha^T\epsilon_1)\epsilon_1 + (\alpha^T\epsilon_2)\epsilon_2 \label{eq:0}
+\end{align} 
+\end{enumerate}
+%
+\solution
+\input{./solutions/8/1/5/solution.tex}
+\end{enumerate}
