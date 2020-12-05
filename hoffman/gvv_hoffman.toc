@@ -15,24 +15,24 @@
 \contentsline {subsection}{\numberline {3.2}The Algebra of Linear Transformations}{82}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Isomorphism}{95}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Representation of Transformations by Matrices}{104}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Linear Functionals}{115}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}The Double Dual}{129}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{133}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Polynomials}{137}{section.4}%
-\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{137}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{151}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{159}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Determinants}{161}{section.5}%
-\contentsline {section}{\numberline {6}Elementary Canonical Forms}{161}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Characteristic Values}{161}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Annihilating Polynomials}{183}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Invariant Subspaces}{202}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Simultaneous Triangulation; Simultaneous Diagonalization}{210}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Direct Sum Decomposition}{219}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Invariant Direct Sums}{232}{subsection.6.6}%
-\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{236}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{236}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}The Jordan Form}{236}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{245}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Inner Product Spaces}{251}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Inner Products}{251}{subsection.8.1}%
+\contentsline {subsection}{\numberline {3.5}Linear Functionals}{116}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}The Double Dual}{130}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}The Transpose of a Linear Transformation}{134}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Polynomials}{138}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Algebra of Polynomials}{138}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Lagrange Interpolation}{152}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Polynomial Ideals}{160}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Determinants}{162}{section.5}%
+\contentsline {section}{\numberline {6}Elementary Canonical Forms}{162}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Characteristic Values}{162}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Annihilating Polynomials}{184}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Invariant Subspaces}{203}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Simultaneous Triangulation; Simultaneous Diagonalization}{211}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Direct Sum Decomposition}{220}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Invariant Direct Sums}{233}{subsection.6.6}%
+\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{241}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{241}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}The Jordan Form}{241}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{253}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Inner Product Spaces}{259}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Inner Products}{259}{subsection.8.1}%

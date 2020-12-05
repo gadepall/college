@@ -1,0 +1,69 @@
+See Table \ref{eq:solutions/7/3/16/table:1}
+
+\onecolumn
+\begin{longtable}{|c|c|}
+\hline
+\multirow{3}{*}{} & \\
+\textbf{Given} & If $\vec{A}=\vec{I}+\frac{1}{2}\vec{N}-\frac{1}{8}\vec{N}^2$\\
+& then $\vec{A}^2 = \vec{I}+\vec{N}$ that is, $\vec{I}+\vec{N}$ has a \\
+& square root, where $\vec{N}$ is a nilpotent matrix.\\
+& \\
+\hline
+\textbf{To prove} & \\
+\hline
+\textbf{1} & $(c\vec{I}+\vec{N})$ has a square root,that is $(c\vec{I}+\vec{N})= \vec{X}^2$\\
+& where $c$ is a non-zero complex number, $\vec{N}$ is a nilpotent\\
+&  complex matrix and $\vec{X}$ is any matrix.\\
+\hline
+\textbf{2} & Every non-singular complex $n \times n$ matrix \\
+& ($\vec{B}$) has a square root, that is, $\vec{B} = \vec{Y}^2$ where $\vec{Y}$\\
+&  is any matrix.\\
+\hline
+\multirow{3}{*}{} & \\
+\textbf{Proof 1} & Let us consider, $c \neq 0$ and $c \in \vec{C}$\\
+& then, there exists $\frac{1}{c} \in \vec{C}$\\
+& Given $\vec{N}$ is a nilpotent, \\
+& $\implies \frac{1}{c}\vec{N}$ is also nilpotent.\\
+& From the problem statement, we get that $(\vec{I}+\frac{1}{c}\vec{N})$\\
+& has a square root, that is, $(\vec{I}+\frac{1}{c}\vec{N}) = \vec{M}^2$\\
+& where $\vec{M}^2$ is any matrix.\\
+& so, $(\vec{I}+\frac{1}{c}\vec{N}) = \vec{M}^2$\\
+& Multiplying both side with $c$, we get\\
+& $c(\vec{I}+\frac{1}{c}\vec{N}) = c\vec{M}^2$\\
+& $(c\vec{I}+\vec{N}) = c\vec{M}^2$\\
+& $\implies (c\vec{I}+\vec{N}) = (\sqrt{c}\vec{M})^2$\\
+& $\implies (c\vec{I}+\vec{N}) = \vec{X}^2$\\
+& where $\vec{X} = (\sqrt{c}\vec{M})$\\
+& \\
+\hline
+\textbf{Conclusion} & Hence it is proved that $(c\vec{I}+\vec{N})$\\
+& has a square root\\
+\hline
+\multirow{3}{*}{} & \\
+\textbf{Proof 2} & Let $\vec{B}$ is any non-singular complex matrix.\\
+& So, $\vec{B}\vec{B}^{-1}= \vec{I}$\\
+& As per the Jordon's Theorem, every square matrix B\\
+&  is similar to a Jordon matrix $\vec{J}$, that is, $\vec{B}=\vec{P}\vec{J}\vec{P}^{-1}$\\
+& Now, let consider a $n \times n$ nilpotent shift matrix $\vec{N}$\\
+& $\vec{N}$ = \\
+& $\myvec{0 & 1 &0 &...& 0\\0 & 0 & 1& ...& 0\\.&.&.&...&.\\.&.&.&...&.\\.&.&.&...&1\\0 & 0 &0 &...& 0}$\\
+& $\vec{I}$ is a $n \times n$ identity matrix, so \\
+& $c\vec{I}+\vec{N}$ = \\
+& $\myvec{c & 1 &0 &...& 0\\0 & c & 1& ...& 0\\.&.&.&...&.\\.&.&.&...&.\\.&.&.&...&1\\0 & 0 &0 &...& c}$\\
+& and this is a Jordon form.\\
+& So, we can consider $\vec{J} = c\vec{I}+\vec{N}$ and \\
+& as $c\vec{I}+\vec{N}= \vec{X}^2 \implies \vec{J}=\vec{X}^2$ \\
+& $\implies \vec{B}=\vec{P}\vec{X}^2\vec{P}^{-1}$\\
+& $\implies \vec{B}=\vec{P}\vec{X}\vec{P}^{-1}\vec{P}\vec{X}\vec{P}^{-1}$\\
+& $\implies \vec{B}=(\vec{P}\vec{X}\vec{P}^{-1})^2$\\
+& $\implies \vec{B}=\vec{Y}^2$, where $\vec{Y} = \vec{P}\vec{X}\vec{P}^{-1}$\\
+& This implies that $\vec{B}$ has a square root.\\
+\hline
+\textbf{Conclusion} & Hence it is proved that every non-singular \\
+& complex $n \times n$ matrix has a square root.\\
+& \\
+\hline
+\caption{$\textbf{Solution summary}$}
+\label{eq:solutions/7/3/16/table:1}
+\end{longtable}
+\twocolumn

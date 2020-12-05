@@ -1,0 +1,46 @@
+If the matrix $\myvec{a & b \\ c & d}$ is invertible, then $ad-bc \neq 0$. It implies that both a and b cannot become 0 at the same time.
+\begin{align}
+    \text{Let } \vec{x} &= \myvec{x_1 \\ x_2} \\
+    T(\vec{x}) &= A\vec{x}\\
+     &= \myvec{0 & -1 \\ 1 & 0}\myvec{x_1 \\ x_2}\\
+     \implies \vec{A} &= \myvec{0 & -1 \\ 1 & 0}
+\end{align}
+Let $\{\alpha_1,\alpha_2\}$ be any basis and $\alpha_1=\brak{a,b}$ and $\alpha_2=\brak{c,d}$. Then 
+\begin{align}
+    T(\beta) &= \vec{A}\beta\\ 
+    T(\beta) &= \myvec{-b & -d \\ a & c} 
+\end{align}
+Now, for finding the matrix of $\mathbf{T}$ in the ordered basis $\beta$, We use the concept of row reducing the augmented matrix.
+\begin{align}
+    \myvec{a & c & -b & -d \\ b & d & a & c}
+\end{align}
+\begin{enumerate}
+    \item Assuming $a \neq 0$, 
+    \begin{align}
+        &\myvec{a & c & -b & -d \\ b & d & a & c}  \nonumber \\
+        &\xleftrightarrow{R_1 = R_1/a} \myvec{1 & \frac{c}{a} & -\frac{b}{a} & -\frac{d}{a} \\ b & d & a & c} \nonumber \\
+&\xleftrightarrow{R_2 = R_2 - R_1\times b} \myvec{1 & \frac{c}{a} & -\frac{b}{a} & -\frac{d}{a} \\ 0 & \frac{ad-bc}{a} & \frac{a^2+b^2}{a} & \frac{ac+bd}{a}} \nonumber \\
+&\xleftrightarrow{R_2 = R_2\frac{a}{ad-bc}} \myvec{1 & \frac{c}{a} & -\frac{b}{a} & -\frac{d}{a} \\ 0 & 1 & \frac{a^2+b^2}{ad-bc} & \frac{ac+bd}{ad-bc}} \nonumber \\
+&\xleftrightarrow{R_1 = R_1 - R_2\times\frac{c}{a}} \myvec{1 & 0 & -\frac{ac+bd}{ad-bc} & -\frac{c^2+d^2}{ad-bc} \\ 0 & 1 & \frac{a^2+b^2}{ad-bc} & \frac{ac+bd}{ad-bc}} \nonumber
+    \end{align}
+\item Assuming $b \neq 0$, We arrive at the same result as follows
+\begin{align}
+    &\myvec{a & c & -b & -d \\ b & d & a & c} \nonumber \\ 
+    &\xleftrightarrow{R_1\leftrightarrow R_2} \myvec{ b & d & a & c \\ a & c & -b & -d } \nonumber \\
+&\xleftrightarrow{R_1 = R_1/b}   \myvec{ 1 & \frac{d}{b} & \frac{a}{b} & \frac{c}{b} \\ a & c & -b & -d } \nonumber \\
+&\xleftrightarrow{R_2 = R_2 - R_1\times a} \myvec{ 1 & \frac{d}{b} & \frac{a}{b} & \frac{c}{b} \\ 0 & \frac{bc-ad}{b} & -\frac{a^2+b^2}{b} & -\frac{ac+bd}{b}} \nonumber \\
+&\xleftrightarrow{R_2 = R_2\frac{b}{bc-ad}} \myvec{ 1 & \frac{d}{b} & \frac{a}{b} & \frac{c}{b} \\ 0 & 1 & \frac{a^2+b^2}{ad-bc} & \frac{ac+bd}{ad-bc}} \nonumber \\
+&\xleftrightarrow{R_1 = R_1 - R_2\times\frac{d}{b}} \myvec{1 & 0 & -\frac{ac+bd}{ad-bc} & -\frac{c^2+d^2}{ad-bc} \\ 0 & 1 & \frac{a^2+b^2}{ad-bc} & \frac{ac+bd}{ad-bc}} \nonumber
+\end{align}
+\end{enumerate}
+Thus, from above two cases:
+\begin{align}
+    [\vec{T}]_\beta = \vec{A} = \myvec{-\frac{ac+bd}{ad-bc} & -\frac{c^2+d^2}{ad-bc} \\ \frac{a^2+b^2}{ad-bc} & \frac{ac+bd}{ad-bc}}.
+\end{align}
+Now $ad-bc \neq 0$ implies that atleast one of a or b is non-zero and atleast one of c or d is non-zero, which follows that:
+\begin{align}
+    a^2 + b^2 > 0 \text{ and } c^2 + d^2 > 0 \\
+    \text{Thus, } \brak{a^2+b^2}\brak{c^2+d^2} \neq 0.
+\end{align}
+Hence, it is proved that $\vec{A}_{12}\vec{A}_{21} \neq 0$.
+
