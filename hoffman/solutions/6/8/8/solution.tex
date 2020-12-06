@@ -1,0 +1,47 @@
+	Since $\vec{A}$ is a nilpotent  matrix, hence for a positive value $K$:
+	\begin{align}
+	\vec{A}^K = \vec{0}
+	\end{align} 
+	Now we have 
+	\begin{align}
+	\mathbf{T}(\vec{B}) = \vec{A}\vec{\vec{B}} - \vec{B}\vec{A}\\
+	\implies  \mathbf{T}^2(\vec{B}) = \mathbf{T}(\mathbf{T}(\vec{B})) =\mathbf{T}(\vec{A}\vec{B} -\vec{B}\vec{A})\label{eq:solutions/6/8/8/2.3}	
+	\end{align}
+	\begin{multline}
+	\mathbf{T}(\vec{A}\vec{B} -\vec{B}\vec{A}) = \vec{A}^2\vec{B} - \vec{A}\vec{B}\vec{A} -\vec{A}\vec{B}\vec{A} + \vec{B}\vec{A}^2 \\= \vec{A}^2 -2\vec{A}\vec{B}\vec{A} +\vec{B}\vec{A}^2
+	\end{multline}
+	\begin{multline}
+	\implies\mathbf{T}^3(\vec{B}) = \mathbf{T}(\mathbf{T}^2(\vec{B})) \\= \vec{A}^3 - 3\vec{A}^2\vec{B}\vec{A} + 3\vec{A}\vec{B}\vec{A}^2 - \vec{B}\vec{A}^3 \label{eq:solutions/6/8/8/2.5}
+	\end{multline}
+	Hence, from \eqref{eq:solutions/6/8/8/2.5} we can say that, as we are increasing the power of operator $\mathbf{T}$, the power of $\vec{A}$ is also increasing in every terms. Hence there exist   a value $P$  such that :
+	\begin{align}
+	\mathbf{T}^P (\vec{B})= \vec{0} 
+	\end{align} 
+	Hence, if $\vec{A}$ is a nilpotent matrix then operator $\mathbf{T}$ is also a nilpotent operator.\\
+	Let consider $K = 2$ for which $\vec{A}^K = \vec{0}$ that is :
+	\begin{align}
+	\vec{A}^2 = \vec{0} \label{eq:solutions/6/8/8/2.7}\\
+\implies	\vec{A}^3 = \vec{0} \label{eq:solutions/6/8/8/2.8}
+	\end{align} 
+	Now using \eqref{eq:solutions/6/8/8/2.7} and \eqref{eq:solutions/6/8/8/2.8} in \eqref{eq:solutions/6/8/8/2.5}, we get:
+	\begin{align}
+	\mathbf{T}^3(\vec{B}) = \vec{0}
+	\end{align}
+	Hence $P$ = 3.
+	Let consider a matrices $\vec{A}$ and, $B$ as :
+	\begin{align}
+\vec{A} = \myvec{2 & -2 \\ 2 & -2}, \vec{B} = \myvec{1 & 2 \\ 3 & 4}\\
+\vec{A}.\vec{B} = \myvec{-4 & -4 \\ -4 & -4} \neq \vec{0}\\
+\intertext{Now,}
+\implies \vec{A}^2 = \myvec{2 & -2 \\ 2 & -2}\myvec{2 & -2 \\ 2 & -2} =\myvec{0 & 0 \\ 0 & 0}\label{eq:solutions/6/8/8/3.3}\\
+\implies\vec{A}^3 = \myvec{0 & 0 \\ 0 & 0} \label{eq:solutions/6/8/8/3.4}
+\intertext{Hence $K$ = 2.}
+\intertext{And we have also,}
+\vec{A}\vec{B}\vec{A} = \myvec{-16 & 16 \\ -16 & 16} \neq \vec{0}
+\end{align}
+Hence from \eqref{eq:solutions/6/8/8/2.3} we conclude, $P \neq 2$. 	Now putting the value of $\vec{A}^3$ from \eqref{eq:solutions/6/8/8/3.4} and  value of $\vec{A}^2$ from \eqref{eq:solutions/6/8/8/3.3} in \eqref{eq:solutions/6/8/8/2.5} we get,
+\begin{align}
+\mathbf{T}^3(\vec{B}) = \vec{0}
+\end{align}
+Hence, $P = 3$	for this example.
+	

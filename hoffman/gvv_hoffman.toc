@@ -30,9 +30,10 @@
 \contentsline {subsection}{\numberline {6.4}Simultaneous Triangulation; Simultaneous Diagonalization}{211}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Direct Sum Decomposition}{220}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Invariant Direct Sums}{233}{subsection.6.6}%
-\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{241}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{241}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}The Jordan Form}{241}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{253}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Inner Product Spaces}{259}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Inner Products}{259}{subsection.8.1}%
+\contentsline {subsection}{\numberline {6.7}The Primary Decomposition Theorem}{241}{subsection.6.7}%
+\contentsline {section}{\numberline {7}The Rational and Jordan Forms}{249}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{249}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}The Jordan Form}{249}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{261}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Inner Product Spaces}{267}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Inner Products}{267}{subsection.8.1}%
