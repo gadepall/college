@@ -1,0 +1,197 @@
+See Tables \ref{eq:solutions/7/2/7/table:1} and \ref{eq:solutions/7/2/7/table:2}
+
+
+\onecolumn
+\begin{longtable}{|l|l|}
+\hline
+\multirow{3}{*}{Theorem 1} & \\
+&A Rational canonical form is a matrix $\vec{R}$ that is Direct sum of companion matrix.\\
+&\\
+&$\vec{R}=\vec{C(p_1)}\oplus\dots\oplus\vec{C(p_r)}$\\
+&\\
+&\parbox{10cm}
+	{\begin{align}
+	\vec{R}=
+	\myvec{\vec{C(p_1)}&0&0&\dots&0\\
+	0&\vec{C(p_2)}&0&\dots&0\\
+	\vdots & \vdots & \vdots & \dots & \vdots\\
+	0&0&0&\dots&\vec{C(p_r)}}
+	\end{align}}\\
+	&\\
+&where $\vec{C(p_i)}$ is the $k_i$ x $k_i$ companion matrix of $p_i$ where polynomial $p_1,p_2\dots p_r$ are called\\
+&\\
+&invariant factors for Given Matrix .Where $k_i$ denotes the degree of annihilator of $p_i$.\\
+&\\
+&This representation is called rational form.\\
+
+\hline
+\multirow{3}{*}{Theorem 2} & \\
+&If $p_i(x)=x+a_0$ then its companion matrix $\vec{C(p)}$ is 1 x 1 matrix as $\myvec{-a_0}$.\\
+&\\
+&If $k_i$ $\geq 2$ then $p(x)=x^k+a_{k-1}x^{k-1}+\dots+a_1x+a_0 $ then its companion matrix is\\
+&\\
+&\parbox{10cm}
+	{\begin{align}
+	\vec{C(p_i)}=
+	\myvec{0&0&0&\dots&0&-a_0\\
+	1&0&0&\dots&0&-a_1\\
+	0&1&0&\dots&0&-a_2\\
+	0&0&1&\dots&0&-a_3\\
+	\vdots & \vdots & \vdots & \dots & \vdots& \vdots\\
+	0&0&0&\dots&1&-a_{k-1}}
+	\end{align}}\\
+
+\hline
+\caption{Illustration of theorem.}
+\label{eq:solutions/7/2/7/table:1}
+\end{longtable}
+\begin{longtable}{|l|l|}
+\hline
+\multirow{3}{*}{Given part 1} & \\
+&$\vec{A}=\myvec{0&-1&-1\\1&0&0\\-1&0&0}$\\
+&\\
+\hline
+
+
+\multirow{3}{*}{Characteristics and Minimal Polynomial} & \\
+&
+Characteristics polynomial of the matrix  is $det(x\vec{I}-\vec{A})$\\ 
+&\\
+& $\det(x\vec{I}-\vec{A})$= $\left|
+                \begin{array}{ccc}
+                (x) & 1 & 1\\
+                -1 & (x) & 0\\
+                1 & 0 & (x)
+                \end{array} \right|$ =$x\brak{x^2}-1\brak{-x}-x=x^3$\\
+&\\
+& Characteristic Polynomial = $x^3$\\
+&\\
+& Minimal Polynomial can be $x,x^2$ or $x^3$ of lowest degree\\
+&\\
+&satisfying $p(\vec{A})=0$    \\
+&\\
+&Let take $p\brak{x}=x\implies p(\vec{A})=\vec{A}=\myvec{0&-1&-1\\1&0&0\\-1&0&0}\neq0$\\
+&\\
+&Let take $p\brak{x}=x^2\implies p(\vec{A})=\vec{A}^2=\myvec{0&-1&-1\\1&0&0\\-1&0&0}\neq0$\\
+&\\
+&Take $p\brak{x}=x^3\implies p\brak{\vec{A}} =\vec{A}^3=\myvec{0&0&0\\0&0&0\\0&0&0}=\vec{0}$\\
+&\\
+&Thus minimal polynomial $p\brak{x}=x^3$.\\  
+&\\
+\hline
+\multirow{3}{*}{Companion Matrix and Rational Form} & \\
+&Since\\
+&\\
+&Characteristics polynomial$=$Minimal polynomial$=$Invariant factors\\
+&\\
+&$p\brak{x}=x^3+0x^2+0x+0$\\
+&\\
+&So Companion Matrix is of dimention 3x3 and from theorem 2\\
+&\\
+&$\vec{C(p)}=\myvec{0&0&0\\1&0&0\\0&1&0}$\\
+&\\
+&Since there is only one minimal polynomial of degree 3 
+which is\\ &equal to characteristics equation therefore\\ &Rational matix=companion matrix\\ 
+&$\vec{R}=\vec{C(p)}=\myvec{0&0&0\\1&0&0\\0&1&0}$\\
+&\\
+&which is in rational form.\\
+&\\
+\hline \hline
+&\\
+
+
+
+
+\multirow{3}{*}{Given Part 2} & \\
+&$\vec{A}=\myvec{c&0&-1\\0&c&1\\1&1&c}$\\
+&\\
+\hline
+
+
+\multirow{3}{*}{Characteristics and Minimal Polynomial} & \\
+&
+Characteristics polynomial of the matrix  is $det(x\vec{I}-\vec{A})$\\ 
+&\\
+& $\det(x\vec{I}-\vec{A})$= $\left|
+                \begin{array}{ccc}
+                (x-c) & 0 & 1\\
+                0 & (x-c) & -1\\
+                -1 & -1 & (x-c)
+                \end{array} \right|$\\ &=$\brak{x-c}\brak{\brak{x-c}^2+1}-\brak{x-c}=\brak{x-c}^3$\\
+&\\
+& Characteristic Polynomial = $\brak{x-c}^3$\\
+&\\
+& Minimal Polynomial can be $\brak{x-c},\brak{x-c}^2$ or $\brak{x-c}^3$ \\
+&\\
+&of lowest degree satisfying $p(\vec{A})=0$    \\
+&\\
+&Let take $p\brak{x}=\brak{x-c}\implies p(\vec{A})=\vec{A}-c\vec{I}=\myvec{0&0&-1\\0&0&1\\1&1&0}\neq0$\\
+&\\
+&Let take $p\brak{x}=\brak{x-c}^2\implies p(\vec{A})=\brak{\vec{A}-c\vec{I}}^2=\myvec{-1&-1&0\\1&1&0\\0&0&0}\neq0$\\
+&\\
+&Take $p\brak{x}=\brak{x-c}^3\implies p\brak{\vec{A}} =\brak{\vec{A}-c\vec{I}}^3=\myvec{0&0&0\\0&0&0\\0&0&0}=\vec{0}$\\
+&\\
+&Thus minimal polynomial $p\brak{x}=\brak{x-c}^3$.\\  
+&\\
+\hline
+\multirow{3}{*}{Companion Matrix and Rational Form} & \\
+&Since\\
+&\\
+&Characteristics polynomial$=$Minimal polynomial$=$Invariant factors\\
+&\\
+&$p\brak{x}=x^3-3cx^2+3c^2x-c^3$\\
+&\\
+&So Companion Matrix is of dimention 3x3 and from theorem 2\\
+&\\
+&$\vec{C(p)}=\myvec{0&0&c^3\\1&0&-3c^2\\0&1&3c}$\\
+&\\
+&Since there is only one minimal polynomial of degree 3 
+which is\\ &equal to characteristics equation therefore\\ &Rational matix=companion matrix\\ 
+&$\vec{R}=\vec{C(p)}=\myvec{0&0&c^3\\1&0&-3c^2\\0&1&3c}$\\
+&\\
+&which is in rational form.\\
+&\\
+\hline \hline
+\multirow{3}{*}{Given part 3} & \\
+&$\vec{A}=\myvec{\cos\theta&\sin\theta\\-\sin\theta&\cos\theta}$\\
+&\\
+\hline
+
+
+\multirow{3}{*}{Characteristics and Minimal Polynomial} & \\
+&
+Characteristics polynomial of the matrix  is $det(x\vec{I}-\vec{A})$\\ 
+&\\
+& $\det(x\vec{I}-\vec{A})$= $\left|
+                \begin{array}{ccc}
+                (x-\cos\theta) & -\sin\theta\\
+                \sin\theta & (x-\cos\theta)\\
+                \end{array} \right|$ =$x^2-2\cos\theta x +1$\\
+&\\
+& Characteristic Polynomial =Minimal Polynomial=$x^2-2\cos\theta x +1$\\
+&\\
+
+\hline
+\multirow{3}{*}{Companion Matrix and Rational Form} & \\
+&Since\\
+&\\
+&Characteristics polynomial$=$Minimal polynomial$=$Invariant factors\\
+&\\
+&$p\brak{x}=x^2-2\cos\theta x +1$\\
+&\\
+&So Companion Matrix is of dimention 2x2 and from theorem 2\\
+&\\
+&$\vec{C(p)}=\myvec{0&-1\\1&2\cos\theta}$\\
+&\\
+&Since there is only one minimal polynomial of degree 3 
+which is\\ &equal to characteristics equation therefore\\ &Rational matix=companion matrix\\ 
+&$\vec{R}=\vec{C(p)}=\vec{C(p)}=\myvec{0&-1\\1&2\cos\theta}$\\
+&\\
+&which is in rational form.\\
+&\\
+\hline
+
+\caption{Solution Table}
+\label{eq:solutions/7/2/7/table:2}
+\end{longtable}
+\twocolumn

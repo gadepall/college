@@ -1,0 +1,55 @@
+See Tables     \ref{eq:solutions/6/4/1/tab:proof} and     \ref{eq:solutions/6/4/1/tab:construction}
+
+%
+\onecolumn
+\begin{longtable}{|l|l|}
+    \hline
+        Definition & If $\vec{V}$ is a vector space over a field $\mathbb{F}$, a linear operator on $\vec{V}$ is a linear transformation \\
+        Of linear &from $\vec{V}$ into $\vec{V}$. So for two vectors $\alpha$ and $\beta$ in $\vec{V}$, the transformation will be \\
+        operator& $\vec{T}\brak{c\alpha+\beta}=c\brak{\vec{T}\alpha}+\vec{T}\beta$ where $\vec{T}\alpha$ and $\vec{T}\beta$ are in $\vec{V}$ and c in $\mathbb{F}$.\\
+    \hline
+    Invariant &If $\vec{W}$ is a subspace of $\vec{V}$, we say that $\vec{W}$ is invariant under $\vec{T}$ if for each vector $\alpha$\\
+    subspaces &in $\vec{W}$ the vector $\vec{T}\alpha$ is in $\vec{W}$, i.e, if $\vec{T}\brak{\vec{W}}$ is contained in $\vec{W}$.\\
+    \hline
+    Given & $\vec{T}$ is a linear operator in $\mathbb{R}^2$, the matrix of which in the standard basis is\\
+    & \qquad  \qquad \qquad \qquad \qquad$\vec{A}=\myvec{1&-1\\2&2}$\\
+    & So by definition $\mathbb{R}^2$ is invariant under $\vec{T}$, since $\vec{T}$ is a linear operator.\\
+    \hline
+    \caption{construction}
+    \label{eq:solutions/6/4/1/tab:construction}
+\end{longtable}
+\begin{longtable}{|l|l|}
+    \hline
+    Proof for 1  & $i)$  The null space of $\vec{T}$ can be calculated as\\
+   & \quad $\myvec{1&-1\\2&2}\myvec{x\\y}=0$, by augmenting we get $\myvec{1&-1&0\\2&2&0}$ \\
+   &\quad applying row reduction we get\\
+   &\quad $\myvec{1&-1&0\\2&2&0}\xleftrightarrow{R_2=R_2-2R_1}=\myvec{1&-1&0\\0&4&0}\xleftrightarrow{R_1=R_1+\frac{R_2}{4}}=\myvec{1&0&0\\0&4&0}\xleftrightarrow{R_2=\frac{R_2}{4}}\myvec{1&0&0\\0&1&0}$\\
+   &\quad Therefore the nullspace of $\vec{T}$ contains only the zero vector.\\
+   &$ii)$ Assume that there is a 1-dimensional subspace that is invariant under $\vec{T}$,then \\
+   &\quad $\vec{A}\vec{x}=c\vec{x}\implies\vec{x}$ is the eigen vector and c is eigen value of $\vec{A}$.\\
+    & \qquad  \qquad \qquad \qquad $\det \brak{\vec{A}-\lambda \vec{I}}=\mydet{1-\lambda&-1\\2&2-\lambda}=\lambda^2-3\lambda+4$.\\
+    &\qquad  \qquad \qquad \qquad $\lambda_1=\frac{3+\sqrt{7}i}{2}$ and $\lambda_2=\frac{3-\sqrt{7}i}{2}$ are the eigenvalues of $\vec{A}$.\\
+   &\quad Since the field of vector space is $\mathbb{R}$, there are no eigen values and hence no eigen vectors\\
+   &\quad Since there are no eigen values in the field $\mathbb{R}$, there are no 1-dimensional vectors which\\
+   &\quad can be invariant under $\vec{T}$.\\
+   &$iii)$If $\vec{T}\brak{\vec{v}}=\vec{T}\brak{\vec{u}}\implies \vec{T}\brak{\vec{v-u}}=0\implies \vec{v-u}=0\implies \vec{v}=\vec{u}$ since the nullspace of $\vec{A}$\\
+   & \quad consists of only the zero vector. So the linear operator is one-to-one.\\
+   &Since the range of the linear operator is $\mathbb{R}^2$, the vector space $\mathbb{R}^2$ is invariant under $\vec{T}$.\\
+   &And as the nullspace maps to zero vector and zero vector is invariant under $\vec{T}$, the only \\
+   &subspaces that are invariant under $\vec{T}$ are the vector space $\mathbb{R}$ and the zero vector.\\
+   \hline
+   Proof for 2 & If $\vec{U}$ is the linear operator on $\mathbb{C}^2$, the matrix of which in the standard ordered basis is $\vec{A}$\\
+   &The eigen vectors will be, for $\lambda_1=\frac{3+\sqrt{7}i}{2}$, the nullspace of $\vec{A}-\lambda\vec{I}$ will be the eigen vector.\\
+   &\qquad \qquad $\myvec{\frac{-1-\sqrt{7}i}{2}&-1&0\\2&\frac{1-\sqrt{7}i}{2}&0}\xleftrightarrow{R_2=R_2-\frac{\brak{-1+\sqrt{7}i}R_1}{2}}$\myvec{\frac{-1-\sqrt{7}i}{2}&-1&0\\0&0&0}\\
+   \hline
+   & Therefore one of the eigen vectors is $\vec{e_1}=\myvec{-1\\\frac{1+\sqrt{7}i}{2}}$\\
+   & This eigen vector $\vec{e_1}$ is a subspace of $\mathbb{C}^2$.\\
+   & Applying the linear operator $\vec{U}$ on $\vec{e_1}$, we get\\
+   & $\vec{U\brak{ce_1}}=\vec{Ae_1}=c\myvec{1&-1\\2&2}\myvec{-1\\\frac{1+\sqrt{7}i}{2}}=c\frac{3+\sqrt{7}i}{2}\myvec{-1\\\frac{1+\sqrt{7}i}{2}}\implies\vec{U\brak{ce_1}}=c^{'}\vec{e_1}$\\
+   &Therefore the vector space $\mathbb{C}^2$ has 1-dimensional invariant subspaces which are\\
+   &the two subspaces along each eigen vectors containing the zero vector.\\
+   \hline
+    \caption{Proof}
+    \label{eq:solutions/6/4/1/tab:proof}
+\end{longtable}
+\twocolumn
