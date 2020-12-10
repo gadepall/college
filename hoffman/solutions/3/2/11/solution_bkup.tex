@@ -1,0 +1,37 @@
+See Table \ref{table:solutions/3/2/11/}.
+\begin{table*}[!ht]
+	\begin{tabular}{|l|l|}
+		\hline
+		\multirow{3}{*}{Given} & \\
+		& $\vec{T}:\vec{V} \to \vec{V}$ be a linear operator.\\
+		& Rank($T^2$)=Rank($T$)\\
+		\hline	
+		\multirow{3}{*}{Rank of $T$ and $T^2$ } & \\
+		& Let ${\myvec{e_{1}, e_{2},...,e_{n}}}$ be a basis for $T$,then Rank($T$) is linearly independent vectors\\& in the set  ${\myvec{Te_{1}, Te_{2},...,Te_{n}}}$ \\
+	    & Let,Rank($T$)=r=Rank($T^2$)\\
+	    
+		\hline	
+		\multirow{3}{*}{Rank Nullity Theorem} & \\
+		& If Rank($T$)=r then ${\myvec{Te_{1}, Te_{2},...,Te_{r}}}$ is the basis of range T.\\
+		& Similarly for $T^2$,${\myvec{T^2e_{1}, T^2e_{2},...,T^2e_{r}}}$ is the basis of range $T^2$\\
+		\hline
+		\multirow{3}{*}{$\vec{v}$$\in$ range(T)} & 
+	    \\
+	    & $\vec{v}$=$c_1Te_{1}+c_2Te_{2}+....+c_rTe_{r}$\\
+	    $\vec{v}$$\in$ nullspace(T) & T($\vec{v}$)=0\\
+	    & T($c_1Te_{1}+c_2Te_{2}+....+c_rTe_{r}$)=0\\
+	    & $c_1T^2e_{1}+c_2T^2e_{2}+....+c_rT^2e_{r}$=0\\
+	    & But,${\myvec{T^2e_{1}, T^2e_{2},...,T^2e_{r}}}$ is the basis of range $T^2$\\
+	    & So,$c_1$=$c_2$=......=$c_r$=0\\
+	    & Substituting these in $\vec{v}$ we get $\vec{v}$=0\\
+	    \hline
+		\multirow{3}{*}{Conclusion} & \\
+		& Hence from above it can be seen that when $\vec{v}$ belongs\\ 
+		&  to both range($T$) and nullspace($T$) then $\vec{v}$ is a zero vector.\\
+		& Hence,range($T$) and nullspace($T$) are disjoint.
+		\\
+		\hline
+	\end{tabular}
+\caption{}
+\label{table:solutions/3/2/11/}
+\end{table*}
