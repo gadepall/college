@@ -1,0 +1,709 @@
+See Tables \ref{eq:solutions/7/4/5/tab0}
+and \ref{eq:solutions/7/4/5/tab}
+
+\onecolumn
+\begin{longtable}{|p{4.5cm}|p{13.5cm}|}
+	\hline
+	    &\\
+		\endhead
+		&\\
+		\hline
+		\endfoot
+	\multirow{3}{*}{Characteristic Polynomial} 
+	& The characteristic polynomial of a $n \times n$ matrix $\vec{A}$ is given by:\\
+	&\\
+	& $\qquad\qquad\boxed{\det(\lambda\vec{ I}-\vec{A})} \qquad$ Where, $\vec{I}$ is $n\times n$ identity matrix  \\
+	&\\
+	\hline
+	\multirow{3}{*}{Minimal Polynomial} 
+	& \\
+	& The minimal polynomial of an $n \times n$ matrix $\vec{A}$ over a field $F$ is the monic polynomial $P$ over $F$ of least degree such that $P(\vec{A}) = 0$.\\
+	&\\
+	\hline
+	\multirow{3}{*}{Invariant factors} & \\
+	& The invariant factors of a $n\times n$ matrix $\vec{A}$ are: \\
+    & \\
+    &$\qquad\qquad\qquad f_1$, $f_2$, $f_3$, $\cdots$, $f_n$\\
+    &\\
+    &Where $f_1$, $f_2$, $\cdots$, $f_n$ are monic non-zero elements of $F[x]$ (Set of all polynomials over field $F$) and satisfy the following:\\
+    &\begin{itemize}
+        \item $f_1$ divides $f_2$, which in turn divides $f_3$, and so on, denoted as: \newline
+        $\qquad \qquad f_1$ $|$ $f_2$ $|$ $f_3$ $|$ $\cdots$ $|$ $f_n$
+        \item $f_n$ is the minimal polynomial of $\vec{A}$
+        \item The product $f_1f_2f_3f_4\cdots f_n$ = char$_A(x)$ =$\det(x\vec{I}-\vec{A})$
+    \end{itemize}\\
+    \hline
+    \multirow{3}{*}{\hypertarget{pdt}{Primary decomposition}} & \\
+	& Let $\vec{T}$ be a linear operator on the Finite-dimensional vector space $\vec{V}$ \\ theorem
+    & over the field $F$. Let $p$ be the minimal polynomial for $\vec{T}$,  \\
+    &\begin{align}
+       p = p_1^{r_1}\cdots p_k^{r_k}
+    \end{align}\\
+    &where the $p_i$ are distinct irreducible monic polynomials over $F$ and the $r_i$ are positive integers. Let $W_i$ be the null space of $p_i(T)^{r_i},$ $i = 1,\cdots ,k$. Then\\
+    &\begin{itemize}
+        \item $\vec{V} = \vec{W}_1  \oplus . . . \oplus  \vec{W}_k;$
+        \item Each $\vec{W}_i$ is invariant under $\vec{T}$
+        \item If $\vec{T}_i$ is the operator induced on $\vec{W}_i$ by $\vec{T}$, then the minimal polynomial for $\vec{T}_i$ is $p_i^{r_i}$
+    \end{itemize}\\
+    \hline
+    \multirow{3}{*}{Projections associated} 
+    &\\
+    &If $\vec{V} = \vec{W}_1  \oplus \cdots \oplus  \vec{W}_k$ then there exist $k$ linear operators (called projections) \\with direct decomposition 
+    &$\vec{E}_1, \cdots , \vec{E}_k$ on $\vec{V}$ such that:\\of a vector space.
+    &\begin{itemize}
+        \item Each $\vec{E}_i$ is a projection $(\vec{E}_i^2 = \vec{E}_i)$;
+        \item $\vec{E}_i\vec{E}_j=0$, if $i \ne j$;
+        \item $\vec{I} = \vec{E_1} + \cdots + \vec{E_k}$
+    \end{itemize}\\
+    &Also, for $i \in [1,k],$\\
+    &\begin{gather}
+        \vec{E}_i(\vec{v})=
+           \begin{cases}
+           \vec{v} \qquad \text{ for }  \vec{v} \in \vec{W}_i \\
+          0 \qquad \text{ for } \vec{v} \notin \vec{W}_i
+       \end{cases}
+    \end{gather}\\
+    \hline
+    \multirow{3}{*}{\hypertarget{Cyclicdecomposition}{Cyclic decomposition}} & \\
+	&Let $T$ be a linear operator on a finite-dimensional vector space $\vec{V}$ and let\\theorem
+	&$\vec{W}_0$ be a proper $T$-admissible subspace of $\vec{V}.$ There exists non zero vectors $\alpha_1,\alpha_2,\hdots,\alpha_r$ in $\vec{V}$ with respective $T$-annihilators $p_1,p_2,\hdots,p_r$ such that:\\
+	&\begin{itemize}
+        \item $\vec{V}=\vec{W}_0\oplus \vec{Z}(\alpha_1;T)\oplus \vec{Z}(\alpha_2;T)\oplus\hdots\oplus \vec{Z}(\alpha_r;T)$
+        \item $p_k \text{ divides } p_{k-1},\text{ }k=2, \hdots,r$
+    \end{itemize}\\
+	&Here, the T-cyclic subspace $ \vec{Z}(\alpha_i;T)$ is defined as :
+	\begin{itemize}
+	    \item $\vec{Z}(\alpha_i;T)=\text{Span}\cbrak{\alpha_i,\vec{T}\alpha_i,\hdots,\vec{T}^{k-1}\alpha_i}$
+	    \item Where $k=$ Degree of $p_i$
+	\end{itemize}\\
+	\hline
+    \multirow{3}{*}{Jordan form of a matrix} & \\
+	&Every matrix $\vec{A}$ can be expressed as:\\
+	&\begin{align}
+	    \vec{P}^{-1}\vec{A}\vec{P} = \vec{J}
+	\end{align}\\
+	&Where $\vec{J}$ is an upper triangular matrix of a particular form called a Jordan matrix. Matrix $\vec{J}$ is of the form:\\
+	&$\qquad\qquad \vec{J} = \begin{bmatrix}
+J_1 & \;     & \; \\
+\;  & \ddots & \; \\ 
+\;  & \;     & J_p\end{bmatrix}\qquad$ Where, $J_i = 
+\begin{bmatrix}
+\lambda_i & 1            & \;     & \;  \\
+\;        & \lambda_i    & \ddots & \;  \\
+\;        & \;           & \ddots & 1   \\
+\;        & \;           & \;     & \lambda_i       
+\end{bmatrix}.$\\
+\caption{}
+\label{eq:solutions/7/4/5/tab0}
+\end{longtable}
+
+	\begin{longtable}{|p{4cm}|p{14cm}|}
+	    \endfirsthead
+	    \hline
+	    &\\
+		\endhead
+		&\\
+		\hline
+		\endfoot
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Characteristic polynomial}}\\
+		\hline
+		\multirow{3}{*}{Finding the Characte-} 
+		& \\
+		& The linear operator $\vec{T}$ is represented in standard basis by matrix $\vec{A}$ given as:\\-ristic polynomial
+		&\\
+		&\begin{gather}
+		    \vec{A}=\myvec{
+1 &1  &1  &1  &1  &1  &1  &1 \\ 
+ 0&0  &0  &0  &0  &0  &0  &1 \\ 
+0 &0  &0  &0  &0  &0  &0  &-1 \\ 
+0 &1  &1  &0  &0  &0  &0  &1 \\ 
+0 &0  &0  &1  &1  &0  &0  &0 \\ 
+0 &1  &1  &1  &1  &1  &0  &1 \\ 
+0 &-1  &-1  &-1  &-1  &0  &1  &-1 \\ 
+0 &0  &0  &0  &0  &0  &0  &0 } 
+		\end{gather}\\
+        &The characteristic polynomial is given by:\\
+        &\begin{align}
+            \mydet{\lambda \vec{I}-\vec{A}}= \mydet{\lambda-1 &-1  &-1  &-1  &-1  &-1  &-1  &1 \\ 0&\lambda  &0  &0  &0  &0  &0  &-1 \\ 
+            0 &0  &\lambda  &0  &0  &0  &0  &1 \\ 
+            0 &-1  &-1  &\lambda  &0  &0  &0  &-1 \\ 
+            0 &0  &0  &-1  &\lambda-1  &0  &0  &0 \\ 
+            0 &-1  &-1  &-1  &-1  &\lambda-1  &0  &-1 \\ 
+            0 &1  &1  &1  &1  &0  &\lambda-1  &1 \\ 
+            0 &0  &0  &0  &0  &0  &0  &\lambda }
+        \end{align}\\
+        &\begin{align}
+            =(\lambda-1)\mydet{\lambda  &0  &0  &0  &0  &0  &-1 \\ 
+            0  &\lambda  &0  &0  &0  &0  &1 \\ 
+            -1  &-1  &\lambda  &0  &0  &0  &-1 \\ 
+            0  &0  &-1  &\lambda-1  &0  &0  &0 \\ 
+            -1  &-1  &-1  &-1  &\lambda-1  &0  &-1 \\ 
+            1  &1  &1  &1  &0  &\lambda-1  &1 \\ 
+            0  &0  &0  &0  &0  &0  &\lambda }
+        \end{align}\\
+        &\begin{align}
+            =(\lambda-1)\lambda \mydet{
+            \lambda  &0  &0  &0  &0  &0 \\ 
+            0  &\lambda  &0  &0  &0  &0  \\ 
+            -1  &-1  &\lambda  &0  &0  &0   \\ 
+            0  &0  &-1  &\lambda-1  &0  &0  \\ 
+            -1  &-1  &-1  &-1  &\lambda-1  &0  \\ 
+            1  &1  &1  &1  &0  &\lambda-1}
+        \end{align}
+        \begin{gather}
+            =(\lambda-1)^4\lambda^4=\boxed{\lambda^8-4\lambda^7+6\lambda^6-4\lambda^5+\lambda^4}
+        \end{gather}\\
+        &This is the required characteristic polynomial.\\
+        &\\
+        \hline
+        \multicolumn{2}{|c|}{\textbf{Invariant factors}}\\
+		\hline
+    \multirow{3}{*}{Finding the } & \\
+		& From the obtained characteristic polynomials, Let us find the minimal polynomial \\Invariant factors 
+		&$p(\lambda)$ which satisfies the condition $p(\vec{A})=0$ and has least degree. Starting from smallest degree and moving up:\\
+		&\\
+		&Consider$ \quad(\lambda-1)\lambda = \lambda^2-\lambda$\\
+		&Verification: \\
+	    	& $p(\vec{A})=\vec{A}^2-\vec{A}$ \\
+		& $\quad \quad=\myvec{1&  2&  2&  2&  2& 2& 2&  2\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  1&  1&  1&  1& 0& 0&  1\\
+0&  2&  2&  2&  2& 1& 0&  2\\
+0& -2& -2& -2& -2& 0& 1& -2\\
+0&  0&  0&  0&  0& 0& 0&  0}-\myvec{
+1 &1  &1  &1  &1  &1  &1  &1 \\ 
+ 0&0  &0  &0  &0  &0  &0  &1 \\ 
+0 &0  &0  &0  &0  &0  &0  &-1 \\ 
+0 &1  &1  &0  &0  &0  &0  &1 \\ 
+0 &0  &0  &1  &1  &0  &0  &0 \\ 
+0 &1  &1  &1  &1  &1  &0  &1 \\ 
+0 &-1  &-1  &-1  &-1  &0  &1  &-1 \\ 
+0 &0  &0  &0  &0  &0  &0  &0 }$ \\
+        &$\quad \quad p(\vec{A})\ne \vec{0}$\\
+        &$\quad \quad$Thus, $\lambda^2-\lambda$ is not our minimal polynomial\\
+        &\\
+		&Consider$ \quad(\lambda-1)\lambda^2 = \lambda^3-\lambda^2$\\
+		&Verification: \\
+			& $p(\vec{A})=\vec{A}^3-\vec{A}^2$ \\
+		& $\quad \quad=\myvec{1&  3&  3&  3&  3& 3& 3&  3\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  1&  1&  1&  1& 0& 0&  1\\
+0&  3&  3&  3&  3& 1& 0&  3\\
+0& -3& -3& -3& -3& 0& 1& -3\\
+0&  0&  0&  0&  0& 0& 0&  0}-\myvec{1&  2&  2&  2&  2& 2& 2&  2\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  1&  1&  1&  1& 0& 0&  1\\
+0&  2&  2&  2&  2& 1& 0&  2\\
+0& -2& -2& -2& -2& 0& 1& -2\\
+0&  0&  0&  0&  0& 0& 0&  0}$ \\
+        &$\quad \quad p(\vec{A})\ne \vec{0}$\\
+        &$\quad \quad$Thus, $\lambda^3-\lambda^2$ is not our minimal polynomial\\
+        &\\
+		&Consider$ \quad(\lambda-1)^2\lambda = \lambda^3-2\lambda^2+\lambda$\\
+		&Verification: \\
+			& $p(\vec{A})=\vec{A}^3-2\vec{A}^2+\vec{A}$ \\
+		& $\quad \quad=\myvec{-1& -1& -1& -1& -1& -1& -1& -1\\
+ 0&  0&  0&  0&  0&  0&  0&  0\\
+ 0&  0&  0&  0&  0&  0&  0&  0\\
+ 0&  0&  0&  0&  0&  0&  0&  0\\
+ 0& -1& -1& -1& -1&  0&  0& -1\\
+ 0& -1& -1& -1& -1& -1&  0& -1\\
+ 0&  1&  1&  1&  1&  0& -1&  1\\
+ 0&  0&  0&  0&  0&  0&  0&  0}-\myvec{
+1 &1  &1  &1  &1  &1  &1  &1 \\ 
+ 0&0  &0  &0  &0  &0  &0  &1 \\ 
+0 &0  &0  &0  &0  &0  &0  &-1 \\ 
+0 &1  &1  &0  &0  &0  &0  &1 \\ 
+0 &0  &0  &1  &1  &0  &0  &0 \\ 
+0 &1  &1  &1  &1  &1  &0  &1 \\ 
+0 &-1  &-1  &-1  &-1  &0  &1  &-1 \\ 
+0 &0  &0  &0  &0  &0  &0  &0}$ \\
+        &\\
+        &$\quad \quad p(\vec{A})\ne \vec{0}$\\
+        &$\quad \quad$Thus, $\lambda^3-2\lambda^2+\lambda$ is not our minimal polynomial\\
+        &\\
+		&Consider$ \quad(\lambda-1)^2\lambda^2 = \lambda^4-2\lambda^3+\lambda^2$\\
+		&Verification: \\
+			& $p(\vec{A})=\vec{A}^4-2\vec{A}^3+\vec{A}^2$ \\
+		& $\quad \quad=\myvec{1&  4&  4&  4&  4& 4& 4&  4\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  1&  1&  1&  1& 0& 0&  1\\
+0&  4&  4&  4&  4& 1& 0&  4\\
+0& -4& -4& -4& -4& 0& 1& -4\\
+0&  0&  0&  0&  0& 0& 0&  0}-2\cdot\myvec{1&  3&  3&  3&  3& 3& 3&  3\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  1&  1&  1&  1& 0& 0&  1\\
+0&  3&  3&  3&  3& 1& 0&  3\\
+0& -3& -3& -3& -3& 0& 1& -3\\
+0&  0&  0&  0&  0& 0& 0&  0}$ \\
+& $\quad \quad+\myvec{1&  2&  2&  2&  2& 2& 2&  2\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  1&  1&  1&  1& 0& 0&  1\\
+0&  2&  2&  2&  2& 1& 0&  2\\
+0& -2& -2& -2& -2& 0& 1& -2\\
+0&  0&  0&  0&  0& 0& 0&  0}$\\
+& $\quad \quad=\myvec{0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+}$ \\
+        &$\quad \quad \therefore p(\vec{A})= \vec{0}$\\
+        &$\quad \quad$Thus, $\boxed{\lambda^4-2\lambda^3+\lambda^2}$ is the minimal polynomial\\
+        &\\
+        &Let $f_1$, $f_2$, $f_3$, $\cdots$, $f_8$ be the invariant factors of $A$. Then $f_8$ is the minimal polynomial of $\vec{A}$ and so $f_8 = \lambda^4-2\lambda^3+\lambda^2$. We also know that the product $f_1f_2f_3f_4f_5f_6f_7f_8$ = char$_A(x)$ =$\det(x\vec{I}-\vec{A})$. Thus, the invariant factors are:\\
+        &\\
+	   	&$\implies$ $\boxed{1$ $|$ $1$  $|$ $1$ $|$ $1$ $|$ $1$ $|$ $1$ $|$ $(\lambda^4-2\lambda^3+\lambda^2)$ $|$ $(\lambda^4-2\lambda^3+\lambda^2)}$\\
+	   	&\\
+	   	&$\bullet \quad$ Here, each $f_i$ divides $f_{i+1}$,\\
+	   	&$\bullet \quad$ The last factor $f_8$ is our minimal polynomial, and\\
+	   	&$\bullet \quad$ The product of all factors is equal to the characteristic polynomial.\\
+	   	&\\
+	   	&Therefore, The given factors are valid invariant factors of matrix $\vec{A}$\\
+	   	&\\
+	   	\hline
+	   	\multicolumn{2}{|c|}{\textbf{Primary decomposition of $R^8$ under $T$.}}\\
+		\hline
+	   	\multirow{3}{*}{Finding the primary} & \\
+		& The minimal polynomial of the matrix $\vec{A}$ is:\\decomposition of $\vec{R^8}$ 
+		&\\under $\vec{T}$
+		&\begin{gather}
+		    p(\lambda)=\lambda^3-2\lambda^2+\lambda=(\lambda-1)^2\lambda^2
+		\end{gather}\\
+		&By \hyperlink{pdt}{\underline{Primary decomposition theorem}}, The vector space $\vec{R^8}$ can be decomposed into the primary components (or subspaces) as:\\
+		&\begin{gather}
+		    \vec{R^8} = \vec{W}_1  \oplus \vec{W}_2;
+		    \intertext{Where,}
+		     \vec{W}_1=\text{ Null space of  }(\vec{A}-\vec{I})^2\\
+		     \vec{W}_2=\text{ Null space of }(\vec{A})^2
+		\end{gather}\\
+		&\underline{Finding primary component $\vec{W_1}$}: \\
+		&\begin{gather}
+		(\vec{A}-\vec{I})^2\vec{v}=0\\
+		    \myvec{0&  0&  0&  0& 0& 0& 0&  0\\
+0&  1&  0&  0& 0& 0& 0& -2\\
+0&  0&  1&  0& 0& 0& 0&  2\\
+0& -2& -2&  1& 0& 0& 0& -2\\
+0&  1&  1& -1& 0& 0& 0&  1\\
+0&  0&  0&  0& 0& 0& 0&  0\\
+0&  0&  0&  0& 0& 0& 0&  0\\
+0&  0&  0&  0& 0& 0& 0&  1}\vec{v}=0\\
+\intertext{$\qquad \qquad \qquad \qquad $ Row reduced echelon form:}
+\myvec{0& 1& 0& 0& 0& 0& 0& 0\\
+0& 0& 1& 0& 0& 0& 0& 0\\
+0& 0& 0& 1& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 1\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0
+}\vec{v}=0 \\
+\therefore \vec{W}_1=\myvec{v_1\\0\\0\\0\\v_5\\v_6\\v_7\\0}\\
+\therefore \vec{W}_1= \text{Span} \left \{ \myvec{1\\0\\0\\0\\0\\0\\0\\0},\myvec{0\\0\\0\\0\\1\\0\\0\\0},\myvec{0\\0\\0\\0\\0\\1\\0\\0},\myvec{0\\0\\0\\0\\0\\0\\1\\0} \right \} \label{eq:solutions/7/4/5/eq5}
+		\end{gather}\\
+		&\underline{Finding primary component $\vec{W_2}$}: \\
+		&\begin{gather}
+		    \vec{A}^2\vec{v}=0\\
+		    \myvec{1&  2&  2&  2&  2& 2& 2&  2\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  0&  0&  0&  0& 0& 0&  0\\
+0&  1&  1&  1&  1& 0& 0&  1\\
+0&  2&  2&  2&  2& 1& 0&  2\\
+0& -2& -2& -2& -2& 0& 1& -2\\
+0&  0&  0&  0&  0& 0& 0&  0}\vec{v}=0
+\intertext{$\qquad \qquad \qquad \qquad$Row reduced echelon form:}
+\myvec{1& 0& 0& 0& 0& 0& 0& 0\\
+0& 1& 1& 1& 1& 0& 0& 1\\
+0& 0& 0& 0& 0& 1& 0& 0\\
+0& 0& 0& 0& 0& 0& 1& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0}\vec{v}=0\quad \\
+\therefore \vec{W}_2=\myvec{0\\-v_3-v_4-v_5-v_8\\v_3\\v_4\\v_5\\0\\0\\v_8}\\
+\therefore \vec{W}_2= \text{Span} \left \{ \myvec{0\\-1\\1\\0\\0\\0\\0\\0},\myvec{0\\-1\\0\\1\\0\\0\\0\\0},\myvec{0\\-1\\0\\0\\1\\0\\0\\0},\myvec{0\\-1\\0\\0\\0\\0\\0\\1}\right \} \label{eq:solutions/7/4/5/eq10}
+		\end{gather}\\
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Projections on primary components $\vec{W}_1$ and $\vec{W}_2$.}}\\
+		\hline
+		\multirow{3}{*}{Finding the projection} & \\
+		& Finding the projection $\vec{E}_1$ that projects $\vec{R^8}$ on $\vec{W}_1$:  \\ $\vec{E}_1$ on the primary 
+		&We know that projection $\vec{E}_1$ will satisfy the following:\\component $\vec{W}_1$
+		&\begin{gather}
+		    \quad \vec{E}_1(\vec{v})=
+           \begin{cases}
+           \vec{v} \qquad \text{ for }  \vec{v} \in \vec{W}_1 \\
+          0 \qquad \text{ for } \vec{v} \notin \vec{W}_1
+       \end{cases}
+		\end{gather}\\
+		&Using the above result and the equations \eqref{eq:solutions/7/4/5/eq5} and \eqref{eq:solutions/7/4/5/eq10}, we can write: \\
+		&\begin{gather}
+		    \vec{E}_1 \myvec{1 &0  &0  &0 \\ 
+ 0&0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &1  &0  &0 \\ 
+0 &0  &1  &0 \\ 
+0 &0  &0  &1 \\ 
+0 &0  &0  &0}=\myvec{1 &0  &0  &0 \\ 
+ 0&0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &1  &0  &0 \\ 
+0 &0  &1  &0 \\ 
+0 &0  &0  &1 \\ 
+0 &0  &0  &0}\label{eq:solutions/7/4/5/eq11}\\
+\vec{E}_1 \myvec{0 &0  &0  &0 \\ 
+ -1&-1  &-1  &-1 \\ 
+1 &0  &0  &0 \\ 
+0 &1  &0  &0 \\ 
+0 &0  &1  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &1}=\myvec{0 &0  &0  &0 \\ 
+ 0&0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0}\label{eq:solutions/7/4/5/eq12}
+		\end{gather}\\
+		&By using the equation \eqref{eq:solutions/7/4/5/eq11}, we can write:\\
+			&\begin{gather}
+		    \myvec{E_{11}& E_{15}& E_{16}& E_{17}\\
+E_{21}& E_{25}& E_{26}& E_{27}\\
+E_{31}& E_{35}& E_{36}& E_{37}\\
+E_{41}& E_{45}& E_{46}& E_{47}\\
+E_{51}& E_{55}& E_{56}& E_{57}\\
+E_{61}& E_{65}& E_{66}& E_{67}\\
+E_{71}& E_{75}& E_{76}& E_{77}\\
+E_{81}& E_{85}& E_{86}& E_{87}}=\myvec{1 &0  &0  &0 \\ 
+ 0&0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &1  &0  &0 \\ 
+0 &0  &1  &0 \\ 
+0 &0  &0  &1 \\ 
+0 &0  &0  &0}\label{eq:solutions/7/4/5/eq13}
+		\end{gather}\\
+		&By using the equation \eqref{eq:solutions/7/4/5/eq12}, we can write:\\
+		&\begin{gather}
+		    \myvec{E_{13} - E_{12}& E_{14} - E_{12}& E_{15} - E_{12}& E_{18} - E_{12}\\
+E_{23} - E_{22}& E_{24} - E_{22}& E_{25} - E_{22}& E_{28} - E_{22}\\
+E_{33} - E_{32}& E_{34} - E_{32}& E_{35} - E_{32}& E_{38} - E_{32}\\
+E_{43} - E_{42}& E_{44} - E_{42}& E_{45} - E_{42}& E_{48} - E_{42}\\
+E_{53} - E_{52}& E_{54} - E_{52}& E_{55} - E_{52}& E_{58} - E_{52}\\
+E_{63} - E_{62}& E_{64} - E_{62}& E_{65} - E_{62}& E_{68} - E_{62}\\
+E_{73} - E_{72}& E_{74} - E_{72}& E_{75} - E_{72}& E_{78} - E_{72}\\
+E_{83} - E_{82}& E_{84} - E_{82}& E_{85} - E_{82}& E_{88} - E_{82}}=\myvec{0 &0  &0  &0 \\
+ 0&0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0}\label{eq:solutions/7/4/5/eq14}
+		\end{gather}\\
+		&\\
+		&Obtaining each elements of $\vec{E}_1$ by equating both sides in equations \eqref{eq:solutions/7/4/5/eq13} and \eqref{eq:solutions/7/4/5/eq14}:\\
+		&\begin{gather}
+		    \vec{E}_1=\myvec{1 &0  &0  &0  &0  &0  &0  &0 \\ 
+0 &0  &0  &0  &0  &0  &0  &0 \\ 
+0 &0  &0  &0  &0  &0  &0  &0 \\
+0 &0  &0  &0  &0  &0  &0  &0 \\ 
+0 &1  &1  &1  &1  &0  &0  &1 \\ 
+0 &0  &0  &0  &0  &1  &0  &0 \\ 
+0 &0  &0  &0  &0  &0  &1  &0 \\ 
+0 &0  &0  &0  &0  &0  &0  &0 }\label{eq:solutions/7/4/5/eq15}
+		\end{gather}\\
+		&Here, $\vec{E}_1^2=\vec{E}_1$. thus the obtained $\vec{E}_1$ is valid projection. \\
+		&\\
+		\hline
+		\multirow{3}{*}{Finding the projection} & \\
+		& Finding the projection $\vec{E}_2$ that projects $\vec{R^8}$ on $\vec{W}_2$:  \\$\vec{E}_2$ on the primary 
+		&We know that projection $\vec{E}_2$ will satisfy the following:\\component $\vec{W}_2$
+		&\begin{gather}
+		    \vec{E}_2(\vec{v})=
+           \left\{\begin{matrix}
+\vec{v} \qquad \text{ for }  \vec{v} \in \vec{W}_2\\ 0  \qquad \text{ for } \vec{v} \notin \vec{W}_2
+\end{matrix}\right.
+		\end{gather}\\
+		&Using this and the equations \eqref{eq:solutions/7/4/5/eq5} and \eqref{eq:solutions/7/4/5/eq10}, we can write: \\
+		&\begin{gather}
+		\vec{E}_2 \myvec{0 &0  &0  &0 \\ 
+ -1&-1  &-1  &-1 \\ 
+1 &0  &0  &0 \\ 
+0 &1  &0  &0 \\ 
+0 &0  &1  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &1}=\myvec{0 &0  &0  &0 \\ 
+ -1&-1  &-1  &-1 \\ 
+1 &0  &0  &0 \\ 
+0 &1  &0  &0 \\ 
+0 &0  &1  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &1}\label{eq:solutions/7/4/5/eq16}\\
+		    \vec{E}_2 \myvec{1 &0  &0  &0 \\ 
+ 0&0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &1  &0  &0 \\ 
+0 &0  &1  &0 \\ 
+0 &0  &0  &1 \\ 
+0 &0  &0  &0}=\myvec{0 &0  &0  &0 \\ 
+ 0&0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0}\label{eq:solutions/7/4/5/eq17}
+		\end{gather}\\
+		&By using the equation \eqref{eq:solutions/7/4/5/eq16}, we can write:\\
+		&\begin{gather}
+		    \myvec{E_{13} - E_{12}& E_{14} - E_{12}& E_{15} - E_{12}& E_{18} - E_{12}\\
+E_{23} - E_{22}& E_{24} - E_{22}& E_{25} - E_{22}& E_{28} - E_{22}\\
+E_{33} - E_{32}& E_{34} - E_{32}& E_{35} - E_{32}& E_{38} - E_{32}\\
+E_{43} - E_{42}& E_{44} - E_{42}& E_{45} - E_{42}& E_{48} - E_{42}\\
+E_{53} - E_{52}& E_{54} - E_{52}& E_{55} - E_{52}& E_{58} - E_{52}\\
+E_{63} - E_{62}& E_{64} - E_{62}& E_{65} - E_{62}& E_{68} - E_{62}\\
+E_{73} - E_{72}& E_{74} - E_{72}& E_{75} - E_{72}& E_{78} - E_{72}\\
+E_{83} - E_{82}& E_{84} - E_{82}& E_{85} - E_{82}& E_{88} - E_{82}}=\myvec{0 &0  &0  &0 \\ 
+ -1&-1  &-1  &-1 \\ 
+1 &0  &0  &0 \\ 
+0 &1  &0  &0 \\ 
+0 &0  &1  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &1}\label{eq:solutions/7/4/5/eq18}
+		\end{gather}\\
+		&By using the equation \eqref{eq:solutions/7/4/5/eq17}, we can write:\\
+		&\begin{gather}
+		    \myvec{E_{11}& E_{15}& E_{16}& E_{17}\\
+E_{21}& E_{25}& E_{26}& E_{27}\\
+E_{31}& E_{35}& E_{36}& E_{37}\\
+E_{41}& E_{45}& E_{46}& E_{47}\\
+E_{51}& E_{55}& E_{56}& E_{57}\\
+E_{61}& E_{65}& E_{66}& E_{67}\\
+E_{71}& E_{75}& E_{76}& E_{77}\\
+E_{81}& E_{85}& E_{86}& E_{87}}=\myvec{0 &0  &0  &0 \\ 
+ 0&0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0 \\ 
+0 &0  &0  &0}\label{eq:solutions/7/4/5/eq19}
+		\end{gather}\\
+		&\\
+		&Obtaining each elements of $\vec{E}_2$ by equating both sides in equations \eqref{eq:solutions/7/4/5/eq18} and \eqref{eq:solutions/7/4/5/eq19}::\\
+		&\begin{gather}
+		    \vec{E}_2=\myvec{0 &0  &0  &0  &0  &0  &0  &0 \\ 
+0 &1 &0  &0  &0  &0  &0  &0 \\ 
+0 &0  &1 &0  &0  &0  &0  &0 \\
+0 &0  &0  &1  &0  &0  &0  &0 \\ 
+0 &-1  &-1  &-1  &0  &0  &0  &-1 \\ 
+0 &0  &0  &0  &0  &0  &0  &0 \\ 
+0 &0  &0  &0  &0  &0  &0 &0 \\ 
+0 &0  &0  &0  &0  &0  &0  &1 } \label{eq:solutions/7/4/5/eq20}
+		\end{gather}\\
+		&Here, $\vec{E}_2^2=\vec{E}_2$. thus the obtained $\vec{E}_2$ is valid projection. \\
+		&\\
+		&Also, from equations \eqref{eq:solutions/7/4/5/eq15} and \eqref{eq:solutions/7/4/5/eq20}, It is also verified that $\vec{E}_1+\vec{E}_2=\vec{I}$\\
+		&\\ 
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Jordan form}}\\
+		\hline
+		\multirow{3}{*}{Finding Jordan form} & \\
+		& The characteristic polynomial of the matrix $\vec{A}$ is:\\
+		&\begin{gather}
+		    (\lambda-1)^4\lambda^4=\lambda^8-4\lambda^7+6\lambda^6-4\lambda^5+\lambda^4
+		\end{gather}\\
+		&Thus, the eigen values are $1,1,1,1,0,0,0,0$\\
+		&\\
+		&The eigen space corresponding to the eigenvalue 1 is the null space of $(\vec{A}-\vec{I})$:\\
+		&\begin{gather}
+		    (\vec{A}-\vec{I})\vec{v}=0\\
+		    \myvec{0&  1&  1&  1&  1& 1& 1&  1\\
+0& -1&  0&  0&  0& 0& 0&  1\\
+0&  0& -1&  0&  0& 0& 0& -1\\
+0&  1&  1& -1&  0& 0& 0&  1\\
+0&  0&  0&  1&  0& 0& 0&  0\\
+0&  1&  1&  1&  1& 0& 0&  1\\
+0& -1& -1& -1& -1& 0& 0& -1\\
+0&  0&  0&  0&  0& 0& 0& -1}\vec{v}=0\\
+\intertext{$\qquad \qquad \qquad \qquad$Row reduced echelon form:}
+\myvec{0& 1& 0& 0& 0& 0& 0& 0\\
+0& 0& 1& 0& 0& 0& 0& 0\\
+0& 0& 0& 1& 0& 0& 0& 0\\
+0& 0& 0& 0& 1& 0& 0& 0\\
+0& 0& 0& 0& 0& 1& 1& 0\\
+0& 0& 0& 0& 0& 0& 0& 1\\
+0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0}\vec{v}=0\\
+\therefore Nul(\vec{A}-\vec{I})=\myvec{v_1\\0\\0\\0\\0\\-v_7\\v_7\\0}\\
+\therefore Nul(\vec{A}-\vec{I})= \text{ Span }\left \{ \myvec{1\\0\\0\\0\\0\\0\\0\\0},\myvec{0\\0\\0\\0\\0\\-1\\1\\0} \right \}
+		\end{gather}\\
+        &\begin{itemize}
+            \item  Since the eigenspace corresponding to eigen value 1 is 2-dimensional, there are 2 Jordan blocks for eigen value 1;
+            \item Also this eigenvalue has algebraic multiplicity 4 (from characteristic polynomial), thus the two blocks have to have sizes adding to 4. Hence, there are two 2×2 blocks.
+        \end{itemize}\\
+        &The eigen space corresponding to the eigenvalue 0 is the null space of $\vec{A}$\\
+		&\begin{gather}
+		    \vec{A}\vec{v}=0\\
+		    \myvec{
+            1 &1  &1  &1  &1  &1  &1  &1 \\ 
+            0 &0  &0  &0  &0  &0  &0  &1 \\ 
+            0 &0  &0  &0  &0  &0  &0  &-1 \\ 
+            0 &1  &1  &0  &0  &0  &0  &1 \\ 
+            0 &0  &0  &1  &1  &0  &0  &0 \\ 
+            0 &1  &1  &1  &1  &1  &0  &1 \\ 
+            0 &-1  &-1  &-1  &-1  &0  &1  &-1 \\ 
+            0 &0  &0  &0  &0  &0  &0  &0 }\vec{v}=0
+            \intertext{$\qquad \qquad \qquad \qquad$Row reduced echelon form:}
+            \therefore \myvec{1& 0& 0& 0& 0& 0& 0& 0\\
+            0& 1& 1& 0& 0& 0& 0& 0\\
+            0& 0& 0& 1& 1& 0& 0& 0\\
+            0& 0& 0& 0& 0& 1& 0& 0\\
+            0& 0& 0& 0& 0& 0& 1& 0\\
+            0& 0& 0& 0& 0& 0& 0& 1\\
+            0& 0& 0& 0& 0& 0& 0& 0\\
+            0& 0& 0& 0& 0& 0& 0& 0}\vec{v}=0 \\
+            \therefore Nul(\vec{A}-\vec{I})=\myvec{0\\-v_3\\v_3\\-v_5\\v_5\\0\\0\\0}\\
+            \therefore Nul(\vec{A}-\vec{I})= \text{Span }\left \{ \myvec{0\\-1\\1\\0\\0\\0\\0\\0},\myvec{0\\0\\0\\-1\\1\\0\\0\\0} \right \}
+		\end{gather}\\
+        &\begin{itemize}
+            \item Here also, the eigenspace corresponding to eigen value 0 is 2-dimensional, thus there are 2 Jordan blocks for eigen value 0;
+            \item  Also this eigenvalue has algebraic multiplicity 4 (from characteristic polynomial), thus the two blocks have to have sizes adding to 4. Hence, there are two 2×2 blocks.
+        \end{itemize}\\
+        &Using all the Jordan blocks, The Jordan form of $\vec{A}$ can be written as:\\
+        &\begin{gather}
+            \text{Jordan}(\vec{A})= \myvec{1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+            0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+            0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+            0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+            0 & 0 & 0 & 0 & 0 & 0 & 0 & 0}
+        \end{gather}\\
+        \hline
+        \multicolumn{2}{|c|}{\textbf{Direct sum decomposition into T-cyclic subspaces.}}\\
+		\hline
+\multirow{3}{*}{Finding direct-sum } & \\
+        &$\vec{T}$ (represented by matrix $\vec{A}$) is a linear operator on vector space $\vec{R^8}$ (represented \\decomposition of $\vec{R^8}$
+        &  by $\vec{V}$). The $T$-annihilators $p_1,p_2, \cdots, p_k$, such that $p_k \text{ divides } p_{k-1},\text{ }k=2, \hdots,r$,\\into T-cyclic subspaces
+        &are: 
+        \begin{align}
+            p_1=(\lambda-1)^2\lambda^2 \\
+            p_2=(\lambda-1)^2\lambda\\
+            p_3=\lambda
+        \end{align}\\
+        & By  \hyperlink{Cyclicdecomposition}{\underline{cyclic decomposition theorem}}, There will exists non-zero vectors $\alpha_1$, $\alpha_2$ and $\alpha_3$ in $\vec{V}$ with respective $T$-annihilators $p_1$, $p_2$ and $p_3$ such that:
+		\begin{gather}
+            \vec{V}=\vec{W}_0\oplus \vec{Z}(\alpha_1;\vec{A})\oplus \vec{Z}(\alpha_2;\vec{A})\oplus \vec{Z}(\alpha_3;\vec{A})
+        \end{gather}
+        Where, the T-cyclic subspace $\vec{Z}(\alpha_i;T)$ is defined as :
+	    \begin{gather}
+	    \vec{Z}(\alpha_i;T)=\text{Span}\cbrak{\alpha_i,\vec{T}\alpha_i,\hdots,\vec{T}^{k-1}\alpha_i}\\
+	    \text{Where }k=\text{Degree of $p_i$}
+	    \end{gather}
+        Here, $\vec{W}_0$ is zero subspace:
+        \begin{gather}
+             \vec{W}_0=\vec{0} 
+        \end{gather}\\
+        &For defining $\vec{Z}(\alpha_1;\vec{A})$, we need to find non-zero vector $\alpha_1$ such that: 
+        \begin{gather}
+        p_1(\vec{A})(\alpha_1)=0 \label{eq:solutions/7/4/5/eq48}\\
+        \text{Here, }p_1=(\lambda-1)^2\lambda^2 \\
+        \text{ and } p_1(\vec{A})=(\vec{A}-\vec{I})^2\vec{A}^2=0\\
+        \implies \text{Any vector $\alpha_1 \in \vec{R^8}$ will satisfy $\eqref{eq:solutions/7/4/5/eq48}$} \nonumber
+        \end{gather}\\
+        &\begin{gather}
+        \text{Let,  } \quad \alpha_1=\myvec{1\\1\\1\\1\\1\\1\\1\\1}
+        \end{gather}
+        \begin{gather}
+        \therefore \vec{Z}(\alpha_1;\vec{A})=\text{Span}\cbrak{\alpha_1,\vec{A}\alpha_1,\vec{A}^{2}\alpha_1,\vec{A}^{3}\alpha_1}\\
+         \therefore \vec{Z}(\alpha_1;\vec{A})=\text{Span}\cbrak{\myvec{1\\1\\1\\1\\1\\1\\1\\1},\myvec{8\\1\\-1\\3\\2\\6\\-4\\0},\myvec{15\\0\\0\\0\\5\\11\\-9\\0},\myvec{22\\0\\0\\0\\5\\16\\-14\\0}}\\
+        \therefore \text{dim}(\vec{Z}(\alpha_1;\vec{A}))= \text{Degree of $p_1$}=4
+        \end{gather}\\
+        \hline
+        &\\
+        &For defining $\vec{Z}(\alpha_2;\vec{A})$, we need to find non-zero vector $\alpha_2$ such that: 
+        \begin{gather}
+        \alpha_2 \notin \vec{Z}(\alpha_1;\vec{A}),p_2(\vec{A})(\alpha_2)=0 \label{eq:solutions/7/4/5/eq58}\\
+        \text{Here, }p_2=(\lambda-1)^2\lambda \\
+        \frac{p_1}{p_2}=\lambda \implies p_2 \text{ divides }p_1 \\
+        p_2(\vec{A})=(\vec{A}-\vec{I})^2\vec{A}=\myvec{ 0&  0&  0& 0& 0& 0& 0&  0\\
+ 0&  0&  0& 0& 0& 0& 0&  1\\
+ 0&  0&  0& 0& 0& 0& 0& -1\\
+ 0&  1&  1& 0& 0& 0& 0&  1\\
+ 0& -1& -1& 0& 0& 0& 0& -1\\
+ 0&  0&  0& 0& 0& 0& 0&  0\\
+ 0&  0&  0& 0& 0& 0& 0&  0\\
+ 0&  0&  0& 0& 0& 0& 0&  0}
+        \end{gather}\\
+         & One such vector that satisfies \eqref{eq:solutions/7/4/5/eq58} is:
+        \begin{gather}
+        \text{Let,  } \quad \alpha_1=\myvec{0\\0\\0\\1\\1\\1\\1\\0}
+        \end{gather}\\
+        &\begin{gather}
+        \therefore \vec{Z}(\alpha_2;\vec{A})=\text{Span}\cbrak{\alpha_2,\vec{A}\alpha_2,\vec{A}^{2}\alpha_2}\\
+         \therefore \vec{Z}(\alpha_2;\vec{A})=\text{Span}\cbrak{\myvec{0\\0\\0\\1\\1\\1\\1\\0},\myvec{4\\0\\0\\0\\2\\3\\-1\\0},\myvec{8\\0\\0\\0\\2\\5\\-3\\0}}\\
+        \therefore \text{dim}(\vec{Z}(\alpha_2;\vec{A}))= \text{Degree of $p_2$}=3
+        \end{gather}\\
+        \hline
+        &\\
+        &For defining $\vec{Z}(\alpha_3;\vec{A})$, we need to find non-zero vector $\alpha_3$ such that: 
+        \begin{gather}
+        \alpha_3 \notin \vec{Z}(\alpha_1;\vec{A}),\alpha_3 \notin \vec{Z}(\alpha_2;\vec{A}) \text{ and }p_3(\vec{A})(\alpha_3)=0 \label{eq:solutions/7/4/5/eq66}\\
+        \text{Here, }p_3=\lambda \\
+        \frac{p_2}{p_3}=(\lambda-1)^2 \implies p_3 \text{ divides }p_2 \\
+        p_3(\vec{A})=\vec{A}=\myvec{ 
+1 &1  &1  &1  &1  &1  &1  &1 \\ 
+ 0&0  &0  &0  &0  &0  &0  &1 \\ 
+0 &0  &0  &0  &0  &0  &0  &-1 \\ 
+0 &1  &1  &0  &0  &0  &0  &1 \\ 
+0 &0  &0  &1  &1  &0  &0  &0 \\ 
+0 &1  &1  &1  &1  &1  &0  &1 \\ 
+0 &-1  &-1  &-1  &-1  &0  &1  &-1 \\ 
+0 &0  &0  &0  &0  &0  &0  &0 }
+        \end{gather}\\
+         & One such vector that satisfies \eqref{eq:solutions/7/4/5/eq66} is:
+         \begin{gather}
+        \text{Let,  } \quad \alpha_1=\myvec{0\\-1\\1\\-1\\1\\0\\0\\0}
+        \end{gather}\\
+        &\begin{gather}
+        \therefore \vec{Z}(\alpha_2;\vec{A})=\text{Span}\cbrak{\alpha_2}\\
+         \therefore \vec{Z}(\alpha_2;\vec{A})=\text{Span}\cbrak{\myvec{0\\-1\\1\\-1\\1\\0\\0\\0}}\\
+        \therefore \text{dim}(\vec{Z}(\alpha_2;\vec{A}))= \text{Degree of $p_3$}=1
+        \end{gather}
+        \begin{gather}
+        \text{dim}(\vec{Z}(\alpha_1;\vec{A}))+\text{dim}(\vec{Z}(\alpha_2;\vec{A}))+\text{dim}(\vec{Z}(\alpha_2;\vec{A}))=8
+        \end{gather}\\
+        & Thus, $\vec{V}=\vec{Z}(\alpha_1;\vec{A})\oplus \vec{Z}(\alpha_2;\vec{A})\oplus \vec{Z}(\alpha_3;\vec{A})$ is the required direct sum \\
+        &decomposition into T-cyclic subspaces.\\
+\caption{}
+\label{eq:solutions/7/4/5/tab}
+\end{longtable}
+\twocolumn

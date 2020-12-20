@@ -1,0 +1,219 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+%
+\usepackage{setspace}
+\usepackage{gensymb}
+\usepackage{siunitx}
+\usepackage{tkz-euclide} 
+\usepackage{textcomp}
+\usepackage{standalone}
+\usetikzlibrary{calc}
+\newcommand\hmmax{0}
+\newcommand\bmmax{0}
+
+%\doublespacing
+\singlespacing
+
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{relsize}
+\usepackage[cmex10]{amsmath}
+%\usepackage{amsthm}
+%\interdisplaylinepenalty=2500
+%\savesymbol{iint}
+%\usepackage{txfonts}
+%\restoresymbol{TXF}{iint}
+%\usepackage{wasysym}
+\usepackage{amsthm}
+%\usepackage{iithtlc}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+%\usepackage{xtab}
+\usepackage{longtable}
+\usepackage{multirow}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+%\usepackage{stmaryrd}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+%\usetkzobj{all}
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+  %optionally (for landscape tables embedded in another document): %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+\usepackage{amsmath}
+\usepackage{cleveref}
+%\usepackage{enumerate}
+
+%\usepackage{wasysym}
+%\newcounter{MYtempeqncnt}
+\DeclareMathOperator*{\Res}{Res}
+%\renewcommand{\baselinestretch}{2}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+%\lstset{
+%language=tex,
+%frame=single, 
+%breaklines=true
+%}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+%\newtheorem{thm}{Theorem}[section] 
+%\newtheorem{defn}[thm]{Definition}
+%\newtheorem{algorithm}{Algorithm}[section]
+%\newtheorem{cor}{Corollary}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{ieeetr}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\abs}[1]{\ensuremath{\left\vert#1\right\vert}}
+\providecommand{\norm}[1]{\ensuremath{\left\lVert#1\right\rVert}}
+\providecommand{\mean}[1]{\ensuremath{E\left[ #1 \right]}}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+%\numberwithin{equation}{section}
+\numberwithin{equation}{subsection}
+%\numberwithin{problem}{section}
+%\numberwithin{definition}{section}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+\renewcommand{\thefigure}{\theproblem}
+%\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
+%\counterwithin{equation}{enumi}
+%\renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     
+ \vspace{3cm}
+ \title{Assignment 18}
+ \author{Matish Singh Tanwar}
+ \maketitle
+ \newpage
+ \bigskip
+ %\renewcommand{\thefigure}{\theenumi}
+ \renewcommand{\thetable}{\theenumi}
+\vspace{1.0cm}
+\begin{abstract}
+This document solves question based on Linear Algebra.
+\end{abstract}
+\vspace{0.5cm}
+%
+Download all latex-tikz codes from 
+\begin{lstlisting}
+https://github.com/Matish007/Matrix-Theory-EE5609-/tree/master/Assignment_18
+\end{lstlisting}
+%
+%
+\section{Problem}
+ Let $\vec{V}$ be $\mathbb{R}^3$, with the standard inner product. Let $\vec{W}$ be the plane spanned by $\vec{\alpha}$=$\myvec{1&1&1}$ and  $\vec{\beta}$=$\myvec{1&1&-2}$. Let $\vec{U}$ be the linear operator defined, geometrically, as follows, $\vec{U}$ is rotation through the angle $\theta$, about the straight line through the origin which is orthogonal to $\vec{W}$. There are actually two such rotations- choose one. Find the matrix of $\vec{U}$ in the standard ordered basis.
+
+\section{SOLUTION}
+ We use Gram-Schmidt process to the given vector $\alpha,\beta,\gamma$.
+ \begin{align}
+ \vec{v}_1=\vec{\alpha}=\myvec{1&1&1}\\
+ \vec{v}_2=\vec{\beta}-\frac{\vec{\beta}\vec{v}_{1}^{T}}{\vec{v}_1\vec{v}_{1}^{T}}\vec{v}_1\\
+ \vec{\beta}\vec{v}_{1}^{T}=\myvec{1&1&-2}\myvec{1\\1\\1}=0\\
+ \vec{v}_1\vec{v}_{1}^{T}=\myvec{1&1&-2}-0=\myvec{1&1&-2}
+\end{align}
+\begin{align}
+ \vec{v}_3=\vec{\gamma}-\frac{\gamma\vec{v}_{1}^{T}}{\vec{v}_1\vec{v}_{1}^{T}}\vec{v}_1-\frac{\gamma\vec{v}_{2}^{T}}{\vec{v}_2\vec{v}_{2}^{T}}\vec{v}_2\\
+ \vec{\gamma}\vec{v}_{1}^{T}=\myvec{1&-1&0}\myvec{1\\1\\1}=0\\
+\vec{v}_1\vec{v}_{1}^{T}=\myvec{1&1&1}\myvec{1\\1\\1}=3\\
+\gamma\vec{v}_{2}^{T}=\myvec{1&-1&0}\myvec{1\\1\\-2}=0\\
+\vec{v}_2\vec{v}_{2}^{T}=\myvec{1&1&-2}\myvec{1\\1\\-2}=6\\
+\vec{v}_3=\myvec{1&-1&0}-0-0\\
+=\myvec{1&-1&0}
+ \end{align}
+ The find the orthonormal by dividing the vectors $\vec{v}_1,\vec{v}_2,\vec{v}_3$ by their norm
+ \begin{align}
+ \vec{v}_1=\frac{\vec{v}_1}{\norm{\vec{v}_1}}\\
+ \frac{1}{\sqrt{3}}\myvec{1&1&1}\\
+ \vec{v}_2=\frac{\vec{v}_2}{\norm{\vec{v}_2}}\\
+  \frac{1}{\sqrt{6}}\myvec{1&1&-2}\\
+   \vec{v}_3=\frac{\vec{v}_3}{\norm{\vec{v}_3}}\\
+   \frac{1}{\sqrt{2}}\myvec{1&-1&0}\\
+   \vec{U}=\myvec{\vec{v}_1&\vec{v}_2&\vec{v}_3}
+ \end{align}
+
+Hence,
+$\vec{U}=\myvec{\frac{1}{\sqrt{3}}&\frac{1}{\sqrt{6}}&\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{3}}&\frac{1}{\sqrt{6}}&-\frac{1}{\sqrt{2}}\\\frac{1}{\sqrt{3}}&-\frac{2}{\sqrt{6}}&0}$
+\end{document}

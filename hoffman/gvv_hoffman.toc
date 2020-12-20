@@ -35,5 +35,5 @@
 \contentsline {subsection}{\numberline {7.1}Cyclic Decompositions and the Rational Form}{253}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}The Jordan Form}{259}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Computation of Invariant Factors}{269}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Inner Product Spaces}{275}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Inner Products}{275}{subsection.8.1}%
+\contentsline {section}{\numberline {8}Inner Product Spaces}{293}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Inner Products}{293}{subsection.8.1}%
